@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 2db8eeb5bbe473db895bc092462b77de39af3e6d
+source-git-commit: 59671ff01a398ad8dc525c8948b5dc5548774cf5
 workflow-type: tm+mt
-source-wordcount: '10975'
+source-wordcount: '10989'
 ht-degree: 0%
 
 ---
@@ -797,6 +797,7 @@ ht-degree: 0%
          * [ACSD-57394 : Tri incorrect des produits selon plusieurs champs de tri dans [!DNL GraphQL]](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql.md)
          * [ACSD-56546 : les produits configurables et groupés s’affichent en rupture de stock sur le storefront.](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront.md)
          * [ACSD-55566 : [!UICONTROL mergeCart] Échec de la mutation avec une erreur de serveur interne dans [!DNL GraphQL] response](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-55566-mergecart-mutation-fails-with-an-internal-server-error-in-graphql-response.md)
+         * [ACSD-58008 : si vous modifiez la date de fin comme vide, la mise à jour du planning disparaît.](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-58008-editing-the-end-date-as-empty-causes-the-schedule-update-to-disappear.md)
          * [ACSD-57854 : la réponse GraphQL contient des catégories désactivées qui ne doivent pas être répertoriées dans les agrégations de catégories.](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57854-graphql-response-contains-disabled-categories-that-should-not-be-listed-in-the-category-aggregations.md)
          * [ACSD-57565 : le tableau de bord des commandes affiche des informations de commande incorrectes.](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57565-the-order-dashboard-displays-incorrect-order-information.md)
       * [Correctif du problème Adobe Commerce avec l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)
