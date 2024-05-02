@@ -1,0 +1,70 @@
+---
+title: 'MDVA-43601 : les déclencheurs sont supprimés de la table "catalogrule_product_price" après réindexation complète'
+description: Le correctif MDVA-43601 corrige le problème en raison duquel les déclencheurs sont supprimés de la table "catalogrule_product_price" après une réindexation complète de "catalogrule_rule" ou "catalogrule_product". Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 est installé. L’ID de correctif est MDVA-43601. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+exl-id: fdef1e56-79ec-455a-8a29-b82f1c8ceea7
+feature: Catalog Management, Orders, Products
+role: Admin
+source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 0%
+
+---
+
+# MDVA-43601 : les déclencheurs sont supprimés de la table &quot;catalogrule_product_price&quot; après la réindexation complète
+
+Le correctif MDVA-43601 corrige le problème en raison duquel les déclencheurs sont supprimés de `catalogrule_product_price` après une réindexation complète de `catalogrule_rule` ou `catalogrule_product`. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.13 est installée. L’ID de correctif est MDVA-43601. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+
+## Produits et versions concernés
+
+**Le correctif est créé pour la version Adobe Commerce :**
+
+* Adobe Commerce (toutes les méthodes de déploiement) 2.4.2-p2
+
+**Compatible avec les versions d’Adobe Commerce :**
+
+* Adobe Commerce (toutes les méthodes de déploiement) 2.3.0 - 2.4.4
+
+>[!NOTE]
+>
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+
+## Problème
+
+Les déclencheurs sont supprimés de `catalogrule_product_price` après une réindexation complète de `catalogrule_rule` ou `catalogrule_product`.
+
+<u>Étapes à reproduire</u>:
+
+1. Définissez tous les indexeurs sur *Mise à jour par planification*.
+1. Vérifier les déclencheurs créés pour `catalogrule_product_price` en exécutant la requête SQL suivante :
+
+   ```sql
+   show triggers like '%catalogrule_%'\G
+   ```
+
+1. Réindexation manuelle `catalogrule_rule` ou `catalogrule_product` en exécutant la commande suivante : `bin/magento indexer:reindex catalogrule_rule`
+1. Vérifier les déclencheurs de `catalogrule_product_price` à nouveau.
+
+<u>Résultats attendus</u>:
+
+Déclencheurs dans `catalogrule_product_price` sont conservées après une réindexation complète.
+
+<u>Résultats réels</u>:
+
+Aucun déclencheur n’est trouvé pour `catalogrule_product_price` table.
+
+## Appliquer le correctif
+
+Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
+
+* Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+
+## Lecture connexe
+
+Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+
+* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
+* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) dans notre documentation destinée aux développeurs.

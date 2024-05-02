@@ -1,0 +1,60 @@
+---
+title: Problèmes de sauvegarde
+description: Cet article répertorie les solutions possibles pour les problèmes de création de sauvegarde.
+exl-id: 1a6204ad-bd5a-46dc-8a8e-39655a174e09
+feature: Storage, Data Import/Export
+role: Developer
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 0%
+
+---
+
+# Problèmes de sauvegarde
+
+Cet article répertorie les solutions possibles pour les problèmes de création de sauvegarde.
+
+## Produits et versions concernés
+
+* Adobe Commerce On-Premise 2.3.x
+* Magento Open Source 2.3.x
+
+## Sauvegarde désactivée {#backup-disabled}
+
+Si la fonctionnalité de sauvegarde d’Adobe Commerce ne démarre pas ou n’affiche pas le message suivant, vous devez activer la fonctionnalité avant de la sauvegarder.
+
+```terminal
+Backup functionality is disabled.
+Backup functionality is currently disabled. Please use other means for backups.
+```
+
+Saisissez la commande d’interface de ligne de commande suivante :
+
+```bash
+bin/magento config:set system/backup/functionality_enabled 1
+```
+
+Pour plus d’informations sur les sauvegardes, voir [Sauvegardez et restaurez le système de fichiers, le média et la base de données.](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-backup.html)
+
+## Espace disque insuffisant {#insufficient-disk-space-trouble-backup-space-}
+
+Si la sauvegarde a échoué en raison d’un espace disque insuffisant, vous devez généralement libérer de l’espace disque en déplaçant certains fichiers vers un autre périphérique ou lecteur de stockage. Cependant, il peut y avoir d’autres façons de résoudre le problème. Consultez l’une des ressources suivantes pour obtenir des conseils :
+
+* [8 conseils pour résoudre les problèmes de disque dur des systèmes Linux et Unix tels que Disque complet ou Impossible d’écrire sur le disque](https://www.cyberciti.biz/datacenter/linux-unix-bsd-osx-cannot-write-to-hard-disk)
+* [serverfault : df indique que le disque est saturé, mais qu’il ne l’est pas.](https://serverfault.com/questions/315181/df-says-disk-is-full-but-it-is-not)
+* [unix.stackexchange.com : Suivi de l’emplacement de l’espace disque sous Linux ?](https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux)
+
+## Erreur du système d’exploitation {#operating-system-error-trouble-backup-os-}
+
+Malheureusement, nous ne pouvons rien recommander en raison de la variété des erreurs que vous pourriez rencontrer. Nous pouvons toutefois vous suggérer :
+
+* Contactez votre administrateur système.
+* Recherche dans les forums publics tels que [Empiler l’Exchange](https://unix.stackexchange.com) ou [Débordement de la pile](https://stackoverflow.com)
+* Ouvrez une [Problème GitHub](https://github.com/magento/magento2/issues) et nous essayerons d&#39;aider.
+
+## Échec de la sauvegarde {#backup-fails-trouble-backup-all-}
+
+Si la sauvegarde échoue ou si tous les tests de sauvegarde échouent, il est possible que la variable [Propriétaire du système de fichiers Adobe Commerce](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/file-sys-perms-over.html) ne dispose pas des privilèges et de la propriété suffisants du système de fichiers Adobe Commerce. Par exemple, un autre utilisateur peut posséder les fichiers ou les fichiers peuvent être en lecture seule.
+
+Accordez une attention particulière aux autorisations du système de fichiers et à la propriété de `<magento_root>/var` répertoire et sous-répertoires. Pour plus d’informations, voir [Définition des autorisations et de la propriété du système de fichiers](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-system-perms.html).

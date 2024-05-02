@@ -1,0 +1,32 @@
+---
+title: Erreur après connexion à l’administrateur Commerce
+description: Cet article fournit une solution au problème où vous recevez un message d’erreur indiquant que l’URL demandée est introuvable sur ce serveur.
+exl-id: f52b383b-87f2-4216-9bf4-e765db31ca6b
+feature: Admin Workspace
+role: Developer
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 0%
+
+---
+
+# Erreur après connexion à l’administrateur Commerce
+
+Cet article fournit une solution au problème où vous recevez un message d’erreur indiquant que l’URL demandée est introuvable sur ce serveur.
+
+## Détails
+
+L’URL demandée /magento2index.php/admin/admin/dashboard/index/key/0c81957145a968b697c32a846598dc2e/ est introuvable sur ce serveur.
+
+Notez l’absence de barre oblique entre les `magento2` et `index.php` dans l’URL.
+
+## Solution
+
+L’URL de base n’est pas correcte. L’URL de base doit :
+
+* Commencer par `http://` ou `https://`
+* Se terminer par une barre oblique ( `/` )
+* Respectez la casse de la variable `web/unsecure/base_url` enregistrement dans la variable `core_config_data` table de base de données
+
+Exécutez à nouveau l’installation à l’aide d’une valeur valide.

@@ -1,0 +1,67 @@
+---
+title: Impossible d’enregistrer *contact* comme clé URL
+description: Cet article fournit une solution au problème lorsque vous ne pouvez pas enregistrer *contact* comme clé d’URL (par exemple, "/contact") pour les produits ou les pages CMS. Lorsque vous essayez d’enregistrer la clé URL, vous recevez une erreur indiquant que la clé URL est une URL en double.
+exl-id: eb340813-aba5-43a4-af5d-8fb64c93e021
+feature: CMS, Marketing Tools, Storefront
+role: Admin
+source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 0%
+
+---
+
+# Enregistrement impossible *contact* comme clé d’URL
+
+Cet article fournit une solution au problème lorsque vous ne pouvez pas enregistrer *contact* comme clé URL (par exemple, &quot;/contact&quot;) pour les produits ou les pages CMS.
+
+## Produits et versions concernés
+
+Adobe Commerce (toutes les méthodes de déploiement) 2.4.x
+
+## Problème
+
+Vous ne pouvez pas enregistrer un produit ou une page CMS à l’aide du terme . *contact* comme clé d’URL. Lorsque vous essayez d’enregistrer la clé URL, vous recevez une erreur indiquant que la clé URL est une URL en double.
+
+<u>Étapes à reproduire</u>:
+
+Création d’une page CMS avec *contact* comme clé d’URL.
+
+<u>Résultat attendu</u>:
+
+La page est enregistrée avec *contact* comme clé d’URL.
+
+<u>Résultat réel</u>:
+
+Vous ne pouvez pas enregistrer la page. Vous obtenez l’erreur : *La valeur spécifiée dans le champ Clé URL génère une URL qui existe déjà.*
+
+## Cause
+
+*Contact* est un mot réservé défini dans `vendor/magento/module-contact/view/frontend/layout/contact_index_index.xml`.
+
+```xml
+<router id="standard">
+      <route id="contact" frontName="contact">
+          <module name="Magento_Contact" />
+      </route>
+  </router>
+```
+
+## Solution
+
+Vous ne pouvez pas utiliser le terme *contact* Toutefois, vous pouvez utiliser le terme comme clé d’URL. *contact* combiné avec une autre lettre ou un autre nombre (par exemple, *contact1* et *contact2*). Bien que le terme n’ait pas à être *contact+\&lt;another number=&quot;&quot; or=&quot;&quot; letter=&quot;&quot;>*, le terme peut être n’importe quelle chaîne tant que la longueur ne dépasse pas 255 caractères.
+
+Effectuez les étapes suivantes :
+
+1. Connectez-vous à l’administrateur Commerce.
+1. Accédez à **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL URL Rewrites]**.
+1. Cliquez sur **[!UICONTROL Add URL Rewrite]**.
+1. Sélectionner *[!UICONTROL Custom]* sur le [!UICONTROL Create URL Rewrite] menu déroulant.
+   1. Dans le [!UICONTROL Request Path], saisissez &quot;contact&quot;. Notez que la variable [!UICONTROL Request Path] est ce qu’un utilisateur entre dans le navigateur et la variable [!UICONTROL Target Path] est l’emplacement vers lequel il doit rediriger.
+   1. Dans le [!UICONTROL Target Path], saisissez la nouvelle clé URL (par exemple, &quot;contact1&quot;).
+   1. Sélectionner *[!UICONTROL No]* dans le [!UICONTROL Redirect] menu déroulant.
+
+## Lecture connexe
+
+* [URL Rewrites](https://docs.magento.com/user-guide/marketing/url-rewrite.html) dans notre guide d’utilisation.
+* [Bonnes pratiques relatives au référencement](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) dans notre guide d’utilisation.

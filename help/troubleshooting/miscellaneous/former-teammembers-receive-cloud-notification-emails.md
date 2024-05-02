@@ -1,0 +1,34 @@
+---
+title: Les anciens membres de l’équipe reçoivent des e-mails de notification cloud Adobe Commerce
+description: Cet article fournit une solution à Adobe Commerce concernant l’envoi d’emails de notification d’infrastructure cloud aux anciens membres de l’équipe.
+exl-id: b2535f66-8aec-4ddf-9a69-60879a0a1939
+feature: Cloud, Communications, Paas
+role: Developer
+source-git-commit: 075f295c5b600fcca9fbecc5aad20b0640d900f9
+workflow-type: tm+mt
+source-wordcount: '227'
+ht-degree: 0%
+
+---
+
+# Les anciens membres de l’équipe reçoivent des e-mails de notification cloud Adobe Commerce
+
+Cet article fournit une solution permettant aux membres de l’équipe qui ne sont plus associés à votre projet de continuer à recevoir des notifications.
+
+## Problème
+
+Un avis d’interruption détectée ou d’un problème important concernant le projet/l’environnement cloud a été envoyé à votre équipe. Cela inclut les membres qui peuvent ne plus être associés à votre projet, tels que les développeurs externes/d’agence ou les intégrateurs système. Vous souhaitez que ces utilisateurs cessent de recevoir des notifications.
+
+## Solution
+
+Il existe deux façons d’arrêter les notifications en supprimant le ou les utilisateurs de votre projet :
+
+* Méthode 1 : utilisation du cloud [!DNL Project URL]. Voir [Gestion de l’accès des utilisateurs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) dans le guide Commerce on cloud infrastructure pour connaître les étapes.
+* Méthode 2 : utilisation du cloud magento [!DNL CLI]. Voir [Gestion des utilisateurs avec le [!DNL CLI]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-with-the-cli) dans le guide Commerce on cloud infrastructure pour connaître les étapes.
+
+Si cela a déjà été fait et que les notifications par e-mail continuent d’inclure ces utilisateurs, soumettez un ticket d’assistance pour leur demander d’être supprimées de la variable *[!UICONTROL Always CC]* sur le compte.
+
+## Lecture connexe
+
+* [Affichage du rôle de projet d’un utilisateur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#view-a-user’s-project-role) dans le guide Commerce on cloud infrastructure.
+* [Comment inclure un membre de l’équipe dans les notifications d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-include-a-team-member-in-support-notifications.html) dans la base de connaissances de Commerce.
