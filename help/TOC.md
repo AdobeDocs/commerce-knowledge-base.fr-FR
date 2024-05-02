@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: c4c2ae504a5ecd699ab2fa92c07edb0d0942fd76
+source-git-commit: 2db8eeb5bbe473db895bc092462b77de39af3e6d
 workflow-type: tm+mt
-source-wordcount: '10961'
+source-wordcount: '10975'
 ht-degree: 0%
 
 ---
@@ -791,6 +791,7 @@ ht-degree: 0%
          * [ACSD-56858 : incohérence des autorisations de rôle dans l’administration de la société B2B](/help/support-tools/patches-available-in-qpt-tool/v1-1-47/acsd-56858-role-permissions-display-issue-in-b2b-company-admin-panel.md)
       * v1.1.48 {#v1-1-48}
          * [Aperçu : [!DNL Quality Patches Tool] (QPT) v1.1.48](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/overview.md)
+         * [ACSD-57315 : Nouvelle transaction créée dans [!DNL PayPal Payflow Pro] chaque fois que vous cliquez sur le bouton de récupération](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57315-new-transaction-created-in-paypal-payflow-pro-each-time-the-fetch-button-is-clicked.md)
          * [ACSD-56635 : Les clients importés sont dupliqués lorsque le partage de compte est défini sur [!DNL Global]](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address.md)
          * [ACSD-57337 : Un utilisateur administrateur avec des restrictions d’accès peut voir des sociétés](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57337-admin-user-with-access-restrictions-can-see-companies.md)
          * [ACSD-57394 : Tri incorrect des produits selon plusieurs champs de tri dans [!DNL GraphQL]](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql.md)
