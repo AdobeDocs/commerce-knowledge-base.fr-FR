@@ -3,9 +3,9 @@ title: "Sauvegarde (instantané) sur le cloud : FAQ"
 description: Cet article décrit les principes de base de la sauvegarde de vos environnements avec des instantanés sur Adobe Commerce sur l’infrastructure cloud.
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
-source-git-commit: 9491279d147eac9ed36ad236c227b08e7c6e0211
+source-git-commit: 0958a8923e27c1341f4b536812b26205685b2b81
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Cet article décrit la sauvegarde de vos environnements avec des instantanés su
 
 ## Restauration d’un instantané d’environnement
 
-Pour restaurer un instantané existant (sur l’environnement pris en charge : Intégration, Évaluation, Production sur le plan de démarrage ou Intégration sur le plan Pro), suivez les étapes de la section [Gestion des sauvegardes : restauration d’une sauvegarde manuelle](/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) dans notre guide Commerce on Cloud Infrastructure.
+Pour restaurer un instantané existant (sur l’environnement pris en charge : Intégration, Évaluation, Production sur le plan de démarrage ou Intégration sur le plan Pro), suivez les étapes de la section [Gestion des sauvegardes : restauration d’une sauvegarde manuelle](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) dans notre guide Commerce on Cloud Infrastructure.
 
 ## Sauvegarde de la base de données (DB)
 
