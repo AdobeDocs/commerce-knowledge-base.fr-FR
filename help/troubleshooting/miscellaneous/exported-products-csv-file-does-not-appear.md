@@ -4,9 +4,9 @@ description: Cet article fournit un correctif pour le problème qui se produit l
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: 465eb89cf5c5169b0b459ab7e6bdcbd418781093
+source-git-commit: d55702ab97f3770d0ec71322f6c24448f0169ad4
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,10 @@ Pour ajouter le processus en tant que tâche cron, vous devez éventuellement aj
 >[!NOTE]
 >
 >Si vous ne trouvez pas la variable `.magento.env.yaml` pour votre environnement, et si vous pensez qu’il a été supprimé, vous devez créer un `.magento.env.yaml`. Il peut être initialement vide. Vous pouvez y ajouter des informations selon vos besoins. Reportez-vous aux articles suivants : [Configuration des variables d’environnement pour le déploiement](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) et [Variables d’environnement](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) dans notre documentation destinée aux développeurs.
+
+>[!TIP]
+>
+>[Fichiers YAML](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) sont sensibles à la casse et n’autorisent pas les onglets. Veillez à utiliser une mise en retrait cohérente dans l’ensemble du fichier .magento.env.yaml , sinon votre configuration risque de ne pas fonctionner comme prévu. Les exemples de la documentation et du fichier d’exemple utilisent une mise en retrait à deux espaces. Utilisez la commande de validation de l’outil ece pour vérifier votre configuration.
 
 >[!NOTE]
 >
