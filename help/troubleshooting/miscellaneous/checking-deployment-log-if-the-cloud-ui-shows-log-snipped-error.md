@@ -1,19 +1,19 @@
 ---
 title: Vérification du journal de déploiement si l’interface utilisateur de Cloud a "extrait de journal"
-description: Cet article fournit une solution au problème où l’interface utilisateur d’Adobe Commerce sur l’infrastructure cloud affiche le *fragment de journal car il s’agissait d’un message d’erreur trop long* lors de la tentative d’affichage du journal de déploiement.
+description: Cet article fournit une solution au problème où l’interface utilisateur d’Adobe Commerce sur l’infrastructure cloud affiche le *fragment de journal car il s’agissait d’un message d’erreur trop long* lors de la tentative d’affichage du journal de déploiement sur l’interface utilisateur du projet cloud.
 exl-id: 04d28741-72c1-4722-be46-425fe136b9a6
 feature: Cloud, Deploy, Logs, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 71bec5b99063d771982f6dcab111b9e5a4aaec69
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
-# Vérification du journal de déploiement si l’interface utilisateur de Cloud a &quot;extrait de journal&quot;
+# Vérification du journal de déploiement si l’interface utilisateur de cloud comporte *fragment de journal* error
 
-Cet article fournit une solution au problème où l’interface utilisateur d’Adobe Commerce sur l’infrastructure cloud affiche la variable *fragment de journal car il était trop long* message d’erreur lors de l’affichage du journal de déploiement.
+Cet article fournit une solution au problème où l’interface utilisateur d’Adobe Commerce sur l’infrastructure cloud affiche la variable *fragment de journal car il était trop long* message d’erreur lors de la tentative d’affichage du journal de déploiement sur l’interface utilisateur du projet cloud. (Ne s’applique pas à la variable [Console Adobe Commerce Cloud](https://console.adobecommerce.com/).)
 
 ## Produits concernés
 
@@ -21,7 +21,7 @@ Adobe Commerce sur l’infrastructure cloud (toutes les versions prises en charg
 
 ## Problème
 
-Lors de la tentative d’affichage du journal de déploiement, Adobe Commerce sur l’interface utilisateur de l’infrastructure cloud affiche le message d’erreur suivant : *fragment de journal car il était trop long*.
+Lors de la tentative d’affichage du journal de déploiement sur l’interface utilisateur du projet cloud, Adobe Commerce sur l’interface utilisateur de l’infrastructure cloud affiche le message d’erreur suivant : *fragment de journal car il était trop long*.
 
 ## Étapes à reproduire
 
