@@ -1,11 +1,12 @@
 ---
-title: "Échec du déploiement avec les clés d’accès correctes dans env:COMPOSER_AUTH ou auth.json"
+title: Échec du déploiement avec les clés d’accès correctes dans env:COMPOSER_AUTH ou auth.json
 description: 'Cet article fournit une solution au problème en cas d’échec du déploiement avec l’erreur suivante : "Le fichier https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip n’a pas pu être téléchargé (HTTP/1.1 404 Not Found)".'
 feature: Deploy
 role: Admin
-source-git-commit: 8e0aca8f528b017e288ae6fb19b072a5cc04761b
+exl-id: a18f4213-7381-4001-a5a0-3f8db4525469
+source-git-commit: 54ef4e95cf0e3f5822ff5e5c566129fab331f784
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -58,4 +59,4 @@ Pour connaître les étapes, voir [Niveaux de variable](/docs/commerce-cloud-ser
 ## Lecture connexe
 
 * [Impossible d’accéder à Adobe Commerce sur le référentiel cloud : erreur 403 Forbidden ou 404 Not Found lors du déploiement](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)
-* [Erreur de déploiement : erreur 7 lors du téléchargement ... port 443 : connexion refusée](/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/deployment-error-downloading-connection-refused-adobe-commerce.html)
+* [Erreur de déploiement : erreur 7 lors du téléchargement ... port 443 : connexion refusée](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce)
