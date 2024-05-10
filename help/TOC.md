@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 76be98e46941bc6a7857aba8e95c8415ce3fc978
+source-git-commit: 5e20e9d150eb8a527e530a19abd8b364f55a5aa6
 workflow-type: tm+mt
-source-wordcount: '11017'
+source-wordcount: '11013'
 ht-degree: 0%
 
 ---
@@ -1035,7 +1035,6 @@ ht-degree: 0%
       * [Problème de jeton Github et procédures clés du compositeur](/help/troubleshooting/miscellaneous/github-token-issue-and-composer-key-procedures.md)
       * [Problème Adobe Commerce 2.4.1 : impossible de modifier le compte Amazon dans Chrome](/help/troubleshooting/miscellaneous/magento-2-4-1-known-issue-unable-to-change-amazon-account-in-google-chrome.md)
       * [ETC-Outils et erreurs de mise à jour de correctif infrastructure cloud Adobe Commerce 2.2.x, 2.3.x](/help/troubleshooting/miscellaneous/ece-tools-and-patch-update-errors-magento-commerce-cloud-2-2-x-2-3-x.md)
-      * [Dépannage des problèmes de paiement rapide](/help/troubleshooting/miscellaneous/quick-checkout-issues.md)
       * [PWA Studio : Webpack se bloque avant de commencer la compilation](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
       * [Installez les derniers correctifs pour résoudre les problèmes liés aux redis d’Adobe Commerce](/help/troubleshooting/miscellaneous/install-latest-patches-to-fix-magento-redis-issues.md)
       * [Résoudre une erreur de décalage non autorisée](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
