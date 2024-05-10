@@ -4,9 +4,9 @@ description: "Cet article explique comment résoudre l’erreur de déploiement 
 exl-id: 2f72d80a-05b2-4908-8fa8-61d06885ed07
 feature: Cloud, Deploy, Paas, Variables
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 9ca95444aa785191e4c8bf1603773f3430414797
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Voici quelques raisons pour lesquelles les clés ne sont pas valides :
 Procédez comme suit pour résoudre le problème à l’aide des clés d’autorisation (voir les sections ci-dessous pour plus d’informations sur chaque étape) :
 
 1. Procurez-vous les clés d’autorisation valides (ignorez cette option si vous êtes absolument certain que votre clé est valide).
-1. Ajoutez la valeur keys dans la variable `env:COMPOSER_AUTH` (ou assurez-vous que la valeur correcte est bien présente) et vérifiez si les clés sont spécifiées de manière cohérente dans la variable et la variable `auth.json` dans la racine du projet.
+1. Ajoutez la valeur keys dans la variable `env:COMPOSER_AUTH` (ou assurez-vous que la valeur correcte est bien présente) et vérifiez si les clés sont spécifiées de manière cohérente dans la variable au niveau du projet et de l’environnement, ainsi que dans la variable `auth.json` (s’il existe) dans la racine du projet.
 1. Mise à jour ou suppression `auth.json`, pour disposer d’un seul emplacement où la clé est configurée, si les valeurs des clés d’autorisation ne sont pas spécifiées ou ont une autre valeur.
 
 ### 1. Obtention de clés d’autorisation valides
