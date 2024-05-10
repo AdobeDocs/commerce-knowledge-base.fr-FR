@@ -4,9 +4,9 @@ description: '**Problème :** vous souhaitez fournir un accès partagé à votre
 exl-id: 9e03c031-2359-42a6-9de4-943451a16456
 feature: Cache
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e77322c04c7245538c10dfb397094eee6cfe6be9
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,19 @@ ht-degree: 0%
 1. Si la ressource spécifique est manquante, contactez le Propriétaire du compte (titulaire du compte de Principal).
 
 Si vous continuez à rencontrer des problèmes, contactez votre équipe de compte d’Adobe ou envoyez un courrier électronique à l’adresse grp-Magento-HelpCenterLoginIssues@adobe.com. Indiquez votre nom et l&#39;email associé à votre compte.
+
+## J’ai utilisé l’accès partagé et cliqué sur [!UICONTROL Support], mais lorsque j’ai ouvert un nouveau ticket, la variable [!UICONTROL Organization] liste déroulante ne s’affiche pas
+
+**Problème :** J’ai basculé vers le compte d’accès partagé, mais je ne peux pas accéder à la variable **[!UICONTROL Support tab]** (par exemple).
+
+**Cause possible :** L’accès partagé à un seul commerçant de votre compte vous a été accordé.
+
+**Solution :**
+
+1. Revenir à **[!UICONTROL My Account]**.
+1. Si un seul élément est répertorié **[!UICONTROL Shared Name]**, qui sera *organisation par défaut* que vos tickets seront ouverts sous .
+
+Si vous continuez à rencontrer des problèmes, contactez votre équipe de compte d’Adobe ou envoyez un courrier électronique à l’adresse grp-Magento-HelpCenterLoginIssues@adobe.com. Indiquez votre nom et l’adresse électronique associée à votre compte.
 
 ## J’ai utilisé l’accès partagé mais je vois toujours mes tickets au lieu de ceux partagés.
 

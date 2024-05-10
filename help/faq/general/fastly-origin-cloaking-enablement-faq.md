@@ -2,9 +2,9 @@
 title: "[!DNL Fastly] FAQ sur l’activation du verrouillage d’origine"
 description: Cette FAQ présente les questions courantes relatives à [!DNL Fastly] activation du cloaking d’origine dans Adobe Commerce (mise en oeuvre complète depuis 2021).
 exl-id: d608abe7-7d64-44ce-bea1-34b201c29113
-source-git-commit: 348a1f6e455aff9ad7c562ea20c95f27c9ee0b86
+source-git-commit: 1021a1ab81481f92e850bd49330f1742fe9a21f2
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Cette fonctionnalité a été initialement créée pour bénéficier à Adobe Co
 
 ## Dois-je demander l’activation du cloaking d’origine pour mon projet ?
 
-Non. Cette fonctionnalité aurait déjà dû être mise en oeuvre sur tous les projets cloud et tous les projets qui ont été configurés depuis 2021 l’auraient été par défaut. Cependant, vous pouvez demander que le cloaking d’origine soit désactivé pour votre projet en procédant comme suit : [envoi d’une demande d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Non. Cette fonctionnalité aurait déjà dû être mise en oeuvre sur tous les projets cloud et tous les projets qui ont été configurés depuis 2021 l’auraient été par défaut.
 
 ## Le cloaking d’origine change-t-il l’adresse IP sortante ?
 
@@ -37,8 +37,22 @@ Non, ça ne marche pas.
 
 [!DNL Fastly] ne met pas en cache les appels d’API. Par conséquent, le client doit accepter la modification. Le masquage d’origine bloque uniquement les demandes qui vont directement à l’origine, par exemple :
 
+* Production
+
 ```php
 mywebsite.com.c.abcdefghijkl.ent.magento.cloud
+```
+
+* Évaluation
+
+```php
+mcstaging2.mywebsite.com.c.abcdefghijkl.dev.ent.magento.cloud
+```
+
+* StagingX
+
+```php
+mcstagingX.mywebsite.com.c.abcdefghijkl.X.dev.ent.magento.cloud
 ```
 
 Dans cet exemple, le client pourra toujours accéder à l’API s’il change l’URL en ``mywebsite.com``:
