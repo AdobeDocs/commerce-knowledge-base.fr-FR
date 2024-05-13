@@ -3,9 +3,9 @@ title: Guide de l’utilisateur du centre d’aide Adobe Commerce
 description: Découvrez comment envoyer un ticket d’assistance au centre d’aide Adobe Commerce, fournir un accès partagé aux comptes et parcourir la base de connaissances Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: a2e68f63a53013b6f0b8bfa12838fafe2bb6e6c7
+source-git-commit: 4e8833d100b776ca3c66a96274cde2d68eb0fd10
 workflow-type: tm+mt
-source-wordcount: '3924'
+source-wordcount: '3993'
 ht-degree: 0%
 
 ---
@@ -231,6 +231,10 @@ Après avoir obtenu l’accès partagé du commerçant, vous devez effectuer les
 1. Connectez-vous à [Compte Magento sur le site magento.com](https://account.magento.com/).
 1. Dans le **Changement de compte** , sélectionnez le compte d’accès partagé.
 1. Cliquez sur le bouton **Assistance** dans le panneau de gauche. Cela permet de s’assurer que le centre d’aide Adobe Commerce est correctement configuré via l’appel SSO de Magento.com vers le centre d’aide Adobe Commerce.
+
+Si vous l’avez déjà fait, vérifiez si vous avez reçu l’autorisation *accès partagé depuis plusieurs commerçants* en cliquant sur le [[!UICONTROL Shared with me] onglet de votre compte](https://account.magento.com/grantor/manage/shared/):
+* Si seulement un [!UICONTROL Share Name] est répertorié, c’est-à-dire que vous n’avez été accordé que par un seul commerçant, *vous ne verrez pas de [!UICONTROL Organization] menu déroulant*.
+* S’il existe plusieurs [!UICONTROL Share Names], les droits du commerçant au soutien peuvent avoir expiré car leur licence a été précédemment révoquée en raison de problèmes de paiement.
 
 ### Suivi des tickets {#track-tickets}
 
