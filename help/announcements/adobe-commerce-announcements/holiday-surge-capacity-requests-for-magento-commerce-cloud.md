@@ -4,9 +4,9 @@ description: Pendant la période de pointe des ventes des fêtes (de la mi-novem
 exl-id: 9d6910bf-30bc-4117-bf7f-a0316f9506b5
 feature: Cloud, Paas
 role: Admin
-source-git-commit: dfd3f788f42677b631ffb5b3153a1c79c2cc1ca3
+source-git-commit: 357e0acb1c849079ff0fe9f53fe386f60475c7f9
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Une fois que vous avez terminé l’estimation recommandée, si votre équipe a 
 
 **Afficher l’historique de vos upgrades**
 
-Vous pouvez afficher l’historique des redimensionnements demandés dans votre [Portail de projet (interface utilisateur d’intégration)](https://devdocs.magento.com/cloud/onboarding/onboarding-tasks.html), sous **Projet** > **Services** > **Suivi de l’utilisation du processeur**.
+Vous pouvez afficher l’historique des redimensionnements demandés en demandant les informations à votre **CSM (Customer Success Manager)**.
 Les informations suivantes sont disponibles pour chaque requête de redimensionnement :
 
 * **Date de début de la taille**: date de la requête de mise à niveau.

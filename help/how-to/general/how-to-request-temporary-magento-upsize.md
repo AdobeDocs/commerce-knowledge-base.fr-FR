@@ -3,9 +3,9 @@ title: Comment demander une mise à niveau temporaire d’Adobe Commerce sur l�
 description: Si votre entreprise prévoit un événement en ligne où vous prévoyez un trafic élevé ou si vous constatez soudainement que votre site connaît un trafic élevé, vous pouvez envoyer un [ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) afin de demander une capacité cloud supplémentaire temporaire pour votre Adobe Commerce sur la boutique d’infrastructures cloud.
 exl-id: 561e2bdd-718a-45c1-8b6c-a0e3a6c8ad04
 feature: Cloud, Iaas
-source-git-commit: a445bae7f013b29cb83fc96eb26dcbfd186a4de7
+source-git-commit: 357e0acb1c849079ff0fe9f53fe386f60475c7f9
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Envoyer un [Ticket d’assistance au Centre d’assistance Adobe Commerce](/help
 
 ## Afficher l’historique de vos upgrades
 
-Vous pouvez afficher l’historique des redimensionnements demandés dans votre [Portail de projet (interface utilisateur d’intégration)](/docs/commerce-cloud-service/start/onboarding.html#cloud-project-portal-(onboarding-ui)), sous **Projet** > **Services** > **Suivi de l’utilisation du processeur**.
+Vous pouvez afficher l’historique des redimensionnements demandés en demandant les informations à votre **CSM (Customer Success Manager)**.
 Les informations suivantes sont disponibles pour chaque requête de redimensionnement :
 
 * **Date de début de la taille**: date de la requête de mise à niveau.
