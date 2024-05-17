@@ -3,9 +3,9 @@ title: Guide de l’utilisateur du centre d’aide Adobe Commerce
 description: Découvrez comment envoyer un ticket d’assistance au centre d’aide Adobe Commerce, fournir un accès partagé aux comptes et parcourir la base de connaissances Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 4e8833d100b776ca3c66a96274cde2d68eb0fd10
+source-git-commit: 86810427e8f902dc184b377257c8e86dd28f38f6
 workflow-type: tm+mt
-source-wordcount: '3993'
+source-wordcount: '3992'
 ht-degree: 0%
 
 ---
@@ -574,7 +574,7 @@ Cependant, une fois que vous avez révoqué les autorisations sur ces utilisateu
 1. Recherchez l’utilisateur à partir duquel révoquer l’accès partagé et cliquez sur **[!UICONTROL Edit]** dans la ligne de l’utilisateur (*[!UICONTROL Actions]* ).
 1. Décochez toutes les ressources sous *[!UICONTROL Grant Account Permissions]*.
 
-![image](https://git.corp.adobe.com/storage/user/38345/files/2d42fa60-559f-4697-a3cf-287c7e765405)
+![grant-account-permissions-image](assets/help-center-user-guide-grant-account-permissions-image.png){width="800"}
 
 Pour plus d’informations, reportez-vous au [Gestion de l’accès utilisateur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-from-the-project-web-interface) documentation sur notre guide Commerce on Cloud Infrastructure.
 
