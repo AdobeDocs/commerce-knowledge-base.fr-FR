@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 5e20e9d150eb8a527e530a19abd8b364f55a5aa6
+source-git-commit: 5fb41bb335b03804f38b3bd95d699f0026ca8970
 workflow-type: tm+mt
-source-wordcount: '11013'
+source-wordcount: '11021'
 ht-degree: 0%
 
 ---
@@ -914,6 +914,7 @@ ht-degree: 0%
    * Divers {#miscellaneous}
       * [Comment vérifier pourquoi [!DNL cron] a été désactivé](/help/troubleshooting/miscellaneous/how-to-check-why-cron-was-disabled.md)
       * [Erreur [!DNL opensearch] le moteur de recherche n’existe pas. Revenir à [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [Courrier électronique indiquant que le stockage à l’exportation est presque saturé](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Les index invalidés et &quot;indexer_reindex_all_invalid&quot; s’exécutent constamment](/help/troubleshooting/miscellaneous/constant-reindexing-with-cron-job-indexer-reindex-all-invalid.md)
       * [Fichier de configuration manquant ou modifié](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL erreur 60 : certificat SSL expiré](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
