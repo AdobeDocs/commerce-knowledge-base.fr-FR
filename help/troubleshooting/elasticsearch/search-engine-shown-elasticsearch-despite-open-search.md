@@ -3,9 +3,9 @@ title: '[!DNL Elasticsearch] s’affiche en tant que moteur de recherche, malgr�
 description: Cet article fournit une solution au problème où [!DNL Elasticsearch] s’affiche toujours comme moteur de recherche pour Adobe Commerce dans le cloud, même après l’installation ou la mise à niveau vers [!DNL OpenSearch].
 exl-id: cdd8a35d-da6f-46d3-b732-65626487c9bb
 feature: Install
-source-git-commit: 1a36e74807e6d32b0810416b6fb61aeca6f9be94
+source-git-commit: 1f053f76ae56edc06bfe82e55210244c8ec4b8eb
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,8 @@ Adobe Commerce sur cloud 2.4.3-p2 - 2.4.5-p6
 
 Adobe Commerce est codé en dur pour spécifier les [!DNL Elasticsearch7] comme moteur de recherche.
 
+Cela ne doit pas être confondu avec la version installée du service. L’application ne reconnaît que [!DNL Elasticsearch7] comme moteur de recherche, mais pas [!DNL OpenSearch], même s’il utilise le sous-jacent [!DNL OpenSearch] service comme moteur dans le serveur principal.
+
 ## Solution
 
 Pour vérifier si [!DNL OpenSearch] a été installé, exécutez la commande suivante :
@@ -42,6 +44,29 @@ Pour vérifier si [!DNL OpenSearch] a été installé, exécutez la commande sui
 **Méthode 1**:
 
 * Exécutez la commande suivante sur le serveur : `curl 127.0.0.1:9200`. Elle doit être renvoyée. [!DNL OpenSearch] avec sa version.
+
+Exemple :
+
+```
+$ curl 127.0.0.1:9200
+{
+  "name" : $clusterName,
+  "cluster_name" : "opensearch_stg",
+  "cluster_uuid" : $clusterUuid,
+  "version" : {
+    "distribution" : "opensearch",
+    "number" : "1.2.4",
+    "build_type" : "deb",
+    "build_hash" : "44ccdbaed5fe5a8b02d99a611857a671b6dd909d",
+    "build_date" : "2022-11-08T09:23:45.993372Z",
+    "build_snapshot" : false,
+    "lucene_version" : "8.10.1",
+    "minimum_wire_compatibility_version" : "6.8.0",
+    "minimum_index_compatibility_version" : "6.0.0-beta1"
+  },
+  "tagline" : "The OpenSearch Project: https://opensearch.org/"
+}
+```
 
 **Méthode 2**:
 
