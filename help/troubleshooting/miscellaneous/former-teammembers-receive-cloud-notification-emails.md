@@ -4,16 +4,18 @@ description: Cet article fournit une solution à Adobe Commerce concernant l’e
 exl-id: b2535f66-8aec-4ddf-9a69-60879a0a1939
 feature: Cloud, Communications, Paas
 role: Developer
-source-git-commit: 075f295c5b600fcca9fbecc5aad20b0640d900f9
+source-git-commit: 0017d43e221ef3023630f714c34aa65b368e214f
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
 
 # Les anciens membres de l’équipe reçoivent des e-mails de notification cloud Adobe Commerce
 
-Cet article fournit une solution permettant aux membres de l’équipe qui ne sont plus associés à votre projet de continuer à recevoir des notifications.
+Cet article fournit une solution pour supprimer de la liste des destinataires les adresses email de notification qui sont :
+* Anciens membres de l’équipe qui ne sont plus associés à votre projet.
+* Les membres actuels de l’équipe qui ne doivent pas recevoir les notifications.
 
 ## Problème
 
