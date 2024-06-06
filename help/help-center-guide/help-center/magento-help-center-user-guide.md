@@ -3,9 +3,9 @@ title: Guide de l’utilisateur du centre d’aide Adobe Commerce
 description: Découvrez comment envoyer un ticket d’assistance au centre d’aide Adobe Commerce, fournir un accès partagé aux comptes et parcourir la base de connaissances Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 86810427e8f902dc184b377257c8e86dd28f38f6
+source-git-commit: 751a315303be3d6435f4064cdd3fb28a0c811155
 workflow-type: tm+mt
-source-wordcount: '3992'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,16 @@ Pour envoyer un nouveau ticket d’assistance à l’aide de la page de début d
 1. Renseignez les champs.
 1. Cliquez sur **Envoyer**.
 
-You **doit se connecter** au centre d’aide à l’aide de votre compte de Magento afin d’envoyer un ticket d’assistance. Jusqu’à ce que vous soyez connecté, [la valeur **Envoyer un ticket** ne s’affiche pas.](#no-submit-link).
+You *must have* un compte sur https://account.adobe.com et https://account.magento.com , puis connectez-vous au centre d’aide à l’aide de votre compte Adobe Commerce afin d’envoyer un ticket d’assistance. Jusqu’à ce que vous soyez connecté, [la valeur **Envoyer un ticket** ne s’affiche pas.](#no-submit-link).
+
+>[!NOTE]
+>
+>Si vous disposez déjà d’un compte à l’adresse https://account.magento.com mais que vous ne pouvez pas vous connecter, il se peut que vous ne vous soyez pas inscrit à un compte à l’adresse https://account.adobe.com, qui est obligatoire depuis août 2022.
+>
+>Pour résoudre ce problème :
+>1. Créez un compte à l’adresse https://account.adobe.com à l’aide de la même adresse électronique que celle de votre ID MAG.
+>1. Accédez à https://account.magento.com pour lier votre Adobe ID à l’identifiant MAG.
+
 
 #### Page Compte Magento {#submit-ticket-magento-account-page}
 
@@ -182,7 +191,7 @@ Si vous rencontrez des problèmes lors de la connexion à votre compte ou si vou
 
 >[!NOTE]
 >
->N’envoyez pas d’e-mail si vous avez la possibilité d’envoyer un ticket, mais que vous rencontrez un problème lors de l’accès à votre projet cloud. Veuillez envoyer le ticket pour ce problème via les canaux standard.
+>Si vous rencontrez un problème lors de l’accès à votre projet cloud, envoyez la demande pour ce problème par le biais des canaux standard. N’envoyez pas d’email si vous pouvez envoyer un ticket.
 
 ### Erreur &quot;Veuillez vérifier votre adresse électronique&quot; sur la page Compte du Magento. {#verify-email-address}
 
@@ -192,13 +201,8 @@ Vous ne pourrez pas envoyer de ticket d’assistance si vous recevez le *Vérifi
 
 La solution consiste à valider votre adresse électronique :
 
-1. Cliquez sur le bouton **Valider le courrier électronique** sous le champ Email de la [Modifier les informations du compte](https://account.magento.com/customer/account/edit/) similaire à celle ci-dessous.
-
-   ![Validate_Email_Solution](assets/Validate_Email_Solution.png){width="800"}
-
-1. Cliquez sur le bouton **Valider le courrier électronique** envoie un courrier électronique à l’adresse électronique enregistrée pour ce compte de Magento avec un lien pour valider l’adresse électronique.
-1. Cliquez sur le lien de validation d’email pour valider votre email et résoudre ce problème.
-1. Si vous ne recevez pas de courrier électronique contenant un lien de validation de courrier électronique, veuillez le faire par courrier électronique. [Problèmes de connexion au centre d’aide](mailto:grp-magento-helpcenterloginissues@adobe.com) et indiquer que vous ne pouvez pas valider votre adresse électronique.
+1. Connectez-vous à https://account.adobe.com et demandez un mot de passe si nécessaire.
+1. Vérifiez votre compte d’Adobe.
 
 >[!NOTE]
 >
