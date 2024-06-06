@@ -3,7 +3,7 @@ title: Restauration de l’environnement sans instantané du cloud
 description: Cet article présente deux solutions pour restaurer un environnement sans avoir un instantané de votre environnement sur Adobe Commerce sur l’infrastructure cloud.
 exl-id: 834d13a7-3b1a-460c-9ed0-9d560105f436
 feature: Build, Cloud, Console
-source-git-commit: f3c976bd44dbc47bd5cc8076f1679d56910cfaf3
+source-git-commit: 5347e8714ef1374440f5d246100a0221e4b189fc
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 0%
@@ -44,13 +44,13 @@ Lisez les étapes détaillées ci-dessous :
 
 Nous devons désactiver Configuration Management afin qu’elle n’applique pas automatiquement les paramètres de configuration précédents lors du déploiement.
 
-Pour désactiver Configuration Management, assurez-vous que la variable `/app/etc/` ne contient pas le répertoire `config.php` (pour Adobe Commerce 2.2.x) ou `config.local.php` (pour Adobe Commerce 2.1.x).
+Pour désactiver Configuration Management, assurez-vous que la variable `/app/etc/` ne contient pas le répertoire `config.php` (pour Adobe Commerce 2.4.x) ou `config.local.php` (pour Adobe Commerce 2.1.x).
 
 Pour supprimer le fichier de configuration, procédez comme suit :
 
 1. [SSH vers votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Supprimez le fichier de configuration :
-   * Pour Adobe Commerce 2.2 :
+   * Pour Adobe Commerce 2.4 :
 
    ```php
     rm app/etc/config.php
