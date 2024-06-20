@@ -4,9 +4,9 @@ description: En savoir plus sur les [!DNL Site-Wide Analysis Tool], un outil en 
 exl-id: 7c843d55-9e2c-4b18-8859-0ebad0ae28cf
 feature: Best Practices, Saas, Support, Tools and External Services
 role: Admin
-source-git-commit: 4e327654279095f6523a7cbec77bd2dca57b2034
+source-git-commit: 580ad148cd4346868cd9892a1ae9a4d85f73edce
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -58,3 +58,7 @@ Tous les clients, quel que soit le [!DNL Site-Wide Analysis Tool] l’indice de 
 ## Comment les rapports sont-ils distribués ?
 
 [!DNL Site-Wide Analysis Tool] les rapports sont livrés automatiquement par le biais du système de ticket d’assistance d’Adobe Commerce, tous les mois ou tous les trimestres. [!DNL Site-Wide Analysis Tool] les rapports peuvent également être générés manuellement à partir de la variable [!DNL Site-Wide Analysis Tool] Tableau de bord et enregistré sur votre bureau. Ces [!DNL Site-Wide Analysis Tool] les rapports peuvent ensuite être envoyés par courrier électronique en tant que pièces jointes.
+
+>[!NOTE]
+>
+>Après l’application d’une recommandation, la génération manuelle d’un rapport ne met pas à jour les recommandations. La suppression d’un rapport peut prendre quelques jours. [!DNL Site-Wide Analysis Tool Dashboard].
