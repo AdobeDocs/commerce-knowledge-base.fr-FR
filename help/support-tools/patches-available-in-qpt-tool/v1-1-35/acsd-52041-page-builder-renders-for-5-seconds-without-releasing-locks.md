@@ -1,19 +1,19 @@
 ---
 title: "ACSD-52041 : le rendu du générateur de pages ne libère pas les verrous"
-description: Appliquez le correctif ACSD-52041 pour résoudre le problème Adobe Commerce en raison duquel le générateur de pages s’affiche pendant 5 secondes sans déclencher de verrous.
+description: Appliquez le correctif ACSD-52041 pour résoudre le problème Adobe Commerce en raison duquel le générateur de pages s’affiche pendant cinq secondes sans déclencher de verrous.
 feature: Page Builder
 role: Admin, Developer
 exl-id: f2a1fd36-2098-46a7-aa42-3a5a0014adc9
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: fc5dc9fcf610cae6f8c0a334b4ef15029c462c66
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
 # ACSD-52041 : Le rendu du générateur de pages ne libère pas les verrous
 
-Le correctif ACSD-52041 corrige le problème de rendu de Page Builder pendant 5 secondes sans relâcher de verrous. Ce correctif est disponible lorsque la variable [!DNL Quality Patches Tool (QPT)] La version 1.1.35 est installée. L’ID de correctif est ACSD-52041. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-52041 corrige le problème de rendu de Page Builder pendant cinq secondes sans relâcher de verrous. Ce correctif est disponible lorsque la variable [!DNL Quality Patches Tool (QPT)] La version 1.1.48 est installée. L’ID de correctif est ACSD-52041-v2. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -23,7 +23,7 @@ Le correctif ACSD-52041 corrige le problème de rendu de Page Builder pendant 5 
 
 **Compatible avec les versions d’Adobe Commerce :**
 
-* Adobe Commerce (toutes les méthodes de déploiement) 2.4.4 - 2.4.6-p1
+* Adobe Commerce (toutes les méthodes de déploiement) 2.4.4 - 2.4.4-p8, 2.4.5 - 2.4.5-p7, 2.4.6 - 2.4.6-p6
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Le correctif ACSD-52041 corrige le problème de rendu de Page Builder pendant 5 
 
 ## Problème
 
-Le Créateur de pages effectue un rendu pendant 5 secondes sans déclencher de verrous.
+Le Créateur de pages effectue un rendu pendant cinq secondes sans déclencher de verrous.
 
 <u>Étapes à reproduire</u>:
 
