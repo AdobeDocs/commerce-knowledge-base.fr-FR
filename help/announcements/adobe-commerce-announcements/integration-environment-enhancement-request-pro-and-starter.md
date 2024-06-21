@@ -4,9 +4,9 @@ description: Si vous êtes un client d’architecture de plan Adobe Commerce on 
 exl-id: c49b049b-efb8-412f-b27d-a89f8a758d85
 feature: Integration
 role: Admin
-source-git-commit: 43be85de953909253900d60488f76a20bac91793
+source-git-commit: fb26b71316e04de31fa6a895b87230bed5c1ca6a
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 # Demande d’amélioration de l’environnement d’intégration - Pro et Starter
 
 Si vous êtes un client d’architecture de plan Adobe Commerce on Cloud Infrastructure Pro et que vous utilisez actuellement les environnements d’intégration de taille standard, ou si vous êtes un client d’architecture de plan de démarrage de l’infrastructure cloud d’Adobe Commerce on Cloud et que vous utilisez actuellement l’environnement d’évaluation de taille standard et souhaitez plus d’énergie, vous pouvez demander une mise à niveau vers les environnements d’intégration améliorés, qui offrent environ quatre fois les performances. Cet article sépare les instructions destinées aux clients Pro des clients Starter.
+
+>[!NOTE]
+>
+> La mise à niveau vers l’intégration améliorée peut ne pas résoudre tous les problèmes de performances, car elle dépend des exigences de ressources totales de votre installation, y compris les intégrations ou les personnalisations tierces.
+>
+> Vous devez également vous assurer que vous suivez les bonnes pratiques pour obtenir les meilleures performances dans l’environnement d’intégration, et même qu’il ne s’agit pas d’une solution exhaustive. Reportez-vous à la documentation suivante pour obtenir des conseils : [Architecture Pro](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment) et [Architecture de démarrage](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment) dans le guide Commerce on Cloud Infrastructure.
 
 ## Pro
 
