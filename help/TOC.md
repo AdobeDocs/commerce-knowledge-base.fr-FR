@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 449e37e140e7df13be8d59a61a33c6298cb65f53
+source-git-commit: 366e27875cd3a764d99d62997336c11adafcb623
 workflow-type: tm+mt
-source-wordcount: '11040'
+source-wordcount: '11052'
 ht-degree: 0%
 
 ---
@@ -455,7 +455,7 @@ ht-degree: 0%
          * [ACSD-46541 : L’utilisateur administrateur ne peut pas créer de note de crédit si un article de commande est supprimé.](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46541-admin-user-cannot-create-credit-memo-if-order-item-deleted.md)
          * [ACSD-46581 : Le total estimé de la taxe n’est pas mis à jour après la sélection d’un pays dans le panier.](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46581-estimated-tax-total-is-not-updated-after-selecting-a-country-in-the-shopping-cart.md)
          * [ACSD-46618 : le widget Liste de produits affiche des prix en cache incorrects pour le client connecté](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46618-product-list-widget-shows-incorrect-cached-prices-logged-in-customer.md)
-         * [ACSD-46674 : Options personnalisées de type d’image affichées en HTML dans les emails des clients](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46674-custom-options-image-type-displayed-html.md)
+         * [ACSD-46674 : Options personnalisées de type d’image affichées en tant qu’HTML dans les emails des clients](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46674-custom-options-image-type-displayed-html.md)
          * [ACSD-46809 : l’utilisateur obtient une erreur lors de l’attribution d’un grand nombre de sources de produits](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46809-the-user-gets-an-error-when-assigning-a-large-number-of-product-sources.md)
          * [ACSD-46856 : améliore les performances lors de la mise à jour des prix de niveau](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46856-improves-performance-when-updating-tier-prices.md)
          * [ACSD-46988 : la requête de l’API de devise GraphQL renvoie des valeurs nulles.](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46988-graphql-currency-api-request-returns-null-values.md)
@@ -506,9 +506,9 @@ ht-degree: 0%
          * [ACSD-48773 : modèle d’email de points de récompense provenant d’un mauvais magasin](/help/support-tools/patches-available-in-qpt-tool/v1-1-26/acsd-48773-reward-points-email-template-taken-from-wrong-store.md)
          * [ACSD-47937 : les notifications de baisse de prix ne sont pas envoyées en raison de la mise en cache au niveau de l’application](/help/support-tools/patches-available-in-qpt-tool/v1-1-26/acsd-47937-price-drop-notifications-are-not-sent.md)
          * [ACSD-48661 : problème de validation du séparateur virgule de la limite de crédit de l’entreprise](/help/support-tools/patches-available-in-qpt-tool/v1-1-26/acsd-48661-company-credit-limit-comma-separator-validation.md)
-         * [ACSD-48587 : le widget du produit ne fonctionne pas avec les SKU contenant des caractères de HTML.](/help/support-tools/patches-available-in-qpt-tool/v1-1-26/acsd-48587-product-widget-not-working-with-html-characters.md)
+         * [ACSD-48587 : le widget du produit ne fonctionne pas avec les SKU contenant des caractères d’HTML.](/help/support-tools/patches-available-in-qpt-tool/v1-1-26/acsd-48587-product-widget-not-working-with-html-characters.md)
          * [ACSD-48212 : l’importation de produit affecte le produit à une source incorrecte](/help/support-tools/patches-available-in-qpt-tool/v1-1-26/acsd-48212-product-import-assigns-product-wrong-source.md)
-         * [ACSD-47988 : l’exportation de produits supprime les balises de HTML de la description du produit du créateur de pages](/help/support-tools/patches-available-in-qpt-tool/v1-1-26/acsd-47988-product-export-trims-html-tags.md)
+         * [ACSD-47988 : l’exportation de produits supprime les balises d’HTML de la description du produit du créateur de pages](/help/support-tools/patches-available-in-qpt-tool/v1-1-26/acsd-47988-product-export-trims-html-tags.md)
          * [ACSD-48366 : image du produit non affichée dans le modèle de courrier électronique Retour à l’inventaire](/help/support-tools/patches-available-in-qpt-tool/v1-1-26/acsd-48366-product-image-not-displayed-back-stock-email-template.md)
          * [ACSD-48417 : erreur SQL après la création d&#39;un changement de planning](/help/support-tools/patches-available-in-qpt-tool/v1-1-26/acsd-48417-sql-error-after-creating-a-schedule-change.md)
       * V1.1.27 {#v1-1-27}
@@ -1062,11 +1062,11 @@ ht-degree: 0%
       * [configuration de l’exécution:static-content:Problème deploy_version.txt](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed-version-txt-issue.md)
       * [Rediriger vers le formulaire de connexion de l’administrateur Commerce avec l’erreur &quot;Votre compte est temporairement désactivé&quot;.](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md)
       * [Les Google Analytics sont désactivés après le déploiement](/help/troubleshooting/miscellaneous/google-analytics-gets-disabled-after-deployment.md)
-      * [Dépannage du verrouillage du compte Adobe Commerce Intelligence](/help/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.md)
+      * [Dépannage du verrouillage de compte Adobe Commerce Intelligence](/help/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.md)
       * [Problèmes connus qui affectent l’installation de xdebug](/help/troubleshooting/miscellaneous/known-issues-that-affect-installation.md)
       * [Impossible de se connecter au support Adobe Commerce ou au compte cloud](/help/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.md)
       * [Conflits de dépendances des composants](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md)
-      * [Stratégies du service de renseignement Adobe Commerce](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
+      * [Stratégies de service Adobe Commerce Intelligence](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
       * [Nouveaux environnements placés en production lorsqu’ils sont poussés depuis Git](/help/troubleshooting/miscellaneous/when-pushed-from-git-environments-placed-under-production-on-magento-cloud.md)
       * [Erreur après connexion à l’administrateur Commerce](/help/troubleshooting/miscellaneous/error-after-logging-in-to-the-magento-admin.md)
       * [Système Magento Order Management (OMS) pour Adobe Commerce expire](/help/troubleshooting/miscellaneous/mom-times-out-when-trying-to-connect-to-a-local-environment.md)
@@ -1113,6 +1113,7 @@ ht-degree: 0%
       * [Échec du déploiement : aucune commande n’est définie dans l’erreur d’espace de noms &quot;cache&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [Échec du déploiement avec les clés d’accès correctes dans env:COMPOSER_AUTH ou auth.json](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Problèmes connus {#known-issues-patches-attached}
+      * [Mise à jour de sécurité disponible pour Adobe Commerce - [!DNL APSB24-40] Révision de l’inclusion d’un correctif isolé pour [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
       * [[!DNL UPS] migration de l’intégration des méthodes de livraison [!DNL SOAP] to [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [[!DNL USPS] La méthode de livraison Ground Advantage prend en charge le correctif pour AC-9182.](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
       * [Correctif de sécurité Adobe Commerce 2.4.3-p2 - 2.4.5 pour CVE-2022-35698](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-3-p2-2-4-5-security-hotfix-for-cve-2022-35698.md)
@@ -1165,7 +1166,7 @@ ht-degree: 0%
       * [Erreur Adobe Commerce 2.4.6 lors du placement de l’ordre à partir du panneau d’administration](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
       * [[!UICONTROL salesRule] problèmes de libellé lors de la mise à niveau à partir des versions &lt; 2.4.5](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)
       * [[!DNL JQuery UI] vulnérabilité de sécurité [!DNL CVE-2022-31160] correctif pour les versions 2.4.4, 2.4.5 et 2.4.6](/help/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6.md)
-      * [[!DNL FedEx] Migration de l’intégration des méthodes d’expédition de SOAP vers l’API RESTful](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
+      * [[!DNL FedEx] migration de l’intégration de la méthode d’expédition de SOAP vers l’API RESTful](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
    * Elasticsearch {#elasticsearch}
       * [Revenir à [!DNL Elasticsearch7] lorsque le moteur de recherche est défini sur [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [Problèmes Elasticsearch après la mise à niveau de l’infrastructure cloud Adobe Commerce 2.3.1+](/help/troubleshooting/elasticsearch/elasticsearch-issues-after-magento-commerce-cloud-2-3-1-upgrade.md)
@@ -1216,7 +1217,7 @@ ht-degree: 0%
    * [Allouer plus d’espace pour MySQL dans Adobe Commerce sur le cloud](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
    * [Modifier l’identifiant d’incrément d’une entité DB (commande, facture, note de crédit, etc.) sur un magasin particulier](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
    * [Configuration rapide pour le plan de démarrage sur Cloud](/help/how-to/general/set-up-fastly-for-starter-plan-on-cloud.md)
-   * [Vidéo de formation sur le renseignement Adobe Commerce : Report Builder des cohortes](/help/how-to/general/mbi-training-video-cohort-report-builder.md)
+   * [Vidéo de formation à Adobe Commerce Intelligence : Report Builder de cohortes](/help/how-to/general/mbi-training-video-cohort-report-builder.md)
    * [Mise à niveau de MariaDB 10.0 vers 10.2 pour Adobe Commerce sur le cloud](/help/how-to/general/upgrade-mariadb-10-0-to-10-2-for-magento-commerce-cloud.md)
    * [Réinitialisation de l’environnement sur Adobe Commerce sur l’infrastructure cloud](/help/how-to/general/reset-environment-on-cloud.md)
    * [MBI : réauthentification des intégrations](/help/how-to/general/mbi-reauthenticating-integrations.md)
@@ -1224,7 +1225,7 @@ ht-degree: 0%
    * [Emplacement des journaux (répertoires) pour le plan Pro : intégration, évaluation, production](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
    * [Adobe Commerce sur le cloud : vérifiez si une mise à niveau des instances de l’hôte est nécessaire.](/help/how-to/general/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.md)
    * [Bootstrap Adobe Commerce 2 dans un script sandbox](/help/how-to/general/bootstrap-magento-2-in-a-sandbox-script.md)
-   * [Vidéo de formation sur l’intelligence Adobe Commerce : Visionneuses de filtres](/help/how-to/general/mbi-training-video-filter-sets.md)
+   * [Vidéo de formation Adobe Commerce Intelligence : Visionneuses de filtres](/help/how-to/general/mbi-training-video-filter-sets.md)
    * [Comment créer un profil pour les requêtes de base de données dans Adobe Commerce sur l’infrastructure cloud](/help/how-to/general/how-to-profile-database-queries-on-cloud.md)
    * [Bloquer le trafic malveillant pour Adobe Commerce à un niveau rapide](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md)
    * [Création d’un correctif pour l’installation du compositeur Adobe Commerce à partir d’une validation GitHub](/help/how-to/general/create-a-patch-for-a-magento-2-composer-installation-from-a-github-commit.md)
@@ -1238,7 +1239,7 @@ ht-degree: 0%
    * [IMS : création et modification de colonnes calculées avancées](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
    * [Vérification de la limite d’espace disque pour Adobe Commerce sur l’infrastructure cloud](/help/how-to/general/check-disk-space-limit-for-magento-commerce-cloud.md)
    * [Certificats SSL (TLS) pour Adobe Commerce sur l’infrastructure cloud](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
-   * [Impossible d’accéder à la dernière version bêta](/help/how-to/general/cannot-access-the-latest-beta-version.md)
+   * [Impossible d’accéder à la dernière version de Beta](/help/how-to/general/cannot-access-the-latest-beta-version.md)
    * [Changement du mode d’application](/help/how-to/general/switch-the-magento-mode.md)
    * [Comment se connecter à un compte Fastly fourni avec Adobe Commerce sur l’infrastructure cloud](/help/how-to/general/accessing-the-fastly-account-provided-with-adobe-commerce-for-cloud.md)
    * [Afficher le numéro du rapport d’erreur Adobe Commerce au lieu de l’erreur Fastly 503](/help/how-to/general/display-magento-error-report-number-instead-of-fastly-503-error-on-cloud.md)
