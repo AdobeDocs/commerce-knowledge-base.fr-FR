@@ -2,9 +2,9 @@
 title: '''[!DNL Admin] Connexion impossible - la taille maximale de session autorisée a été dépassée.'
 description: Résolvez le problème lorsque vous essayez de vous connecter à votre [!DNL Admin] et le formulaire s’actualise et vous ne pouvez pas vous connecter.
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: 8718148f6d9a40c9a71484a7fbc818a626e825e1
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,6 @@ Vous pouvez définir sur une valeur supérieure à *500000* selon la taille maxi
 
 ## Lecture connexe
 
-* [Taille de session](/docs/commerce-admin/systems/security/security-session-management.html?lang=en#admin-sessions) dans le guide des systèmes d’administration.
-* [Mode d&#39;exploitation](/docs/commerce-operations/configuration-guide/cli/set-mode.html) dans le Guide de configuration.
-* [Connexions sécurisées](/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) dans le guide Commerce on Cloud Infrastructure.
+* [Taille de session](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) dans le guide des systèmes d’administration.
+* [Mode d&#39;exploitation](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) dans le Guide de configuration.
+* [Connexions sécurisées](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) dans le guide Commerce on Cloud Infrastructure.

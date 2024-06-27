@@ -4,9 +4,9 @@ description: 'Cet article fournit une solution au problème en cas d’échec du
 feature: Deploy
 role: Admin
 exl-id: a18f4213-7381-4001-a5a0-3f8db4525469
-source-git-commit: 54ef4e95cf0e3f5822ff5e5c566129fab331f784
+source-git-commit: 7804e7094fb05d1cce9747c8f96c3cfe6bc6171e
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ W:   The "https://repo.magento.com/archives/magento/module-customer-balance/mage
 
 Adobe Commerce sur l’infrastructure cloud 2.4.x
 
-## Problème  
+## Problème
 
 <u>Étapes à reproduire</u>:
 
-Tentative de déploiement. 
+Tentative de déploiement.
 
 <u>Résultats attendus</u>:
 
@@ -40,7 +40,7 @@ Déploiement réussi.
 >
 >Il s’agit d’un exemple d’erreur. Une erreur peut s’afficher, indiquant un fichier différent (selon la version d’Adobe Commerce que vous déployez).
 
-Vous ne déployez pas correctement. Une erreur telle que *Impossible de télécharger le fichier &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; (HTTP/1.1 404 Not Found)* dans le [log de déploiement](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+Vous ne déployez pas correctement. Une erreur telle que *Impossible de télécharger le fichier &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; (HTTP/1.1 404 Not Found)* dans le [log de déploiement](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 
 ### Cause
@@ -54,7 +54,7 @@ Les clés d’accès au compositeur spécifiées trouvées dans l’un de ces em
 
 Mettez à jour le `env:COMPOSER_AUTH` au niveau du projet et assurez-vous qu’il est configuré avec des clés ayant accès au code.
 
-Pour connaître les étapes, voir [Niveaux de variable](/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) dans le guide d’infrastructure de Commerce on Cloud.
+Pour connaître les étapes, voir [Niveaux de variable](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) dans le guide d’infrastructure de Commerce on Cloud.
 
 ## Lecture connexe
 
