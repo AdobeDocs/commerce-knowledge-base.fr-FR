@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 366e27875cd3a764d99d62997336c11adafcb623
+source-git-commit: c8e688b59f0d66dc32da098c185d81b14c6770bc
 workflow-type: tm+mt
-source-wordcount: '11052'
+source-wordcount: '11064'
 ht-degree: 0%
 
 ---
@@ -912,6 +912,7 @@ ht-degree: 0%
       * [Dépannage du site Adobe Commerce](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md)
       * [L’application d’un correctif réduit votre site.](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [Erreur 404 sur toutes les pages en raison d’un problème d’évaluation du contenu](/help/troubleshooting/site-down-or-unresponsive/error-404-on-all-pages-due-to-content-staging-issue.md)
+      * [Correctifs révisés pour la perte d’accès aux cartes Google sur toutes les versions d’Adobe Commerce](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Divers {#miscellaneous}
       * [Comment vérifier pourquoi [!DNL cron] a été désactivé](/help/troubleshooting/miscellaneous/how-to-check-why-cron-was-disabled.md)
       * [Erreur [!DNL opensearch] le moteur de recherche n’existe pas. Revenir à [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
