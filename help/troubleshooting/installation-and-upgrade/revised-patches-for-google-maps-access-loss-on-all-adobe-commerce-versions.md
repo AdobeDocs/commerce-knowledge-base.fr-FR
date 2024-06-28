@@ -3,9 +3,9 @@ title: Correctifs révisés pour la perte d’accès aux cartes Google sur toute
 description: '"Cet article fournit un correctif pour les marchands Adobe Commerce qui ne sont pas compatibles avec les [!DNL Google Maps] versions 3.54+.'''
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 49bc0b643c10c6597d6a905935c36251e92b18f9
+source-git-commit: 575fce2f678321ff184779895d43be90828c2ce4
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ Cet article fournit un correctif pour les marchands Adobe Commerce qui ne sont p
 
 Activé *14 juin 2024* [!DNL Google Maps] version *3,53* a atteint la fin de la vie et a été éteint par [!DNL Google].
 
-Pour plus d’informations, voir [[!DNL Google Maps] Plateforme : Mappe l’API JavaScript] (https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
+[Pour plus d’informations, voir ([!DNL Google Maps Platform: Maps JavaScript API])] (https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
 
 Adobe Commerce n’était pas compatible avec les [!DNL  Google Maps] versions 3.54+.
 
 L’incompatibilité était due à l’héritage `prototype.js script`, qui a été chargé par `lib/web/legacy-build.min.js` remplace la fonction native Array.from, ce qui entraîne un conflit direct avec [!DNL  Google Maps] API.
 
-Voir [[!DNL Google Maps: JS Best Practices]] (https://developers.google.com/maps/documentation/javascript/best-practices).
+[Voir à ce propos la section[!DNL Google Maps: JS Best Practices])] (https://developers.google.com/maps/documentation/javascript/best-practices).
 
 <u>Étapes à reproduire</u> :
 
-1. Accédez à **[!UICONTROL Content]** > **[!UICONTROL Pages]** > et cliquez sur un **[!UICONTROL New Page]**.
+1. Cliquez sur **[!UICONTROL Content]** > **[!UICONTROL Pages]** > et sélectionnez un **[!UICONTROL New Page]**.
 1. Développez le bloc de contenu et cliquez sur Modifier . **[!DNL PageBuilder]** bouton .
 1. Faites glisser le bloc de contenu de la zone Mapper depuis le **[!DNL PageBuilder]** du menu à la page.
 
