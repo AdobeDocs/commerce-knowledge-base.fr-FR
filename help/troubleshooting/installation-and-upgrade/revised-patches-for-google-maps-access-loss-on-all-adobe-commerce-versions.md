@@ -3,7 +3,7 @@ title: Correctifs révisés pour la perte d’accès aux cartes Google sur toute
 description: '"Cet article fournit un correctif pour les marchands Adobe Commerce qui ne sont pas compatibles avec les [!DNL Google Maps] versions 3.54+.'''
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 98581cc9c251976339406f80764715096321126b
+source-git-commit: cf235c2fdd7a36d7e3b126de35c51e6711cd3845
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Lorsque vous faites glisser le bloc de contenu Mapper depuis **[!DNL PageBuilder
 
 ## Solution
 
-* Tous les commerçants des versions de correctif 2.4.4, 2.4.5, 2.4.6 ou 2.2.7 doivent appliquer ces correctifs correspondants à leur version.
+* Tous les commerçants des versions de correctif 2.4.4, 2.4.5, 2.4.6 ou 2.4.7 doivent appliquer ces correctifs correspondants à leur version.
 
 ## Correctif
 
