@@ -4,9 +4,9 @@ description: Cet article fournit une solution pour modifier le moteur de recherc
 exl-id: 5b0f728c-6a8d-446d-9553-5abc3d01e516
 feature: Admin Workspace, Search, Variables
 role: Developer
-source-git-commit: e9f009cf4e072dcd9784693c10a4c16746af3cc5
+source-git-commit: 0ea7bbef7fec556f9a90151be9cf1077f5cfac45
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,14 @@ Dans cet article :
 
 ## Modification du moteur de recherche à l’aide de l’administrateur (étapes)
 
-1. Connectez-vous à l’administrateur en tant qu’administrateur.
-1. Dans la barre latérale d’administration gauche, cliquez sur **Magasins**. Ensuite, sous **Paramètres**, choisissez **Configuration**.
-1. Dans le panneau de gauche, sous **Catalogue,** select **Catalogue**.
-1. Développez l’objet **Recherche catalogue** .    ![catalog_menu.png](assets/catalog_menu.png)
-1. Accédez au **Moteur de recherche** et supprimer la sélection de la propriété **Utiliser la valeur système** .
-1. Cliquez sur le bouton **Moteur de recherche** et sélectionnez l’une des options disponibles.    ![search_engine_menu.png](assets/search_engine_menu.png)
-1. Cliquez sur **Enregistrer la configuration** dans le coin supérieur droit de la page.
+1. Connectez-vous au **[!UICONTROL Admin]** en tant qu’administrateur.
+1. Sur le côté gauche de la **[!UICONTROL Admin]** barre latérale, cliquez sur **[!UICONTROL Stores]**.
+1. Sous **[!UICONTROL Settings]**, choisissez **[!UICONTROL Configuration]**.
+1. Accédez au panneau à gauche sous **[!UICONTROL Catalog],** et choisissez **[!UICONTROL Catalog]**.
+1. Développez l’objet **[!UICONTROL Catalog Search]** .    ![catalog_menu.png](assets/catalog_menu.png)
+1. Accédez au **[!UICONTROL Search Engine]** et supprimer la sélection de la propriété **[!UICONTROL Use system value]** .
+1. Cliquez sur le bouton **[!UICONTROL Search Engine]** et sélectionnez l’une des options disponibles, comme illustré ci-dessous.    ![search_engine_menu.png](assets/search_engine_menu.png)
+1. Cliquez sur **[!UICONTROL Save Config]** dans le coin supérieur droit de la page.
 
 ## Problèmes avec Adobe Commerce sur site
 
@@ -65,10 +66,11 @@ Le moteur de recherche est un jeu de configuration global au niveau de l’appli
 
 ### Solution : définissez la vue du magasin sur la configuration par défaut
 
-1. Connectez-vous à l’administrateur en tant qu’administrateur.
-1. Dans la barre latérale d’administration gauche, cliquez sur **Magasins**. Ensuite, sous **Paramètres**, choisissez **Configuration**.
-1. Dans le coin supérieur gauche, cliquez sur le bouton **Affichage en magasin** sélecteur et choisissez *Configuration par défaut*.
-1. Cliquez sur **OK** dans la boîte de dialogue de confirmation pour approuver la modification de la vue de magasin.
+1. Connectez-vous au **[!UICONTROL Admin]** en tant qu’administrateur.
+1. Sur le côté gauche de la **[!UICONTROL Admin]** barre latérale, cliquez sur **[!UICONTROL Stores]**.
+1. Accédez à **[!UICONTROL Settings]** et choisissez **[!UICONTROL Configuration]**.
+1. Dans le coin supérieur gauche, cliquez sur le bouton **[!UICONTROL Store View]** sélecteur et choisissez **[!UICONTROL *Configuration par défaut *]**.
+1. Cliquez sur **[!UICONTROL OK]** dans la boîte de dialogue de confirmation pour approuver les modifications de la vue du magasin.
 
 ![change_store_view.png](assets/change_store_view.png)
 
