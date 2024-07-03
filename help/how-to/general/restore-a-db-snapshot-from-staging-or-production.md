@@ -2,9 +2,9 @@
 title: Restauration d’un instantané de la base de données à partir de l’évaluation ou de la production
 description: Cet article explique comment restaurer un instantané de la base de données à partir de l’évaluation ou de la production sur Adobe Commerce sur l’infrastructure cloud.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: b9e72ff8d541ad01788e5198e03abcb46a1bd11f
+source-git-commit: ad0ec2e6dc1d3e1023ad4ecda595b5c942716407
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -124,16 +124,22 @@ Les étapes sont les suivantes :
 
 1. Saisissez la commande suivante pour importer le [!DNL snapshot]:
 
-   (Pour [!DNL Production])
+   (Pour importer la sauvegarde de base de données à partir de [!DNL Production])
 
    ```sql
    zcat <cluster ID>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
    ```
 
-   (Pour [!DNL Staging])
+   (Pour importer la sauvegarde de base de données à partir de [!DNL Staging])
 
    ```sql
    zcat <cluster ID_stg>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
+   ```
+
+   (Pour importer une sauvegarde de base de données à partir de tout autre environnement)
+
+   ```sql
+   zcat <database-backup-name>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
    ```
 
 ## Lecture connexe
