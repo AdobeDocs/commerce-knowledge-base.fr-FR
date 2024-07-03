@@ -2,9 +2,10 @@
 title: Mise à niveau de MariaDB 10.4 vers 10.5 pour Adobe Commerce sur le cloud
 description: MariaDB 10.4 a atteint la fin de la prise en charge le 18 juin 2024. Cet article explique comment mettre à niveau MariaDB de 10.4 vers 10.5 pour continuer à utiliser Adobe Commerce sur l’infrastructure cloud.
 feature: Best Practices, Cloud
-source-git-commit: 401a36722b3336b47dd76bb12ace34f0bf55b8e6
+exl-id: 065840b8-28c1-4686-95fc-df3e73152845
+source-git-commit: 11f2fae3264a61413c5da1b93ef4980151a1df1e
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -39,6 +40,10 @@ Adoptez les nouveaux correctifs uniquement de sécurité (2.4.4-p9 ou 2.4.5-p8) 
    1. Dites à l’assistance que vous avez terminé la sauvegarde via votre ticket d’assistance. Pour obtenir les étapes de visualisation et de tracking des tickets, reportez-vous à la section [Guide de l’utilisateur du centre d’aide Adobe Commerce : suivi des tickets](/help/help-center-guide/help-center/magento-help-center-user-guide.md#track-tickets) dans notre base de connaissances de soutien.
    1. L’équipe d’assistance Adobe Commerce commence ensuite le processus de mise à niveau de MariaDB. Si toutes les étapes ci-dessus ont été effectuées et que la taille de la base de données est moyenne, le processus dure environ une heure. Les grandes bases de données prennent plus de temps. Une fois l&#39;upgrade effectué, vous en êtes informé via votre ticket.
 1. Désactivez le mode de maintenance. Voir [Activer ou désactiver le mode de maintenance](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) dans notre documentation destinée aux développeurs.
+
+>[!NOTE]
+>
+>Il est recommandé de créer une sauvegarde DB avant et après chaque étape de mise à niveau afin d’éliminer tout risque de perte de données. Vous pourrez ainsi revenir à une étape précédente si des problèmes surviennent à tout moment pendant la mise à niveau de la version.
 
 ## Lecture connexe
 
