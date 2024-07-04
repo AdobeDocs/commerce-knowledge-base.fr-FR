@@ -2,9 +2,9 @@
 title: Restauration d’un instantané de la base de données à partir de l’évaluation ou de la production
 description: Cet article explique comment restaurer un instantané de la base de données à partir de l’évaluation ou de la production sur Adobe Commerce sur l’infrastructure cloud.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: ad0ec2e6dc1d3e1023ad4ecda595b5c942716407
+source-git-commit: b99d78845128ca3d995cbbb5df0799449ca954e3
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Choisissez la méthode la plus adaptée à votre cas :
 
 Les étapes sont les suivantes :
 
-1. Utilisation [!DNL sFTP], accédez à l’emplacement de la base de données. [!DNL snapshot] a été placé, généralement sur le premier serveur/noeud de votre [!DNL cluster] (Par exemple : `/mnt/recovery-<recovery_id>`). REMARQUE : Si votre projet est basé sur Azure, c’est-à-dire si l’URL de votre projet ressemble à https://us-a1.magento.cloud/projects/&lt;cluster_id>, l’instantané est alors placé dans `/mnt/shared/<cluster ID>/all-databases.sql.gz` ou `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz` au lieu de .
+1. Utilisation [!DNL SFTP], accédez à l’emplacement de la base de données. [!DNL snapshot] a été placé, généralement sur le premier serveur/noeud de votre [!DNL cluster] (Par exemple : `/mnt/recovery-<recovery_id>`). REMARQUE : Si votre projet est basé sur Azure, c’est-à-dire si l’URL de votre projet ressemble à https://us-a1.magento.cloud/projects/&lt;cluster_id>, l’instantané est alors placé dans `/mnt/shared/<cluster ID>/all-databases.sql.gz` ou `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz` au lieu de .
 
    REMARQUE : Le format de l’instantané sur les projets Azure sera différent et contient d’autres bases de données qui ne peuvent pas être importées. Avant d&#39;importer l&#39;instantané, vous devez prendre des mesures supplémentaires pour extraire la base de données appropriée avant d&#39;importer la vidage.
 
@@ -134,6 +134,12 @@ Les étapes sont les suivantes :
 
    ```sql
    zcat <cluster ID_stg>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
+   ```
+
+   (Pour importer une sauvegarde de base de données à partir de tout autre environnement)
+
+   ```sql
+   zcat <database-backup-name>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
    ```
 
    (Pour importer une sauvegarde de base de données à partir de tout autre environnement)
