@@ -3,7 +3,7 @@ title: Guide de l’utilisateur du centre d’aide Adobe Commerce
 description: Découvrez comment envoyer un ticket d’assistance au centre d’aide Adobe Commerce, fournir un accès partagé aux comptes et parcourir la base de connaissances Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: bdef7c26141356727a225c0ea0a1f9a064d213db
+source-git-commit: 3e773131f6f44436fc533f74474efbe8597abb5f
 workflow-type: tm+mt
 source-wordcount: '4988'
 ht-degree: 0%
@@ -112,7 +112,7 @@ Une fois votre connexion établie, vous pouvez soumettre un cas d’assistance �
 
 Pour soumettre un nouveau cas d’assistance à l’aide de la page de démarrage de Adobe Experience League, procédez comme suit :
 
->
+>[!NOTE]
 >
 >1. Si vous appartenez à plusieurs organisations, vous devez sélectionner l’organisation appropriée dans la liste déroulante.
 >1. Pour soumettre un dossier, vous devez avoir le droit de demander de l&#39;aide. Si ce n’est pas le cas, une barre s’affiche en haut de la page pour vous informer que vous n’êtes pas un utilisateur ayant les droits d’assistance dans l’organisation.
@@ -276,6 +276,7 @@ You *must have* un compte sur https://account.adobe.com et https://account.magen
 >Si vous disposez déjà d’un compte à l’adresse https://account.magento.com mais que vous ne pouvez pas vous connecter, il se peut que vous ne vous soyez pas inscrit à un compte à l’adresse https://account.adobe.com, qui est obligatoire depuis août 2022.
 >
 >Pour résoudre ce problème :
+>
 >1. Créez un compte à l’adresse https://account.adobe.com à l’aide de la même adresse électronique que celle de votre ID MAG.
 >1. Accédez à https://account.magento.com pour lier votre Adobe ID à l’identifiant MAG.
 
