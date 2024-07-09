@@ -3,9 +3,9 @@ title: Partenaires Adobe Commerce sur les demandes d’environnement de test de 
 description: Cet article de FAQ contient des liens vers des ressources utiles pour Adobe Commerce sur les requêtes d’environnement de test de l’infrastructure cloud.
 exl-id: 3ec1cbc0-1a71-4753-8fc5-51c5f1928f12
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 8f0f7412e75e07a22e66236b88c095c698dbf23e
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ Voir [Base de connaissances du support Adobe Commerce](https://support.magento.c
 ## Où/comment les partenaires de solution ou les partenaires technologiques envoient-ils une demande d’assistance ? {#wherehow-do-solution-partners-or-tech-partners-submit-a-support-request}
 
 * Les partenaires de solution peuvent envoyer un ticket pour les problèmes liés à l’environnement de test en envoyant un courrier électronique à [SPPHelp@adobe.com](mailto:SPPHelp@adobe.com) et il sera transmis à l&#39;équipe d&#39;assistance technique partenaire.
-* Les partenaires techniques peuvent envoyer une demande d’assistance sur la page [Centre d’aide pour les Commerces Marketplace](https://marketplacesupport.magento.com/hc/en-us/requests) page.
+* Les partenaires techniques peuvent [contactez l’assistance Marketplace](mailto:commercemarketplacesupport@adobe.com).
