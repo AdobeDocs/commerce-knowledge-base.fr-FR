@@ -44,5 +44,5 @@ Le correctif a été créé pour et compatible avec Adobe Commerce sur l’infra
 
 ## Comment appliquer le correctif
 
-* Pour plus d’informations sur l’application de correctifs pour Adobe Commerce sur l’infrastructure cloud, reportez-vous à la section [Appliquer les correctifs](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans notre guide Commerce on Cloud Infrastructure.
-* Pour plus d’informations sur l’application de correctifs pour Adobe Commerce on-premise, reportez-vous à la section [Appliquer les correctifs](/docs/commerce-operations/upgrade-guide/patches/apply.html?lang=en#composer) dans notre Guide de mise à niveau vers Commerce.
+* Pour plus d’informations sur l’application de correctifs pour Adobe Commerce sur l’infrastructure cloud, reportez-vous à la section [Application de correctifs](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) du guide d’infrastructure de Commerce on Cloud.
+* Pour plus d’informations sur l’application de correctifs pour Adobe Commerce sur site, reportez-vous à la section [Application de correctifs](/docs/commerce-operations/upgrade-guide/patches/apply.html?lang=en#composer) du Guide de mise à niveau de Commerce.

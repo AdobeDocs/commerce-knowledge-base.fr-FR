@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Vérification de l’espace disque à l’aide de l’interface de ligne de commande sur Adobe Commerce dans l’environnement d’infrastructure cloud
 
-Reportez-vous à [Gestion de l’espace disque](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html) dans notre documentation destinée aux développeurs.
+Reportez-vous à l’article [Gérer l’espace disque](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html) dans notre documentation destinée aux développeurs.

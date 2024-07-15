@@ -1,6 +1,6 @@
 ---
 title: Migration des environnements d’intégration pour la région héritée de l’UE
-description: '"Afin de vous fournir la base d’infrastructure la plus à jour, nous migrons les environnements d’intégration pour tous les clients appartenant à la région "UE" héritée vers une nouvelle région de l’UE. Le reste des régions &ndash; EU-3, EU-5, EU-6 et ndash; restera le même.  '''
+description: '"Afin de vous fournir la base d’infrastructure la plus à jour, nous migrons les environnements d’intégration pour tous les clients appartenant à la région "UE" héritée vers une nouvelle région de l’UE. Le reste des régions &ndash; EU-3, EU-5, EU-6 &ndash; restera le même.  '''
 exl-id: 71c0d241-7ba8-48c3-acf1-2b28be5c80e7
 feature: Integration
 role: Admin

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-41305 : erreur sur GraphQL Query addProductsToWishlist pour les produits configurables
 
-Le correctif MDVA-41305 résout le problème d’erreur des utilisateurs lors de la requête GraphQL. `addProductsToWishlist` pour les produits configurables. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.10 est installée. L’ID de correctif est MDVA-41305. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+Le correctif MDVA-41305 résout le problème d’erreur des utilisateurs sur la requête GraphQL `addProductsToWishlist` pour les produits configurables. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10 est installé. L’ID de correctif est MDVA-41305. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
 
 ## Produits et versions concernés
 
@@ -27,13 +27,13 @@ Le correctif MDVA-41305 résout le problème d’erreur des utilisateurs lors de
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 Lorsque les utilisateurs ajoutent des produits configurables (avec/sans configuration) à la liste de souhaits par GraphQL, ils ne peuvent pas obtenir de SKU configurables ni d’options configurables en réponse.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Créez un produit configurable (avec les options Bleu, Gris et une option personnalisée).
 1. Ouvrez le front-end, connectez-vous en tant que client et créez une liste de souhaits (cochez la valeur voila_id).
@@ -50,7 +50,7 @@ Lorsque les utilisateurs ajoutent des produits configurables (avec/sans configur
      </pre>
 
 1. Définissez ce jeton pour l’autorisation du porteur.
-1. Essayer d’ajouter un produit configurable *bleu* à la liste des souhaits, en suivant les instructions suivantes :
+1. Essayez d’ajouter un produit configurable *Blue* à la liste des souhaits en suivant les instructions suivantes :
 
 <pre>
 <code class="language-graphql">
@@ -135,26 +135,26 @@ mutation {
 </code>
 </pre>
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Les utilisateurs peuvent voir un ensemble d’options de produit configurées dans la réponse spécifiée dans le payload et ajoutée à la liste des souhaits.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
-Les utilisateurs reçoivent une *Erreur interne du serveur* en réponse.
+Les utilisateurs reçoivent une *erreur interne du serveur* en réponse.
 
 ## Appliquer le correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) dans notre documentation destinée aux développeurs.
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) de notre documentation destinée aux développeurs.

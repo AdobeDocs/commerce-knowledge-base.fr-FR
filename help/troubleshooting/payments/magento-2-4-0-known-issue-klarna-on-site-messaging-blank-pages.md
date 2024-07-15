@@ -20,14 +20,14 @@ Cet article décrit un problème connu d’Adobe Commerce 2.4.0 avec le mode de 
 * Adobe Commerce on-premise 2.4.0
 * Adobe Commerce sur l’infrastructure cloud 2.4.0
 
-<u>Conditions préalables :</u> Le mode de paiement Klarna est activé.
+<u>Conditions préalables :</u> le mode de paiement Klarna est activé.
 
 <u>Étapes à reproduire :</u>
 
-1. Dans l’administrateur de Commerce, accédez à **Magasins** > **Configuration** > **Ventes** > **Méthodes de paiement** > **Klarna** > **Messagerie sur site Klarna**.
-1. Définir **Activer** to *Oui*.
-1. Laissez le champ **Thème de conception** champ vide.
-1. Enregistrer la configuration en cliquant **Enregistrer la configuration**.
+1. Dans l’administrateur Commerce, accédez à **Magasins** > **Configuration** > **Ventes** > **Méthodes de paiement** > **Klarna** > **Messagerie sur site Klarna**.
+1. Définissez **Activer** sur *Oui*.
+1. Laissez vide le champ **Thème de conception**.
+1. Enregistrez la configuration en cliquant sur **Enregistrer la configuration**.
 1. Accédez à storefront et à n’importe quelle page de produit.
 
 <u>Résultat attendu :</u>
@@ -40,4 +40,4 @@ Une page vierge s’affiche.
 
 ## Solution
 
-Si vous activez la messagerie Klarna sur site, assurez-vous toujours que la variable **Thème de conception** n’est pas vide.
+Si vous activez la messagerie Klarna sur site, assurez-vous toujours que le champ **Thème de conception** n’est pas vide.

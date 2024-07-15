@@ -1,6 +1,6 @@
 ---
-title: Le "Magento-cloud" [!DNL CLI] n’affiche pas d’environnement actif
-description: Cet article décrit un problème connu d’Adobe Commerce où "Magento-cloud" [!DNL CLI] (outil de ligne de commande) n’affiche pas d’environnement actif.
+title: Le `Magento-cloud` [!DNL CLI]  n’affiche pas d’environnement actif
+description: Cet article décrit un problème Adobe Commerce connu où "Magento-cloud" [!DNL CLI]  (outil de ligne de commande) n’affiche pas d’environnement actif.
 feature: Cloud, Integration, Configuration
 role: Developer
 exl-id: 3c1b5de2-8888-4531-9dc1-cd478e3c96fc
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# La variable `Magento-cloud` [!DNL CLI] n’affiche pas d’environnement actif
+# `Magento-cloud` [!DNL CLI] n&#39;affiche pas d&#39;environnement actif
 
 ## Problème
 
-Il existe plusieurs environnements actifs, et vous essayez d’interagir avec un environnement en exécutant un `Magento-cloud` [!DNL CLI] (outil de ligne de commande). (Par exemple : `ssh`, `db:size`, `db:sql`, etc.)
+Il existe plusieurs environnements actifs et vous tentez d’interagir avec un environnement en exécutant une commande `Magento-cloud` [!DNL CLI] (outil de ligne de commande). (Par exemple : `ssh`, `db:size`, `db:sql`, etc.)
 Toutefois, l’invite permettant de choisir l’environnement souhaité ne répertorie pas cet environnement. (Par exemple : l’environnement d’intégration)
 
 ```
@@ -34,7 +34,7 @@ L’environnement peut ne pas être disponible en raison d’un déploiement en 
 
 ## Solution
 
-Vous devrez spécifier manuellement l’environnement avec la variable `e|-environment` Indicateur.
+Vous devrez spécifier manuellement l’environnement avec l’indicateur `e|-environment`.
 
 1. Recherchez la liste des environnements actifs et notez les noms des environnements :
 

@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Erreur de déploiement : SQLSTATE[HY00]
+# Erreur de déploiement : SQLSTATE[HY000]
 
-Cet article fournit une solution au problème d’échec du déploiement en raison du SQLSTATE.[HY00] erreur.
+Cet article fournit une solution au problème d’échec du déploiement en raison de l’erreur SQLSTATE[HY000] .
 
 ## Produits et versions concernés
 

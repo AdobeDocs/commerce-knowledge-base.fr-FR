@@ -21,7 +21,7 @@ Cette rubrique aborde une solution à un problème typique que vous pouvez renco
 
 ## Problème
 
-Lors du déploiement de votre code dans plusieurs environnements, les scripts de création et de déploiement vérifient la variable `master/production/staging` est déployée pour que les Google Analytics restent activés. Lors du déploiement de branches de développement (ou enfants) de maître dans des environnements de développement (intégration), le script de déploiement désactive les Google Analytics.
+Lors du déploiement de votre code dans plusieurs environnements, les scripts de création et de déploiement vérifient que la branche `master/production/staging` est déployée pour que les Google Analytics restent activés. Lors du déploiement de branches de développement (ou enfants) de maître dans des environnements de développement (intégration), le script de déploiement désactive les Google Analytics.
 
 ## Cause
 
@@ -29,7 +29,7 @@ Il s’agit d’une fonctionnalité prévue pour s’assurer que les données et
 
 ## Solution
 
-Si vous souhaitez que les Google Analytics soient toujours activés, définissez la variable deploy. `ENABLE_GOOGLE_ANALYTICS = true`, comme décrit dans [Déploiement de variables](https://devdocs.magento.com/guides/v2.3/cloud/env/variables-deploy.html#enable_google_analytics) dans notre documentation destinée aux développeurs.
+Si vous souhaitez que les Google Analytics soient toujours activés, définissez la variable de déploiement `ENABLE_GOOGLE_ANALYTICS = true`, comme décrit dans la section [Déployer des variables](https://devdocs.magento.com/guides/v2.3/cloud/env/variables-deploy.html#enable_google_analytics) de notre documentation destinée aux développeurs.
 
 >[!NOTE]
 >

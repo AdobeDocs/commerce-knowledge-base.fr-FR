@@ -28,7 +28,8 @@ Adobe Commerce 2.4.5, dont la publication est prévue pour août 2022, contiendr
 
 ## Correctif
 
-L’ID de correctif est AC-3022 disponible dans la version 1.1.16 de l’outil Correctifs de qualité. Voir [Outil Correctifs de qualité (QPT) > Utilisation](https://devdocs.magento.com/quality-patches/usage.html) article dans notre documentation destinée aux développeurs pour plus d’informations sur l’utilisation de QPT et l’installation de correctifs.
+L’ID de correctif est AC-3022 disponible dans la version 1.1.16 de l’outil Correctifs de qualité.
+Pour plus d’informations sur l’utilisation du protocole QPT et l’installation des correctifs, reportez-vous à l’article [Outil de correctifs de qualité (QPT) > Utilisation](https://devdocs.magento.com/quality-patches/usage.html) de notre documentation destinée aux développeurs.
 
 Le correctif s’applique aux versions Adobe Commerce suivantes :
 

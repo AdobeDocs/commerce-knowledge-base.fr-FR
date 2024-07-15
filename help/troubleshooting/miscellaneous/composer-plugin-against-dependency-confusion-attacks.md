@@ -21,9 +21,9 @@ Cet article fournit des informations sur le module externe de compositeur publi�
 
 ## Problème
 
-Un cas potentiel d’attaque par confusion de dépendance active est détecté au moyen d’au moins une des dépendances directes ou indirectes définies dans la variable `composer.json` par le module externe compositeur `magento/composer-dependency-version-audit-plugin` pendant l’installation/la mise à jour du compositeur.
+Un cas potentiel d’attaque de confusion de dépendances active est détecté par au moins une des dépendances directes ou indirectes définies dans `composer.json` par le module externe de compositeur `magento/composer-dependency-version-audit-plugin` lors de l’installation/de la mise à jour du compositeur.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Lorsque vous installez/mettez à jour le compositeur, le module externe du compositeur arrête le processus s’il détecte une attaque de confusion de dépendance potentielle. Dans ce cas, l’installation/la mise à jour du compositeur échoue avec un message d’erreur similaire à :
 
@@ -47,5 +47,5 @@ Les attaquants peuvent exploiter cette vulnérabilité si un package n&#39;est d
 
 ### Attentes des développeurs d’extensions
 
-* Il n’existe aucun moyen de savoir avec certitude si le package d’un module externe, s’il provient d’un référentiel public, a été compromis ou non. Le module externe détecte lorsqu’une version publique d’un module à l’adresse packagist.org a une version plus élevée que celle disponible dans un référentiel privé, comme [repo.magento.com](https://repo.magento.com). Nous recommandons vivement aux développeurs d’extensions d’éviter de telles situations et de ne pas publier de versions plus récentes publiquement que celles disponibles via [repo.magento.com](https://repo.magento.com).
+* Il n’existe aucun moyen de savoir avec certitude si le package d’un module externe, s’il provient d’un référentiel public, a été compromis ou non. Le module externe détecte lorsqu’une version publique d’un module à l’adresse packagist.org a une version supérieure à celle disponible dans un référentiel privé comme [repo.magento.com](https://repo.magento.com). Nous recommandons fortement aux développeurs d’extensions d’éviter de telles situations et de ne pas publier de versions plus récentes publiquement que celles disponibles via [repo.magento.com](https://repo.magento.com).
 * Adobe Commerce sait que le processus de révision de Marketplace peut retarder la disponibilité des extensions, mais le processus est là pour protéger les commerçants et aider les développeurs d’extensions à trouver des erreurs accidentelles qu’ils auraient pu manquer.

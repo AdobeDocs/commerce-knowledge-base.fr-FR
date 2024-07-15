@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-51230 : le compte de carte cadeau est supprimé
 
-Le correctif ACSD-51230 corrige le problème de suppression du compte de carte-cadeau lorsque le remboursement partiel d’un produit simple est traité à partir d’une commande. Ce correctif est disponible lorsque la variable [!DNL Quality Patches Tool (QPT)] La version 1.1.32 est installée. L’ID de correctif est ACSD-51230. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-51230 corrige le problème de suppression du compte de carte-cadeau lorsque le remboursement partiel d’un produit simple est traité à partir d’une commande. Ce correctif est disponible lorsque [!DNL Quality Patches Tool (QPT)] 1.1.32 est installé. L’ID de correctif est ACSD-51230. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -27,19 +27,19 @@ Le correctif ACSD-51230 corrige le problème de suppression du compte de carte-c
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 Le compte de carte-cadeau est supprimé lorsque le remboursement partiel d’un produit simple est traité à partir d’une commande.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Créez une commande avec un *Carte cadeau* et un *produit simple* (par exemple, *add : SKU : GI000XX00XXX, SKU : PC046CP042076*) - (tout mode de paiement et de livraison fonctionne).
+1. Créez une commande avec une *Carte cadeau* et un *produit simple* (par exemple, *ajouter : SKU : GI000XX000XXX, SKU : PC046CP042076*) (tout mode de paiement et de livraison fonctionne).
 1. Facturez la commande.
 1. Accédez à **[!UICONTROL Marketing]** > **[!UICONTROL Gift Card accounts]**. Un compte est créé pour la carte-cadeau.
-1. Accédez à **[!UICONTROL Order]**, puis créez un **[!UICONTROL Credit Memo]**.
-1. Modifiez la quantité de la variable *Carte cadeau* sur 0 et mettez-le à jour. Cela créera un remboursement partiel de la valeur *produit simple*.
+1. Accédez maintenant à **[!UICONTROL Order]** et créez un **[!UICONTROL Credit Memo]**.
+1. Remplacez la quantité de la *carte-cadeau* par 0 et mettez-la à jour. Cela créera un remboursement partiel pour le *produit simple*.
 1. Cliquez sur **[!UICONTROL Refund]**.
 1. Actualisez maintenant le **[!UICONTROL Marketing]** > **[!UICONTROL Gift Card accounts]**. Le compte nouvellement créé est supprimé.
 
@@ -55,14 +55,14 @@ Le compte de carte-cadeau est supprimé et la carte-cadeau n’est pas rembours�
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le [!DNL Quality Patches Tool] guide.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce en utilisant  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le [!DNL Quality Patches Tool] guide.
+Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].

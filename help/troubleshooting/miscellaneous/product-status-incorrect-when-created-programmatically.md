@@ -26,11 +26,11 @@ Lorsque les produits du catalogue sont créés ou mis à jour par programmation 
 
 ## Cause
 
-Le problème peut apparaître en raison des restrictions d’ACL définies pour les rôles d’administrateur d’instance Adobe Commerce. Dans le cas d’une application amorcée, il n’y aura aucune session d’administration initialisée avec les paramètres ACL appropriés. Cela provoquerait l’échec des validations dans la variable `Magento_AdminGws` , responsable de la vérification des autorisations pour ces actions.
+Le problème peut apparaître en raison des restrictions d’ACL définies pour les rôles d’administrateur d’instance Adobe Commerce. Dans le cas d’une application amorcée, il n’y aura aucune session d’administration initialisée avec les paramètres ACL appropriés. Cela provoquerait l’échec des validations dans le module `Magento_AdminGws`, qui est responsable du contrôle des autorisations sur ces actions.
 
 ## Solution pour un état de produit incorrect
 
-Définissez une préférence d’identifiant dynamique pour la variable `Magento\Framework\Authorization\PolicyInterface`, comme décrit dans la section [ObjectManager > Mises à jour de produit programmatiques](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/object-manager.html#programmatic-product-updates) dans notre documentation destinée aux développeurs.
+Définissez une préférence d’ID dynamique pour `Magento\Framework\Authorization\PolicyInterface`, comme décrit dans la rubrique [ObjectManager>Mises à jour de produit programmatiques](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/object-manager.html#programmatic-product-updates) de notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 

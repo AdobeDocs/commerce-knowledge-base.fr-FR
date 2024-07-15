@@ -27,11 +27,11 @@ En fonction de vos normes de sécurité interne, vous pouvez choisir de résoudr
 
 * Fournissez à votre fournisseur tiers un accès à l’environnement cloud. Articles connexes :
 
-   * [Guide de l’utilisateur du centre d’aide Adobe Commerce > ACCÈS PARTAGÉ : OCTROYER DES DROITS À D’AUTRES UTILISATEURS POUR ACCÉDER À VOTRE COMPTE](/help/help-center-guide/help-center/magento-help-center-user-guide.md#shared-access) dans notre base de connaissances de soutien.
+   * [Guide de l’utilisateur du centre d’aide Adobe Commerce > ACCÈS PARTAGÉ : OCTROYEZ DES PRIVILÈGES À D’AUTRES UTILISATEURS POUR ACCÉDER À VOTRE COMPTE](/help/help-center-guide/help-center/magento-help-center-user-guide.md#shared-access) DANS notre base de connaissances d’assistance.
    * [Partage de votre compte Commerce](https://docs.magento.com/user-guide/magento/magento-account-share.html) dans notre guide d’utilisation.
 
-* Créez un vidage de base de données (ou autorisez le fournisseur tiers à le faire). Vous pouvez le faire à l’aide de l’interface de ligne de commande ou dans l’administrateur Commerce. Ce fichier de vidage DB obscurcit les données des clients, de sorte que tout ce qu’ils obtiennent est le code et les SKU du produit, etc., pas de données propriétaires/clients. À titre de référence, utilisez [Partage de votre compte Commerce] (/help/how-to/general/create-database-dump-on-cloud.md) dans notre base de connaissances du support.
-* Une fois le test terminé, veillez à révoquer l’accès partagé à votre environnement cloud, comme décrit dans la section [Guide de l’utilisateur du centre d’aide Adobe Commerce > Révoquer (supprimer l’accès partagé)](/help/help-center-guide/help-center/magento-help-center-user-guide.md#revoke-shared-access) dans notre base de connaissances de soutien.
+* Créez un vidage de base de données (ou autorisez le fournisseur tiers à le faire). Vous pouvez le faire à l’aide de l’interface de ligne de commande ou dans l’administrateur Commerce. Ce fichier de vidage DB obscurcit les données des clients, de sorte que tout ce qu’ils obtiennent est le code et les SKU du produit, etc., pas de données propriétaires/clients. À titre de référence, utilisez [Partage de votre compte Commerce] (/help/how-to/general/create-database-dump-on-cloud.md) dans notre base de connaissances d’assistance.
+* Une fois le test terminé, veillez à révoquer l’accès partagé à votre environnement cloud, comme décrit dans le [Guide de l’utilisateur du centre d’aide Adobe Commerce > Révoquer (supprimer l’accès partagé)](/help/help-center-guide/help-center/magento-help-center-user-guide.md#revoke-shared-access) de notre base de connaissances d’assistance.
 
 ## Tester les bonnes pratiques
 
@@ -39,4 +39,4 @@ La pratique standard consiste à résoudre les problèmes dans un environnement 
 
 ## Lecture connexe
 
-* [Bonnes pratiques relatives à l’utilisation d’extensions tierces dans Adobe Commerce](https://support.magento.com/hc/en-us/articles/360042361152-Best-Practices-for-using-third-party-extensions-in-Magento) dans notre base de connaissances de soutien.
+* [Bonnes pratiques pour l’utilisation d’extensions tierces dans Adobe Commerce](https://support.magento.com/hc/en-us/articles/360042361152-Best-Practices-for-using-third-party-extensions-in-Magento) dans notre base de connaissances d’assistance.

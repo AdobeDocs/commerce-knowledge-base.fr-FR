@@ -41,23 +41,23 @@ Il existe deux types de cache dans Adobe Commerce :
 
 ### Vérifier si le cache est invalidé
 
-Vous trouverez des informations concernant les types de cache invalidés dans la section `<install_directory>/var/log/debug.log` fichier .
+Vous trouverez des informations concernant les types de cache invalidés dans le fichier `<install_directory>/var/log/debug.log`.
 
 Pour ce faire :
 
-1. Ouvrir `<install_directory>/var/log/debug.log`
-1. Recherchez &quot; *cache\_invalidate* &quot;.
+1. Ouvrez `<install_directory>/var/log/debug.log`
+1. Recherchez le message &quot;*cache\_invalidate*&quot;.
 1. Vérifiez ensuite la balise spécifiée. Il indique le cache qui a été vidé. Vous pouvez rencontrer des problèmes en raison du cache invalidé si vous voyez une balise sans identifiant d’entité spécifique spécifié, par exemple :
-   * `cat_p` : signifie cache de produit de catalogue.
+   * `cat_p` : signifie cache de produit catalogue.
    * `cat_c` - cache de catégorie de catalogue.
-   * `FPC` : cache de la page entière.
+   * `FPC` - cache de page complète.
    * `CONFIG` - cache de configuration.
 
-   Le fait que l&#39;un d&#39;entre eux ait été vidé ralentirait la réaction du site. Si la balise contient un identifiant d’entité, par exemple : `category_product_1258`, cela indique le cache d’un produit ou d’une catégorie spécifique, etc. Le vidage du cache d’un produit ou d’une catégorie spécifique n’entraînait pas une diminution significative du temps de réponse.
+   Le fait que l&#39;un d&#39;entre eux ait été vidé ralentirait la réaction du site. Si la balise contient un ID d’entité, par exemple `category_product_1258`, cela indique le cache d’un produit ou d’une catégorie spécifique, etc. Le vidage du cache d’un produit ou d’une catégorie spécifique n’entraînait pas une diminution significative du temps de réponse.
 
-Voici un exemple d’un `debug.log` contenant des enregistrements sur la variable `cat_p` et `category_product_15044` mémoire cache ayant été vidée :
+Voici un exemple d&#39;un `debug.log` contenant des enregistrements sur le cache `cat_p` et `category_product_15044` qui ont été vidés :
 
-![exemple de contenu debug.log](assets/debug_log_sample.png)
+![exemple du contenu debug.log](assets/debug_log_sample.png)
 
 En règle générale, le cache est invalidé en raison des éléments suivants :
 
@@ -67,4 +67,4 @@ En règle générale, le cache est invalidé en raison des éléments suivants :
 ## Recommandation
 
 1. Évitez de vider le cache de l’interface de ligne de commande de Commerce.
-1. Configuration des indexeurs sur **Mise à jour par planification** au lieu de **Mise à jour en mode d’enregistrement** car ce dernier déclenche une réindexation complète. À titre de référence, voir [Gestion des indexeurs > Configuration des indexeurs](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) dans notre documentation destinée aux développeurs.
+1. Configurez les indexeurs sur **Mettre à jour par planning** au lieu de **Mettre à jour en mode d’enregistrement** car ce dernier déclenche une réindexation complète. À titre de référence, voir [Gestion des indexeurs > Configuration des indexeurs](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) dans notre documentation destinée aux développeurs.

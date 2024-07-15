@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # MDVA-28993 : recherche partielle Elasticsearch, &quot;le minimum doit correspondre&quot; et correctif pour le problème &quot;recherches avec trait d’union&quot;
 
-Le correctif MDVA-28993 met en oeuvre la fonctionnalité &quot;Minimum should match&quot; (Minimum doit correspondre) et la recherche partielle pour le moteur Elasticsearch, et résout les problèmes liés aux tirets dans les requêtes de recherche. Le correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) v.1.0.6 est installé.
+Le correctif MDVA-28993 met en oeuvre la fonctionnalité &quot;Minimum should match&quot; (Minimum doit correspondre) et la recherche partielle pour le moteur Elasticsearch, et résout les problèmes liés aux tirets dans les requêtes de recherche. Le correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) v.1.0.6 est installé.
 
 ## Produits et versions concernés
 
 **Le correctif est créé pour la version Adobe Commerce :** Adobe Commerce sur l’infrastructure cloud 2.3.4
 
-**Compatible avec les versions d’Adobe Commerce :** Adobe Commerce sur site/Adobe Commerce sur l’infrastructure cloud 2.3.4-2.3.5-p2
+**Compatible avec les versions d’Adobe Commerce :** Adobe Commerce on-office/Adobe Commerce sur l’infrastructure cloud 2.3.4-2.3.5-p2
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 
 ## Problème
@@ -48,7 +48,7 @@ Renvoie tous les SKU commençant par &quot;WS&quot;.
 
 Le correctif MDVA-28993 contient les correctifs et améliorations suivants :
 
-* met en oeuvre la nouvelle fonctionnalité &quot;Minimum doit correspondre&quot; et la recherche partielle pour le moteur Elasticsearch. Pour plus d’informations sur la configuration, voir [Configuration de la recherche catalogue](https://docs.magento.com/user-guide/catalog/search-configuration.html#step-4-configure-minimum-terms-to-match) dans notre guide d’utilisation.
+* met en oeuvre la nouvelle fonctionnalité &quot;Minimum doit correspondre&quot; et la recherche partielle pour le moteur Elasticsearch. Pour plus d’informations sur la configuration, reportez-vous à la section [Configuration de la recherche catalogue](https://docs.magento.com/user-guide/catalog/search-configuration.html#step-4-configure-minimum-terms-to-match) de notre guide d’utilisation.
 * recherche partielle d’Elasticsearch
 * corrige le problème &quot;recherches avec trait d’union&quot; décrit ci-dessus.
 
@@ -57,13 +57,13 @@ Le correctif MDVA-28993 contient les correctifs et améliorations suivants :
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
 Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) .

@@ -13,54 +13,54 @@ ht-degree: 0%
 
 # Résolution des problèmes d’accès partagé
 
-## Je ne vois pas le [!UICONTROL Shared Access] onglet de ma page Compte Commerce (Propriétaire du compte)
+## Je ne vois pas l’onglet [!UICONTROL Shared Access] sur ma page Compte Commerce (Propriétaire du compte)
 
-**Problème :** Vous souhaitez fournir un accès partagé à votre collègue de confiance, mais vous ne pouvez pas localiser la variable **[!UICONTROL Shared Access]** sur votre page Compte Commerce .
+**Problème :** Vous souhaitez fournir un accès partagé à votre collègue de confiance, mais vous ne pouvez pas localiser l’onglet **[!UICONTROL Shared Access]** sur votre page de compte Commerce.
 
-**Cause possible :** Les autorisations, nécessaires pour accorder un accès partagé, n’ont pas été associées à votre compte Commerce.
+**Cause possible :** Les autorisations nécessaires pour accorder un accès partagé n’ont pas été associées à votre compte Commerce.
 
-**Solution :** Si vous êtes propriétaire du compte (titulaire du compte de Principal), contactez votre équipe de compte d’Adobe ou [créer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed). Indiquez votre nom et l&#39;email associé à votre compte.
+**Solution :** Si vous êtes le propriétaire du compte (titulaire du compte de Principal), contactez votre équipe de compte d’Adobe ou [créez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed). Indiquez votre nom et l&#39;email associé à votre compte.
 
 >[!NOTE]
 >
->Il est même possible que le propriétaire d’un compte ne dispose pas de la variable **[!UICONTROL Shared Access]** sur leur compte. Cependant, seul le propriétaire du compte (titulaire du compte de Principal) disposant des privilèges appropriés peut fournir un accès partagé à d’autres utilisateurs. Pour plus d&#39;informations sur l&#39;accès partagé, voir [ACCÈS PARTAGÉ : OCTROYEZ DES DROITS À D’AUTRES UTILISATEURS POUR ACCÉDER À VOTRE COMPTE.](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#shared-access) dans le Guide de l’utilisateur du centre d’aide Adobe Commerce.
+>Il est même possible que le propriétaire d&#39;un compte ne dispose pas de l&#39;onglet **[!UICONTROL Shared Access]** sur son compte. Cependant, seul le propriétaire du compte (titulaire du compte de Principal) disposant des privilèges appropriés peut fournir un accès partagé à d’autres utilisateurs. Pour plus d’informations sur l’accès partagé, reportez-vous à la section [ACCÈS PARTAGÉ : OCTROI DE DROITS À D’AUTRES UTILISATEURS POUR ACCÉDER À VOTRE COMPTE](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#shared-access) du Guide de l’utilisateur du centre d’aide Adobe Commerce.
 
 ## J’ai utilisé l’accès partagé mais je ne peux pas accéder à une ressource particulière
 
-**Problème :** Je suis passé au compte Accès partagé, mais je ne peux pas accéder à la variable **[!UICONTROL Support tab]** (par exemple).
+**Problème :** je suis passé au compte Accès partagé mais je ne peux pas accéder à **[!UICONTROL Support tab]** (par exemple).
 
 **Cause possible :** Les droits de l’assistance ont expiré ou vous n’avez pas reçu l’accès partagé à l’assistance.
 
 **Solution :**
 
-1. Revenir à **[!UICONTROL My Account]**.
-1. Cliquez ensuite sur le bouton **[!UICONTROL Shared with me]** .
-1. Cliquez sur le bouton **[!UICONTROL Shared Access]** vous rencontrez des problèmes et examinez les ressources auxquelles vous avez accès.
+1. Revenez à **[!UICONTROL My Account]**.
+1. Cliquez ensuite sur l’onglet **[!UICONTROL Shared with me]** .
+1. Cliquez sur le compte **[!UICONTROL Shared Access]** avec lequel vous rencontrez des problèmes et examinez les ressources auxquelles vous avez accès.
 1. Si la ressource spécifique est manquante, contactez le Propriétaire du compte (titulaire du compte de Principal).
 
 Si vous continuez à rencontrer des problèmes, contactez votre équipe de compte d’Adobe ou envoyez un courrier électronique à l’adresse grp-Magento-HelpCenterLoginIssues@adobe.com. Indiquez votre nom et l&#39;email associé à votre compte.
 
-## J’ai utilisé l’accès partagé et cliqué sur [!UICONTROL Support], mais lorsque j’ai ouvert un nouveau ticket, la variable [!UICONTROL Organization] liste déroulante ne s’affiche pas
+## J&#39;ai utilisé l&#39;accès partagé et cliqué sur [!UICONTROL Support], mais lorsque j&#39;ai ouvert un nouveau ticket, la liste déroulante [!UICONTROL Organization] ne s&#39;affiche pas.
 
-**Problème :** J’ai basculé vers le compte d’accès partagé, mais je ne peux pas accéder à la variable **[!UICONTROL Support tab]** (par exemple).
+**Problème :** je suis passé au compte d’accès partagé, mais je ne peux pas accéder à **[!UICONTROL Support tab]** (par exemple).
 
-**Cause possible :** L’accès partagé à un seul commerçant de votre compte vous a été accordé.
+**Cause possible :** Vous n’avez reçu qu’un accès partagé à un seul commerçant de votre compte.
 
 **Solution :**
 
-1. Revenir à **[!UICONTROL My Account]**.
-1. Si un seul élément est répertorié **[!UICONTROL Shared Name]**, qui sera *organisation par défaut* que vos tickets seront ouverts sous .
+1. Revenez à **[!UICONTROL My Account]**.
+1. S’il ne répertorie qu’un **[!UICONTROL Shared Name]**, il s’agira de l’ *organisation par défaut* sous laquelle vos tickets seront ouverts.
 
 Si vous continuez à rencontrer des problèmes, contactez votre équipe de compte d’Adobe ou envoyez un courrier électronique à l’adresse grp-Magento-HelpCenterLoginIssues@adobe.com. Indiquez votre nom et l’adresse électronique associée à votre compte.
 
 ## J’ai utilisé l’accès partagé mais je vois toujours mes tickets au lieu de ceux partagés.
 
-**Problème :** J’accède au centre d’aide à l’aide d’un accès partagé, mais je ne vois toujours que les tickets appartenant à mon propre compte (organisation). La page Compte Commerce indique que j’utilise le compte de l’organisation qui m’a fourni un accès partagé, mais les tickets de l’organisation ne s’affichent toujours pas.
+**Problème :** J’accède au centre d’aide en utilisant l’accès partagé, mais je ne vois toujours que les tickets appartenant à mon propre compte (organisation). La page Compte Commerce indique que j’utilise le compte de l’organisation qui m’a fourni un accès partagé, mais les tickets de l’organisation ne s’affichent toujours pas.
 
 **Cause possible :** Votre navigateur utilise le contenu mis en cache du centre d’aide.
 
-**Solution :** Effacez la mémoire cache de votre navigateur et accédez à nouveau au centre d’aide (assurez-vous d’avoir activé l’accès partagé sur votre page Compte Commerce).
+**Solution :** videz le cache de votre navigateur et accédez à nouveau au centre d’aide (assurez-vous que vous avez activé l’accès partagé sur votre page de compte Commerce).
 
 ## Lecture connexe
 
-[Formulaire d’envoi de ticket : le marchand ne s’affiche pas dans la liste déroulante Organisation .](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed) dans notre base de connaissances de soutien.
+[Formulaire d’envoi de ticket : le commerçant ne s’affiche pas dans la liste déroulante Organisation ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed) de notre base de connaissances de support.

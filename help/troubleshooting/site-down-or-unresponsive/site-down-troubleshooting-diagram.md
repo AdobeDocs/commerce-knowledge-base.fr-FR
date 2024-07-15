@@ -15,4 +15,4 @@ ht-degree: 0%
 
 Ce diagramme de dépannage des sites Adobe Commerce peut être utilisé pour identifier et résoudre les causes d’un site.
 
-![image de diagramme de dépannage du site](assets/updated_site_down_1.jpeg)
+![site de résolution des problèmes image de diagramme](assets/updated_site_down_1.jpeg)

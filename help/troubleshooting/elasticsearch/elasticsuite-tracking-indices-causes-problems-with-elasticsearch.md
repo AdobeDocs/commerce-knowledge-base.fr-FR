@@ -28,10 +28,10 @@ Les versions d’ElasticSuite antérieures à la version 2.9.8 / 2.10.7 stockent
 Si le module externe tiers d’ElasticSuite est installé, vous pouvez rencontrer des problèmes de mémoire Elasticsearch et le service Elasticsearch peut se bloquer suite aux index de suivi d’ElasticSuite. Les symptômes incluent :
 
 * Elasticsearch se bloque sans erreur de mémoire.
-* Lors de l’exécution d’une commande d’intégrité `curl -m1 localhost:9200/_cluster/health?pretty` ou `curl -m1 elasticsearch.internal:9200/_cluster/health?pretty` (pour les comptes de démarrage) il y a des centaines ou des milliers `unassigned_shards`
+* Lors de l&#39;exécution d&#39;une commande d&#39;intégrité `curl -m1 localhost:9200/_cluster/health?pretty` ou `curl -m1 elasticsearch.internal:9200/_cluster/health?pretty` (pour les comptes de démarrage), il y a des centaines ou des milliers de `unassigned_shards`
 * Les performances des Elasticsearch ou des sites sont fortement dégradées.
-* *&quot;Aucun noeud vivant trouvé dans votre grappe&quot;* dans déploiement Elasticsearch ou erreurs de journal.
-* *&quot;Rejet de la mise à jour du mapping vers [&lt;\*>_ tracking_log_event _&lt;\*>]&quot;* dans les erreurs de déploiement ou de journal.
+* *&quot;Aucun noeud vivant trouvé dans votre grappe&quot;* dans les erreurs de déploiement ou de journal des Elasticsearch.
+* *&quot;Rejet de la mise à jour du mappage à [&lt;\*>_ tracking_log_event _&lt;\*>]&quot;* dans les erreurs de déploiement ou de journal.
 
 ## Cause
 
@@ -43,7 +43,7 @@ ElasticSuite dispose d’une nouvelle fonctionnalité qui crée des index de sui
 
 Une fois que vous avez mis à niveau le module externe ElasticSuite vers une version supérieure à 2.8.0, vous pouvez configurer un nettoyage périodique des index.
 
-Accédez à **Magasins** > **Configuration** > **Tracking** > **Configuration globale** > **Retard de rétention**
+Accédez à **Magasins** > **Configuration** > **Tracking** > **Configuration globale** > **Délai de rétention**
 
 La période de conservation par défaut est de 365 jours. Vous pouvez la réduire à 30 ou 15 jours.
 
@@ -53,7 +53,7 @@ Une fois que vous avez mis à niveau le module externe ElasticSuite vers la vers
 
 Vous pouvez tout de même réduire la période de rétention :
 
-Accédez à **Magasins** > **Configuration** > **Tracking** > **Configuration globale** > **Retard de rétention**
+Accédez à **Magasins** > **Configuration** > **Tracking** > **Configuration globale** > **Délai de rétention**
 
 La période de conservation par défaut est de 12 mois (12 indices seront générés). Vous pouvez le réduire à 3 ou 6 mois.
 

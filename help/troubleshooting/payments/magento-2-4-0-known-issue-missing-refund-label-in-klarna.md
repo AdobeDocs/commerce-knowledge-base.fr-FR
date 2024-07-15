@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Problème connu d&#39;Adobe Commerce 2.4.0 : absence de l&#39;étiquette &quot;Remboursement&quot; en larna
 
-Cet article fournit une solution à un problème connu dans Admin pour un problème manquant **Remboursement** libellé dans Klarna VBE (Fournisseur groupé Extension). Lorsqu&#39;un remboursement est effectué sur le portail de Klarna, la variable **Remboursement** Le libellé n&#39;est pas affiché en regard du Produit groupé qui a été remboursé.
+Cet article fournit une solution à un problème connu dans Admin pour une étiquette **Refund** manquante dans Klarna VBE (fournisseur Bundled Extension). Lorsque le portail Klarna effectue un remboursement, l&#39;étiquette **Remboursement** n&#39;est pas affichée en regard du Produit groupé qui a été remboursé.
 
 ## Produits et versions concernés
 
@@ -29,29 +29,29 @@ Cet article fournit une solution à un problème connu dans Admin pour un probl�
 
 <u>Étapes à reproduire</u>
 
-1. Accédez à Adobe Commerce front-end et ajoutez un produit groupé à **panier**.
+1. Accédez à Adobe Commerce frontend et ajoutez un produit groupé à **cart**.
 1. Accédez à passage en caisse.
-1. Saisie des informations sur le consommateur dans le passage en caisse et clic **Suivant**.
-1. Sélectionner **Option KP** et cliquez sur **Passer commande**.
-1. Accédez à **Administration** > **Ventes** > **Commandes**.
+1. Saisissez les informations sur les consommateurs dans le passage en caisse et cliquez sur **Suivant**.
+1. Sélectionnez **Option KP** et cliquez sur **Passer commande**.
+1. Allez à **Admin** > **Ventes** > **Commandes**.
 1. Ouvrez la commande.
 1. Créer une facture pour le produit.
-1. Accédez à **Facturations** > **Sélectionner une facture** > Cliquez sur **Crédit** > Cliquez sur **Remboursement** (Sauf **Remboursement hors ligne**).
+1. Accédez à **Factures** > **Sélectionner une facture** > Cliquez sur **Note de crédit** > Cliquez sur **Remboursement** (et non **Remboursement hors ligne**).
 1. Accédez au portail Klarna.
 1. Ouvrez la commande.
-1. La variable **Remboursement** est présent.
+1. L&#39;étiquette **Refund** est présente.
 
 <u>Résultat attendu</u>
 
-Sur le portail Klarna, la **Remboursement** le libellé est affiché en regard du produit qui a été remboursé.
+Sur le portail Klarna, l&#39;étiquette **Refund** s&#39;affiche en regard du produit qui a été remboursé.
 
 <u>Résultat réel</u>
 
-Sur le portail Klarna, la **Remboursement** le libellé n’est pas affiché en regard du produit qui a été remboursé.
+Sur le portail Klarna, l&#39;étiquette **Refund** ne s&#39;affiche pas en regard du produit qui a été remboursé.
 
 ## Solution
 
-La solution à ce problème consiste à ignorer l’élément manquant **Remboursement** sur le portail Klarna pour les produits en vrac remboursés. Le remboursement a eu lieu, même si la variable **Remboursement** ne s’affichait pas. Le problème devrait être résolu dans Adobe Commerce 2.4.1, dont la sortie est prévue au 4e trimestre 2020.
+La solution à ce problème est d&#39;ignorer l&#39;étiquette **Refund** manquante dans le portail Klarna pour les produits groupés remboursés. Le remboursement s&#39;est produit, même si l&#39;étiquette **Refund** ne s&#39;affichait pas. Le problème devrait être résolu dans Adobe Commerce 2.4.1, dont la sortie est prévue au 4e trimestre 2020.
 
 ## Lectures connexes dans notre base de connaissances de support :
 

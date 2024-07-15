@@ -23,25 +23,25 @@ Cet article fournit une solution de contournement pour les extensions manquantes
 
 Lorsque vous achetez des extensions via le Commerce Marketplace, vous ne pouvez pas les installer à l’aide de l’Extension Manager Adobe Commerce principale. Lorsque vous ajoutez vos clés d’accès et que vous effectuez une synchronisation avec Marketplace, l’Extension Manager n’affiche aucune extension.
 
-La variable **Solution** pour le problème, utilisez la ligne de commande installation d’Adobe Commerce comme indiqué dans la section [Installation de l’interface de ligne de commande générale](https://devdocs.magento.com/extensions/install/) dans notre documentation destinée aux développeurs.
+La **solution** pour le problème consiste à utiliser la ligne de commande Installation d’Adobe Commerce, comme indiqué dans la [Installation générale de l’interface de ligne de commande](https://devdocs.magento.com/extensions/install/) de notre documentation destinée aux développeurs.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Achetez une extension via le Commerce Marketplace.
 1. Ajoutez les clés d’accès de votre extension et synchronisez-les avec Marketplace.
 1. Accédez à la section Extension Manager de l’administrateur.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 L’extension apparaît dans la section Extension Manager de l’administrateur Commerce.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
-**Aucune extension n’apparaît dans la section Extension Manager de l’administrateur Commerce, comme illustré ci-dessous :**
+**Aucune extension n&#39;apparaît dans la section Extension Manager de l&#39;administrateur Commerce, comme dans l&#39;image ci-dessous :**
 
 
 ![KB-607_Image_1.png](assets/KB-607_Image_1.png)
 
 ## Solution
 
-Utilisez l’installation Adobe Commerce en ligne de commande, comme indiqué dans la section [Installation de l’interface de ligne de commande générale](https://devdocs.magento.com/extensions/install/) dans notre documentation destinée aux développeurs.
+Utilisez la ligne de commande Installation d’Adobe Commerce comme illustré dans la [Installation générale de l’interface de ligne de commande](https://devdocs.magento.com/extensions/install/) de notre documentation destinée aux développeurs.

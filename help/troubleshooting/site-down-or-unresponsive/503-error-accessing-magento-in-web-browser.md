@@ -23,7 +23,7 @@ Adobe Commerce 2.3.x
 
 <u>Étapes à reproduire</u>
 
-(Conditions préalables : assurez-vous que le magasin ne se trouve pas dans [mode de maintenance](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-mode.html#config-mode-show)).
+(Conditions préalables : assurez-vous que le magasin n’est pas en [mode de maintenance](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-mode.html#config-mode-show)).
 
 Accédez à votre administrateur Commerce ou à votre vitrine dans un navigateur web.
 
@@ -33,17 +33,17 @@ La page se charge.
 
 <u>Résultat réel</u>
 
-Vous obtenez l’erreur HTTP 503 (Service non disponible). Apache `error.log` inclut le message suivant :
+Vous obtenez l’erreur HTTP 503 (Service non disponible). L&#39;Apache `error.log` comprend le message suivant :
 
-*Commande non valide &quot;Order&quot;, peut-être mal orthographiée ou définie par un module non inclus dans la configuration du serveur.*
+*Commande non valide &#39;Order&#39;, peut-être mal orthographiée ou définie par un module non inclus dans la configuration du serveur.*
 
 ## Cause {#details}
 
-Module de compatibilité Apache 2.4 `mod_access_compat` est désactivée, ce qui entraîne une réécriture de l’URL Adobe Commerce qui ne fonctionne pas correctement.
+Le module de compatibilité Apache 2.4 `mod_access_compat` est désactivé, ce qui entraîne une réécriture de l’URL Adobe Commerce qui ne fonctionne pas correctement.
 
 ## Solution {#suggested-solution}
 
-Activez la variable `mod_access_compat` Module Apache et redémarrez Apache, en exécutant ce qui suit en tant qu’utilisateur avec les privilèges &quot;root&quot; :
+Activez le module Apache `mod_access_compat` et redémarrez Apache en exécutant les opérations suivantes en tant qu’utilisateur avec les privilèges &#39;root&#39; :
 
 ```bash
 a2enmod access_compat
@@ -80,5 +80,5 @@ apache2
 
 * [Documentation Apache sur mod\_access\_compat](https://httpd.apache.org/docs/current/mod/mod_access_compat.html)
 * [Documentation Apache sur mod\_authz\_host](https://httpd.apache.org/docs/current/mod/mod_authz_host.html)
-* [Ordre, autorisation et refus dans le guide de définition Apache](https://docstore.mik.ua/orelly/linux/apache/ch05_06.htm)
+* [Commande, autorisation, refus du Guide de définition Apache](https://docstore.mik.ua/orelly/linux/apache/ch05_06.htm)
 * [askubuntu.com](https://askubuntu.com/questions/335228/changes-in-apache-config-between-12-04-2-and-12-04-3-lts)

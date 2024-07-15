@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Vérification du journal de déploiement si l’interface utilisateur de cloud comporte *fragment de journal* error
+# Vérification du journal de déploiement si l’interface utilisateur de cloud comporte une erreur *d’extrait de journal*
 
-Cet article fournit une solution au problème où l’interface utilisateur d’Adobe Commerce sur l’infrastructure cloud affiche la variable *fragment de journal car il était trop long* message d’erreur lors de la tentative d’affichage du journal de déploiement sur l’interface utilisateur du projet cloud. (Ne s’applique pas à la variable [Console Adobe Commerce Cloud](https://console.adobecommerce.com/).)
+Cet article fournit une solution au problème où l’interface utilisateur d’Adobe Commerce sur l’infrastructure cloud affiche le *fragment de journal car il s’agissait d’un message d’erreur* trop long lors de la tentative d’affichage du journal de déploiement sur l’interface utilisateur du projet cloud. (Ne s’applique pas à la [console Adobe Commerce Cloud](https://console.adobecommerce.com/).)
 
 ## Produits concernés
 
@@ -21,20 +21,20 @@ Adobe Commerce sur l’infrastructure cloud (toutes les versions prises en charg
 
 ## Problème
 
-Lors de la tentative d’affichage du journal de déploiement sur l’interface utilisateur du projet cloud, Adobe Commerce sur l’interface utilisateur de l’infrastructure cloud affiche le message d’erreur suivant : *fragment de journal car il était trop long*.
+Lorsque vous essayez d’afficher le journal de déploiement sur l’interface utilisateur du projet cloud, Adobe Commerce sur l’interface utilisateur de l’infrastructure cloud affiche le message d’erreur suivant : *le journal a été extrait car il était trop long*.
 
 ## Étapes à reproduire
 
-1. Accédez à l’URL du projet et cliquez sur le **État** du déploiement en question.
-1. Si le journal est trop long pour s’afficher dans l’interface utilisateur, le message d’erreur s’affiche : *fragment de journal car il était trop long*.
+1. Accédez à l’URL du projet et cliquez sur le **Statut** du déploiement en question.
+1. Si le journal est trop long pour s’afficher dans l’interface utilisateur, le message d’erreur s’affiche : *journal extrait car trop long*.
 
 ## Cause
 
-Notez que le journal affiché dans l’interface utilisateur ne doit pas être traité comme la source de vérité, en particulier si vous constatez que le site ne répond pas ou ne fonctionne pas correctement une fois le déploiement répertorié avec l’état Réussite. Vous devez également vérifier avec les journaux sur le serveur. Voir [Affichage et gestion des journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) dans notre documentation destinée aux développeurs.
+Notez que le journal affiché dans l’interface utilisateur ne doit pas être traité comme la source de vérité, en particulier si vous constatez que le site ne répond pas ou ne fonctionne pas correctement une fois le déploiement répertorié avec l’état Réussite. Vous devez également vérifier avec les journaux sur le serveur. Reportez-vous à la section [Affichage et gestion des journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) dans notre documentation destinée aux développeurs.
 
 ## Solution
 
-1. Assurez-vous que vous avez [Interface de ligne de commande de Magento Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html) installé dans votre environnement local.
+1. Assurez-vous que l’[interface de ligne de commande de Magento Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html) est installé dans votre environnement local.
 1. Exécutez la commande suivante :
 
    ```bash

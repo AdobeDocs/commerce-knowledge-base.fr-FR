@@ -19,12 +19,12 @@ Cet article fournit un correctif pour les problèmes de vérification de l’ét
 
 La manière dont vous résolvez le problème dépend de la configuration d’un utilisateur ou de deux utilisateurs :
 
-* *Un utilisateur* signifie que vous vous connectez au serveur Adobe Commerce en tant qu’utilisateur qui exécute également le serveur web. Ce type de configuration est courant dans les environnements d’hébergement partagés.
-* *Deux utilisateurs* signifie généralement que *cannot* connectez-vous en tant qu’utilisateur du serveur web ou basculez-vous vers . En règle générale, vous vous connectez en tant qu’utilisateur unique et exécutez le serveur web en tant qu’utilisateur différent. Cela est typique dans l’hébergement privé ou si vous disposez de votre propre serveur.
+* *Un utilisateur* signifie que vous vous connectez au serveur Adobe Commerce en tant que même utilisateur qui exécute également le serveur web. Ce type de configuration est courant dans les environnements d’hébergement partagés.
+* *Deux utilisateurs* signifie généralement que vous *ne pouvez pas* vous connecter en tant qu’utilisateur du serveur web ou vous y connecter. En règle générale, vous vous connectez en tant qu’utilisateur unique et exécutez le serveur web en tant qu’utilisateur différent. Cela est typique dans l’hébergement privé ou si vous disposez de votre propre serveur.
 
 ## Résolution d’un utilisateur
 
-Si vous disposez d’un accès en ligne de commande, saisissez la commande suivante en supposant qu’Adobe Commerce soit installé dans `/var/www/html/magento2`:
+Si vous disposez d’un accès en ligne de commande, saisissez la commande suivante en supposant qu’Adobe Commerce soit installé dans `/var/www/html/magento2` :
 
 ```bash
 $ cd /var/www/html/magento2 && find var vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var vendor pub/static pub/media app/etc -type d -exec chmod g+w {} + && chmod u+x bin/magento
@@ -34,13 +34,13 @@ Si vous ne disposez pas d’un accès en ligne de commande, utilisez un client F
 
 ## Résolution de deux utilisateurs
 
-Si vous le souhaitez, saisissez toutes les commandes sur une seule ligne, en supposant qu’Adobe Commerce soit installé dans `/var/www/html/magento2` et le nom du groupe de serveurs web est `apache`:
+Si vous le souhaitez, saisissez toutes les commandes sur une seule ligne, en supposant qu’Adobe Commerce soit installé dans `/var/www/html/magento2` et que le nom du groupe de serveurs web soit `apache` :
 
 ```bash
 $ cd /var/www/html/magento2 && find var vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :apache . && chmod u+x bin/magento
 ```
 
-Dans le système de fichiers d’événement, les autorisations sont définies de manière incorrecte et ne peuvent pas être modifiées par le propriétaire du système de fichiers Adobe Commerce. Vous pouvez saisir la commande en tant qu’utilisateur avec la variable `root` privilèges :
+Dans le système de fichiers d’événements, les autorisations sont définies de manière incorrecte et ne peuvent pas être modifiées par le propriétaire du système de fichiers Adobe Commerce. Vous pouvez saisir la commande en tant qu’utilisateur disposant des privilèges `root` :
 
 ```bash
 $ cd /var/www/html/magento2 && sudo find var vendor

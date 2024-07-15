@@ -22,7 +22,7 @@ Cet article fournit un correctif pour le problème connu d’une remise de bon d
 
 ## Problème
 
-<u>Conditions préalables</u>: un coupon de réduction est créé et des règles de validation empêchant le traitement automatique des bons de commande existent.
+<u>Conditions préalables</u> : création d’un coupon de réduction et des règles de validation qui empêchent le traitement automatique des commandes.
 
 <u>Étapes à reproduire :</u>
 
@@ -49,8 +49,8 @@ Le correctif est joint à cet article. Pour le télécharger, faites défiler l�
 
 [B2B-709-composer.patch](assets/B2B-709-composer.patch.zip)
 
-Le correctif peut également être téléchargé dans les deux `.git` et `.composer` , formats sur [Téléchargements Adobe Commerce](https://magento.com/tech-resources/download) page, sous **Correctifs** dans la navigation en colonne de gauche. Recherchez le correctif XXX.
+Le correctif peut également être téléchargé dans les formats `.git` et `.composer` de la page [Téléchargements Adobe Commerce](https://magento.com/tech-resources/download), sous **Correctifs** dans le volet de navigation de la colonne de gauche. Recherchez le correctif XXX.
 
 ## Comment appliquer le correctif
 
-Voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) pour obtenir des instructions.
+Pour obtenir des instructions, reportez-vous à la section [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.

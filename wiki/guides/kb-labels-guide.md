@@ -8,7 +8,7 @@ ht-degree: 0%
 # Guide sur les étiquettes de base de connaissances
 
 Ce document fournit des instructions pour l’ajout d’étiquettes aux articles dans la base de connaissances de prise en charge d’Adobe Commerce.
-Les étiquettes (également appelées balises) améliorent l’expérience de recherche dans [Base de connaissances du support Adobe Commerce](https://support.magento.com/hc/en-us).
+Les étiquettes (également appelées balises) améliorent l’expérience de recherche dans la [base de connaissances de prise en charge d’Adobe Commerce](https://support.magento.com/hc/en-us).
 Les libellés sont ajoutés dans le champ &quot;libellés&quot; de la section des métadonnées d’un fichier d’article, séparés par des virgules, sans espace entre une virgule et le libellé suivant.
 Voir [../../.github/CONTRIBUTING.md#metadata] pour plus d’informations.
 
@@ -84,7 +84,8 @@ Consultez les sections ci-dessous pour obtenir des recommandations détaillées 
 
 * Ajoutez un libellé distinct pour chaque version d’Adobe Commerce. Exemple : &quot;2.3.7&quot;
 * N’ajoutez pas de libellés pour les intervalles.
-Autrement dit, si 2.3.0-2.3.5 est concerné, ajoutez : &quot;2.3.0,2.3.1,2.3.2,2.3.2-p2,2.3.3,2.3-p1,2.3.4,2.3.4-p2,2.3.5-p1,2.3.5-p2&quot; NOT &quot;2.2.2&quot; 3.0-2.3.5&quot;
+En d’autres termes, si 2.3.0-2.3.5 est concerné, ajoutez : &quot;2.3.0,2.3.1,2.3.2,2.3.2-p2,2.3.3,2.3-p1,2.3.4,2.3.4-p2,2.3.5-p1,2.3.5-p2&quot;
+NOT &quot;2.3.0-2.3.5&quot;
 * N’ajoutez pas d’étiquettes avec .x. Exemple : &quot;2.3.x&quot;
 
 ## Étiquettes pour le type de contenu (selon la catégorie)

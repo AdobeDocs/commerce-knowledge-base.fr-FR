@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Modifier l’identifiant d’incrément d’une entité DB (commande, facture, note de crédit, etc.) sur un magasin particulier
 
-Cet article explique comment modifier l’identifiant d’incrément d’une entité de base de données Adobe Commerce (DB) (commande, facture, note de crédit, etc.) sur un magasin Adobe Commerce spécifique à l’aide de la variable `ALTER TABLE` Instruction SQL.
+Cet article explique comment modifier l’identifiant d’incrément d’une entité de base de données Adobe Commerce (DB) (commande, facture, note de crédit, etc.) sur un magasin Adobe Commerce particulier à l’aide de l’instruction SQL `ALTER TABLE`.
 
 ## Versions affectées
 
 * Adobe Commerce sur site : 2.x.x
 * Adobe Commerce sur l’infrastructure cloud : 2.x.x
-* MySQL : any [version prise en charge](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements-tech.html#database)
+* MySQL : toute [version prise en charge](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements-tech.html#database)
 
 ## Quand devez-vous modifier l’ID d’incrément (cas) ?
 
@@ -29,12 +29,12 @@ Vous devrez peut-être modifier l’ID d’incrément pour les nouvelles entité
 
 >[!NOTE]
 >
->Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par identifiant de facture dans les préférences de réception des paiements de PayPal. Voir [Demande de rejet de la passerelle PayPal - problème de facture en double](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md) dans notre base de connaissances de soutien.
+>Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par identifiant de facture dans les préférences de réception des paiements de PayPal. Voir [Demande de refus de la passerelle PayPal - problème de facture en double](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md) dans notre base de connaissances d’assistance.
 
 ## Étapes préalables
 
 1. Recherchez les magasins et les entités pour lesquels le nouvel ID d’incrément doit être modifié.
-1. [Connexion](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html) à votre base de données MySQL. Pour Adobe Commerce sur l’infrastructure cloud, vous devez d’abord [SSH vers votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [Connectez-vous](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html) à votre base de données MySQL. Pour Adobe Commerce sur l’infrastructure cloud, vous devez d’abord [SSH dans votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Vérifiez la valeur auto\_incrément actuelle de la table de séquence d’entités à l’aide de la requête suivante :
 
 ```sql
@@ -43,17 +43,17 @@ SHOW TABLE STATUS FROM `{database_name}` WHERE `name` LIKE 'sequence_{entity_typ
 
 ### Exemple
 
-Si vous cochez une auto-incrémentation pour une commande sur le magasin avec *ID=1*, le nom de la table serait :
+Si vous cochez une auto-incrémentation pour une commande sur le magasin avec *ID=1*, le nom de la table sera :
 
 ```sql
 'sequence_order_1'
 ```
 
-Si la valeur de la variable `auto_increment` column is *1234*, la commande suivante placée dans le magasin avec *ID=1* aura la variable *ID \#100001234*.
+Si la valeur de la colonne `auto_increment` est *1234*, l’ordre suivant placé dans le magasin avec *ID=1* aura le *ID \#100001234*.
 
 ### Documentation connexe
 
-* [Configuration d’une connexion de base de données MySQL distante](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html) dans notre documentation destinée aux développeurs.
+* [Configurez une connexion à base de données MySQL distante](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html) dans notre documentation destinée aux développeurs.
 
 ## Mettre à jour l’entité pour modifier l’ID d’incrément
 
@@ -75,16 +75,16 @@ Après avoir exécuté la requête suivante :
 ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 ```
 
-commande suivante placée dans le magasin avec *ID=1* aura la variable *ID \#100002000*.
+la commande suivante placée dans le magasin avec *ID=1* aura le *ID \#100002000*.
 
 ## Autres étapes recommandées dans l’environnement de production (Cloud)
 
-Avant d’exécuter la fonction `ALTER TABLE` sur l’environnement de production d’Adobe Commerce sur l’infrastructure cloud, il est vivement recommandé d’effectuer les étapes suivantes :
+Avant d’exécuter la requête `ALTER TABLE` sur l’environnement de production d’Adobe Commerce sur l’infrastructure cloud, nous vous recommandons vivement d’effectuer les étapes suivantes :
 
 * Testez l’ensemble de la procédure de modification de l’identifiant d’incrément dans votre environnement d’évaluation.
-* [Créer](/help/how-to/general/create-database-dump-on-cloud.md) sauvegarde de la base de données pour restaurer la base de données de production en cas d’échec
+* [Créez](/help/how-to/general/create-database-dump-on-cloud.md) une sauvegarde de base de données pour restaurer la base de données de production en cas d’échec
 
 ## Documentation connexe
 
-* [Création d’un vidage de base de données sur Cloud](/help/how-to/general/create-database-dump-on-cloud.md) dans notre base de connaissances de soutien.
-* [SSH vers votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) dans notre documentation destinée aux développeurs.
+* [Créez un vidage de base de données sur Cloud](/help/how-to/general/create-database-dump-on-cloud.md) dans notre base de connaissances de support.
+* [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) dans notre documentation destinée aux développeurs.

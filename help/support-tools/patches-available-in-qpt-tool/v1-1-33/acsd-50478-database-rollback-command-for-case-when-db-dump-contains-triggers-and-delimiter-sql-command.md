@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # ACSD-50478 : problème JS pour l’action de restauration dans la commande de restauration de la grille de sauvegardes et de la base de données
 
-Le correctif ACSD-50478 corrige le problème JS pour l’action de restauration dans la grille de sauvegardes et la commande de restauration de la base de données dans le cas où le vidage DB contient des déclencheurs et une *délimiteur* Commande SQL. Ce correctif est disponible lorsque la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.33 est installée. L’ID de correctif est ACSD-50478. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-50478 corrige le problème JS pour l’action de restauration dans la grille de sauvegardes et la commande de restauration de la base de données dans le cas où le vidage DB contient des déclencheurs et une commande SQL *délimiteur*. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.33 est installé. L’ID de correctif est ACSD-50478. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -25,15 +25,15 @@ Le correctif ACSD-50478 corrige le problème JS pour l’action de restauration 
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Problème JS pour l’action de restauration dans la grille Sauvegardes et la commande de restauration de la base de données dans le cas où le vidage DB contient des déclencheurs et une *délimiteur* Commande SQL.
+Problème JS pour l’action de restauration dans la grille Sauvegardes et la commande de restauration de la base de données pour un cas où le vidage DB contient des déclencheurs et une commande SQL *délimiteur*.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Définir les indexeurs sur [!UICONTROL Update on Schedule] afin que les déclencheurs soient créés dans la base de données.
+1. Définissez les indexeurs sur le mode [!UICONTROL Update on Schedule] afin que les déclencheurs soient créés dans la base de données.
 1. Activez la fonctionnalité de sauvegarde à partir de la ligne de commande :
 
    `bin/magento config:set system/backup/functionality_enabled 1`
@@ -59,11 +59,11 @@ Problème JS pour l’action de restauration dans la grille Sauvegardes et la co
    Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'delimiter' at line 1, query was: delimiter ;;
    ```
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 La restauration de la base de données a réussi à partir de la ligne de commande et de l’administrateur.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Vous avez observé les erreurs mentionnées aux étapes 4 et 6.
 
@@ -71,14 +71,14 @@ Vous avez observé les erreurs mentionnées aux étapes 4 et 6.
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le [!DNL Quality Patches Tool] guide.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce en utilisant  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le [!DNL Quality Patches Tool] guide.
+Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].

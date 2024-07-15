@@ -30,7 +30,7 @@ Pour l’architecture de plan d’Adobe Commerce on Cloud Infrastructure Pro, vo
 
 ## Pour synchroniser des fichiers d’un environnement à un autre
 
-Pour synchroniser des fichiers d’un environnement à un autre, utilisez la méthode `rsync` . Pour plus d’informations, voir [Déployez du code et migrez des fichiers et des données statiques > Migrer des fichiers à l’aide de la synchronisation](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html#migrate-files-using-rsync) dans notre documentation destinée aux développeurs.
+Pour synchroniser les fichiers d&#39;un environnement à un autre, utilisez la commande `rsync`. Pour plus d’informations, voir [Déploiement du code et migration des fichiers et données statiques > Migration des fichiers à l’aide de rsync](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html#migrate-files-using-rsync) dans notre documentation destinée aux développeurs.
 
 >[!NOTE]
 >

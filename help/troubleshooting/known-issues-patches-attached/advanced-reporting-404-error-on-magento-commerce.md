@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Advanced Reporting] Erreur 404 sur Adobe Commerce'
-description: Cet article fournit un correctif pour le problème Adobe Commerce lorsqu’un commerçant reçoit une erreur 404 lorsqu’il tente d’accéder à [[!DNL Advanced Reporting]](https://experienceleague.adobe.com/docs/commerce-admin/config/general/advanced-reporting.html). Une fois ce correctif installé, les utilisateurs pourront accéder à [!DNL Advanced Reporting].
+title: '[!DNL Advanced Reporting] 404 error on Adobe Commerce'
+description: Cet article fournit un correctif pour le problème Adobe Commerce lorsqu’un commerçant obtient une erreur 404 lorsqu’il tente d’accéder à [[!DNL Advanced Reporting]](https://experienceleague.adobe.com/docs/commerce-admin/config/general/advanced-reporting.html). Une fois ce correctif installé, les utilisateurs pourront accéder à  [!DNL Advanced Reporting].
 exl-id: bac61704-44fe-4bd2-b342-af90219231ef
 feature: Configuration
 role: Developer
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # [!DNL Advanced Reporting] Erreur 404 sur Adobe Commerce
 
-Cet article fournit un correctif pour le problème Adobe Commerce lorsqu’un commerçant reçoit une erreur 404 lorsqu’il tente d’accéder à [[!DNL Advanced Reporting]](https://experienceleague.adobe.com/docs/commerce-admin/config/general/advanced-reporting.html). Une fois ce correctif installé, les utilisateurs pourront accéder à [!DNL Advanced Reporting].
+Cet article fournit un correctif pour le problème Adobe Commerce lorsqu’un commerçant obtient une erreur 404 lorsqu’il tente d’accéder à [[!DNL Advanced Reporting]](https://experienceleague.adobe.com/docs/commerce-admin/config/general/advanced-reporting.html). Une fois ce correctif installé, les utilisateurs pourront accéder à [!DNL Advanced Reporting].
 
 Pour vérifier si ce correctif peut résoudre ce problème, consultez d’abord les journaux à l’aide de la commande suivante :
 
 `zgrep analytics_collect_data var/log/support_report.log var/log/support_report.log.1.gz`
 
-Si vous voyez le `Not valid cipher` , appliquez le correctif joint.
+Si l’erreur `Not valid cipher` s’affiche, appliquez le correctif joint.
 
 ## Produits et versions concernés
 
@@ -27,11 +27,11 @@ Adobe Commerce 2.2.6
 
 ## Problème
 
-Un commerçant reçoit une erreur 404 lorsqu’il tente d’accéder à [!DNL Advanced Reporting].
+Un commerçant reçoit une erreur 404 lorsqu&#39;il tente d&#39;accéder à [!DNL Advanced Reporting].
 
 ## Solution
 
-Pour résoudre le problème, appliquez le correctif joint à cet article. Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’article et cliquez sur le nom du fichier, ou cliquez sur le lien suivant : [Télécharger MDVA-18980\_EE\_2.2.6\_COMPOSER\_v1](assets/MDVA-18980_EE_2.2.6_COMPOSER_v1.patch.zip)
+Pour résoudre le problème, appliquez le correctif joint à cet article. Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’article et cliquez sur le nom du fichier ou cliquez sur le lien suivant : [Télécharger MDVA-18980\_EE\_2.2.6\_COMPOSER\_v1](assets/MDVA-18980_EE_2.2.6_COMPOSER_v1.patch.zip)
 
 ## Comment appliquer le correctif
 

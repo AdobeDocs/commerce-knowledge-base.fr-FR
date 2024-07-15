@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-51700 : erreur lors du changement d’affichage des magasins sur la page de modification des produits téléchargeable
 
-Le correctif ACSD-51700 corrige le problème d’erreur qui se produit lors du changement de vues de magasin sur une page de modification de produit téléchargeable dans l’administrateur. Ce correctif est disponible lorsque la variable [!DNL Quality Patches Tool (QPT)] La version 1.1.33 est installée. L’ID de correctif est ACSD-51700. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-51700 corrige le problème d’erreur qui se produit lors du changement de vues de magasin sur une page de modification de produit téléchargeable dans l’administrateur. Ce correctif est disponible lorsque [!DNL Quality Patches Tool (QPT)] 1.1.33 est installé. L’ID de correctif est ACSD-51700. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -29,18 +29,18 @@ Le correctif ACSD-51700 corrige le problème d’erreur qui se produit lors du c
 
 Une erreur se produit lors du changement de vues de magasin sur une page de modification de produit téléchargeable dans l’administrateur.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Créer un produit téléchargeable avec un nom, [!DNL SKU], et le prix. N’ajoutez aucun lien et enregistrez le produit.
+1. Créez un produit téléchargeable avec le nom, le [!DNL SKU] et le prix. N’ajoutez aucun lien et enregistrez le produit.
 1. Basculez de toutes les vues de magasin vers la vue de magasin par défaut.
 1. Créez un lien pour le produit téléchargeable et enregistrez-le.
 1. Passez de la vue de magasin par défaut à toutes les vues de magasin.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Les produits liés sont visibles.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 L&#39;erreur suivante s&#39;affiche :
 
@@ -50,14 +50,14 @@ L&#39;erreur suivante s&#39;affiche :
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le [!DNL Quality Patches Tool] guide.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce en utilisant  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le [!DNL Quality Patches Tool] guide.
+Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].

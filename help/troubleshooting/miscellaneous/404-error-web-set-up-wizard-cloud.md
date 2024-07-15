@@ -23,15 +23,15 @@ Cet article fournit une solution pour lorsque vous rencontrez une erreur 404 int
 
 Lors de l’installation d’une extension à l’aide de l’assistant de configuration web, une page 404 s’affiche.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Le marchand clique sur l’assistant de configuration web pour installer un nouveau module/nouvelle intégration.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 Installations du module/de l’intégration.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 Une erreur 404 s’affiche.
 
@@ -43,8 +43,8 @@ L’assistant de configuration web a été désactivé pour toutes les instances
 
 Cette fonctionnalité est désactivée sur Adobe Commerce sur l’infrastructure cloud.
 
-Voir [Installation, gestion et mise à niveau des extensions](https://devdocs.magento.com/cloud/howtos/install-components.html) dans notre documentation destinée aux développeurs pour plus d’informations sur l’exécution de mises à jour ou l’installation de modules externes pour Adobe Commerce sur notre infrastructure cloud.
-Voir [Installation de démarrage rapide](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) dans notre documentation destinée aux développeurs pour plus d’informations sur l’exécution de mises à jour ou l’installation de modules externes pour Adobe Commerce sur site.
+Pour plus d’informations sur l’exécution de mises à jour ou l’installation de modules externes pour Adobe Commerce sur notre infrastructure cloud, voir [Installation, gestion et mise à niveau d’extensions](https://devdocs.magento.com/cloud/howtos/install-components.html) dans la documentation destinée aux développeurs.
+Pour plus d’informations sur l’exécution des mises à jour ou l’installation de modules externes pour Adobe Commerce sur site, voir [Installation rapide](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) dans la documentation destinée aux développeurs.
 
 ## Lecture connexe
 

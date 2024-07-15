@@ -15,35 +15,35 @@ ht-degree: 0%
 
 Le correctif MDVA-22026 corrige le problème de l’impossibilité d’importer des images de produit à partir d’une URL externe.
 
-Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.0.20 est installée. L’ID de correctif est MDVA-22026. Veuillez noter que le problème a été corrigé dans Adobe Commerce version 2.3.4.
+Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.20 est installé. L’ID de correctif est MDVA-22026. Veuillez noter que le problème a été corrigé dans Adobe Commerce version 2.3.4.
 
 ## Produits et versions concernés
 
-**Le correctif est créé pour la version Adobe Commerce :** Adobe Commerce sur l’infrastructure cloud 2.3.2-p2
+**Le correctif est créé pour la version d’Adobe Commerce :** Adobe Commerce sur l’infrastructure cloud 2.3.2-p2
 
 **Compatible avec les versions d’Adobe Commerce :** Adobe Commerce sur site et Adobe Commerce sur l’infrastructure cloud 2.3.2-2.3.3-p1
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Dans Admin, accédez à **Système** > **Importer**.
-1. Définir **Type d’entité** = *Produits*.
-1. Définir **Comportement d’importation** = *Ajouter/Mettre à jour*.
-1. Définir **Nombre d’erreurs autorisées** = *10 000*.
+1. Définissez **Type d’entité** = *Produits*.
+1. Définissez **Comportement d’importation** = *Ajouter/Mettre à jour*.
+1. Définissez **Nombre d’erreurs autorisé** = *10000*.
 1. Sélectionnez le fichier à importer.
 1. Cliquez sur le bouton **Vérifier les données** (qui doit valider le fichier).
-1. Cliquez sur le bouton **Importer** bouton .
+1. Cliquez sur le bouton **Importer** .
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Importation réussie des produits à partir de fichiers CSV, y compris des images à partir d’URL externes, comme prévu.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Échec de l’importation des produits à partir de fichiers CSV, y compris des images provenant d’URL externes, et réception d’une erreur similaire :
 
@@ -62,7 +62,7 @@ Pour appliquer des correctifs individuels, utilisez les liens suivants en foncti
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
-* [Correctif du problème Adobe Commerce avec l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
+* [Outil de correctifs de qualité publié : un nouvel outil pour appliquer des correctifs de qualité](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
+* [Vérifiez le correctif pour le problème Adobe Commerce avec l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
 
 Pour plus d’informations sur les autres correctifs disponibles dans l’outil QPT, reportez-vous à la section [Correctifs disponibles dans l’outil QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) .

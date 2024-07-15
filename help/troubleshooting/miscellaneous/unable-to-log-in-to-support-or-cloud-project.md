@@ -17,27 +17,27 @@ Cet article fournit une solution pour lorsque vous avez du mal à vous connecter
 
 ## Produits et versions concernés
 
-Adobe Commerce (toutes les méthodes de déploiement) toutes [versions prises en charge](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce (toutes les méthodes de déploiement) toutes les [versions prises en charge](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problème
 
-Lorsque vous [https://account.magento.com/customer/account/login/](https://account.magento.com/customer/account/login/) ou [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) vous remarquerez peut-être qu’il existe désormais un formulaire de connexion unifié et que vous ne pouvez plus saisir vos informations d’identification comme vous l’avez fait précédemment.
+Lorsque vous accédez à [https://account.magento.com/customer/account/login/](https://account.magento.com/customer/account/login/) ou [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user), vous pouvez remarquer qu’il existe désormais un formulaire de connexion unifié et que vous ne pouvez plus saisir vos informations d’identification comme vous l’avez fait précédemment.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Essayez de vous connecter à votre compte Commerce.
 
 ![adobe-login-one](assets/adobe-login-one.png)
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 Connexion réussie.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 Redirigez-vous vers une page pour vous connecter à l’aide d’un compte Adobe et les informations d’identification ne fonctionnent pas.
 
-![adobe-login-deux](assets/adobe-login-two.png)
+![adobe-login-two](assets/adobe-login-two.png)
 
 
 ## Cause
@@ -51,7 +51,7 @@ Vous pouvez vous connecter au compte avec :
 - Un compte d’entreprise/personnel d’Adobe existant.
 - Si vous ne disposez pas d’un compte d’Adobe, créez-en un avec la même adresse électronique.
 
-Pour les étapes, voir [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html) dans Adobe Experience League.
+Pour les étapes, reportez-vous à [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html) dans Adobe Experience League.
 
 ## Lecture connexe
 

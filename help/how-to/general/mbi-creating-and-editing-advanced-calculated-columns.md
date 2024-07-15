@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # IMS : création et modification de colonnes calculées avancées
 
-[Utilisateurs administrateurs](https://docs.magento.com/mbi/administrator/user-management/user-management.html) Vous pouvez créer et modifier certaines colonnes calculées dans le Gestionnaire de Data Warehouse. Ces colonnes calculées vous permettent de configurer les rapports que vous recherchez pour répondre aux questions clés de l’entreprise.
+[Les utilisateurs administrateurs](https://docs.magento.com/mbi/administrator/user-management/user-management.html) peuvent créer et modifier certaines colonnes calculées dans le Gestionnaire de Data Warehouse. Ces colonnes calculées vous permettent de configurer les rapports que vous recherchez pour répondre aux questions clés de l’entreprise.
 
 Pour obtenir la liste des colonnes calculées que vous pouvez créer dans le Gestionnaire de Data Warehouse, ainsi que des conseils pour vous assurer de les configurer correctement, consultez les articles suivants de notre guide d’utilisation :
 
-* [Créer des colonnes calculées](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/creating-calculated-columns.html)
+* [Création de colonnes calculées](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/creating-calculated-columns.html)
 * [Types de colonnes calculés](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/calc-column-types.html)
-* [Comprendre et évaluer les relations entre les tables](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/table-relationships.html)
-* [Création de chemins pour les colonnes calculées](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/create-paths-calc-columns.html)
+* [Comprendre et évaluer les relations de table](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/table-relationships.html)
+* [ Création de chemins pour les colonnes calculées ](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/create-paths-calc-columns.html)
 
 ## J&#39;ai encore besoin d&#39;aide !
 
@@ -37,5 +37,5 @@ Si vous ne savez pas comment répondre à l&#39;une de ces questions, ne vous in
 
 * [Guide de l’utilisateur MBI](https://docs.magento.com/mbi)
 * [MBI : incohérences entre les données](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md)
-* [IMS : analyste de données](https://docs.magento.com/mbi/data-analyst.html)
-* [BI : obtenir de l’aide sur Magento BI](https://docs.magento.com/mbi/getting-started/support.html)
+* [MBI : analyste de données](https://docs.magento.com/mbi/data-analyst.html)
+* [MBI : obtenir de l’aide avec Magento BI](https://docs.magento.com/mbi/getting-started/support.html)

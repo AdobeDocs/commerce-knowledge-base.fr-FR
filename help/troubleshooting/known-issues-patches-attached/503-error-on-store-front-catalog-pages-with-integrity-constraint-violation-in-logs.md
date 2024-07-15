@@ -15,13 +15,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Cet article fournit un correctif comme solution de contournement, mais le problème a été corrigé de manière permanente dans Adobe Commerce sur la version 2.3.3 de l’infrastructure cloud. Il est recommandé d’effectuer la mise à niveau vers la version 2.3.3. Suivez les étapes décrites dans la section [Mise à niveau de la version Adobe Commerce](https://devdocs.magento.com/cloud/project/project-upgrade.html) dans notre documentation destinée aux développeurs.
+>Cet article fournit un correctif comme solution de contournement, mais le problème a été corrigé de manière permanente dans Adobe Commerce sur la version 2.3.3 de l’infrastructure cloud. Il est recommandé d’effectuer la mise à niveau vers la version 2.3.3. Suivez les étapes de la [mise à niveau d’Adobe Commerce version](https://devdocs.magento.com/cloud/project/project-upgrade.html) dans notre documentation destinée aux développeurs.
 
-Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur l’infrastructure cloud 2.2.0 lié à l’inaccessibilité des pages du catalogue frontal du magasin, avec un message d’erreur similaire à ce qui suit dans le journal : *Violation de contrainte d’intégrité : 1062 Entrée en double &#39;%entry%&#39; pour la clé &#39;PRINCIPAL&#39;, la requête était : INSERTION DANS \`search\_tmp\_%number%*.
+Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur l’infrastructure cloud 2.2.0 lié à l’inaccessibilité des pages du catalogue frontal, avec le message d’erreur similaire au suivant dans le journal : *Violation de contrainte d’intégrité : 1062 Entrée en double &#39;%entry%&#39; pour la clé &#39;PRINCIPAL&#39;, la requête était : INSERT DANS \`search\_tmp\%number%*.
 
 ## Problème
 
-Les pages du catalogue frontal de la boutique deviennent inaccessibles de manière inattendue. Le journal des erreurs présente une description d’erreur similaire à celle-ci : *Violation de contrainte d’intégrité : 1062 Entrée en double &#39;%entry%&#39; pour la clé &#39;PRINCIPAL&#39;, la requête était : INSERTION DANS \`search\_tmp\_%number%*.
+Les pages du catalogue frontal de la boutique deviennent inaccessibles de manière inattendue. Le journal des erreurs présente une description d’erreur similaire à la suivante : *Violation de contrainte d’intégrité : 1062 Entrée en double &#39;%entry%&#39; pour la clé &#39;PRINCIPAL&#39;, la requête était : INSERTION DANS \`search\_tmp\_%number%*.
 
 Le problème est lié à la recherche et à l’existence d’un index obsolète ainsi que du nouvel index après réindexation.
 
@@ -60,24 +60,24 @@ Les correctifs ont été créés pour les éditions et versions suivantes :
 * Adobe Commerce sur l’infrastructure cloud 2.2.0 (`MDVA-9590_EE_2.2.0_COMPOSER_v2.patch`)
 * Adobe Commerce sur l’infrastructure cloud 2.2.4 (`MDVA-13203_EE_2.2.4_V1_COMPOSER.patch`)
 
-La variable `MDVA-9590_EE_2.2.0_COMPOSER_v2` Le correctif est également compatible (mais peut ne pas résoudre le problème) avec les versions et éditions Adobe Commerce suivantes :
+Le correctif `MDVA-9590_EE_2.2.0_COMPOSER_v2` est également compatible (mais peut ne pas résoudre le problème) avec les versions et éditions Adobe Commerce suivantes :
 
 * Adobe Commerce sur l’infrastructure cloud 2.0.X, 2.1.X, 2.2.X et 2.3.0 à 2.3.3
 * Adobe Commerce On-Premise 2.0.X, 2.1.X, 2.2.X et 2.3.0 - 2.3.3
 
-La variable `MDVA-13203_EE_2.2.4_V1_COMPOSER` Le correctif est également compatible (mais peut ne pas résoudre le problème) avec les versions et éditions Adobe Commerce suivantes :
+Le correctif `MDVA-13203_EE_2.2.4_V1_COMPOSER` est également compatible (mais peut ne pas résoudre le problème) avec les versions et éditions Adobe Commerce suivantes :
 
 * Adobe Commerce sur l’infrastructure cloud 2.0.X, 2.1.X, 2.2.X et 2.3.0 à 2.3.3
 * Adobe Commerce On-Premise 2.0.X, 2.1.X, 2.2.X et 2.3.0 - 2.3.3
 
 ## Comment appliquer le correctif
 
-Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de soutien.
+Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Liens utiles
 
-* [Emplacement des fichiers journaux pour Adobe Commerce sur l’architecture du plan de démarrage de l’infrastructure cloud](/help/how-to/general/log-locations-directories-for-starter-plan.md) dans notre base de connaissances de soutien.
-* [Emplacement des fichiers journaux pour Adobe Commerce sur l’architecture du plan de l’infrastructure cloud Pro](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) dans notre base de connaissances de soutien.
+* [Emplacement des fichiers journaux pour Adobe Commerce sur l’architecture de plan de démarrage de l’infrastructure cloud](/help/how-to/general/log-locations-directories-for-starter-plan.md) dans notre base de connaissances de support.
+* [Emplacement des fichiers journaux pour Adobe Commerce sur l’infrastructure cloud Architecture de plan Pro](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) dans notre base de connaissances de support.
 * [Emplacement des fichiers journaux pour Adobe Commerce](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) dans notre documentation destinée aux développeurs.
 
 ## Fichiers attachés

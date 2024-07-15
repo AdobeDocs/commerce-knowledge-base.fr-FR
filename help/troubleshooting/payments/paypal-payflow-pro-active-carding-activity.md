@@ -55,11 +55,11 @@ L’installation requiert des commandes d’interface de ligne de commande pour 
 
 #### Installer Google reCAPTCHA et les mises à jour des formulaires de passage en caisse
 
-La variable `magento/module-paypal-recaptcha` Le package contient l’intégration avec les mises à jour des formulaires de paiement Google reCAPTCHA et Payflow Pro. Même si le module reCAPTCHA est installé et configuré, nous vous recommandons d’installer ce package.
+Le package `magento/module-paypal-recaptcha` contient l’intégration avec les mises à jour des formulaires de paiement Google reCAPTCHA et Payflow Pro. Même si le module reCAPTCHA est installé et configuré, nous vous recommandons d’installer ce package.
 
 Exécutez les commandes suivantes pour l’installer.
 
-**Pour Adobe Commerce On-Premise :**
+**Pour Adobe Commerce sur site :**
 
 ```bash
 composer require magento/module-paypal-recaptcha
@@ -86,11 +86,11 @@ bin/magento cache:clean
 
 #### Installer les mises à jour des formulaires de passage en caisse pour CAPTCHA
 
-La variable `magento/module-paypal-captcha` Le module contient l’intégration avec le module Adobe Commerce CAPTCHA natif.
+Le package `magento/module-paypal-captcha` contient l’intégration au module Adobe Commerce CAPTCHA natif.
 
 Exécutez les commandes suivantes pour l’installer :
 
-**Pour Adobe Commerce On-Premise :**
+**Pour Adobe Commerce sur site :**
 
 ```bash
 composer require magento/module-paypal-captcha
@@ -129,11 +129,11 @@ La nouvelle option de formulaire de passage en caisse est la suivante :
 
 ## Assistance et contacts de PayPal
 
-Veuillez contacter le support marchand PayPal pour en savoir plus sur les Services de protection contre les fraudes. Vous pouvez demander à l’équipe d’assistance de PayPal d’activer [Services de protection contre les fraudes de base](https://developer.paypal.com/api/nvp-soap/payflow/fraud-protection/) des filtres pour offrir le contrôle le plus strict possible sur les paiements, de sorte que vous puissiez refuser automatiquement les paiements susceptibles de générer des transactions frauduleuses et accepter les paiements qui ne posent généralement pas problème. Veuillez noter qu&#39;une fois que vous avez activé les filtres des services de protection contre les fraudes de PayPal, le règlement des transactions peut prendre jusqu&#39;à 2 heures.
+Veuillez contacter le support marchand PayPal pour en savoir plus sur les Services de protection contre les fraudes. Vous pouvez demander à l’équipe de support PayPal d’activer les filtres [Services de protection de base contre les fraudes](https://developer.paypal.com/api/nvp-soap/payflow/fraud-protection/) afin d’offrir un contrôle plus strict possible sur les paiements, de sorte que vous puissiez automatiquement refuser les paiements qui sont susceptibles de générer des transactions frauduleuses et accepter les paiements qui ne posent généralement pas problème. Veuillez noter qu&#39;une fois que vous avez activé les filtres des services de protection contre les fraudes de PayPal, le règlement des transactions peut prendre jusqu&#39;à 2 heures.
 
 >[!NOTE]
 >
->Pour plus d’informations, voir la base de connaissances de PayPal [&quot;Adobe m’a contacté au sujet de mon intégration de Payflow Pro. Que dois-je faire ?&quot;](https://www.paypal.com/us/smarthelp/article/ts2242).
+>Pour plus d’informations, reportez-vous à la section Base de connaissances [ de PayPal qui m’a contacté au sujet de mon intégration à Payflow Pro. Que dois-je faire ?&quot;](https://www.paypal.com/us/smarthelp/article/ts2242).
 
 **Détails de l’assistance du marchand PayPal**
 
@@ -141,10 +141,10 @@ Les heures d’ouverture de la prise en charge de la vente des paiements sont du
 
 * Téléphone : 1-888-883-9770 (invite de sélection 2)
 * Clients internationaux : 1-408-967-0191
-* Email : [payflow-support@paypal.com](mailto:payflow-support@paypal.com)
+* Adresse électronique : [payflow-support@paypal.com](mailto:payflow-support@paypal.com)
 
 Soutien australien
 
 * Lundi au vendredi 8 h - 19 h (heure de l&#39;Union Africaine)
 * Téléphone : +61 2 8288 0198
-* Email : [gateway-ausupport@paypal.com](mailto:gateway-ausupport@paypal.com)
+* Adresse électronique : [gateway-ausupport@paypal.com](mailto:gateway-ausupport@paypal.com)

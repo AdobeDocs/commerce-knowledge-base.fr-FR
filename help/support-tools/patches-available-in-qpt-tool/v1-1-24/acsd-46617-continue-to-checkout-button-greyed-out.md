@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-46617: **[!UICONTROL Continue to Checkout]** bouton grisé lorsque le sous-total est supérieur au montant minimum de commande configuré'
-description: Appliquez le correctif ACSD-46617 pour résoudre le problème Adobe Commerce où le **[!UICONTROL Continue to Checkout]Le bouton ** est grisé même si le sous-total est supérieur au montant minimum de commande configuré.
+title: 'ACSD-46617 : **[!UICONTROL Continue to Checkout]** bouton grisé lorsque le sous-total est supérieur au montant minimum de commande configuré'
+description: Appliquez le correctif ACSD-46617 pour résoudre le problème Adobe Commerce où le bouton **[!UICONTROL Continue to Checkout]** est grisé même si le sous-total est supérieur au montant minimum de commande configuré.
 exl-id: 42fe02bd-f48b-4c6d-8643-ea2c1aa98c94
 feature: Checkout, Orders
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-46617 : &quot;[!UICONTROL Continue to Checkout]&quot; grisé lorsque le sous-total est supérieur à &quot;[!UICONTROL Minimum Order Amount]&quot;
+# Bouton ACSD-46617 : &quot;[!UICONTROL Continue to Checkout]&quot; grisé lorsque le sous-total est supérieur à &quot;[!UICONTROL Minimum Order Amount]&quot;
 
-Ce correctif ACSD-46617 résout le problème où la variable **[!UICONTROL Continue to Checkout]** est grisé même si le sous-total est supérieur au montant minimum de commande configuré. Ce correctif est disponible lorsque la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.24 est installée. L’ID de correctif est ACSD-46617. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
+Ce correctif ACSD-46617 résout le problème où le bouton **[!UICONTROL Continue to Checkout]** est grisé même si le sous-total est supérieur au montant minimum de commande configuré. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.24 est installé. L’ID de correctif est ACSD-46617. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -27,54 +27,54 @@ Ce correctif ACSD-46617 résout le problème où la variable **[!UICONTROL Conti
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-La variable **[!UICONTROL Continue to Checkout]** est grisé même si le sous-total est supérieur au montant minimum de commande configuré.
+Le bouton **[!UICONTROL Continue to Checkout]** est grisé même si le sous-total est supérieur au montant minimum de commande configuré.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Accédez à Administration Adobe Commerce > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Minimum Order Amount]** et définissez les options suivantes :
-   * [!UICONTROL Enable]: *[!UICONTROL Yes]*
+1. Accédez à l’administrateur Adobe Commerce > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Minimum Order Amount]** et définissez les options suivantes :
+   * [!UICONTROL Enable] : *[!UICONTROL Yes]*
    * 
      [!UICONTROL Minimum Amount]: *2*
 
 1. Créez un [!UICONTROL Cart Price Rule].
-   * [!UICONTROL Coupon Code]: *[!UICONTROL TEST (optional)]*
-   * [!UICONTROL Conditions]: *[!UICONTROL Keep empty]*
-   * [!UICONTROL Actions]:
-      * [!UICONTROL Apply]: *[!UICONTROL Percent of product price discount]*
+   * [!UICONTROL Coupon Code] : *[!UICONTROL TEST (optional)]*
+   * [!UICONTROL Conditions] : *[!UICONTROL Keep empty]*
+   * [!UICONTROL Actions] :
+      * [!UICONTROL Apply] : *[!UICONTROL Percent of product price discount]*
       * 
         [!UICONTROL Discount Amount]: *92*
-      * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
+      * [!UICONTROL Apply to Shipping Amount] : *[!UICONTROL Yes]*
 1. Créez un produit au prix de 25 €.
 1. Ajoutez le produit au panier.
-1. Accédez au panier, sélectionnez le montant de 5 $. **[!UICONTROL Flat Rate shipping]** et appliquez le code du coupon.
-1. Accédez au passage en caisse, effectuez l’expédition et accédez au **[!UICONTROL Paytment]** .
+1. Accédez au panier, sélectionnez la méthode $5 **[!UICONTROL Flat Rate shipping]** et appliquez le code de coupon.
+1. Accédez au passage en caisse, effectuez l’expédition et accédez à la section **[!UICONTROL Paytment]** .
 1. Retournez dans le panier.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Aucune erreur n’est liée au montant minimum de la commande, car le total général de 2,4 $ est supérieur au montant requis de 2 $.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 * Une erreur s’est produite lors de la création du montant minimum de commande, même si le total général de 2,4 $ est supérieur au montant minimum de commande de 2 $.
-* La variable **[!UICONTROL Continue to Checkout]** est grisé.
+* Le bouton **[!UICONTROL Continue to Checkout]** est grisé.
 
 ## Appliquer le correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le [!DNL Quality Patches Tool] guide.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce en utilisant  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le [!DNL Quality Patches Tool] guide.
+Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].

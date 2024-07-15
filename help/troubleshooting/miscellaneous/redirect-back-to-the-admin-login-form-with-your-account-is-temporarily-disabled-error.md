@@ -21,23 +21,23 @@ Toutes les versions et éditions Adobe Commerce
 
 ## Problème
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Accédez à la page d’administration de Commerce.
 1. Saisissez vos informations d’identification, puis cliquez sur Se connecter.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 Vous êtes connecté à l’administrateur Commerce.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
-Vous êtes redirigé vers le formulaire de connexion, avec le message d&#39;erreur suivant affiché : *&quot;Votre compte est temporairement désactivé. Veuillez réessayer ultérieurement&quot;*.
+Vous êtes redirigé vers le formulaire de connexion, avec le message d’erreur suivant affiché : *&quot;Votre compte est temporairement désactivé. Réessayez ultérieurement&quot;*.
 
 ## Solution
 
 1. Créez une sauvegarde de base de données.
-1. Utilisez un outil de base de données tel que [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin)ou accéder manuellement à la base de données à partir de la ligne de commande. Dans le `admin_user` table de base de données, pour votre enregistrement utilisateur admin, vérifiez si `is_active` est défini sur &quot;`1`&quot; et `lock_expires` is `NULL`. Réinitialisez ces valeurs, le cas échéant.
+1. Utilisez un outil de base de données tel que [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande. Dans la table de base de données `admin_user`, pour votre enregistrement utilisateur administrateur, vérifiez si `is_active` est défini sur &quot;`1`&quot; et si `lock_expires` est `NULL`. Réinitialisez ces valeurs, le cas échéant.
 
 ## Lecture connexe dans notre base de connaissances de soutien
 

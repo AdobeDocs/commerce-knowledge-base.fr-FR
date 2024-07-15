@@ -19,7 +19,7 @@ Cet article fournit un correctif pour les problèmes suivants après qu’une mo
 
 1. Vous ne pouvez pas accéder aux projets Adobe Commerce cloud corrects.
 1. Aucun projet Adobe Commerce cloud n’est affiché sous votre compte à l’adresse [accounts.magento.cloud/user](https://accounts.magento.cloud/user).
-1. Vous voyez les détails d’un autre compte (c.-à-d. le propriétaire précédent du compte) à l’adresse [accounts.magento.cloud/user](https://accounts.magento.cloud/user).
+1. Vous voyez les détails d’un autre compte (c’est-à-dire le propriétaire précédent du compte) à l’adresse [accounts.magento.cloud/user](https://accounts.magento.cloud/user).
 
 ## Problème
 
@@ -33,21 +33,21 @@ Vous ne pouvez pas accéder au projet Adobe Commerce cloud approprié en cas de 
 
 Ce problème survient généralement lorsque l’authentification unique (SSO) du propriétaire précédent du projet est toujours intégrée à Adobe.com après :
 
-1. La propriété du projet cloud vous a été transférée (l’utilisateur) et vous voyez le compte du propriétaire du projet d’origine. Cliquez ici pour [solution](#solution-for-cause-one-and-two).
+1. La propriété du projet cloud vous a été transférée (l’utilisateur) et vous voyez le compte du propriétaire du projet d’origine. Cliquez ici pour la [solution](#solution-for-cause-one-and-two).
 
    OU
 
-1. Vous (l’utilisateur) avez déménagé dans une autre société, accompagnée d’un changement de l’adresse électronique et des projets auxquels vous avez accès. Vous voyez les projets auxquels vous aviez accès dans votre rôle/société précédent. Cliquez ici pour [solution](#solution-for-cause-one-and-two).
+1. Vous (l’utilisateur) avez déménagé dans une autre société, accompagnée d’un changement de l’adresse électronique et des projets auxquels vous avez accès. Vous voyez les projets auxquels vous aviez accès dans votre rôle/société précédent. Cliquez ici pour la [solution](#solution-for-cause-one-and-two).
 
    OU
 
-1. Vous avez remplacé votre adresse électronique à l’adresse https://account.adobe.com par une autre adresse électronique qui n’est actuellement pas associée à un projet cloud. Cliquez ici pour [solution](#solution-for-cause-three).
+1. Vous avez remplacé votre adresse électronique à l’adresse https://account.adobe.com par une autre adresse électronique qui n’est actuellement pas associée à un projet cloud. Cliquez ici pour la [solution](#solution-for-cause-three).
 
 ## Solution pour la première et la deuxième cause {#solution-for-cause-one-and-two}
 
 La solution pour lorsque le problème est provoqué par un et deux est de déconnecter l’intégration de l’authentification unique à Adobe.com. Pour vous déconnecter, procédez comme suit :
 
-1. À partir de https://accounts.magento.cloud/user, développez la **[!UICONTROL Single Sign-On]** . Cliquez sur **[!UICONTROL Disconnect from Adobe.com]**, pour vous déconnecter.
+1. À partir de https://accounts.magento.cloud/user, développez la section **[!UICONTROL Single Sign-On]** . Cliquez sur **[!UICONTROL Disconnect from Adobe.com]** pour vous déconnecter.
 
    ![authentification unique sur adobe-connect](assets/sso-adobe-disconnect.png)
 
@@ -56,7 +56,7 @@ La solution pour lorsque le problème est provoqué par un et deux est de décon
    ![adobe-disconnect](assets/adobe-disconnect.png)
 
 1. Déconnectez-vous.
-1. Cliquez sur le bouton **[!UICONTROL Adobe.com]** bouton .
+1. Cliquez sur le bouton **[!UICONTROL Adobe.com]** .
 
    ![Magento.com](assets/adobe-welcome-login.png)
 
@@ -64,4 +64,4 @@ La solution pour lorsque le problème est provoqué par un et deux est de décon
 
 ## Solution pour la troisième cause {#solution-for-cause-three}
 
-Si le problème a été causé par la troisième cause, demandez à un super-utilisateur existant sur le projet d’ajouter votre nouvelle adresse électronique au projet. Pour plus d’informations, voir [Gestion de l’accès des utilisateurs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html).
+Si le problème a été causé par la troisième cause, demandez à un super-utilisateur existant sur le projet d’ajouter votre nouvelle adresse électronique au projet. Pour plus d&#39;informations, voir [Gérer l&#39;accès des utilisateurs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html).

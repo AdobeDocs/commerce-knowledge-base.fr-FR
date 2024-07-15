@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-38270 : Montant de la carte cadeau manquant dans le total de la commande client
 
-Le correctif MDVA-38270 corrige le problème lorsque le montant de la carte cadeau est introuvable dans le total de la commande client. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) La version 1.0.25 est installée. L’ID de correctif est MDVA-38270. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.3.
+Le correctif MDVA-38270 corrige le problème lorsque le montant de la carte cadeau est introuvable dans le total de la commande client. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.25 est installé. L’ID de correctif est MDVA-38270. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.3.
 
 ## Produits et versions concernés
 
@@ -25,18 +25,18 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.4.1-2.4.2-p1
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 Le montant de la carte cadeau est absent de la réponse totale de la commande.
 
-<u>Conditions préalables</u>:
+<u>Conditions préalables</u> :
 
 1. Créez un compte client.
 1. Passer une commande à l’aide d’une carte-cadeau (la carte-cadeau s’applique à l’ensemble de la commande).
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Effectuez une requête client pour le client, les commandes, les articles, le total :
 
@@ -74,11 +74,11 @@ query {
 }
 ```
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 `total_giftcard` est disponible.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Aucun champ lié aux cartes-cadeaux n’est disponible.
 
@@ -93,7 +93,7 @@ Pour appliquer des correctifs individuels, utilisez les liens suivants en foncti
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
+* [Outil de correctifs de qualité publié : un nouvel outil pour appliquer des correctifs de qualité](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
 
 Pour plus d’informations sur les autres correctifs disponibles dans l’outil QPT, reportez-vous à la section [Correctifs disponibles dans l’outil QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) .

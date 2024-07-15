@@ -21,7 +21,7 @@ Cet article traite d’un problème d’indexation courant dans Adobe Commerce, 
 
 ## Problème
 
-Lors d’une réindexation complète dans l’interface de ligne de commande, Adobe Commerce vous envoie le message d’erreur suivant : *&quot;L’index est verrouillé par un autre processus de réindexation. Sauter.&#39;* En d’autres termes, lorsque le processus ou le type d’index est verrouillé, vous ne pouvez pas réindexer ce type d’index verrouillé particulier. La réindexation ignore toujours ce type d’index.
+Lors d&#39;une réindexation complète dans votre interface de ligne de commande, Adobe Commerce vous envoie le message d&#39;erreur : *&#39;Index est verrouillé par un autre processus de réindexation. Sauter.&#39;* En d’autres termes, lorsque le processus ou le type d’index est verrouillé, vous ne pouvez pas réindexer ce type d’index verrouillé particulier. La réindexation ignore toujours ce type d’index.
 
 ## Cause
 
@@ -82,7 +82,7 @@ Dans notre guide d’utilisation :
 Dans notre documentation destinée aux développeurs :
 
 * [Présentation de l’indexation](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html)
-* [Bonnes pratiques relatives aux indexeurs](https://devdocs.magento.com/guides/v2.3/performance-best-practices/configuration.html#indexers)
-* [Configuration Et Exécution De Cron](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-cron.html)
-* [Gestion Des Indexateurs](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html)
-* [Optimisation de l’indexeur](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexer-batch.html)
+* [Meilleures pratiques des indexeurs](https://devdocs.magento.com/guides/v2.3/performance-best-practices/configuration.html#indexers)
+* [Configurer Et Exécuter Cron](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-cron.html)
+* [Gérer Les Indexateurs](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html)
+* [Indexer Optimization](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexer-batch.html)

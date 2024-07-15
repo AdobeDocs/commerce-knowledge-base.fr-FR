@@ -30,12 +30,12 @@ Il n’existe pas d’option dans le Créateur de pages pour ajouter le Recommen
 ## Solution
 
 1. Vérifiez si vous avez installé le module séparément en exécutant la commande : `composer show magento/module-page-builder-product-recommendations`
-1. S’il renvoie le message suivant : *Magento/module-page-builder-product-recommendations introuvable*, vous devez l’installer en exécutant la commande : `composer require magento/module-page-builder-product-recommendations`
+1. S&#39;il renvoie le message suivant : *Magento/module-page-builder-product-recommendations introuvable*, vous devrez l&#39;installer en exécutant la commande : `composer require magento/module-page-builder-product-recommendations`
 
-En activant le Recommendations de produit dans le créateur de pages, vous pourrez [ajouter une unité de recommandation](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) à tout contenu créé dans le Créateur de pages.
+En activant le Recommendations de produit dans le créateur de pages, vous pourrez [ajouter une unité de recommandation](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) à tout contenu créé dans le créateur de pages.
 
 ## Lecture connexe
 
-* [Ajouter du contenu - Recommendations de produit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) dans notre guide d’utilisation.
-* [Installation et configuration de Recommendations de produit](https://devdocs.magento.com/recommendations/install-configure.html) dans notre documentation destinée aux développeurs.
-* [Guide de l’utilisateur d’Adobe Commerce](https://docs.magento.com/user-guide/)
+* [Ajouter du contenu - Recommendations produit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) dans notre guide d’utilisation.
+* [Installez et configurez le produit Recommendations](https://devdocs.magento.com/recommendations/install-configure.html) dans notre documentation destinée aux développeurs.
+* [Guide de l’utilisateur Adobe Commerce](https://docs.magento.com/user-guide/)

@@ -21,7 +21,7 @@ Cet article explique comment appliquer un correctif de compositeur pour Adobe Co
 ## Comment appliquer un correctif de compositeur pour Adobe Commerce sur l’infrastructure cloud {#cloud}
 
 1. Si vous ne disposez pas d’un répertoire nommé `m2-hotfixes` dans la racine du projet, créez-en un.
-1. Copiez le `%patch_name%.composer.patch` fichiers au `m2-hotfixes` répertoire .
+1. Copiez le ou les fichiers `%patch_name%.composer.patch` dans le répertoire `m2-hotfixes`.
 1. Ajoutez, validez et poussez vos modifications de code :
 
    ```git
@@ -36,7 +36,7 @@ Cet article explique comment appliquer un correctif de compositeur pour Adobe Co
    git push origin
    ```
 
-Pour plus d’informations sur l’application de correctifs aux projets Cloud, voir [Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+Pour plus d’informations sur l’application de correctifs aux projets Cloud, voir [Application de correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ### Comment appliquer un correctif de compositeur pour Adobe Commerce sur site et Magento Open Source {#commerce}
 
@@ -49,4 +49,4 @@ Pour plus d’informations sur l’application de correctifs aux projets Cloud, 
 
    (Si la commande ci-dessus ne fonctionne pas, essayez d’utiliser `-p2` au lieu de `-p1` )
 
-1. Pour que les modifications soient répercutées, actualisez le cache dans l’Admin sous **Système** > **Gestion du cache**.
+1. Pour que les modifications soient prises en compte, actualisez le cache dans l’Admin sous **Système** > **Gestion du cache**.

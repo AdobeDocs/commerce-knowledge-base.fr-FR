@@ -29,4 +29,4 @@ Le message suivant est affiché dans la vérification de préparation :
 
 ## Solution
 
-Pour résoudre ce problème, voir s’il existe une `<magento_root>/update` qui contient des fichiers et des sous-répertoires. Sinon, voir [Configuration de la mise à jour](https://devdocs.magento.com/guides/v2.3/comp-mgr/updater/update-updater.html) dans notre documentation destinée aux développeurs.
+Pour résoudre ce problème, vérifiez s’il existe un répertoire `<magento_root>/update` contenant des fichiers et des sous-répertoires. Sinon, voir [Configuration de la mise à jour](https://devdocs.magento.com/guides/v2.3/comp-mgr/updater/update-updater.html) dans notre documentation destinée aux développeurs.

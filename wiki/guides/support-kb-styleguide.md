@@ -49,16 +49,16 @@ En cas de doute, ne capitalisez pas. Dans les titres, utilisez une majuscule de 
 
 ## Éléments de l’interface utilisateur
 
-* Tout ce que l’utilisateur clique permet de placer **gras**. Par exemple, &quot;Cliquez sur **Continuer**.&quot; Les valeurs des options et les messages d’erreur sont formatés avec _italique_.
-* Dans la mesure du possible, évitez de mentionner le type d’élément d’interface utilisateur dans les instructions. (Cliquez sur **Suivant**. et cliquer sur **Suivant** ).
-* Utilisez &quot;Choose&quot; et &quot;>&quot; dans des séquences de commandes. (Choisir **Modifier** > **Préférences**. vs Click Modifier | Préférences.)
+* Tous les éléments sur lesquels l’utilisateur clique sont placés dans **bold**. Par exemple, &quot;Cliquez sur **Continuer**&quot;. Les valeurs des options et les messages d’erreur sont formatés avec _italics_.
+* Dans la mesure du possible, évitez de mentionner le type d’élément d’interface utilisateur dans les instructions. (Cliquez sur **Suivant**. et cliquez sur le bouton **Suivant** .)
+* Utilisez &quot;Choose&quot; et &quot;>&quot; dans des séquences de commandes. (Sélectionnez **Modifier** > **Préférences**. vs Click Modifier | Préférences.)
 * Préposition : &quot;dans&quot; pour la boîte de dialogue, la fenêtre, sont un, un panneau, une vue, un assistant, une liste, un dossier, un noeud.
 * Préposition : &quot;on&quot; pour l’écran, la page, la barre d’outils, la barre de menus, l’onglet, le volet, le ruban.
-* Préposition : cliquez sur (cliquez sur **Suivant** vs. Clic **Suivant**).
+* Préposition : cliquez sur (cliquez sur **Suivant** et cliquez sur **Suivant**).
 
 ## Noms de fichiers
 
-Les noms de fichier et les dossiers sont formatés sous forme de code. Exemple : La `/var/log` Le répertoire système contient les journaux de tous les environnements.
+Les noms de fichier et les dossiers sont formatés sous forme de code. Exemple : le répertoire système `/var/log` contient des journaux pour tous les environnements.
 
 
 ## Nombres
@@ -200,13 +200,13 @@ Pas de raison de majuscules.
 
 <td colspan="1">
 
-Message d’erreur : _&quot;Quelque chose s&#39;est mal passé.&quot;_
+Message d’erreur : _&quot;Quelque chose s’est mal passé.&quot;_
 
-Message d’erreur : __Quelque chose s&#39;est mal passé.__
+Message d’erreur : __un problème s’est produit.__
 
 </td>
 
-<td colspan="1"> Message d’erreur :  <i>Quelque chose s'est mal passé.</i> </td>
+<td colspan="1"> Message d’erreur : <i> un problème s’est produit.</i> </td>
 
 <td colspan="1">
 </td>
@@ -219,7 +219,7 @@ Message d’erreur : __Quelque chose s&#39;est mal passé.__
 
 ## Accessibilité
 
-* Tous les éléments non textuels ou graphiques ont des équivalents textuels ou du texte de remplacement. Exemple : ![example_image](/url "alt_text_for_this_image").
+* Tous les éléments non textuels ou graphiques ont des équivalents textuels ou du texte de remplacement. Exemple : ![exemple_image](/url "alt_text_for_this_image").
 
 * Tous les liens décrivent la destination du lien. Exemple [link](/uri "destination_of_the_link").
 
@@ -253,14 +253,14 @@ Une liste de liens spécialisés, appelée liste de valeurs &quot;voir aussi&quo
 
 ### Liens vers des sites web externes
 
-Utilisez des URL ordinaires plutôt que des URL d’accueil pour créer des liens vers des pages en dehors de  [Adobe.com](http://Adobe.com).
+Utilisez des URL ordinaires plutôt que des goURL pour créer des liens vers des pages en dehors de [Adobe.com](http://Adobe.com).
 
 
 ## Virgules
 
 En général, suivez les recommandations du Chicago Manual of Style pour la ponctuation de style ouvert, en ponctuant uniquement lorsque cela est nécessaire pour éviter toute erreur de lecture. Par exemple, vous pouvez omettre la virgule avant une conjonction dans une phrase composite s’il y a peu ou aucun risque de mauvaise lecture. Utilisez la virgule lorsque cela s’avère nécessaire pour clarifier les choses.
 
-* Utilisez toujours la virgule de série (une virgule avant _et_ ou _ou_ dans une liste de trois éléments ou plus) : x, y et z
+* Utilisez toujours la virgule de série (une virgule précédant _et_ ou _ou_ dans une liste de trois éléments ou plus) : x, y et z
 
 * Placez une virgule avant une conjonction introduisant une clause indépendante : &quot;Spécifiez un emplacement et saisissez un nom pour la liste de fichiers.&quot;
 
@@ -276,4 +276,4 @@ En général, suivez les recommandations du Chicago Manual of Style pour la ponc
 
 ## Marques
 
-* Magento Commerce est désormais Adobe Commerce. Reportez-vous à [Remarque les termes](https://github.com/magento/knowledge-base/wiki) wiki pour plus d’informations sur l’utilisation d’un langage de branding à jour.
+* Magento Commerce est désormais Adobe Commerce. Pour plus d’informations sur l’utilisation d’un langage de branding à jour, reportez-vous au wiki [ Rebrand terms](https://github.com/magento/knowledge-base/wiki) .

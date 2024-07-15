@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Tester rapidement en production si un site actif utilise le même domaine
 
-Si votre domaine de production dispose d’un site actif en cours d’exécution (`example.com`) et que vous devez tester votre nouvelle boutique sur Adobe Commerce dans l’environnement de production de l’infrastructure cloud avec l’activation Fastly CDN activée, nous vous recommandons d’utiliser le sous-domaine (comme `prod.example.com`), après l’avoir ajouté à Fastly, pour toute activité de test de prélancement. Cet article présente les détails et fournit des liens utiles vers les ressources de documentation Adobe Commerce connexes.
+Si votre site en ligne est opérationnel sur votre domaine de production (`example.com`) et que vous devez tester votre nouvelle boutique sur Adobe Commerce dans l’environnement de production de l’infrastructure cloud avec un réseau de diffusion de contenu Fastly activé, nous vous recommandons d’utiliser le sous-domaine (comme `prod.example.com`), qui l’a précédemment ajouté à Fastly, pour toute activité de test de prélancement. Cet article présente les détails et fournit des liens utiles vers les ressources de documentation Adobe Commerce connexes.
 
 ## Problème
 
-Votre magasin actuel qui utilise la variable `example.com` le domaine de production est actif et opérationnel. Cependant, vous devez tester votre nouveau magasin, créé avec Adobe Commerce sur l’infrastructure cloud et déployé dans l’environnement de production, avec le service de cache de page complet et rapide activé.
+Votre magasin actuel qui utilise le domaine de production `example.com` est actif et opérationnel. Cependant, vous devez tester votre nouveau magasin, créé avec Adobe Commerce sur l’infrastructure cloud et déployé dans l’environnement de production, avec le service de cache de page complet et rapide activé.
 
-Le problème est que l’environnement de production de votre projet d’infrastructure cloud Adobe Commerce utilise le même domaine en direct (`example.com`) et vous ne pouvez pas basculer votre nouveau site vers ce domaine, en exécutant simultanément votre boutique en ligne actuelle sur le même domaine.
+Le problème est que l’environnement de production de votre projet d’infrastructure cloud Adobe Commerce utilise le même domaine en direct (`example.com`) et que vous ne pouvez pas passer votre nouveau site à ce domaine, en exécutant simultanément votre boutique en ligne actuelle sur le même domaine.
 
 ### Pourquoi utiliser Fastly pour tester l’environnement de production ?
 
@@ -34,13 +34,13 @@ Lors de la planification de votre projet d’infrastructure cloud Adobe Commerce
 
 Pour traiter le sous-domaine dans votre projet d’infrastructure cloud Adobe Commerce, procédez comme suit :
 
-* [Envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) demandant d’ajouter le sous-domaine à la configuration Fastly service/Nginx (pour l’architecture du plan Adobe Commerce on cloud infrastructure Pro).
+* [Envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) demandant d’ajouter le sous-domaine à la configuration Fastly service/Nginx (pour l’architecture de plan Adobe Commerce on cloud infrastructure Pro).
 * Configurez les paramètres DNS correspondants sur votre côté.
 
 Après avoir exécuté les étapes de configuration de sous-domaine, vous devez également procéder comme suit pour valider votre domaine de production pour le certificat SSL :
 
 * Téléchargez l’enregistrement TXT DNS pour la validation SSL de votre domaine de production.
-* [Envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) demande de validation du domaine de production pour le certificat SSL.
+* [Envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) demandant la validation du domaine de production pour le certificat SSL.
 
 L’utilisation du sous-domaine vous permet d’effectuer un &quot;lancement soft&quot; de votre magasin à l’avenir, car ce lancement nécessite uniquement la mise à jour des paramètres DNS correspondants.
 
@@ -48,11 +48,11 @@ L’utilisation du sous-domaine vous permet d’effectuer un &quot;lancement sof
 
 Dans notre base de connaissances de soutien :
 
-* [Configuration des paramètres DNS rapides sur les environnements d’évaluation et de production](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html)
-* [Configuration rapide pour le plan de démarrage sur le cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html)
-* [Blocages potentiels pour un lancement sur Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html)
+* [ Configuration de paramètres DNS rapides sur les environnements d’évaluation et de production ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html)
+* [ Configurez Fastly pour le forfait Starter sur le cloud ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html)
+* [Blocs potentiels pour le lancement sur Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html)
 
 Dans notre documentation destinée aux développeurs :
 
 * [Aperçu rapide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [Liste de contrôle GoLive : configurations DNS pour Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)
+* [Go live checklist : configurations DNS pour Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)

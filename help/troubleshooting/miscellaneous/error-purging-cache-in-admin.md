@@ -14,7 +14,7 @@ ht-degree: 0%
 # Purge du cache des erreurs dans Commerce Admin
 
 Cet article explique comment identifier la cause d’un message d’erreur qui se produit lors de la purge du cache dans l’administrateur Commerce. Lorsque vous tentez de purger le cache via l’administrateur, vous recevez le message suivant :
-*Le fichier /app/project-id/pub/media/catalog/product/cache/directory/filename&quot; ne peut pas être supprimé. Warning!unlink(/app/project id/pub/media/catalog/product/cache/directory/filename) : Aucun fichier ou répertoire de ce type*
+Le fichier */app/project-id/pub/media/catalog/product/cache/directory/filename&quot; ne peut pas être supprimé. Warning!unlink(/app/project id/pub/media/catalog/product/cache/directory/filename) : No such file or directory*
 
 ## Produits et versions concernés
 
@@ -26,7 +26,7 @@ Lorsque vous tentez de purger le cache par l’intermédiaire de l’administrat
 
 <u>Étapes à reproduire :</u>
 
-1. Dans Admin, accédez à **Système** > **Outils** > **Gestion du cache**.
+1. Dans l’administrateur, accédez à **Système** > **Outils** > **Gestion du cache**.
 1. Sélectionnez l’une des options de mise en cache.
 
 <u>Résultat attendu :</u>
@@ -56,7 +56,7 @@ ls: cannot access 'pub/media/catalog/product/cache/directory/filename/': No such
 ```
 
 une tentative d’effacement des fichiers a été effectuée lorsque l’opération était déjà terminée. Il ne s’agit pas d’un bogue ; il s’agit d’un problème de simultanéité des messages qui doit parfois se produire. Il n’y a aucun problème à résoudre.
-Cependant, si la sortie indique que les fichiers sont toujours dans le cache, vous devez [envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Cependant, si la sortie indique que les fichiers sont toujours dans le cache, vous devez [envoyer un ticket de support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Lecture connexe
 

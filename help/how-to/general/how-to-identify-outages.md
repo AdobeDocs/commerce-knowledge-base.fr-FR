@@ -18,4 +18,4 @@ Il existe plusieurs façons pour un commerçant (ou toute personne intéressée 
 * les étapes générales pour identifier un problème susceptible d’être une panne
 * comment déterminer si le problème est vraiment une panne, une panne à petite échelle ou un obstacle temporaire
 
-Pour télécharger l’article, cliquez sur [Outages_how_to_identifier_and_measure_Effet_Adobe_Commerce.pdf](assets/Outages_how_to_identify_and_measure_effect_Adobe_Commerce.pdf)
+Pour télécharger l’article, cliquez sur [Outages_how_to_identity_and_measure_Effet_Adobe_Commerce.pdf](assets/Outages_how_to_identify_and_measure_effect_Adobe_Commerce.pdf)

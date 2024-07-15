@@ -14,7 +14,7 @@ ht-degree: 0%
 Le titre doit décrire brièvement le problème, 70 caractères au maximum sont recommandés.<br/>
 (Exemple : &quot;Erreur de mémoire insuffisante lors de l’installation ou de la mise à niveau&quot;.)
 
-Voir [Contribution > métadonnées](../../CONTRIBUTING.md#metadata) pour plus d’informations sur les métadonnées.
+Voir [Contribution > Métadonnées](../../CONTRIBUTING.md#metadata) pour plus d’informations sur les métadonnées.
 
 Introduction d’un paragraphe ou de deux paragraphes : bref aperçu du problème. Les 140 premiers caractères sont importants à des fins d’optimisation pour les moteurs de recherche.
 
@@ -38,7 +38,7 @@ Supprimez les ID de projet ou les informations sur les clients spécifiques des 
 
 Si le problème se produit dans une situation très spécifique, fournissez des étapes détaillées pour reproduire, le résultat attendu et le résultat réel au format suivant :
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Conditions préalables : ... (le cas échéant).
 
@@ -46,11 +46,11 @@ Conditions préalables : ... (le cas échéant).
 1. Deuxième étape.
 1. ....
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 Adobe Commerce le fait.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 Adobe Commerce le fait.
 
@@ -67,7 +67,7 @@ S’il existe une solution de contournement temporaire, spécifiez-la dans une s
 
 ## Lecture connexe
 
-* [Rubrique Article](https://docs.magento.com/user-guide/) dans notre guide d’utilisation.
-* [Rubrique Article](https://devdocs.magento.com) dans notre documentation destinée aux développeurs. Vous pouvez également indiquer de faire la distinction entre les instructions dans les appareils pour les utilisateurs cloud et sur site : &quot;[Rubrique Article](https://devdocs.magento.com) dans notre documentation destinée aux développeurs pour Adobe Commerce sur l’infrastructure cloud.&quot; vs&quot;[Rubrique Article](https://devdocs.magento.com) dans notre documentation destinée aux développeurs pour Adobe Commerce sur site.&quot;
-* [Rubrique Article](https://support.magento.com/hc/en-us) dans notre base de connaissances de soutien.
+* [Rubrique d’article](https://docs.magento.com/user-guide/) dans notre guide d’utilisation.
+* [Rubrique d’article](https://devdocs.magento.com) dans notre documentation destinée aux développeurs. Vous pouvez également indiquer afin de différencier les instructions dans les appareils pour les utilisateurs cloud et sur site : &quot;[Rubrique d’article](https://devdocs.magento.com) dans la documentation destinée aux développeurs pour Adobe Commerce sur l’infrastructure cloud&quot;. Comparé à &quot;[Rubrique d’article](https://devdocs.magento.com) dans notre documentation destinée aux développeurs pour Adobe Commerce sur site&quot;.
+* [Rubrique de l’article](https://support.magento.com/hc/en-us) dans notre base de connaissances d’assistance.
 * Toutes les ressources associées (blogs, forums, StackOverflow, etc.)

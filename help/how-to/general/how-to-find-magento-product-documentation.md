@@ -21,7 +21,7 @@ Il existe également des ressources de dépannage distinctes pour :
 * Apprentissage d’Adobe Commerce : [https://learning.adobe.com/products-resources/contact-us.html](https://learning.adobe.com/products-resources/contact-us.html)
 * Partenaires en solutions : [https://solutionpartners.adobe.com/](https://solutionpartners.adobe.com/)
 * Partenaires techniques : [https://partners.adobe.com/exchangeprogram/experiencecloud.html](https://solutionpartners.adobe.com/)
-* COMMERCE MARKETPLACE : [https://commercemarketplace.adobe.com](https://commercemarketplace.adobe.com)
+* Commerce Marketplace : [https://commercemarketplace.adobe.com](https://commercemarketplace.adobe.com)
 
 Si vous recherchez de la documentation technique ou sur l’utilisateur final, utilisez l’un des liens suivants :
 
@@ -34,7 +34,8 @@ Si vous recherchez de la documentation technique ou sur l’utilisateur final, u
 <td>Site Web</td>
 </tr>
 <tr>
-<td rowspan="2">Adobe Commerce sur site et Adobe Commerce sur l’infrastructure cloud</td>
+<td rowspan="2">Adobe Commerce sur site et
+Adobe Commerce sur l’infrastructure cloud</td>
 <td>
 <p>Documentation destinée aux développeurs (technique) :</p>
 <p><a href="https://developer.adobe.com/commerce/docs/">https://developer.adobe.com/commerce/docs/</a></p>

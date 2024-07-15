@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Définir la durée de vie du cache pour les images et autres contenus statiques
 
-Reportez-vous à [Définition du cache des fichiers statiques](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/set-cache.html) dans notre guide d’utilisation.
+Reportez-vous à la section [Définir le cache pour les fichiers statiques](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/set-cache.html) de notre guide d’utilisation.

@@ -25,16 +25,16 @@ Vous ne pouvez pas appliquer le correctif MDVA-43395.
 
 ## Cause
 
-Les commerçants cloud n’ont pas besoin d’appliquer le correctif MDVA-43395 séparément s’ils ont [magento/magento-cloud-Correctifs 1.0.16](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) installé, qui inclut déjà le correctif.
+Les commerçants cloud n’ont pas besoin d’appliquer le correctif MDVA-43395 séparément s’ils ont installé [magento/magento-cloud-Correctifs 1.0.16](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016), qui inclut déjà le correctif.
 
 ## Solution
 
-Pour résoudre ce problème, supprimez les correctifs MDVA-43395 et MDVA-43443 du `m2-hotfixes` et redéployez.
+Pour résoudre ce problème, supprimez les correctifs MDVA-43395 et MDVA-43443 du répertoire `m2-hotfixes` et redéployez-les.
 
-Si vous avez pu appliquer le correctif MDVA-43443 via l’événement `m2-hotfixes` , vous devez toujours le supprimer comme mentionné ci-dessus. Les correctifs déjà contenus dans les futures versions d’Adobe Commerce peuvent donc entraîner l’échec du déploiement si vous effectuez une mise à niveau ultérieure.
+Si vous avez pu appliquer le correctif MDVA-43443 via le répertoire `m2-hotfixes`, vous devez toujours le supprimer comme mentionné ci-dessus. Les correctifs déjà contenus dans les futures versions d’Adobe Commerce peuvent donc entraîner l’échec du déploiement si vous effectuez une mise à niveau ultérieure.
 
-Pour vérifier si le correctif a été appliqué, exécutez le `vendor/bin/magento-patches -n status |grep 43443` .
-S’il affiche plusieurs résultats de ce type, vous devez supprimer le correctif MDVA-43443 du `m2-hotfixes` folder:
+Pour vérifier si le correctif a été appliqué, exécutez la commande `vendor/bin/magento-patches -n status |grep 43443`.
+S’il affiche plusieurs résultats de ce type, vous devez supprimer le correctif MDVA-43443 du dossier `m2-hotfixes` :
 
 ```bash
 $ vendor/bin/magento-patches -n status |grep 43443
@@ -44,5 +44,5 @@ $ vendor/bin/magento-patches -n status |grep 43443
 
 ## Lecture connexe
 
-* [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de soutien.
+* [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 * [Correctifs cloud pour Commerce](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) dans notre documentation destinée aux développeurs.

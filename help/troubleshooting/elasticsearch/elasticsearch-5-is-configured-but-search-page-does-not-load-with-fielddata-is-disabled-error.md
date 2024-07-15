@@ -39,7 +39,7 @@ Lors de la demande de recherche, l’exception suivante est générée dans les 
 
 ## Cause
 
-Par défaut, seuls certains types d’attributs de produit peuvent être utilisés dans la navigation par couches. Il s’agit des options Oui/Non, Liste déroulante, Multisélection et Prix. C’est pourquoi, dans l’administrateur Commerce, vous ne pouvez pas définir un attribut de n’importe quel autre type comme **Utilisation dans la navigation par calques** = *Filtrable* ou **Utilisation dans la navigation par couches des résultats de recherche** = *Oui*. Mais il existe une possibilité technique de contourner cette limitation en modifiant directement la variable `is_filterable` et `is_filterable_in_search` dans la base de données. Si cela se produit, et que tout autre type d’attribut, tel que Date, Texte, etc., est défini pour être utilisé dans la navigation par couches, Elasticsearch 5 renvoie une exception.
+Par défaut, seuls certains types d’attributs de produit peuvent être utilisés dans la navigation par couches. Il s’agit des options Oui/Non, Liste déroulante, Multisélection et Prix. C’est pourquoi, dans l’administrateur de Commerce, vous ne pouvez pas définir un attribut d’un autre type comme **Utiliser dans la navigation par couches** = *Filtrable* ou **Utiliser dans la navigation par couches des résultats de la recherche** = *Oui*. Cependant, il existe une possibilité technique de contourner cette limitation en modifiant directement les valeurs `is_filterable` et `is_filterable_in_search` dans la base de données. Si cela se produit, et que tout autre type d’attribut, tel que Date, Texte, etc., est défini pour être utilisé dans la navigation par couches, Elasticsearch 5 renvoie une exception.
 
 Pour vous assurer que c’est le cas, vous devez déterminer s’il existe d’autres attributs que la liste déroulante, la sélection multiple et le prix, qui sont définis pour être utilisés dans la navigation par calques. Exécutez la requête suivante pour rechercher ces attributs :
 
@@ -53,10 +53,10 @@ Le résultat contiendra une liste des attributs utilisés pour la navigation par
 
 ## Solution
 
-Pour résoudre le problème, vous devez définir `is_filterable` (c’est-à-dire utilisé dans la navigation par calques) et `filterable_in_search` (c’est-à-dire utilisé dans la navigation par couches des résultats de recherche) sur &quot;0&quot; (non utilisé). Pour ce faire, procédez comme suit :
+Pour résoudre le problème, vous devez définir `is_filterable` (utilisé dans la navigation par couches) et `filterable_in_search` (utilisé dans la navigation par couches dans les résultats de recherche) sur &quot;0&quot; (non utilisé). Pour ce faire, procédez comme suit :
 
 1. Créez une sauvegarde de base de données.
-1. Utilisez un outil de base de données tel que [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin)ou accéder manuellement à la base de données à partir de la ligne de commande pour exécuter la requête SQL suivante :
+1. Utilisez un outil de base de données tel que [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande pour exécuter la requête SQL suivante :
 
    ```sql
    UPDATE catalog_eav_attribute AS cea
@@ -79,6 +79,6 @@ Pour résoudre le problème, vous devez définir `is_filterable` (c’est-à-dir
    bin/magento cache:clean
    ```
 
-ou dans l’administrateur Commerce sous **Système** > **Outils** > **Gestion du cache**.
+ou dans l’administrateur Commerce sous **System** > **Tools** > **Cache Management**.
 
 Vous devriez maintenant pouvoir effectuer des recherches de catalogue sans problème.

@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Personnalisation de la configuration de conception dans l’administrateur Commerce
 
-Pour obtenir des informations à jour sur la personnalisation de la configuration de conception dans l’administrateur Commerce, reportez-vous à la section [Personnalisation de la conception d’administration Adobe Commerce](https://devdocs.magento.com/guides/v2.4/howdoi/admin/customize_admin.html) dans notre documentation destinée aux développeurs.
+Pour obtenir des informations à jour sur la personnalisation de la configuration de la conception dans l’administrateur Commerce, reportez-vous à la section [Personnalisation de la conception de l’administrateur Adobe Commerce](https://devdocs.magento.com/guides/v2.4/howdoi/admin/customize_admin.html) dans notre documentation destinée aux développeurs.

@@ -16,7 +16,7 @@ Cet article fournit des solutions pour réautoriser une intégration afin d’ac
 
 ## Intégrations base de données et SaaS
 
-Pour la liste des intégrations Base de données et SaaS, reportez-vous à la section [Connexion de données externes à l’aide d’une intégration](https://docs.magento.com/mbi/data-analyst/importing-data/integrations/integrations.html) dans notre documentation destinée aux développeurs. (Lors de l’ouverture de la page, utilisez la table des matières sur la gauche pour la navigation).
+Pour obtenir la liste des intégrations Base de données et SaaS, reportez-vous à la section [Connexion aux données externes à l’aide d’une intégration](https://docs.magento.com/mbi/data-analyst/importing-data/integrations/integrations.html) dans notre documentation destinée aux développeurs. (Lors de l’ouverture de la page, utilisez la table des matières sur la gauche pour la navigation).
 
 ## Vous rencontrez des problèmes de connexion ?
 
@@ -31,8 +31,8 @@ Cela peut se produire pour plusieurs raisons :
 
 L’état de toutes les intégrations se trouve sur la page Intégrations ( **Gérer les données > Intégrations** ) :
 
-![Integrations_page.png](assets/Integrations_page.png)
+![Intégrations_page.png](assets/Integrations_page.png)
 
 Pour vous reconnecter, vous devrez peut-être saisir à nouveau les informations d’identification de votre compte. Dans certains cas, vous devrez peut-être générer de nouvelles clés d’API pour l’intégration du problème. Cliquez sur le nom de l’intégration du problème pour lancer le processus de réautorisation.
 
-Si le problème persiste, veuillez [envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Si le problème persiste, [soumettez un ticket d&#39;assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).

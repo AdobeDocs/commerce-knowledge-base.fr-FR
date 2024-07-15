@@ -24,14 +24,14 @@ Cet article fournit une solution au problème lorsque tous les messages d’erre
 
 <u>Étapes à reproduire :</u>
 
-1. Accédez à **Créer un compte** sur le storefront.
+1. Accédez à la page **Créer un nouveau compte** sur le storefront.
 1. Créez un compte à l’aide d’un email enregistré. Le message suivant s&#39;affiche :
 
 `There+is+already+an+account+with+this+email+address.+If+you+are+sure+that+it+is+your+email+address,+click+here+to+get+your+password+and+access+your+account.`
 
 ## Cause
 
-Le problème est dû à un problème PHP 7.4.2 lié aux cookies set\\read. Voir [BOGUE PHP \#79174 setcookie() code l’espace comme \`+\`, mais $\_COOKIE ne les décode plus.](https://bugs.php.net/bug.php?id=79174).
+Le problème est dû à un problème PHP 7.4.2 lié aux cookies set\\read. Voir [BOGUE PHP \#79174 setcookie() encode l’espace comme \`+\`, mais $\_COOKIE ne les décode plus](https://bugs.php.net/bug.php?id=79174).
 
 ## Solution
 

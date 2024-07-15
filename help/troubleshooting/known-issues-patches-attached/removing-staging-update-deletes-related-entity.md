@@ -23,19 +23,19 @@ Cet article fournit un correctif pour le problème Adobe Commerce 2.2.3 connu li
 
 Lorsque vous supprimez une mise à jour de planning active entre ses dates de début et de fin, l’entité associée (catégorie, sous-catégorie, page CMS) est également supprimée.
 
-<u>Étapes à reproduire (avec catégories)</u>:
+<u>Étapes à reproduire (avec catégories)</u> :
 
 1. Connectez-vous à l’administrateur Commerce.
-1. Créez une sous-catégorie sous **Catalogue** > **Catégories**.
+1. Créez une nouvelle sous-catégorie sous **Catalogue** > **Catégories**.
 1. Créez une mise à jour d’évaluation avec les heures de début et de fin.
 1. Patientez jusqu’à ce que la mise à jour soit appliquée ; c’est l’heure de début qui arrive.
-1. Supprimez la mise à jour à l’aide du **Afficher/Modifier** lien.
+1. Supprimez la mise à jour à l’aide du lien **Afficher/Modifier**.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 La mise à jour est supprimée et la sous-catégorie existe toujours dans l’Admin.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 La mise à jour et la sous-catégorie sont supprimées.
 

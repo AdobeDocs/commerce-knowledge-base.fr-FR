@@ -28,17 +28,17 @@ Lors de la mise à niveau de votre Adobe Commerce (toutes les méthodes de dépl
 Magento_Wishlist
 ```
 
-Mise à niveau depuis Adobe Commerce (toutes les méthodes de déploiement)/Magneto Open Source version 2.3.4-p1 **vers la version 2.3.4-p2** ou depuis Adobe Commerce (toutes les méthodes de déploiement)/Magneto Open Source version 2.3.5 **vers la version 2.3.5-p1** corrige l’erreur.
+La mise à niveau d’Adobe Commerce (toutes les méthodes de déploiement)/Magneto Open Source version 2.3.4-p1 **vers la version 2.3.4-p2** ou d’Adobe Commerce (toutes les méthodes de déploiement)/Magneto Open Source version 2.3.5 **vers la version 2.3.5-p1** corrige l’erreur.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Mettez à niveau votre Adobe Commerce (toutes les méthodes de déploiement)/Magento Open Source vers la version 2.3.4-p1 ou 2.3.5.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 Le processus de mise à niveau vers Adobe Commerce (toutes les méthodes de déploiement)/Magento Open Source version 2.3.4-p1 ou 2.3.5 se termine normalement.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 Pendant la mise à niveau, vous obtenez cette erreur :
 
@@ -50,15 +50,15 @@ Unable to apply data patch Magento\Wishlist\Setup\Patch\Data\CleanUpData for mod
 
 ## Solutions
 
-* Si vous effectuez une mise à niveau vers Adobe Commerce (toutes les méthodes de déploiement)/Magneto Open Source version 2.3.5, **mise à niveau vers la version 2.3.5-p1**. Adobe Commerce (toutes les méthodes de déploiement)/Magento Open Source version 2.3.5-p1 remplace 2.3.5.
-* Si vous effectuez une mise à niveau vers Adobe Commerce (toutes les méthodes de déploiement)/Magento Open Source version 2.3.4-p1, **mise à niveau vers la version 2.3.4-p2**. Adobe Commerce (toutes les méthodes de déploiement)/Magneto Open Source version 2.3.4-p2 remplace la version 2.3.4-p1.
+* Si vous effectuez une mise à niveau vers Adobe Commerce (toutes les méthodes de déploiement)/Magneto Open Source version 2.3.5, **effectuez une mise à niveau vers la version 2.3.5-p1**. Adobe Commerce (toutes les méthodes de déploiement)/Magento Open Source version 2.3.5-p1 remplace 2.3.5.
+* Si vous effectuez une mise à niveau vers Adobe Commerce (toutes les méthodes de déploiement)/Magento Open Source version 2.3.4-p1, **effectuez une mise à niveau vers la version 2.3.4-p2**. Adobe Commerce (toutes les méthodes de déploiement)/Magneto Open Source version 2.3.4-p2 remplace la version 2.3.4-p1.
 
 ## Lecture connexe
 
 Dans notre documentation destinée aux développeurs :
 
-* [Guide sur l’infrastructure cloud d’Adobe Commerce](https://devdocs.magento.com/cloud/bk-cloud.html)
-* [Adobe Commerce sur l’infrastructure cloud - Mise à niveau de la version Adobe Commerce](https://devdocs.magento.com/cloud/project/project-upgrade.html)
-* [Adobe Commerce On-Premise Et Magento Open Source - Mettez à niveau l’application et les modules Adobe Commerce](https://devdocs.magento.com/guides/v2.3/comp-mgr/bk-compman-upgrade-guide.html)
-* [Page de configuration des éléments de liste blanche](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/layouts/product-layouts.html#wishlist-item-configure-page)
-* [Modules proposant des rapports avancés](https://devdocs.magento.com/guides/v2.3/advanced-reporting/modules.html)
+* [Guide d’infrastructure de cloud Adobe Commerce](https://devdocs.magento.com/cloud/bk-cloud.html)
+* [Adobe Commerce on cloud infrastructure - Mettre à niveau Adobe Commerce version](https://devdocs.magento.com/cloud/project/project-upgrade.html)
+* [Adobe Commerce On-Premise Et Magento Open Source - Mettre à niveau l’application et les modules Adobe Commerce](https://devdocs.magento.com/guides/v2.3/comp-mgr/bk-compman-upgrade-guide.html)
+* [L’élément de liste blanche configure la page](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/layouts/product-layouts.html#wishlist-item-configure-page)
+* [Modules fournissant un reporting avancé](https://devdocs.magento.com/guides/v2.3/advanced-reporting/modules.html)

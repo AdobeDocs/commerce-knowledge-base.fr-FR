@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-37592 : Le tri par prix ne fonctionne pas pour les produits dont le prix est nul
 
-Le correctif Adobe Commerce MDVA-37592 résout le problème en raison duquel le tri par prix ne fonctionne pas correctement pour les produits dont le prix est nul affecté à un catalogue partagé. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.0 est installée. L’ID de correctif est MDVA-37592. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
+Le correctif Adobe Commerce MDVA-37592 résout le problème en raison duquel le tri par prix ne fonctionne pas correctement pour les produits dont le prix est nul affecté à un catalogue partagé. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.0 est installé. L’ID de correctif est MDVA-37592. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
 
 ## Produits et versions concernés
 
@@ -27,17 +27,17 @@ Le correctif Adobe Commerce MDVA-37592 résout le problème en raison duquel le 
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 Le tri par prix ne fonctionne pas correctement pour les produits dont le prix est nul affecté à un catalogue partagé.
 
-<u>Conditions préalables</u>:
+<u>Conditions préalables</u> :
 
 B2B est installé.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Activez le catalogue partagé.
 1. Créez quatre produits avec les prix suivants et attribuez-les à une catégorie : 50, 60, 70 et 80 USD.
@@ -47,11 +47,11 @@ B2B est installé.
 1. Connectez-vous à l’aide du compte de l’entreprise et accédez à la catégorie à laquelle les produits sont affectés.
 1. Essayez de trier par prix.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Le produit dont le prix est nul est correctement trié.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Le produit dont le prix est zéro n’est PAS correctement trié. À la place, il est trié en fonction du prix d’origine.
 
@@ -66,7 +66,7 @@ Pour appliquer des correctifs individuels, utilisez les liens suivants en foncti
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
+* [Outil de correctifs de qualité publié : un nouvel outil pour appliquer des correctifs de qualité](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
 
 Pour plus d’informations sur les autres correctifs disponibles dans l’outil QPT, reportez-vous à la section [Correctifs disponibles dans l’outil QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) .

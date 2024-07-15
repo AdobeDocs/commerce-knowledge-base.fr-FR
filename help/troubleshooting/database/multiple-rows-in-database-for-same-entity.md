@@ -41,9 +41,9 @@ Où `$entityID = ID` de la page CMS/règle de prix de catégorie/produit/panier/
 
 Il s’agit du comportement attendu. Les différentes lignes sont créées par la fonctionnalité d’évaluation de contenu :
 
-* Si vous spécifiez une date de début sans date de fin, il y aura au moins deux lignes avec le même ID d’entité/de règle/de page. Une ligne indique l’état d’origine de l’entité (la ligne dans laquelle `created_in=1`), et une ligne indique le *Fin de la mise à jour planifiée*.
+* Si vous spécifiez une date de début sans date de fin, il y aura au moins deux lignes avec le même ID d’entité/de règle/de page. Une ligne indique l’état d’origine de l’entité (la ligne dans laquelle `created_in=1`) et une autre indique la *fin de la mise à jour planifiée*.
 
-* Si vous spécifiez une date de début avec une date de fin, il y aura au moins trois lignes avec le même ID d’entité/de règle/de page. Une ligne indique l’état d’origine de l’entité (la ligne dans laquelle `created_in=1`), une ligne correspond au *Début de la mise à jour planifiée*, et une ligne correspond au *Fin de la mise à jour planifiée*.
+* Si vous spécifiez une date de début avec une date de fin, il y aura au moins trois lignes avec le même ID d’entité/de règle/de page. Une ligne indique l’état d’origine de l’entité (la ligne dans laquelle `created_in=1`), une ligne correspond au *Début de la mise à jour planifiée* et une ligne correspond à la *Fin de la mise à jour planifiée*.
 
 Par exemple, dans cette requête :
 
@@ -53,13 +53,13 @@ SELECT row_id, entity_id, created_in, updated_in FROM catalog_product_entity WHE
 
 ![multiple_rows_in_database.png](assets/multiple_rows_in_database.png)
 
-* La variable `created_in` et `updated_in` Les valeurs doivent suivre ce modèle : `created_in` La valeur de la ligne actuelle est égale à la valeur de la ligne `updated_in` dans la ligne précédente. La première ligne doit également contenir `created_in = 1` et la dernière ligne doit contenir `updated_in = 2147483647`. (S’il n’y a qu’une seule ligne, vous devez voir `created_in=1` et `updated_in=2147483647`).
+* Les valeurs `created_in` et `updated_in` doivent suivre ce modèle : la valeur `created_in` de la ligne actuelle est égale à la valeur `updated_in` de la ligne précédente. En outre, la première ligne doit contenir `created_in = 1` et la dernière ligne doit contenir `updated_in = 2147483647`. (S’il n’y a qu’une seule ligne, vous devez voir `created_in=1` et `updated_in=2147483647`).
 
 ### Pourquoi la deuxième entrée DB (et toutes les entrées suivantes) apparaît-elle dans DB pour la même entité ?
 
-* Le deuxième enregistrement DB (et, éventuellement, les suivants) pour l’entité affectée signifie qu’il y a eu des mises à jour d’évaluation de contenu planifiées à l’aide de la variable `Magento_Staging` qui crée un enregistrement supplémentaire pour une entité dans les tables respectives.
+* Le deuxième enregistrement DB (et, éventuellement, les suivants) pour l’entité affectée signifie qu’il y a eu des mises à jour d’évaluation de contenu planifiées à l’aide du module `Magento_Staging`, ce qui crée un enregistrement supplémentaire pour une entité dans les tables respectives.
 
-Un problème se produirait uniquement si les enregistrements ont les mêmes valeurs pour la variable `created_in` ou `updated_in` colonnes.
+Un problème se produirait uniquement si les enregistrements ont les mêmes valeurs pour les colonnes `created_in` ou `updated_in`.
 
 ## Solution
 
@@ -67,5 +67,5 @@ Il s’agit du comportement attendu qui ne provoquera des problèmes que s’il 
 
 ## Lecture connexe
 
-* [Les modifications apportées aux catégories ne sont pas enregistrées.](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) dans notre base de connaissances de soutien.
-* [Dupliquer les entrées dans la table du catalogue après avoir modifié la date de fin d’une mise à jour de planning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) dans notre base de connaissances de soutien.
+* [Les modifications apportées aux catégories ne sont pas enregistrées](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) dans notre base de connaissances de support.
+* [Dupliquez les entrées dans la table de catalogrule après avoir modifié la date de fin d’une mise à jour de planning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) dans notre base de connaissances de support.

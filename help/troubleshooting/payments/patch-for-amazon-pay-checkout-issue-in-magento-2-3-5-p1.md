@@ -24,22 +24,22 @@ Ce correctif résout le problème en raison duquel il est impossible de modifier
 
 Lorsqu’un acheteur passe en caisse avec le paiement Amazon, se connecte, passe à l’étape de paiement et tente de modifier sa carte de crédit de paiement à partir du widget de paiements, un message d’erreur s’affiche. Le passage en caisse ne peut pas être terminé si l’acheteur ignore l’erreur et passe en caisse.
 
-Pour résoudre ce problème et supprimer l’erreur, nous avons créé une [correctif](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip).
+Pour résoudre ce problème et supprimer l’erreur, nous avons créé un [patch](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip).
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Commencez le passage en caisse avec Amazon Pay.
 1. Connectez-vous en tant que client Amazon Pay.
 1. Sélectionnez le mode de livraison et passez à l’étape de paiement.
 1. Essayez de changer de carte de crédit.
 
-<u>Résultat attendu</u>: une autre carte de crédit est sélectionnée comme mode de paiement sans erreur.
+<u>Résultat attendu</u> : une autre carte de crédit est sélectionnée comme mode de paiement sans erreur.
 
-<u>Résultat réel</u>: le message d’erreur s’affiche : *&quot;Veuillez contacter ce marchand pour obtenir de l’aide pour terminer votre commande.&quot;*
+<u>Résultat réel</u> : le message d’erreur s’affiche : *&quot;Veuillez contacter ce vendeur pour obtenir de l’aide sur l’exécution de votre commande.&quot;*
 
 ## Solution
 
-[Appliquer le correctif](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip) ci-dessous
+[Appliquez le correctif](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip) ci-dessous.
 
 ## Correctif
 
@@ -61,6 +61,6 @@ Le correctif est également compatible (mais peut ne pas résoudre le problème)
 
 ## Comment appliquer le correctif
 
-Voir [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) pour obtenir des instructions.
+Pour obtenir des instructions, reportez-vous à la section [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Fichiers attachés

@@ -26,11 +26,11 @@ Les lectures non critiques affichent des informations incorrectes.
 
 ## Cause
 
-La variable `slave_parallel_mode` La configuration de la base de données a été remplacée par défaut par *optimistics* lorsque la valeur doit être *conservateur*, et la variable `synchronous_replication` dans Ece-Tools est définie par défaut sur *true* lorsque la valeur doit être *false*.
+La configuration `slave_parallel_mode` de la base de données a été modifiée par défaut sur *optimistics* lorsque la valeur doit être *conservatrice*, et la valeur `synchronous_replication` dans Ece-Tools est par défaut définie sur *true* lorsque la valeur doit être *false*.
 
 ## Solution
 
-1. Vérifiez que la variable `slave_parallel_mode` est défini sur *conservateur* (vous devrez [lever un ticket d’assistance](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) si la valeur n’est pas affichée comme *conservateur*). Pour vérifier, exécutez la commande suivante :
+1. Vérifiez que le paramètre `slave_parallel_mode` est défini sur *conservateur* (vous devrez [lever un ticket d&#39;assistance](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) si la valeur ne s&#39;affiche pas comme *conservateur*). Pour vérifier, exécutez la commande suivante :
 
    ```
     MariaDB [main]> show variables like 'slave_parallel_mode';
@@ -42,7 +42,7 @@ La variable `slave_parallel_mode` La configuration de la base de données a ét�
     1 row in set (0.001 sec)
    ```
 
-1. Mettre à jour `.magento.env.yaml` les configurations de base de données pour :
+1. Mettez à jour les configurations de base de données `.magento.env.yaml` vers :
 
    ```yaml
        DATABASE_CONFIGURATION:
@@ -59,5 +59,5 @@ Pour les étapes de mise à jour de la configuration de la base de données, rep
 
 ## Lecture connexe
 
-* [Configuration des variables d’environnement pour le déploiement](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) dans le guide Commerce on Cloud Infrastructure.
-* [Bonnes pratiques relatives à la configuration des bases de données](/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) dans le manuel relatif à l’implémentation.
+* [Configurez des variables d’environnement pour le déploiement](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) dans le guide Commerce on Cloud Infrastructure.
+* [Bonnes pratiques pour la configuration de la base de données](/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) dans le manuel d’implémentation.

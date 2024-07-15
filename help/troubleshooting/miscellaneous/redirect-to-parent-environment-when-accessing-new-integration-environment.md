@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Cet article fournit des instructions de dépannage pour Adobe Commerce sur le problème d’infrastructure cloud où la tentative d’accès à l’environnement d’intégration nouvellement créé vous conduit plutôt à l’environnement parent.
 
-Pour corriger ce problème, vous devez corriger la valeur base\_url dans la base de données et vous assurer que la variable `UPDATE_URLS` La valeur de la variable est définie sur `true`. Pour plus d’informations, reportez-vous aux sections ci-dessous.
+Pour corriger ce problème, vous devez corriger la valeur base\_url dans la base de données et vous assurer que la valeur de variable `UPDATE_URLS` est définie sur `true`. Pour plus d’informations, reportez-vous aux sections ci-dessous.
 
 Versions et éditions affectées :
 
@@ -23,22 +23,22 @@ Versions et éditions affectées :
 
 ## Problème
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Cloner la branche d’intégration existante.
 1. Cliquez sur l&#39;URL d&#39;accès au nouvel environnement.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 Vous accédez à l’environnement nouvellement créé.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 Vous êtes redirigé vers l’environnement sur la branche parente.
 
 ## Solution
 
-Pour résoudre ce problème, vous devez corriger la variable `base_url` valeurs (sécurisées et non sécurisées) dans la base de données d’environnement personnalisée et définissez la variable `UPDATE_URL` dans la variable `.magento.env.yaml` fichier .
+Pour résoudre ce problème, vous devez corriger les valeurs `base_url` (sécurisées et non sécurisées) dans la base de données d’environnement personnalisée et définir la variable `UPDATE_URL` dans le fichier `.magento.env.yaml`.
 
 ### Correction des valeurs base\_url dans la base de données
 
@@ -59,7 +59,7 @@ update core_config_data set value = %your_new_environment_secure_url% where path
 
 #### Corrigez la base de données à l’aide de l’interface de ligne de commande d’Adobe Commerce (disponible pour les versions 2.2.X).
 
-1. Connectez-vous en tant que [Propriétaire du système de fichiers Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/web-server/apache.html).
+1. Connectez-vous en tant que [propriétaire du système de fichiers Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/web-server/apache.html) ou basculez vers cet emplacement.
 1. Exécutez les commandes suivantes :
 
 ```bash
@@ -67,9 +67,9 @@ php <your_magento_install_dir>/bin/magento config:set web/unsecure/base_url http
 php <your_magento_install_dir>/bin/magento config:set web/secure/base_url https://example.com
 ```
 
-### Définissez la variable `UPDATE_URLS` variable
+### Définition de la variable `UPDATE_URLS`
 
-Dans votre base de code locale, dans la variable `.magento.env.yaml` jeu de fichiers :
+Dans votre base de code locale, dans le jeu de fichiers `.magento.env.yaml` :
 
 ```
  stage:
@@ -87,4 +87,4 @@ php <your_magento_install_dir>/bin/magento cache:clean config
 
 ## Article connexe dans notre documentation destinée aux développeurs :
 
-[Déploiement de variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html)
+[Déployer des variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html)

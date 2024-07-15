@@ -40,14 +40,14 @@ L&#39;outil d&#39;analyse de sécurité est gratuit. Les commerçants doivent ac
 
 ## Comment fonctionne l’outil d’analyse de sécurité ? {#how-does-the-magento-security-scan-tool-work}
 
-L’outil d’analyse de sécurité est basé sur le Web et accessible à partir du compte Adobe Commerce en ligne du commerçant ([account.magento.com](https://account.magento.com/)). L’analyse de sécurité fonctionne sur HTTP et HTTPS. Il recherche les problèmes de sécurité connus et identifie les correctifs et mises à jour Adobe Commerce manquants.
+L’outil d’analyse de sécurité est basé sur le web et accessible à partir du compte Adobe Commerce en ligne du commerçant ([account.magento.com](https://account.magento.com/)). L’analyse de sécurité fonctionne sur HTTP et HTTPS. Il recherche les problèmes de sécurité connus et identifie les correctifs et mises à jour Adobe Commerce manquants.
 
 ## Comment puis-je m’inscrire pour utiliser l’outil d’analyse de sécurité ? {#how-do-i-sign-up-to-use-the-magento-security-scan-tool}
 
-Les commerçants peuvent s’enregistrer pour utiliser l’ outil d’analyse de sécurité afin d’analyser leurs webstores à partir de leur compte Adobe Commerce ([account.magento.com](https://account.magento.com)). Suivez le lien pour vous inscrire à l’outil d’analyse de sécurité [here](https://account.magento.com/scanner/dashboard/?_ga=2.83981338.267715797.1615821601-2099431409.1611073686).
+Les commerçants peuvent s’enregistrer pour utiliser l’outil d’analyse de sécurité afin d’analyser leurs webstores à partir de leur compte Adobe Commerce ([account.magento.com](https://account.magento.com)). Suivez le lien pour vous inscrire à l&#39;outil d&#39;analyse de sécurité [ici](https://account.magento.com/scanner/dashboard/?_ga=2.83981338.267715797.1615821601-2099431409.1611073686).
 
 ## Que faire si je rencontre un faux positif dans le rapport d’analyse ? {#what-do-i-do-if-i-come-across-a-false-positive-in-the-scan-report}
 
 Nous recommandons à nos commerçants d’enquêter sur tous les analyses ayant échoué et de prendre les mesures appropriées pour résoudre ces problèmes. Après l’enquête, si les commerçants découvrent un résultat d’analyse qui semble être un faux positif, nous demandons au marchand d’informer l’Adobe de prendre les mesures appropriées.
 
-Pour envoyer un rapport faux positif, saisissez un ticket avec le support commercial Adobe Commerce afin que nous puissions évaluer le faux positif, apporter les modifications nécessaires et/ou fournir des recommandations pour éviter de voir de telles notifications à l’avenir. Les commerçants peuvent également signaler un faux positif en nous envoyant un courriel à l’adresse [securityscan@magento.com](mailto:securityscan@magento.com).
+Pour envoyer un rapport faux positif, saisissez un ticket avec le support commercial Adobe Commerce afin que nous puissions évaluer le faux positif, apporter les modifications nécessaires et/ou fournir des recommandations pour éviter de voir de telles notifications à l’avenir. Les commerçants peuvent également signaler un faux positif en nous envoyant un email à l&#39;adresse [securityscan@magento.com](mailto:securityscan@magento.com).

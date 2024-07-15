@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ![Page d’accueil de la base de connaissances](../help/assets/knowledge-base-home-page-cover.jpg){width="100%"}
 
-Les informations contenues dans cette base de connaissances sont conçues comme complémentaires à [Documentation destinée aux développeurs Adobe Commerce](https://developer.adobe.com/commerce/docs), et [Guide du marchand Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html), ainsi que d’autres publications Adobe Commerce. Il couvre le dépannage et les bonnes pratiques, héberge des annonces, répond aux questions fréquentes et met en évidence des scénarios spécifiques qui n’ont pas été mentionnés (pour une raison quelconque) dans la documentation officielle.
+Les informations de cette base de connaissances sont conçues comme complémentaires à la [documentation du développeur Adobe Commerce](https://developer.adobe.com/commerce/docs), au [Guide du marchand Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) et à d’autres publications Adobe Commerce. Il couvre le dépannage et les bonnes pratiques, héberge des annonces, répond aux questions fréquentes et met en évidence des scénarios spécifiques qui n’ont pas été mentionnés (pour une raison quelconque) dans la documentation officielle.
 
 ## Qu&#39;y a-t-il dans la base de connaissances ?
 
@@ -30,9 +30,9 @@ Les informations contenues dans cette base de connaissances sont conçues comme 
 
 >[!NOTE]
 >
->Pour déposer un nouveau ticket, connectez-vous à [Centre d’aide Adobe Commerce](https://support.magento.com/) et suivez les étapes présentées dans la section [Envoyer un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+>Pour déposer un nouveau ticket, connectez-vous au [Centre d’aide Adobe Commerce](https://support.magento.com/) et suivez les étapes détaillées sous [Envoyer un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 >
->Si vous ne voyez pas l’option permettant d’envoyer un ticket, reportez-vous au *[Envoi d’un lien de ticket non affiché](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)* dans notre section [Guide de l’utilisateur du centre d’aide](/help/help-center-guide/help-center/magento-help-center-user-guide.md).
+>Si vous ne voyez pas l’option permettant d’envoyer un ticket, reportez-vous à la section *[Submit a ticket link not displayed](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)* de notre [Guide de l’utilisateur du centre d’aide](/help/help-center-guide/help-center/magento-help-center-user-guide.md).
 
 ## Nouveautés
 
@@ -45,14 +45,14 @@ Les informations contenues dans cette base de connaissances sont conçues comme 
 
 <tr>
     <td>
-    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-update-the-cloud-account-profile">Comment mettre à jour le profil du compte cloud :</a> Cet article décrit les étapes à suivre pour modifier le profil sur le compte cloud.
+    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-update-the-cloud-account-profile">Comment mettre à jour le profil du compte cloud :</a> Cet article décrit les étapes de modification du profil sur le compte cloud.
     </td>
     <td>Nouvel article</td>
     <td>22 avril 2024</td>
   </tr>
 
 <td>
-    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/admin-create-order-page-in-csp-restricted-mode">Dépannage de la création d’une page de commande en mode restreint CSP :</a> Cet article fournit des explications et des correctifs pour les problèmes d’Adobe Commerce 2.4.7 lors de la création d’une commande côté administrateur lorsque le mode restreint CSP est <em>Activé</em>.  
+    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/admin-create-order-page-in-csp-restricted-mode">Résolution des problèmes de création de page de commande en mode restreint CSP :</a> Cet article fournit des explications et des correctifs pour les problèmes d’Adobe Commerce 2.4.7 lors de la création d’une commande du côté administrateur lorsque le mode restreint CSP est <em>Activé</em>.  
     </td>
     <td>Nouvel article</td>
     <td>22 avril 2024</td>
@@ -60,7 +60,7 @@ Les informations contenues dans cette base de connaissances sont conçues comme 
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/storefront-checkout-page-in-csp-restricted-mode">Dépannage de la page de passage en caisse du storefront en mode restreint CSP :</a> Cet article fournit des explications et des correctifs pour les problèmes d’Adobe Commerce 2.4.7 lors de l’affichage de la page de passage en caisse en mode CSP restreint, avec la variable <em>"Refusé d’exécuter un script intégré, car il enfreint la directive suivante de la politique de sécurité du contenu : "script-src ..."</em> message d’erreur dans le journal de la console du navigateur. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/storefront-checkout-page-in-csp-restricted-mode">Résolution des problèmes de la page de passage en caisse du storefront en mode restreint CSP :</a> Cet article fournit des explications et des correctifs pour les problèmes d’Adobe Commerce 2.4.7 lors de l’affichage de la page de passage en caisse en mode restreint CSP, avec le <em> Refusé d’exécuter le script intégré car il enfreint la directive de sécurité du contenu suivante : "script-src ..."</em> message d’erreur dans le journal de la console du navigateur. 
     </td>
     <td>Nouvel article </td>
     <td>22 avril 2024</td>
@@ -68,7 +68,7 @@ Les informations contenues dans cette base de connaissances sont conçues comme 
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-46/acsd-54656-invisible-recaptcha-fails-during-checkout-preventing-order-placement">ACSD-54656 : l’invisibilité de reCAPTCHA ne fonctionne pas pendant le passage en caisse empêchant le placement de la commande :</a> Le correctif ACSD-54656 corrige le problème lorsque le reCAPTCHA invisible ne fonctionne pas correctement lors du passage en caisse, ce qui empêche le placement d’une commande. Ce correctif est disponible lorsque la variable <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> La version 1.1.46 est installée. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-46/acsd-54656-invisible-recaptcha-fails-during-checkout-preventing-order-placement">ACSD-54656 : Le reCAPTCHA invisible ne fonctionne pas pendant le passage en caisse empêchant le placement de la commande :</a> Le correctif ACSD-54656 corrige le problème où le reCAPTCHA invisible ne fonctionne pas correctement lors du passage en caisse, ce qui empêche le placement d’une commande. Ce correctif est disponible lorsque <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.46 est installé. 
     </td>
     <td>Nouvel article </td>
     <td>22 avril 2024</td>
@@ -76,7 +76,7 @@ Les informations contenues dans cette base de connaissances sont conçues comme 
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-46/acsd-46767-category-page-caches-invalidate-when-the-stock-quantity-changes">ACSD-46767 : Les caches de page de catégorie sont invalidés lorsque la quantité de stock change :</a> Le correctif ACSD-46767 corrige le problème de mise en cache de la page Catégorie lorsque la quantité de stock change, même si le produit est toujours en stock. Ce correctif est disponible lorsque la variable <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> La version 1.1.46 est installée.  
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-46/acsd-46767-category-page-caches-invalidate-when-the-stock-quantity-changes">ACSD-46767 : les caches de page de catégorie sont invalidés lorsque la quantité de stock change : </a> Le correctif ACSD-46767 corrige le problème où la page de catégorie caches invalidés lorsque la quantité de stock change, même si le produit est toujours en stock. Ce correctif est disponible lorsque <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.46 est installé.  
     </td>
     <td>Nouvel article </td>
     <td>22 avril 2024</td>
@@ -84,7 +84,7 @@ Les informations contenues dans cette base de connaissances sont conçues comme 
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-45/acsd-56415-performance-of-partial-price-indexing-is-slowed-down-due-to-a-delete-query">ACSD-56415 : les performances de l’indexation de prix partielle sont ralenties en raison de la requête du DELETE :</a> Le correctif ACSD-56415 corrige le problème de ralentissement des performances de l’indexation de prix partielle en raison d’une requête DELETE lorsque la base de données contient un grand nombre d’index de données de prix partiels. Ce correctif est disponible lorsque la variable <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> La version 1.1.45 est installée.  
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-45/acsd-56415-performance-of-partial-price-indexing-is-slowed-down-due-to-a-delete-query">ACSD-56415 : la performance de l’indexation de prix partielle est ralentie en raison d’une requête du DELETE :</a> Le correctif ACSD-56415 corrige le problème de ralentissement des performances de l’indexation de prix partielle en raison d’une requête du DELETE lorsque la base de données contient un index de prix partiel important. Ce correctif est disponible lorsque <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.45 est installé.  
     </td>
     <td>Nouvel article </td>
     <td>22 avril 2024</td>
@@ -92,7 +92,7 @@ Les informations contenues dans cette base de connaissances sont conçues comme 
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-47/acsd-56858-role-permissions-display-issue-in-b2b-company-admin-panel">ACSD-56858 : incohérence des autorisations de rôle dans l’administration de la société B2B :</a> Le correctif ACSD-56858 corrige le problème en raison duquel les autorisations de rôle s’affichent incorrectement pour un administrateur de société restreint dans l’environnement B2B. Ce correctif est disponible lorsque la variable <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> La version 1.1.47 est installée. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-47/acsd-56858-role-permissions-display-issue-in-b2b-company-admin-panel">ACSD-56858 : incohérence des autorisations de rôle dans l’administration de la société B2B :</a> Le correctif ACSD-56858 corrige le problème en raison duquel les autorisations de rôle s’affichent incorrectement pour un administrateur de société restreint dans l’environnement B2B. Ce correctif est disponible lorsque <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.47 est installé. 
     </td>
     <td>Nouvel article </td>
     <td>22 avril 2024</td>

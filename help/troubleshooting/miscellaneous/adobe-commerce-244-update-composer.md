@@ -25,18 +25,18 @@ Cet article fournit une solution pour éviter les problèmes liés aux modules e
 
 Lors d’une mise à jour vers Adobe Commerce 2.4.4 ou version ultérieure après juillet 2022, vous pouvez recevoir un avertissement du compositeur concernant les modules externes.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Conditions préalables : Adobe Commerce 2.4.3 ou version antérieure est installé.
 
-1. Démarrez la mise à niveau comme décrit dans la section [Effectuer une mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html).
-1. Exécutez la variable `composer update` pour mettre à niveau l’application Adobe Commerce.
+1. Démarrez la mise à niveau comme décrit dans [Effectuez une mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html).
+1. Exécutez la commande `composer update` pour mettre à niveau l’application Adobe Commerce.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 La mise à niveau a réussi.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 L&#39;installation échoue avec une erreur similaire à celle-ci :
 
@@ -58,13 +58,13 @@ Plugin initialization failed (require(app/etc/NonComposerComponentRegistration.p
 
 ## Cause
 
-Après juillet 2022, le compositeur modifie la valeur par défaut de la variable [`allow-plugins` option](https://getcomposer.org/doc/06-config.md#allow-plugins) to `{}` et les modules externes ne se chargent plus, sauf si autorisé.
+Après juillet 2022, le compositeur modifie la valeur par défaut de l’option [`allow-plugins` ](https://getcomposer.org/doc/06-config.md#allow-plugins) en `{}` et les modules externes ne se chargent plus, sauf si autorisé.
 
 ## Solution
 
-Ajoutez ce qui suit à votre `composer.json` selon la manière dont vous avez installé Adobe Commerce :
+Ajoutez ce qui suit à votre fichier `composer.json`, en fonction de la manière dont vous avez installé Adobe Commerce :
 
-* Si le projet a été créé [en utilisant la variable `composer create-project` command](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html#get-the-metapackage):
+* Si le projet a été créé [à l&#39;aide de la commande `composer create-project`](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html#get-the-metapackage) :
 
   ```json
   "config": {
@@ -76,7 +76,7 @@ Ajoutez ce qui suit à votre `composer.json` selon la manière dont vous avez in
   }
   ```
 
-* Si le projet a été créé d’une autre manière et n’a pas de `"dealerdirect/phpcodesniffer-installer"` in `"require-dev"` section :
+* Si le projet a été créé d’une autre manière et qu’il ne contient pas `"dealerdirect/phpcodesniffer-installer"` dans la section `"require-dev"` :
 
   ```json
   "config": {
@@ -87,4 +87,4 @@ Ajoutez ce qui suit à votre `composer.json` selon la manière dont vous avez in
   }
   ```
 
-Après la mise à jour de la variable `composer.json` , exécutez le fichier `composer update` et relancez le processus de mise à niveau.
+Après la mise à jour du fichier `composer.json`, exécutez la commande `composer update` et redémarrez le processus de mise à niveau.

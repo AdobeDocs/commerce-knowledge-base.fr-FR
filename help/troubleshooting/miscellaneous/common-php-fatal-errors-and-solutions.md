@@ -17,37 +17,37 @@ Cet article répertorie quelques exemples rapides d’erreurs fatales PHP couran
 
 ## Exemple
 
-*&#39;Erreur fatale PHP : délai d’exécution maximal de 60 secondes dépassé en....&#39;*
+*&#39;PHP Erreur fatale : la durée maximale d’exécution de 60 secondes dépassée en....&#39;*
 
 ## Solution
 
-Vous pouvez mettre à jour le temps d’exécution maximal en définissant une `max_execution_time` dans votre `php.ini` et redéploiement.
+Vous pouvez mettre à jour le temps d’exécution maximal en définissant une valeur `max_execution_time` personnalisée dans votre fichier `php.ini` et en effectuant un redéploiement.
 
 Par exemple :
 
 `max_execution_time = 120`
 
-Consultez la [Personnalisation des paramètres php.ini](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html) article.
+Consultez l’article [Personnaliser les paramètres php.ini](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html) .
 
 ## Exemple
 
-*&#39;Erreur fatale PHP : taille de mémoire autorisée de 792723456 octets épuisée&#39;* (Il ne s’agit que d’un exemple de taille d’octet.)
+*&#39;PHP Erreur fatale : taille de mémoire autorisée de 792723456 octets épuisée&#39;* (Il s’agit simplement d’un exemple de taille d’octet.)
 
 ## Solution
 
-Personnalisez votre `php.ini` paramètres. Consultez cette section [Personnalisation des paramètres php.ini](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html) article.
+Personnalisez vos paramètres `php.ini`. Consultez cet article [Personnaliser les paramètres php.ini](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html).
 
 ## Exemple
 
-*&#39;Avertissement PHP : Inconnu : échec de l’ouverture du flux : aucun fichier ou répertoire de ce type&#39;*
+*&#39;PHP Warning: Unknown: failed open stream: No such file or directory&#39;*
 
 ## Solution
 
-Veillez à ne pas supprimer les fins de style Windows dans la variable `php.ini` fichier . Sous Windows, les fins de ligne sont interrompues par une combinaison d’un retour chariot (ASCII 0x0d ou \r) et d’une nouvelle ligne (\n), également appelée CR/LF.
+Veillez à ne pas supprimer les fins de style Windows dans le fichier `php.ini`. Sous Windows, les fins de ligne sont interrompues par une combinaison d’un retour chariot (ASCII 0x0d ou \r) et d’une nouvelle ligne (\n), également appelée CR/LF.
 
 ## Exemple
 
-*&#39;Erreur fatale PHP : PDOException non interceptée : SQLSTATE\[HY00\] \[1040\] Trop de connexions dans&#39;*
+*&#39;PHP Erreur fatale : PDOException non interceptée : SQLSTATE\[HY000\] \[1040\] Trop de connexions dans &#39;*
 
 ## Solution
 
@@ -55,19 +55,19 @@ L’environnement MySQL n’a plus d’espace disque. Fournissez davantage d’e
 
 ## Exemple
 
-*&#39;Erreur fatale PHP : TypeError non intercepté : valeur renvoyée au Magento&#39;*
+*&#39;PHP Erreur fatale : TypeError non intercepté : valeur renvoyée du Magento&#39;*
 
 ## Solution
 
-Vérifiez les `<root>/tmp` car il est probablement plein. S’il est plein, indiquez plus d’espace dans le répertoire. Cela peut simplement impliquer le déplacement de fichiers vers un autre répertoire ou leur suppression.
+Vérifiez le répertoire `<root>/tmp`, car il est probablement plein. S’il est plein, indiquez plus d’espace dans le répertoire. Cela peut simplement impliquer le déplacement de fichiers vers un autre répertoire ou leur suppression.
 
 ## Lecture connexe
 
 Dans notre documentation destinée aux développeurs :
 
-* [erreurs de paramètres PHP](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/php/tshoot_php-set.html)
-* [Paramètres PHP requis](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html)
+* [Erreurs de paramètres PHP](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/php/tshoot_php-set.html)
+* [ Paramètres PHP requis](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html)
 * [Redis vérification](https://devdocs.magento.com/guides/v2.3/config-guide/redis/redis-session.html#redis-verify)
-* [Configuration de Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html)
+* [Configurer Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html)
 * [Erreur de limite de mémoire PHP](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/php/tshoot_php-set.html#trouble-php-memory)
-* [Solutions aux problèmes courants - Limite de mémoire](https://devdocs.magento.com/guides/v2.3/test/unit/unit_test_execution_cli.html#solutions-to-common-problems)
+* [ Solutions aux problèmes courants - Limite de mémoire](https://devdocs.magento.com/guides/v2.3/test/unit/unit_test_execution_cli.html#solutions-to-common-problems)

@@ -24,22 +24,22 @@ Cet article décrit un problème connu d’Adobe Commerce 2.4.2-p1, en raison du
 
 Lorsque le groupe de clients est modifié au moment de la création de la commande, la facture est générée avec une note de facture incorrecte.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Créez un **Tester le compte client** et ajoutez-le à la variable **Groupe de clients de vente au détail**.
-1. Créez un **Nouvelle commande** pour le client test, ajoutez **Produit** et **Adresse**.
-1. Sélectionner **Méthode d’expédition**.
-1. Dans le **Informations du compte** , modifiez le groupe de clients à partir de **Détailleur** to **Gouvernement**.
+1. Créez un **compte client de test** et ajoutez-le au **groupe client de vente au détail**.
+1. Créez une **nouvelle commande** pour le client de test, ajoutez **Product** et **Address**.
+1. Sélectionnez **Méthode d’expédition**.
+1. Dans la section **Informations sur le compte**, remplacez le groupe de clients **Retailer** par **Gouvernement**.
 1. Cliquez sur **Passer commande**.
 1. Cliquez sur **Facture** > **Submit Invoice**.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
-La remarque suivante devrait apparaître sous la rubrique **Notes de mise à jour de cette commande**  section : &quot;Facture de sommet envoyée avec succès. Montant : 0,00 $.&quot;
+La note suivante doit apparaître sous la section **Notes pour cette commande** : &quot;Invoice de sommet envoyée avec succès. Montant : 0,00 $.&quot;
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
-La remarque suivante s’affiche sous la section **Notes de mise à jour de cette commande** section : &quot;Facture de sommet envoyée avec succès. Montant : 3,23 $.&quot;
+La note suivante s’affiche sous la section **Notes pour cette commande** : &quot;Invoice de sommet envoyée avec succès. Montant : 3,23 $.&quot;
 
 ## Solution
 

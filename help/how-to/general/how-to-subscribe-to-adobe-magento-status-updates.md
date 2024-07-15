@@ -13,11 +13,11 @@ ht-degree: 0%
 
 ## Comment s’abonner aux mises à jour d’état d’Adobe Magento
 
-1. Accédez à [Statut de l’Adobe](https://status.adobe.com).
+1. Accédez à [Adobe status](https://status.adobe.com).
 1. Cliquez sur **Se connecter**.
 1. Connectez-vous à l’aide de vos informations d’identification d’Adobe.
-1. Sélectionner **Compte d’entreprise ou d’école** si cette option est présentée.
-1. Cliquez sur **Gestion des abonnements** en haut à droite, au-dessus des nuages répertoriés.
+1. Sélectionnez **Compte de la société ou de l&#39;école** si l&#39;option s&#39;affiche.
+1. Cliquez sur **Gérer les abonnements** en haut à droite, au-dessus des clouds répertoriés.
 
    ![adobe_status_manage_subscriptions.png](assets/adobe_status_manage_subscriptions.png)
 1. Cliquez sur **Créer des abonnements**.
@@ -27,19 +27,19 @@ ht-degree: 0%
 
    ![subscribe_to_all_adobe_magento_services_notifications.png](assets/adobe_magento_all_services_notification.png)
 
-   Vous pouvez également sélectionner un service de Magento d’Adobe en décochant les cases des autres services de Magento d’Adobe. Ainsi, par exemple, si vous souhaitez uniquement recevoir des notifications pour le module de gestion des commandes (MOM), décochez les autres services, de sorte que seules la case Adobe Magento et la case Gestion des commandes (MOM) soient cochées (voir la capture d’écran).
+   Vous pouvez également sélectionner un service de Magento d’Adobe en décochant les cases des autres services de Magento d’Adobe. Ainsi, par exemple, si vous souhaitez uniquement recevoir des notifications pour Order Management (MOM), décochez les autres services, de sorte que seules la case Adobe Magento et la case Order Management (MOM) soient cochées (voir capture d’écran).
 
    ![subscribe_to_one adobe_magento_service_notification.png](assets/adobe_magento_one_service_subscription.png)
-1. Une fenêtre s’affiche, dans laquelle vous pouvez sélectionner des notifications pour des produits pour des régions et des événements sélectionnés. Si vous souhaitez recevoir des notifications pour les mêmes régions et types d’événement pour tous les produits, cochez la case **Sélection de régions et de types d’événements pour tous les produits** (voir capture d’écran).
+1. Une fenêtre s’affiche, dans laquelle vous pouvez sélectionner des notifications pour des produits pour des régions et des événements sélectionnés. Si vous souhaitez recevoir des notifications pour les mêmes régions et types d’événement pour tous les produits, cochez la case **Sélectionner des régions et des types d’événement pour tous les produits** (voir la capture d’écran).
 
    ![select_adobe_notifications_by_region_and_events.png](assets/adobe_notifications_regions_events.png)
 
-   Si vous vous êtes abonné à plusieurs produits (et pas seulement à Adobe Magento) et que vous souhaitez que chaque produit reçoive des notifications pour différentes régions et différents types d’événement, vous pouvez également cocher la case **Personnalisation des régions et des types d’événement par produits** (voir capture d’écran).
+   Si vous vous êtes abonné à plusieurs produits (et pas seulement à Adobe Magento) et que vous souhaitez que chaque produit comporte des notifications pour différentes régions et différents types d’événements, cochez la case **Personnaliser les régions et les types d’événements par produits** (voir la capture d’écran).
 
    ![select_adobe_notifications_for_other_region_and_events_by_product.png](assets/adobe_region_events_notifications_custom.png)
 1. Cliquez sur **Continuer**.
-1. La variable **Confirmation de vos préférences d’abonnement** s’affiche. Vérifiez que les notifications correspondent à vos besoins. Cliquez sur **Terminé**.
+1. La fenêtre **Confirmer vos préférences d’abonnement** s’affiche. Vérifiez que les notifications correspondent à vos besoins. Cliquez sur **Terminé**.
 
 ![subscription_to_adobe_magento_notifications_confirm.png](assets/adobe_status_notification_done.png)
 
-Cliquez ensuite sur **Terminé** vous devriez voir un résumé de vos abonnements aux produits et à vos abonnements aux événements. vous recevrez un e-mail intitulé &quot;Inscription aux notifications par e-mail d’état&quot; de la part de l’Adobe. Si vous souhaitez vous désabonner et/ou modifier vos paramètres de notification, répétez les étapes 1 à 9.
+Après avoir cliqué sur **Terminé**, vous devriez voir un résumé de vos abonnements aux produits et à vos abonnements aux événements et vous recevrez un courrier électronique intitulé &quot;Abonnement aux notifications par e-mail d’état&quot; de la part de l’Adobe. Si vous souhaitez vous désabonner et/ou modifier vos paramètres de notification, répétez les étapes 1 à 9.

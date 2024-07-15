@@ -22,17 +22,17 @@ Cet article explique un problème connu dans Adobe Commerce 2.3.5, en raison duq
 
 ## Problème
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Sur le storefront, ajoutez des produits physiques et virtuels au panier.
-1. Passez à l’extraction et sélectionnez **Extraction avec plusieurs adresses**.
+1. Passez à la caisse et sélectionnez **Extraire avec plusieurs adresses**.
 1. Ajoutez toutes les informations requises et passez la commande.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 Les commandes sont passées avec succès pour tous les produits.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 La commande du produit virtuel est vide.
 

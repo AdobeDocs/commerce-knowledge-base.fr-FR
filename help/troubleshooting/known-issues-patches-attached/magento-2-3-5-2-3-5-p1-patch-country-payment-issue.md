@@ -26,17 +26,17 @@ Lorsqu’un pays est affecté à un magasin et qu’un autre paiement est affect
 
 L’actualisation d’une page web est une solution au problème.
 
-Pour résoudre ce problème et supprimer l’erreur, nous avons créé une [correctif](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip).
+Pour résoudre ce problème et supprimer l’erreur, nous avons créé un [patch](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip).
 
-<u>Conditions préalables</u>:
+<u>Conditions préalables</u> :
 
 * Un produit simple est créé.
-* **Commande d’archivage/de paiement** est activé uniquement pour des pays spécifiques (à l’adresse **Magasin** > **Configuration** > **Ventes** > **Méthodes de paiement**).
+* **Le contrôle/la commande de paiement** est activé uniquement pour des pays spécifiques (à l’adresse **Magasin** > **Configuration** > **Ventes** > **Méthodes de paiement**).
 
 * Exemple : paiement depuis les pays applicables = pays spécifiques
 * Exemple : paiement de pays spécifiques = Royaume-Uni
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Allez sur le storefront en tant qu&#39;invité.
 1. Ajoutez un produit simple au panier.
@@ -45,38 +45,38 @@ Pour résoudre ce problème et supprimer l’erreur, nous avons créé une [corr
 
    * Pays = *États-Unis*
 
-1. Sélectionnez le taux d’expédition et cliquez sur **Suivant**.
+1. Sélectionnez le taux de livraison et cliquez sur **Suivant**.
 
    * L’étape de paiement est ouverte.
    * Il n’y a aucun paiement disponible.
    * Message : **Aucun mode de paiement disponible.**
-   * Il n’y a pas de **Passer commande** bouton .
+   * Il n&#39;y a pas de bouton **Passer commande** .
 
-1. Revenez au **Étape d’expédition** et modifiez la valeur en :
+1. Revenez à l’ **étape d’expédition** et modifiez la valeur en :
 
    * Pays = *Royaume-Uni*
 
-1. Sélectionnez le taux d’expédition et cliquez sur **Suivant**.
+1. Sélectionnez le taux de livraison et cliquez sur **Suivant**.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 L’étape Paiement s’ouvre.
 
-* **Espèces à la livraison** apparaît.
-* **Commande d’archivage/de paiement** apparaît.
-* La variable **Passer commande** s’affiche.
+* **Espèces à la livraison** s’affiche.
+* **Check/Money order order** apparaît.
+* Le bouton **Passer commande** s’affiche.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 L’étape Paiement s’ouvre.
 
 * Il n’y a aucun paiement disponible.
 * Message : *Aucun mode de paiement disponible.*
-* Il n’y a pas de **Passer commande** bouton .
+* Il n&#39;y a pas de bouton **Passer commande** .
 
 ## Solution
 
-[Appliquer le correctif](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip) ci-dessous
+[Appliquez le correctif](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip) ci-dessous.
 
 ## Correctif
 
@@ -97,6 +97,6 @@ Le correctif est également compatible (mais peut ne pas résoudre le problème)
 
 ## Comment appliquer le correctif
 
-Voir [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) pour obtenir des instructions.
+Pour obtenir des instructions, reportez-vous à la section [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Fichiers attachés

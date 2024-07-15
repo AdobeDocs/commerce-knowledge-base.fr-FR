@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.0 : erreur 404 lors de la suppression des points de récompense lors du passage en caisse multi-livraison
 
-Cet article fournit une solution à un problème connu dans Adobe Commerce 2.4.0 pour une *404 Introuvable*&quot;erreur de page web lors de la suppression de points de récompense sur une page de passage en caisse multi-shipping. Actuellement, sur la page de paiement multi-expédition, lorsque vous tentez de supprimer les points de récompense utilisés pour payer une commande, un &quot;*404 Introuvable* &quot; s’affiche au lieu d’annuler des points de récompense. Ce problème sera résolu dans avec une version de correctif Adobe Commerce 2.4.1.
+Cet article fournit une solution à un problème connu dans Adobe Commerce 2.4.0 pour une erreur de page web &quot;*404 Not Found*&quot; lors de la suppression de points de récompense sur une page de passage en caisse multi-expédition. Actuellement, sur la page de passage en caisse multi-expédition, lorsque vous essayez de supprimer les points de récompense utilisés pour payer une commande, une page &quot;*404 Not Found*&quot; s’affiche au lieu d’une annulation réussie des points de récompense. Ce problème sera résolu dans avec une version de correctif Adobe Commerce 2.4.1.
 
 ## Produits et versions concernés
 
@@ -24,30 +24,30 @@ Cet article fournit une solution à un problème connu dans Adobe Commerce 2.4.0
 <u>Étapes à reproduire</u>
 
 1. Accédez au storefront et connectez-vous en tant que client.
-1. Ajoutez au moins deux produits au **Panier**.
-1. Ouvrez le **Panier**.
-1. Cliquez sur le bouton **Afficher et modifier le panier** lien.
-1. Cliquez sur le bouton **Extraction avec plusieurs adresses** lien.
-1. Sélectionnez les adresses de livraison sur la page **Ship to Multiple Addresses** page.
-1. Cliquez sur le bouton **Accéder aux informations d’expédition** bouton .
-1. Sélectionnez la variable **Taux fixe - Mode de livraison fixe** pour chaque adresse.
-1. Cliquez sur le bouton **Continuer vers les informations de facturation** bouton .
-1. Vérifiez les **Utiliser vos points de récompense** de la **Informations de facturation** page.
-1. Cliquez sur le bouton **Accédez à Réviser votre commande .** bouton .
-1. Cliquez sur le bouton **Supprimer** lien de n’importe quelle adresse pour supprimer les points de récompense.
+1. Ajoutez au moins deux produits au **panier**.
+1. Ouvrez le **mini-panier**.
+1. Cliquez sur le lien **Afficher et modifier le panier** .
+1. Cliquez sur le lien **Extraire avec plusieurs adresses** .
+1. Sélectionnez les adresses de livraison sur la page **Ship to Multiple Addresses**.
+1. Cliquez sur le bouton **Accéder aux informations d’expédition** .
+1. Sélectionnez le **Taux plat - Méthode d’expédition fixe** pour chaque adresse.
+1. Cliquez sur le bouton **Continuer vers les informations de facturation** .
+1. Cochez la case **Utiliser vos points de récompense** sur la page **Informations de facturation** .
+1. Cliquez sur le bouton **Aller pour revoir votre commande** .
+1. Cliquez sur le lien **Supprimer** pour n’importe quelle adresse afin de supprimer les points de récompense.
 
 <u>Résultats attendus</u>
 
-* La variable **Panier** s’affiche.
-* Le &quot;*Vous avez supprimé les points de récompense de cet ordre.* &quot; doit apparaître.
+* La page **Panier** doit apparaître.
+* &quot;*Vous avez supprimé les points de récompense de cette commande.Le message &quot;*&quot; doit s’afficher.
 
 <u>Résultat réel</u>
 
-Un &quot;*404 Introuvable* &quot; s’affiche.
+Une page d’erreur &quot;*404 Not Found*&quot; s’affiche.
 
 ## Solution
 
-La solution consiste à demander à l’acheteur de revenir au **Panier** et supprimez les points de récompense du **Panier** page web. Le problème devrait être corrigé dans le correctif Adobe Commerce version 2.4.1, qui doit être publié au 4e trimestre 2020.
+La solution consiste à demander à l’acheteur de revenir au **panier** et de supprimer les points de récompense de la page web **panier**. Le problème devrait être corrigé dans le correctif Adobe Commerce version 2.4.1, qui doit être publié au 4e trimestre 2020.
 
 ## Lecture connexe
 

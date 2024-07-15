@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-45424 : compensation de réservation incorrecte créée après un remboursement partiel
 
-Le correctif ACSD-45424 corrige le problème où une compensation de réservation incorrecte est créée après un remboursement partiel. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.17 est installée. L’ID de correctif est ACSD-45424. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-45424 corrige le problème où une compensation de réservation incorrecte est créée après un remboursement partiel. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.17 est installé. L’ID de correctif est ACSD-45424. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -27,13 +27,13 @@ Le correctif ACSD-45424 corrige le problème où une compensation de réservatio
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 Une compensation de réservation incorrecte est créée après un remboursement partiel.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Activez le mode de livraison en magasin.
 1. Créez trois sources d’inventaire et assurez-vous que l’emplacement de récupération est actif dans chacune d’elles (source1, source2, source3).
@@ -53,31 +53,31 @@ Une compensation de réservation incorrecte est créée après un remboursement 
    SELECT * FROM inventory_reservation WHERE sku = 'P3';
    ```
 
-   Vous obtiendrez l’enregistrement de commande placé dans la variable `inventory_reservation` table. La quantité est 10, ce qui est correct.
+   Vous obtiendrez l’enregistrement de la commande dans la table `inventory_reservation`. La quantité est 10, ce qui est correct.
 1. Facturez cette commande à partir du serveur principal.
-1. Créez maintenant une note de crédit pour un seul produit. NE PAS sélectionner la variable *Retour à Stock* .
+1. Créez maintenant une note de crédit pour un seul produit. NE cochez PAS la case *Revenir à Stock* .
 1. Exécutez la même requête à partir de l’étape 8.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
-Si vous n’avez pas sélectionné l’option *Retour à Stock* lors de la création de l’avoir, la variable `inventory_reservation` ne contiendra pas d’enregistrement correspondant à l’avoir de crédit.
+Si vous n’avez pas sélectionné *Revenir à Stock* au cours de la création de l’avoir, la table `inventory_reservation` n’aura pas d’enregistrement correspondant à l’avoir.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
-Même si vous n’avez pas sélectionné le *Retour à Stock* au cours de la création de l’avoir, il ajoute un enregistrement à `inventory_reservation` table avec `creditmemo_created` type d’événement. En outre, l’enregistrement de note de crédit ajouté dans la variable `inventory_reservation` a une quantité de 10, même si vous avez créé l’avoir pour une seule quantité.
+Même si vous n’avez pas sélectionné *Revenir au stock* lors de la création de l’avoir, un enregistrement est ajouté à la table `inventory_reservation` avec le type d’événement `creditmemo_created`. En outre, l’enregistrement de note de crédit ajouté à la table `inventory_reservation` a une quantité de 10, même si vous avez créé l’avoir de crédit pour une seule quantité.
 
 ## Appliquer le correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) dans notre documentation destinée aux développeurs.
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) de notre documentation destinée aux développeurs.

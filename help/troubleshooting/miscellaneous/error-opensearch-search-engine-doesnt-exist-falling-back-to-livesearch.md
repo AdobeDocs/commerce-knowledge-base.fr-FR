@@ -1,6 +1,6 @@
 ---
-title: Erreur [!DNL opensearch] le moteur de recherche n’existe pas. Revenir à [!DNL livesearch].
-description: Cet article fournit une solution au problème où vous voyez l’erreur "Error- [!DNL opensearch] le moteur de recherche n’existe pas. Revenir à [!DNL livesearch].` dans Adobe Commerce sur l’infrastructure cloud.
+title: Le moteur de recherche Error [!DNL opensearch] n’existe pas. Revenir à [!DNL livesearch].
+description: Cet article fournit une solution au problème où l’erreur "Error- [!DNL opensearch] search engine n’existe pas" s’affiche. Revenir à  [!DNL livesearch].` dans Adobe Commerce sur l’infrastructure cloud.
 feature: Deploy, Search
 role: Developer
 exl-id: a6cc981d-b8f0-402d-8771-60d2f21f09f8
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 ---
 
-# Erreur [!DNL opensearch] le moteur de recherche n’existe pas. Revenir à [!DNL livesearch].
+# Le moteur de recherche d’ erreur [!DNL opensearch] n’existe pas. Revenir à [!DNL livesearch].
 
-Cet article fournit une solution au problème où l’erreur s’affiche : *Erreur : [!DNL opensearch] le moteur de recherche n’existe pas. Revenir à [!DNL livesearch].* dans Adobe Commerce sur l’infrastructure cloud où [!DNL Live Search] est utilisée.
+Cet article fournit une solution au problème où l’erreur suivante s’affiche : *Erreur : [!DNL opensearch] le moteur de recherche n’existe pas. Revenir à [!DNL livesearch].* dans Adobe Commerce sur l’infrastructure cloud où [!DNL Live Search] est utilisé.
 
 ## Produits et versions concernés
 
 * Adobe Commerce sur l’infrastructure cloud, toutes les versions
-* [!DNL Live Search] est installé et utilisé
+* [!DNL Live Search] est installé et en cours d’utilisation
 
 ## Problème
 
-Le message suivant s’affiche dans les journaux (et peut être lu dans la section [!DNL New Relic]) :
-*Erreur : [!DNL opensearch] le moteur de recherche n’existe pas. Revenir à [!DNL livesearch].*
+Le message suivant est affiché dans les journaux (et observable dans [!DNL New Relic]) :
+*Erreur : le moteur de recherche [!DNL opensearch] n’existe pas. Revenir à [!DNL livesearch].*
 
 ## Solution
 
-1. Modifiez la variable `.magento.env.yaml` fichier .
+1. Modifiez le fichier `.magento.env.yaml`.
 1. Recherchez les lignes suivantes :
 
    ```yaml
@@ -37,8 +37,8 @@ Le message suivant s’affiche dans les journaux (et peut être lu dans la secti
          engine: opensearch
    ```
 
-1. Si vous ne disposez pas de ces lignes, ajoutez-les au `.magento.env.yaml` fichier .
-1. Si ces lignes existent, **modification du moteur** de *[!DNL opensearch]* to *[!DNL livesearch]*.
+1. Si vous ne disposez pas de ces lignes, ajoutez-les au fichier `.magento.env.yaml`.
+1. Si ces lignes existent, **modifiez le moteur** de *[!DNL opensearch]* à *[!DNL livesearch]*.
 1. Validez la modification, puis redéployez.
 
 ## Lecture connexe

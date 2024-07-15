@@ -22,35 +22,35 @@ Cet article fournit une solution au problème connu d’Adobe Commerce 2.4.0 lor
 
 ## Problème
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Accédez au **Panneau d’administration** > **Ventes** > **Commandes**.
-1. Cliquez sur le bouton **Créer une commande** bouton .
+1. Accédez au **panneau d’administration** > **Ventes** > **Commandes**.
+1. Cliquez sur le bouton **Créer une commande** .
 1. Sélectionnez le client créé.
 1. Positionnez-vous sur le storefront en tant que client créé.
-1. Accédez au **Produit** page. Cliquez sur le bouton **Actualiser** sur le bouton **Produits récemment consultés** section de **Activités du client**.
+1. Accédez à la page **Product** (Produit). Cliquez sur le bouton **Actualiser** dans la section **Produits récemment consultés** des **Activités du client**.
 1. Retournez à la vitrine.
 1. passé une commande à l’aide des produits créés ;
-1. Revenez au **Panneau d’administration** et cliquez sur le bouton **Actualiser** du bouton **Derniers éléments triés** section de **Activités du client**.
-1. Retournez à la vitrine. Ajoutez le produit créé au **Liste de comparaison**.
-1. Revenez au **Panneau d’administration**. Cliquez sur le bouton **Actualiser** du bouton **Produits dans la liste de comparaison** section de **Activités du client**.
+1. Revenez au **panneau d’administration** et cliquez sur le bouton **Actualiser** de la section **Derniers éléments commandés** des **activités du client**.
+1. Retournez à la vitrine. Ajoutez le produit créé à la **Liste de comparaison**.
+1. Revenez au **panneau d’administration**. Cliquez sur le bouton **Actualiser** de la section **Produits dans la liste de comparaison** des **Activités du client**.
 1. Retournez à la vitrine.
-1. Supprimez le produit créé du **Liste de comparaison**.
-1. Revenez au **Panneau d’administration**.
-1. Cliquez sur le bouton **Actualiser** du bouton **Produits récemment comparés** section de **Activités du client**.
+1. Supprimez le produit créé de la **liste de comparaison**.
+1. Revenez au **panneau d’administration**.
+1. Cliquez sur le bouton **Actualiser** de la section **Produits récemment comparés** des **Activités du client**.
 1. Retournez à la vitrine.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
-Le nom du produit doit apparaître dans la variable **Produits récemment consultés**, **Derniers éléments triés**, **Produits dans la liste de comparaison**, et **Produits récemment comparés** .
+Le nom du produit doit apparaître dans les sections **Produits récemment consultés**, **Derniers articles commandés**, **Produits dans la liste de comparaison** et **Produits récemment comparés**.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
-La page est parcourue chaque fois qu’une **Actualiser** Cliquez sur le bouton . Le nom du produit n’apparaît pas dans la section appropriée.
+La page est défilée chaque fois qu’un utilisateur clique sur un bouton **Actualiser** . Le nom du produit n’apparaît pas dans la section appropriée.
 
 ## Solution
 
-L’utilisateur administrateur peut mettre à jour une solution de contournement. **Activités du client** en cliquant sur le bouton **Mettre à jour les modifications** en bas de la barre latérale. Le problème doit être résolu dans le correctif Adobe Commerce 2.4.1.
+Pour pallier ce problème, l’utilisateur administrateur peut mettre à jour **les activités du client** en cliquant sur le bouton **Mettre à jour les modifications** au bas de la barre latérale. Le problème doit être résolu dans le correctif Adobe Commerce 2.4.1.
 
 ![mceclip0.png](assets/mceclip0.png)
 

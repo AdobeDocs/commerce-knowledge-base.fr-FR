@@ -18,7 +18,7 @@ Le FAQ suivant a pour but d’aider les marchands, les développeurs et les part
 
 ### Où puis-je trouver les dates de prise en charge des logiciels pour toutes les versions d’Adobe Commerce ?
 
-Vous trouverez la politique de cycle de vie du logiciel Adobe Commerce et les dates de prise en charge logicielle dans la section [Stratégie de cycle de vie des logiciels Adobe Commerce](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Nous publions également des dates de fin de prise en charge (EOS) sur notre [page de documentation destinée aux développeurs](https://devdocs.magento.com/release/released-versions.html).
+Vous trouverez la politique de cycle de vie des logiciels Adobe Commerce et les dates de prise en charge des logiciels dans la [stratégie de cycle de vie des logiciels Adobe Commerce](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Nous publions également des dates de fin de prise en charge (EOS) sur notre [ page de documentation destinée aux développeurs ](https://devdocs.magento.com/release/released-versions.html).
 
 ### Qu’est-ce que cela signifie lorsque l’Adobe met fin à la prise en charge d’une version du logiciel Adobe Commerce ?
 
@@ -35,13 +35,13 @@ Nous vous recommandons vivement de n’utiliser que des logiciels pris en charge
 
 Si vous décidez de continuer à utiliser un logiciel dont la prise en charge est terminée, vous ne recevrez plus de mises à jour importantes de produits ou de support technique, qui inclut souvent les dernières mises à jour de sécurité. L’utilisation de logiciels non pris en charge peut avoir un impact sur les domaines suivants :
 
-**Offrir des expériences d’achat sécurisées :**
+**Fournir des expériences d’achat sécurisées :**
 
 * Vous devrez dépenser des ressources pour évaluer et employer des fournisseurs tiers afin de fournir une assistance en matière de sécurité, des correctifs et des mises à jour.
-* Une fois qu’une version du logiciel Adobe Commerce n’est plus prise en charge, cette version n’est plus [Compatibilité PCI](https://www.pcisecuritystandards.org/pci_security/maintaining_payment_security). Dans ce cas, vous risquez d’être soumis à des amendes, de perdre votre capacité de traitement de carte de crédit ou à d’autres pénalités.
+* Une fois qu’une version du logiciel Adobe Commerce n’est plus prise en charge, cette version n’est plus [compatible PCI](https://www.pcisecuritystandards.org/pci_security/maintaining_payment_security). Dans ce cas, vous risquez d’être soumis à des amendes, de perdre votre capacité de traitement de carte de crédit ou à d’autres pénalités.
 * Comme la plupart des exploits ont tendance à cibler les installations qui ne sont pas à jour avec les dernières mises à jour de sécurité, nous recommandons toujours aux commerçants de garder leurs logiciels à jour et d’installer les mises à jour de sécurité dès qu’elles sont disponibles. Il appartient au marchand de préserver la sécurité de sa boutique en ligne grâce à des protections et des contrôles de sécurité adéquats pour protéger son site web et les données personnelles de ses clients. Pour ce faire, l’une des meilleures méthodes consiste à installer les derniers correctifs, correctifs et mises à jour logicielles, et à surveiller continuellement votre site et votre console d’administration pour détecter les activités inhabituelles.
 
-**Fonctionnement efficace**
+**Fonctionnement efficace et efficace**
 
 * En tant que versions non prises en charge de l’ère des logiciels Adobe Commerce, il existe un nombre décroissant de développeurs et de partenaires disponibles, capables de fournir une assistance pour les versions obsolètes lorsqu’elles orientent leurs opérations vers des technologies plus récentes. En règle générale, le nombre et la qualité des talents pour la maintenance des logiciels diminuent, tandis que les coûts de maintenance augmentent.
 * Pour les logiciels Adobe Commerce non pris en charge, les technologies périphériques et les dépendances peuvent également atteindre leur propre fin de cycle de vie (par exemple, PHP, MYSQL, REDIS, SOLR). Cela rend de plus en plus difficile la gestion et la maintenance d’un site sécurisé et conforme.
@@ -68,9 +68,9 @@ Il existe plusieurs façons de rester à jour sur votre logiciel Adobe Commerce 
 
 Votre plateforme commerciale est un système commercial important pour votre entreprise et rester à jour et à jour est un investissement essentiel dans l’entreprise. Les dernières technologies et mises à jour de sécurité de votre vitrine numérique sont importantes à de nombreux niveaux et peuvent contribuer à améliorer les innovations et la croissance.
 
-Le passage à la dernière version du logiciel Adobe Commerce peut nécessiter du temps et des ressources pour s’exécuter correctement. Il est recommandé de planifier au plus tôt la date de fin de l’assistance afin de vous assurer que vous disposez du temps et des ressources nécessaires pour atteindre vos objectifs stratégiques dans les délais et dans les limites du budget. Pour vous aider à effectuer votre prochaine mise à niveau, Adobe a publié la [2.4 Guide de mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) qui comprend les bonnes pratiques et les étapes techniques à suivre, ainsi que les outils et ressources à utiliser lors de la mise à niveau.
+Le passage à la dernière version du logiciel Adobe Commerce peut nécessiter du temps et des ressources pour s’exécuter correctement. Il est recommandé de planifier au plus tôt la date de fin de l’assistance afin de vous assurer que vous disposez du temps et des ressources nécessaires pour atteindre vos objectifs stratégiques dans les délais et dans les limites du budget. Pour vous aider à effectuer votre prochaine mise à niveau, Adobe a publié le [2.4 Upgrade Guide](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) qui comprend les bonnes pratiques et les étapes techniques à suivre, ainsi que les outils et ressources à utiliser lors de la mise à niveau.
 
-Il est également important de réserver les ressources des développeurs et des partenaires le plus tôt possible. Le temps passé par les partenaires et les ressources sont souvent réservés bien avant la date de fin de l’assistance, ce qui entraîne une diminution significative des ressources destinées à assister les projets de migration. Il est recommandé d’avoir un plan variable de trois ans dont vous discutez chaque année au minimum et de vous assurer que l’année suivante est planifiée et budgétée. Utilisation [Calendrier des versions d’Adobe](https://devdocs.magento.com/release/) pour effectuer le suivi des dates de publication.
+Il est également important de réserver les ressources des développeurs et des partenaires le plus tôt possible. Le temps passé par les partenaires et les ressources sont souvent réservés bien avant la date de fin de l’assistance, ce qui entraîne une diminution significative des ressources destinées à assister les projets de migration. Il est recommandé d’avoir un plan variable de trois ans dont vous discutez chaque année au minimum et de vous assurer que l’année suivante est planifiée et budgétée. Utilisez le [calendrier de publication d’Adobe](https://devdocs.magento.com/release/) pour effectuer le suivi des dates de publication.
 
 ### Puis-je utiliser un fournisseur de services tiers pour la prise en charge des logiciels lorsque la prise en charge d’Adobe Commerce cesse ?
 
@@ -102,7 +102,7 @@ Non, Adobe ne reclasse pas les tickets d’assistance en fonction de la date de 
 
 ### Pour les tickets d’assistance ouverts AVANT la date de fin de la prise en charge, existe-t-il une alerte pour rappeler aux marchands la fin de la prise en charge à venir ?
 
-Non, il n’existe aucune alerte de rappel informant les utilisateurs de tickets d’assistance des dates de fin de prise en charge à venir. Il est de la responsabilité de l’utilisateur de connaître les dates de fin de prise en charge de la version d’Adobe Commerce sur laquelle il se trouve, qui se trouvent sur notre [Stratégie de cycle de vie des logiciels Adobe Commerce](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+Non, il n’existe aucune alerte de rappel informant les utilisateurs de tickets d’assistance des dates de fin de prise en charge à venir. Il est de la responsabilité de l’auteur du ticket de connaître les dates de fin de prise en charge de la version d’Adobe Commerce sur laquelle il se trouve, qui se trouvent sur notre [politique de cycle de vie des logiciels Adobe Commerce](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 ### Si un ticket de support pour une version de logiciel est ouvert APRÈS la date de fin de prise en charge pour cette version, sera-t-il toujours résolu ?
 

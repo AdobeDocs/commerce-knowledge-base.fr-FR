@@ -1,6 +1,6 @@
 ---
-title: Le Gestionnaire de balises de Google est rompu par la variable [!DNL Live Search] widget
-description: Cet article offre une solution au problème [!DNL Live Search Product Listing Widget] cause [!DNL Google Tag Manager] pour arrêter de fonctionner.
+title: Le Gestionnaire de balises de Google est rompu par le widget  [!DNL Live Search]
+description: Cet article offre une solution au  [!DNL Live Search Product Listing Widget] problème entraînant l’arrêt du fonctionnement de  [!DNL Google Tag Manager] .
 feature: Install, Search, Best Practices
 role: Admin, Developer
 exl-id: 485f8ccb-cba2-4785-a8e1-a1e98c88b21e
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Google Tag Manager] est rompu par la variable [!DNL Live Search] widget
+# [!DNL Google Tag Manager] est rompu par le widget [!DNL Live Search]
 
-Cet article offre une solution au problème [!DNL Live Search Product Listing Widget] cause [!DNL Google Tag Manager] pour arrêter de fonctionner.
+Cet article offre une solution au [!DNL Live Search Product Listing Widget] qui empêche [!DNL Google Tag Manager] de fonctionner.
 
 ## Produits et versions concernés
 
@@ -21,13 +21,13 @@ Cet article offre une solution au problème [!DNL Live Search Product Listing Wi
 
 ## Problème
 
-La variable [!DNL Live Search Product Listing Widget] causes [!DNL Google Tag Manager] pour arrêter de fonctionner.
+[!DNL Live Search Product Listing Widget] entraîne l’arrêt du fonctionnement de [!DNL Google Tag Manager].
 
 ## Solution
 
-Pour garantir que [!DNL Google Tag Manager] fonctionne avec [!DNL Live Search], utilisez le *Adaptateur de recherche*.
+Pour vous assurer que [!DNL Google Tag Manager] fonctionne avec [!DNL Live Search], utilisez l’ *adaptateur de recherche*.
 
-Pour ce faire, désactivez le widget dans Admin. [!DNL Live Search] Par défaut, l’utilisation de la variable *Adaptateur de recherche*.
+Pour ce faire, désactivez le widget dans Admin. [!DNL Live Search] utilise ensuite par défaut l’ *adaptateur de recherche*.
 
 ## Lecture connexe
 

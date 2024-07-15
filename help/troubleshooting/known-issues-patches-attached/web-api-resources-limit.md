@@ -51,13 +51,13 @@ Les correctifs ne sont compatibles avec aucune autre version d’Adobe Commerce.
 
 ### Comment appliquer le correctif
 
-Décompressez le fichier téléchargé. `.zip` et appliquez le correctif comme décrit dans la section [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
+Décompressez le fichier `.zip` téléchargé et appliquez le correctif comme décrit dans la section [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
 
 >[!WARNING]
 >
->Si vous pensez que votre boutique est victime d’une attaque par déni de service, Adobe recommande de réduire les limites d’entrée par défaut à une valeur inférieure afin d’imposer des restrictions sur le nombre de ressources pouvant être demandées.  Vous pouvez personnaliser les limites par défaut par programmation à l’aide de [arguments du constructeur de classe](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html)
->comme décrit dans notre documentation destinée aux développeurs : [Sécurité de l’API > Limitation de débit > Entrées maximales du paramètre](https://devdocs.magento.com/guides/v2.4/get-started/api-security.html#rate-limiting).
+>Si vous pensez que votre boutique est victime d’une attaque par déni de service, Adobe recommande de réduire les limites d’entrée par défaut à une valeur inférieure afin d’imposer des restrictions sur le nombre de ressources pouvant être demandées.  Vous pouvez personnaliser les limites par défaut par programmation à l’aide des [arguments de constructeur de classe](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html)
+>comme décrit dans notre documentation destinée aux développeurs : [Sécurité de l’API > Limitation du débit > Entrées maximales des paramètres](https://devdocs.magento.com/guides/v2.4/get-started/api-security.html#rate-limiting).
 
 ## Lecture connexe
 
-[Sécurité des API > Limitation de débit](https://devdocs.magento.com/guides/v2.4/get-started/api-security.html#rate-limiting) dans notre documentation destinée aux développeurs.
+[Sécurité de l’API > Limitation de débit](https://devdocs.magento.com/guides/v2.4/get-started/api-security.html#rate-limiting) dans notre documentation destinée aux développeurs.

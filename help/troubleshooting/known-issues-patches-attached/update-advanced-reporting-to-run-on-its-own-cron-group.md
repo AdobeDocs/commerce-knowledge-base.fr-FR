@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Mettre à jour les rapports avancés pour qu’ils s’exécutent sur son propre groupe cron
 
-Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur l’infrastructure cloud 2.3.0 où les rapports avancés n’affichent aucune donnée. Ceci est dû au traitement Création de rapports avancés `analytics_collect_data` n’est pas exécuté conformément au planning. Cet article fournit un correctif qui crée un groupe cron de création de rapports avancés `analytics`.
+Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur l’infrastructure cloud 2.3.0 où les rapports avancés n’affichent aucune donnée. Cela est dû au fait que la tâche de création de rapports avancée `analytics_collect_data` n’est pas exécutée conformément au planning. Cet article fournit un correctif qui crée un groupe cron de création de rapports avancés `analytics`.
 
 ## Problème
 
@@ -21,13 +21,13 @@ Aucune donnée n’est chargée dans le module de reporting avancé.
 
 ## Correctif
 
-Le correctif est joint à cet article. Le correctif déplace le `analytics` tâches cron du groupe par défaut vers `analytics`.
+Le correctif est joint à cet article. Le correctif déplace les tâches de la tâche cron `analytics` du groupe par défaut vers `analytics`.
 
 Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’article et cliquez sur le nom du fichier, ou cliquez sur le lien suivant :
 
 [MDVA-19640\_EE\_2.3.0\_COMPOSER\_v1.patch](assets/MDVA-19640_EE_2.3.0_COMPOSER_v1.patch.zip)
 
-Après avoir appliqué le correctif, exécutez la requête SQL suivante. La requête doit être exécutée pour modifier les enregistrements dans `cron_schedule` table.
+Après avoir appliqué le correctif, exécutez la requête SQL suivante. La requête doit être exécutée pour modifier les enregistrements dans la table `cron_schedule`.
 
 ```
 UPDATE core_config_data

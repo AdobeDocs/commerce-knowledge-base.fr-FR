@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Packages rétrogradation après mise à niveau de 2.4.4 à 2.4.4-p1
 
-Cet article fournit un correctif pour le problème lorsque les commerçants de la version 2.4.4 exécutent la variable `composer update` , puis les packages (modules) répertoriés ci-dessous sont rétrogradés vers leurs versions antérieures, qui ne sont pas compatibles avec la version 2.4.4 et qui ne sont censées être utilisées qu’avec la version 2.4.5 et ultérieure.
+Cet article fournit un correctif pour le problème lorsque les commerçants de la version 2.4.4 exécutent la commande `composer update`, puis que les packages (modules) répertoriés ci-dessous sont mis à niveau vers leurs versions antérieures qui ne sont pas compatibles avec la version 2.4.4 et qui sont censés être utilisés uniquement avec la version 2.4.5 et ultérieures.
 
 ## Produits et versions concernés
 
@@ -27,7 +27,7 @@ Il existe deux scénarios : comment ce problème peut-il se produire et comment 
 
 ### Scénario 1
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Lors de la mise à niveau de la version 2.4.4 vers 2.4.4-p1, plusieurs modules (modules) sont mis à niveau avec une sortie similaire :
 
@@ -70,31 +70,31 @@ Downgrading magento/module-two-factor-auth (1.1.4 => 1.1.3)
 Removing magento/module-admin-adobe-ims (100.4.0)
 ```
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 La mise à niveau de la version 2.4.4 vers 2.4.4-p1 génère les packages (modules) corrects pour la version 2.4.4-p1.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Lors de la mise à niveau de la version 2.4.4 vers 2.4.4-p1, les versions (modules) de ces packages se dégradent, mais ces messages peuvent être ignorés et la fonctionnalité n’est pas affectée.
 
 ### Scénario 2
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-Lorsque 2.4.4 les marchands exécutent la variable `composer update` , puis les mêmes modules (modules) répertoriés ci-dessus dans **Scénario 1** être mis à niveau vers leurs versions plus récentes, compatibles uniquement avec la version 2.4.5 et ne devant pas être utilisées avec la version 2.4.4.
+Lorsque 2.4.4 les commerçants exécutent la commande `composer update`, les mêmes modules (modules) répertoriés ci-dessus dans **Scénario 1** sont mis à niveau vers leurs versions plus récentes, qui sont compatibles uniquement avec la version 2.4.5 et ne sont pas censées être utilisées avec la version 2.4.4.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 La mise à niveau de la version 2.4.4 vers 2.4.4-p1 génère les packages (modules) corrects pour la version 2.4.4-p1.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Les modules (modules) sont mis à niveau de la version 2.4.4 à la version 2.4.4-p1.
 
 ## Solution 1 : correctif
 
-Le correctif est joint à cet article. Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’article et cliquez sur le nom du fichier ou cliquez sur le lien suivant : [Télécharger ACPLTSRV-2017-fix.sh.zip](assets/ACPLTSRV-2017-fix.sh.zip)
+Le correctif est joint à cet article. Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’article et cliquez sur le nom du fichier ou cliquez sur le lien suivant : [Téléchargez ACPLTSRV-2017-fix.sh.zip](assets/ACPLTSRV-2017-fix.sh.zip)
 
 ## Versions Adobe Commerce et Magento Open Source compatibles :
 
@@ -110,27 +110,27 @@ Le correctif a été créé pour :
 
 ## Comment appliquer le correctif
 
-Utilisation du script bash joint [ACPLTSRV-2017-fix.sh.zip](assets/ACPLTSRV-2017-fix.sh.zip) comme solution à ce problème.
+Utilisez le script bash joint [ACPLTSRV-2017-fix.sh.zip](assets/ACPLTSRV-2017-fix.sh.zip) comme solution à ce problème.
 
-**Instructions exactes sur l’utilisation du script :**
+**Instructions exactes sur l&#39;utilisation du script :**
 
 ### Sur Adobe Commerce sur l’infrastructure cloud :
 
-1. Téléchargement du fichier de script bash `ACPLTSRV-2017-fix.sh` à votre extraction locale de votre base de code cloud.
-1. Exécution du fichier de script bash `ACPLTSRV-2017-fix.sh` pour modifier les fichiers du compositeur en local.
+1. Téléchargez le fichier de script bash `ACPLTSRV-2017-fix.sh` vers votre extraction locale de votre base de code cloud.
+1. Exécutez le fichier de script bash `ACPLTSRV-2017-fix.sh` pour modifier les fichiers de compositeur localement.
 1. Ajoutez et validez les fichiers de compositeur modifiés dans votre référentiel git.
 
 ### Sur Adobe Commerce ou Magento Open Source sur site :
 
-1. Placez le script bash. `ACPLTSRV-2017-fix.sh` dans le `root` du dossier de votre installation Adobe Commerce/Magento Open Source 2.4.4 (même dossier que le fichier `composer.json`).
-1. Exécutez le script bash avec une `apply` argument permettant de verrouiller les modules concernés (modules) sur leurs versions 2.4.4 :
+1. Placez le script bash `ACPLTSRV-2017-fix.sh` dans le dossier `root` de votre installation Adobe Commerce/Magento Open Source 2.4.4 (le même dossier que `composer.json`).
+1. Exécutez le script bash avec un argument `apply` pour verrouiller les modules concernés (modules) sur leurs versions 2.4.4 :
 
    ```bash
    sh ACPLTSRV-2017-fix.sh apply
    ```
 
 1. Exécutez la mise à jour du compositeur pour installer les packages verrouillés (modules).
-1. Une fois que vous êtes prêt à effectuer la mise à niveau vers la version 2.4.5 ou 2.4.4-p1, exécutez le script avec une `rollback` argument :
+1. Une fois que vous êtes prêt à effectuer la mise à niveau vers la version 2.4.5 ou 2.4.4-p1, exécutez le script avec un argument `rollback` :
 
    ```bash
    sh ACPLTSRV-2017-fix.sh rollback
@@ -141,4 +141,4 @@ Utilisation du script bash joint [ACPLTSRV-2017-fix.sh.zip](assets/ACPLTSRV-2017
 
 ## Solution 2
 
-La deuxième solution à ce problème consiste à ne pas exécuter la variable `composer update` sans argument.
+La deuxième solution à ce problème consiste à ne pas exécuter la commande `composer update` sans argument.

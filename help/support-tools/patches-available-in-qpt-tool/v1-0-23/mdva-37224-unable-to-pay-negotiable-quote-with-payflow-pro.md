@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-37224 : Impossible de payer un &quot;devis négociable&quot; avec PayFlow Pro
 
-Le correctif MDVA-37224 corrige le problème lorsque les clients ne sont pas en mesure de payer pour un **Devis négociable** avec Paypal PayFlow Pro. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) La version 1.0.23 est installée. L’ID de correctif est MDVA-37224. Veuillez noter que le problème doit être corrigé dans Adobe Commerce version 2.4.3.
+Le correctif MDVA-37224 corrige le problème lorsque les clients ne sont pas en mesure de payer un **devis négociable** avec Paypal PayFlow Pro. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.23 est installé. L’ID de correctif est MDVA-37224. Veuillez noter que le problème doit être corrigé dans Adobe Commerce version 2.4.3.
 
 ## Produits et versions concernés
 
@@ -22,37 +22,37 @@ Le correctif MDVA-37224 corrige le problème lorsque les clients ne sont pas en 
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-<u>Conditions préalables</u>:
+<u>Conditions préalables</u> :
 
 * Adobe Commerce avec module B2B installé
 * Fonctionnalité d’entreprise activée
-* **Devis négociable** fonctionnalité activée
+* Fonctionnalité **Négociable Quote** activée
 * Il existe un utilisateur de société
 * Le mode de paiement PayPal PayFlow Pro est activé et configuré.
 * Le mode de paiement PayPal PayFlow Pro est autorisé pour B2B
 * 2 produits avec des prix différents ont été créés
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Ouvrez le storefront.
-1. Ajouter **Produit 1** au panier.
-1. Créez un **Devis négociable** pour **Produit 1**.
-1. Ajouter **Product 2** au panier.
-1. Depuis l’administrateur, acceptez la variable **Devis négociable** créé à l’étape 3.
-1. À partir de Storefront, ouvrez ceci **Devis négociable** et passez à la caisse.
-1. Sélectionnez la variable **Mode de paiement** = *PayPal PayFlow Pro* à l’adresse **Révision et paiements** étape .
+1. Ajoutez **Produit 1** au panier.
+1. Créez une **citation négociable** pour **Produit 1**.
+1. Ajoutez **Product 2** au panier.
+1. À partir de l’administrateur, acceptez la **citation négociable** créée à l’étape 3.
+1. À partir de Storefront, ouvrez cette **citation négociable** et passez en caisse.
+1. Sélectionnez la **Méthode de paiement** = *PayPal PayFlow Pro* à l’étape **Révision et paiements** .
 1. Placez la commande.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 * La commande est passée correctement, comme prévu.
 * PayPal envoie un courrier électronique contenant les informations correctes au client, comme prévu.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 * La page web se bloque et ne termine pas la commande.
 * PayPal envoie une confirmation au client avec zéro valeur, comme dans cet exemple :
@@ -77,14 +77,14 @@ US
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
 * 
-   * [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+   * [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
 Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) .

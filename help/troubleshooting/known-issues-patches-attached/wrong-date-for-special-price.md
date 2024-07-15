@@ -17,9 +17,9 @@ Cet article fournit un correctif pour le problème connu d’Adobe Commerce 2.2.
 
 ## Problème
 
-Lorsque vous définissez/modifiez le prix spécial d’un produit, la date et l’heure actuelles sont enregistrées dans la base de données en tant que valeur pour la variable `special_from_date` (invisible lors de la modification d’un produit). Si vous modifiez le prix spécial et que votre compte utilisateur administrateur est défini sur un autre paramètre régional de l’interface, une valeur incorrecte peut être définie sur `special_from_date` en raison de problèmes liés à l’analyse du format de date pour différents paramètres régionaux.
+Lorsque vous définissez/modifiez le prix spécial d’un produit, la date et l’heure actuelles sont enregistrées dans la base de données en tant que valeur de l’attribut `special_from_date` (invisible lors de la modification d’un produit). Si vous modifiez le prix spécial et que votre compte utilisateur admin est défini sur un autre paramètre régional de l’interface, une valeur incorrecte peut être définie sur `special_from_date` en raison des problèmes liés à l’analyse du format de date pour différents paramètres régionaux.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Conditions préalables : le paramètre régional de l’utilisateur administrateur est Anglais (Etats-Unis).
 
@@ -29,18 +29,18 @@ Conditions préalables : le paramètre régional de l’utilisateur administrate
 1. Cliquez sur **Enregistrer le compte**.
 1. Accédez à **Catalogue** > **Produit**.
 1. Sélectionnez n’importe quel produit.
-1. Sur la page du produit, cliquez sur **Tarifs avancés**.
+1. Sur la page du produit, cliquez sur **Advanced Tarification**.
 1. Ajoutez un prix spécial.
 1. Enregistrez le produit.
 1. Répétez les étapes 7 à 9.
-1. Accédez à **Système** > **Journaux des actions**.
+1. Accédez à **System** > **Action Logs**.
 1. Vérifiez le journal pour la mise à jour du produit.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 La date de début du prix spécial doit être la date courante.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 La date de début du prix spécial est fixée à quelques années dans le futur, ce qui empêche l&#39;activité du prix spécial.
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Correctif MDVA-33344 : identifiant de jeu d’attributs &quot;rma-item&quot; codé en dur
 
-Le correctif MDVA-33344 corrige le problème en raison duquel l’identifiant d’attribut par défaut de l’entité codée en dur &quot;rma\_item&quot; est utilisé à la place de la valeur de la base de données. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.0.16 est installée. Veuillez noter que le problème a été corrigé/est programmé pour être corrigé dans Adobe Commerce 2.4.3.
+Le correctif MDVA-33344 corrige le problème en raison duquel l’identifiant d’attribut par défaut de l’entité codée en dur &quot;rma\_item&quot; est utilisé à la place de la valeur de la base de données. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.16 est installé. Veuillez noter que le problème a été corrigé/est programmé pour être corrigé dans Adobe Commerce 2.4.3.
 
 ## Produits et versions concernés
 
@@ -23,21 +23,21 @@ Le correctif MDVA-33344 corrige le problème en raison duquel l’identifiant d�
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-La variable `/rest/default/V1/returnsAttributeMetadata` Le point d’entrée WebAPI renvoie un résultat vide si l’identifiant de jeu d’attributs par défaut de l’entité &quot;rma\_item&quot; est différent de l’identifiant d’installation par défaut.
+Le point d’entrée WebAPI `/rest/default/V1/returnsAttributeMetadata` renvoie un résultat vide si l’identifiant de jeu d’attributs par défaut de l’entité &quot;rma\_item&quot; est différent de l’identifiant d’installation par défaut.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-Lancer un appel API à `/rest/default/V1/returnsAttributeMetadata`.
+Effectuez un appel API vers `/rest/default/V1/returnsAttributeMetadata`.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 Les données sont renvoyées.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 Le résultat vide est renvoyé.
 
@@ -46,13 +46,13 @@ Le résultat vide est renvoyé.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) dans notre documentation destinée aux développeurs.
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) de notre documentation destinée aux développeurs.

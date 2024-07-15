@@ -30,7 +30,7 @@ Toutes les versions d’infrastructure cloud d’Adobe Commerce sur site et d’
 
 <u>Étapes à reproduire :</u>
 
-1. Accédez à **Magasins** > **Configuration** > **Clients** > **Configuration client** > **Créer des options de compte** et défini **Activation de l’affectation automatique** to **Groupe de clients** to *Oui*.
+1. Accédez à **Magasins** > **Configuration** > **Clients** > **Configuration client** > **Créer de nouvelles options de compte** et définissez **Activer l’affectation automatique** sur **Groupe client** sur *Oui*.
 1. Accédez à **Général** > **Informations sur le magasin** > et définissez un Pays et un Numéro de TVA valides.
 1. Cliquez sur **Valider le numéro de TVA**.
 
@@ -40,11 +40,11 @@ La validation a réussi.
 
 <u>Résultat réel :</u>
 
-L&#39;erreur suivante s&#39;affiche : &quot;*Erreur lors de la vérification du numéro de TVA.*&quot;
+L’erreur suivante s’affiche : &quot;*Erreur lors de la vérification du numéro de TVA.*&quot;
 
 ## Solution
 
-Appliquez la variable [correctif](assets/MDVA-27623_EE_2.3.2-p2_COMPOSER_v1.patch.zip) fourni dans cet article.
+Appliquez le [patch](assets/MDVA-27623_EE_2.3.2-p2_COMPOSER_v1.patch.zip) fourni dans cet article.
 
 ## Correctif
 

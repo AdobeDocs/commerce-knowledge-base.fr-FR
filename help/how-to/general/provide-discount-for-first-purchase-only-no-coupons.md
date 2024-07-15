@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Proposer une remise pour le premier achat uniquement (aucun coupon)
 
-Reportez-vous à [Remise avec le premier achat](https://docs.magento.com/m2/ee/user_guide/marketing/price-rule-discount-first-purchase.html) dans notre guide d’utilisation.
+Reportez-vous à l’article [Remise avec le premier achat](https://docs.magento.com/m2/ee/user_guide/marketing/price-rule-discount-first-purchase.html) de notre guide d’utilisation.

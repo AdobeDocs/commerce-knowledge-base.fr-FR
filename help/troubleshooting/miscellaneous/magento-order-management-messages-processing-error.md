@@ -1,6 +1,6 @@
 ---
 title: Système Magento Order Management (OMS) pour l’erreur de traitement Adobe Commerce
-description: Cet article fournit une solution au problème lorsque vous obtenez une erreur "getMode()" dans l’interface de ligne de commande exécutant "bin/magento oms".:messages:dans le système de Magento Order Management (OMS) pour Adobe Commerce.
+description: Cet article fournit une solution au problème lorsque vous obtenez une erreur "getMode()" dans l’interface de ligne de commande exécutant "bin/magento oms:messages:process" dans le système Magento Order Management (OMS) pour Adobe Commerce.
 exl-id: 83089465-f810-4a3b-bdb6-4720b44f0b49
 feature: System
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Système Magento Order Management (OMS) pour l’erreur de traitement Adobe Commerce
 
-Cet article fournit une solution au problème lorsque vous obtenez une `getMode()` erreur dans l’exécution de l’interface de ligne de commande. `bin/magento oms:messages:process` dans le système Magento Order Management (OMS) pour Adobe Commerce.
+Cet article fournit une solution au problème lorsque vous obtenez une erreur `getMode()` dans l’interface de ligne de commande exécutant `bin/magento oms:messages:process` dans le système de Magento Order Management (OMS) pour Adobe Commerce.
 
 ## Produits et versions concernés
 
@@ -56,14 +56,15 @@ Stack trace:
 
 ## Cause
 
-Cela se produit lorsque le connecteur tente de traiter `magento.inventory.source_management` messages. Le connecteur tente de traiter ces messages comme s’ils étaient un `magento.inventory.source_stock_management.update` qui ne nécessite pas de valeur de mode. Parce qu’il n’existe aucun mode dans la variable `magento.inventory.source_mangement` , l’erreur se produit.
+Â
+Cela se produit lorsque le connecteur tente de traiter des messages `magento.inventory.source_management`. Connector tente de traiter ces messages comme s’ils étaient un message `magento.inventory.source_stock_management.update` nécessitant une valeur de mode. Comme il n&#39;y a pas de mode dans les messages `magento.inventory.source_mangement`, l&#39;erreur se produit.
 
 ## Solution
 
-Pour résoudre le problème, exécutez l’instruction SQL suivante dans l’interface de ligne de commande, qui supprime tous les enregistrements de la variable `mcom_api_messages` table :
+Pour résoudre le problème, exécutez l’instruction SQL suivante dans l’interface de ligne de commande, qui supprime tous les enregistrements de la table `mcom_api_messages` :
 
 `delete from mcom_api_messages;`
 
 ## Lecture connexe
 
-Voir les documents OMS [Tutoriel sur la configuration du connecteur OMS](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/).
+Voir le [tutoriel de configuration du connecteur OMS](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/) des documents OMS.

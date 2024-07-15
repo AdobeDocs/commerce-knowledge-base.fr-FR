@@ -17,7 +17,7 @@ Cet article fournit un correctif pour le problème de performances connu d’Ado
 
 ## Problème
 
-Adobe Commerce peut envoyer des messages redondants [Requêtes Ajax](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md) de storefront au serveur pour obtenir les informations sur la bannière et les informations sur les clients. Ces requêtes Ajax ont un impact sur les performances, en particulier dans les conditions de charge élevée (volume élevé et trafic élevé). Ainsi, si la fonctionnalité de bannière n’est pas utilisée, il est recommandé de [Désactivation de la sortie du module Adobe Commerce Banner](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md) et appliquez le correctif pour améliorer la récupération des informations sur les clients.
+Adobe Commerce peut envoyer des [requêtes Ajax](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md) redondantes depuis le storefront vers le serveur pour obtenir les informations sur la bannière et les informations sur le client. Ces requêtes Ajax ont un impact sur les performances, en particulier dans les conditions de charge élevée (volume élevé et trafic élevé). Ainsi, si la fonctionnalité de bannière n’est pas utilisée, il est recommandé de [désactiver complètement la sortie du module de bannière Adobe Commerce](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md) et d’appliquer le correctif pour améliorer la récupération des informations client.
 
 ## Correctif
 
@@ -32,7 +32,7 @@ Le correctif est valide pour les produits et versions suivants :
 * Adobe Commerce sur l’infrastructure cloud 2.2.9
 * Adobe Commerce on-premise 2.2.9
 
-Si vous disposez d’une version différente d’Adobe Commerce, envisagez d’effectuer une mise à jour vers la dernière version 2.3.x. S’il ne s’agit pas d’une option actuellement, veuillez [contacter l’assistance d’Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) et demandez un correctif pour votre version.
+Si vous disposez d’une version différente d’Adobe Commerce, envisagez d’effectuer une mise à jour vers la dernière version 2.3.x. Si cette option n’est pas actuellement disponible, [ contactez le support Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) et demandez un correctif pour votre version.
 
 ## Comment appliquer le correctif
 

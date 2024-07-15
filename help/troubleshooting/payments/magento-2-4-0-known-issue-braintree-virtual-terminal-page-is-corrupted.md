@@ -26,29 +26,29 @@ Cet article fournit un correctif pour le problème connu d’Adobe Commerce 2.4.
 
 <u>Étapes à reproduire :</u>
 
-Dans Commerce Admin, accédez à **Ventes** > **Terminal virtuel Braintree** . ** **
+Dans Commerce Admin, accédez à **Sales** > **Braintree Virtual Terminal** . ** **
 
 <u>Résultat attendu :</u>
 
-La variable **Terminal virtuel Braintree** chargement de page avec l’interface utilisateur appropriée.
+La page **Braintree Virtual Terminal** se charge avec l’interface utilisateur appropriée.
 
 <u>Résultat réel :</u>
 
-L’interface utilisateur de **Terminal virtuel Braintree** La page est endommagée.
+L’interface utilisateur de la page **Braintree Virtual Terminal** est endommagée.
 
 ### Scénario 2 : le mode de paiement du Braintree est configuré
 
 <u>Étapes à reproduire :</u>
 
-Dans Commerce Admin, accédez à **Ventes** > **Terminal virtuel Braintree** . ** **
+Dans Commerce Admin, accédez à **Sales** > **Braintree Virtual Terminal** . ** **
 
 <u>Résultat attendu :</u>
 
-La variable **Terminal virtuel Braintree** charge la page avec l’interface utilisateur appropriée et un avertissement s’affiche pour vous informer que le Braintree n’est pas encore configuré.
+La page **Braintree Virtual Terminal** se charge avec l’interface utilisateur appropriée et un avertissement s’affiche pour vous informer que le Braintree n’est pas encore configuré.
 
 <u>Résultat réel :</u>
 
-L’interface utilisateur de **Terminal virtuel Braintree** est endommagée et aucun avertissement n’est affiché.
+L’interface utilisateur de la page **Braintree Virtual Terminal** est interrompue et aucun avertissement n’est affiché.
 
 ## Solution
 

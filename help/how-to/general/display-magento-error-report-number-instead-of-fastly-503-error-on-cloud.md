@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Afficher le numéro du rapport d’erreur Adobe Commerce au lieu de l’erreur Fastly 503
 
-Par défaut, masque Fastly toutes les erreurs Adobe Commerce derrière le **Service 503 indisponible** erreur. Pour afficher le numéro du rapport du journal des erreurs Adobe Commerce (afin de pouvoir le trouver dans les logs et consulter les détails de l’erreur), ouvrez le site web omettant Fastly en procédant comme suit :
+Par défaut, masque Fastly toutes les erreurs Adobe Commerce derrière l&#39;erreur **503 Service Unavailable** . Pour afficher le numéro du rapport du journal des erreurs Adobe Commerce (afin de pouvoir le trouver dans les logs et consulter les détails de l’erreur), ouvrez le site web omettant Fastly en procédant comme suit :
 
 1. Ajoutez le domaine et l’adresse IP de votre application à votre fichier d’hôtes sur votre ordinateur local.
 1. Effacez le cache du navigateur et les cookies (ou passez en mode incognito).
@@ -20,12 +20,12 @@ Par défaut, masque Fastly toutes les erreurs Adobe Commerce derrière le **Serv
 
 Une fois que vous avez identifié l’erreur Adobe Commerce authentique et le numéro du rapport d’erreur, vous pouvez obtenir les détails dans le fichier de rapport d’erreur en procédant comme suit :
 
-1. SSH vers l’environnement concerné. Voir [SSH vers un environnement](https://devdocs.magento.com/guides/v2.3/cloud/env/environments-ssh.html#ssh) dans notre documentation destinée aux développeurs.
-1. Recherchez la variable `./var/report/{error_number}` fichier .
+1. SSH vers l’environnement concerné. Reportez-vous à la section [SSH to an environment](https://devdocs.magento.com/guides/v2.3/cloud/env/environments-ssh.html#ssh) dans notre documentation destinée aux développeurs.
+1. Recherchez le fichier `./var/report/{error_number}`.
 
 ## Ajoutez le domaine de l’application et l’adresse IP à votre fichier d’hôtes : étapes détaillées
 
-1. Vérifiez l’adresse IP du serveur de votre boutique en exécutant la fonction `nslookup` dans la ligne de commande de votre ordinateur local :
+1. Vérifiez l’adresse IP du serveur de votre magasin en exécutant la commande `nslookup` dans la ligne de commande de votre ordinateur local :
    * Pour les utilisateurs d’architecture (environnements d’évaluation et de production) :
 
    ```

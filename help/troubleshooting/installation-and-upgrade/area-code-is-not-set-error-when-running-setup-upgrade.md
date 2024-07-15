@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Erreur &quot;Code zone non défini&quot; lors de l’exécution `setup:upgrade`
+# Erreur &#39;Code zone non défini&#39; lors de l&#39;exécution de `setup:upgrade`
 
-Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur l’infrastructure cloud 2.2.3 lié à l’obtention de la variable *&quot;Code zone non défini&quot;* lors de l’exécution de la commande suivante :
+Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur l’infrastructure cloud 2.2.3 lié à l’obtention de l’erreur *&quot;Le code régional n’est pas défini&quot;* lors de l’exécution de la commande suivante :
 
 ```bash
 setup:upgrade
@@ -31,7 +31,7 @@ Lors de l’exécution de la variable
 bin/magento setup:upgrade
 ```
 
-, vous obtenez le message d’erreur suivant : *&quot;Module &#39;Magento\_AdvancedSalesRule&#39; : installation des données...Code de zone non défini : le code de zone doit être défini avant de démarrer une session&quot;* et l&#39;exécution de la commande est interrompue. Le problème s’affiche, car la configuration de zone est demandée avant d’être définie. Le correctif permet de capturer l’erreur et de ne pas interrompre le processus de mise à niveau.
+, vous obtenez le message d’erreur suivant : *&quot;Module &#39;Magento\_AdvancedSalesRule&#39;: Installation de données...Code de zone non défini : le code de zone doit être défini avant de démarrer une session&quot;* et l’exécution de la commande est interrompue. Le problème s’affiche, car la configuration de zone est demandée avant d’être définie. Le correctif permet de capturer l’erreur et de ne pas interrompre le processus de mise à niveau.
 
 ## Correctif
 
@@ -51,6 +51,6 @@ Le correctif est également compatible (mais peut ne pas résoudre le problème)
 
 ## Comment appliquer le correctif
 
-Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de soutien.
+Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Fichiers attachés

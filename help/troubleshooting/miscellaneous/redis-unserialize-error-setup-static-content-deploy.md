@@ -1,6 +1,6 @@
 ---
-title: Redis unserialize error `setup:static-content:deploy
-description: Cet article fournit un correctif pour l’erreur Redis unserialize lors de l’exécution de la configuration `magento:static-content:deploy`.
+title: Redis unserialize error `setup:static-content:deploy`
+description: Cet article fournit un correctif pour l’erreur Redis unserialize lors de l’exécution de `magento setup:static-content:deploy`.
 exl-id: 4bc88933-3bf9-4742-b864-b82d3c1b07a9
 feature: Cache, Deploy, Page Content, SCD, Services, Variables
 role: Developer
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Cet article fournit un correctif pour l’erreur Redis unserialize lors de l’exécution de `magento setup:static-content:deploy`.
 
-En cours `magento setup:static-content:deploy` provoque l’erreur Redis :
+L&#39;exécution de `magento setup:static-content:deploy` provoque l&#39;erreur Redis :
 
 ```
 [Exception]
@@ -25,13 +25,13 @@ Notice: unserialize(): Error at offset 0 of 1 bytes in
 
 Le problème est dû à des processus d’interférence parallèles sur la connexion Redis.
 
-Pour résoudre, exécutez `setup:static-content:deploy` dans un mode de thread unique en définissant la variable d’environnement suivante :
+Pour résoudre ce problème, exécutez `setup:static-content:deploy` en mode de thread unique en définissant la variable d&#39;environnement suivante :
 
 ```
 STATIC_CONTENT_THREADS =1
 ```
 
-ou, exécutez le `setup:static-content:deploy` suivi de la commande `-j 1` (ou `--jobs=1` ).
+ou exécutez la commande `setup:static-content:deploy` suivie de l’argument `-j 1` (ou `--jobs=1` ).
 
 Notez que la désactivation du multi-thread ralentit le processus de déploiement des ressources statiques.
 
@@ -43,7 +43,7 @@ Notez que la désactivation du multi-thread ralentit le processus de déploiemen
 
 ## Problème
 
-Exécutez la variable `setup:static-content:deploy` entraîne l’erreur Redis :
+L&#39;exécution de la commande `setup:static-content:deploy` provoque l&#39;erreur Redis :
 
 ```php
 )
@@ -79,17 +79,17 @@ Command php ./bin/magento setup:static-content:deploy --jobs=3  en_US  returned 
 
 Le problème est dû à des processus d’interférence parallèles sur la connexion Redis.
 
-Ici, un processus dans `App/Config/Type/System.php` attendait une réponse pour `system_defaultweb`, mais a reçu une réponse pour `system_cache_exists` cela a été fait par un processus différent. Consultez l’explication détaillée à la section [Article de Jason Woods](https://github.com/magento/magento2/issues/9287#issuecomment-302362283).
+Ici, un processus dans `App/Config/Type/System.php` attendait une réponse pour `system_defaultweb`, mais a reçu une réponse pour `system_cache_exists` qui a été effectuée par un autre processus. Consultez l’explication détaillée dans la [publication de Jason Woods](https://github.com/magento/magento2/issues/9287#issuecomment-302362283).
 
 ## Solution
 
-Désactiver le parallélisme et exécuter `setup:static-content:deploy` dans un mode de thread unique en définissant la variable d’environnement suivante :
+Désactivez le parallélisme et exécutez `setup:static-content:deploy` en mode mono-thread en définissant la variable d&#39;environnement suivante :
 
 ```
 STATIC_CONTENT_THREADS =1
 ```
 
-Vous pouvez également exécuter la fonction `setup:static-content:deploy` suivi de la commande `-j 1` (ou `--jobs=1`).
+Vous pouvez également exécuter la commande `setup:static-content:deploy` suivie de l’argument `-j 1` (ou `--jobs=1`).
 
 >[!NOTE]
 >
@@ -99,5 +99,5 @@ Vous pouvez également exécuter la fonction `setup:static-content:deploy` suivi
 
 Dans notre documentation destinée aux développeurs :
 
-* [Configuration de Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html)
+* [Configurer Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html)
 * [Mise à niveau de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html)

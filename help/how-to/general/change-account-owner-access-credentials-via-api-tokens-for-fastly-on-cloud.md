@@ -12,5 +12,5 @@ ht-degree: 0%
 
 # Modification du propriétaire du compte (accès aux informations d’identification via les jetons d’API) pour Fastly on Cloud
 
-Reportez-vous à [Compte de service et informations d’identification rapides](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=en#test-fastly-credentials) dans notre guide Commerce on Cloud Infrastructure.
+Reportez-vous au [compte de service Fastly et aux informations d’identification](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=en#test-fastly-credentials) de notre guide Commerce on Cloud Infrastructure.
 

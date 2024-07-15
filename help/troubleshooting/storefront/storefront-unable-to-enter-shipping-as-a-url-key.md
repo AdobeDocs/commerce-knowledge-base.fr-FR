@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Enregistrement impossible _shipping_ comme clé d’URL
+# Impossible d&#39;enregistrer _shipping_ en tant que clé d&#39;URL
 
-Cet article fournit une solution au problème lorsque vous ne pouvez pas enregistrer l’expédition comme clé d’URL (_par exemple, /shipping_) pour les produits ou les pages CMS. Lorsque vous essayez d’enregistrer la clé URL, vous recevez une erreur indiquant que la clé URL est une URL en double.
+Cet article fournit une solution au problème lorsque vous ne pouvez pas enregistrer l’expédition en tant que clé d’URL (_par exemple, /shipping_) pour les produits ou les pages CMS. Lorsque vous essayez d’enregistrer la clé URL, vous recevez une erreur indiquant que la clé URL est une URL en double.
 
 ## Produits et versions concernés
 
@@ -21,24 +21,24 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.4.x
 
 ## Problème
 
-Vous ne pouvez pas enregistrer une page CMS avec le terme . _shipping_ dans la clé URL.
+Vous ne pouvez pas enregistrer une page CMS avec le terme _shipping_ dans la clé d’URL.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-Créez un **[!UICONTROL CMS page]** avec la clé URL comme _shipping_.
+Créez un **[!UICONTROL CMS page]** avec la clé d’URL _shipping_.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
-La page enregistre avec _shipping_ comme clé d’URL.
+La page est enregistrée avec _shipping_ comme clé d’URL.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 Vous ne pouvez pas enregistrer lorsque cette erreur se produit :
 *La valeur spécifiée dans le champ Clé URL génère une URL qui existe déjà.*
 
 ## Cause
 
-L’expédition est un mot réservé défini dans `vendor/magento/module-shipping/etc/frontend/routes.xml`.
+L&#39;expédition est un mot réservé défini dans `vendor/magento/module-shipping/etc/frontend/routes.xml`.
 
 ```xml
 <router id="standard">
@@ -50,24 +50,24 @@ L’expédition est un mot réservé défini dans `vendor/magento/module-shippin
 
 ## Solution
 
-Vous ne pouvez pas utiliser le terme _shipping_ dans votre clé d’URL ; toutefois, vous pouvez utiliser le terme _shipping_ combiné avec une autre lettre ou un autre nombre (_Par exemple, shipping1 et shipping2_).
+Vous ne pouvez pas utiliser le terme _shipping_ dans votre clé d’URL ; vous pouvez toutefois utiliser le terme _shipping_ combiné à une autre lettre ou un autre numéro (_Par exemple, shipping1 et shipping2_).
 
-Bien que le terme n’ait pas à être _shipping_+&lt;another number=&quot;&quot; or=&quot;&quot; letter=&quot;&quot;> - le terme peut être n’importe quelle chaîne tant que la longueur ne dépasse pas *255* caractères.
+Bien que le terme n’ait pas à être _shipping_+&lt;another number or letter>, il peut s’agir de n’importe quelle chaîne tant que la longueur ne dépasse pas *255* caractères.
 
 ## Effectuez les étapes suivantes :
 
 1. Connectez-vous à l’administrateur Adobe Commerce.
 1. Accédez à **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL URL Rewrites]**.
 1. Cliquez sur **[!UICONTROL Add URL Rewrite]**.
-1. Sélectionner **[!UICONTROL Custom]** dans le **[!UICONTROL Create URL Rewrite]** menu déroulant.
-   1. Saisissez le [!UICONTROL Request Path] as **_shipping_**.
+1. Sélectionnez **[!UICONTROL Custom]** dans la liste déroulante **[!UICONTROL Create URL Rewrite]**.
+   1. Saisissez [!UICONTROL Request Path] comme **_shipping_**.
    1. Dans le **[!UICONTROL Target Path]**, saisissez la nouvelle clé d’URL (_Par exemple, &quot;shipping1&quot;_).
-   1. Sélectionner **[!UICONTROL No]** dans le **[!UICONTROL Redirect]** menu déroulant.
+   1. Sélectionnez **[!UICONTROL No]** dans la liste déroulante **[!UICONTROL Redirect]**.
 
 
-      (**Remarque**: le chemin d’accès à la requête est ce que l’utilisateur saisit dans le navigateur et le chemin d’accès cible est l’endroit où il doit rediriger.)
+      (**Remarque** : le chemin d’accès à la requête est ce qu’un utilisateur entre dans le navigateur et le chemin d’accès cible est l’endroit où il doit rediriger.)
 
-En outre, évitez d’utiliser ces mots-clés étiquetés comme *réservé* mots-clés qui font apparaître la même exception. L’utilisation de l’un de ces mots-clés répertoriés ci-dessous comme valeur de clé d’URL entraîne l’affichage de la même erreur.
+En outre, évitez d’utiliser ces mots-clés étiquetés comme mots-clés *réservés* qui font apparaître la même exception. L’utilisation de l’un de ces mots-clés répertoriés ci-dessous comme valeur de clé d’URL entraîne l’affichage de la même erreur.
 
 
 ```
@@ -122,5 +122,5 @@ En outre, évitez d’utiliser ces mots-clés étiquetés comme *réservé* mots
 
 ## Lecture connexe
 
-* [URL Rewrites](https://docs.magento.com/user-guide/marketing/url-rewrite.html) dans notre Guide de l’utilisateur Marchandisage et promotions .
-* [Bonnes pratiques relatives au référencement](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) dans notre Guide de l’utilisateur Marchandisage et promotions .
+* [URL de réécriture](https://docs.magento.com/user-guide/marketing/url-rewrite.html) dans notre Guide de l’utilisateur de marchandisage et de promotions.
+* [Bonnes pratiques d’optimisation pour les moteurs de recherche](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) dans notre Guide de l’utilisateur de marchandisage et de promotions.

@@ -20,9 +20,9 @@ ht-degree: 0%
 
 ## Problème
 
-Catégories GraphQL et `categoryList` les requêtes ignorent l’autorisation de catégorie pour masquer les catégories dans un catalogue partagé. Cela se produit pour tous les commerçants sur Adobe Commerce 2.4.3 avec la fonction Catalogue partagé B2B activée.
+Les catégories GraphQL et les requêtes `categoryList` ignorent l’autorisation de catégorie pour masquer les catégories dans un catalogue partagé. Cela se produit pour tous les commerçants sur Adobe Commerce 2.4.3 avec la fonction Catalogue partagé B2B activée.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Conditions préalables :
 
@@ -34,14 +34,14 @@ Cela se produit pour tous les commerçants sur Adobe Commerce 2.4.3. Le storefro
 1. Attribuez quelques produits à chacune de ces catégories.
 1. Affectez CAT1 au catalogue personnalisé, annulez l’affectation de CAT2 au catalogue privé personnalisé. Cela annule l’attribution de tous les produits de CAT2 du catalogue partagé.
 1. Enregistrez le catalogue personnalisé.
-1. Définissez l’autorisation de catégorie pour CAT2 sur *Refuser* Parcourir la catégorie et définir le groupe de clients sur le catalogue privé ci-dessus.
-1. Exécutez la variable `categoryList query` ou la requête categories en tant qu’utilisateur de la société à partir de l’étape 3.
+1. Définissez l’autorisation de catégorie pour CAT2 sur *Refuser* catégorie de navigation et définissez le groupe de clients sur le catalogue privé ci-dessus.
+1. Exécutez la requête `categoryList query` ou les catégories en tant qu’utilisateur de l’entreprise à partir de l’étape 3.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Seul le CAT1 apparaît dans les résultats.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Toutes les catégories s’affichent, qu’elles soient affectées/non affectées dans le catalogue partagé ou que les autorisations de catégorie soient accordées.
 
@@ -51,8 +51,8 @@ La fonctionnalité n’a pas été mise en oeuvre.
 
 ## Solution
 
-Le problème va être résolu dans la portée de la version 2.4.4, et les marchands devraient [envoi d’un ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour obtenir un correctif personnalisé s’il a besoin d’une solution avant la version 2.4.4.
+Le problème va être résolu dans la portée de la version 2.4.4, et les vendeurs doivent [envoyer un ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour obtenir un correctif personnalisé s’ils ont besoin d’une solution avant la version 2.4.4.
 
 ## Lecture connexe
 
-* [Limites du nombre de catégories pour les bonnes pratiques Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048176832) dans notre base de connaissances de soutien.
+* [Les bonnes pratiques Adobe Commerce limitent le nombre de catégories](https://support.magento.com/hc/en-us/articles/360048176832) dans notre base de connaissances de support.

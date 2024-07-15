@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-48448 : *[!UICONTROL Race]* problème de condition lors des annulations de commande provoquant la duplication de l’entrée dans `inventory_reservation` table
+# ACSD-48448 : *[!UICONTROL Race]* problème de condition lors des annulations de commande provoquant une entrée dupliquée dans la table `inventory_reservation`
 
-Le correctif ACSD-48448 corrige le problème en raison duquel la variable *[!UICONTROL Race]* Un problème de condition se produit lors des annulations de commande, ce qui entraîne la duplication des entrées dans la variable `inventory_reservation` table. Ce correctif est disponible lorsque la variable [!DNL Quality Patches Tool (QPT)] La version 1.1.34 est installée. L’ID de correctif est ACSD-48448. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-48448 corrige le problème de condition *[!UICONTROL Race]* survenant lors des annulations de commande, ce qui entraîne des entrées dupliquées dans la table `inventory_reservation`. Ce correctif est disponible lorsque [!DNL Quality Patches Tool (QPT)] 1.1.34 est installé. L’ID de correctif est ACSD-48448. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -27,16 +27,16 @@ Le correctif ACSD-48448 corrige le problème en raison duquel la variable *[!UIC
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-*[!UICONTROL Race]* Un problème de condition se produit lors des annulations de commande, ce qui entraîne la duplication des entrées dans la variable `inventory_reservation` table.
+Un problème de condition *[!UICONTROL Race]* se produit lors des annulations de commande, ce qui entraîne la duplication des entrées dans la table `inventory_reservation`.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. passé une commande ;
-1. Vérifiez les `inventory_reservation` pour vous assurer qu’il existe un enregistrement pour la variable `order_placed` .
+1. Vérifiez la table `inventory_reservation` pour vous assurer qu’il existe un enregistrement pour l’événement `order_placed`.
 1. Exécutez le script joint pour annuler la commande en parallèle (pensez à modifier l’URL et l’ID de commande).
 
 `bash cancel_order.sh`
@@ -63,26 +63,26 @@ curl --location --request POST "${baseUrl}/rest/V1/orders/${orderId}/cancel" \
 wait
 ```
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Les enregistrements ne sont pas dupliqués.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
-Les enregistrements en double sont créés dans la variable `inventory_reservation` table pour `order_canceled`.
+Les enregistrements en double sont créés dans la table `inventory_reservation` pour `order_canceled`.
 
 ## Appliquer le correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le [!DNL Quality Patches Tool] guide.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce en utilisant  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le [!DNL Quality Patches Tool] guide.
+Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].

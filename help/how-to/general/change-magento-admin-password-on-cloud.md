@@ -16,21 +16,21 @@ ht-degree: 0%
 
 ![login_panel_s.png](assets/login_panel_s.png)
 
-Lisez les étapes de la section [Réinitialiser la section de mot de passe de la connexion administrateur](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html#admin-sign-in) dans notre guide d’utilisation.
+Lisez les étapes de la section [Réinitialiser votre mot de passe de la connexion administrateur](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html#admin-sign-in) de notre guide d’utilisation.
 
 Vous trouverez ci-dessous les notes critiques sur l’utilisation de .
 
 ### Activer les emails sortants
 
-Avant d’utiliser la variable **Mot de passe oublié** form, [activer les emails sortants](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html) en utilisant la variable [Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html).
+Avant d&#39;utiliser le formulaire **Vous avez oublié votre mot de passe**, [activez les emails sortants](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html) à l&#39;aide de la [console cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html).
 
 ### Vérification du dossier de courrier électronique indésirable
 
-Si vous ne trouvez pas le message contenant un lien Réinitialiser le mot de passe , vérifiez votre *Courrier électronique indésirable* dossier. Le nom de l&#39;email est *Confirmation de réinitialisation du mot de passe pour le nom d’utilisateur administrateur.*.
+Si vous ne trouvez pas le message avec un lien Réinitialiser le mot de passe , vérifiez votre dossier *Junk Email*. Le nom de l&#39;email est *Confirmation de réinitialisation de mot de passe pour le nom d&#39;utilisateur administrateur*.
 
 ## Méthode 2 : ajout d’un nouvel utilisateur administrateur
 
 Si vous ne pouvez pas restaurer ou réinitialiser le mot de passe de l’utilisateur existant, vous pouvez créer un nouvel utilisateur administrateur et lui définir un mot de passe. Pour ce faire, procédez comme suit :
 
-1. Utilisation [SSH pour se connecter à l’environnement distant](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. Utilisez [SSH pour vous connecter à l’environnement distant](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Exécutez la commande suivante : `bin/magento admin:user:create   --admin-user=%user_name% --admin-password=%your_password% --admin-email=%your_email% --admin-firstname=%admin_user_first_name% --admin-lastname=%admin_user_last_name%`

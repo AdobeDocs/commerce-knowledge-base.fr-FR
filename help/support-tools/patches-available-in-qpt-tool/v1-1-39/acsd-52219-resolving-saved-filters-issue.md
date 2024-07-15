@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-52219 : résolution du problème de filtre des grilles d’administration lors du changement de vue de signet
 
-Le correctif ACSD-52219 corrige le problème en raison duquel les filtres enregistrés des grilles d’administration ne fonctionnent pas comme prévu lors du basculement fréquent entre les vues de signet. Ce correctif est disponible lorsque la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.39 est installée. L’ID de correctif est ACSD-52219. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-52219 corrige le problème en raison duquel les filtres enregistrés des grilles d’administration ne fonctionnent pas comme prévu lors du basculement fréquent entre les vues de signet. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.39 est installé. L’ID de correctif est ACSD-52219. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -27,15 +27,15 @@ Le correctif ACSD-52219 corrige le problème en raison duquel les filtres enregi
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 Lorsque vous passez fréquemment d’une vue de signet à l’autre, les filtres enregistrés dans les grilles d’administration ne fonctionnent pas comme prévu.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Accédez au [!DNL Sales Order] grille dans Admin.
+1. Accédez à la grille [!DNL Sales Order] dans l’Admin.
 1. Créez deux à trois filtres.
 1. Vérifiez les paramètres de filtre en changeant de vue pour vous assurer qu’ils sont enregistrés avec précision.
 1. Accédez à Filter1 ou Filter2.
@@ -43,11 +43,11 @@ Lorsque vous passez fréquemment d’une vue de signet à l’autre, les filtres
 1. Basculez vers une autre vue et notez que les filtres restent inchangés.
 1. La vue par défaut affiche désormais les résultats filtrés, même si aucun filtre spécifique n’a été défini pour celle-ci.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Les filtres ne sont pas interchangés et conservent leur état d’origine.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Lors de la modification d’une vue, les filtres sont mélangés et la vue correcte n’est pas enregistrée.
 
@@ -55,14 +55,14 @@ Lors de la modification d’une vue, les filtres sont mélangés et la vue corre
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le [!DNL Quality Patches Tool] guide.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce en utilisant  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le [!DNL Quality Patches Tool] guide.
+Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].

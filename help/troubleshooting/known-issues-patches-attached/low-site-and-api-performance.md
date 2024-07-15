@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Faibles performances du site et de l’API
 
-Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur l’infrastructure cloud 2.2.1 lié au fait que les performances du site et de l’API sont faibles en raison du temps nécessaire pour écrire. `debug.log`.
+Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur l’infrastructure cloud 2.2.1 lié au fait que les performances du site et de l’API sont faibles en raison du temps nécessaire pour écrire `debug.log`.
 
 ## Problème
 
-Les performances du site sont lentes. Les opérations de l’API s’exécutent lentement, par exemple en mettant à jour les produits à l’aide de la variable `PUT` . Lorsque vous examinez de plus près les opérations utilisant New Relic, la plupart de la mémoire et du processeur sont consommés en écrivant sur `/var/log/debug.log`.
+Les performances du site sont lentes. Les opérations d’API s’exécutent lentement, par exemple en mettant à jour les produits à l’aide de la méthode `PUT`. Lorsque vous regardez de plus près les opérations utilisant New Relic, la plupart de la mémoire et du processeur sont consommés en écrivant sur `/var/log/debug.log`.
 
 ## Solution
 
@@ -42,6 +42,6 @@ Le correctif est également compatible (mais peut ne pas résoudre le problème)
 
 ## Comment appliquer le correctif
 
-Voir [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) pour obtenir des instructions.
+Pour obtenir des instructions, reportez-vous à la section [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Fichiers attachés

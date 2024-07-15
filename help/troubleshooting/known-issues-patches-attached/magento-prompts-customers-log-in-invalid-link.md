@@ -21,13 +21,13 @@ L’article fournit un lien vers le correctif pour un problème connu d’Adobe 
 
 ## Problème
 
-Adobe Commerce invite les clients à se connecter en affichant ce message : *&quot;Ce compte n&#39;est pas confirmé. Cliquez ici pour renvoyer l&#39;email de confirmation&quot;*. La variable **Cliquez ici** Le lien doit ouvrir la page Envoyer le lien de confirmation , mais il est inactif.
+Adobe Commerce invite les clients à se connecter en affichant ce message : *&quot;Ce compte n’est pas confirmé. Cliquez ici pour renvoyer l’email de confirmation&quot;*. Le lien **Cliquez ici** doit ouvrir la page Envoyer le lien de confirmation, mais il est inactif.
 
 ## Solution
 
-Un correctif pour ce problème est disponible dans les ressources techniques d’Adobe Commerce : [Correctif du problème de lien email de confirmation de compte pour Adobe Commerce 2.3.5](https://magento.com/tech-resources/download?_ga=2.193540264.409362045.1590506265-807369446.1578680711#download2368). Un correctif permanent sera disponible dans Adobe Commerce 2.3.6, dont la sortie est prévue au 4e trimestre 2020.
+Un correctif pour ce problème est disponible dans les ressources techniques Adobe Commerce : [Renvoyer le correctif de problème de lien de courrier électronique de confirmation de compte pour Adobe Commerce 2.3.5](https://magento.com/tech-resources/download?_ga=2.193540264.409362045.1590506265-807369446.1578680711#download2368). Un correctif permanent sera disponible dans Adobe Commerce 2.3.6, dont la sortie est prévue au 4e trimestre 2020.
 
-Voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) pour obtenir des instructions sur la façon d’appliquer un correctif de compositeur.
+Voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) pour obtenir des instructions sur la manière d’appliquer un correctif de compositeur.
 
 ## Lecture connexe
 

@@ -21,7 +21,7 @@ Cet article fournit une solution au problème de désactivation par défaut de l
 
 ## Problème
 
-Sur la page Configuration rapide, en regard du fragment de code d’E/S Fastly, l’état actuel s’affiche : \_disabled \_avec le message suivant en dessous : contactez votre représentant commercial ou envoyez un courrier électronique à `support@fastly.com` pour demander l’activation de l’optimisation des images pour votre service Fastly.
+Sur la page Configuration rapide, en regard du fragment de code d’E/S Fastly, l’état actuel s’affiche : \_disabled \_avec le message suivant en dessous : Veuillez contacter votre représentant commercial ou envoyer un email à `support@fastly.com` pour demander l’activation de l’optimisation des images pour votre service Fastly.
 
 ## Cause
 
@@ -29,4 +29,4 @@ Le site n’est peut-être pas encore en ligne. Des processus sont en place pour
 
 ## Solution
 
-Créez un [ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) et l’optimisation de l’image de la demande.
+Créez un [ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) et demandez l’optimisation de l’image.

@@ -25,13 +25,13 @@ Adobe Commerce (tous les types de déploiement) 2.3.5-2.4.2-p1
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 L’observateur de mise à jour de la réservation de la note de crédit est déclenché chaque fois que la note de crédit est mise à jour. Conformément à l’accord avec le bon de commande, la logique de mise à jour des réservations a été modifiée de manière à n’être déclenchée que lors de la création de l’avoir. La possibilité que les modifications des notes de crédit sur l’API soient examinées par le PO également dans le cadre de tickets distincts.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Créez un compte client.
 1. Créez un produit simple.
@@ -50,7 +50,7 @@ L’observateur de mise à jour de la réservation de la note de crédit est dé
        2 rows in set (0.00 sec)
    ```
 
-1. Envoyez une demande de GET à : `../rest/default/V1/creditmemo/3`
+1. Envoyer une demande de GET à : `../rest/default/V1/creditmemo/3`
 1. Copier la réponse (exemple) :
 
    ```JSON
@@ -128,7 +128,7 @@ L’observateur de mise à jour de la réservation de la note de crédit est dé
       }
    ```
 
-1. Envoyez une demande de POST à : `../rest/default/V1/creditmemo`
+1. Envoyer une demande de POST à : `../rest/default/V1/creditmemo`
 
    ```JSON
        {
@@ -143,7 +143,7 @@ L’observateur de mise à jour de la réservation de la note de crédit est dé
 
 1. Vérifiez la table inventory_reservation :
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 ```sql
 select * from inventory_reservation;
@@ -157,7 +157,7 @@ select * from inventory_reservation;
 3 rows in set (0.00 sec)
 ```
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Aucune deuxième réservation pour la même note de crédit n’est créée.
 
@@ -166,13 +166,13 @@ Aucune deuxième réservation pour la même note de crédit n’est créée.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre type de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
+* [Outil de correctifs de qualité publié : un nouvel outil pour appliquer des correctifs de qualité](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
 
 Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) .

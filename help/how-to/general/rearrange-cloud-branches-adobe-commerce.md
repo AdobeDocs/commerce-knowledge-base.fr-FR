@@ -29,17 +29,17 @@ L’organisation de hiérarchie correcte pour vos branches est la suivante :
 
 Pour réorganiser les branches cloud :
 
-1. Vous devez disposer de la variable [[!DNL Super User]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) rôle.
-1. Installation de Magento-cloud [!DNL CLI] (si vous ne l’avez pas fait).
+1. Vous devez avoir le rôle [[!DNL Super User]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) .
+1. Installez le cloud magento [!DNL CLI] (si vous ne l’avez pas fait).
 1. Exécutez la commande suivante pour les branches à déplacer :
    `magento-cloud environment:info -e <branch to move> parent <target parent>`
 
-Remarque : vous pouvez spécifier la branche parente lors de la création d’une nouvelle branche. Pour connaître les étapes, voir [Prise en main de la création de branches](https://devdocs.magento.com/cloud/env/environments-start.html#getstarted) dans notre documentation destinée aux développeurs.
+Remarque : vous pouvez spécifier la branche parente lors de la création d’une nouvelle branche. Pour les étapes, reportez-vous à la section [Prise en main de la création de branches](https://devdocs.magento.com/cloud/env/environments-start.html#getstarted) dans notre documentation destinée aux développeurs.
 
-Vous pouvez créer une branche d’environnement à l’aide de la fonction `branch <environment-name> <parent-environment-ID>` commande d’environnement magento-cloud.
+Vous pouvez créer une branche d’environnement à l’aide de la commande d’environnement magento-cloud `branch <environment-name> <parent-environment-ID>`.
 
 La création et l’activation d’une nouvelle branche d’environnement peuvent prendre du temps.
 
 ## Lecture connexe
 
-[Gestion des branches avec [!DNL CLI]](https://devdocs.magento.com/cloud/env/environments-start.html) dans notre documentation destinée aux développeurs.
+[Gérez les branches avec le  [!DNL CLI]](https://devdocs.magento.com/cloud/env/environments-start.html) dans notre documentation destinée aux développeurs.

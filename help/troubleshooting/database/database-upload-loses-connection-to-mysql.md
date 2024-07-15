@@ -35,14 +35,14 @@ Cela est généralement dû à un manque d’espace disque pour l’importation 
 
 ## Solution
 
-Vérifiez si l’espace disque manque. Pour ce faire, exécutez le `netcat` dans l’interface de ligne de commande par rapport au port 3306 de la base de données ; un message indiquant que le disque est plein s’il est plein s’affiche :
+Vérifiez si l’espace disque manque. Pour ce faire, exécutez la commande `netcat` dans l’interface de ligne de commande par rapport au port de base de données 3306 ; un message complet s’affiche sur le disque s’il est plein :
 
 ```
 web@ddc35c264bd89a72042f1f3e5a:~$ nc database.internal 3306
 Database out of space
 ```
 
-Vous devez allouer plus d’espace à la base de données dans votre `services.yaml` et déployez si vous n’avez pas suffisamment d’espace. Pour connaître les étapes, voir [Espace disque du service](https://devdocs.magento.com/cloud/project/manage-disk-space.html#service-disk-space).
+Vous devrez allouer plus d’espace pour la base de données dans votre `services.yaml` et la déployer si vous n’avez pas d’espace disponible. Pour connaître les étapes, voir [Espace disque du service](https://devdocs.magento.com/cloud/project/manage-disk-space.html#service-disk-space).
 
 Remarque : dans le plan d’architecture Pro, vous pouvez vérifier l’espace alloué sur votre partition en exécutant la commande suivante : `df -h`
 
@@ -58,4 +58,4 @@ Filesystem                                         Size  Used Avail Use% Mounted
 
 ## Lecture connexe
 
-[Gestion de l’espace disque](https://devdocs.magento.com/cloud/project/manage-disk-space.html) dans notre documentation destinée aux développeurs
+[Gérer l’espace disque](https://devdocs.magento.com/cloud/project/manage-disk-space.html) dans notre documentation destinée aux développeurs

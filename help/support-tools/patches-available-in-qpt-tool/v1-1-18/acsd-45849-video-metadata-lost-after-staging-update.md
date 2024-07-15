@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-45849 : Les métadonnées vidéo sont perdues après la mise à jour de l’évaluation
 
-Le correctif ACSD-45849 corrige le problème de perte des métadonnées vidéo après l’application d’une mise à jour intermédiaire. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.18 est installée. L’ID de correctif est ACSD-45849. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.4.
+Le correctif ACSD-45849 corrige le problème de perte des métadonnées vidéo après l’application d’une mise à jour intermédiaire. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.18 est installé. L’ID de correctif est ACSD-45849. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.4.
 
 ## Produits et versions concernés
 
@@ -27,25 +27,25 @@ Le correctif ACSD-45849 corrige le problème de perte des métadonnées vidéo a
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 Les métadonnées vidéo sont perdues après l’application d’une mise à jour intermédiaire.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Configuration de la clé d’API YouTube dans **Administration** > **Magasins** > **Configuration** > **Catalogue** > **Vidéo produit**.
+1. Configurez la clé API YouTube dans **Admin** > **Magasins** > **Configuration** > **Catalogue** > **Vidéo produit**.
 1. Créez un produit avec une vidéo YouTube. Notez que l’URL, le titre et la description sont remplis.
-1. Créez une mise à jour planifiée du produit avec les paramètres sans modifier la variable *Images et vidéo* .
+1. Créez une mise à jour planifiée du produit avec les paramètres sans modifier la section *Images et vidéo*.
 1. Cliquez sur **Afficher/Modifier** dans Modifications planifiées.
 1. Accédez à **Images et vidéos** et cliquez sur la vidéo.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 L’URL, le titre et la description contiennent les données appropriées.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Les champs URL, titre et description sont vides.
 
@@ -54,13 +54,13 @@ Les champs URL, titre et description sont vides.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) dans notre documentation destinée aux développeurs.
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) de notre documentation destinée aux développeurs.

@@ -26,25 +26,25 @@ L’utilisateur reçoit une erreur lors de la validation des informations d’id
 
 ## Solution
 
-1. Assurez-vous que vous disposez de l’ID de service et du jeton d’API corrects et essayez à nouveau de valider. Pour obtenir des instructions détaillées, voir [Tester les informations d’identification rapides](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) dans notre documentation destinée aux développeurs.
+1. Assurez-vous que vous disposez de l’ID de service et du jeton d’API corrects et essayez à nouveau de valider. Pour obtenir des instructions détaillées, reportez-vous à la section [Test des informations d’identification Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) dans notre documentation destinée aux développeurs.
 1. Si la vérification des informations d’identification échoue, exécutez la commande curl suivante pour confirmer l’état du service :
 
    ```curl
    curl -H "Fastly-Key: <API key>" https://api.fastly.com/service/<service ID>/version/active
    ```
 
-1. Si la commande ci-dessus renvoie une erreur similaire à : *{&quot;msg&quot;:&quot;Token $TOKEN expiré au 2021-09-28T02:03:37Z&quot;}*, soumettez un ticket d’assistance pour demander un nouveau jeton API.
+1. Si la commande ci-dessus renvoie une erreur similaire à : *{&quot;msg&quot;:&quot;Token $TOKEN expiré à 2021-09-28T02:03:37Z&quot;}*, soumettez un ticket de support pour demander un nouveau jeton API.
 
-   Pour savoir comment envoyer un ticket d’assistance, reportez-vous à la section [Guide de l’utilisateur du centre d’aide Adobe Commerce > TICKETS D’ASSISTANCE](/help/help-center-guide/help-center/magento-help-center-user-guide.md#support-tickets) dans notre base de connaissances de soutien.
+   Pour savoir comment envoyer un ticket d’assistance, reportez-vous au [Guide de l’utilisateur du centre d’aide Adobe Commerce > TICKETS D’ASSISTANCE](/help/help-center-guide/help-center/magento-help-center-user-guide.md#support-tickets) dans notre base de connaissances d’assistance.
 
    >[!NOTE]
    >
    >Ne partagez jamais de mots de passe ou de jetons API valides/actifs directement dans le ticket, car nous devrons révoquer le jeton actuel et en générer un nouveau pour des raisons de sécurité.
 
-1. Si la commande ne renvoie pas l’erreur, assurez-vous que vous exécutez la version la plus récente de la variable [!DNL Fastly] extension . Si vous utilisez une ancienne version antérieure à 1.2.203, vous devez d’abord cliquer sur **[!UICONTROL Save Config]** avant de pouvoir tester les identifiants.
+1. Si la commande ne renvoie pas l’erreur, assurez-vous que vous exécutez la dernière version de l’extension [!DNL Fastly]. Si vous utilisez une ancienne version antérieure à la version 1.2.203, vous devez d’abord cliquer sur **[!UICONTROL Save Config]** avant de pouvoir tester les informations d’identification.
 
 ## Lectures connexes dans notre documentation destinée aux développeurs :
 
-* [Cloud pour Adobe Commerce > Fastly > Compte de service et informations d’identification rapides](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html#fastly-service-account-and-credentials)
+* [Cloud pour Adobe Commerce > Fastly > Compte de service et informations d’identification Fastly](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html#fastly-service-account-and-credentials)
 
-* [Cloud pour Adobe Commerce > Configuration rapide > Tester les informations d’identification rapides](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials)
+* [Cloud pour Adobe Commerce > Configurer rapidement > Tester les informations d’identification rapides](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials)

@@ -21,15 +21,15 @@ Cette rubrique décrit une solution pour lorsque des erreurs de validation se pr
 
 ## Problème
 
-<u>Étape à reproduire</u>:
+<u>Étape à reproduire</u> :
 
 * Exécutez le mode Développeur dans PWA Studio pour Adobe Commerce.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 * Le serveur du PWA Studio démarre normalement.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 * Vous voyez des erreurs de validation qui peuvent ressembler à :
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-55352 : création de crédits à crédit avec des points de récompense
 
-Le correctif ACSD-55352 corrige le problème en raison duquel, après la création d’un avoir de crédit partiel avec des points de récompense client, l’état de la commande passe à *fermée* et les options de note de crédit disparaissent de la page de commande de l’administrateur. Ce correctif est disponible lorsque la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.44 est installée. L’ID de correctif est ACSD-55352. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-55352 corrige le problème en raison duquel, après la création d’un avoir de crédit partiel avec des points de récompense client, l’état de la commande passe à *fermé* et les options de note de crédit disparaissent de la page de commande de l’administrateur. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.44 est installé. L’ID de correctif est ACSD-55352. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -27,58 +27,58 @@ Le correctif ACSD-55352 corrige le problème en raison duquel, après la créati
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Après la création d’un avoir partiel avec des points de récompense client, l’état de la commande passe à *fermée* et les options de note de crédit disparaissent de la page de commande de l’administrateur.
+Après la création d’une note de crédit partielle avec des points de récompense client, l’état de la commande passe à *fermée* et les options de note de crédit disparaissent de la page de commande de l’administrateur.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Connectez-vous à l’administrateur Adobe Commerce.
 2. Accédez à **[!UICONTROL Stores]** > **[!UICONTROL Other Setting]** > **[!UICONTROL Reward Exchange Rates]** > **[!UICONTROL Add New Rate]**.
 3. Ajoutez deux taux :
-   * *[!UICONTROL First]*:
-      * *[!UICONTROL Direction]* = *Points vers une devise*
+   * *[!UICONTROL First]* :
+      * *[!UICONTROL Direction]* = *Points vers la devise*
       * *[!UICONTROL Rate]* = *100*
       * *[!UICONTROL Upper Boundary]* = *100*
-   * *[!UICONTROL Second]*:
-      * *[!UICONTROL Direction]* = *Devise en points*
+   * *[!UICONTROL Second]* :
+      * *[!UICONTROL Direction]* = *Devise vers points*
       * *[!UICONTROL Rate]* = *100*
       * *[!UICONTROL Upper Boundary]* = *100*
-4. Créer un produit simple avec le prix de *100 $* et avec *Qté* : *100*.
+4. Créez un produit simple au prix de *$100* et avec *Qty* : *100*.
 5. Créez un client à partir du storefront.
-6. Revenez au serveur principal : **[!UICONTROL Customers]** > **[!UICONTROL All Customers]** > **[!UICONTROL Edit]** > **[!UICONTROL Reward Points]** > **[!UICONTROL Update Points]** > Ajouter *100* et enregistrez le client.
+6. Accédez à nouveau au serveur principal : **[!UICONTROL Customers]** > **[!UICONTROL All Customers]** > **[!UICONTROL Edit]** > **[!UICONTROL Reward Points]** > **[!UICONTROL Update Points]** > Ajoutez *100* et enregistrez le client.
 7. Accédez au storefront et connectez-vous comme le client créé précédemment.
-8. Ajouter le produit au panier avec *Qté* : *10*.
-9. Accédez à **[!UICONTROL Checkout]** et utiliser les *100* points de récompense lorsque vous y êtes invité et passez la commande.
-10. Accédez à **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > **[!UICONTROL Invoice]** et expédiez cette commande.
-11. Accédez à [!UICONTROL Credit Memo] et mettre à jour la variable *Qté à rembourser* to *8*.
-12. Cliquez sur le bouton **[!UICONTROL Refund Reward Points]** case à cocher et clic **[!UICONTROL Refund offline]**.
-13. Essayez de rembourser les deux autres produits de la commande, en utilisant la variable [!UICONTROL Credit Memo].
+8. Ajoutez le produit au panier avec *Qté* : *10*.
+9. Accédez à **[!UICONTROL Checkout]** et utilisez les points de récompense *100* disponibles lorsque vous y êtes invité et passez la commande.
+10. Accédez à **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > **[!UICONTROL Invoice]** et envoyez cette commande.
+11. Accédez à [!UICONTROL Credit Memo] et mettez à jour la *Qté à rembourser* vers *8*.
+12. Cochez la case **[!UICONTROL Refund Reward Points]** et cliquez sur **[!UICONTROL Refund offline]**.
+13. Essayez de rembourser les deux autres produits de la commande, en utilisant le [!UICONTROL Credit Memo].
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 * L’administrateur crée [!UICONTROL Credit Memo] pour renvoyer les deux produits restants.
 * L’état de la commande est *Terminé*.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
-* Impossible de créer plus [!UICONTROL Credit Memo].
+* Impossible de créer plus de [!UICONTROL Credit Memo].
 * L’état de la commande est *Fermé*.
 
 ## Appliquer le correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le [!DNL Quality Patches Tool] guide.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce en utilisant  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le [!DNL Quality Patches Tool] guide.
+Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].

@@ -36,7 +36,7 @@ Les actions pouvant générer une réindexation complète ont été effectuées 
 >
 >Ces actions doivent être exécutées en dehors des heures de bureau pour s’assurer que ces actions n’affectent pas les performances pendant les heures ouvrables.
 
-[Extensions tierces](https://support.magento.com/hc/en-us/articles/360042361152-Best-Practices-for-using-third-party-extensions-in-Magento) peut également provoquer une réindexation complète. La réindexation complète peut également être exécutée manuellement à partir de l’interface de ligne de commande. Pour savoir si des index sont réindexés et peuvent entraîner une dégradation des performances :
+[Les extensions tierces](https://support.magento.com/hc/en-us/articles/360042361152-Best-Practices-for-using-third-party-extensions-in-Magento) peuvent également provoquer une réindexation complète. La réindexation complète peut également être exécutée manuellement à partir de l’interface de ligne de commande. Pour savoir si des index sont réindexés et peuvent entraîner une dégradation des performances :
 
 1. Exécutez cette requête pour rechercher les indexeurs qui ont été entièrement réindexés au cours des 15 dernières minutes :
 
@@ -49,13 +49,13 @@ Les actions pouvant générer une réindexation complète ont été effectuées 
 1. Si vous avez trouvé une réindexation complète fréquente, vérifiez les points suivants :
    * Qui peut effectuer cette opération manuellement à partir de l’interface en ligne de commande
    * Le module tiers effectue la réindexation
-   * Le module tiers qui marque les indexeurs comme *Non valide*
+   * Ce module tiers marque les indexeurs comme *non valide*
 
 ### Solution
 
-Exécutez la réindexation uniquement si nécessaire. Pour connaître les étapes, voir [Configuration des indexeurs](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) dans notre documentation destinée aux développeurs. Une recommandation générale et la bonne pratique consiste à permettre au mécanisme de réindexation partielle de s’occuper de la réindexation des données sans intervention manuelle d’un commerçant. Toutes les réindexation doivent être effectuées à l’aide de la fonctionnalité native d’Adobe Commerce (Mview). Mview effectue une réindexation partielle, qui est la méthode la plus efficace pour réindexer les données. Pour en savoir plus sur Mview, voir [Présentation de l’indexation : Mode](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) dans notre documentation destinée aux développeurs.
+Exécutez la réindexation uniquement si nécessaire. Pour connaître les étapes, consultez la section [Configurer les indexeurs](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) de la documentation destinée aux développeurs. Une recommandation générale et la bonne pratique consiste à permettre au mécanisme de réindexation partielle de s’occuper de la réindexation des données sans intervention manuelle d’un commerçant. Toutes les réindexation doivent être effectuées à l’aide de la fonctionnalité native d’Adobe Commerce (Mview). Mview effectue une réindexation partielle, qui est la méthode la plus efficace pour réindexer les données. Pour en savoir plus sur Mview, consultez la [présentation de l’indexation : Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 * [Présentation de l’indexation : comment réindexer](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#how-to-reindex) dans notre documentation destinée aux développeurs.
-* [Le cache invalidé entraîne une dégradation du temps de réponse.](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md) dans notre base de connaissances de soutien.
+* [Le cache invalidé entraîne la dégradation du temps de réponse](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md) dans notre base de connaissances de support.

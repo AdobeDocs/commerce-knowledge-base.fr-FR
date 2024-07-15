@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Tous les clients doivent utiliser Fastly pour leurs environnements de production et d’évaluation. Un réseau de diffusion de contenu (CDN) fournit rapidement des services de mise en cache, d’optimisation des images et de sécurité (DDoS et WAF) complets de page dans le cadre de votre Adobe Commerce sur les projets d’infrastructure cloud. Ces composants principaux de la solution Adobe Commerce offrent des performances et une sécurité accrues. Ces fonctionnalités font partie de la conformité PCI de l’Adobe. Vous devez configurer ces services rapides dans vos environnements de démarrage, d’évaluation, d’évaluation et de production. Si vous utilisez Adobe Commerce dans un déploiement sans interface utilisateur graphique, tout le trafic API provenant de l’Internet public doit passer par Fastly et nous vous recommandons vivement d’utiliser Fastly pour mettre en cache les réponses GraphQL. Voir [Guide du développeur de GraphQL > Mise en cache rapide](https://devdocs.magento.com/guides/v2.3/graphql/caching.html#caching-with-fastly) dans notre documentation destinée aux développeurs.
+>Tous les clients doivent utiliser Fastly pour leurs environnements de production et d’évaluation. Un réseau de diffusion de contenu (CDN) fournit rapidement des services de mise en cache, d’optimisation des images et de sécurité (DDoS et WAF) complets de page dans le cadre de votre Adobe Commerce sur les projets d’infrastructure cloud. Ces composants principaux de la solution Adobe Commerce offrent des performances et une sécurité accrues. Ces fonctionnalités font partie de la conformité PCI de l’Adobe. Vous devez configurer ces services rapides dans vos environnements de démarrage, d’évaluation, d’évaluation et de production. Si vous utilisez Adobe Commerce dans un déploiement sans interface utilisateur graphique, tout le trafic API provenant de l’Internet public doit passer par Fastly et nous vous recommandons vivement d’utiliser Fastly pour mettre en cache les réponses GraphQL. Voir [Guide du développeur de GraphQL > Mise en cache avec Fastly](https://devdocs.magento.com/guides/v2.3/graphql/caching.html#caching-with-fastly) dans notre documentation destinée aux développeurs.
 
 ## **Question**
 
@@ -33,5 +33,5 @@ Tous les clients d’Adobe Commerce sur l’infrastructure cloud reçoivent un c
 
 ## Informations supplémentaires
 
-* [Sites web sans tête : Quel est le Big Deal avec l&#39;architecture découplée ?](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) par [Josh Koenig](https://pantheon.io/team/josh-koenig).
+* [Sites web sans affichage : quel est le Big Deal avec l&#39;architecture découplée ?](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) par [Josh Koenig](https://pantheon.io/team/josh-koenig).
 * [Fastly](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) dans notre documentation destinée aux développeurs.

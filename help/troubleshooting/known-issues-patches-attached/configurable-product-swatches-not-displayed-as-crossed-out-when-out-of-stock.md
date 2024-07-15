@@ -19,7 +19,7 @@ Cet article fournit un correctif pour le problème connu d’Adobe Commerce 2.2.
 
 Lorsque vous disposez d’un produit configurable et que, pour une certaine combinaison d’options, le produit simple associé est en rupture de stock, l’échantillon est toujours disponible et peut être sélectionné sur le storefront.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Dans l’administrateur Commerce, créez un produit configurable avec des options pour deux attributs : couleur (rouge, noir) et taille (S, M, L).
 1. Définissez Quantité sur &quot;1&quot; pour chaque produit simple correspondant.
@@ -28,11 +28,11 @@ Lorsque vous disposez d’un produit configurable et que, pour une certaine comb
 1. Assurez-vous que les commandes en arrière-plan ne sont pas autorisées.
 1. Sur le storefront, accédez à la même page de produit et sélectionnez les mêmes options : rouge, M.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 L’échantillon rouge M a une barre oblique rouge et ne peut pas être sélectionné.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 L’échantillon rouge M peut être sélectionné.
 

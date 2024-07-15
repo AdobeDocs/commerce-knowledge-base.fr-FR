@@ -28,16 +28,16 @@ Le marchand rencontre des erreurs de déploiement lors de l’utilisation du mod
 
 Nous déconseillons aux commerçants d&#39;utiliser le module Baler dans un environnement de production, car il est actuellement en phase de développement de l&#39;alpha. Son utilisation peut entraîner des erreurs de déploiement.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Le marchand tente d’insérer la variable **SCD\_USE\_BALER** dans l’étape de création de la variable `.magento.env.yaml` qui active le package de bundling JavaScript Baler.
-1. Le commerçant ajoute également la dépendance du compositeur Baler : `"magento/module-baler": "1.0.0-alpha"` to `require` section de `composer.json`.
+1. Le marchand tente d’insérer la variable **SCD\_USE\_BALER** dans l’étape de création du fichier `.magento.env.yaml`, ce qui active le package de bundling JavaScript Baler.
+1. Le commerçant ajoute également la dépendance du compositeur Baler : `"magento/module-baler": "1.0.0-alpha"` à la section `require` de `composer.json`.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 Déploiement réussi.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 Le marchand voit le message d’erreur suivant dans les journaux de déploiement sur le cloud, qui est `<project home>/var/log/cloud.log`, lors de l’étape de déploiement du contenu statique :
 
@@ -52,9 +52,9 @@ Le module Baler est actuellement en phase de développement alpha précoce, et l
 
 ## Solution
 
-Vous pouvez consulter la documentation existante de l’Alpha de l’Baler à l’adresse [Github/Magento/Baler/Prise en main de l’alpha](https://github.com/magento/baler/blob/master/docs/ALPHA.md). Cependant, il n’est pas prêt à être utilisé en production et il est utilisé à vos risques et périls. Il est recommandé de fusionner ou de regrouper des fichiers JavaScript (JS) à l’aide d’Adobe Commerce en vue de l’optimisation des fichiers.
+Vous pouvez consulter la documentation existante sur l’Alpha Baler à l’adresse [Github/Magento/Baler/Prise en main de l’alpha](https://github.com/magento/baler/blob/master/docs/ALPHA.md). Cependant, il n’est pas prêt à être utilisé en production et il est utilisé à vos risques et périls. Il est recommandé de fusionner ou de regrouper des fichiers JavaScript (JS) à l’aide d’Adobe Commerce en vue de l’optimisation des fichiers.
 
-* Vous pouvez activer la fusion ou le regroupement dans l’Admin (la fusion et le regroupement ne peuvent pas être activés en même temps) : **Magasins** > **Paramètres** > **Configuration** > **Avancé** > **Développeur** > **Paramètres JavaScript**.
+* Vous pouvez activer la fusion ou le regroupement dans l’administration (la fusion et le regroupement ne peuvent pas être activés en même temps) : **Magasins** > **Paramètres** > **Configuration** > **Avancé** > **Développeur** > **Paramètres JavaScript**.
 * Vous pouvez également activer le regroupement intégré Adobe Commerce (regroupement de base) à partir de la ligne de commande : `php -f bin/magento config:set dev/js/enable_js_bundling 1`
 
-Pour en savoir plus, voir [Optimisation des fichiers CSS et JavaScript sur Adobe Commerce sur l’infrastructure cloud et Adobe Commerce sur site](https://support.magento.com/hc/en-us/articles/360044482152).
+Pour en savoir plus, reportez-vous à la section [Optimisation des fichiers CSS et Javascript sur Adobe Commerce sur l’infrastructure cloud et Adobe Commerce sur site](https://support.magento.com/hc/en-us/articles/360044482152).

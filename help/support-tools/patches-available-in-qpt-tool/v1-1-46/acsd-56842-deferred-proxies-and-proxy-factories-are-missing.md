@@ -1,6 +1,6 @@
 ---
-title: '''ACSD-56842 : les proxys différés et les usines de proxy sont manquants après l’exécution de `setup:di:compile`'
-description: Appliquez le correctif ACSD-56842 pour résoudre le problème Adobe Commerce en raison duquel les proxys différés et les usines de proxy sont manquants après l’exécution de `setup:di:compile`.
+title: '''ACSD-56842 : les proxys différés et les usines de proxy sont manquants après avoir exécuté `setup:di:compile`'
+description: Appliquez le correctif ACSD-56842 pour résoudre le problème Adobe Commerce en raison duquel les proxys différés et les usines de proxy sont manquants après avoir exécuté `setup:di:compile`.
 feature: Deploy, Catalog Management
 role: Admin, Developer
 exl-id: 2d12e36c-d8b7-4253-91d8-28b50477ccd9
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-56842 : les proxys différés et les usines de proxy sont manquants après exécution `setup:di:compile`
+# ACSD-56842 : les proxys différés et les usines de proxy sont manquants après l’exécution de `setup:di:compile`
 
-Le correctif ACSD-56842 corrige le problème en raison duquel les proxys différés et les usines de proxy sont manquants après exécution. `setup:di:compile`. Ce correctif est disponible lorsque la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.46 est installée. L’ID de correctif est ACSD-56842. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-56842 corrige le problème en raison duquel les proxys différés et les usines de proxy sont manquants après l’exécution de `setup:di:compile`. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.46 est installé. L’ID de correctif est ACSD-56842. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -27,16 +27,16 @@ Le correctif ACSD-56842 corrige le problème en raison duquel les proxys différ
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Les proxys différés et les usines de proxy sont manquants après exécution `setup:di:compile`.
+Les proxies différées et les usines de proxy sont manquantes après l&#39;exécution de `setup:di:compile`.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Création d’un module personnalisé nommé *Magento_CustomModule*.
-1. Dans le *[!UICONTROL etc]* du module, créez un `di.xml` avec ce contenu :
+1. Créez un module personnalisé nommé *Magento_CustomModule*.
+1. Dans le dossier *[!UICONTROL etc]* du module, créez un `di.xml` avec ce contenu :
 
    ```xml
     <?xml version="1.0"?>
@@ -65,17 +65,17 @@ Les proxys différés et les usines de proxy sont manquants après exécution `s
      </config>
    ```
 
-1. Définissez la variable [!UICONTROL Production] mode : `bin/magento deploy:mode:set production`.
+1. Définissez le mode [!UICONTROL Production] : `bin/magento deploy:mode:set production`.
 1. Supprimez le dossier généré de la racine magento.
 1. Exécutez la commande `bin/magento setup:di:compile`.
 1. Vérifiez le dossier généré.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 * Les fichiers proxy sont créés après la compilation.
 * Les fichiers d’usine sont créés après la compilation.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Dans le dossier généré, le fichier proxy est généré pour les arguments proxy qui sont donnés sans saut de ligne, et non pour les arguments donnés avec un saut de ligne.
 
@@ -83,14 +83,14 @@ Dans le dossier généré, le fichier proxy est généré pour les arguments pro
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le [!DNL Quality Patches Tool] guide.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce en utilisant  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le [!DNL Quality Patches Tool] guide.
+Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].

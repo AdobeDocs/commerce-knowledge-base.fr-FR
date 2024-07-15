@@ -24,8 +24,8 @@ Cet article propose des solutions de dépannage pour les problèmes liés à cro
 
 ## Voici les symptômes des problèmes de cron :
 
-* Votre mise à jour ou mise à niveau ne s’exécute jamais ; elle reste dans une `pending` état.
-* Un message d’erreur relatif à [PHP](https://glossary.magento.com/php) paramètre `$HTTP_RAW_POST_DATA` s’affiche même s’il est correctement défini.
+* Votre mise à jour ou mise à niveau ne s’exécute jamais ; elle reste à l’état `pending`.
+* Un message d’erreur sur le paramètre [PHP](https://glossary.magento.com/php) `$HTTP_RAW_POST_DATA` s’affiche même s’il est correctement défini.
 * Le contrôle cron de préparation échoue. Les erreurs possibles incluent les chemins non modifiables et cron non configuré. Voici un exemple :
 
   ![upgr-tshot-no-cron2.png](assets/upgr-tshoot-no-cron2.png)
@@ -38,7 +38,7 @@ Cet article propose des solutions de dépannage pour les problèmes liés à cro
 
   ![compman-cron-not-running.png](assets/compman-cron-not-running.png)
 
-Pour afficher l’erreur, vous devrez peut-être cliquer sur **Messages système** en haut de la fenêtre, comme suit :
+Pour voir l’erreur, vous devrez peut-être cliquer sur **Messages système** en haut de la fenêtre comme suit :
 
 ![compman_sys-messages.png](assets/compman_sys-messages.png)
 
@@ -48,9 +48,9 @@ Cette section explique comment vérifier si cron est en cours d’exécution et 
 
 Pour vérifier si votre crontab est configuré, procédez comme suit :
 
-1. Connectez-vous à votre serveur de Magento en tant que [Propriétaire du système de fichiers Magento](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html).
-1. Vérifiez si le fichier suivant existe :    `bash    ls -al <magento_root>/var/.setup_cronjob_status`. Si le fichier existe, cron s’est exécuté avec succès dans le passé. Si le fichier *ne fait pas* existe, soit vous n’avez pas encore installé Magento, soit cron ne s’exécute pas. Dans les deux cas, passez à l’étape suivante.
-1. Obtenez plus de détails sur cron. En tant qu’utilisateur avec `root` , saisissez la commande suivante :    `bash    crontab -u <Magento file system owner name> -l`. Par exemple, sur CentOS `bash    crontab -u magento_user -l`.  Si aucun onglet crontab n’a été configuré pour l’utilisateur, le message suivant s’affiche :    `terminal    no crontab for magento_user`. Votre crontab vous indique ce qui suit :
+1. Connectez-vous à votre serveur de Magento en tant que [propriétaire du système de fichiers du Magento](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) ou basculez-vous vers ce serveur.
+1. Vérifiez si le fichier suivant existe :    `bash    ls -al <magento_root>/var/.setup_cronjob_status`. Si le fichier existe, cron s’est exécuté avec succès dans le passé. Si le fichier *n’existe pas, vous n’avez pas encore installé Magento ou cron n’est pas en cours d’exécution.* Dans les deux cas, passez à l’étape suivante.
+1. Obtenez plus de détails sur cron. En tant qu’utilisateur disposant de droits `root`, saisissez la commande suivante :    `bash    crontab -u <Magento file system owner name> -l`. Par exemple, sur CentOS `bash    crontab -u magento_user -l`.  Si aucun onglet crontab n’a été configuré pour l’utilisateur, le message suivant s’affiche :    `terminal    no crontab for magento_user`. Votre crontab vous indique ce qui suit :
 
    * Quel binaire PHP vous utilisez (dans certains cas, vous en avez plusieurs) ?
    * Scripts cron Magento en cours d’exécution (en particulier, les chemins d’accès à ces scripts)
@@ -62,7 +62,7 @@ Consultez l’une des sections suivantes pour une solution à votre problème.
 
 ### Solution pour crontab non configurée {#solution-crontab-not-set-up}
 
-Pour vérifier que vos tâches cron sont correctement configurées, voir [Configuration de tâches cron](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron).
+Pour vérifier que vos tâches cron sont correctement configurées, voir [Configuration des tâches cron](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron).
 
 ### Solution pour cron utilisant un binaire PHP incorrect {#solution-cron-running-from-incorrect-php-binary}
 
@@ -76,4 +76,4 @@ Essayez d’exécuter chaque commande manuellement, car la commande peut affiche
 
 >[!NOTE]
 >
->Vous devez exécuter cron au moins. *two* pour que la tâche s’exécute ; la première fois pour mettre les tâches en file d’attente, la deuxième fois pour exécuter les tâches.
+>Vous devez exécuter cron au moins *deux fois* pour que la tâche s’exécute ; la première fois que vous mettez des tâches en file d’attente, la deuxième fois que vous exécutez les tâches.

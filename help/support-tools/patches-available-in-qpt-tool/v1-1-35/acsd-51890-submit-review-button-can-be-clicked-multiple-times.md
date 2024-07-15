@@ -1,6 +1,6 @@
 ---
-title: '''ACSD-51890: [!UICONTROL Submit review] peut être cliqué plusieurs fois"'
-description: Appliquez le correctif ACSD-51890 pour résoudre le problème Adobe Commerce où la variable [!UICONTROL Submit Review] peut être cliqué plusieurs fois sans [!DNL Google reCAPTCHA v3] validation.
+title: 'ACSD-51890 : [!UICONTROL Submit review] vous pouvez cliquer plusieurs fois'
+description: Appliquez le correctif ACSD-51890 pour résoudre le problème Adobe Commerce où l’utilisateur peut cliquer plusieurs fois sur le bouton [!UICONTROL Submit Review] sans validation [!DNL Google reCAPTCHA v3] .
 feature: Products
 role: Admin
 exl-id: f6369a24-24bd-4e5e-a870-a13f507ada94
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# ACSD-51890 : **[!UICONTROL Submit Review]** peut être cliqué plusieurs fois sans **[!DNL Google reCAPTCHA v3]** validation
+# Le bouton ACSD-51890 : **[!UICONTROL Submit Review]** peut être cliqué plusieurs fois sans validation **[!DNL Google reCAPTCHA v3]**
 
 >[!NOTE]
 >
 >Ce correctif est remplacé par [ACSD-55112](/help/support-tools/patches-available-in-qpt-tool/v1-1-42/acsd-55112-submit-review-button-can-be-clicked-multiple-times.md).
 
-Le correctif ACSD-51890 corrige le problème en raison duquel la variable **[!UICONTROL Submit Review]** peut être cliqué plusieurs fois sans **[!DNL Google reCAPTCHA v3]** validation. Ce correctif est disponible lorsque la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.35 est installée. L’ID de correctif est ACSD-51890. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-51890 corrige le problème en raison duquel il est possible de cliquer plusieurs fois sur le bouton **[!UICONTROL Submit Review]** sans validation **[!DNL Google reCAPTCHA v3]**. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.35 est installé. L’ID de correctif est ACSD-51890. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -31,18 +31,18 @@ Le correctif ACSD-51890 corrige le problème en raison duquel la variable **[!UI
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-La variable **[!UICONTROL Submit Review]** peut faire l’objet de plusieurs clics sans le bouton **[!DNL Google reCAPTCHA v3]** validation.
+Vous pouvez cliquer plusieurs fois sur le bouton **[!UICONTROL Submit Review]** sans validation **[!DNL Google reCAPTCHA v3]**.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Activer **[!DNL Google reCAPTCHA v3]** pour la révision du produit.
-1. Ouvrez la page produit et accédez à la **[!UICONTROL Review]** et assurez-vous que la variable [!DNL reCAPTCHA] est visible.
-1. Remplissez le formulaire de révision et cliquez sur le bouton **[!UICONTROL Submit Review]** plusieurs fois plus rapidement que possible.
-1. Ouvrez le **[!UICONTROL Review]** de la section Admin.
+1. Activez **[!DNL Google reCAPTCHA v3]** pour la révision du produit.
+1. Ouvrez la page du produit, accédez à la section **[!UICONTROL Review]** et vérifiez que [!DNL reCAPTCHA] est visible.
+1. Remplissez le formulaire de révision et cliquez plusieurs fois sur le bouton **[!UICONTROL Submit Review]** aussi rapidement que possible.
+1. Ouvrez la section **[!UICONTROL Review]** depuis Admin.
 
 <u>Résultats attendus</u>
 
@@ -56,14 +56,14 @@ Des révisions en double sont créées.
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](<https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html>) dans le [!DNL Quality Patches Tool] guide.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](<https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html>) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce en utilisant  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool]: recherche de correctifs](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html>) dans le [!DNL Quality Patches Tool] guide.
+Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](<https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html>) dans le guide [!DNL Quality Patches Tool].

@@ -17,19 +17,19 @@ Cet article fournit un correctif pour l’Adobe connu С commerce sur l’infras
 
 ## Problème
 
-Dans l’Admin, si vous sélectionnez les enregistrements de client ou de client à supprimer, filtrez la grille, puis sélectionnez la **Supprimer** , tous les enregistrements sont supprimés.
+Dans l&#39;Admin, si vous sélectionnez les enregistrements de client ou de client à supprimer, filtrez la grille, puis sélectionnez l&#39;action **Supprimer**, tous les enregistrements sont supprimés.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Accédez à **Catalogue** > **Produits** dans Admin.
+1. Accédez à **Catalogue** > **Produits** dans l’administrateur.
 1. Sélectionnez un ou plusieurs produits.
 1. Sélectionnez Supprimer dans le menu déroulant Actions .
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Seuls les produits sélectionnés sont supprimés.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Certains autres produits sont également supprimés.
 

@@ -41,14 +41,14 @@ Le chemin d’accès aux images et aux feuilles de style n’est pas correct, so
 
 Pour confirmer ce cas, utilisez un inspecteur de navigateur web pour vérifier les chemins d’accès aux ressources statiques et vérifier que ces ressources se trouvent sur le système de fichiers Adobe Commerce ou Magento Open Source.
 
-Les ressources statiques se trouvent sous `<magento_root>/pub/static/` , dans la variable `frontend` et `adminhtml` répertoires.
+Les ressources statiques sont situées sous `<magento_root>/pub/static/` , dans les répertoires `frontend` et `adminhtml` .
 
 ## Solution
 
 Voici les solutions possibles en fonction du logiciel que vous utilisez et de la cause du problème :
 
-* Si vous utilisez le serveur web Apache, vérifiez votre [réécritures du serveur](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/apache.html#apache-help-rewrite) et l’URL de base de votre serveur Adobe Commerce/Magento Open Source, puis réessayez. Si vous configurez Apache `AllowOverride` de manière incorrecte, les fichiers statiques ne sont pas diffusés à partir du bon emplacement.
-* Si vous utilisez le serveur web nginx, veillez à [configurer un fichier d’hôte virtuel](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/nginx.html#configure-nginx-ubuntu). Le fichier d’hôte virtuel nginx doit répondre aux critères suivants :
-   * La variable `include` doit pointer vers l’exemple de fichier de configuration nginx dans votre répertoire d’installation Adobe Commerce/Magento Open Source. Par exemple :    `include /var/www/html/magento2/nginx.conf.sample;`
-   * La variable `server_name` La directive doit correspondre à l’URL de base que vous avez spécifiée lors de l’installation d’Adobe Commerce/Magento Open Source. Par exemple : `server_name 192.186.33.10;`
-* Si l’application se trouve dans [mode de production](https://devdocs.magento.com/guides/v2.3/config-guide/bootstrap/magento-modes.html#production-mode), essayez de déployer les fichiers d’affichage statique à l’aide de l’ `magento setup:static-content:deploy` . Pour plus d’informations sur le déploiement des fichiers statiques, reportez-vous à la section [Déploiement de fichiers d’affichage statique](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) dans notre documentation destinée aux développeurs.
+* Si vous utilisez le serveur web Apache, vérifiez le paramètre [server rewrites](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/apache.html#apache-help-rewrite) et l’URL de base de votre serveur Adobe Commerce/Magento Open Source, puis réessayez. Si vous configurez la directive Apache `AllowOverride` de manière incorrecte, les fichiers statiques ne sont pas diffusés à partir du bon emplacement.
+* Si vous utilisez le serveur web nginx, veillez à [configurer un fichier d&#39;hôte virtuel](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/nginx.html#configure-nginx-ubuntu). Le fichier d’hôte virtuel nginx doit répondre aux critères suivants :
+   * La directive `include` doit pointer vers l’exemple de fichier de configuration nginx dans votre répertoire d’installation Adobe Commerce/Magento Open Source. Par exemple :    `include /var/www/html/magento2/nginx.conf.sample;`
+   * La directive `server_name` doit correspondre à l’URL de base que vous avez spécifiée lors de l’installation d’Adobe Commerce/Magento Open Source. Par exemple : `server_name 192.186.33.10;`
+* Si l’application est en [mode de production](https://devdocs.magento.com/guides/v2.3/config-guide/bootstrap/magento-modes.html#production-mode), essayez de déployer les fichiers d’affichage statique à l’aide de la commande `magento setup:static-content:deploy`. Pour plus d’informations sur le déploiement des fichiers statiques, reportez-vous à la section [Déploiement de fichiers d’affichage statique](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) de notre documentation destinée aux développeurs.

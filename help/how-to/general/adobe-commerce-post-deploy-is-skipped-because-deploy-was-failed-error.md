@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce *le post-déploiement est ignoré car le déploiement a échoué* erreur
-description: 'Cet article explique comment rechercher une erreur de déploiement : *Le post-déploiement est ignoré car le déploiement a échoué*'
+description: 'Cet article explique comment rechercher une erreur de déploiement : *Post-deploy est ignoré car le déploiement a échoué*'
 exl-id: cd0a3015-b7b9-442e-8ac1-89447ef12cd7
 feature: Deploy
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
@@ -10,13 +10,13 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce *post-déploiement est ignoré car le déploiement a échoué.* error
+# Adobe Commerce *post-déploiement est ignoré car le déploiement a échoué* erreur
 
-Cet article explique comment rechercher une erreur de déploiement : *Le post-déploiement est ignoré car le déploiement a échoué.* qui se produit pendant le déploiement dans différents environnements, par exemple la mise à niveau.
+Cet article explique comment rechercher une erreur de déploiement : *Post-deploy est ignoré car le déploiement a échoué*, ce qui se produit lors du déploiement dans différents environnements, par exemple la mise à niveau.
 
 ## Produits et versions concernés
 
-Adobe Commerce sur l’infrastructure cloud [toutes les versions prises en charge](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce sur l&#39;infrastructure cloud [toutes les versions prises en charge](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problème
 
@@ -46,4 +46,4 @@ Indéterminé : ce qui provoque ce message d’erreur dépend du code et de la b
     W:
 ```
 
-Pour obtenir la trace de l&#39;erreur afin de déterminer la cause réelle, SSH au serveur et vérifiez le fichier journal. `var/log/install_upgrade.log`.
+Pour obtenir la trace de l&#39;erreur permettant de déterminer la cause réelle, SSH au serveur et vérifiez le fichier journal `var/log/install_upgrade.log`.

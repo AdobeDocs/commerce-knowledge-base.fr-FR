@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # robots.txt non mis à jour ou affichage des paramètres par défaut
 
-L’article fournit une solution pour lorsque vous avez configuré `robots.txt` correctement, par exemple par [Bonnes pratiques pour Adobe Commerce robots.txt](https://support.magento.com/hc/en-us/articles/360048754931) mais le `robots.txt` n’est pas mis à jour ou affiche les paramètres par défaut.
+L’article fournit une solution pour lorsque vous avez configuré `robots.txt` correctement, par exemple par [Bonnes pratiques pour Adobe Commerce robots.txt](https://support.magento.com/hc/en-us/articles/360048754931), mais que le `robots.txt` n’est pas mis à jour ou affiche les paramètres par défaut.
 
 ## Produits et versions concernés
 
@@ -21,20 +21,20 @@ L’article fournit une solution pour lorsque vous avez configuré `robots.txt` 
 
 ## Problème
 
-Impossible de modifier la valeur par défaut `robots.txt` .
+Impossible de modifier le paramètre par défaut `robots.txt`.
 
 <u>Étapes à reproduire :</u>
 
 1. Accédez au panneau Admin.
-1. Ajouter du contenu à **Contenu** > Conception > **Configuration** > **Modifier l’instruction personnalisée de`robots.txt`** comme le texte &quot;hello&quot; et enregistrez les modifications.
-1. Visitez le `robots.txt` url.
+1. Ajoutez du contenu à **Contenu** > Conception > **Configuration** > **Modifier l’instruction personnalisée du fichier`robots.txt`** comme le texte &quot;hello&quot; et enregistrez les modifications.
+1. Visitez l’URL `robots.txt`.
 
 <u>Résultat attendu :</u>
 `robots.txt` contient le texte enregistré.
 
 <u>Résultat réel :</u>
 
-`robots.txt` ne change pas.
+Le fichier `robots.txt` ne change pas.
 
 ## Cause
 
@@ -46,4 +46,4 @@ Activez l’indexation par moteur de recherche. Voir [Configuration de l’index
 
 ## Lecture connexe
 
-* [Ajout de robots de carte de site et de moteur de recherche](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) dans notre documentation destinée aux développeurs.
+* [Ajoutez des robots de moteur de recherche et de carte de site](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) dans notre documentation destinée aux développeurs.

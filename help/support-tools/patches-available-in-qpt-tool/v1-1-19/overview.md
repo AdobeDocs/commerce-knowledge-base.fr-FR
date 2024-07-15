@@ -17,9 +17,9 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.19 comprend les correctifs suivants :
 
-1. **ACSD-45781**: correction d’un problème en raison duquel le champ de recherche frontale du magasin ne s’affichait pas sur mobile.
-1. **ACSD-46213**: correction d’un problème en raison duquel la demande d’arborescence de catégories était limitée à 20 catégories.
-1. **ACSD-46404**: correction du problème qui empêchait un utilisateur administrateur de se connecter après la mise à niveau vers la version 2.4.4.
-1. **ACSD-46192**: corrige le problème lié à l’utilisation de la variable `async/bulk/V1/configurable-products/bySku/options` point de terminaison .
+1. **ACSD-45781** : résolution du problème de l’affichage du champ de recherche frontale du magasin sur mobile.
+1. **ACSD-46213** : résolution du problème en raison duquel la demande d’arborescence de catégorie est limitée à 20 catégories.
+1. **ACSD-46404** : résolution du problème de l’impossibilité pour un utilisateur administrateur de se connecter après la mise à niveau vers la version 2.4.4.
+1. **ACSD-46192** : résolution du problème lié à l’utilisation du point de terminaison `async/bulk/V1/configurable-products/bySku/options`.
 
 Utilisez le menu de gauche pour accéder à une page de correctif spécifique.

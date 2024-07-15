@@ -23,7 +23,7 @@ Cet article fournit une solution au problème d’échec de l’installation d�
 ## Problème
 
 <u>Conditions préalables :</u>
-Une extension tierce avec des dépendances sur les API pour le module Store dans les commandes de l’interface de ligne de commande est configurée comme requis dans `composer.json`. Cela entraîne l’échec de l’installation d’Adobe Commerce 2.4.0 avec un message d’erreur : *Le site web par défaut n’est pas défini. Définissez le site web et réessayez.* affiché dans la console.
+Une extension tierce avec des dépendances sur les API pour le module Store dans les commandes de l’interface de ligne de commande est configurée comme requis dans `composer.json`. L&#39;installation d&#39;Adobe Commerce 2.4.0 échoue alors avec un message d&#39;erreur : *Le site web par défaut n&#39;est pas défini. Définissez le site web et réessayez.* affiché dans la console.
 
 ## Cause
 
@@ -33,7 +33,7 @@ Le problème s’affiche pour les extensions tierces qui dépendent des magasins
 
 Avant l&#39;installation d&#39;Adobe Commerce 2.4.0, les commerçants doivent :
 
-1. Supprimer ces extensions tierces de `composer.json`.
+1. Supprimez ces extensions tierces de `composer.json`.
 1. Installez Adobe Commerce sans extensions.
 1. Ajoutez les extensions après l’installation.
 

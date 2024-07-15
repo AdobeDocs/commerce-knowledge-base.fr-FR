@@ -23,7 +23,7 @@ Cet article fournit une solution au problème d’espace disque faible dû aux i
 
 ## Problème
 
-Le faible volume de stockage sur disque et le chargement lent des pages peuvent être causés par de grandes images enrichies utilisant une grande quantité de stockage dans `pub/media/catalog/products` et le partage de l’espace disque entre l’évaluation et la production (sauf si un environnement d’évaluation dédié est configuré).
+Un faible stockage sur disque et des chargements lents de page peuvent être causés par de grandes images enrichies utilisant de grandes quantités de stockage dans `pub/media/catalog/products` et le partage d’espace disque entre l’évaluation et la production (sauf si un environnement d’évaluation dédié est configuré).
 
 ## Cause
 
@@ -33,7 +33,7 @@ Les images ne sont pas optimisées pour équilibrer les performances et la quali
 
 Avant de télécharger des images, optimisez-les et compressez-les pour équilibrer les performances avec la qualité d’affichage. Cela permet d’augmenter l’espace et de réduire les temps de chargement des pages. Les fichiers PNG offrent des tailles plus petites pour les images avec de grandes zones de couleur unie. Les JPEG donnent des tailles plus petites pour tout le reste. Utilisez la compression la plus élevée (sans dégradation notable). C&#39;est généralement entre 60 et 80%.
 
-Utilisation [Optimisation rapide des images](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html) pour produire des images plus économes en stockage.
+Utilisez [l’optimisation rapide des images](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html) pour produire des images plus efficaces en termes de stockage.
 
 ## Lecture connexe
 

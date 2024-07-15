@@ -1,6 +1,6 @@
 ---
-title: '''[!UICONTROL Recommendations] [!DNL JS] Erreurs après la mise à niveau vers Adobe Commerce version 2.4.5"'
-description: Cet article fournit un correctif pour le cas où, après la mise à niveau vers Adobe Commerce (toutes les méthodes de déploiement), il existe des [!DNL JS] erreurs dans la console liées au produit [!UICONTROL Recommendations] modules.
+title: '[!UICONTROL Recommendations] [!DNL JS] Erreurs après la mise à niveau vers Adobe Commerce version 2.4.5'
+description: Cet article fournit un correctif pour les erreurs survenant après la mise à niveau vers Adobe Commerce (toutes les méthodes de déploiement), survenant dans la console des erreurs liées aux modules [!UICONTROL Recommendations] du produit. [!DNL JS]
 feature: Install, Upgrade
 role: Developer
 exl-id: 51d899eb-48f7-48c5-8bda-bd72a4d28945
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!UICONTROL Recommendations] [!DNL JS] erreurs après la mise à niveau vers Adobe Commerce version 2.4.5
 
-Cet article fournit un correctif pour le cas où, après la mise à niveau vers Adobe Commerce (toutes les méthodes de déploiement), il existe des [!DNL JS] erreurs dans la console liées au produit [!UICONTROL Recommendations] modules/unités.
+Cet article fournit un correctif pour le cas où, après la mise à niveau vers Adobe Commerce (toutes les méthodes de déploiement), des erreurs [!DNL JS] se produisent dans la console en rapport avec les modules/unités du produit [!UICONTROL Recommendations].
 
 Il n’est actuellement pas prévu de résoudre ce problème dans les versions futures.
 
@@ -23,24 +23,24 @@ Il n’est actuellement pas prévu de résoudre ce problème dans les versions f
 
 ## Problème
 
-Le problème est dû au fait que la page web storefront fait toujours référence à un produit supprimé. [!UICONTROL Recommendations] modules/unités (blocs et/ou widgets) sur sa page d’accueil [!DNL CMS].
+Le problème est dû à la page web storefront qui fait toujours référence à certains modules/unités de produit [!UICONTROL Recommendations] supprimés (blocs et/ou widgets) sur sa page d’accueil [!DNL CMS].
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Mise à niveau vers Adobe Commerce 2.4.5.
 1. Accédez à la page web storefront.
-1. Cliquez avec le bouton droit de la souris, puis sélectionnez **Inspect** pour ouvrir l’Inspecteur web dans votre navigateur web.
-1. Cliquez sur le bouton **[!UICONTROL Console]** .
-1. Consultez la section [!DNL JS] erreurs.
+1. Cliquez avec le bouton droit de la souris, puis sélectionnez **Inspect** pour ouvrir l’Inspecteur Web sur votre navigateur Web.
+1. Cliquez sur l’onglet **[!UICONTROL Console]** .
+1. Vérifiez les erreurs [!DNL JS].
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
-Mise à niveau réussie sans [!DNL JS] erreurs.
+Mise à niveau réussie sans erreur [!DNL JS].
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
-Plusieurs types différents [!DNL JS] les erreurs s’affichent dans la console du navigateur web.
+Plusieurs types d’erreurs [!DNL JS] s’affichent dans la console du navigateur web.
 
 ## Solution
 
-Pour pallier ce problème, vous pouvez consulter toutes les [!UICONTROL Recommendations] unités que vous avez utilisées sur la page et supprimez les unités supprimées.
+Pour pallier ce problème, vous pouvez passer en revue toutes les unités [!UICONTROL Recommendations] que vous avez utilisées sur la page et supprimer toutes les unités supprimées.

@@ -37,7 +37,7 @@ labels: patch: 2041.1,article,labels,tags
 ---
 ```
 
-Pour éviter cette erreur, placez le titre ou les libellés (ou les deux s’ils comportent tous deux deux deux deux deux deux points) dans **guillemets simples**.
+Pour éviter cette erreur, placez le titre ou les libellés (ou les deux s’ils contiennent tous deux deux deux deux deux deux deux deux-points) dans les **guillemets simples**.
 
 **Exemple :**
 
@@ -83,7 +83,7 @@ labels: patch: 2041.1,'article',"labels",can't,tags
 ---
 ```
 
-Dans ce cas, placez le titre (ou les deux) dans **guillemets doubles** et utilisez une **barre oblique inverse** pour échapper tous les guillemets doubles dans le titre et les libellés.
+Dans ce cas, placez le ou les libellés (ou les deux) dans les **guillemets doubles** et utilisez une **barre oblique inverse** pour échapper tous les guillemets doubles dans le titre et les libellés.
 
 **Exemple :**
 

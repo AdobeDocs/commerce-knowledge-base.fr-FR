@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Échec du développement de l’origine de l’extraction git lors de la mise à jour du logiciel Adobe Commerce
 
-Cet article fournit un correctif pour les cas où vous ne pouvez pas mettre à jour le logiciel Adobe Commerce en cours d’exécution. `git pull origin develop`.
+Cet article fournit un correctif pour les cas où vous ne pouvez pas mettre à jour le logiciel Adobe Commerce lors de l’exécution de `git pull origin develop`.
 
 ## Détails
 
@@ -44,7 +44,7 @@ Votre solution dépend du fait que vous ayez ou non intentionnellement modifié 
 
 #### Vous avez intentionnellement modifié des fichiers
 
-Résolvez manuellement les conflits de la manière habituelle. Si vous ne savez pas quoi faire, consultez [Aide de GitHub](https://help.github.com/).
+Résolvez manuellement les conflits de la manière habituelle. Si vous ne savez pas quoi faire, consultez l’[aide GitHub](https://help.github.com/).
 
 #### Vous n’avez intentionnellement modifié aucun fichier.
 
@@ -71,6 +71,6 @@ Essayez l’une des méthodes suivantes :
 
   >[!NOTE]
   >
-  >Adobe ne recommande pas ou n’approuve aucun paramètre de configuration GitHub particulier. Les suggestions ci-dessus ne sont que des suggestions. Pour plus d’informations, consultez [Aide de GitHub](https://help.github.com/).
+  >Adobe ne recommande pas ou n’approuve aucun paramètre de configuration GitHub particulier. Les suggestions ci-dessus ne sont que des suggestions. Pour plus d’informations, consultez l’ [aide de GitHub](https://help.github.com/).
 
   Continuez là où vous vous êtes arrêté avec votre mise à jour d’Adobe Commerce.

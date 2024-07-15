@@ -17,10 +17,10 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.0.25 comprend les correctifs suivants :
 
-1. **MDVA-36572**: corrige le problème lorsque les mises à jour de Mémo de crédit ne provoquent plus de mises à jour de réservation de produits en double dans la base de données.
-1. **MDVA-37082**: corrige le problème lors de l’enregistrement du stock personnalisé de produits groupés, en raison duquel le produit s’affichait en rupture de stock dans le front-end.
-1. **MDVA-37916**: corrige le problème en raison duquel le client n’était pas amené à la variable [!UICONTROL Payment Confirmation] lors de l’utilisation de la variable [!DNL Paypal Payment Advanced] .
-1. **MDVA-38132**: corrige le problème lorsque le panneau d’administration n’est pas accessible en raison d’un événement *trop de redirections* erreur.
-1. **MDVA-38270**: corrige le problème lié à l’absence d’informations sur les cartes cadeau dans le total de la commande dans GraphQL.
+1. **MDVA-36572** : corrige le problème lorsque les mises à jour de Mémo de crédit ne provoquent plus de mises à jour de réservation de produits en double dans la base de données.
+1. **MDVA-37082** : correction d’un problème lors de l’enregistrement d’un stock personnalisé de produits groupés, pour que le produit s’affiche en rupture de stock dans l’interface.
+1. **MDVA-37916** : correction d’un problème en raison duquel le client n’était pas amené sur la page [!UICONTROL Payment Confirmation] lors de l’utilisation de la méthode [!DNL Paypal Payment Advanced].
+1. **MDVA-38132** : corrige le problème lorsque le panneau d’administration n’est pas accessible en raison d’une erreur *trop de redirections*.
+1. **MDVA-38270** : résolution du problème lié à l’absence d’informations sur les cartes cadeau dans le total de la commande dans GraphQL.
 
 Utilisez le menu de gauche pour accéder à une page de correctif spécifique.

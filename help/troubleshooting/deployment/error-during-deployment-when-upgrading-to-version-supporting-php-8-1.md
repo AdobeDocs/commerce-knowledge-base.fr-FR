@@ -41,8 +41,8 @@ PHP 8.1 inclut déjà la prise en charge de JSON et ne nécessite pas l’instal
 
 ## Solution
 
-Suppression de JSON de la **Runtime** > **Extensions** dans `.magento.app.yaml` et redéployez.
+Supprimez JSON de la section **Runtime** > **Extensions** dans `.magento.app.yaml` et redéployez-la.
 
 ## Lecture connexe
 
-[application PHP](https://devdocs.magento.com/cloud/project/magento-app-php-application.html) dans notre documentation destinée aux développeurs.
+[Application PHP](https://devdocs.magento.com/cloud/project/magento-app-php-application.html) dans notre documentation destinée aux développeurs.

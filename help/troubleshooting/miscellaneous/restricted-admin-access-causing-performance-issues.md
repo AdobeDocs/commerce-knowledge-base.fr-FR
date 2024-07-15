@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Restriction de l’accès administrateur provoquant des problèmes de performances
 
-Cet article fournit des solutions lorsque les performances sont affectées par l’utilisation de [Rôles d’administration avec portée des rôles limitée par le site web](https://docs.magento.com/m2/ee/user_guide/system/permissions-user-roles.html#step-2assign-resources) dans notre guide d’utilisation.
+Cet article fournit des solutions pour les cas où les performances sont affectées par l’utilisation de [rôles d’administrateur avec une portée de rôle limitée par le site web](https://docs.magento.com/m2/ee/user_guide/system/permissions-user-roles.html#step-2assign-resources) dans notre guide d’utilisation.
 
 ## Produits et versions concernés
 
@@ -30,9 +30,9 @@ Le problème est résolu dans Adobe Commerce 2.2.10 et 2.3.3.
 
 Vous trouverez ci-dessous les options permettant d’éviter le problème :
 
-* Mettez à niveau la version de l’application Adobe Commerce vers 2.2.10 ou 2.3.3. (pour obtenir des instructions, voir la section [Mise à niveau d’Adobe Commerce vers la version de l’infrastructure cloud](https://devdocs.magento.com/guides/v2.3/cloud/project/project-upgrade.html) dans notre documentation destinée aux développeurs).
+* Mettez à niveau la version de l’application Adobe Commerce vers 2.2.10 ou 2.3.3. (pour obtenir des instructions, reportez-vous à la section [Mise à niveau d’Adobe Commerce sur la version d’infrastructure cloud](https://devdocs.magento.com/guides/v2.3/cloud/project/project-upgrade.html) de notre documentation destinée aux développeurs).
 * Si possible, évitez de limiter la portée du rôle d’utilisateur administrateur par site web.
-* [Envoi d’un ticket d’assistance Magento](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), pour demander un correctif, s’il est disponible.
+* [Envoyez un ticket d’assistance Magento](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour demander un correctif, s’il est disponible.
 
 ## Lecture connexe
 

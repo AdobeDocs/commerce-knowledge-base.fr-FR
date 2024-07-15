@@ -23,15 +23,15 @@ Toutes les versions d’Adobe Commerce sur l’infrastructure cloud Pro planifie
 
 ## Problème
 
-Vous recevrez une alerte dans New Relic si vous vous êtes abonné à [Alertes gérées pour Adobe Commerce](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md) et un ou plusieurs seuils d’alerte ont été dépassés. Ces alertes ont été développées par Adobe pour fournir aux commerçants un ensemble standard d’alertes à l’aide d’informations provenant de l’assistance et de l’ingénierie.
+Vous recevrez une alerte dans New Relic si vous avez signé jusqu’à [Alertes gérées pour Adobe Commerce](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md) et qu’un ou plusieurs seuils d’alerte ont été dépassés. Ces alertes ont été développées par Adobe pour fournir aux commerçants un ensemble standard d’alertes à l’aide d’informations provenant de l’assistance et de l’ingénierie.
 
-**<u>Faites-le !</u>**
+**<u>Do!</u>**
 
 * Il est recommandé d’abandonner tout déploiement planifié jusqu’à ce que cette alerte soit effacée.
-* Si votre site est ou ne répond plus complètement, mettez immédiatement votre site en mode de maintenance. Pour connaître les étapes, voir [Guide d’installation > Activer ou désactiver le mode de maintenance](/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html#enable-or-disable-maintenance-mode-1) dans notre Guide d’installation.
-* Veillez à ajouter votre adresse IP à la liste des adresses IP exemptées afin de vous assurer que vous pouvez toujours accéder à votre site pour la résolution des problèmes. Pour connaître les étapes, voir [Maintenir la liste des adresses IP exemptées](/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html#maintain-the-list-of-exempt-ip-addresses) dans notre Guide d’installation.
+* Si votre site est ou ne répond plus complètement, mettez immédiatement votre site en mode de maintenance. Pour les étapes, reportez-vous au [Guide d&#39;installation > Activer ou désactiver le mode de maintenance](/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html#enable-or-disable-maintenance-mode-1) de notre Guide d&#39;installation.
+* Veillez à ajouter votre adresse IP à la liste des adresses IP exemptées afin de vous assurer que vous pouvez toujours accéder à votre site pour la résolution des problèmes. Pour les étapes, reportez-vous à la section [Maintenance de la liste des adresses IP exemptées](/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html#maintain-the-list-of-exempt-ip-addresses) de notre Guide d&#39;installation.
 
-**<u>Ne le faites pas !</u>**
+**<u>Ne pas faire !</u>**
 
 * Lancez d’autres campagnes marketing qui peuvent apporter des pages vues supplémentaires à votre site.
 * Exécutez des indexeurs ou des crons supplémentaires qui peuvent entraîner une contrainte supplémentaire sur le processeur ou le disque.
@@ -42,14 +42,14 @@ Vous recevrez une alerte dans New Relic si vous vous êtes abonné à [Alertes g
 
 Suivez ces étapes pour identifier et dépanner la cause.
 
-1. Vérifiez si la mémoire utilisée Redis augmente ou diminue en accédant à [one.newrelic.com](https://login.newrelic.com/login) > **Infrastructure** > **Services tiers** , sélectionnez le tableau de bord Redis . S’il est stable ou en augmentation, [envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour que votre grappe soit mise à niveau ou augmentez les `maxmemory` limite au niveau suivant.
+1. Vérifiez si la mémoire utilisée Redis augmente ou diminue en accédant à la page [one.newrelic.com](https://login.newrelic.com/login) > **Infrastructure** > **Services tiers** , puis sélectionnez le tableau de bord Redis . S&#39;il est stable ou en augmentation, [envoyez un ticket d&#39;assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour que votre grappe soit mise à niveau ou augmentez la limite `maxmemory` au niveau suivant.
 1. Si vous ne pouvez pas identifier la cause de l’augmentation de la consommation de mémoire Redis, passez en revue les tendances récentes afin d’identifier les problèmes liés aux déploiements de code récents ou aux modifications de configuration (par exemple, de nouveaux groupes de clients et des modifications importantes du catalogue). Il est recommandé de passer en revue les sept derniers jours d’activité pour toute corrélation dans les déploiements ou modifications de code.
 1. Vérifiez si les extensions tierces ne se comportent pas correctement :
    * Essayez de trouver une corrélation avec les extensions tierces récemment installées et l’heure à laquelle le problème a commencé.
    * Examinez les extensions qui pourraient affecter le cache Adobe Commerce et entraîner une croissance rapide du cache. Par exemple, des blocs de mise en page personnalisés, le remplacement de la fonctionnalité de cache et le stockage de grandes quantités de données dans le cache.
-1. S’il n’existe aucune preuve de comportement inapproprié des extensions, [Installez les derniers correctifs pour résoudre les problèmes Redis pour Adobe Commerce sur l’infrastructure cloud](/help/troubleshooting/miscellaneous/install-latest-patches-to-fix-magento-redis-issues.md). Si les étapes ci-dessus ne vous aident pas à identifier ou à résoudre le problème, envisagez d’activer le cache L2 pour réduire le trafic réseau entre l’application et Redis. Pour des informations générales sur ce qui est du cache L2, reportez-vous à la section [Mise en cache de l2 dans l’application Adobe Commerce](/docs/commerce-operations/configuration-guide/cache/level-two-cache.html) dans notre Guide de configuration. Pour activer le cache L2 pour l’infrastructure cloud, essayez les méthodes suivantes :
+1. S’il n’existe aucune preuve de comportement incorrect des extensions, [installez les derniers correctifs pour corriger les problèmes Redis pour Adobe Commerce sur l’infrastructure cloud](/help/troubleshooting/miscellaneous/install-latest-patches-to-fix-magento-redis-issues.md). Si les étapes ci-dessus ne vous aident pas à identifier ou à résoudre le problème, envisagez d’activer le cache L2 pour réduire le trafic réseau entre l’application et Redis. Pour des informations générales sur ce qui est du cache L2, reportez-vous à la section [Mise en cache L2 dans l’application Adobe Commerce](/docs/commerce-operations/configuration-guide/cache/level-two-cache.html) de notre Guide de configuration. Pour activer le cache L2 pour l’infrastructure cloud, essayez les méthodes suivantes :
    * Mettez à niveau les outils de la CEE sous la version 2002.1.2.
-   * Configuration du cache L2 à l’aide de [Utiliser la variable REDIS\_BACKEND](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) et mise à jour `.magento.env.yaml` fichier :
+   * Configurez le cache L2 en utilisant [Use REDIS\_BACKEND variable](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) et en mettant à jour le fichier `.magento.env.yaml` :
 
    ```yaml
    stage:

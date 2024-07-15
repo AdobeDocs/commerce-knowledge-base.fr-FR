@@ -17,17 +17,17 @@ Cet article fournit un correctif pour la limitation connue d’Adobe Commerce 2.
 
 >[!NOTE]
 >
->L’intégration de paiement Adobe Commerce Cybersource principale est obsolète depuis la version 2.3.3 et sera complètement supprimée de la version 2.4.0. Utilisez la variable [extension officielle](https://marketplace.magento.com/cybersource-global-payment-management.html) à partir de Marketplace.
+>L’intégration de paiement Adobe Commerce Cybersource principale est obsolète depuis la version 2.3.3 et sera complètement supprimée de la version 2.4.0. Utilisez plutôt l’ [extension officielle](https://marketplace.magento.com/cybersource-global-payment-management.html) de Marketplace.
 
 ## Problème
 
-La mise en oeuvre précédente de l’intégration Cybersource autorisait le traitement des paiements à partir d’un seul domaine. Par conséquent, si votre vitrine Adobe Commerce se trouve sur un domaine différent de celui de l’administrateur Commerce, vous obtenez l’erreur suivante lorsque vous essayez de passer une commande à l’aide de Cybersource dans l’administrateur : &quot; *Le chargement refusé par X-Frame-Options : https://%your\_domain%/cybersource/SilentOrder/TokenResponse/ n’autorise pas le cadre d’origine croisée.* ..&quot;
+La mise en oeuvre précédente de l’intégration Cybersource autorisait le traitement des paiements à partir d’un seul domaine. Par conséquent, si votre vitrine Adobe Commerce se trouve sur un domaine différent de celui de l’administrateur Commerce, vous obtenez l’erreur suivante lorsque vous essayez de passer une commande à l’aide de Cybersource dans l’administrateur : &quot; *Chargement refusé par X-Frame-Options: https://%your\_domain%/cybersource/SilentOrder/TokenResponse/ n’autorise pas le cadre d’origine croisée.*&quot;.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Configurez l’administrateur sur un autre sous-domaine.
-1. Configuration de Cybersource pour le magasin sous **Magasins** > Paramètres > **Configuration** > **Ventes** > **Méthodes de paiement** > **CyberSource**.
-1. Accédez à **Ventes** > **Commandes**.
+1. Configurez Cybersource pour le magasin sous **Magasins** > Paramètres > **Configuration** > **Ventes** > **Méthodes de paiement** > **CyberSource**.
+1. Accédez à **Sales** > **Commandes**.
 1. Créez une nouvelle commande.
 1. Créez un client.
 1. Renseignez les détails du client.
@@ -35,9 +35,9 @@ La mise en oeuvre précédente de l’intégration Cybersource autorisait le tra
 1. Sélectionnez Cybersource comme mode de paiement.
 1. Envoyer la commande.
 
-<u>Résultat attendu</u>: la commande est passée sans problème.
+<u>Résultat attendu</u> : la commande est passée sans problème.
 
-<u>Résultat réel</u>: la page Ordre affiche une icône de chargement, mais la commande n’est jamais placée. L&#39;erreur s&#39;affiche dans la console.
+<u>Résultat réel</u> : la page Ordre affiche une icône de chargement, mais la commande n’est jamais placée. L&#39;erreur s&#39;affiche dans la console.
 
 ## Solution
 
@@ -69,6 +69,6 @@ Les correctifs sont également compatibles avec les versions suivantes :
 
 ## Comment appliquer un correctif
 
-Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de soutien.
+Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Fichiers attachés

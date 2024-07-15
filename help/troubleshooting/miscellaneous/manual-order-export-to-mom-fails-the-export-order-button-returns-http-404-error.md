@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # L’exportation manuelle de la commande vers MOM échoue. Le bouton Export Order renvoie une erreur HTTP 404.
 
-Cet article explique comment résoudre un problème en raison duquel une tentative d’exportation d’une commande vers Magento Order Management (MOM) en cliquant sur le **Export Order** dans la vue order de l’administrateur Commerce, renvoie un &quot; *404 Page introuvable* &quot;.
+Cet article explique comment résoudre un problème en raison duquel une tentative d’exportation d’une commande vers Magento Order Management (MOM) en cliquant sur le bouton **Exporter la commande** dans la vue de commande de l’administrateur Commerce renvoie une erreur &quot;*404 Page introuvable*&quot;.
 
 ## Produits et versions concernés
 
@@ -22,20 +22,20 @@ Cet article explique comment résoudre un problème en raison duquel une tentati
 
 ## Problème
 
-<u>Étapes à reproduire :</u>:
+<u>Étapes à reproduire :</u> :
 
-1. Dans Commerce Admin, cliquez sur **Ventes > Commandes**.
-1. Cliquez sur le bouton **Créer une commande** bouton .
-1. Sélectionnez un utilisateur, ajoutez un ou plusieurs éléments, sélectionnez les modes de paiement et d’expédition, puis cliquez sur le bouton **Envoyer la commande** bouton .
-1. Cliquez sur le bouton **Export Order** puis **OK**.
+1. Dans l’administrateur Commerce, cliquez sur **Ventes > Commandes**.
+1. Cliquez sur le bouton **Créer une commande** .
+1. Sélectionnez un utilisateur, ajoutez un ou plusieurs éléments, sélectionnez les modes de paiement et d’expédition, puis cliquez sur le bouton **Envoyer la commande** .
+1. Cliquez sur le bouton **Export Order** , puis sur **OK**.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 La commande est envoyée à MOM.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
-Un &quot; *Erreur 404 : Page introuvable* &quot; s’affiche.
+Une page &quot; *404 Error: Page Not Found*&quot; s’affiche.
 
 ## Solution
 
@@ -48,4 +48,4 @@ $bin/magento oms:orders:sync
 
 ## Lecture connexe
 
-[Documentation technique du Magento Order Management](https://omsdocs.magento.com/en/)
+[Documentation technique Magento Order Management](https://omsdocs.magento.com/en/)

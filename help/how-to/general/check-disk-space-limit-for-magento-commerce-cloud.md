@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Pour vérifier l’espace dont vous disposez pour chaque environnement d’infrastructure cloud d’Adobe Commerce :
 
-1. Connectez-vous au [Cloud Console](https://console.adobecommerce.com).
-1. Sur le **[!UICONTROL All projects]** dans le tableau de bord, sélectionnez le projet approprié. Dans le coin inférieur, voir Disponibilité de l’espace disque.
+1. Connectez-vous à la [console cloud](https://console.adobecommerce.com).
+1. Sur le tableau de bord **[!UICONTROL All projects]**, sélectionnez le projet approprié. Dans le coin inférieur, voir Disponibilité de l’espace disque.
 
    ![project_space.png](/help/how-to/general/assets/project_space.png)
 
 ## Lecture connexe
 
-[Gestion de l’espace disque](https://devdocs.magento.com/cloud/project/manage-disk-space.html) dans notre documentation destinée aux développeurs.
+[Gérez l’espace disque](https://devdocs.magento.com/cloud/project/manage-disk-space.html) dans notre documentation destinée aux développeurs.

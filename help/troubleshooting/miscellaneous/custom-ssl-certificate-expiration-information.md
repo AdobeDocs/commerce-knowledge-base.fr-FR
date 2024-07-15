@@ -41,11 +41,11 @@ Adobe Commerce met à jour tout certificat lorsqu’il est à 30 jours de l’ex
 
 Lorsqu’un commerçant choisit d’utiliser son propre certificat SSL personnalisé, il doit être mis à jour plus de 30 jours avant l’expiration du certificat pour s’assurer qu’il ne sera pas remplacé par un certificat SSL Adobe Commerce interne.
 
-Si vous êtes dans une situation où votre SSL personnalisé a été remplacé par notre SSL interne et que vous souhaitez le remplacer par votre certificat SSL personnalisé mis à jour, veuillez [envoyer une demande d’assistance ;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) avec l’emplacement où vous avez chargé vos nouveaux fichiers de certificat. Veuillez inclure la date de début du nouveau SSL. Une fois que nous avons ces informations, nous pouvons passer à l’installation du nouveau certificat SSL.
+Si vous êtes dans une situation où votre SSL personnalisé a été remplacé par notre SSL interne et que vous souhaitez le remplacer par votre certificat SSL personnalisé mis à jour, [ envoyez une demande d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) avec l’emplacement où vous avez chargé vos nouveaux fichiers de certificat. Veuillez inclure la date de début du nouveau SSL. Une fois que nous avons ces informations, nous pouvons passer à l’installation du nouveau certificat SSL.
 
 ## Lecture connexe
 
-* [Certificats SSL (TLS) pour Magento Commerce Cloud : FAQ](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) dans notre base de connaissances de soutien.
+* [Certificats SSL (TLS) pour Magento Commerce Cloud : FAQ](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) dans notre base de connaissances de prise en charge.
 * [Référence des outils de ligne de commande : certification magento-cloud:add](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html#certificateadd) dans notre documentation destinée aux développeurs.
-* [Liste de contrôle de lancement](https://devdocs.magento.com/cloud/live/site-launch-checklist.html)dans notre documentation destinée aux développeurs.
-* [Accès à l’outil d’analyse à l’échelle du site](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html#step-2-access-site-wide-analysis-tool) dans notre guide d’utilisation.
+* [Liste de contrôle de Launch](https://devdocs.magento.com/cloud/live/site-launch-checklist.html) dans notre documentation destinée aux développeurs.
+* [Accéder à l’outil d’analyse à l’échelle du site](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html#step-2-access-site-wide-analysis-tool) dans notre guide d’utilisation.

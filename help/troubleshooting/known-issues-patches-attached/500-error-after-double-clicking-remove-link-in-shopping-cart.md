@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # &quot;Erreur 500&quot; après avoir double-cliqué sur Supprimer le lien dans le panier
 
-Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur l’infrastructure cloud 2.2.0 lié à l’erreur des clients lors de la tentative de suppression de deux articles du panier (en double-cliquant sur l’élément *Supprimer* ou en cliquant dessus dans différents onglets).
+Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur l’infrastructure cloud 2.2.0 lié à l’erreur des clients qui tentent de supprimer deux fois un article du panier (en double-cliquant sur le lien *Supprimer* ou en cliquant dessus dans différents onglets).
 
 ## Problème
 
-Lorsque les clients double-cliquent sur la variable *Supprimer* dans le panier, en essayant de supprimer un produit du panier, une page vierge s’affiche avec le message d’erreur suivant : *&quot;Cette page ne fonctionne pas. HTTP ERROR 500&quot;.* Le même problème se produit si un client ouvre deux onglets de navigateur avec la page du panier et supprime le produit d’abord dans un onglet, puis dans le second.
+Lorsque les clients cliquent deux fois sur le lien *Supprimer* dans le panier, en essayant de supprimer un produit du panier, ils obtiennent une page vierge avec le message d’erreur suivant : *&quot;Cette page ne fonctionne pas. HTTP ERROR 500&quot;.* Le même problème se produit si un client ouvre deux onglets de navigateur avec la page du panier et supprime le produit d’abord dans un onglet, puis dans le second.
 
 <u>Étapes à reproduire</u> :
 
@@ -35,7 +35,7 @@ OU
 
 <u>Résultat attendu</u> : le produit est supprimé du panier sans erreur.
 
-<u>Résultat réel</u> : le produit est supprimé avec l’erreur : *&quot;Cette page ne fonctionne pas. HTTP ERROR 500&quot;* message d’erreur.
+<u>Résultat réel</u> : le produit est supprimé avec l’erreur : *&quot;Cette page ne fonctionne pas. Message d’erreur HTTP ERROR 500&quot;*.
 
 ## Correctif
 
@@ -56,6 +56,6 @@ Le correctif est également compatible (mais peut ne pas résoudre le problème)
 
 ## Comment appliquer le correctif
 
-Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de soutien.
+Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Fichiers attachés

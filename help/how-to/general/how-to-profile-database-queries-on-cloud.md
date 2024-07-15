@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Comment créer un profil pour les requêtes de base de données dans Adobe Commerce sur l’infrastructure cloud
 
-Reportez-vous à [Requêtes de base de données de profil](https://devdocs.magento.com/guides/v2.3/cloud/project/profile-database-queries.html) dans notre documentation destinée aux développeurs.
+Reportez-vous aux [requêtes de base de données de profil](https://devdocs.magento.com/guides/v2.3/cloud/project/profile-database-queries.html) dans notre documentation destinée aux développeurs.

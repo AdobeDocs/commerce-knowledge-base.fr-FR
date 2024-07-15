@@ -36,7 +36,7 @@ Ces pages sont les suivantes :
 
 Les termes pouvant être mis en cache ou non sont des termes utilisés pour indiquer si une page doit être mise en cache ou non. Par défaut, toutes les pages peuvent être mises en cache. Toutefois, si un bloc d’une mise en page est considéré comme impossible à mettre en cache, la page entière ne peut pas être mise en cache.
 
-La capture d’écran ci-dessous montre un bloc avec un paramètre `cacheable="false”`  ** ** qui crée une page pouvant être mise en cache.
+La capture d’écran ci-dessous montre un bloc avec un paramètre `cacheable="false”` ** ** qui crée une page pouvant être mise en cache.
 
 ![non_cacheable_kb.png](assets/non_cacheable_kb.png)
 
@@ -46,14 +46,14 @@ La liste de pages suivante n’est pas mise en cache (les caches Fastly, Block e
 
 ### Solution
 
-Vérifiez si les fichiers spécifiés ci-dessus comportent le paramètre . `cacheable="false”` . Si tel est le cas, vérifiez si ce paramètre est nécessaire ou obligatoire.
+Vérifiez si les fichiers spécifiés ci-dessus ont le paramètre `cacheable="false”` . Si tel est le cas, vérifiez si ce paramètre est nécessaire ou obligatoire.
 
-* Si nécessaire, envisagez de déplacer des blocs non pouvant être mis en cache vers [mécanisme de contenu privé](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/cache/page-caching/private-content.html?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=private%20co) au lieu de .
-* Si ce n’est pas nécessaire, supprimez l’attribut . `cacheable="false”` et videz le cache de mise en page.
+* Si nécessaire, envisagez plutôt de déplacer des blocs non pouvant être mis en cache vers le [mécanisme de contenu privé](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/cache/page-caching/private-content.html?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=private%20co) .
+* Si ce n’est pas nécessaire, supprimez l’attribut `cacheable="false”` et videz le cache de mise en page.
 
 >[!NOTE]
 >
->Pour Adobe Commerce sur l’infrastructure cloud 2.4.1 et versions ultérieures, vous pouvez utiliser la variable [Outil d’analyse à l’échelle du site](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) pour vérifier automatiquement si le cache de la page complète n’est pas configuré correctement.
+>Pour Adobe Commerce sur l’infrastructure cloud 2.4.1 et versions ultérieures, vous pouvez utiliser l’ [ outil d’analyse à l’échelle du site ](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) pour vérifier automatiquement si votre cache de page complète n’est pas correctement configuré.
 
 ### Lecture connexe
 

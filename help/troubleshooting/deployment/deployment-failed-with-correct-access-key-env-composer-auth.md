@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Échec du déploiement avec les clés d’accès correctes dans env:COMPOSER_AUTH ou auth.json
 
-Cet article fournit une solution au problème lorsque votre déploiement échoue avec une erreur telle que celle ci-dessous, dans la variable [log de déploiement](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log):
+Cet article fournit une solution au problème lorsque votre déploiement échoue avec une erreur telle que celle ci-dessous, dans le [log de déploiement](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) :
 
 ```
 W:   [Composer\Downloader\TransportException]
@@ -26,34 +26,34 @@ Adobe Commerce sur l’infrastructure cloud 2.4.x
 
 ## Problème
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Tentative de déploiement.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Déploiement réussi.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 >[!NOTE]
 >
 >Il s’agit d’un exemple d’erreur. Une erreur peut s’afficher, indiquant un fichier différent (selon la version d’Adobe Commerce que vous déployez).
 
-Vous ne déployez pas correctement. Une erreur telle que *Impossible de télécharger le fichier &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; (HTTP/1.1 404 Not Found)* dans le [log de déploiement](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+Vous ne déployez pas correctement. Une erreur de type *Le fichier &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; n’a pas pu être téléchargé (HTTP/1.1 404 Not Found)* s’affiche dans le [log de déploiement](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 ### Cause
 
 Les clés d’accès au compositeur spécifiées trouvées dans l’un de ces emplacements peuvent ne pas avoir accès au code :
 
-* dans le `env:COMPOSER_AUTH` au niveau du projet.
-* dans le `auth.json file`, qui prévaut sur la variable `env:COMPOSER_AUTH` Variable .
+* dans la variable `env:COMPOSER_AUTH` au niveau du projet
+* dans la variable `auth.json file`, qui prévaut sur la variable `env:COMPOSER_AUTH`.
 
 ### Solution
 
-Mettez à jour le `env:COMPOSER_AUTH` au niveau du projet et assurez-vous qu’il est configuré avec des clés ayant accès au code.
+Mettez à jour la variable `env:COMPOSER_AUTH` au niveau du projet et assurez-vous qu’elle est configurée avec des clés ayant accès au code.
 
-Pour connaître les étapes, voir [Niveaux de variable](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) dans le guide d’infrastructure de Commerce on Cloud.
+Pour les étapes, reportez-vous à la section [Niveaux de variable](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) du guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
 

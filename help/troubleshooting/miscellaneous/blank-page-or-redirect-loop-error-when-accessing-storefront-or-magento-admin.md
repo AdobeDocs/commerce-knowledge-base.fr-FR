@@ -33,7 +33,7 @@ La page s’ouvre.
 
 <u>Résultat réel</u>
 
-La page est vierge ou affiche la variable *&quot;Cette page web comporte une boucle de redirection&quot;* message d’erreur.
+La page est vierge ou affiche le message d’erreur *&quot;Cette page web comporte une boucle de redirection&quot;*.
 
 ## Cause
 
@@ -45,11 +45,12 @@ Pour résoudre ce problème, vous devez corriger la valeur du lien sécurisé.
 
 Pour vous assurer qu’il s’agit de la cause du problème, procédez comme suit :
 
-1. Vérifiez les `web/secure/enable_upgrade_insecure` , `web/secure/use_in_adminhtml` (si vous rencontrez un problème de redirection vide/boucle dans Admin) ou `web/secure/use_in_frontend` (si vous rencontrez le problème de redirection vide/boucle au recto de la boutique) dans la variable `'core_config_data'` Table DB.
-   * If `web/secure/enable_upgrade_insecure` est définie sur &quot;1&quot;, puis Adobe Commerce est configuré pour ajouter l’en-tête de réponse. `Content-Security-Policy: upgrade-insecure-requests`, indiquant ainsi aux navigateurs d’utiliser HTTPS, redirigeant toutes les requêtes qui passent par HTTP vers HTTPS, tant pour l’administrateur que pour storefront.
-   * If `web/secure/use_in_adminhtml` est définie sur &quot;1&quot;, Adobe Commerce renvoie des redirections HTTPS pour toutes les requêtes HTTP pour les pages d’administration.
-   * If `web/secure/use_in_frontend` est définie sur &quot;1&quot;, Adobe Commerce renvoie des redirections HTTPS pour toutes les requêtes HTTP pour les pages frontales du magasin.
-1. Vérifiez les `web/secure/base_url` et `web/unsecure/base_url` dans la variable `'core_config_data'` table. Si elles commencent toutes les deux par    `http`, vous devez ensuite corriger la valeur &quot;secure&quot;.
+1. Vérifiez la valeur `web/secure/enable_upgrade_insecure` , `web/secure/use_in_adminhtml` (si vous rencontrez le problème de redirection vide/boucle dans Admin) ou `web/secure/use_in_frontend` (si vous rencontrez le problème de redirection vide/boucle au niveau du magasin front) dans la table `'core_config_data'` DB.
+   * Si `web/secure/enable_upgrade_insecure` est défini sur &quot;1&quot;, Adobe Commerce est configuré pour ajouter l’en-tête de réponse `Content-Security-Policy: upgrade-insecure-requests`, ce qui demande aux navigateurs d’utiliser HTTPS, redirigeant toutes les requêtes envoyées via HTTP.
+en HTTPS, pour l’administrateur et le storefront.
+   * Si `web/secure/use_in_adminhtml` est défini sur &quot;1&quot;, Adobe Commerce renvoie des redirections HTTPS pour toutes les requêtes HTTP pour les pages d’administration.
+   * Si `web/secure/use_in_frontend` est défini sur &quot;1&quot;, Adobe Commerce renvoie des redirections HTTPS pour toutes les requêtes HTTP pour les pages frontales du magasin.
+1. Vérifiez les valeurs `web/secure/base_url` et `web/unsecure/base_url` dans la table `'core_config_data'`. Si elles commencent toutes les deux par    `http`, vous devez ensuite corriger la valeur &quot;secure&quot;.
 
 Correction du problème :
 

@@ -17,7 +17,7 @@ Cet article fournit des solutions pour les problèmes liés à l’utilisation d
 
 >[!NOTE]
 >
->Si vous rencontrez des problèmes avec l’accès bêta, reportez-vous au [Impossible d’accéder à la dernière version bêta](/help/how-to/general/cannot-access-the-latest-beta-version.md) article.
+>Si vous rencontrez des problèmes d’accès à Beta, reportez-vous à l’article [Impossible d’accéder à la dernière version de Beta](/help/how-to/general/cannot-access-the-latest-beta-version.md) .
 
 ## Problème
 
@@ -40,8 +40,8 @@ Voici les causes les plus courantes des problèmes :
 
 Lors de la version préliminaire, les modules de version sont disponibles à deux emplacements :
 
-1. Via le compositeur sur [magento.com](https://repo.magento.com/) à l’aide du MageID principal du compte. Pour plus d’informations sur l’utilisation du compositeur, reportez-vous à la section [Installation d’Adobe Commerce à l’aide du compositeur](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) dans notre documentation destinée aux développeurs.
-1. **Mon compte** > **Téléchargements** on [account.magento.com](https://account.magento.com/customer/account/login).
+1. Par le biais du compositeur sur [magento.com](https://repo.magento.com/) à l’aide de l’ID principal Mage du compte. Pour plus d’informations sur l’utilisation du compositeur, reportez-vous à la section [Installation d’Adobe Commerce à l’aide du compositeur](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) de notre documentation destinée aux développeurs.
+1. **Mon compte** > **Téléchargements** sur [account.magento.com](https://account.magento.com/customer/account/login).
 
 >[!NOTE]
 >
@@ -49,30 +49,30 @@ Lors de la version préliminaire, les modules de version sont disponibles à deu
 
 ### MageID que vous devez utiliser
 
-Vous devez utiliser le MageID principal associé à votre compte Adobe Commerce ou Partner. Le programme Préversion n&#39;est lié à aucun contact disposant d&#39;un accès partagé. Un accès anticipé est uniquement accessible via le compositeur ou [repo.magento.com](https://repo.magento.com/) par le MageID associé à votre licence Adobe Commerce ou Partner.
+Vous devez utiliser le MageID principal associé à votre compte Adobe Commerce ou Partner. Le programme Préversion n&#39;est lié à aucun contact disposant d&#39;un accès partagé. L&#39;accès anticipé est uniquement accessible via le compositeur ou [repo.magento.com](https://repo.magento.com/) par le MageID associé à votre licence Adobe Commerce ou Partner.
 
 #### Comment puis-je savoir si mon MageID est l’ID principal ?
 
-**Pour les marchands**
+**Pour les commerçants**
 
 Pour savoir si votre MageID est principal, essayez les méthodes suivantes :
 
-1. Se connecter [magento.com](https://account.magento.com/customer/account/login) et accédez au **Mes produits et services** . Vérifiez si les informations de licence Adobe Commerce s’y trouvent :
+1. Connectez-vous à [magento.com](https://account.magento.com/customer/account/login) et accédez à l’onglet **My Product and Services** (Mon produit et services). Vérifiez si les informations de licence Adobe Commerce s’y trouvent :
    * Si les informations de licence Adobe Commerce s’affichent, votre MageID est principal.
-   * Si vous ne voyez pas les informations de licence Adobe Commerce, alors votre MageID dispose uniquement d’un accès partagé. Pour savoir qui est le détenteur de l’ID principal, accédez à la **Partagé avec moi** Notez le SHARENAME spécifié ici. Cliquez sur **Changement de compte** et sélectionnez la valeur que vous avez notée dans SHARENAME. Sur la page d’accueil, l’adresse électronique du détenteur de l’ID principal s’affiche.
+   * Si vous ne voyez pas les informations de licence Adobe Commerce, alors votre MageID dispose uniquement d’un accès partagé. Pour savoir qui est le détenteur de l’ID principal, accédez à **Partagé avec moi** Notez le SHARENAME spécifié ici. Cliquez sur **Changer de compte** et sélectionnez la valeur que vous avez notée dans SHARENAME. Sur la page d’accueil, l’adresse électronique du détenteur de l’ID principal s’affiche.
 1. Si, pour une raison quelconque, vous ne trouvez pas ces informations sur [magento.com](https://account.magento.com/customer/account/login), contactez votre équipe de compte d’Adobe.
-1. Si aucun des éléments ci-dessus ne fonctionne, veuillez [Contacter l’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Si aucun des éléments ci-dessus ne fonctionne, [contactez l&#39;assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 **Pour les partenaires**
 
 Pour savoir si votre MageID est principal, essayez les méthodes suivantes :
 
-1. Se connecter [magento.com](https://account.magento.com/customer/account/login) et accédez au **Mes produits et services** . Dans la sous-section Partenaires , vérifiez si les informations de licence du partenaire actif s’affichent :
+1. Connectez-vous à [magento.com](https://account.magento.com/customer/account/login) et accédez à l’onglet **My Product and Services** (Mon produit et services). Dans la sous-section Partenaires , vérifiez si les informations de licence du partenaire actif s’affichent :
    * Si les informations de licence de partenaire actif s’affichent, votre MageID est principal. La licence Partner est active si la valeur DATE DE FIN est une date ultérieure.
-   * Si vous ne voyez pas les informations de licence de partenaire actif, alors votre MageID dispose uniquement d’un accès partagé. Pour savoir qui est le détenteur de l’ID principal, accédez à la **Partagé avec moi** Notez le SHARENAME spécifié ici. Cliquez sur **Changement de compte** et sélectionnez la valeur que vous avez notée dans SHARENAME. Sur la page d’accueil, l’adresse électronique du détenteur de l’ID principal s’affiche.
-1. Si, pour une raison quelconque, vous ne trouvez pas ces informations sur [magento.com](https://account.magento.com/customer/account/login), contactez votre responsable partenaire.
-1. Si aucun des éléments ci-dessus ne fonctionne, veuillez [Assistance с contact](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+   * Si vous ne voyez pas les informations de licence de partenaire actif, alors votre MageID dispose uniquement d’un accès partagé. Pour savoir qui est le détenteur de l’ID principal, accédez à **Partagé avec moi** Notez le SHARENAME spécifié ici. Cliquez sur **Changer de compte** et sélectionnez la valeur que vous avez notée dans SHARENAME. Sur la page d’accueil, l’adresse électronique du détenteur de l’ID principal s’affiche.
+1. Si, pour une raison quelconque, vous ne trouvez pas ces informations sur [magento.com](https://account.magento.com/customer/account/login), contactez votre Partner Manager.
+1. Si aucun des éléments ci-dessus ne fonctionne, veuillez contacter l&#39;[с assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Ne fait pas partie du programme de préversion
 
-Pour être inclus dans le programme d’accès anticipé, votre entreprise doit disposer d’un compte Adobe Commerce ou Partner actif en bonne et due forme. Si vous pensez que vous remplissez ces critères et ne pouvez pas accéder au code de version préliminaire, veuillez [Contacter l’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) avec votre MageID.
+Pour être inclus dans le programme d’accès anticipé, votre entreprise doit disposer d’un compte Adobe Commerce ou Partner actif en bonne et due forme. Si vous pensez que vous répondez à ces critères et ne pouvez pas accéder au code de version préliminaire, [ contactez le support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) avec votre MageID.

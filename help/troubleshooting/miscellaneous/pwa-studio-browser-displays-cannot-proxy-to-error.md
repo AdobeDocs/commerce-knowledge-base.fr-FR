@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio : le navigateur affiche l’erreur &quot;Impossible de remplacer par&quot;
 
-Cette rubrique traite d’une solution lorsque votre navigateur web affiche le message &quot;*Ne peut pas remplacer par*&quot; et la console affiche une
+Cette rubrique traite d’une solution lorsque votre navigateur web affiche un &quot;*Cannot proxy to*&quot; et que la console affiche un message
 
 ```
 ENOTFOUND
@@ -27,17 +27,17 @@ lors de l’utilisation de Progressive Web App (PWA) Studio pour Adobe Commerce.
 
 ## Problème
 
-<u>Étape à reproduire</u>:
+<u>Étape à reproduire</u> :
 
 * Chargez votre boutique Adobe Commerce dans un navigateur.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 * La boutique Adobe Commerce se charge normalement dans votre navigateur.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
-* Votre navigateur Web affiche le *Ne peut pas remplacer par*&quot;erreur et la console affiche une erreur du type :
+* Votre navigateur web affiche l’erreur &quot;*Cannot proxy to*&quot; et la console affiche une erreur du type :
 
 ```
     ENOTFOUND
@@ -51,7 +51,7 @@ NodeJS ne peut pas résoudre le nom d’hôte de votre boutique Adobe Commerce.
 ## Solution
 
 1. Assurez-vous que votre boutique Adobe Commerce est chargée dans plusieurs navigateurs web.
-1. Si vous exécutez un serveur DNS local ou un VPN, ajoutez une entrée à votre fichier d’hôtes (situé dans `/etc/hosts`) et mapper manuellement ce domaine ([Instructions génériques sur la modification des fichiers hôtes](https://linuxize.com/post/how-to-edit-your-hosts-file/)) afin que NodeJS puisse le résoudre.
+1. Si vous exécutez un serveur DNS local ou un VPN, ajoutez une entrée à votre fichier d’hôtes (situé dans `/etc/hosts`) et mappez manuellement ce domaine ([Instructions génériques sur l’édition du fichier d’hôtes](https://linuxize.com/post/how-to-edit-your-hosts-file/)) afin que NodeJS puisse le résoudre.
 
 ## Lecture connexe
 

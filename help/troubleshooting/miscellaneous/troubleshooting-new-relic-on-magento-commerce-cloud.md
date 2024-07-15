@@ -28,13 +28,13 @@ Cet article fournit des ressources pour le dépannage de New Relic sur Adobe Com
 <tr>
 <td>
 <p><u>Impossible d’afficher les projets dans New Relic.</u></p>
-<p>Vous vous connectez à <em>New Relic</em> mais ne peut pas voir les projets que vous devriez avoir le droit d’afficher/d’accéder.</p>
+<p>Vous vous connectez à <em>New Relic</em> mais vous ne pouvez pas voir les projets que vous devriez avoir le droit d’afficher/d’accéder.</p>
 </td>
 <td>
 <p>Dans ce cas, un utilisateur administrateur doit vous ajouter au projet.</p>
 </td>
 <td>
-<p><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html">Accès aux services New Relic</a> dans notre base de connaissances de soutien.</p>
+<p><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html">Accès aux services New Relic</a> dans notre base de connaissances d’assistance.</p>
 </td>
 </tr>
 <tr>
@@ -43,7 +43,7 @@ Cet article fournit des ressources pour le dépannage de New Relic sur Adobe Com
 <tr>
 <td>
 <p><u>Données manquantes après installation.</u></p>
-<p>Utilisez la variable <a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/new-relic-diagnostics">Utilitaire de diagnostic New Relic</a> pour essayer d'identifier la cause. Si cela n’aide pas, consultez les solutions spécifiques à l’agent. Les liens vers les articles contenant ces solutions se trouvent dans la colonne de droite.</p>
+<p>Utilisez l’ <a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/new-relic-diagnostics">utilitaire de diagnostic New Relic</a> pour tenter d’identifier la cause. Si cela n’aide pas, consultez les solutions spécifiques à l’agent. Les liens vers les articles contenant ces solutions se trouvent dans la colonne de droite.</p>
 </td>
 <td>
 <p>Les données manquantes peuvent avoir des causes différentes. Vous devrez peut-être :</p>
@@ -77,13 +77,13 @@ Cet article fournit des ressources pour le dépannage de New Relic sur Adobe Com
 </tr>
 <tr>
 <td>
-<p><u>GraphQL NerdGraph <code>curl</code> requêtes utilisant des caractères spéciaux, tels que <code>|</code> et <code>%</code> ne fonctionne pas</u>.</p>
+<p>Les requêtes <u>NerdGraph GraphQL <code>curl</code> utilisant des caractères spéciaux tels que <code>|</code> et <code>%</code> ne fonctionnent pas</u>.</p>
 </td>
 <td>
 <p>La fonction "Copier vers curl" de New Relic dans NerdGraph ne permet pas actuellement de gérer les caractères spéciaux tels que <code>|</code> et <code>%</code>.</p>
 </td>
 <td>
-<p>Utilisez une autre bibliothèque d’API pour résoudre le problème avec des caractères spéciaux. Par exemple, la bibliothèque GraphQLClient pour l’API Graphql sous Python ou Apache.commons par des appels au langage Java. Vérification des bibliothèques clientes sur <a href="https://graphql.org/code/">GraphQL</a>.</p>
+<p>Utilisez une autre bibliothèque d’API pour résoudre le problème avec des caractères spéciaux. Par exemple, la bibliothèque GraphQLClient pour l’API Graphql sous Python ou Apache.commons par des appels au langage Java. Examinez les bibliothèques clientes sur <a href="https://graphql.org/code/">GraphQL</a>.</p>
 </td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ Cet article fournit des ressources pour le dépannage de New Relic sur Adobe Com
 <p>Résolvez les graphiques manquants en ajoutant des domaines New Relic à la liste autorisée ou en désinstallant l’extension du navigateur à l’origine des problèmes.</p>
 </td>
 <td>
-<p><a href="https://docs.newrelic.com/docs/apm/new-relic-apm/troubleshooting/charts-missing-or-do-not-render">Documentation New Relic &gt; Graphiques manquants ou non affichés</a> </p>
+<p><a href="https://docs.newrelic.com/docs/apm/new-relic-apm/troubleshooting/charts-missing-or-do-not-render">Documentation New Relic &gt; Graphiques manquants ou non rendus</a> </p>
 </td>
 </tr>
 <tr>

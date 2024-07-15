@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Problème de panier vide lorsque plusieurs clics sur le passage en caisse depuis le mini panier
 
-Cet article fournit un correctif pour un problème connu d’Adobe Commerce 2.2.3 lié à un panier vide après que les clients ont cliqué sur **Aller à la caisse** plusieurs fois dans le mini panier.
+Cet article fournit un correctif pour un problème connu d’Adobe Commerce 2.2.3 lié au fait qu’un panier est vide après que les clients ont cliqué plusieurs fois sur **Aller au passage en caisse** dans le mini panier.
 
 ## Problème
 
-Les clients ajoutent des produits au panier, essaient de les extraire en cliquant sur le bouton **Aller à la caisse** plusieurs fois, mais lorsqu’ils accèdent au panier, celui-ci est vide. Le mini-panier peut toujours afficher les produits.
+Les clients ajoutent des produits au panier, tentent de les extraire en cliquant plusieurs fois sur le bouton **Aller à la caisse** , mais lorsqu’ils accèdent au panier, celui-ci est vide. Le mini-panier peut toujours afficher les produits.
 
 <u>Étapes à reproduire</u> :
 
 1. Ouvrez une page de produit au premier plan du magasin.
 1. Ajoutez des produits au panier.
-1. Dans le mini panier, cliquez sur **Aller à la caisse** plusieurs fois.
+1. Dans le mini panier, cliquez plusieurs fois sur **Aller au passage en caisse** .
 
 <u>Résultat attendu</u> :
 
@@ -45,20 +45,20 @@ Les correctifs sont joints à cet article. Pour télécharger un correctif, fait
 
 Les correctifs ont été créés pour :
 
-* Adobe Commerce on-premise 2.2.3 (le `MDVA-10441_EE_2.2.3_v3.composer.patch` fichier)
-* Adobe Commerce sur l’infrastructure cloud 2.2.5 (`MDVA-17078_EE_2.2.5_COMPOSER_v1.patch` fichier)
+* Adobe Commerce on-premise 2.2.3 (fichier `MDVA-10441_EE_2.2.3_v3.composer.patch`)
+* Adobe Commerce sur l’infrastructure cloud 2.2.5 (fichier `MDVA-17078_EE_2.2.5_COMPOSER_v1.patch`)
 
-La variable `MDVA-10441_EE_2.2.3_v3.composer.patch` Le correctif est également compatible (mais peut ne pas résoudre le problème) avec les versions et éditions Adobe Commerce suivantes :
+Le correctif `MDVA-10441_EE_2.2.3_v3.composer.patch` est également compatible (mais peut ne pas résoudre le problème) avec les versions et éditions Adobe Commerce suivantes :
 
 * Adobe Commerce sur les versions d’infrastructure cloud de la version 2.2.1 à la version 2.2.5
 * Versions sur site d’Adobe Commerce de 2.2.1 à 2.2.5
 
-La variable `MDVA-17078_EE_2.2.5_COMPOSER_v1.patch` Le correctif est également compatible (mais peut ne pas résoudre le problème) avec les versions et éditions Adobe Commerce suivantes :
+Le correctif `MDVA-17078_EE_2.2.5_COMPOSER_v1.patch` est également compatible (mais peut ne pas résoudre le problème) avec les versions et éditions Adobe Commerce suivantes :
 
 * Adobe Commerce 2.2.5
 
 ## Comment appliquer un correctif
 
-Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de soutien.
+Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Fichiers attachés

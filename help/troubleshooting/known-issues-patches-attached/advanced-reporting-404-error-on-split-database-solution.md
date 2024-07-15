@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Erreur de création de rapports avancée 404 sur la solution de base de données partagée
 
-Cet article fournit un correctif aux utilisateurs d’Adobe Commerce 2.3.x avec la variable [solution de base de données partagée](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) qui génère une erreur 404 lors de la tentative d’utilisation du reporting avancé.
+Cet article fournit un correctif pour les utilisateurs d’Adobe Commerce 2.3.x avec la [solution de base de données partagée](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) qui rencontre une erreur 404 lors de la tentative d’utilisation du reporting avancé.
 
 ## Produits et versions concernés
 
@@ -25,7 +25,7 @@ Le correctif corrige le problème en raison duquel un nom de connexion incorrect
 
 ## Solution
 
-Appliquez la variable [correctif](assets/MDVA-26831_EE_2.3.4_v1.composer.patch.zip) fourni dans cet article.
+Appliquez le [patch](assets/MDVA-26831_EE_2.3.4_v1.composer.patch.zip) fourni dans cet article.
 
 ## Correctif
 

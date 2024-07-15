@@ -17,11 +17,11 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.0.16 comprend les correctifs suivants :
 
-1. **MDVA-32634**: corrige le problème en raison duquel la variable `url_path` de la catégorie affectée à tous les magasins reste inchangée après le déplacement de la catégorie dans la hiérarchie.
-1. **MDVA-33344**: corrige le problème de codage en dur. `rma_item` L’identifiant du jeu d’attributs par défaut de l’entité est utilisé à la place de la valeur de la base de données.
-1. **MDVA-33453**: résout le problème en raison duquel [!DNL Page Builder] L’aperçu du type de contenu de produits rompt si les produits correspondants ont des prix différents pour chaque site web.
-1. **MDVA-34192**: correction d’un problème en raison duquel il était impossible de modifier/spécifier la date de naissance du client au format jj/mm/aaaa.
-1. **MDVA-34847**: corrige la conversion de type ID de magasin en entier pour les conditions SQL dans les collections d’administrateurs pour les utilisateurs administrateurs disposant d’autorisations personnalisées.
-1. **MDVA-34886**: corrige le problème en raison duquel la recherche ne renvoyait aucun résultat si *poids* l’attribut product est configuré comme pouvant faire l’objet d’une recherche.
+1. **MDVA-32634** : corrige le problème en raison duquel le `url_path` de la catégorie affectée à tous les magasins reste inchangé après le déplacement de la catégorie dans la hiérarchie.
+1. **MDVA-33344** : résolution du problème en raison duquel l’identifiant du jeu d’attributs par défaut d’entité `rma_item` codé en dur est utilisé à la place de la valeur de la base de données.
+1. **MDVA-33453** : résolution du problème de coupure de l’aperçu du type de contenu [!DNL Page Builder] Produits lorsque les produits correspondants ont des prix différents pour chaque site web.
+1. **MDVA-34192** : résolution du problème où il est impossible de modifier/spécifier la date de naissance du client au format jj/mm/aaaa.
+1. **MDVA-34847** : corrige la conversion de type ID de magasin en entier pour la condition SQL dans les collections d’administration pour un utilisateur administrateur disposant d’autorisations personnalisées.
+1. **MDVA-34886** : corrige le problème en raison duquel la recherche ne renvoie pas de résultats si l’attribut de produit *weight* est configuré comme pouvant faire l’objet d’une recherche.
 
 Utilisez le menu de gauche pour accéder à une page de correctif spécifique.

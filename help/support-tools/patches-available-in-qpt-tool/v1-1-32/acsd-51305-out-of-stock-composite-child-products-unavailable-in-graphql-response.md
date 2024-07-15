@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-51305 : produits enfants composites en rupture de stock indisponibles dans la réponse GraphQL
 
-Le correctif ACSD-51305 corrige le problème en raison duquel les produits enfants composites en rupture de stock ne sont pas disponibles dans la réponse GraphQL. Ce correctif est disponible lorsque la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.32 est installée. L’ID de correctif est ACSD-51305. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-51305 corrige le problème en raison duquel les produits enfants composites en rupture de stock ne sont pas disponibles dans la réponse GraphQL. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.32 est installé. L’ID de correctif est ACSD-51305. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -27,24 +27,24 @@ Le correctif ACSD-51305 corrige le problème en raison duquel les produits enfan
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 Les produits enfants composites en rupture de stock ne sont pas disponibles dans la réponse GraphQL.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Connectez-vous au site Web d’administration.
 1. Créez une catégorie (cat1, id=3).
-1. Créez un *simple1* produit (en rupture de stock, non visible individuellement, affecté à *cat1*).
-1. Créez un *simple2* produit (en stock, non visible individuellement, affecté à *cat1*).
-1. Créez un *bundle1* produit avec *simple1* et *simple2* produit enfant sous forme de bouton radio *option1* produits et l’affectez à la variable *cat1* catégorie.
+1. Créez un produit *simple1* (en rupture de stock, non visible individuellement, affecté à *cat1*).
+1. Créez un produit *simple2* (en stock, non visible individuellement, affecté à *cat1*).
+1. Créez un produit *bundle1* avec les produits *simple1* et *simple2* enfants en tant que produits bouton radio *option1* et affectez-le à la catégorie *cat1*.
 1. Accédez à **[!UICONTROL Admin]** > **[!UICONTROL System]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]**.
 
-   * Définir **[!UICONTROL Display Out of Stock Products]** to *Oui*.
+   * Définissez **[!UICONTROL Display Out of Stock Products]** sur *Yes*.
 
-1. Ouvrez le *bundle1* sur le storefront et assurez-vous que les *simple1* et *simple2* les produits enfants s’affichent à l’intérieur.
+1. Ouvrez le produit *bundle1* sur le storefront et assurez-vous que les produits enfants *simple1* et *simple2* y sont affichés.
 1. Exécutez la requête GraphQL suivante :
 
    ```GraphQL
@@ -81,26 +81,26 @@ Les produits enfants composites en rupture de stock ne sont pas disponibles dans
    }
    ```
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
-La variable **[!UICONTROL Product]** dans la section **[!UICONTROL Options]** block n’est pas vide.
+La section **[!UICONTROL Product]** du bloc **[!UICONTROL Options]** n&#39;est pas vide.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
-La variable **[!UICONTROL Product]** dans la section **[!UICONTROL Options]** block est vide.
+La section **[!UICONTROL Product]** du bloc **[!UICONTROL Options]** est vide.
 
 ## Appliquer le correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le [!DNL Quality Patches Tool] guide.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce en utilisant  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le [!DNL Quality Patches Tool] guide.
+Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].

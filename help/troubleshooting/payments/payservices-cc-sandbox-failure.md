@@ -22,7 +22,7 @@ Cet article explique pourquoi une carte de crédit de test échoue dans un envir
 
 ## Problème
 
-Lors de l’utilisation d’une carte de crédit Visa de test `4111 1111 1111 1111` de PayPal, il échoue parfois en raison de stratégies de fraude PayPal avec l&#39;erreur suivante :
+Lors de l&#39;utilisation d&#39;une carte de crédit Visa `4111 1111 1111 1111` de PayPal, elle échoue parfois en raison de stratégies de fraude PayPal avec l&#39;erreur suivante :
 
 ```terminal
 Error happened when processing the request. Please try again later.
@@ -36,6 +36,6 @@ Cette erreur s’affiche lorsque PayPal marque un numéro de carte de crédit de
 
 Utilisez une autre carte de crédit de test. Pour générer des cartes de crédit fictives, vous pouvez les utiliser à des fins de test :
 
-1. Accédez au portail des développeurs PayPal [Générateur de carte de crédit](https://developer.paypal.com/developer/creditCardGenerator/) page.
+1. Accédez à la page [Générateur de carte de crédit](https://developer.paypal.com/developer/creditCardGenerator/) du portail des développeurs PayPal.
 1. Connectez-vous au tableau de bord du portail des développeurs PayPal.
 1. Générez une carte de crédit de test.

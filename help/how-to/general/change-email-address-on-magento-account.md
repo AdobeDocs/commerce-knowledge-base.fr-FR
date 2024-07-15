@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Comment modifier l&#39;adresse email sur le compte magento.com lorsque le champ est grisé ?
 
-Cet article explique comment modifier l’adresse électronique de votre [Magento.com](https://account.magento.com) compte lorsque le champ est grisé.
+Cet article explique comment modifier l’adresse électronique de votre compte [Magento.com](https://account.magento.com) lorsque le champ est grisé.
 
 ## Produits et versions concernés
 
@@ -20,13 +20,13 @@ Cet article explique comment modifier l’adresse électronique de votre [Magent
 
 ## Cause
 
-L’adresse électronique de votre [Magento.com](https://account.magento.com) est lié à votre compte Adobe à l’adresse <https://account.adobe.com> et devront y être mis à jour.
+L&#39;adresse électronique de votre compte [Magento.com](https://account.magento.com) est liée à votre compte d&#39;Adobe à l&#39;adresse <https://account.adobe.com> et devra y être mise à jour.
 
 ## Étapes pour modifier l’adresse électronique
 
 ### Cas I :
 
-Modifier l’adresse électronique d’un utilisateur disposant de son propre compte à l’adresse <https://account.adobe.com>
+Modification de l’adresse électronique d’un utilisateur disposant de son propre compte sur <https://account.adobe.com>
 
 <u>Solution</u>
 
@@ -40,22 +40,22 @@ Modifier l’adresse électronique d’un utilisateur disposant de son propre co
 
 ### Cas II :
 
-Modification de l’adresse électronique d’un utilisateur qui ne dispose actuellement pas de son propre compte à l’adresse <https://account.adobe.com>
+Modification de l’adresse électronique d’un utilisateur qui n’a actuellement pas son propre compte sur <https://account.adobe.com>
 
 <u>Solution</u>
 
-Si vous avez accès à la boîte de réception de la variable [adresse électronique du propriétaire actuel], réinitialisez le mot de passe de l’e-mail du propriétaire actuel en suivant la [Réinitialiser ou modifier votre mot de passe d’Adobe](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) dans le Guide de l’utilisateur de Creative Cloud.
+Si vous avez accès à la boîte aux lettres de l’[ e-mail du propriétaire actuel], réinitialisez le mot de passe de l’e-mail du propriétaire actuel en suivant le guide [Réinitialiser ou modifier votre mot de passe d’Adobe](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) du Guide de l’utilisateur du Creative Cloud.
 
 1. Recherchez le lien de réinitialisation du mot de passe envoyé à la boîte aux lettres du propriétaire actuel avec des instructions.
-1. Définissez un nouveau mot de passe et remplacez le courrier électronique par [nouvel email propriétaire].
-1. Accédez au [Compte IMS](https://account.adobe.com/) pour vous connecter à l’aide du nouvel e-mail, puis modifiez le mot de passe.
-1. Après avoir modifié l’adresse électronique et le mot de passe, accédez à [Magento.com](https://account.magento.com) pour vous connecter à l’aide du [nouvel email propriétaire].
+1. Définissez un nouveau mot de passe et remplacez l’e-mail par [nouvel e-mail du propriétaire].
+1. Accédez au [compte IMS](https://account.adobe.com/) pour vous connecter à l’aide du nouveau courrier électronique et modifiez le mot de passe.
+1. Après avoir modifié l’adresse électronique et le mot de passe, accédez à [Magento.com](https://account.magento.com) pour vous connecter à l’aide du [nouvel e-mail du propriétaire].
 
-Cependant, si vous n’avez pas accès aux emails envoyés à la variable [adresse électronique du propriétaire actuel], procédez comme suit :
+Cependant, si vous n’avez pas accès aux courriers électroniques envoyés à l’[e-mail actuel du propriétaire], procédez comme suit :
 
-1. Configurez le transfert des emails à partir du [adresse électronique du propriétaire actuel] vers un nouvel e-mail utilisant la configuration du serveur de messagerie de votre entreprise.
+1. Configurez le transfert des emails depuis l’[ e-mail du propriétaire actuel] vers un nouvel e-mail à l’aide de la configuration du serveur de messagerie de votre entreprise.
 1. Maintenant, passez aux étapes précédentes.
 
 ## Lecture connexe
 
-[Réinitialiser le mot de passe oublié](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) dans le Guide de l’utilisateur de Creative Cloud.
+[Réinitialiser le mot de passe oublié](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) dans le Guide de l’utilisateur du Creative Cloud.

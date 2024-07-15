@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Échec du chargement du site en raison du mode de maintenance activé
 
-Cet article fournit un correctif pour les cas où le mode de maintenance n’est pas chargé en raison de l’activation ou de la désactivation automatique du mode de maintenance. Vous pouvez recevoir un message d’erreur : *Service temporairement indisponible Le serveur ne peut temporairement pas traiter votre demande en raison de problèmes de temps d’arrêt de maintenance ou de capacité.*
+Cet article fournit un correctif pour les cas où le mode de maintenance n’est pas chargé en raison de l’activation ou de la désactivation automatique du mode de maintenance. Vous pouvez recevoir un message d’erreur : *Service temporairement indisponible Le serveur est temporairement incapable de traiter votre demande en raison de problèmes de temps d’arrêt de maintenance ou de capacité.*
 
 ## Versions et produits concernés
 
@@ -44,4 +44,4 @@ bin/magento maintenance:disable
 
 ## Lecture connexe
 
-Pour savoir quand utiliser le mode de maintenance, reportez-vous à la section [Activer ou désactiver le mode de maintenance](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=maintenance%20mode) dans notre documentation destinée aux développeurs.
+Pour savoir quand utiliser le mode de maintenance, reportez-vous à la section [Activation ou désactivation du mode de maintenance](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=maintenance%20mode) de notre documentation destinée aux développeurs.

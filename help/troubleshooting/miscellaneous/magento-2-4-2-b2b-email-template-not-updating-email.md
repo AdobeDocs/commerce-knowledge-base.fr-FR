@@ -23,11 +23,11 @@ Cet article décrit un problème connu d’Adobe Commerce 2.4.2 B2B en raison du
 
 ## Problème
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. L’administrateur de la société crée un bon de commande (bon de commande) dans le front-end.
-1. Cochez l&#39;email Approuvé automatiquement . La variable **nom du client** / **taux de change** doivent être des valeurs attendues.
-1. Modifier le symbole de devise (**Magasins > Configuration > Configuration de devise > Options de devise**) dans le nom de l’administrateur et de l’administrateur de la page Compte client.
+1. Cochez l&#39;email Approuvé automatiquement . Le **nom du client** / **taux de change** doit être des valeurs attendues.
+1. Modifiez le symbole de devise (**Magasins > Configuration > Configuration de devise > Options de devise**) dans le nom de l’administrateur et de l’administrateur de la société sur la page Compte client .
 1. L’administrateur client crée un autre bon de commande dans Admin.
 1. Cochez l&#39;email Approuvé automatiquement .
 
@@ -35,7 +35,7 @@ Cet article décrit un problème connu d’Adobe Commerce 2.4.2 B2B en raison du
 
 Le nom du client et le symbole monétaire sont modifiés dans les courriers électroniques et leurs nouvelles valeurs sont définies comme prévu.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Le nom du client et le symbole monétaire ne sont pas modifiés dans les courriers électroniques et possèdent leurs valeurs précédentes.
 
@@ -45,4 +45,4 @@ Exécutez manuellement la tâche cron ou le consommateur pour propager les nouve
 
 ## Lecture connexe
 
-* [Gestion des files d’attente de messages](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html) dans notre documentation destinée aux développeurs.
+* [Gérer les files d’attente de messages](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html) dans notre documentation destinée aux développeurs.

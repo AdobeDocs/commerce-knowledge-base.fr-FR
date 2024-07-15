@@ -17,7 +17,7 @@ Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur 
 
 ## Problème
 
-Si le Google Analytics est activé pour le magasin, lorsqu’un client avec un bloc de publicités installé ou un autre bloqueur d’annonces passe en caisse, la variable `trackingCode.js` est bloqué et RequireJS rompt le flux d’exécution JS. Cela entraîne des problèmes lors du chargement de la page de passage en caisse.
+Si Google Analytics est activé pour le magasin, lorsqu’un client avec un bloc ou un autre bloqueur d’annonces installé passe en caisse, le fichier `trackingCode.js` n’est pas chargé et RequireJS rompt le flux d’exécution JS. Cela entraîne des problèmes lors du chargement de la page de passage en caisse.
 
 <u>Étapes à reproduire</u> :
 
@@ -26,11 +26,11 @@ Conditions préalables : un bloqueur d’annonces doit être installé et actif 
 1. Dans l’administrateur Commerce, activez et configurez la fonctionnalité Google Analytics.
 1. Ouvrez une page de produit sur le storefront.
 1. Ajoutez des produits au panier.
-1. Cliquez sur le bouton **Aller à la caisse** lien.
+1. Cliquez sur le lien **Atteindre le passage en caisse** .
 
-<u>Résultat attendu</u>: la page de passage en caisse se charge et le client peut terminer le passage en caisse.
+<u>Résultat attendu</u> : la page Passage en caisse se charge et le client peut terminer l’extraction.
 
-<u>Résultat réel</u>: la page d’extraction ne se charge pas ; l’accélérateur de chargement ne disparaît jamais.
+<u>Résultat réel</u> : la page d’extraction ne se charge pas ; l’accélérateur de chargement ne disparaît jamais.
 
 ## Correctif
 
@@ -53,7 +53,7 @@ Le correctif est également compatible (mais peut ne pas résoudre le problème)
 
 ## Comment appliquer le correctif
 
-Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de soutien.
+Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Liens utiles
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-30977 : produits manquants dans les catégories, indexage lié
 
-Le correctif MDVA-30977 corrige les problèmes liés aux produits affichés sur les pages de catégorie storefront lors de la réindexation ou des actions de masse avec un grand nombre de produits. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) v.1.0.6 est installé. Les problèmes doivent être résolus dans Adobe Commerce 2.4.2.
+Le correctif MDVA-30977 corrige les problèmes liés aux produits affichés sur les pages de catégorie storefront lors de la réindexation ou des actions de masse avec un grand nombre de produits. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) v.1.0.6 est installé. Les problèmes doivent être résolus dans Adobe Commerce 2.4.2.
 
 ## Produits et versions concernés
 
@@ -21,7 +21,7 @@ Le correctif a été créé pour Adobe Commerce sur l’infrastructure cloud 2.3
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problèmes
 
@@ -32,9 +32,9 @@ Le nombre de produits affichés sur la page de catégorie sur le storefront est 
 <u>Étapes à reproduire :</u>
 
 1. Créez au moins 30 000 produits dans deux catégories - au moins 15 000 produits dans chaque catégorie.
-1. Accédez à **Catalogue** > **Produits** dans l’administrateur de Commerce.
-1. Sélectionnez tous les produits de la grille et effectuez une mise à jour des attributs en masse. Par exemple, définissez **Nouveau** = *Oui* attribut.
-1. Exécutez la tâche cron de Magento à l’aide de la fonction `bin/magento cron:run` deux fois.
+1. Accédez à **Catalogue** > **Produits** dans l’administrateur Commerce.
+1. Sélectionnez tous les produits de la grille et effectuez une mise à jour des attributs en masse. Par exemple, définissez l’attribut **New** = *Yes* .
+1. Exécutez deux fois la tâche cron Magento à l’aide de la commande `bin/magento cron:run`.
 1. Actualisez les pages de catégorie sur Storefront pendant qu’Adobe Commerce effectue la mise à jour de 30 000 produits.
 
 <u>Résultat attendu :</u>
@@ -47,7 +47,7 @@ Le nombre de produits des catégories est différent pour chaque actualisation d
 
 ### Problème 2
 
-Lorsque la réindexation complète de l’inventaire est exécutée, les pages de catégorie deviennent vides et la variable *Nous ne pouvons pas trouver de produits correspondant à la sélection* s’affiche.
+Lorsque la réindexation complète de l’inventaire est exécutée, les pages de catégorie deviennent vides et le message *Nous ne pouvons pas trouver de produits correspondant à la sélection* s’affiche.
 
 <u>Étapes à reproduire :</u>
 
@@ -73,13 +73,13 @@ Les pages de catégorie deviennent vides lors de la réindexation.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
 Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) .

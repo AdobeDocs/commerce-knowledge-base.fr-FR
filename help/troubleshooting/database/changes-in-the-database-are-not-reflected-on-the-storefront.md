@@ -26,13 +26,13 @@ Les modifications que vous effectuez dans la base de données ne sont pas réper
 
 ## Cause
 
-Si vos indexeurs sont [configuré pour mettre à jour par planning](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers), le problème peut être dû à une ou plusieurs tables dont les logs de modification sont trop volumineux ou à des déclencheurs MySQL non configurés.
+Si vos indexeurs sont [ configurés pour une mise à jour par planning](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers), le problème peut être dû à une ou plusieurs tables dont les logs de modification sont trop volumineux ou à des déclencheurs MySQL non configurés.
 
 ### Tables de logs de modifications surdimensionnées
 
-Les tables de journal des modifications deviennent aussi volumineuses si la variable `indexer_update_all_views` la tâche cron n’est pas terminée plusieurs fois.
+Les tables de journal des modifications deviennent aussi volumineuses si la tâche cron `indexer_update_all_views` n’est pas terminée plusieurs fois avec succès.
 
-Les tables de journal des modifications sont les tables de base de données dans lesquelles les modifications apportées aux entités sont suivies. Un enregistrement est stocké dans une table de logs de modifications tant que la modification n’est pas appliquée, ce qui est effectué par la fonction `indexer_update_all_views` tâche cron. Il existe plusieurs tables de journal des modifications dans une base de données Adobe Commerce. Elles sont nommées selon le modèle suivant : INDEXER\_TABLE\_NAME + &quot;\_cl&quot;, par exemple. `catalog_category_product_cl`, `catalog_product_category_cl`. Vous trouverez plus d’informations sur le suivi des modifications dans la base de données dans [Présentation de l’indexation > Aperçu](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) dans notre documentation destinée aux développeurs.
+Les tables de journal des modifications sont les tables de base de données dans lesquelles les modifications apportées aux entités sont suivies. Un enregistrement est stocké dans une table de journal des modifications tant que la modification n’est pas appliquée, ce qui est effectué par la tâche cron `indexer_update_all_views`. Il existe plusieurs tables de journal des modifications dans une base de données Adobe Commerce. Elles sont nommées selon le modèle suivant : INDEXER\_TABLE\_NAME + ‘\_cl’, par exemple `catalog_category_product_cl`, `catalog_product_category_cl`. Vous trouverez plus d’informations sur le suivi des modifications dans la base de données dans l’article [Présentation de l’indexation > Aperçu](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) de notre documentation destinée aux développeurs.
 
 ### Les déclencheurs de base de données MySQL ne sont pas configurés
 
@@ -46,18 +46,18 @@ Vous pensez que les déclencheurs de base de données ne sont pas configurés si
 
 ### Éviter que les tables de journal ne soient surchargées
 
-Assurez-vous que la variable `indexer_update_all_views` la tâche cron est toujours terminée.
+Assurez-vous que la tâche cron `indexer_update_all_views` est toujours terminée.
 
-Vous pouvez utiliser la requête SQL suivante pour obtenir toutes les instances ayant échoué de la variable `indexer_update_all_views` tâche cron :
+Vous pouvez utiliser la requête SQL suivante pour obtenir toutes les instances ayant échoué de la tâche cron `indexer_update_all_views` :
 
 ```sql
 select * from cron_schedule where job_code = "indexer_update_all_views" and status
   <> "success" and status <> "pending";
 ```
 
-Vous pouvez également vérifier son état dans les journaux en recherchant la variable `indexer_update_all_views` entrées :
+Vous pouvez également vérifier son état dans les journaux en recherchant les entrées `indexer_update_all_views` :
 
-* `<install_directory>/var/log/cron.log` - pour les versions 2.3.1 et 2.2.8+
+* `<install_directory>/var/log/cron.log` - pour les versions 2.3.1+ et 2.2.8+
 * `<install_directory>/var/log/system.log` - pour les versions antérieures
 
 ### Réinitialiser les déclencheurs de table MySQL
@@ -71,7 +71,7 @@ Utilisez la commande suivante pour effectuer cette opération.
 
 >[!WARNING]
 >
->Avant de basculer entre les modes indexeur, il est recommandé de placer votre site web dans [maintenance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) mode et [Désactivation des tâches cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) pour éviter les verrous de base de données.
+>Avant de passer en mode indexeur, nous vous recommandons de mettre votre site web en mode [maintenance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) et [désactiver les tâches cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) pour éviter les verrous de base de données.
 
 ```bash
 php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
@@ -83,5 +83,5 @@ php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
 
 ## Lecture connexe
 
-<ul><li title="Les tables MySQL sont trop grandes"><a href="/help/troubleshooting/database/mysql-tables-are-too-large.md">Les tables MySQL sont trop grandes</a> dans notre base de connaissances de soutien.</li>
+<ul><li title="Les tables MySQL sont trop grandes"><a href="/help/troubleshooting/database/mysql-tables-are-too-large.md">Les tables MySQL sont trop volumineuses</a> dans notre base de connaissances de support.</li>
 <li title="Les tables MySQL sont trop grandes"><a href="https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview">Présentation de l’indexeur &gt; Aperçu</a> dans notre documentation destinée aux développeurs.</li></ul>

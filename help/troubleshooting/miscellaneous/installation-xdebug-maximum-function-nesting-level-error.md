@@ -25,6 +25,6 @@ Il est vivement recommandé de NE PAS UTILISER `xdebug` dans un environnement de
 
 ## Solution
 
-Il existe un problème connu avec `xdebug` qui peuvent affecter les installations Adobe Commerce ou l’accès au storefront ou à l’administrateur Commerce après l’installation.
+Il existe un problème connu avec `xdebug` qui peut affecter les installations Adobe Commerce ou l’accès au storefront ou à l’administrateur Commerce après l’installation.
 
-Pour plus d’informations, voir [Problème connu avec xdebug](/help/troubleshooting/miscellaneous/known-issues-that-affect-installation.md) dans notre base de connaissances de soutien.
+Pour plus d’informations, voir [Problème connu avec xdebug](/help/troubleshooting/miscellaneous/known-issues-that-affect-installation.md) dans notre base de connaissances de support.

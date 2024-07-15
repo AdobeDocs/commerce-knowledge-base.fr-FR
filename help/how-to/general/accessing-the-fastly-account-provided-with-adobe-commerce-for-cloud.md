@@ -16,12 +16,12 @@ Cet article explique comment vous connecter à votre compte Fastly fourni avec A
 
 ## Comment afficher vos informations d’identification Fastly
 
-Reportez-vous à [Obtention des informations d’identification rapides](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds) dans notre documentation destinée aux développeurs.
+Reportez-vous à la section [Obtenir des informations d’identification rapides](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds) dans notre documentation destinée aux développeurs.
 
 ## Comment tester les informations d’identification rapides
 
-Reportez-vous à [Tester les informations d’identification rapides](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) dans notre documentation destinée aux développeurs.
+Reportez-vous à la section [Tester les informations d’identification rapides](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) de notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
-[Modification du propriétaire du compte (accès aux informations d’identification via les jetons d’API) pour Fastly on Cloud](/help/how-to/general/change-account-owner-access-credentials-via-api-tokens-for-fastly-on-cloud.md) dans notre base de connaissances de soutien.
+[ Modifiez le propriétaire du compte (accédez aux informations d’identification via des jetons d’API) pour Fastly on Cloud](/help/how-to/general/change-account-owner-access-credentials-via-api-tokens-for-fastly-on-cloud.md) dans notre base de connaissances d’assistance.

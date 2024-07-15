@@ -49,7 +49,7 @@ Les paragraphes suivants fournissent des détails supplémentaires pour chaque �
 
 La première étape pour corriger un site enlisé par un trafic important consiste à s’assurer que les pages comportant le trafic le plus important, comme la page d’accueil du magasin et les pages de catégories de niveau supérieur, sont correctement mises en cache.
 
-Vous pouvez connaître les taux d’accès au cache de ces pages en consultant la section `X-Cache` En-têtes HTTP utilisant cURL, comme décrit dans [Vérification du cache à l’aide de cURL](https://docs.fastly.com/guides/debugging/checking-cache#using-curl) dans la documentation Fastly. Vous pouvez également vérifier les mêmes en-têtes à l’aide de l’onglet réseau de la barre d’outils du développeur de votre navigateur web préféré.
+Vous pouvez connaître les taux d’accès au cache de ces pages en examinant les en-têtes HTTP `X-Cache` à l’aide de cURL, comme décrit dans la section [Vérification du cache à l’aide de cURL](https://docs.fastly.com/guides/debugging/checking-cache#using-curl) de la documentation Fastly. Vous pouvez également vérifier les mêmes en-têtes à l’aide de l’onglet réseau de la barre d’outils du développeur de votre navigateur web préféré.
 
 Respecte généralement très bien les en-têtes de réponse provenant de l’application. Toutefois, si tous les en-têtes sont définis sur &quot;ne pas mettre en cache&quot; et que la page &quot;arrive à expiration dans le passé&quot;, Fastly ne peut pas mettre en cache la page.
 
@@ -65,14 +65,14 @@ Si le taux d’accès de la page d’index est faible, vous pouvez le corriger e
 
 Pour vérifier le taux d’accès global au cache :
 
-1. [Obtention des informations d’identification rapides](http://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#cloud-fastly-creds) pour votre environnement Adobe Commerce sur l’infrastructure cloud.
+1. [ Obtenez des informations d’identification rapides ](http://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#cloud-fastly-creds) pour votre environnement Adobe Commerce sur l’infrastructure cloud.
 1. Exécutez la commande cURL Linux/macOS suivante pour vérifier le taux d’accès à votre site au cours des 30 dernières minutes, en le remplaçant par les valeurs de vos informations d’identification Fastly :
 
    `curl -H "Fastly-Key: " https://api.fastly.com/stats/service//field/hit_ratio?by=minute | json_pp`
 
-   Vous pouvez également vérifier les taux d’accès historiques sur le dernier jour ou mois en modifiant l’option de requête de période de `?by=minute` to `?by=hour` ou `?by=day`. Pour plus d’informations sur l’obtention rapide des statistiques de mise en cache, voir [Options de requête](https://docs.fastly.com/api/stats#Query) dans la documentation Fastly.
+   Vous pouvez également vérifier les taux d’accès historiques sur le dernier jour ou mois en modifiant l’option de requête de période de `?by=minute` à `?by=hour` ou `?by=day`. Pour plus d’informations sur l’obtention de statistiques de mise en cache rapides, voir [Options de requête](https://docs.fastly.com/api/stats#Query) dans la documentation Fastly.
 
-   La variable `| json_pp` l’option imprime assez la sortie de la réponse JSON à l’aide de l’option `json_pp` Utilitaire. Si vous obtenez une erreur de type &#39;_&#39;json\_pp introuvable&#39;_ , installez la variable `json_pp` ou utiliser un autre outil de ligne de commande pour la jolie impression JSON. Vous pouvez également supprimer la variable `| json_pp` et exécutez à nouveau la commande . Le résultat de la réponse JSON n’est pas formaté, mais vous pouvez l’exécuter via un embelleur JSON pour le nettoyer.
+   L’option `| json_pp` imprime correctement la sortie de la réponse JSON à l’aide de l’utilitaire `json_pp`. Si vous obtenez l’erreur &#39;_&#39;json\_pp introuvable&#39;_, installez l’utilitaire `json_pp` ou utilisez un autre outil de ligne de commande pour la jolie impression JSON. Vous pouvez également supprimer le paramètre `| json_pp` et exécuter à nouveau la commande . Le résultat de la réponse JSON n’est pas formaté, mais vous pouvez l’exécuter via un embelleur JSON pour le nettoyer.
 
 Un taux d’accès supérieur à 0,90 ou 90 % indique que le cache de la page entière fonctionne.
 
@@ -81,9 +81,9 @@ Un taux d’accès inférieur à 0,85 ou 85 % peut indiquer un problème de conf
 #### Dépannage du taux d’accès global au cache
 
 1. À l’aide des statistiques de taux d’accès horaire et quotidien, identifiez le moment où le taux d’accès a commencé à diminuer. Si le taux d’accès a soudainement chuté au moment où vous avez déployé une modification sur votre site, envisagez de revenir en arrière jusqu’à ce que le chargement du site diminue.
-1. Vérifiez la configuration dans l’administrateur Commerce, sous **Magasins** > **Configuration** > Avancé > **Système** > **Cache de page complète**. Assurez-vous que **TTL pour le contenu public** n’est pas définie trop bas.
-1. Vérifiez que vous avez [Chargement des fragments de code VCL](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets).
-1. Si vous utilisez des fragments de code VCL personnalisés, déboguez-les pour une utilisation correcte des actions &quot;pass&quot; ou &quot;tuyau&quot; : ils doivent être utilisés avec précaution et au moins utilisés avec une condition d’un certain type. Pour plus d’informations, voir [Fragments de code VCL personnalisés](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-vcl-custom-snippets.html) dans notre documentation destinée aux développeurs.
+1. Vérifiez la configuration dans l’administrateur Commerce, sous **Magasins** > **Configuration** > Avancé > **Système** > **Cache de page complet**. Assurez-vous que la valeur **TTL pour le contenu public** n’est pas définie trop bas.
+1. Assurez-vous d’avoir [téléchargé les fragments de code VCL](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets).
+1. Si vous utilisez des fragments de code VCL personnalisés, déboguez-les pour une utilisation correcte des actions &quot;pass&quot; ou &quot;tuyau&quot; : ils doivent être utilisés avec précaution et au moins utilisés avec une condition d’un certain type. Pour plus d’informations, voir [Fragments de code VCL personnalisés Fastly](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-vcl-custom-snippets.html) dans notre documentation destinée aux développeurs.
 
 ### Étape 3 : Identifier les sites web à l’origine de la charge élevée du serveur
 
@@ -125,14 +125,14 @@ Si la variable
 magento-cloud log
 ```
 
-ne fonctionne pas, vous pouvez vous connecter au serveur distant avec SSH et vérifier le fichier journal à l’adresse `/var/log/access.log`
+ne fonctionne pas, vous pouvez vous connecter au serveur distant avec SSH et vérifier le fichier journal à l’adresse `/var/log/access.log`.
 
-Une fois que vous avez identifié les adresses IP à l’origine d’une charge importante du serveur, vous pouvez les bloquer en configurant une liste bloquée IP à partir du panneau d’administration de Commerce, sous **Magasins** > **Configuration** > AVANCÉ > **Système** > **Cache de page complète** > **Configuration rapide** > **Blocage**.
+Après avoir identifié les adresses IP à l’origine d’une charge importante du serveur, vous pouvez les bloquer en configurant une liste bloquée IP à partir du panneau d’administration de Commerce, sous **Magasins** > **Configuration** > AVANCÉ > **Système** > **Cache de page complet** > **Configuration rapide** > **Blocking**}.
 
 Si vous ne pouvez pas accéder à votre administrateur en raison d’une charge importante, vous pouvez utiliser l’API Fastly pour configurer les règles de blocage :
 
-1. Créez l’ACL comme décrit dans la section [Utilisation des listes de contrôle d’accès à l’aide de l’API](https://docs.fastly.com/guides/access-control-lists/working-with-acls-using-the-api) C&#39;est très rapide.
-1. Dans le `recv` créez un fragment de code VCL avec le contenu suivant, en remplaçant ACL\_NAME\_GOES\_HERE par le nom de la liste de contrôle d’accès qui a été créée à l’étape précédente :
+1. Créez l’ACL comme décrit dans le document [Utilisation des ACL à l’aide de l’API](https://docs.fastly.com/guides/access-control-lists/working-with-acls-using-the-api) Fastly.
+1. Dans la section `recv` , créez un extrait de code VCL avec le contenu suivant, en remplaçant ACL\_NAME\_GOES\_HERE par le nom de l’ACL qui a été créé à l’étape précédente :
 
    ```
    if( req.http.Fastly-Client-IP ~ ACL_NAME_GOES_HERE ) {
@@ -140,4 +140,4 @@ Si vous ne pouvez pas accéder à votre administrateur en raison d’une charge 
    }
    ```
 
-Pour plus d’informations sur le blocage des adresses IP, voir [Guide du module Adobe Commerce Fastly](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) dans GitHub.
+Pour plus d’informations sur le blocage des adresses IP, consultez le [guide du module Fastly Adobe Commerce](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) dans GitHub.

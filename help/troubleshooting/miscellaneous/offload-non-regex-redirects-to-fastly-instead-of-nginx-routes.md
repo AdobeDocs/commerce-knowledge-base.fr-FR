@@ -17,7 +17,7 @@ Cette rubrique suggère une solution à un problème de performances de redirect
 
 ## Produits et versions concernés
 
-* Adobe Commerce sur l’infrastructure cloud (toutes versions) `Master/Production/Staging` les environnements exploitant rapidement
+* Adobe Commerce sur l’infrastructure cloud (toutes versions) `Master/Production/Staging` environnements exploitant rapidement
 
 ## Problème
 
@@ -25,9 +25,9 @@ Dans Adobe Commerce sur l’infrastructure cloud, un grand nombre de redirection
 
 ## Cause
 
-La variable `routes.yaml` dans le fichier `.magento/routes.yaml` définit les itinéraires de votre Adobe Commerce sur l’infrastructure cloud.
+Le fichier `routes.yaml` du répertoire `.magento/routes.yaml` définit les itinéraires de votre Adobe Commerce sur l’infrastructure cloud.
 
-Si la taille de la variable `routes.yaml` de 32 Ko ou plus, vous devez décharger vos redirections/réécritures non regex vers Fastly.
+Si la taille de votre fichier `routes.yaml` est supérieure ou égale à 32 Ko, vous devez décharger vos redirections/réécritures non regex vers Fastly.
 
 Ce calque Nginx ne peut pas gérer un grand nombre de redirections/réécritures non regex, sinon des problèmes de performances se produiront.
 
@@ -39,11 +39,11 @@ Les étapes suivantes expliquent comment placer des redirections à la place de 
 
 1. Créez un dictionnaire Edge.
 
-   Tout d’abord, vous pouvez utiliser [Fragments de code VCL dans Adobe Commerce](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) pour définir un dictionnaire Edge. Elle contient les redirections.
+   Tout d’abord, vous pouvez utiliser les [fragments de code VCL dans Adobe Commerce](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) pour définir un dictionnaire Edge. Elle contient les redirections.
 
    Voici quelques mises en garde :
 
-   * Fastly ne peut pas effectuer d&#39;expression régulière sur les entrées du dictionnaire. Ce n&#39;est qu&#39;une correspondance exacte. Pour plus d’informations sur ces limites, voir [Limites du dictionnaire à la périphérie de la documentation Fastly](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations).
+   * Fastly ne peut pas effectuer d&#39;expression régulière sur les entrées du dictionnaire. Ce n&#39;est qu&#39;une correspondance exacte. Pour plus d’informations sur ces limites, consultez la documentation [Fastly&#39;s on edge dictionary limitations](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations).
    * Fastly est limitée à 1000 entrées dans un seul dictionnaire. Rapidement, cette limite peut être étendue, mais cela conduit à la troisième mise en garde.
    * Chaque fois que vous mettez à jour les entrées et déployez ce VCL mis à jour sur tous les noeuds, il y a une augmentation du temps de chargement géométrique avec l’extension des dictionnaires, ce qui signifie qu’un dictionnaire d’entrée de 2 000 chargera 3 x 4 x plus lentement qu’un dictionnaire d’entrée de 1 000. Mais ce n’est un problème que lorsque vous déployez VCL (mise à jour du dictionnaire ou modification du code de fonction VCL).
 
@@ -59,7 +59,7 @@ Les étapes suivantes expliquent comment placer des redirections à la place de 
 
    Lorsque la recherche d’URL se produit, la comparaison permet d’appliquer le code d’erreur personnalisé en cas de correspondance.
 
-   Utilisez un autre fragment de code VCL pour ajouter quelque chose comme ceci à `vcl_recv`:
+   Utilisez un autre fragment de code VCL pour ajouter quelque chose comme ceci à `vcl_recv` :
 
    ```
         declare local var.redir-path STRING;
@@ -74,9 +74,9 @@ Les étapes suivantes expliquent comment placer des redirections à la place de 
 
 1. Gérez la redirection.
 
-   Lorsqu’une correspondance est trouvée, l’action est entreprise et définie pour celle-ci. `obj.status`, dans ce cas, une redirection 301 de déplacement permanent.
+   Lorsqu’une correspondance est trouvée, l’action est effectuée qui est définie pour cet `obj.status`, dans ce cas une redirection de déplacement permanente 301.
 
-   Utilisation d’un fragment de code final dans `vcl_error` pour renvoyer les codes d’erreur 301 au client :
+   Utilisez un fragment de code final dans `vcl_error` pour renvoyer les codes d’erreur 301 au client :
 
    ```
      if (obj.status == 912) {
@@ -87,7 +87,7 @@ Les étapes suivantes expliquent comment placer des redirections à la place de 
           }
    ```
 
-   Avec ce bloc, nous vérifions si le code d’erreur est transmis à partir de `vcl_recv` correspond à et, si tel est le cas, nous définirons l’emplacement sur le message d’erreur transmis, puis changeons le code d’état à 301 et le message à &quot;Déplacé définitivement&quot;. À ce stade, la réponse doit être prête à revenir au client.
+   Avec ce bloc, nous vérifions si le code d’erreur transmis à partir de `vcl_recv` correspond. Si c’est le cas, nous définirons l’emplacement sur le message d’erreur transmis, puis changerons le code d’état à 301 et le message à &quot;Déplacé définitivement&quot;. À ce stade, la réponse doit être prête à revenir au client.
 
 ### Service d’évaluation
 
@@ -99,7 +99,7 @@ Si vous ne souhaitez pas exécuter un environnement d’évaluation Adobe Commer
 
 ## Lecture connexe
 
-* [Référence VCL très rapide](https://docs.fastly.com/vcl/)
-* [Configuration des itinéraires](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) dans notre documentation destinée aux développeurs.
-* [Configuration rapide](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) dans notre documentation destinée aux développeurs.
-* [Aide-mémoire pour les expressions régulières VCL](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) dans notre documentation destinée aux développeurs.
+* [Référence VCL Fastly](https://docs.fastly.com/vcl/)
+* [Configurez les itinéraires](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) dans notre documentation destinée aux développeurs.
+* [Configurez Fastly](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) dans notre documentation destinée aux développeurs.
+* [Aide-mémoire de l’expression régulière VCL](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) dans notre documentation destinée aux développeurs.

@@ -17,7 +17,7 @@ Adobe Commerce sur site, Adobe Commerce sur l’infrastructure cloud et Magento 
 
 >[!WARNING]
 >
->L’échec de l’installation/de la configuration d’Elasticsearch 6/7 avant la tentative de mise à niveau peut entraîner de sérieux problèmes avec Adobe Commerce. Veuillez noter que les mises à niveau de service sur Adobe Commerce sur l’infrastructure cloud ne peuvent pas être transférées vers l’environnement de production sans préavis de 48 heures ouvrables à notre équipe d’infrastructure. Cela est nécessaire, car nous devons nous assurer qu’un ingénieur du support de l’infrastructure est disponible pour mettre à jour votre configuration dans les délais voulus, avec un temps d’arrêt minimal pour votre environnement de production. 48 heures avant que vos modifications ne soient en production [envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) détaillant la mise à niveau de service requise et indiquant l’heure à laquelle le processus de mise à niveau doit commencer.
+>L’échec de l’installation/de la configuration d’Elasticsearch 6/7 avant la tentative de mise à niveau peut entraîner de sérieux problèmes avec Adobe Commerce. Veuillez noter que les mises à niveau de service sur Adobe Commerce sur l’infrastructure cloud ne peuvent pas être transférées vers l’environnement de production sans préavis de 48 heures ouvrables à notre équipe d’infrastructure. Cela est nécessaire, car nous devons nous assurer qu’un ingénieur du support de l’infrastructure est disponible pour mettre à jour votre configuration dans les délais voulus, avec un temps d’arrêt minimal pour votre environnement de production. Ainsi, 48 heures avant le moment où vos modifications doivent être en production [envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) détaillant la mise à niveau de service requise et indiquant l’heure à laquelle vous souhaitez que le processus de mise à niveau démarre.
 
 La suppression du moteur de recherche MySQL est due au fait qu’Elasticsearch offre des fonctionnalités de recherche supérieures et des optimisations des performances du catalogue.
 
@@ -40,11 +40,11 @@ La suppression du moteur de recherche MySQL est due au fait qu’Elasticsearch o
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">Elasticsearch (sans version répertoriée)</td>
-<td style="width: 478.2px;">Vous utilisez Elasticsearch 2 et devez effectuer la mise à jour vers Elasticsearch 7 (recommandé) ou 6. Voir <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html#es-upgrade6">Mise à niveau d’Elasticsearch</a> et <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html">Configuration de Commerce pour l’utilisation d’Elasticsearch</a> pour plus d’informations, voir la documentation destinée aux développeurs .</td>
+<td style="width: 478.2px;">Vous utilisez Elasticsearch 2 et devez effectuer la mise à jour vers Elasticsearch 7 (recommandé) ou 6. Pour plus d’informations, voir <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html#es-upgrade6">Mise à niveau d’Elasticsearch</a> et <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html">Configuration de Commerce pour utiliser Elasticsearch</a> dans la documentation destinée aux développeurs.</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">ELASTICSEARCH 5</td>
-<td style="width: 478.2px;">L’Elasticsearch 5 a atteint sa valeur <a href="https://www.elastic.co/support/eol">Fin de vie</a> et a été abandonné dans Adobe Commerce 2.4.0. Mettez à jour vers Elasticsearch 7 (recommandé) ou 6.</td>
+<td style="width: 478.2px;">Elasticsearch 5 a atteint sa <a href="https://www.elastic.co/support/eol">fin de vie</a> et est obsolète dans Adobe Commerce 2.4.0. Mettez à jour vers Elasticsearch 7 (recommandé) ou 6.</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">Elasticsearch 6 ou 7</td>
@@ -59,9 +59,9 @@ La suppression du moteur de recherche MySQL est due au fait qu’Elasticsearch o
 
 ## Installation :
 
-Lorsqu’Adobe Commerce on-premise et Magento Open Source 2.4.0 est publié, Elasticsearch est un composant obligatoire. Vous devez donc disposer d’une configuration d’hôte Elasticsearch et configurée avant d’installer la version 2.4.0. Voir [Installation et configuration de l’Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) dans notre documentation destinée aux développeurs.
+Lorsque Adobe Commerce on-premise et Magento Open Source 2.4.0 est publié, Elasticsearch est un composant obligatoire. Vous devez donc disposer d’un hôte Elasticsearch configuré et configuré avant d’installer la version 2.4.0. Voir [Installation et configuration de l’Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) dans la documentation du développeur.
 
-Par défaut, la recherche Adobe Commerce utilise Elasticsearch 7 comme moteur de recherche et tente de se connecter à un serveur à l’emplacement localhost:9200. Elasticsearch 6.x est également pris en charge. Si votre configuration ne correspond pas aux valeurs par défaut, vous pouvez configurer ces paramètres à l’aide des arguments transmis à `setup:install`, de la même manière que la connexion à la base de données est configurée.
+Par défaut, la recherche Adobe Commerce utilise Elasticsearch 7 comme moteur de recherche et tente de se connecter à un serveur à l’emplacement localhost:9200. Elasticsearch 6.x est également pris en charge. Si votre configuration ne correspond pas aux valeurs par défaut, vous pouvez configurer ces paramètres à l’aide d’arguments transmis à `setup:install`, de la même manière que la connexion à la base de données est configurée.
 
 Par exemple, `setup:install --elasticsearch-host=es.mystore.com`
 

@@ -41,8 +41,8 @@ Les pages sont toujours mises en cache, de sorte que la page de maintenance ne s
 ## Solution au site visible malgré le fait qu’il soit en mode de maintenance
 
 1. SSH à votre environnement.
-1. Exécutez la variable `php bin/magento cache:clean` .
+1. Exécutez la commande `php bin/magento cache:clean`.
 
 ## Lecture connexe
 
-[Activer ou désactiver le mode de maintenance](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) dans notre documentation destinée aux développeurs.
+[Activez ou désactivez le mode de maintenance](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) dans notre documentation destinée aux développeurs.

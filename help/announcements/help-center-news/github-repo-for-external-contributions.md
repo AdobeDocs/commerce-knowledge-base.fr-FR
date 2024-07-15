@@ -13,14 +13,14 @@ ht-degree: 0%
 
 # La base de connaissances du support Adobe Commerce commence à accepter des contributions
 
-À compter du 15 juin, l’équipe de la base de connaissances du support Adobe Commerce commencera à accepter les modifications directes et les nouvelles contributions aux articles de la communauté Adobe Commerce externe par le biais de la [magento/base de connaissances](https://github.com/magento/knowledge-base) Référentiel GitHub !
+À compter du 15 juin, l’équipe de la base de connaissances de l’assistance Adobe Commerce commencera à accepter les modifications directes et les nouvelles contributions aux articles de la communauté Adobe Commerce externe par le biais du référentiel GitHub [magento/Knowledge-base](https://github.com/magento/knowledge-base).
 
 Vous avez remarqué une faute de frappe dans l’un de nos articles ou une procédure de dépannage incomplète ?
 Vous pouvez désormais le corriger vous-même et obtenir des points de contribution.
 
-## Contribution
+## Contribute
 
-Nous acceptons toutes sortes de contributions, allant des corrections de type mineures aux articles de dépannage complets. Contribuer à ce référentiel vous donne des points de récompense, comme contribuer au code Adobe Commerce et à notre documentation destinée aux développeurs. Voir [Points de récompense des contributions](https://github.com/magento/knowledge-base/blob/main/docs/contribution-points.md) pour plus d’informations.
+Nous acceptons toutes sortes de contributions, allant des corrections de type mineures aux articles de dépannage complets. Contribuer à ce référentiel vous donne des points de récompense, comme contribuer au code Adobe Commerce et à notre documentation destinée aux développeurs. Pour plus d’informations, voir [Points de récompense de contribution](https://github.com/magento/knowledge-base/blob/main/docs/contribution-points.md) .
 
 ### Flux de contribution général
 
@@ -30,36 +30,36 @@ Nous acceptons toutes sortes de contributions, allant des corrections de type mi
 1. Les tests sont exécutés :
    * Adobe CLA : assurez-vous que le contrat de licence du contributeur Open Source de l’Adobe est signé.
    * Test de liaison Markdown : assurez-vous que la syntaxe Markdown est correcte.
-   * Test de validation de la structure de fichier : assurez-vous que la validation est effectuée conformément aux [structure de fichier requise](https://github.com/magento/knowledge-base/blob/main/.github/CONTRIBUTING.md#file_structure).
+   * Test de validation de la structure de fichier : assurez-vous que la validation est effectuée conformément à la [structure de fichier requise](https://github.com/magento/knowledge-base/blob/main/.github/CONTRIBUTING.md#file_structure).
 1. Flux d’approbations de relations publiques :
    1. Les rédacteurs de la base de connaissances de support (KB) examinent les relations publiques dans un délai de plusieurs jours et ajoutent des étiquettes.
    1. L’auteur de la base de connaissances peut approuver/refuser/demander des modifications.
    1. S’il est approuvé, l’auteur de la base de connaissances ajoute des étiquettes correspondant au niveau d’entrée fourni dans la communication et l’expert interne en matière de communication (SME) examine la communication.
    1. Les PME peuvent approuver/refuser/demander des modifications.
 1. Une fois toutes les corrections effectuées (le cas échéant) et que l’auteur de la base de connaissances et le PME approuvent la communication, l’auteur de la base de connaissances importe le contenu dans le référentiel interne et le fusionne en interne.
-1. La variable [magento/base de connaissances](https://github.com/magento/knowledge-base) repo se synchronise avec l’instance interne en 20 minutes.
-1. Une fois les repos synchronisés, votre PR est fermé et vous obtenez [points de contribution](#contribution-points).
+1. Le référentiel [magento/Knowledge-base](https://github.com/magento/knowledge-base) se synchronise avec le référentiel interne en 20 minutes.
+1. Une fois les référentiels synchronisés, votre référentiel se ferme et vous obtenez [points de contribution](#contribution-points).
 
-Pour plus d’informations sur le flux de contribution, reportez-vous à la section [Guide du contributeur](https://github.com/magento/knowledge-base/blob/main/.github/CONTRIBUTING.md).
-Pour les modèles, le guide de style et les instructions de mise en forme, reportez-vous à la section [Documentation](https://github.com/magento/knowledge-base/tree/main/docs).
+Pour plus d’informations sur le flux de contribution, reportez-vous au [Guide du contributeur](https://github.com/magento/knowledge-base/blob/main/.github/CONTRIBUTING.md).
+Pour les modèles, le guide de style et les instructions de formatage, reportez-vous à la [documentation](https://github.com/magento/knowledge-base/tree/main/docs).
 
 ### Recherchez le fichier d’article de la base de connaissances d’assistance sur Github.
 
 Dans la base de connaissances d’assistance, les articles sont organisés en sections qui s’imbriquent dans des catégories.
 
-Par exemple, la variable [Comment s’abonner aux mises à jour d’état d’Adobe Magento](/help/how-to/general/how-to-subscribe-to-adobe-magento-status-updates.md) appartient à la section Général de la catégorie Comment .
+Par exemple, l&#39;article [Comment s&#39;abonner aux mises à jour d&#39;état du Magento d&#39;Adobe](/help/how-to/general/how-to-subscribe-to-adobe-magento-status-updates.md) appartient à la section Général de la catégorie Comment s&#39;abonner.
 
 Vous pouvez voir le nom de la section et de la catégorie dans le chemin de navigation de la page de l’article, voir l’image ci-dessous :
 
-![chemins de navigation des catégories et des sections](assets/breadcrumbs.png)
+![chemin de navigation de catégorie et de section](assets/breadcrumbs.png)
 
-Les fichiers d’article sont organisés de la même manière que dans [magento/base de connaissances](https://github.com/magento/knowledge-base) repo.
-Tout le contenu est stocké dans la variable `src` avec des dossiers pour les catégories et des dossiers imbriqués pour les sections ; les noms de fichier correspondent aux titres des articles ou sont similaires.
+Les fichiers d’article sont organisés de la même manière dans le référentiel [magento/Knowledge-base](https://github.com/magento/knowledge-base).
+Tout le contenu est stocké dans le dossier `src`, avec des dossiers pour les catégories et des dossiers imbriqués pour les sections ; les noms de fichier correspondent aux titres des articles ou sont similaires.
 
 Vous pouvez également utiliser la recherche dans le référentiel à l’aide d’un texte de l’article de la base de connaissances de l’assistance comme chaîne de recherche. Lorsque la recherche renvoie des fichiers, contenant cette chaîne, veillez à choisir le fichier qui appartient à la section et à la catégorie appropriées.
 
 ### Points de contribution
 
-La variable [magento/base de connaissances](https://github.com/magento/knowledge-base) Référentiel intégré à l’ingénierie communautaire Magento pour les points de contribution et l’assistance.
+Le référentiel [magento/Knowledge-base](https://github.com/magento/knowledge-base) est intégré à l’ingénierie de communauté Magento pour les points de contribution et l’assistance.
 
-Reportez-vous à [Points de contribution](https://github.com/magento/knowledge-base/blob/main/docs/contribution-points.md) pour voir comment les points sont récompensés.
+Reportez-vous au document [Points de contribution](https://github.com/magento/knowledge-base/blob/main/docs/contribution-points.md) pour découvrir comment les points sont récompensés.

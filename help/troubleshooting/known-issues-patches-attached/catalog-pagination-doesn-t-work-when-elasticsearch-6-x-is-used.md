@@ -30,26 +30,26 @@ Une fois ce correctif installé, les utilisateurs pourront parcourir tous les r�
 
 Un problème a été détecté dans Magento Open Source, Adobe Commerce sur site et Adobe Commerce sur l’infrastructure cloud où la pagination de la page des résultats de recherche ne fonctionne pas si vous changez de page.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Installez Adobe Commerce.
 1. Activez Elasticseach 6 comme moteur de recherche catalogue.
-1. Ajoutez un certain nombre de produits à la catégorie qui vont au-delà de la limite de 1 page définie dans l’administrateur. **Remarque**: 12 est le nombre par défaut de produits affichés par page dans Adobe Commerce 2.3.3.
+1. Ajoutez un certain nombre de produits à la catégorie qui vont au-delà de la limite de 1 page définie dans l’administrateur. **Remarque** : 12 est le nombre par défaut de produits affichés par page dans Adobe Commerce 2.3.3.
 1. Ouvrez Catégorie sur le storefront (résultats de recherche ou page de catégorie) et accédez à la page 2.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 Les produits doivent s’afficher sur la deuxième page.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
-**&quot;***Nous ne pouvons pas trouver de produits correspondant à la sélection***&quot;** s’affiche sur la deuxième page.
+**&quot;***Nous ne pouvons pas trouver de produits correspondant au message de sélection***&quot;** s’affiche sur la deuxième page.
 
 ## Solution
 
 Pour résoudre le problème, appliquez le correctif joint à cet article. Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’article et cliquez sur le nom du fichier ou cliquez sur le lien suivant :
 
-[Problème de pagination du catalogue de téléchargement sur le correctif Elasticsearch 6.x](assets/Catalog_pagination_issue_on_Elasticsearch_6_composer-2019-10-11-08-07-41.patch.zip) - Le correctif est compatible avec toutes les versions et éditions concernées.
+[ Problème de pagination du catalogue sur le correctif Elasticsearch 6.x ](assets/Catalog_pagination_issue_on_Elasticsearch_6_composer-2019-10-11-08-07-41.patch.zip) - Le correctif est compatible avec toutes les versions et éditions concernées.
 
 >[!WARNING]
 >

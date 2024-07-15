@@ -38,7 +38,7 @@ Le client a été redirigé vers une page de paiement de succès (ou une autre p
 
 ## Cause
 
-L’attribut de cookie SameSite est défini sur *Lax* ou non spécifié (qui est traité comme défini sur *Lax* ). Après `SameSite` = *Lax* désactive le transfert d’un cookie vers des URL externes via `POST` requêtes.
+L’attribut de cookie SameSite est défini sur *Lax* ou n’est pas spécifié (qui est traité comme défini sur *Lax* ). Avoir `SameSite` = *Lax* désactive le transfert d&#39;un cookie vers des URL externes via des demandes `POST`.
 
 ## Solution
 

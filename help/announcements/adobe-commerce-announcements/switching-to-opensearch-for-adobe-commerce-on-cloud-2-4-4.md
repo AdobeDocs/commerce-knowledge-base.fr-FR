@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Transformation en OpenSearch pour Adobe Commerce sur Cloud 2.4.4
 
-Adobe Commerce sur l’infrastructure cloud 2.4.4 ne prendra pas en charge les versions d’Elasticsearch après la version 7.10. **Vous devez d’abord effectuer la mise à niveau vers Adobe Commerce 2.4.4, puis passer immédiatement d’Elasticsearch à OpenSearch 1.2.x.** Adobe fournira des instructions détaillées plus proches de la version Adobe Commerce 2.4.4 GA.
+Adobe Commerce sur l’infrastructure cloud 2.4.4 ne prendra pas en charge les versions d’Elasticsearch après la version 7.10. **Vous devez d’abord effectuer la mise à niveau vers Adobe Commerce 2.4.4, puis passer immédiatement de l’Elasticsearch à l’Adobe OpenSearch 1.2.x.** afin de fournir des instructions détaillées plus près de la version GA d’Adobe Commerce 2.4.4.
 
 >[!NOTE]
 >
@@ -47,10 +47,10 @@ Toutefois, avant de commencer la mise à niveau vers Adobe Commerce 2.4.4, les c
 
 Si la version de base d’Adobe Commerce sur laquelle ils se trouvent prend en charge Elasticsearch 7.10, ils peuvent l’utiliser.
 
-Réviser [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) dans notre documentation destinée aux développeurs pour plus de compatibilité.
+Pour plus d’informations sur la compatibilité des versions, voir [Configuration requise](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) dans la documentation destinée aux développeurs.
 
 >[!NOTE]
 >
 >Il est recommandé de planifier la mise à niveau vers Adobe Commerce 2.4.4 dès que possible, car Elasticsearch 7.10 sera en fin de vie en mai 2022.
 
-Les partenaires Adobes peuvent s’inscrire à notre programme bêta [here](https://experienceleague.adobe.com/docs/commerce-operations/release/beta-program.html) pour accéder à notre code bêta4 le plus récent qui a été testé par rapport à Elasticsearch 7.16.1 et OpenSearch 1.1.
+Les partenaires d’Adobe peuvent s’inscrire à notre programme bêta [ici](https://experienceleague.adobe.com/docs/commerce-operations/release/beta-program.html) pour accéder à notre code bêta4 le plus récent qui a été testé par rapport à Elasticsearch 7.16.1 et OpenSearch 1.1.

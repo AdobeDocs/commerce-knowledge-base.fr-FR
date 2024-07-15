@@ -32,29 +32,29 @@ En 2019, un bogue a été signalé à Adobe Commerce, qui autorisait les échecs
 
 Le fait d’utiliser le script joint et le correctif, ou seulement le script, dépend de votre version d’Adobe Commerce :
 
-**Adobe Commerce et versions Magento Open Source 2.3.0-2.3.2-p2**
+**Adobe Commerce et versions de Magento Open Source 2.3.0-2.3.2-p2**
 
 Pour ces versions, vous devez appliquer le correctif et exécuter le script de nettoyage de base de données joint afin de mettre fin à la journalisation continue et d’éliminer les journaux.
 
-1. Exécutez le correctif du compositeur pour arrêter la journalisation. Ce correctif est joint à l&#39;article. Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’article et cliquez sur le nom du fichier, ou cliquez sur le lien suivant. [CLEANUP\_PATCH\_COMPOSER\_2.3.2.patch](assets/CLEANUP_PATCH_COMPOSER_2.3.2.patch.zip). Pour plus d’informations sur l’application du correctif, voir [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de soutien.
+1. Exécutez le correctif du compositeur pour arrêter la journalisation. Ce correctif est joint à l&#39;article. Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’article et cliquez sur le nom du fichier, ou cliquez sur le lien suivant [CLEANUP\_PATCH\_COMPOSER\_2.3.2.patch](assets/CLEANUP_PATCH_COMPOSER_2.3.2.patch.zip). Pour plus d’informations sur l’application du correctif, voir [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
-1. Exécutez maintenant le script pour nettoyer la base de données des tentatives de connexion ayant échoué. Ce script est joint à l’article. Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’article et cliquez sur le nom du fichier, ou cliquez sur le lien suivant. [DB\_CLEANUP\_SCRIPT\_v2.php](assets/DB_CLEANUP_SCRIPT_v2.php.zip).
+1. Exécutez maintenant le script pour nettoyer la base de données des tentatives de connexion ayant échoué. Ce script est joint à l’article. Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’article et cliquez sur le nom du fichier, ou cliquez sur le lien suivant [DB\_CLEANUP\_SCRIPT\_v2.php](assets/DB_CLEANUP_SCRIPT_v2.php.zip).
 
-Reportez-vous à [**Exécution du script**](/help/troubleshooting/known-issues-patches-attached/remove-failed-login-attempts-from-the-database.md#run_script) pour obtenir des instructions.
+Pour obtenir des instructions, reportez-vous à la section [**Exécution du script**](/help/troubleshooting/known-issues-patches-attached/remove-failed-login-attempts-from-the-database.md#run_script) .
 
-**Adobe Commerce et versions Magento Open Sources 2.3.3 et ultérieures/2.2.10 et versions ultérieures**<br>
-Pour ces versions uniquement, exécutez le script ci-dessous pour effacer les anciens journaux (la journalisation a été précédemment terminée pour ces versions via un correctif publié en octobre 2019). Ce script est joint à l’article. Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’article et cliquez sur le nom du fichier, ou cliquez sur le lien suivant. [DB\_CLEANUP\_SCRIPT\_v2.php](assets/DB_CLEANUP_SCRIPT_v2.php.zip).
+**Adobe Commerce et versions de Magento Open Source 2.3.3 et ultérieures/2.2.10 et versions ultérieures**<br>
+Pour ces versions uniquement, exécutez le script ci-dessous pour effacer les anciens journaux (la journalisation a été précédemment terminée pour ces versions via un correctif publié en octobre 2019). Ce script est joint à l’article. Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’article et cliquez sur le nom du fichier, ou cliquez sur le lien suivant [DB\_CLEANUP\_SCRIPT\_v2.php](assets/DB_CLEANUP_SCRIPT_v2.php.zip).
 
-Reportez-vous à [**Exécution du script**](/help/troubleshooting/known-issues-patches-attached/remove-failed-login-attempts-from-the-database.md#run_script) pour obtenir des instructions.
+Pour obtenir des instructions, reportez-vous à la section [**Comment exécuter le script**](/help/troubleshooting/known-issues-patches-attached/remove-failed-login-attempts-from-the-database.md#run_script) de notre base de connaissances d’assistance.
 
-**Exécution du script**
+**Comment exécuter le script**
 
 Suivez les instructions ci-dessous pour exécuter le script :
 
-1. Put `DB_CLEANUP_SCRIPT_v2.php` dans le répertoire racine de l’installation d’Adobe Commerce ou de Magento Open Source (dans le même répertoire que l’application qui contient `app/bootstrap.php`).
-1. Exécutez cette commande dans le terminal : `php DB_CLEANUP_SCRIPT_v2.php` et il lancera le processus de nettoyage de la base de données.
+1. Placez `DB_CLEANUP_SCRIPT_v2.php` dans le répertoire racine de l’installation d’Adobe Commerce ou de Magento Open Source (dans le même répertoire que l’application qui contient `app/bootstrap.php`).
+1. Exécutez cette commande dans le terminal : `php DB_CLEANUP_SCRIPT_v2.php` et elle lancera le processus de nettoyage de la base de données.
 
-Si vous rencontrez des problèmes lors de l’exécution du script, veuillez [envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) ou nous envoyer un e-mail à l’adresse [security@magento.com](mailto:security@magento.com).
+Si vous rencontrez des problèmes lors de l’exécution du script, [soumettez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) ou envoyez-nous un e-mail à l’adresse [security@magento.com](mailto:security@magento.com).
 
 **Fichiers attachés**
 

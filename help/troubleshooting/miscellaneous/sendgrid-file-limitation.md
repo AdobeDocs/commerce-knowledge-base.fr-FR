@@ -1,6 +1,6 @@
 ---
-title: '[!DNL SendGrid] limitation de fichiers pour Adobe Commerce Cloud'
-description: Cet article fournit une solution à la variable  [!DNL SendGrid] limitation d’Adobe Commerce sur l’infrastructure cloud.
+title: '[!DNL SendGrid] limitation de fichier pour Adobe Commerce Cloud'
+description: Cet article fournit une solution de contournement à la limitation  [!DNL SendGrid] d’Adobe Commerce sur l’infrastructure cloud.
 feature: Deploy, Marketing Tools
 role: Developer, Admin
 exl-id: 48629f48-8100-4128-9211-53d947aecd49
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL SendGrid] limitation de Adobe Commerce Cloud
+# [!DNL SendGrid] limite pour Adobe Commerce Cloud
 
-Cet article fournit quelques solutions de contournement au [!DNL SendGrid] limitation d’Adobe Commerce sur l’infrastructure cloud.
+Cet article fournit quelques solutions à la limitation de [!DNL SendGrid] pour Adobe Commerce sur l’infrastructure cloud.
 
 ## Produits et versions concernés
 
@@ -47,14 +47,14 @@ Staging2 :
 
 ## Cause
 
-[!DNL SendGrid] est limitée par le système à une taille de 30 Mo pour les emails. Il est recommandé de ne pas utiliser de pièces jointes dont la taille dépasse 10 Mo. Voir [Envoi de pièces jointes](https://docs.sendgrid.com/ui/sending-email/attachments-with-digioh) dans la documentation SendGrid pour plus d’informations.
+[!DNL SendGrid] a une limite système de taille de 30 Mo pour les emails. Il est recommandé de ne pas utiliser de pièces jointes dont la taille dépasse 10 Mo. Pour plus d’informations, voir [Envoi de pièces jointes](https://docs.sendgrid.com/ui/sending-email/attachments-with-digioh) dans la documentation SendGrid.
 
 ## Solution
 
 * N’utilisez pas de pièces jointes supérieures à 6 Mo ou 10 Mo.
-* Envisagez d’utiliser un serveur SMTP distant sur votre instance Adobe Commerce. Pour connaître les étapes, voir [Configuration des communications par courrier électronique](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html) dans notre guide sur les systèmes d’administration.
+* Envisagez d’utiliser un serveur SMTP distant sur votre instance Adobe Commerce. Pour les étapes, reportez-vous à la section [Configuration des communications par e-mail](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html) de notre guide des systèmes d’administration.
 * Reconfigurez votre serveur afin que les fichiers puissent être enregistrés dans votre module, puis joignez le lien aux fichiers des emails.
 
 ## Lecture connexe
 
-* [[!DNL SendGrid] service email](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html) dans notre guide Commerce on Cloud Infrastructure.
+* [[!DNL SendGrid] service de messagerie](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html) dans notre guide Commerce on Cloud Infrastructure.

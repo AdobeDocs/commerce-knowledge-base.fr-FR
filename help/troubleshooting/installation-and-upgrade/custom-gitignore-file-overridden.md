@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # La commande d’installation du compositeur remplace le fichier .gitignore, Adobe Commerce
 
-Cet article fournit une solution pour lorsqu’un suivi est effectué `.gitignore` est remplacé par le compositeur sur Adobe Commerce sur l’infrastructure cloud 2.4.2-p1 et 2.3.7.
+Cet article fournit une solution pour lorsqu’un fichier `.gitignore` tracké est remplacé par le compositeur sur Adobe Commerce sur l’infrastructure cloud 2.4.2-p1 et 2.3.7.
 
 ## Produits et versions concernés
 
@@ -21,9 +21,9 @@ Adobe Commerce sur l’infrastructure cloud 2.4.2-p1 et 2.3.7.
 
 ## Problème
 
-`.gitignore` est remplacé lors de l’exécution de la commande d’installation du compositeur.
+Le fichier `.gitignore` est remplacé lors de l’exécution de la commande d’installation du compositeur.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 
 1. Créez un répertoire vide pour votre espace de travail.
@@ -56,17 +56,17 @@ Adobe Commerce sur l’infrastructure cloud 2.4.2-p1 et 2.3.7.
       -/this/line/should/stay
       ```
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 `.gitignore` n’est pas remplacé par le compositeur.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 `.gitignore` est remplacé par chaque exécution d’installation de compositeur.
 
 ## Solution
 
-Pour conserver votre `.gitignore file` vous devez l’ignorer dans la variable `magento-deploy-ignore` .
+Pour conserver votre `.gitignore file` personnalisé, vous devez l&#39;ignorer dans la section `magento-deploy-ignore` .
 
 ```git
 {
@@ -84,4 +84,4 @@ Pour conserver votre `.gitignore file` vous devez l’ignorer dans la variable `
 
 ## Lecture connexe
 
-* [Le fichier .gitignore suivi est remplacé par le compositeur !](https://github.com/magento/magento2/issues/32888) dans Magento2 GitHub.
+* [Le fichier .gitignore tracké est remplacé par le compositeur !](https://github.com/magento/magento2/issues/32888) dans Magento2 GitHub.

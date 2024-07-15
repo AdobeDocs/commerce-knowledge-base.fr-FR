@@ -32,21 +32,21 @@ Adobe Commerce sur l’infrastructure cloud 2.4.x
 
 ## Problème  
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Tentative de déploiement. 
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Déploiement réussi.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
-Vous ne déployez pas correctement. Dans les journaux, une erreur de déploiement s’affiche avec un message similaire à ce qui suit : *Il n’existe aucune commande dans l’espace de noms du cache*.
+Vous ne déployez pas correctement. Dans les journaux, une erreur de déploiement s’affiche avec un message similaire au *suivant. Il n’y a aucune commande dans l’espace de noms du cache*.
 
 ### Cause
 
-La variable **core_config_data** contient des configurations pour un identifiant de magasin ou un identifiant de site web qui n’existe plus dans la base de données. Cela se produit lorsque vous avez importé une sauvegarde de base de données à partir d’une autre instance/un autre environnement et que les configurations de ces portées restent dans la base de données bien que le ou les magasins/sites web associés aient été supprimés.
+La table **core_config_data** contient des configurations pour un ID de magasin ou un ID de site web qui n’existe plus dans la base de données. Cela se produit lorsque vous avez importé une sauvegarde de base de données à partir d’une autre instance/un autre environnement et que les configurations de ces portées restent dans la base de données bien que le ou les magasins/sites web associés aient été supprimés.
 
 ### Solution
 
@@ -82,7 +82,7 @@ Pour résoudre ce problème, identifiez les lignes non valides restantes de ces 
 
    `bin/magento`
 
-   Si vous obtenez une erreur comme ci-dessous qui indique que le site web avec l’ID X demandé est introuvable, vous disposez de configurations restantes dans la base de données du ou des sites web ainsi que du ou des magasins qui ont été supprimés.
+   Si vous obtenez une erreur comme celle ci-dessous qui indique que le site web avec l’ID X demandé est introuvable, il reste des configurations.        dans la base de données du ou des sites web, ainsi que des magasins qui ont été supprimés.
 
    ```
    In WebsiteRepository.php line 110:
@@ -102,7 +102,7 @@ Pour résoudre ce problème, identifiez les lignes non valides restantes de ces 
    delete from core_config_data where scope='websites' and scope_id not in (select website_id from store_website);
    ```
 
-Pour confirmer que la solution a fonctionné, exécutez le `bin/magento` à nouveau. Les erreurs ne doivent plus s’afficher et le déploiement peut réussir.
+Pour confirmer que la solution a fonctionné, réexécutez la commande `bin/magento`. Les erreurs ne doivent plus s’afficher et le déploiement peut réussir.
 
 ## Lecture connexe
 

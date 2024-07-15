@@ -24,29 +24,29 @@ Adobe Commerce (toutes les méthodes de déploiement) version 2.4.3 et ultérieu
 
 Les commerçants configurent un coupon à usage unique et les clients peuvent l’utiliser plusieurs fois.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Créez un coupon et configurez-le pour qu’il soit unique.
 1. Passez à la caisse.
 1. Utilisez le coupon que vous venez de créer.
 1. Passez à nouveau en caisse et utilisez le même coupon.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
-Le coupon ne peut être utilisé qu&#39;une seule fois. Un message s’affiche : *Le code coupon &quot;COUPON_NAME&quot; n’est pas valide*.
+Le coupon ne peut être utilisé qu&#39;une seule fois. Un message s&#39;affiche : *Le code de coupon &quot;COUPON_NAME&quot; n&#39;est pas valide*.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 Le coupon peut être utilisé plusieurs fois.
 
 
 ## Cause
 
-Les commerçants n&#39;ont pas `sales.rule.update.coupon.usage` configuration et exécution par le client qui entraînent un comportement incorrect.
+Les commerçants n’ont pas de consommateur `sales.rule.update.coupon.usage` configuré et en cours d’exécution, ce qui entraîne un comportement incorrect.
 
 ## Solution
 
-Ajoutez la variable `sales.rule.update.coupon.usage` au client `app/etc/env.php` fichier .
+Ajoutez le consommateur `sales.rule.update.coupon.usage` au fichier `app/etc/env.php`.
 
 ```php
 ...
@@ -62,8 +62,8 @@ Ajoutez la variable `sales.rule.update.coupon.usage` au client `app/etc/env.php`
 ...
 ```
 
-Pour obtenir des instructions détaillées, reportez-vous à la section [Gérer les files d’attente de messages > Configuration](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html#configuration) dans notre documentation destinée aux développeurs.
+Pour obtenir des instructions détaillées, reportez-vous à la section [Gestion des files d’attente de messages > Configuration](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html#configuration) de notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
-[Présentation des files de messages](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html) dans notre documentation destinée aux développeurs.
+[Présentation des files d’attente de messages](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html) dans notre documentation destinée aux développeurs.

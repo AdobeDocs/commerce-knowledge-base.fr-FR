@@ -22,18 +22,18 @@ Cet article fournit une solution au problème connu lié au crédit de magasin l
 
 ## Problème
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Le client ajoute des produits au panier et procède au passage en caisse.
 1. Le client spécifie le crédit de magasin comme mode de paiement.
 1. Le client supprime le crédit de la boutique et modifie le mode de paiement.
 1. Le client passe en caisse.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Toutes les informations de commande s’affichent correctement.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Adobe Commerce renvoie une erreur dans la section Résumé de la commande de la page Commande.
 

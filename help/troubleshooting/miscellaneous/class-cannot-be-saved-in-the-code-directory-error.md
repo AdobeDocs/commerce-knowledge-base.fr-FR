@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Erreur &quot;Impossible d’enregistrer la classe dans le répertoire de code&quot;
 
-Cet article décrit comment résoudre le problème en raison duquel la manière dont vous avez spécifié les dépendances empêche la génération automatique des classes à la volée, et vous obtenez la variable *&quot;Impossible d’enregistrer la classe dans le répertoire généré/code&quot;* message d’erreur.
+Cet article décrit comment résoudre le problème en raison duquel la manière dont vous avez spécifié les dépendances empêche la génération automatique des classes à la volée et vous obtenez le message d’erreur *&quot;Class can be save in the generated/code directory&quot;* (La classe ne peut pas être enregistrée dans le répertoire généré/code&quot;).
 
 ## Produits et versions concernés
 
@@ -26,7 +26,7 @@ Cet article décrit comment résoudre le problème en raison duquel la manière 
 1. Dans votre environnement local, écrivez une classe personnalisée avec une dépendance sur la classe générée automatiquement.
 1. Exécutez le scénario, où votre classe personnalisée est déclenchée, et vérifiez qu’elle fonctionne correctement.
 1. Validez et envoyez vos modifications à l’environnement d’intégration. Cela déclencherait le processus de déploiement. Le déploiement a réussi.
-1. Dans le [environnement d&#39;intégration](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md), exécutez le scénario où votre classe personnalisée est déclenchée.
+1. Dans l&#39; [environnement d&#39;intégration](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md), exécutez le scénario où votre classe personnalisée est déclenchée.
 
 <u>Résultat attendu</u>
 
@@ -34,15 +34,15 @@ Tout fonctionne correctement, de la même manière que dans votre environnement 
 
 <u>Résultat réel</u>
 
-Échec avec le message d’erreur indiquant que votre classe ne peut pas être enregistrée dans la variable `generated/code` répertoire .
+Échec avec le message d’erreur indiquant que votre classe ne peut pas être enregistrée dans le répertoire `generated/code`.
 
 ## Cause
 
-La cause du problème est que la classe sur laquelle vous avez une dépendance, n’est pas générée pendant le déploiement et ne peut pas être générée ultérieurement à la volée lorsque la classe est déclenchée, car la variable `generated/code` Une fois le déploiement terminé, le répertoire n’est pas disponible pour l’écriture.
+La cause du problème est que la classe sur laquelle vous avez une dépendance, n’est pas générée pendant le déploiement et ne peut pas être générée ultérieurement à la volée lorsque la classe est déclenchée, car le répertoire `generated/code` n’est pas disponible pour écriture une fois le déploiement terminé.
 
 Deux raisons principales peuvent expliquer cette situation :
 
-* Cas 1 : la classe avec des dépendances sur les classes générées automatiquement se trouve dans le point d’entrée (comme `index.php` ), qui n’est pas analysé à la recherche de dépendances lors du déploiement.
+* Cas 1 : la classe avec des dépendances sur les classes générées automatiquement se trouve dans le point d’entrée (comme `index.php` ), qui n’est pas analysé pour les dépendances lors du déploiement.
 * Cas 2 : la dépendance à la classe générée automatiquement est spécifiée directement (par rapport à l’utilisation recommandée du constructeur pour déclarer la dépendance).
 
 ## Solution
@@ -85,7 +85,7 @@ $someObject = $bootstrap->getObjectManager()->create(SomeClass::class);
 
 Vous devez effectuer les étapes suivantes :
 
-1. Déplacez la définition de classe vers `app/code/YourVendor/YourModule`:
+1. Déplacez la définition de classe vers `app/code/YourVendor/YourModule` :
 
    ```php
       <?php
@@ -103,7 +103,7 @@ Vous devez effectuer les étapes suivantes :
        }
    ```
 
-1. Modification du point d’entrée `my_api/index.php` pour qu’il ressemble à ce qui suit :
+1. Modifiez le point d’entrée `my_api/index.php` de sorte qu’il ressemble à ce qui suit :
 
    ```php
      <?php

@@ -21,10 +21,10 @@ Cet article propose des solutions de dépannage pour les problèmes liés à [!D
 
 ## Problème
 
-## Voici les symptômes de [!DNL cron] Problèmes :
+## Voici les symptômes de problèmes [!DNL cron] :
 
-Vous avez remarqué que votre [!DNL cron] ne courait pas.
-Par exemple, les lignes suivantes s’affichent dans la variable `app/etc/env.php` fichier :
+Vous avez remarqué que votre [!DNL cron] n’était pas en cours d’exécution.
+Par exemple : les lignes suivantes s’affichent dans le fichier `app/etc/env.php` :
 
 ```'cron' =>
   array (
@@ -32,7 +32,7 @@ Par exemple, les lignes suivantes s’affichent dans la variable `app/etc/env.ph
   ),
 ```
 
-Un tableau vide signifie que la variable [!DNL cron] is **enabled**:
+Un tableau vide signifie que [!DNL cron] est **enabled** :
 
 ```'cron' =>
   array (
@@ -41,43 +41,43 @@ Un tableau vide signifie que la variable [!DNL cron] is **enabled**:
 
 ## Causes
 
-Plusieurs raisons peuvent expliquer que la variable [!DNL cron] n’est actuellement pas actif :
+Il existe plusieurs raisons pour lesquelles le [!DNL cron] n’est actuellement pas actif :
 
-1. La variable [!DNL cron] a été désactivé en raison d’une absence [!DNL OpCache] paramètres.
-1. L’équipe d’infrastructure a désactivé votre [!DNL cron], car cela provoquait des performances médiocres/une diminution des performances de votre site.
-1. La variable [!DNL cron] n’a pas été réactivé, car votre déploiement a échoué.
+1. [!DNL cron] a été désactivé en raison de paramètres [!DNL OpCache] manqués.
+1. L’équipe d’infrastructure a désactivé votre [!DNL cron], car cela entraînait des performances médiocres/une panne de votre site.
+1. [!DNL cron] n’a pas été réactivé car votre déploiement a échoué.
 
 Consultez l’une des sections suivantes pour une solution à votre problème.
 
 ## Solutions
 
-### Solution à défaut [!DNL OpCache] paramètres {#solution-missed-opcache-settings}
+### Solution pour les paramètres [!DNL OpCache] manqués {#solution-missed-opcache-settings}
 
-Voir [[!DNL Cron] arrêté en raison d’une configuration incorrecte ou d’une absence [!DNL OpCache] paramètres](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings) dans notre base de connaissances Commerce.
+Voir [[!DNL Cron] arrêté en raison d’un  [!DNL OpCache] paramètre](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings) mal configuré ou manquant dans notre base de connaissances Commerce.
 
 ### Solution pour les personnes handicapées par l’équipe d’infrastructure {#solution-disabled-by-infrastructure-team}
 
 1. Vérifiez vos précédents tickets d’assistance pour lesquels votre site était en panne ou ne répondait pas.
 1. Vérifiez ensuite si l’équipe d’infrastructure a indiqué qu’elle l’avait désactivé.
 1. Vérifiez que vous avez résolu les problèmes/préoccupations soulevés par l’équipe d’infrastructure.
-1. Envoyer un [Demande d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-tickets) si vous avez besoin d’aide supplémentaire pour demander la réactivation de la variable [!DNL cron] et expliquer comment vous avez résolu les problèmes que l&#39;équipe chargée de l&#39;infrastructure a indiqués.
+1. Envoyez une [demande d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-tickets) si vous avez besoin d’aide supplémentaire pour réactiver le [!DNL cron] et expliquez comment vous avez résolu les problèmes indiqués par l’équipe d’infrastructure.
 
 ### Solution pour le déploiement en échec {#solution-deployment-failed}
 
 Consultez les journaux de déploiement :
 
-* [Affichage et gestion des journaux](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) dans notre guide Commerce on Cloud Infrastructure.
-* [Vérification du journal de déploiement si l’interface utilisateur de Cloud comporte *`log snipped`* error](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error) dans notre base de connaissances Commerce.
+* [Affichez et gérez les journaux](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) dans notre guide Commerce on Cloud Infrastructure.
+* [Vérification du journal de déploiement si l’interface utilisateur de Cloud présente *`log snipped`* erreur](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error) dans notre base de connaissances Commerce.
 
-1. Si le déploiement a échoué pendant la `setup:upgrade` , l’étape [!DNL cron] n’a pas été réactivé.
+1. Si le déploiement a échoué au cours de l’étape `setup:upgrade`, [!DNL cron] n’a pas été réactivé.
 Par exemple : cette ligne s’affiche dans le journal de déploiement :
 
    ```The command "/bin/bash -c "set -o pipefail; php ./bin/magento setup:upgrade --keep-generated --ansi --no-interaction  | tee -a /app/$<project_id>/var/log/install_upgrade.log"" failed. Cache types config flushed successfully```
 
-1. Sinon, le déploiement aurait échoué à une autre étape. Vérifiez le journal de déploiement et assurez-vous que les deux lignes apparaissent (exemple ci-dessous). Si vous ne voyez pas les deux lignes similaires à celle-ci dans le journal, cela signifie que la variable [!DNL cron] n’a pas été réactivé :
+1. Sinon, le déploiement aurait échoué à une autre étape. Vérifiez le journal de déploiement et assurez-vous que les deux lignes apparaissent (exemple ci-dessous). Si vous ne voyez pas les deux lignes similaires à celle-ci dans le journal, cela signifie que le [!DNL cron] n’a pas été réactivé :
 
    ```  [2024-03-06T10:55:39.345564+00:00] INFO: Disable cron```<br>
-..<br>
+...<br>
    ```  [2024-02-07T10:50:09.579005+00:00] INFO: Enable cron```
 
-**Envoyer un [Demande d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-tickets) si vous avez besoin d’aide supplémentaire.**
+**Envoyez une [demande d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-tickets) si vous avez besoin d’une assistance supplémentaire.**

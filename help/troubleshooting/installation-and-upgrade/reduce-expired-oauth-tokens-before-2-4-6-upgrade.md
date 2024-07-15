@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Réduire les expirés `oauth_tokens` avant la mise à niveau 2.4.6
+# Réduire le `oauth_tokens` expiré avant la mise à niveau 2.4.6
 
-Cet article fournit une solution au problème où un grand nombre de `oauth_tokens` dans votre `oauth_token` , ce qui peut entraîner un long délai lors de la mise à niveau vers la version 2.4.6. Il est recommandé de réduire la variable `oauth_token` à l’aide du [`CleanExpiredTokens.php`](https://github.com/magento/magento2/blob/2.4.5-p2/app/code/Magento/Integration/Cron/CleanExpiredTokens.php) [!DNL cron] pour supprimer les jetons expirés.
+Cet article fournit une solution au problème où un grand nombre de `oauth_tokens` apparaît dans votre table `oauth_token`, ce qui peut entraîner un long délai dans la mise à niveau vers la version 2.4.6. Il est recommandé de réduire la table `oauth_token` à l’aide de la tâche [`CleanExpiredTokens.php`](https://github.com/magento/magento2/blob/2.4.5-p2/app/code/Magento/Integration/Cron/CleanExpiredTokens.php) [!DNL cron] pour supprimer les jetons expirés.
 
 ## Produits et versions concernés
 
@@ -21,17 +21,17 @@ Cet article fournit une solution au problème où un grand nombre de `oauth_toke
 
 ## Problème
 
-S’il existe un grand nombre de `oauth_tokens` dans votre `oauth_token` , ce qui peut entraîner un long délai dans la mise à niveau vers la version 2.4.6.
+Si votre table `oauth_token` contient un grand nombre de `oauth_tokens`, cela peut entraîner un long délai dans la mise à niveau vers la version 2.4.6.
 
 Le processus de mise à niveau comprend le chiffrement de ces jetons pour une couche de sécurité supplémentaire, et il n’a lieu que de 100 enregistrements à la fois. Cela peut prendre plusieurs heures s’il existe un grand nombre de jetons.
 
-Réduire un grand nombre de `oauth_tokens` dans votre `oauth_token` peut éviter un long délai lors de la mise à niveau vers la version 2.4.6.
+Réduire un grand nombre de `oauth_tokens` dans votre table `oauth_token` peut éviter un long délai dans la mise à niveau vers la version 2.4.6.
 
 ## Solution
 
-Avant de commencer une mise à niveau, assurez-vous que la variable [`CleanExpiredTokens.php`](https://github.com/magento/magento2/blob/2.4.5-p2/app/code/Magento/Integration/Cron/CleanExpiredTokens.php) [!DNL cron] est en cours d’exécution. Cela réduit la taille de la variable `oauth_token` en supprimant la table expirée `oauth_tokens` et doivent déjà être activés par défaut.
+Avant de commencer une mise à niveau, assurez-vous d’abord que la tâche [`CleanExpiredTokens.php`](https://github.com/magento/magento2/blob/2.4.5-p2/app/code/Magento/Integration/Cron/CleanExpiredTokens.php) [!DNL cron] est en cours d’exécution. Elle réduit la taille de la table `oauth_token` en supprimant les jetons `oauth_tokens` expirés et doit déjà être activée par défaut.
 
-Pour déclencher manuellement l’événement [`CleanExpiredTokens.php`](https://github.com/magento/magento2/blob/2.4.5-p2/app/code/Magento/Integration/Cron/CleanExpiredTokens.php) [!DNL cron] job, run :
+Pour déclencher manuellement la tâche [`CleanExpiredTokens.php`](https://github.com/magento/magento2/blob/2.4.5-p2/app/code/Magento/Integration/Cron/CleanExpiredTokens.php) [!DNL cron], exécutez :
 ```bin/magento cron:run --group=default```
 
 ## Lecture connexe

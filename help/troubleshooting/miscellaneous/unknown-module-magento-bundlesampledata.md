@@ -27,9 +27,9 @@ Pendant l’installation, un message similaire à celui-ci s’affiche :
 
 Essayez chacun des éléments suivants à la fois, puis réessayez l’installation.
 
-1. Exécutez l’assistant de configuration web. Les modules sont répertoriés dans  **Configurations de modules avancés**. Pour désactiver la fonction **Magento\_BundleSampleData** , effacez la variable **Magento\_BundleSampleData** comme le montre la figure suivante.
+1. Exécutez l’assistant de configuration web. Les modules sont répertoriés dans **Configurations de modules avancés**. Pour désactiver le module **Magento\_BundleSampleData**, décochez la case **Magento\_BundleSampleData** comme le montre la figure suivante.
 
    ![tshot_bundlesampledata.png](assets/tshoot_bundlesampledata.png)
 
 1. Effacez l’historique et les données de tous les navigateurs de votre navigateur web.
-1. Si vous disposez de Chrome, effacez toutes les données de navigateur liées à votre site.  Accédez à **Paramètres** > **Options avancées** > **Privacy** > **Paramètres de contenu** > **Tous les cookies et données de site**. Dans la colonne Site , cliquez sur l’adresse de votre serveur Adobe Commerce, puis sur **Tout supprimer**.
+1. Si vous disposez de Chrome, effacez toutes les données de navigateur liées à votre site.  Accédez à **Paramètres** > **Options avancées** > **Confidentialité** > **Paramètres de contenu** > **Tous les cookies et données de site**. Dans la colonne Site, cliquez sur l’adresse de votre serveur Adobe Commerce et cliquez sur **Tout supprimer**.

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-47079 : l’état du stock des produits composites n’est pas mis à jour lorsque l’état du stock des sous-produits change
 
-Le correctif ACSD-47079 corrige le problème en raison duquel l’état du stock des produits composites (groupé, groupé et configurable) n’est pas mis à jour lorsque l’état du stock du sous-produit est modifié via le POST API REST. `/rest/V1/inventory/source-items`. Ce correctif est disponible lorsque la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.24 est installée. L’ID de correctif est ACSD-47079. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-47079 corrige le problème en raison duquel l’état du stock des produits composites (groupé, groupé et configurable) n’est pas mis à jour lorsque l’état du stock du sous-produit est modifié via le POST API REST `/rest/V1/inventory/source-items`. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.24 est installé. L’ID de correctif est ACSD-47079. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -27,23 +27,23 @@ Le correctif ACSD-47079 corrige le problème en raison duquel l’état du stock
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-L’état du stock des produits composites (bundle, groupé et configurable) n’est pas mis à jour lorsque l’état du stock du sous-produit est modifié via le POST API REST. `/rest/V1/inventory/source-items`.
+L’état du stock des produits composites (bundle, groupé et configurable) n’est pas mis à jour lorsque l’état du stock du sous-produit est modifié via le POST API REST `/rest/V1/inventory/source-items`.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Créez un produit configurable, groupé et groupé avec un seul produit enfant pour chacun d’eux.
-1. Définissez chaque état de produit enfant simple sur **[!UICONTROL Out of Stock]** en utilisant la variable `source-items` appel API.
+1. Définissez l’état de chaque produit enfant simple sur **[!UICONTROL Out of Stock]** à l’aide de l’appel API `source-items`.
 1. Vérifiez maintenant l’état du stock du produit parent.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 L’état du produit parent est [!UICONTROL Out of Stock].
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 L’état du produit parent est [!UICONTROL In Stock].
 
@@ -51,14 +51,14 @@ L’état du produit parent est [!UICONTROL In Stock].
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le [!DNL Quality Patches Tool] guide.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce en utilisant  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le [!DNL Quality Patches Tool] guide.
+Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].

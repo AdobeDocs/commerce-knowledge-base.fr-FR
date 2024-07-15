@@ -19,10 +19,10 @@ Cet article fournit un correctif et les étapes requises pour résoudre le probl
 
 Les pages Storefront ne sont plus disponibles, renvoyant une erreur 404. Le problème s’affiche une fois que la mise à jour de la règle de prix du catalogue active est arrivée à échéance, à condition que la date de début de cette mise à jour ait été modifiée après la création initiale.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Dans l’administrateur Commerce, créez une règle de prix de catalogue sous **Marketing** > **Promotions** > **Règle de prix du catalogue**.
-1. Dans le **Règle de prix du catalogue** grille, cliquez sur **Modifier,** planifier une nouvelle mise à jour et définir **État** to *Actif.*
+1. Dans l’administrateur Commerce, créez une règle de prix de catalogue sous **Marketing** > **Promotions** > **Règle de prix de catalogue**.
+1. Dans la grille **Règle de prix du catalogue**, cliquez sur **Modifier,** programmer une nouvelle mise à jour et définissez **État** sur *Actif.*
 1. Accédez à **Contenu** > **Évaluation du contenu** > **Tableau de bord.**
 1. Sélectionnez la mise à jour récemment créée et modifiez son heure de début.
 1. Enregistrez les modifications.
@@ -41,11 +41,11 @@ Pour restaurer les pages du catalogue et pouvoir utiliser pleinement la fonction
 
 Vous trouverez ci-dessous une description détaillée des étapes requises :
 
-1. [Appliquer le correctif](#patch).
-1. Dans l’administrateur Commerce, supprimez la règle de prix du catalogue liée au problème (où l’heure de début a été mise à jour). Pour ce faire, ouvrez la page de règle sous **Marketing** > **Promotions** > **Règle de prix du catalogue**, puis cliquez sur **Supprimer la règle**.
-1. L&#39;accès à la base de données supprime manuellement l&#39;enregistrement associé de la `catalogrule` table.
-1. Corrigez les liens non valides dans la base de données. Voir [paragraphe associé](#fix_links) pour plus d’informations.
-1. Dans Commerce Admin sous **Marketing**, accédez à **Promotions** > **Règle de prix du catalogue**, puis créez la règle avec la configuration requise.
+1. [Appliquez le correctif](#patch).
+1. Dans l’administrateur Commerce, supprimez la règle de prix du catalogue liée au problème (où l’heure de début a été mise à jour). Pour ce faire, ouvrez la page des règles sous **Marketing** > **Promotions** > **Règle de prix du catalogue**, puis cliquez sur **Supprimer la règle**.
+1. L&#39;accès à la base de données supprime manuellement l&#39;enregistrement associé de la table `catalogrule`.
+1. Corrigez les liens non valides dans la base de données. Pour plus d’informations, voir le [paragraphe associé](#fix_links) .
+1. Dans l’administrateur Commerce sous **Marketing**, accédez à **Promotions** > **Règle de prix du catalogue**, puis créez la nouvelle règle avec la configuration requise.
 1. Effacez le cache du navigateur sous **Système** > **Gestion du cache**.
 1. Assurez-vous que les tâches cron sont correctement configurées et peuvent être exécutées avec succès.
 
@@ -68,7 +68,7 @@ Le correctif est également compatible (mais peut ne pas résoudre le problème)
 
 ## Comment appliquer le correctif
 
-Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de soutien.
+Pour plus d&#39;informations, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Correction des liens non valides pour l’évaluation dans DB {#fix_links}
 
@@ -76,24 +76,24 @@ Pour obtenir des instructions, voir [Comment appliquer un correctif de composite
 >
 >Il est vivement recommandé de créer une sauvegarde de base de données avant toute manipulation de base de données. Nous vous recommandons également de tester d’abord les requêtes sur l’environnement de développement.
 
-Procédez comme suit pour corriger les lignes contenant des liens non valides vers la variable `staging_update` table.
+Procédez comme suit pour corriger les lignes contenant des liens non valides vers la table `staging_update`.
 
-1. Vérifiez si les liens non valides vers la variable `staging_update` existe dans la variable `flag` table. Il s’agit d’enregistrements où `flag_code=staging`.
-1. Identifiez la version non valide à partir du `flag` table utilisant la requête suivante :
+1. Vérifiez si les liens non valides vers la table `staging_update` existent dans la table `flag`. Il s’agit d’enregistrements où `flag_code=staging`.
+1. Identifiez la version non valide de la table `flag` à l’aide de la requête suivante :
 
    ```sql
    SELECT flag_data FROM flag WHERE flag_code = 'staging';
    ```
 
-1. Dans la `staging_update` , sélectionnez la version existante inférieure à la version actuelle (non valide) et récupérez la valeur de version de deux chiffres. Vous l’utilisez, et non la version précédente, pour éviter une situation où la version précédente est la version maximale dans la variable `staging_update` qui pourrait être appliquée et nous devons encore la réappliquer.
+1. Dans la table `staging_update`, sélectionnez la version existante inférieure à la version actuelle (non valide) et récupérez la valeur de version qui est de deux nombres. Vous l’utilisez, et non la version précédente, pour éviter la situation où la version précédente est la version maximale dans la table `staging_update` qui peut être appliquée et nous devons toujours l’appliquer à nouveau.
 
    ```sql
    SELECT id FROM staging_update WHERE id < %current_id% ORDER BY id DESC LIMIT 1, 1
    ```
 
-   La version que vous obtenez en réponse est votre version valide. `id`.
+   La version que vous obtenez en réponse est votre version valide `id`.
 
-1. Pour les lignes comportant des liens non valides dans la variable `flag` , définissez `flag_data` aux données qui contiendront un identifiant de version valide. Cela permet d’économiser les performances à l’étape de réindexation et d’éviter de réindexer toutes les entités.
+1. Pour les lignes comportant des liens non valides dans la table `flag`, définissez les valeurs `flag_data` sur les données qui contiendront un ID de version valide. Cela permet d’économiser les performances à l’étape de réindexation et d’éviter de réindexer toutes les entités.
 
    ```sql
    UPDATE flag SET flag_data=REPLACE(flag_data, '%invalid_id%', '%new_valid_id%') WHERE flag_code='staging';

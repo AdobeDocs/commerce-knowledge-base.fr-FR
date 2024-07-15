@@ -23,7 +23,7 @@ Lors de l’installation à l’aide de l’assistant de configuration, le proce
 
 Causes possibles de ce problème :
 
-* Le paramètre PHP pour [`max_execution_time`](http://php.net/manual/en/info.configuration.php#ini.max-execution-time)
+* Paramètre PHP pour [`max_execution_time`](http://php.net/manual/en/info.configuration.php#ini.max-execution-time)
 * Valeurs de délai d’expiration de ingx et de vernis
 
 ## Solution :
@@ -32,9 +32,9 @@ Définissez tous les éléments suivants selon les besoins.
 
 ### Tous les serveurs web et vernis {#all-web-servers-and-varnish}
 
-1. Recherchez votre `php.ini` en utilisant une [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo) fichier .
-1. En tant qu’utilisateur avec `root` privilèges, ouvrir `php.ini` dans un éditeur de texte.
-1. Recherchez la variable `max_execution_time` .
+1. Localisez votre fichier `php.ini` à l’aide d’un fichier [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo).
+1. En tant qu&#39;utilisateur disposant de droits `root`, ouvrez `php.ini` dans un éditeur de texte.
+1. Recherchez le paramètre `max_execution_time` .
 1. Remplacez sa valeur par `18000` .
 1. Enregistrez vos modifications dans `php.ini` et quittez l’éditeur de texte.
 1. Redémarrez Apache :
@@ -46,7 +46,7 @@ Définissez tous les éléments suivants selon les besoins.
 
 ### nginx uniquement {#nginx-only}
 
-Si vous utilisez nginx, utilisez notre `nginx.conf.sample` ou ajoutez un paramètre d’expiration dans le fichier de configuration de l’hôte nginx au `location ~ ^/setup/index.php` , comme suit :
+Si vous utilisez nginx, utilisez notre `nginx.conf.sample` inclus ou ajoutez un paramètre de délai d’expiration dans le fichier de configuration de l’hôte nginx à la section `location ~ ^/setup/index.php` comme suit :
 
 ```php
 location ~ ^/setup/index.php {
@@ -60,7 +60,7 @@ Redémarrez le nginx : `service nginx restart`
 
 ### Uniquement en vernis {#varnish-only}
 
-Si vous utilisez le vernis, modifiez les `default.vcl` et ajoutez une valeur limite de délai d’expiration à la variable `backend` stanza :
+Si vous utilisez le vernis, modifiez `default.vcl` et ajoutez une valeur limite de délai d’expiration à la stanza `backend` comme suit :
 
 ```php
 backend default {

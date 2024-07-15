@@ -1,5 +1,5 @@
 ---
-title: Les vulnérabilités détectées par les analyses de sécurité tierces doivent accéder à [!DNL HackerOne]
+title: Les vulnérabilités détectées par les analyses de sécurité tierces doivent aller à [!DNL HackerOne]
 description: Cet article fournit une solution pour répondre aux vulnérabilités détectées par les analyses de sécurité tierces.
 feature: Security
 role: Developer, Admin
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Les vulnérabilités détectées par les analyses de sécurité tierces doivent accéder à [!DNL HackerOne]
+# Les vulnérabilités détectées par les analyses de sécurité tierces doivent aller à [!DNL HackerOne]
 
 Cet article fournit une solution pour répondre aux vulnérabilités détectées par les analyses de sécurité tierces.
 
@@ -25,4 +25,4 @@ Le commerçant a effectué un test PEN par l&#39;intermédiaire d&#39;une agence
 
 ## Solutions
 
-Les vulnérabilités détectées par les analyses de sécurité tierces doivent être envoyées à la variable [!DNL HackerOne] site web. Adobe Commerce ne dispose pas d’un point de contact direct à l’adresse [!DNL HackerOne], vous devez donc contacter directement [!DNL HackerOne]. Adobe gère uniquement le rapport MST (outil d’analyse de sécurité du Magento).
+Les vulnérabilités détectées par les analyses de sécurité tierces doivent être envoyées au site web [!DNL HackerOne]. Adobe Commerce n’a pas de point de contact direct à l’adresse [!DNL HackerOne]. Vous devez donc contacter directement [!DNL HackerOne]. Adobe gère uniquement le rapport MST (outil d’analyse de sécurité du Magento).

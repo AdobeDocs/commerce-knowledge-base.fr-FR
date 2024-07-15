@@ -25,7 +25,7 @@ Si vous SSH sur chaque noeud et que vous vous connectez à l’instance MySQL lo
 
 ![auto_incrément](assets/auto_increment_id.png)
 
-Par exemple, si la principale sélectionnée est le noeud 1 où `auto_increment_offset = 1`, l’identifiant sera incrémenté de 1. Ensuite, si un nouveau noeud principal est sélectionné ultérieurement, par exemple, le noeud 3 où `auto_increment_offset = 3`, il sera incrémenté de 3 à la place.
+Par exemple, si la principale sélectionnée est le noeud 1 où `auto_increment_offset = 1`, l’identifiant sera incrémenté de 1. Ensuite, si un nouveau noeud principal est élu ultérieurement, par exemple, noeud 3 où `auto_increment_offset = 3`, il sera incrémenté de 3 à la place.
 
 ## Liens utiles
 

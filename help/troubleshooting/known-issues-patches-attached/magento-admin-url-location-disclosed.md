@@ -29,9 +29,9 @@ Un problème a été découvert dans Magento Open Source et Adobe Commerce qui p
 
 Pour résoudre le problème, appliquez le correctif joint à cet article. Pour le télécharger, cliquez sur le lien suivant :
 
-* Télécharger [PRODSECBUG-2432\_EE\_2.1.17\_compositeur.patch](assets/PRODSECBUG-2432_EE_2.1.17_composer.patch.zip) - pour les versions 2.1.13-2.1.17, Adobe Commerce, Magento Open Source
-* Télécharger [PRODSECBUG-2432\_EE\_2.2.8\_compositeur.patch](assets/PRODSECBUG-2432_EE_2.2.8_composer.patch.zip) - pour les versions 2.2.0 à 2.2.8, toutes les éditions
-* Télécharger [PRODSECBUG-2432\_EE\_2.3.1\_compositeur.patch](assets/PRODSECBUG-2432_EE_2.3.1_composer.patch.zip) - pour les versions 2.3.0-2.3.1, toutes les éditions
+* Téléchargez [PRODSECBUG-2432\_EE\_2.1.17\_compositeur.patch](assets/PRODSECBUG-2432_EE_2.1.17_composer.patch.zip) - pour les versions 2.1.13-2.1.17, Adobe Commerce, Magento Open Source
+* Téléchargez [PRODSECBUG-2432\_EE\_2.2.8\_compositeur.patch](assets/PRODSECBUG-2432_EE_2.2.8_composer.patch.zip) - pour les versions 2.2.0-2.2.8, toutes les éditions
+* Téléchargez [PRODSECBUG-2432\_EE\_2.3.1\_compositeur.patch](assets/PRODSECBUG-2432_EE_2.3.1_composer.patch.zip) - pour les versions 2.3.0-2.3.1, toutes les éditions
 
 Si vous ne voyez pas de correctif pour votre produit/version, mettez à niveau vers la dernière version de sécurité, puis appliquez le correctif.
 
@@ -45,7 +45,7 @@ Voir [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/
 
 Adobe recommande également vivement aux commerçants de déployer des outils pour sécuriser leur panneau d’administration, notamment l’authentification à deux facteurs, le VPN, l’Place sur la liste autorisée IP, etc. Pour plus d’informations, consultez les blogs et la documentation suivants :
 
-* [5 actions immédiates à Protect contre les attaques brutales de la force](https://magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks)
-* [Configuration du mot de passe d’installation de Protect Your Magento en attente d’une nouvelle mise à jour](https://magento.com/security/best-practices/protect-your-magento-installation-password-guessing-new-update)
-* [Bonnes pratiques en matière de sécurité](https://magento.com/security/best-practices/security-best-practices)
+* [5 Actions immédiates vers Protect contre les attaques brutales de la force](https://magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks)
+* [Protect Your Magento Installation Password Guider New Update](https://magento.com/security/best-practices/protect-your-magento-installation-password-guessing-new-update)
+* [ Bonnes pratiques de sécurité ](https://magento.com/security/best-practices/security-best-practices)
 * Ajout et configuration de l’authentification à deux facteurs dans Adobe Commerce pour [2.3.x](https://docs.magento.com/user-guide/v2.3/stores/security-two-factor-authentication.html) et [2.4.x](https://docs.magento.com/user-guide/stores/security-two-factor-authentication.html)

@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-52613 : le cache et les index sont actualisés sans mise à jour'
-description: Appliquez le correctif ACSD-52613 pour résoudre le problème Adobe Commerce en raison duquel le cache et les index sont actualisés lorsqu’aucune mise à jour n’est effectuée sur les éléments "Inventory_source" par [!DNL REST API].
+description: Appliquez le correctif ACSD-52613 pour résoudre le problème Adobe Commerce en raison duquel le cache et les index sont actualisés lorsqu’aucune mise à jour n’est effectuée sur les éléments "Inventory_source" d’ [!DNL REST API].
 feature: REST
 role: Admin
 exl-id: 78f23fee-a48e-4ee2-bc75-e98e3dd1ac44
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-52613 : le cache et les index sont actualisés même sans mise à jour.
 
-Le correctif ACSD-52613 corrige le problème lié à Adobe Commerce où le cache et les index sont actualisés lorsqu’aucune mise à jour n’est effectuée sur `Inventory_source` éléments par [!DNL REST API]. Ce correctif est disponible lorsque la variable [!DNL Quality Patches Tool (QPT)] La version 1.1.37 est installée. L’ID de correctif est ACSD-52613. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-52613 corrige le problème lié à Adobe Commerce où le cache et les index sont actualisés lorsqu’aucune mise à jour n’est effectuée sur les éléments `Inventory_source` par [!DNL REST API]. Ce correctif est disponible lorsque [!DNL Quality Patches Tool (QPT)] 1.1.37 est installé. L’ID de correctif est ACSD-52613. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -27,19 +27,19 @@ Le correctif ACSD-52613 corrige le problème lié à Adobe Commerce où le cache
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Le cache et les index sont actualisés lorsqu’aucune mise à jour n’est apportée à `Inventory_source` éléments par [!DNL REST API].
+Le cache et les index sont actualisés lorsqu’aucune mise à jour n’est effectuée sur les éléments `Inventory_source` par [!DNL REST API].
 
-<u>Conditions préalables</u>:
+<u>Conditions préalables</u> :
 
 Modules d’inventaire installés
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Activez le mode Développeur pour que `debug.log`.
+1. Passez en mode Développeur pour obtenir `debug.log`.
 1. Préparez le fichier d’importation avec 100 produits - import.csv :
 
    ```
@@ -51,12 +51,12 @@ Modules d’inventaire installés
    ```
 
 1. Importer des produits depuis `import.csv`
-1. Créez un nouveau stock et une nouvelle source appelés **test_stock** et **test_source**.
+1. Créez un nouveau stock et une source appelés **test_stock** et **test_source**.
 1. Affectez un nouveau stock au site web et affectez la source au stock.
 1. Créez une nouvelle intégration avec accès à tous, activez-la et copiez-collez le jeton d&#39;accès.
 1. Accédez à **Magasins** > **Configuration** > **Services** > **Oauth** > **Paramètres du client** et activez **Autoriser l’utilisation des jetons d’accès OAuth en tant que jetons de porteur autonomes**.
 1. Videz le cache.
-1. Définissez les indexeurs sur **Mise à jour par planification**
+1. Définissez les indexeurs comme **Mis à jour par planning**
 1. Exécution de la requête API
 
    `POST ../rest/V1/inventory/source-items`
@@ -671,29 +671,29 @@ Modules d’inventaire installés
    ```
 
 1. Supprimer tous les journaux de `var/log`
-1. Exécutez la variable [!DNL REST API] redemandez.
-1. Vérifiez les `var/log/debug.log`.
+1. Exécutez à nouveau la requête [!DNL REST API].
+1. Vérifiez le `var/log/debug.log`.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Le cache ne doit pas être nettoyé et les index ne doivent pas être exécutés après la deuxième exécution, car rien n’a été modifié.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
-La variable `var/log/debug.log` contient l’entrée relative à l’effacement du cache.
+`var/log/debug.log` contient l’entrée relative à l’effacement du cache.
 
 ## Appliquer le correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le [!DNL Quality Patches Tool] guide.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce en utilisant  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le [!DNL Quality Patches Tool] guide.
+Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].

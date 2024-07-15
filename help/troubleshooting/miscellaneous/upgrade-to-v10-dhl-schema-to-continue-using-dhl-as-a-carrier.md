@@ -21,7 +21,7 @@ Cet article fournit une solution permettant aux commerçants de continuer à pro
 
 ## Problème
 
-En août 2022, nous avons lancé le [mise à niveau du schéma DHL version 6.2. avec un correctif correctif](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/adobe-commerce-dhl-upgrade-patch.html) pour que les commerçants continuent à proposer l&#39;expédition DHL. DHL introduit à nouveau un nouveau schéma - version 10.0 - en octobre 2022, et la version précédente (schéma 6.2) sera abandonnée fin décembre 2022. L’intégration DHL d’Adobe Commerce 2.4.5 et versions antérieures ne prend en charge que la version 6.2.
+En août 2022, nous avons publié la [mise à niveau du schéma DHL version 6.2. avec un correctif](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/adobe-commerce-dhl-upgrade-patch.html) pour que les commerçants continuent à proposer la livraison DHL. DHL introduit à nouveau un nouveau schéma - version 10.0 - en octobre 2022, et la version précédente (schéma 6.2) sera abandonnée fin décembre 2022. L’intégration DHL d’Adobe Commerce 2.4.5 et versions antérieures ne prend en charge que la version 6.2.
 
 ## Solution
 
@@ -31,12 +31,12 @@ Les commerçants qui ne souhaitent pas effectuer la mise à niveau vers les vers
 
 ## Correctif
 
-L’ID de correctif est AC-3023 et il est disponible dans la variable [!DNL Quality Patches Tool] version 1.1.21.
+L’ID de correctif est AC-3023 et il est disponible dans la version 1.1.2 de [!DNL Quality Patches Tool].
 
-Reportez-vous aux liens suivants sur la manière d’utiliser [!DNL Quality Patches Tool] et installez les correctifs en fonction de vos méthodes de déploiement :
+Reportez-vous aux liens suivants sur l’utilisation de [!DNL Quality Patches Tool] et installez les correctifs en fonction de vos méthodes de déploiement :
 
 * Adobe Commerce sur site et Magento Open Source : [Outils de correctifs de qualité > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans Adobe Experience League.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 **Le correctif s’applique aux versions Adobe Commerce suivantes (toutes les méthodes de déploiement) :**
 
@@ -46,11 +46,11 @@ Reportez-vous aux liens suivants sur la manière d’utiliser [!DNL Quality Patc
 
 * [[!DNL Quality Patches Tool] > Notes de mise à jour](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) dans Adobe Experience League.
 
-* [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans Adobe Experience League.
+* [[!DNL Quality Patches Tool] : recherchez des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans Adobe Experience League.
 
 ## Lecture connexe
 
-* [Appliquez un correctif pour continuer à proposer DHL comme opérateur de transport](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/adobe-commerce-dhl-upgrade-patch.html) dans notre base de connaissances de soutien.
+* [Appliquez un correctif pour continuer à proposer DHL comme transporteur ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/adobe-commerce-dhl-upgrade-patch.html) dans notre base de connaissances de support.
 
 * [Carrières de livraison > DHL](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/shipping-carriers/dhl.html) dans notre guide d’utilisation.
 * [Référence de configuration > Ventes > Méthodes de diffusion](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/delivery-methods.html) dans notre guide d’utilisation.

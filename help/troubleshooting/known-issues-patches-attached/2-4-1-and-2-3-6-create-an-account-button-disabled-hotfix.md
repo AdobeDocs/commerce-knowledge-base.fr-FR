@@ -17,29 +17,29 @@ Cet article fournit un correctif pour le problème lorsque vous avez du mal à c
 
 ## Problème
 
-La variable **Création d’un compte** sur le bouton **Créer un compte** reste désactivée si un acheteur a entré des données non valides. Cela empêche les acheteurs de réessayer de créer un compte après avoir commis une erreur.
+Le bouton **Créer un compte** de la page **Créer un nouveau compte** reste désactivé si un acheteur a entré des données non valides. Cela empêche les acheteurs de réessayer de créer un compte après avoir commis une erreur.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Accédez à **Créer un compte client**.
-1. Renseignez les champs du formulaire. Dans le **Password** , valeurs d’entrée qui ne répondent pas aux exigences du mot de passe. Par exemple :
-   * Les mots de passe dans la variable **Password** et la variable **Confirmer le mot de passe** ne correspondent pas aux champs.
-   * Les mots de passe dans la variable **Password** et la variable **Confirmer le mot de passe** ne sont pas assez longs.
-1. Cliquez sur le bouton **Création d’un compte** bouton .
+1. Renseignez les champs du formulaire. Dans le champ **Mot de passe**, saisissez des valeurs qui ne répondent pas aux exigences du mot de passe. Par exemple :
+   * Les mots de passe des champs **Password** et **Confirm Password** ne correspondent pas.
+   * Les mots de passe dans les champs **Mot de passe** et **Confirmer le mot de passe** ne sont pas assez longs.
+1. Cliquez sur le bouton **Créer un compte** .
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
-* **Création d’un compte** doit rester actif/activé.
+* Le bouton **Créer un compte** doit rester actif/activé.
 * L’utilisateur doit pouvoir créer un compte.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
-* **Création d’un compte** reste désactivé, même après avoir renseigné tous les champs requis avec des données valides/correctes.
+* Le bouton **Créer un compte** reste désactivé même après avoir renseigné tous les champs obligatoires avec des données valides/correctes.
 * Le client ne peut pas créer de compte.
 
 ## Correctif
 
-Le correctif est joint à cet article. Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’article et cliquez sur le nom du fichier ou cliquez sur le lien suivant : [Téléchargez MC-38509-compositeur.patch](assets/MC-38509-composer.patch.zip)
+Le correctif est joint à cet article. Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’article et cliquez sur le nom du fichier ou cliquez sur le lien suivant : [Télécharger MC-38509-compositeur.patch](assets/MC-38509-composer.patch.zip)
 
 ## Versions Adobe Commerce compatibles :
 
@@ -56,5 +56,5 @@ Voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-
 
 ## Lecture connexe
 
-* [GitHub Adobe Commerce > Envoi d’un formulaire de compte de création non valide laisse le bouton d’envoi désactivé.](https://github.com/magento/magento2/issues/30513)
-* [Guide de l’utilisateur Adobe Commerce > Prise en main > Création d’un compte](https://docs.magento.com/user-guide/magento/magento-account-create.html)
+* [GitHub Adobe Commerce > Envoi d’un formulaire de compte de création non valide laisse le bouton d’envoi désactivé](https://github.com/magento/magento2/issues/30513)
+* [Guide de l’utilisateur d’Adobe Commerce > Prise en main > Création d’un compte](https://docs.magento.com/user-guide/magento/magento-account-create.html)

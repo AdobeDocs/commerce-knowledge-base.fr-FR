@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-46988 : la requête de l’API de devise GraphQL renvoie des valeurs nulles.
 
-Le correctif ACSD-46988 corrige le problème en raison duquel la requête de l’API de devise GraphQL renvoie des valeurs nulles pour une devise personnalisée. Ce correctif est disponible lorsque la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.21 est installée. L’ID de correctif est ACSD-46988. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-46988 corrige le problème en raison duquel la requête de l’API de devise GraphQL renvoie des valeurs nulles pour une devise personnalisée. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.21 est installé. L’ID de correctif est ACSD-46988. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -27,13 +27,13 @@ Le correctif ACSD-46988 corrige le problème en raison duquel la requête de l�
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 La requête d’API de devise GraphQL renvoie des valeurs nulles pour une devise personnalisée.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Configurez la devise personnalisée dans Admin. Accédez à **Système** > **Configuration** > **Général** > **Configuration de devise**.
 1. Envoyez une requête GraphQL avec la charge utile suivante :
@@ -56,11 +56,11 @@ La requête d’API de devise GraphQL renvoie des valeurs nulles pour une devise
 </code>
 </pre>
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 La requête renvoie des valeurs de devise au lieu de valeurs nulles.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 La requête renvoie plusieurs valeurs nulles.
 
@@ -68,8 +68,8 @@ La requête renvoie plusieurs valeurs nulles.
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [Outils de correctifs de qualité > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide de l’outil Correctifs de qualité.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce ou Magento Open Source sur site : [Outils de correctifs de qualité > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide de l’outil de correctifs de qualité.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Autres étapes requises après l’installation du correctif
 
@@ -80,13 +80,13 @@ Pour les utilisateurs sur site :
 Pour les utilisateurs de cloud :
 
 * Exécutez : `composer require symfony/intl:"~5.4.11"`
-* Push `composer.json` et `composer.lock` dans le référentiel git avec le fichier patch.
+* Placez les fichiers `composer.json` et `composer.lock` dans le référentiel git avec le fichier de correctif.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de l’outil Correctifs de qualité.
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide de l’outil Correctifs de qualité.

@@ -24,9 +24,9 @@ Pour vider votre base de données sur Adobe Commerce sur l’infrastructure clou
 >
 >Si vous choisissez Option 1 ou Option 2, exécutez la commande en dehors des heures de pointe sur un noeud secondaire de base de données.
 
-## Option 1 : db-dump (**outil de création de pièces, recommandé**)
+## Option 1 : db-dump (**ece-tools; recommandé**)
 
-Vous pouvez vider votre base de données à l’aide du [CEE-Outils](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) command :
+Vous pouvez vider votre base de données à l’aide de la commande [CEE-Outils](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) :
 
 ```php
 vendor/bin/ece-tools db-dump
@@ -34,7 +34,7 @@ vendor/bin/ece-tools db-dump
 
 Il s’agit de l’option recommandée et la plus sûre.
 
-Voir [Videz votre base de données (Outils d’évaluation)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) dans notre guide Commerce on Cloud Infrastructure.
+Reportez-vous à la section [Sauvegarde de la base de données (outils ECE)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) dans notre guide Commerce on Cloud Infrastructure.
 
 ## Option 2 : mysqldump
 
@@ -42,7 +42,7 @@ Voir [Videz votre base de données (Outils d’évaluation)](https://experiencel
 >
 >N’exécutez pas cette commande sur la grappe de base de données. La grappe ne fait pas la distinction entre l’exécution sur la base de données principale et l’exécution sur une base secondaire. Si la grappe exécute cette commande sur l’instance principale, la base de données ne peut pas exécuter les écritures tant que la vidage n’est pas terminée et peut avoir une incidence sur les performances et la stabilité du site.
 
-Vous pouvez vider votre base de données à l’aide du MySQL natif. `mysqldump` .
+Vous pouvez vider votre base de données à l’aide de la commande native MySQL `mysqldump` .
 
 La commande entière peut se présenter comme suit :
 
@@ -50,9 +50,9 @@ La commande entière peut se présenter comme suit :
 mysqldump -h <host> -u <username> -p <password> --single-transaction <db_name> | gzip > /tmp/<dump_name>.sql.gz
 ```
 
-Sauvegarde de base de données créée lors de l’exécution de la fonction `mysqldump` et enregistrés dans `\tmp`, doit être déplacé de cet emplacement. Il ne doit pas prendre d’espace de stockage dans `\tmp` (ce qui peut entraîner des problèmes).
+La sauvegarde de base de données créée en exécutant la commande `mysqldump` et enregistrée dans `\tmp` doit être déplacée de cet emplacement. Il ne doit pas occuper d’espace de stockage dans `\tmp` (ce qui peut entraîner des problèmes).
 
-Pour obtenir vos informations d’identification DB (hôte, nom d’utilisateur et mot de passe), vous pouvez appeler la fonction `MAGENTO_CLOUD_RELATIONSHIPS` Variable d’environnement :
+Pour obtenir vos informations d’identification DB (hôte, nom d’utilisateur et mot de passe), vous pouvez appeler la variable d’environnement `MAGENTO_CLOUD_RELATIONSHIPS` :
 
 ```
 echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
@@ -60,5 +60,5 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
 
 **Documentation connexe :**
 
-* [mysqldump - Un programme de sauvegarde de base de données](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) dans la documentation officielle de MySQL.
-* [Variables spécifiques au cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) (voir `MAGENTO_CLOUD_RELATIONSHIPS`) dans notre guide Commerce on Cloud Infrastructure.
+* [mysqldump - A Database Backup Program](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) dans la documentation officielle de MySQL.
+* [ Variables spécifiques au cloud ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) (voir `MAGENTO_CLOUD_RELATIONSHIPS`) dans notre guide Commerce on Cloud Infrastructure.

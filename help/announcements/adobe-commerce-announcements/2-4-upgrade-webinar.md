@@ -25,6 +25,6 @@ La mise à niveau régulière de la plateforme Adobe Commerce est essentielle po
 
 Wed, 26 janvier 2022, 10h00 - 11h30 (heure du Pacifique)
 
-[INSCRIVEZ-VOUS ICI](https://register.gotowebinar.com/register/6951278956217776911)
+[ENREGISTRER ICI](https://register.gotowebinar.com/register/6951278956217776911)
 
 Même si vous ne parvenez pas à vous inscrire, nous vous recommandons de vous inscrire pour recevoir l’enregistrement après l’événement.

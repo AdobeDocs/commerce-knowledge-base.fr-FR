@@ -21,23 +21,23 @@ Cet article fournit une solution pour le problème où de nouveaux environnement
 
 ## Problème
 
-<u>Conditions préalables</u>:
+<u>Conditions préalables</u> :
 
 disposer d’un clone local contrôlé par git du projet ;
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Vous devez créer une branche d’intégration à partir de la branche d’évaluation :
 
-1. Basculez vers la branche d’évaluation en exécutant la commande suivante dans l’interpréteur de commandes local : `git checkout staging`
+1. Passez à la branche d’évaluation en exécutant la commande suivante dans l’interpréteur de commandes local : `git checkout staging`
 1. Créez une branche d’intégration à partir de la branche d’évaluation en exécutant la commande suivante dans le shell local : `git checkout -b <branch>`
 1. Poussez la branche vers le référentiel distant et configurez une branche en amont en exécutant la commande suivante dans le shell local : `git push --set-upstream origin <branch>`
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 La nouvelle branche est créée sous la branche d’évaluation.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 La nouvelle branche a été créée sous la branche de production.
 
@@ -47,9 +47,9 @@ Ce n&#39;est pas un bogue. Pour définir une branche parente pour une autre bran
 
 ## Solution
 
-Une branche parente ne peut être définie qu’après que le commerçant a envoyé une branche nouvellement créée et l’a activée. Voir [Adobe Commerce sur l’infrastructure cloud > Intégration de Bitbucket](https://devdocs.magento.com/cloud/integrations/bitbucket-integration.html#create-a-new-cloud-branch) dans notre documentation destinée aux développeurs.
+Une branche parente ne peut être définie qu’après que le commerçant a envoyé une branche nouvellement créée et l’a activée. Reportez-vous à la section [Adobe Commerce on cloud infrastructure > Bitbucket integration](https://devdocs.magento.com/cloud/integrations/bitbucket-integration.html#create-a-new-cloud-branch) dans notre documentation destinée aux développeurs.
 
-Pour mettre à jour un parent pour la branche existante sur le serveur, utilisez le `magento-cloud environment:info` dans l’interface de ligne de commande magento-cloud.
+Pour mettre à jour un parent pour la branche existante sur le serveur, utilisez la commande `magento-cloud environment:info` dans l’interface de ligne de commande magento-cloud.
 
 Exemple d’utilisation :
 

@@ -26,20 +26,20 @@ Cet article fournit un correctif pour le problème connu d’Adobe Commerce 2.4.
 
 1. Effectuez une commande avec l’une des méthodes principales de livraison suivantes : FedEx, DHL, UPS et USPS.
 1. Créez et autorisez des retours pour cette commande.
-1. Ouvrir une autorisation **Informations sur le retour** et cliquez sur le bouton **Créer une étiquette d’expédition** bouton .
+1. Ouvrez une page **Informations sur le retour** autorisée et cliquez sur le bouton **Créer une étiquette d’expédition**.
 1. Sélectionnez le mode de livraison, ajoutez un produit à un package et cliquez sur Enregistrer.
 
 <u>Résultat attendu :</u>
 
-Un libellé d’expédition est créé avec succès et un message s’affiche : *Vous avez créé une étiquette de livraison.*
+Une étiquette de livraison a été créée avec succès et un message s’affiche : *Vous avez créé une étiquette de livraison.*
 
 <u>Résultat réel :</u>
 
-La variable **Informations sur le retour** est rompue et un message d’erreur s’affiche sur la page Informations sur le retour : *Informations générales Des modifications ont été apportées à cette section qui n’ont pas été enregistrées. Cet onglet contient des données non valides*.
+La page **Informations sur le retour** est endommagée et un message d’erreur s’affiche sur la page Informations sur le retour : *des modifications d’informations générales ont été apportées à cette section qui n’ont pas été enregistrées. Cet onglet contient des données non valides*.
 
 ## Solution
 
-Appliquer [correctif](assets/MC-35984-2.4.0-CE-composer.patch.zip) fourni dans cet article.
+Appliquez [patch](assets/MC-35984-2.4.0-CE-composer.patch.zip) fourni dans cet article.
 
 ## Correctif
 
@@ -47,11 +47,11 @@ Le correctif est joint à cet article. Pour le télécharger, faites défiler l�
 
 [MC-35984-2.4.0-CE-compositeur.patch](assets/MC-35984-2.4.0-CE-composer.patch.zip)
 
-Le correctif peut également être téléchargé dans les deux `.git` et `.composer`, formats sur [Téléchargements Adobe Commerce](https://magento.com/tech-resources/download) page, sous **Correctifs** dans la navigation en colonne de gauche. Recherchez le correctif MC-35984.
+Le correctif peut également être téléchargé dans les formats `.git` et `.composer` de la page [Téléchargements Adobe Commerce](https://magento.com/tech-resources/download), sous **Correctifs** dans le volet de navigation de la colonne de gauche. Recherchez le correctif MC-35984.
 
 ## Comment appliquer le correctif
 
-Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre page de connaissances sur l’assistance.
+Pour obtenir des instructions, reportez-vous à la section [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre page de connaissances sur la prise en charge.
 
 ## Lectures connexes dans notre base de connaissances de support :
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ETC-Outils et erreurs de mise à jour de correctif infrastructure cloud Adobe Commerce 2.2.x, 2.3.x
 
-Cet article fournit une solution au problème où vous voyez des messages d’erreur comprenant &quot;*échec de l’ouverture du flux :*&quot; ou &quot;*Aucun fichier ou répertoire de ce type*&quot; lorsque vous essayez de déployer des mises à jour sur les outils de la CEE, les correctifs ou d&#39;autres modifications.
+Cet article fournit une solution au problème où des messages d’erreur tels que &quot;*n’a pas réussi à ouvrir le flux :*&quot; ou &quot;*Aucun fichier ou répertoire de ce type*&quot; s’affichent lorsque vous essayez de déployer des mises à jour dans les outils ECE, des correctifs ou d’autres modifications.
 
 ## Produits et versions concernés
 
@@ -21,7 +21,7 @@ Adobe Commerce sur l’infrastructure cloud 2.2.x, 2.3.x
 
 ## Problème
 
-Erreurs lors du déploiement de mises à jour dans les outils ECE, correctifs ou autres modifications : erreurs PHP dans la console cloud et dans la `var/log/cloud.log`
+Erreurs lors du déploiement des mises à jour des outils ECE, correctifs ou autres modifications : erreurs PHP dans la console cloud et dans le `var/log/cloud.log`
 
 ```
 W: PHP Warning: require(<path to file>): failed to open stream: No such file or directory in <path to file> on line 70
@@ -65,11 +65,11 @@ on line 63 in /app/vendor/magento/framework/App/ErrorHandler.php:61
 
 ## Cause
 
-Mauvaise configuration de votre `composer.json` fichier .
+Mauvaise configuration de votre fichier `composer.json`.
 
 ## Solution
 
-Si un paramètre est manquant dans votre `composer.json` , certains répertoires ne seront pas copiés à partir de la base de code Adobe Commerce. Le package et la mise à jour/le correctif ne peuvent pas s’appliquer, car les fichiers sont introuvables.
+Si un paramètre est absent de votre fichier `composer.json`, certains répertoires ne seront pas copiés à partir de la base de code Adobe Commerce. Le package et la mise à jour/le correctif ne peuvent pas s’appliquer, car les fichiers sont introuvables.
 
 Veuillez modifier votre section supplémentaire pour qu’elle corresponde à celle fournie ci-dessous et relancer le déploiement.
 

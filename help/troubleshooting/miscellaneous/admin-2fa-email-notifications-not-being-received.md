@@ -37,10 +37,10 @@ Si vous n&#39;avez pas correctement configuré l&#39;email de l&#39;expéditeur,
    ```
 
    * S&#39;il ne renvoie aucun résultat, cela signifie que l&#39;adresse de l&#39;expéditeur n&#39;a pas été configurée.
-   * S’il renvoie un résultat, passez à **Étape 2**.
+   * S’il renvoie un résultat, passez à l’ **étape 2**.
 
 1. Si l&#39;email apparaît dans votre dossier Spam, cliquez sur le lien contenu dans l&#39;email. Si le lien a expiré depuis, essayez de vous reconnecter pour répéter le processus.
-1. Une fois que vous avez accès à , accédez à **Magasins** > **Configuration** > **Général** > **Stocker les adresses électroniques** et configurez les adresses électroniques.
+1. Une fois que vous avez accès, accédez à **Magasins** > **Configuration** > **Général** > **Stocker les adresses électroniques** et configurez les adresses électroniques.
 
 ### Étape 2 : si/une fois que les adresses email ont été correctement configurées, connectez-vous à l&#39;environnement et exécutez la commande suivante :
 
@@ -48,7 +48,7 @@ Si vous n&#39;avez pas correctement configuré l&#39;email de l&#39;expéditeur,
 php -r "mail(<your email address>,<subject>,<content>,'To: <sender email>');"
 ```
 
-Recherchez l’email dans le dossier Spam . Si l&#39;email s&#39;y affichait, [envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#login) pour demander que le domaine soit étiqueté en blanc dans SendGrid.
+Recherchez l’email dans le dossier Spam . Si l&#39;email s&#39;y affichait, [envoyez un ticket d&#39;assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#login) pour demander que le domaine soit étiqueté en blanc dans SendGrid.
 
 ## Lecture connexe
 

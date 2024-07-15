@@ -23,4 +23,4 @@ Oui, afin de maintenir la synchronisation continue des systèmes, Adobe Commerce
 
 ## Pour vous exclure de ces emails :
 
-Suivez ces instructions pour [Mise à jour des préférences de notification sur le site Amazon](https://sellercentral.amazon.com/gp/help/external/G871).
+Suivez ces instructions pour la [mise à jour des préférences de notification sur le site Amazon](https://sellercentral.amazon.com/gp/help/external/G871).

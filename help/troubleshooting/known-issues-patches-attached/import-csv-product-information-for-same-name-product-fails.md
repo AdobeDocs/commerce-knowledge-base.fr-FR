@@ -13,26 +13,26 @@ ht-degree: 0%
 
 # Échec de l’importation des informations de produit CSV pour le même nom
 
-Cet article fournit un correctif pour le problème connu d’Adobe Commerce 2.2.3 lié à l’obtention d’erreurs lors de l’importation d’un `.csv` avec des informations sur les produits s’il existe des produits portant le même nom.
+Cet article fournit un correctif pour le problème connu d’Adobe Commerce 2.2.3 lié à l’obtention d’erreurs lors de l’importation d’un fichier `.csv` avec des informations sur les produits s’il existe des produits portant le même nom.
 
 ## Problème
 
-Lorsqu’une `.csv` Le fichier contenant des informations sur les produits est importé. Dans le cas de produits portant le même nom, l’erreur suivante s’affiche à l’étape Vérifier les données : *&quot;`URL Key XYZ was already generated for an item with the SKU %sku%"`*. Le problème est dû à la réécriture des URL des produits lors de l’importation, même lorsqu’il n’y a pas de colonne pour les URL des produits dans la `.csv` fichier .
+Lorsqu&#39;un fichier `.csv` contenant des informations sur les produits est importé et qu&#39;il existe des produits portant le même nom, l&#39;erreur suivante s&#39;affiche à l&#39;étape Vérifier les données : *&quot;`URL Key XYZ was already generated for an item with the SKU %sku%"`*. Le problème est dû à la réécriture des URL des produits lors de l’importation, même lorsqu’il n’y a pas de colonne pour les URL des produits dans le fichier `.csv` importé.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Créez deux produits configurables portant le même nom dans l’administrateur Commerce.
-1. Créez un `.csv` pour importer des données pour ces produits, qui contiennent par exemple les colonnes suivantes : `sku` | `product_type` | `name` | `product_websites` | `store_view_code`
-1. Accédez à **Système** > **Transfert de données** > **Importer** et sélectionnez la variable `.csv` fichier .
+1. Créez un fichier `.csv` pour importer des données pour ces produits, qui contient par exemple les colonnes suivantes : `sku` | `product_type` | `name` | `product_websites` | `store_view_code`
+1. Accédez à **System** > **Data Transfer** > **Import** et sélectionnez le fichier `.csv`.
 1. Cliquez sur **Vérifier les données**.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
-Aucun problème n’a été détecté ; vous pouvez importer la variable `.csv` avec succès.
+Aucun problème n’a été détecté. Vous pouvez importer le fichier `.csv` avec succès.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
-Le message d&#39;erreur suivant s&#39;affiche : *&quot;La clé URL XYZ a déjà été générée pour un élément avec le SKU %sku%&quot;*, il n’est pas possible d’importer le fichier.
+Le message d’erreur suivant s’affiche : *&quot;URL Key XYZ a déjà été généré pour un élément avec le SKU %sku%&quot;*. Il n’est pas possible d’importer le fichier.
 
 ## Correctif
 
@@ -53,7 +53,7 @@ Le correctif est également compatible (mais peut ne pas résoudre le problème)
 
 ## Comment appliquer le correctif
 
-Voir [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) pour obtenir des instructions.
+Pour obtenir des instructions, reportez-vous à la section [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Liens utiles
 

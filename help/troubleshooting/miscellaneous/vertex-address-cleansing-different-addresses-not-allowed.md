@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Nettoyage des adresses de sommet : adresses différentes non autorisées
 
-Cet article traite de la solution au problème qui se produit lorsque l’utilisateur tente de saisir une **différent** l’adresse de facturation et d’expédition, avec la validation de l’adresse de sommet activée, le storefront ne permet pas à l’utilisateur de la saisir.
+Cet article décrit la solution du problème où, lorsque l’utilisateur tente de saisir une adresse de facturation et d’expédition **différente**, avec la validation de l’adresse de sommet activée, le storefront ne permet pas à l’utilisateur de la saisir.
 
 ## Produits et versions concernés
 
@@ -21,23 +21,23 @@ Cet article traite de la solution au problème qui se produit lorsque l’utilis
 
 ## Problème
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Accédez à Admin > **Magasins** > **Configuration** > **Ventes** > **Nettoyage des adresses**.
-1. Sélectionner *Activé* de la **Utiliser le nettoyage des adresses de sommet** et **Enregistrer la configuration**.
+1. Sélectionnez *Activé* dans la liste déroulante **Utiliser le nettoyage des adresses de sommet** et **Enregistrer la configuration**.
 1. Positionnez-vous sur le front-end en tant qu&#39;invité et ajoutez un produit au panier.
-1. Cliquez sur l’icône Panier et **Passez à l’extraction**.
+1. Cliquez sur l’icône Panier et **Passez à la caisse**.
 1. Renseignez les champs de l&#39;adresse.
-1. Sélectionnez le **Méthode d’expédition** et cliquez sur **Suivant**.
-1. Cliquez sur le bouton **Suivant** à nouveau.
-1. Décocher **Mon adresse de facturation et de livraison** **sont identiques**, puis saisissez une nouvelle adresse de facturation (différente de l’adresse).
-1. Cliquez sur le bouton **Mettre à jour** , puis cliquez sur **Mettre à jour l&#39;adresse**.
+1. Sélectionnez la **méthode d’expédition** souhaitée et cliquez sur **Suivant**.
+1. Cliquez de nouveau sur le bouton **Suivant** .
+1. Décochez la case **Mon adresse de facturation et de livraison** **et saisissez une nouvelle adresse de facturation (différente de l’adresse).**
+1. Cliquez sur le bouton **Mettre à jour**, puis sur **Mettre à jour l&#39;adresse**.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 L’utilisateur voit différentes adresses de facturation et de livraison.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Lorsque l’utilisateur accède à la mise à jour, les adresses de facturation et de livraison redeviennent identiques.
 

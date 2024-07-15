@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Descriptions du motif de contact du ticket d’assistance
 
-Cet article répertorie le ticket d’assistance **Motif de contact** options de champ et descriptions plus détaillées de chacune d’elles.
+Cet article répertorie les options de champ **Raison de contact** du ticket d’assistance et des descriptions plus détaillées de chacune d’elles.
 
 ## Raisons de contact
 
@@ -52,7 +52,7 @@ Cet article répertorie le ticket d’assistance **Motif de contact** options de
 
 ## Raisons de l’application Adobe Commerce
 
-Il s’agit des options qui apparaissent si **Application Adobe Commerce** est sélectionné en tant que **Motif de contact**:
+Voici les options qui s’affichent si **Adobe Commerce Application** est sélectionné en tant que **motif de contact** :
 
 <table class="tg">
 <thead>
@@ -95,7 +95,7 @@ Il s’agit des options qui apparaissent si **Application Adobe Commerce** est s
 
 ## Raisons de l’infrastructure Adobe Commerce Cloud
 
-Il s’agit des options qui apparaissent si **Infrastructure Adobe Commerce Cloud** est sélectionné en tant que **Motif de contact**:
+Voici les options qui s’affichent si **Adobe Commerce Cloud Infrastructure** est sélectionné en tant que **motif de contact** :
 
 <table class="tg">
 <thead>
@@ -150,4 +150,4 @@ Il s’agit des options qui apparaissent si **Infrastructure Adobe Commerce Clou
 
 ## Lecture connexe
 
-Voir [Guide du centre d’aide > Champs du ticket d’assistance expliqués](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-tickets) pour afficher des détails sur d’autres champs de formulaire de prise de ticket.
+Pour plus d’informations sur les autres champs du formulaire de prise en charge, reportez-vous au [Guide du centre d’aide > champs de ticket d’assistance ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-tickets) expliqué.

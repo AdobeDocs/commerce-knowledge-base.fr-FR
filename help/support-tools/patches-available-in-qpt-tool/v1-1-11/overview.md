@@ -17,11 +17,11 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.11 comprend les correctifs suivants :
 
-1. **MDVA-40830**: corrige le problème en raison duquel le crédit de magasin est appliqué plusieurs fois lors du placement de commande.
-1. **MDVA-41350**: corrige le problème qui générait une exception lorsqu’un utilisateur administrateur disposant d’un accès limité ajoute un produit en dehors de la portée de son rôle par SKU dans une commande.
-1. **MDVA-42237**: correction d’un problème en raison duquel un prix spécial de produit configurable n’était pas mis à jour après modification du prix de son sous-produit.
-1. **MDVA-42269**: correction d’un problème en raison duquel un utilisateur administrateur ne pouvait pas se connecter à l’administrateur en raison de la variable *TypeError : strtotime() exige que le paramètre 1 soit une chaîne, null étant donné* erreur.
-1. **MDVA-42520**: corrige le problème d’application du taux de taxe deux fois si la variable *Activer le commerce transfrontalier* est utilisée.
-1. **MDVA-42790**: correction d’un problème en raison duquel les attributs de prix de produit ne pouvaient pas être mis à jour pour un site web spécifique via l’API REST.
+1. **MDVA-40830** : corrige le problème en raison duquel le crédit de magasin est appliqué plusieurs fois lors du placement de commande.
+1. **MDVA-41350** : résolution du problème d’apparition d’une exception lorsqu’un utilisateur administrateur avec accès restreint ajoute un produit en dehors de la portée de son rôle par SKU dans une commande.
+1. **MDVA-42237** : résolution du problème en raison duquel un prix spécial configurable d’un produit n’est pas mis à jour après modification du prix de son sous-produit.
+1. **MDVA-42269** : résolution du problème de l’impossibilité pour un utilisateur administrateur de se connecter à l’administrateur en raison de l’erreur *TypeError: strtotime() s’attend à ce que le paramètre 1 soit une chaîne, null étant donné l’erreur*.
+1. **MDVA-42520** : corrige le problème où le taux de taxe est appliqué deux fois si *Activer le commerce transfrontalier* est utilisé.
+1. **MDVA-42790** : corrige le problème en raison duquel les attributs de prix du produit ne peuvent pas être mis à jour pour un site web spécifique via l’API REST.
 
 Utilisez le menu de gauche pour accéder à une page de correctif spécifique.

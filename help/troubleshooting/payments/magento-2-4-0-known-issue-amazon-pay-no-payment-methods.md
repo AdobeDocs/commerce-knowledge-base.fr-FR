@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Problème connu d’Adobe Commerce 2.4.0 : paiement Amazon, aucun mode de paiement
 
-Cet article fournit une solution à un problème connu d’Adobe Commerce 2.4.0 où les méthodes de paiement manquent lorsque les clients utilisent **Revenir à la caisse standard**, une fois qu’ils ont activé le paiement Amazon.
+Cet article fournit une solution à un problème connu d’Adobe Commerce 2.4.0 qui fait défaut lorsque des méthodes de paiement sont manquantes lorsque les clients utilisent **Revenir au passage en caisse standard**, après avoir activé le paiement Amazon.
 
 ## Produits et versions concernés
 
@@ -25,7 +25,7 @@ Adobe Commerce sur site et Adobe Commerce sur l’infrastructure cloud v2.3.5.p1
 1. Ajoutez n’importe quel élément au panier et passez au passage en caisse.
 1. Connectez-vous à votre compte de paiement Amazon.
 1. Sélectionnez une adresse et passez à la caisse.
-1. Cliquez sur **Revenir à la caisse standard**.
+1. Cliquez sur **Revenir au passage en caisse standard**.
 1. Passez à la caisse.
 
 <u>Résultats attendus :</u>

@@ -56,17 +56,17 @@ Modifiez votre profil PayPal afin de permettre plusieurs paiements par identifia
 1. Connectez-vous à votre compte à l’adresse [https://www.paypal.com](https://www.paypal.com/).
 1. Cliquez sur **Profil** > **Profil et paramètres** (coin supérieur droit).
 1. Accédez à **Mes outils de vente**.
-1. Accédez à **Être payé et gérer mes risques** > **Paiements par bloc** et cliquez sur **Mettre à jour**.
+1. Accédez à **Obtenir un paiement et gérer mon risque** > **Bloquer les paiements** et cliquez sur **Mettre à jour**.
 1. **Préférences de vente**, cliquez sur **Préférences de réception des paiements**.
-1. Sous **Bloquer les paiements accidentels**, choisissez **Non, autoriser plusieurs paiements par identifiant de facture**.    ![paypal_allow_multiple_payments_per_facture_id.png](assets/paypal_allow_multiple_payments_per_invoice_id.png)
-1. Faites défiler l’écran vers le bas et cliquez sur **Enregistrer**.
+1. Sous **Bloquer les paiements accidentels**, sélectionnez **Non, autorisez plusieurs paiements par identifiant de facture**.    ![paypal_allow_multiple_payments_per_facture_id.png{1](assets/paypal_allow_multiple_payments_per_invoice_id.png)
+1. Faites défiler l’écran jusqu’au bas de l’écran et cliquez sur **Enregistrer**.
 
 ## Informations supplémentaires
 
-* [Bloquer les paiements accidentels](https://developer.paypal.com/docs/admin/setup-account/#block-accidental-payments) sur les documents du développeur PayPal.
+* [Bloquez les paiements accidentels](https://developer.paypal.com/docs/admin/setup-account/#block-accidental-payments) sur les documents de développement PayPal.
 * Paiements PayPal dans notre guide d’utilisation :
    * [Passage en caisse express PayPal](/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout.html)
    * [Autres solutions PayPal](/docs/commerce-admin/stores-sales/payments/paypal/paypal.html)
 * Dans notre documentation destinée aux développeurs :
    * [Configuration des méthodes de paiement PayPal pour Adobe Commerce sur l’infrastructure cloud](/docs/commerce-cloud-service/user-guide/configure-store/paypal.html)
-   * [Intégrations des paiements](https://developer.adobe.com/commerce/php/development/payments-integrations/)
+   * [Intégrations de paiements](https://developer.adobe.com/commerce/php/development/payments-integrations/)

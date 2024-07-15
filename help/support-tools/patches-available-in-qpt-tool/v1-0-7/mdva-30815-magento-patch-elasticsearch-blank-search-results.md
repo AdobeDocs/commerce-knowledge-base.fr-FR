@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-30815 : résultats de recherche vierges Elasticsearch
 
-Le correctif MDVA-30815 corrige le problème en raison duquel Elasticsearch affiche une page vierge lorsque les options du limiteur de résultats de recherche sont modifiées. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.0.7 est installée. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.3.5.
+Le correctif MDVA-30815 corrige le problème en raison duquel Elasticsearch affiche une page vierge lorsque les options du limiteur de résultats de recherche sont modifiées. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.7 est installé. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.3.5.
 
 ## Produits et versions concernés
 
@@ -27,43 +27,43 @@ Le correctif MDVA-30815 corrige le problème en raison duquel Elasticsearch affi
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 Lorsque vous utilisez Elasticsearch, si vous modifiez les options du limiteur de résultats de recherche, Adobe Commerce affiche une page vierge.
 
-<u>Conditions préalables</u>:
+<u>Conditions préalables</u> :
 
-Elasticsearch est **enabled**. Accédez à **MAGASINS** > **Paramètres** > **Configuration** > **Catalogue** > **Recherche catalogue**.
+L’Elasticsearch est **enabled**. Accédez à **STORES** > **Paramètres** > **Configuration** > **Catalogue** > **Recherche catalogue**.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Accédez à votre site.
 1. Recherchez un produit dans le champ de recherche principal.
 1. Une fois les pages de résultats de recherche affichées, cliquez sur la dernière page dans les pages de résultats de recherche.
-1. Sélectionner **Afficher xx par page** à partir de l’option limiteur. Assurez-vous qu’il s’agit d’une limite de nombre de résultats de recherche différente de celle configurée actuellement.
+1. Sélectionnez **Afficher xx par page** à partir de l’option de limiteur. Assurez-vous qu’il s’agit d’une limite de nombre de résultats de recherche différente de celle configurée actuellement.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 La page affiche le nombre configuré de résultats de produit.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
-La page vierge s’affiche. Cette erreur est également visible dans la variable `var/report` : *\`&quot;0&quot;:&quot;SQLSTATE\[42000\]: Erreur de syntaxe ou violation d’accès : 1064 Vous avez une erreur dans votre syntaxe SQL ; consultez le manuel correspondant à la version de votre serveur MySQL pour connaître la syntaxe appropriée à utiliser près de&#39;\`*
+La page vierge s’affiche. Cette erreur est également visible dans le `var/report` : *\`&quot;0&quot;:&quot;SQLSTATE\[42000\]: Erreur de syntaxe ou violation d’accès : 1064 Vous avez une erreur dans votre syntaxe SQL ; vérifiez le manuel correspondant à votre version de serveur MySQL pour connaître la syntaxe appropriée à utiliser près&#39;\`*
 
 ## Appliquer le correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) dans notre documentation destinée aux développeurs.
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) de notre documentation destinée aux développeurs.

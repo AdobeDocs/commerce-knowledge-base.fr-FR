@@ -30,25 +30,25 @@ Certains types de cache Adobe Commerce sont désactivés, ce qui peut entraîner
 
 ## Solution
 
-1. Tout d’abord, vérifiez l’état de votre cache Adobe Commerce pour voir s’il s’agit du problème. Pour cela : [SSH vers votre environnement](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh) et exécutez la commande suivante :
+1. Tout d’abord, vérifiez l’état de votre cache Adobe Commerce pour voir s’il s’agit du problème. Pour cela, [SSH vers votre environnement](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh) et exécutez la commande suivante :
 
    ```bash
    php bin/magento cache:status
    ```
 
-   Cela afficherait l’état de chaque type de cache (&quot;0&quot; pour désactivé, &quot;1&quot; pour activé). Ou vous pouvez obtenir ces informations dans le `app/etc/env.php` fichier .
+   Cela afficherait l’état de chaque type de cache (&quot;0&quot; pour désactivé, &quot;1&quot; pour activé). Vous pouvez également obtenir ces informations dans le fichier `app/etc/env.php`.
 
 1. Examinez les types de cache désactivés. Tous les types de cache Adobe Commerce doivent être activés, sauf si vous avez reçu d’autres conseils d’Adobe de votre part. Les extensions tierces ne doivent pas nécessiter la désactivation du cache Adobe Commerce.
-1. Si l’enquête confirme que certains types de cache sont désactivés par erreur, activez-les en exécutant la commande suivante pour chaque type de cache : `php bin/magento cache:enable <your_disabled_cache_type>`
+1. Si l&#39;enquête confirme que certains types de cache sont désactivés par erreur, activez-les en exécutant la commande suivante pour chaque type de cache : `php bin/magento cache:enable <your_disabled_cache_type>`
 
-Si des problèmes et/ou des questions se posent concernant la désactivation ou non d’un certain type de cache Adobe Commerce, [contacter le support Adobe Commerce ;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) demande de recommandations.
+Si vous avez des questions ou des questions concernant la désactivation ou la désactivation d’un certain type de cache Adobe Commerce, [contactez le support Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour demander des recommandations.
 
 ## Lecture connexe
 
 Documentation sur le cache Adobe Commerce dans notre documentation destinée aux développeurs :
 
 * [Présentation du cache Adobe Commerce](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/cache_for_frontdevs.html)
-* [Gestion du cache](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-cache.html)
+* [Gérer le cache](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-cache.html)
 
 Autres raisons possibles de problèmes de performances et solutions pour eux :
 

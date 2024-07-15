@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Cet article fournit une solution à un problème connu d’Adobe Commerce 2.4.0, où les méthodes de paiement des Braintree ne sont pas incluses dans l’utilisation du passage en caisse de plusieurs adresses. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.1.
 
-Remarque : Adobe Commerce recommande d’utiliser la variable [Extension de Braintree de Commerce Marketplace](https://marketplace.magento.com/paypal-module-braintree.html) pour les versions 2.3 et ultérieures afin de respecter le PSD. L’extension ne propose pas la fonctionnalité de passage en caisse à plusieurs adresses.
+Remarque : Adobe Commerce recommande d’utiliser l’[extension de Braintree de Commerce Marketplace](https://marketplace.magento.com/paypal-module-braintree.html) pour les versions 2.3 et ultérieures afin de préserver la conformité au PSD. L’extension ne propose pas la fonctionnalité de passage en caisse à plusieurs adresses.
 
 ## Produits et versions concernés
 
@@ -24,26 +24,26 @@ Remarque : Adobe Commerce recommande d’utiliser la variable [Extension de Brai
 
 ## Problème
 
-<u>Conditions préalables</u>:
+<u>Conditions préalables</u> :
 
 L’intégration de Braintree principal est utilisée.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Allez à la vitrine.
 1. Connectez-vous en tant que client.
 1. Ajoutez un produit au panier.
 1. Ouvrez votre panier.
-1. Presse **Afficher et modifier le panier**.
-1. Presse **Extraction avec plusieurs adresses**.
-1. Presse **Accéder aux informations d’expédition**.
-1. Presse **Continuer vers les informations de facturation**.
+1. Appuyez sur **Afficher et modifier le panier**.
+1. Appuyez sur **Extraire avec plusieurs adresses**.
+1. Appuyez sur **Accéder aux informations d’expédition**.
+1. Appuyez sur **Continuer vers les informations de facturation**.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 Braintree est disponible en tant que mode de paiement.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 Braintree n’est pas disponible en tant que mode de paiement.
 

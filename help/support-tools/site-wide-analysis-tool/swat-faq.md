@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce [!DNL Site-Wide Analysis Tool] FAQ sur les rapports
-description: En savoir plus sur les [!DNL Site-Wide Analysis Tool], un outil en libre-service proactif et un référentiel central qui comprend des informations détaillées sur le système et des recommandations pour garantir la sécurité et la maniabilité de votre installation Adobe Commerce.
+description: Découvrez  [!DNL Site-Wide Analysis Tool], un outil en libre-service proactif et un référentiel central qui comprend des informations détaillées sur le système et des recommandations pour garantir la sécurité et la maniabilité de votre installation Adobe Commerce.
 exl-id: 7c843d55-9e2c-4b18-8859-0ebad0ae28cf
 feature: Best Practices, Saas, Support, Tools and External Services
 role: Admin
@@ -11,29 +11,29 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce [!DNL Site-Wide Analysis Tool] FAQ sur les rapports
+# FAQ sur le rapport Adobe Commerce [!DNL Site-Wide Analysis Tool]
 
 >[!IMPORTANT]
 >
->À compter du 23 avril 2024, la [!DNL Site-Wide Analysis Tool] sera mis hors service pour tous les clients Adobe Commerce sur site.
+>À compter du 23 avril 2024, le [!DNL Site-Wide Analysis Tool] sera mis hors service pour tous les clients Adobe Commerce sur site.
 
-Cet article décrit la variable [!DNL Site-Wide Analysis Tool] Rapport généré automatiquement pour Adobe Commerce sur les clients de l’infrastructure cloud, sur une base mensuelle ou trimestrielle.
+Cet article décrit le rapport [!DNL Site-Wide Analysis Tool] généré automatiquement pour Adobe Commerce sur les clients de l’infrastructure cloud sur une base mensuelle ou trimestrielle.
 
 >[!NOTE]
 >
->Dans Adobe Commerce sur l’infrastructure cloud v2.4.1 et versions ultérieures, [!DNL Site-Wide Analysis Tool] est disponible via le panneau d’administration de Commerce. Par conséquent, [!DNL Site-Wide Analysis Tool] Les rapports peuvent être exécutés directement par le client. Pour plus d’informations sur l’accès, reportez-vous au [[!DNL Site-Wide Analysis Tool] guide](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html).
+>Dans Adobe Commerce sur l’infrastructure cloud v2.4.1 et versions ultérieures, [!DNL Site-Wide Analysis Tool] est disponible via le panneau d’administration de Commerce. Par conséquent, les rapports [!DNL Site-Wide Analysis Tool] peuvent être exécutés directement par le client. Pour plus d&#39;informations sur l&#39;accès, consultez le [[!DNL Site-Wide Analysis Tool] guide](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html).
 
-## Présentation [!DNL Site-Wide Analysis Tool]?
+## Qu’est-ce que [!DNL Site-Wide Analysis Tool] ?
 
-[!DNL Site-Wide Analysis Tool] est une application SaaS qui effectue une analyse de site client &quot;point dans le temps&quot; de bout en bout (dans la variable [!DNL Site-Wide Analysis Tool] , et non sur le site du client). Tous [!DNL Site-Wide Analysis Tool]Les informations relatives au site client sont collectées selon des calendriers prédéterminés toutes les 3 heures à une fois par jour. Cela signifie que [!DNL Site-Wide Analysis Tool] analyse constamment les données du site client pour en savoir plus.
+[!DNL Site-Wide Analysis Tool] est une application SaaS qui effectue une analyse de site client &quot;point dans le temps&quot; de bout en bout (dans l’environnement [!DNL Site-Wide Analysis Tool], et non sur le site du client). Toutes les informations sur le site client [!DNL Site-Wide Analysis Tool] sont collectées selon des calendriers prédéterminés toutes les 3 heures à une fois par jour. Cela signifie que [!DNL Site-Wide Analysis Tool] analyse constamment les données du site client à la recherche de résultats.
 
-## Qu’est-ce qu’une [!DNL Site-Wide Analysis Tool] Rapport ?
+## Qu’est-ce qu’un rapport [!DNL Site-Wide Analysis Tool] ?
 
-La variable [!DNL Site-Wide Analysis Tool] Rapport est une liste de résultats (problèmes) avec des recommandations de bonnes pratiques en libre-service, qui peuvent être envoyées aux clients sous forme de PDF par le biais du système de tickets d’assistance Adobe Commerce.
+Le rapport [!DNL Site-Wide Analysis Tool] est une liste de résultats (problèmes) avec des recommandations de bonnes pratiques en libre-service, qui peuvent être envoyées aux clients sous forme de PDF par le biais du système de tickets d’assistance Adobe Commerce.
 
-## Quelles informations sont incluses dans une [!DNL Site-Wide Analysis Tool] Rapport ?
+## Quelles informations sont incluses dans un rapport [!DNL Site-Wide Analysis Tool] ?
 
-Les informations du site, fournies dans la variable [!DNL Site-Wide Analysis Tool] inclut :
+Les informations sur le site, fournies dans le rapport [!DNL Site-Wide Analysis Tool], incluent :
 
 * Recherche
    * Aperçu, y compris une &quot;priorité&quot; pour l’ordre de correctif de mise en oeuvre
@@ -47,18 +47,18 @@ Les informations du site, fournies dans la variable [!DNL Site-Wide Analysis Too
    * Date de la dernière occurrence
    * Nombre de fois où l’exception se produit
 
-## Qui reçoit le mensuel automatisé [!DNL Site-Wide Analysis Tool] rapports ?
+## Qui reçoit les rapports mensuels automatisés [!DNL Site-Wide Analysis Tool] ?
 
-Actuellement, les clients qui ont une [!DNL Site-Wide Analysis Tool] L’index d’intégrité (au niveau ou en dessous du seuil de performance actuellement défini) recevra un [!DNL Site-Wide Analysis Tool] Créez des rapports pour leur environnement de production via le système de tickets d’assistance.
+Actuellement, les clients ayant un indice d’intégrité [!DNL Site-Wide Analysis Tool] faible (à ou en dessous du seuil de performance actuellement défini) recevront un rapport [!DNL Site-Wide Analysis Tool] mensuel pour leur environnement de production via le système de tickets d’assistance.
 
-## Qui reçoit le trimestriel automatisé [!DNL Site-Wide Analysis Tool] rapports ?
+## Qui reçoit les rapports trimestriels automatisés [!DNL Site-Wide Analysis Tool] ?
 
-Tous les clients, quel que soit le [!DNL Site-Wide Analysis Tool] l’indice de santé, qui recevra un trimestriel [!DNL Site-Wide Analysis Tool] Créez des rapports pour leur environnement de production via le système de tickets d’assistance.
+Tous les clients, quel que soit l’indice d’intégrité [!DNL Site-Wide Analysis Tool], recevront un rapport trimestriel [!DNL Site-Wide Analysis Tool] pour leur environnement de production par le biais du système de tickets d’assistance.
 
 ## Comment les rapports sont-ils distribués ?
 
-[!DNL Site-Wide Analysis Tool] les rapports sont livrés automatiquement par le biais du système de ticket d’assistance d’Adobe Commerce, tous les mois ou tous les trimestres. [!DNL Site-Wide Analysis Tool] les rapports peuvent également être générés manuellement à partir de la variable [!DNL Site-Wide Analysis Tool] Tableau de bord et enregistré sur votre bureau. Ces [!DNL Site-Wide Analysis Tool] les rapports peuvent ensuite être envoyés par courrier électronique en tant que pièces jointes.
+Les rapports [!DNL Site-Wide Analysis Tool] sont livrés automatiquement via le système de tickets d&#39;assistance Adobe Commerce tous les mois ou tous les trimestres. Les rapports [!DNL Site-Wide Analysis Tool] peuvent également être générés manuellement à partir du tableau de bord [!DNL Site-Wide Analysis Tool] et enregistrés sur votre bureau. Ces [!DNL Site-Wide Analysis Tool] rapports peuvent ensuite être envoyés par courrier électronique en tant que pièces jointes.
 
 >[!NOTE]
 >
->Après l’application d’une recommandation, la génération manuelle d’un rapport ne met pas à jour les recommandations. La suppression d’un rapport peut prendre quelques jours. [!DNL Site-Wide Analysis Tool Dashboard].
+>Après l’application d’une recommandation, la génération manuelle d’un rapport ne met pas à jour les recommandations. Il peut s’écouler quelques jours avant qu’il ne soit supprimé du [!DNL Site-Wide Analysis Tool Dashboard].

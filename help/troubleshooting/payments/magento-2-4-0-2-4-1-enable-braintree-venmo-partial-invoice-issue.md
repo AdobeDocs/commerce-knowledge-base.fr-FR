@@ -24,7 +24,7 @@ Cet article décrit un problème connu d’Adobe Commerce 2.4.0 et 2.4.1, où un
 
 <u>Conditions préalables :</u>
 
-Dans la configuration du mode de paiement du Braintree, définissez **Activation de Venmo via Braintree** = *Oui* avec **Action de paiement** = *Autorisation*; **Activation de Vault pour les paiements par carte** = *Non*.
+Dans la configuration du mode de paiement du Braintree, définissez **Activer Venmo via Braintree** = *Oui* avec **Action de paiement** = *Autorisation* ; **Activer Vault pour les paiements par carte** = *Non*.
 
 <u>Étapes à reproduire :</u>
 
@@ -39,7 +39,7 @@ Facture créée.
 
 <u>Résultat réel :</u>
 
-Le message d&#39;erreur suivant s&#39;affiche : *La commande &quot;vault\_capture&quot; n’existe pas. Vérifiez la commande et réessayez.*
+Le message d&#39;erreur suivant s&#39;affiche : *La commande &quot;vault\_capture&quot; n&#39;existe pas. Vérifiez la commande et réessayez.*
 
 ## Solution
 

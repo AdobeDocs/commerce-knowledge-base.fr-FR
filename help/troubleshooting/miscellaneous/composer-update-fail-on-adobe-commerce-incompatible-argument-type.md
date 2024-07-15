@@ -30,10 +30,10 @@ Cet article fournit une solution pour lorsque le déploiement est bloqué en rai
 
 Une nouvelle version de la dépendance symfony/console (4.4.27, 4.4.28) entraîne l’échec du processus de compilation des dépendances.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Lorsque vous installez ou mettez à niveau Adobe Commerce ou exécutez la mise à jour du compositeur, l’exécution échoue avec le message d’erreur suivant :
-*Type d’argument incompatible : type requis : int. Type réel : chaîne*
+*Type d’argument incompatible : type requis : int. Type réel : string*
 
 ## Cause
 
@@ -43,7 +43,7 @@ Le problème est dû à l’incompatibilité du code principal Adobe Commerce av
 
 Le problème sera résolu automatiquement lorsqu’une nouvelle version de symfony/console 4.2.29 sera publiée (prévu en août 2021).
 
-**Comment corriger sur Adobe Commerce on-premise :**
+**Comment résoudre le problème sur Adobe Commerce on-premise :**
 
 Adobe Commerce On-Premise 2.4.x
 
@@ -57,10 +57,10 @@ Tous les commerçants sur site Adobe Commerce 2.3.5+ doivent exécuter la comman
 
 **Comment résoudre le problème sur Adobe Commerce sur l’infrastructure cloud :**
 
-Exécutez les commandes ci-dessus ou effectuez une mise à niveau vers la dernière version des outils de la CEE (ece-tools: 2002.1.7), qui sera disponible le jeudi 29 juillet. Pour connaître les étapes, voir [Cloud pour Adobe Commerce > Mise à jour de la version des outils de mise à jour](https://devdocs.magento.com/cloud/project/ece-tools-update.html) dans notre documentation destinée aux développeurs.
+Exécutez les commandes ci-dessus ou effectuez une mise à niveau vers la dernière version des outils de la CEE (ece-tools: 2002.1.7), qui sera disponible le jeudi 29 juillet. Pour les étapes, reportez-vous à la section [Cloud pour Adobe Commerce > Mise à jour des outils de mise à jour version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) dans notre documentation destinée aux développeurs.
 
 Le correctif complet sera publié dans Adobe Commerce (toutes les méthodes de déploiement) 2.4.4.
 
 ## Lecture connexe
 
-* Github : [2021-07-27 Mise à jour du compositeur Type d’argument incompatible : type requis : int. Type réel : chaîne](https://github.com/magento/magento2/issues/33595)
+* Github : [2021-07-27 Composer update Type d’argument incompatible : type requis : int. Type réel : string](https://github.com/magento/magento2/issues/33595)

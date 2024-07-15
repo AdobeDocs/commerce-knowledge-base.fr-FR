@@ -21,25 +21,25 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.4.4
 
 ## Problème
 
-Lorsque vous utilisez les méthodes de paiement Apple Pay ou Google, les utilisateurs reçoivent l’erreur &quot;*La commande &quot;vault_capture&quot; n’existe pas. Vérifiez la commande et réessayez.*&quot; lors de la création de factures partielles.
+Lors de l’utilisation des méthodes de paiement Apple Pay ou Google Pay, les utilisateurs reçoivent l’erreur &quot;*La commande &quot;vault_capture&quot; n’existe pas. Vérifiez la commande et réessayez.*&quot; lors de la création de factures partielles.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Ouvrez votre site web Adobe Commerce.
 1. Ajoutez un produit simple au panier (quantité 2).
-1. Choisir **Apple Pay** ou **Paiement Google** comme mode de paiement du panier.
+1. Choisissez **Paiement Apple** ou **Paiement Google** comme mode de paiement dans le panier.
 1. Placez la commande.
 1. Ouvrez les détails de la commande à partir du serveur principal.
 1. Créez une facture partielle.
 1. Créez une autre facture pour le montant restant.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Des factures partielles sont créées.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
-La première facture partielle est créée. Lors de la création de la deuxième facture partielle, les utilisateurs reçoivent l’erreur suivante : *La commande &quot;vault_capture&quot; n’existe pas. Vérifiez la commande et réessayez.*.
+La première facture partielle est créée. Lors de la création de la deuxième facture partielle, les utilisateurs reçoivent l’erreur suivante : *La commande ‘vault_capture’ n’existe pas. Vérifiez la commande et réessayez*.
 
 ## Cause
 

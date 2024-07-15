@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Erreurs de déploiement où des correctifs sont introuvables
 
-Cet article fournit une solution au problème lors de la mise à niveau de votre instance. Le déploiement échoue et une erreur s’affiche dans les journaux de déploiement : *Les correctifs suivants sont introuvables : MDVA-XXXXX, ACSD-XXXXX. Vérifiez avec la commande &quot;status&quot; que ces correctifs sont disponibles pour la version actuelle du Magento.*.
+Cet article fournit une solution au problème lors de la mise à niveau de votre instance. Le déploiement échoue et une erreur s’affiche dans les journaux de déploiement : *Les correctifs suivants sont introuvables : MDVA-XXXXX, ACSD-XXXXX. Veuillez vérifier avec la disponibilité de la commande &quot;status&quot; de ces correctifs pour la version actuelle du Magento*.
 
 ## Produits et versions concernés
 
@@ -20,7 +20,7 @@ Cet article fournit une solution au problème lors de la mise à niveau de votre
 
 ## Problème
 
-Vous rencontrez une erreur lors de la mise à niveau d’Adobe Commerce : *Les correctifs suivants sont introuvables*.
+Une erreur se produit lors de la mise à niveau d’Adobe Commerce : *Les correctifs suivants sont introuvables*.
 
 ## Cause
 
@@ -28,7 +28,7 @@ Les correctifs précédemment appliqués pour vos anciennes versions ne sont pas
 
 ## Solution
 
-1. Vérifiez vos `.magento.env.yaml` sous la section QUALITY_PATCH, par exemple,
+1. Vérifiez votre fichier `.magento.env.yaml` sous la section QUALITY_PATCH , par exemple :
 
    ```yaml
    QUALITY_PATCHES:
@@ -36,10 +36,10 @@ Les correctifs précédemment appliqués pour vos anciennes versions ne sont pas
     - ACSD-XXXXX
    ```
 
-1. Recherchez les ID de correctif dans le [Notes de mise à jour sur les correctifs de qualité](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) pour vérifier si chacune d’elles peut être appliquée à la nouvelle version d’Adobe Commerce vers laquelle vous effectuez une mise à niveau.
-1. Si le correctif ne s’applique pas à la nouvelle version d’Adobe Commerce vers laquelle vous souhaitez effectuer la mise à niveau, supprimez l’identifiant du correctif de la page `.magento.env.yaml` fichier .
+1. Recherchez les ID de correctif dans les [Notes de mise à jour des correctifs de qualité](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) pour vérifier si chacun d’eux peut être appliqué à la nouvelle version d’Adobe Commerce vers laquelle vous effectuez une mise à niveau.
+1. Si le correctif ne s’applique pas à la nouvelle version d’Adobe Commerce vers laquelle vous souhaitez effectuer la mise à niveau, supprimez l’ID de correctif du fichier `.magento.env.yaml`.
 1. Une fois que vous avez examiné tous les ID de correctif indiqués par l’erreur, redéployez les modifications et redéployez.
 
 ## Lecture connexe
 
-* [Appliquer les correctifs](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=en#apply-a-patch-in-a-local-environment) dans le guide d’infrastructure de Commerce on Cloud.
+* [Appliquez les correctifs](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=en#apply-a-patch-in-a-local-environment) dans le guide Commerce on Cloud Infrastructure.

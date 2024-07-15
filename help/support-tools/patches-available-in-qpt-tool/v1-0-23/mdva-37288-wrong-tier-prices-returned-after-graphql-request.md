@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-37288 : des prix de niveau incorrect renvoyés après la demande GraphQL
 
-Le correctif de qualité MDVA-37288 pour Adobe Commerce résout le problème en raison duquel les prix de niveau incorrect sont renvoyés après la demande GraphQL. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) v.1.0.23 est installé. Veuillez noter que le problème doit être corrigé dans Adobe Commerce version 2.4.3.
+Le correctif de qualité MDVA-37288 pour Adobe Commerce résout le problème en raison duquel les prix de niveau incorrect sont renvoyés après la demande GraphQL. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) v.1.0.23 est installé. Veuillez noter que le problème doit être corrigé dans Adobe Commerce version 2.4.3.
 
 ## Produits et versions concernés
 
@@ -22,11 +22,11 @@ Le correctif de qualité MDVA-37288 pour Adobe Commerce résout le problème en 
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Ajoutez des prix de niveau à n’importe quel élément (dans cet exemple, les prix de niveau ont été ajoutés aux éléments avec id=1 et id=2).
 1. Exécutez la requête GraphQL avec une recherche qui inclura les articles avec des prix de niveau et ceux sans prix de niveau.
@@ -47,7 +47,7 @@ Le correctif de qualité MDVA-37288 pour Adobe Commerce résout le problème en 
 }
 </code></pre>
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Seuls les articles ayant des prix de niveau doivent renvoyer des prix de niveau appropriés :
 
@@ -91,7 +91,7 @@ Seuls les articles ayant des prix de niveau doivent renvoyer des prix de niveau 
 }
 ```
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 * Tous les éléments qui suivent un élément avec un niveau de prix ont un niveau de prix dans la réponse.
 * Les données de tarification de niveau qu’il renvoie proviennent du dernier article de la boucle qui avait une tarification de niveau.
@@ -179,4 +179,4 @@ Pour en savoir plus sur l’outil de correctifs de qualité dans notre base de c
 * [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)
 * [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
-Pour plus d’informations sur les autres correctifs disponibles dans l’outil QPT, reportez-vous à la section [Correctifs disponibles dans l’outil QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) de notre base de connaissances en matière de soutien.
+Pour plus d’informations sur les autres correctifs disponibles dans l’outil QPT, reportez-vous à la section [Correctifs disponibles dans l’outil QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) de notre base de connaissances de support.

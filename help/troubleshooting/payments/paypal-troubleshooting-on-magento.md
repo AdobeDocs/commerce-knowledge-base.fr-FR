@@ -29,7 +29,7 @@ Assurez-vous d’avoir appliqué les mêmes paramètres et d’avoir activé les
 
 ### Problème de paramètres d’exemple
 
-Lors de l’application de la solution PayPal Express Checkout, les transactions basées sur les réponses AVS/CSC doivent être refusées dans **Gestionnaire PayPal** (Paramètres de service > Configuration > Options de sécurité) et dans **Administration de Commerce** ( **Magasins** > Configuration > **Ventes** > **Modes de paiement** ...)
+Lors de l’application de la solution PayPal Express Checkout, les transactions basées sur les réponses AVS/CSC doivent être refusées dans **PayPal Manager** (Paramètres du service > Configurer > Options de sécurité) et dans **Commerce Admin** ( **Magasins** > Configuration > **Ventes** > **Méthodes de paiement** ....)
 ![magento_paypal_settings_2.4.1.png](assets/magento_paypal_settings_2.4.1.png)
 Pour plus d’informations, consultez la documentation : [PayPal](https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/setup.htm) et [Adobe Commerce](/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout.html) dans notre guide d’utilisation.
 
@@ -41,14 +41,14 @@ Si votre mode de paiement PayPal implique une API avec des accords de facturatio
 
 Reportez-vous aux articles suivants :
 
-* [Demande de rejet de la passerelle PayPal - problème de facture en double](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md) dans notre base de connaissances de soutien.
-* [Modifier l’ID d’incrément de la nouvelle entité de magasin](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) dans notre base de connaissances de soutien.
+* [ La passerelle PayPal a rejeté la demande - problème de facture en double ](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md) dans notre base de connaissances d&#39;assistance.
+* [Modifiez l’ID d’incrément de la nouvelle entité de magasin](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) dans notre base de connaissances de prise en charge.
 
 ## Contacter l’assistance technique pour collecter les logs de paiement avancés
 
 Pour résoudre des problèmes de paiement complexes, l’équipe d’assistance d’Adobe Commerce peut vous demander d’appliquer un correctif dédié afin d’activer la journalisation avancée des paiements. Dans ce cas, vos étapes doivent être les suivantes :
 
-[Envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) avec les détails suivants :
+[Envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) avec les détails suivants :
 
 * Indiquez votre problème avec autant de détails que possible.
 * Liste des étapes que vous avez entreprises à partir de cet article, de la base de connaissances et d’autres ressources. Inclure tous les résultats.
@@ -57,5 +57,5 @@ Pour résoudre des problèmes de paiement complexes, l’équipe d’assistance 
 Si vous recevez le correctif de journalisation de paiement avancée :
 
 * Appliquez le correctif.
-* Collectez les journaux et joignez-les à votre [ticket de support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+* Collectez les journaux et joignez-les à votre [ticket d&#39;assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 * Attendez les recommandations supplémentaires de l’équipe d’assistance d’Adobe Commerce.

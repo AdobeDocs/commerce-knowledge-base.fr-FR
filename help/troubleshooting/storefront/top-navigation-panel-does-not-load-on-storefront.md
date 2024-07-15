@@ -22,20 +22,20 @@ Cet article fournit des solutions de configuration aux problèmes ESI (Varnish E
 
 ## Problème
 
-<u>Conditions préalables</u>:
+<u>Conditions préalables</u> :
 
 Installez et configurez le vernis pour votre boutique Adobe Commerce.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Allez à la vitrine.
 1. Parcourez les pages du magasin.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 L’ensemble du contenu et tous les blocs de page se chargent correctement.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Notez que certains blocs de contenu, comme le panneau de navigation supérieur avec des catégories, ne se chargent pas. L’espace vierge s’affiche à la place.
 
@@ -51,7 +51,7 @@ Les raisons possibles du problème sont les suivantes :
 
 Pour résoudre les problèmes, vous devez effectuer une configuration de vernis supplémentaire et redémarrer Varnish.
 
-1. En tant qu’utilisateur avec `root` , ouvrez votre fichier de configuration de espagnol dans un éditeur de texte. Voir [Modification de la configuration du système Varnish](https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish-configure.html#config-varnish-config-sysvcl) dans notre documentation destinée aux développeurs pour plus d’informations sur l’emplacement de ce fichier pour différents systèmes d’exploitation.
+1. En tant qu’utilisateur disposant de droits `root`, ouvrez votre fichier de configuration de l’espagnol dans un éditeur de texte. Pour plus d’informations sur l’emplacement de ce fichier pour différents systèmes d’exploitation, reportez-vous à la section [Modification de la configuration du système Varnish](https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish-configure.html#config-varnish-config-sysvcl) dans la documentation destinée aux développeurs.
 1. Dans le `DAEMON_OPTS variable`, ajoutez `-p feature=+esi_ignore_https`, `-p  feature=+esi_ignore_other_elements`, `-p  feature=+esi_disable_xml_check`. Cela ressemblerait à ceci :
 
    ```bash
@@ -60,9 +60,9 @@ Pour résoudre les problèmes, vous devez effectuer une configuration de vernis 
 
 1. Enregistrez vos modifications et quittez l’éditeur de texte.
 1. Dans le fichier de configuration VCL, augmentez les en-têtes de réponse en augmentant les valeurs de ces paramètres : `http_resp_hdr_len`, `http_resp_size`, `workspace_backend`. Assurez-vous que les deux dernières ont des valeurs similaires.
-1. Lorsque vous modifiez ce paramètre, vous devez exécuter `service varnish restart` pour que les modifications soient prises en compte.
+1. Lorsque vous modifiez ce paramètre, vous devez exécuter `service varnish restart` pour que les modifications prennent effet.
 
 ## Lecture connexe
 
-* [Configuration du vernis et de votre serveur web](https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish-configure.html#config-varnish-config-sysvcl) dans notre documentation destinée aux développeurs.
-* [Documentation en pointillé](https://varnish-cache.org/docs/5.1/reference/index.html)
+* [Configurez Varnish et votre serveur web](https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish-configure.html#config-varnish-config-sysvcl) dans notre documentation destinée aux développeurs.
+* [ ](https://varnish-cache.org/docs/5.1/reference/index.html)

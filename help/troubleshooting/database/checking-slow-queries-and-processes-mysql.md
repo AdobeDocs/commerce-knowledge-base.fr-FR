@@ -30,7 +30,7 @@ Si une panne a pu être provoquée par une base de données surchargée, ces ét
    grep 'Query_time: [5-9][0-9]\|Query_time: [0-9][0-9][0-9]' /var/log/mysql/mysql-slow.log -A 3
    ```
 
-1. Accédez à <https://www.unixtimestamp.com/> (ou un convertisseur d’horodatage Unix similaire) et insérez l’horodatage de la date d’exécution de la requête lente.
+1. Accédez à <https://www.unixtimestamp.com/> (ou à un convertisseur d’horodatage Unix similaire) et insérez l’horodatage du moment où la requête lente a été exécutée.
 1. Si le temps correspond à une panne de site, elle peut être due à une base de données surchargée. Vérifiez les chargements présents dans la base de données à ce moment-là. Voici quelques exemples de charge :
 
 * Processus cron
@@ -39,13 +39,13 @@ Si une panne a pu être provoquée par une base de données surchargée, ces ét
 * Création de vidages
 
 
-### Analysez les requêtes à l’aide du [!DNL Percona Toolkit] (Adobe Commerce Pro : architecture cloud uniquement)
+### Analysez les requêtes à l’aide de [!DNL Percona Toolkit] (architecture Adobe Commerce Pro : cloud uniquement)
 
-Si votre projet Adobe Commerce est déployé sur l’architecture Pro, vous pouvez utiliser la variable [!DNL Percona Toolkit] pour analyser les requêtes.
+Si votre projet Adobe Commerce est déployé sur l’architecture Pro, vous pouvez utiliser le [!DNL Percona Toolkit] pour analyser les requêtes.
 
-1. Exécutez la variable `pt-query-digest --type=slowlog` par rapport aux journaux de requête lents MySQL.
-   * Pour connaître l’emplacement des journaux de requête lente, voir **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)** dans notre documentation destinée aux développeurs.
-   * Voir [[!DNL Percona Toolkit] > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) la documentation.
+1. Exécutez la commande `pt-query-digest --type=slowlog` sur les journaux de requête lents MySQL.
+   * Pour trouver l’emplacement des journaux de requêtes lentes, voir **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)** dans notre documentation destinée aux développeurs.
+   * Consultez la documentation [[!DNL Percona Toolkit] > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) .
 1. En fonction des problèmes détectés, suivez les étapes pour corriger la requête afin qu’elle s’exécute plus rapidement.
 
 ## Vérification de la &quot;liste des processus&quot; MySQL
@@ -78,7 +78,7 @@ Cela permet d’identifier si le serveur MySQL est actif et s’il n’y a aucun
 
 ## Lecture connexe
 
-* [Syntaxe de la liste de processus MySQL](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) dans dev.mysql.com.
+* [MySQL Show Processlist Syntax](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) dans dev.mysql.com.
 * [Syntaxe de la mort MySQL](https://dev.mysql.com/doc/refman/8.0/en/kill.html) dans dev.mysql.com.
 * [Sécurité, performance et gestion des données](https://devdocs.magento.com/guides/v2.3/ext-best-practices/extension-coding/security-performance-data-bp.html) dans notre documentation destinée aux développeurs.
 * [Aide de MySQL](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/mysql.html) dans notre documentation destinée aux développeurs.

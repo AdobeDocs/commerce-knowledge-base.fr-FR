@@ -40,24 +40,24 @@ peut également s’afficher sur la ligne de commande.
 
 ## Solution {#solution}
 
-Nous vous recommandons [Allouer 2 Go de mémoire à PHP](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) dans notre documentation destinée aux développeurs pour vous assurer que votre installation ou mise à niveau réussit.
+Nous vous recommandons [d’allouer 2 Go de mémoire à PHP](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) dans notre documentation destinée aux développeurs pour vous assurer que votre installation ou mise à niveau réussit.
 
-Si vous avez déjà effectué cette opération, créez un fichier de permutation sur votre ordinateur. Une machine Linux utilise *espace d’échange* s’il a besoin de davantage de ressources mémoire et que la mémoire vive est pleine. L’espace de permutation est utilisé pour les pages inactives en mémoire.
+Si vous avez déjà effectué cette opération, créez un fichier de permutation sur votre ordinateur. Une machine Linux utilise *swap space* si elle a besoin de plus de ressources mémoire et si la RAM est pleine. L’espace de permutation est utilisé pour les pages inactives en mémoire.
 
-Vous trouverez ci-dessous des suggestions uniquement ; d’autres options peuvent être disponibles. Consultez un administrateur réseau ou une autre ressource érudite avant de poursuivre. Vous devez exécuter les commandes pour créer un fichier de permutation en tant qu’utilisateur avec `root` des privilèges.
+Vous trouverez ci-dessous des suggestions uniquement ; d’autres options peuvent être disponibles. Consultez un administrateur réseau ou une autre ressource érudite avant de poursuivre. Vous devez exécuter les commandes pour créer un fichier de permutation en tant qu’utilisateur disposant des privilèges `root`.
 
 ### Permuter le fichier sur Ubuntu {#swap-file-on-ubuntu}
 
-Utilisez la variable `fallocate` comme décrit dans ces références :
+Utilisez la commande `fallocate` comme décrit dans ces références :
 
-* [Comment ajouter l’échange sur Ubuntu 14.04 (Digitalsea)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
+* [Comment ajouter un permutation sur Ubuntu 14.04 (Digitalsea)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
 * [Comment ajouter un espace de permutation sur Ubuntu 16.04 (Digitalsea)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04)
 * [SwapFaq (help.ubuntu.com)](https://help.ubuntu.com/community/SwapFaq)
 
 ### Permutation de fichier sur CentOS {#swap-file-on-centos}
 
-Utilisez la variable `mkswap` comme décrit dans ces références :
+Utilisez la commande `mkswap` comme décrit dans ces références :
 
 * [Comment ajouter une permutation sur CentOS 6 (Digitalsea)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-6)
 * [Comment ajouter une permutation sur CentOS 7 (Digitalsea)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-7)
-* [Swap Space (portail client RedHat)](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-swapspace.html)
+* [Swap Space (RedHat customer portal)](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-swapspace.html)

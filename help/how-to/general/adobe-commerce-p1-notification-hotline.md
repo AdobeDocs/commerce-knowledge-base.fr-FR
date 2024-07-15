@@ -16,12 +16,12 @@ Cet article fournit les numéros de hotline de notification P1 pour Adobe Commer
 
 ## Définition d’un incident P1
 
-Comme défini dans [Conditions d’utilisation des services d’assistance Adobe Commerce](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf): &quot;Un incident P1 est un incident de production catastrophique au sein du service qui affecte gravement le site du client, entraînant l’arrêt du fonctionnement ou de l’acceptation des commandes du site, ou en raison duquel le site du client est complètement hors service ou ne fonctionne pas, ou qui entraîne une perte de données de production et l’absence de solution de contournement. Les incidents P1 doivent être signalés sur le numéro de téléphone P1 gratuit de l&#39;Adobe afin d&#39;accélérer la résolution. L&#39;Adobe fera tout son possible, en s&#39;adressant aux cadres supérieurs, pour régler un incident P1 dès que cela sera raisonnable sur le plan commercial.&quot;
+Comme défini dans [Conditions d’utilisation des services d’assistance Adobe Commerce](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf) : &quot;Un incident P1 est un incident de production catastrophique au sein du service qui affecte gravement le site du client, entraînant l’arrêt du fonctionnement ou de l’acceptation des commandes du site, ou en raison duquel le site du client est complètement hors service ou ne fonctionne pas, ou qui entraîne une perte de données de production et aucune solution de contournement n’existe. Les incidents P1 doivent être signalés sur le numéro de téléphone P1 gratuit de l&#39;Adobe afin d&#39;accélérer la résolution. L&#39;Adobe fera tout son possible, en s&#39;adressant aux cadres supérieurs, pour régler un incident P1 dès que cela sera raisonnable sur le plan commercial.&quot;
 
 ## Stratégies de téléphone hotline de notification P1
 
 * La hotline de notification P1 est disponible pour signaler les problèmes de niveau P1. (voir la définition de l’incident P1 dans la section précédente).
-* [Envoyer un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) avant d’appeler la hotline de notification Adobe Commerce P1.
+* [Envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) avant d’appeler la hotline de notification Adobe Commerce P1.
 * L’enquête, le dépannage et la communication auront lieu exclusivement dans le ticket d’assistance.
 * Ajoutez toutes les informations supplémentaires relatives au problème directement au ticket, avant d’appeler.
 * Lors de l’appel, veillez à disposer du numéro de ticket.

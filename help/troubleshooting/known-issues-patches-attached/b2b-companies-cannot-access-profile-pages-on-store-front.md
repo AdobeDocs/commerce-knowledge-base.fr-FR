@@ -17,7 +17,7 @@ Cet article fournit un correctif pour le problème connu d’Adobe Commerce 2.2.
 
 ## Problème
 
-Les clients (entreprises) peuvent créer un compte d’entreprise sur le site, mais obtiennent la variable *&quot;Aucune entité de ce type avec customerId = &quot;* et *&quot;Vous n&#39;avez pas encore de compte d&#39;entreprise&quot;* messages d’erreur. Ils peuvent également obtenir la variable *&quot;Erreur interne 500 du serveur&quot;* lors de la tentative d’accès à la page Profil de l’entreprise.
+Les clients (entreprises) peuvent créer un compte de société sur le site, mais obtiennent les messages d’erreur *&quot;Aucune entité de ce type avec customerId = &quot;* et *&quot;Vous n’avez pas encore de compte de société&quot;*. Ils peuvent également obtenir l’ *&quot;500 Internal Server Error&quot;* lors de la tentative d’accès à la page de profil de la société.
 
 ## Correctif
 

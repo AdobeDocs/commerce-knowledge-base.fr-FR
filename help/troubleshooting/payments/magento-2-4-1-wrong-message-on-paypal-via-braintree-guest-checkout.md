@@ -24,20 +24,20 @@ Cet article décrit un problème connu d’Adobe Commerce 2.4.1, en raison duque
 
 Une erreur non spécifique s’affiche lorsque le passage en caisse des invités est désactivé depuis le serveur principal et que l’option de paiement par le Braintree PayPal est sélectionnée dans le mini-panier ou le panier.
 
-<u>Conditions préalables</u>:
+<u>Conditions préalables</u> :
 
-1. Dans l’administrateur Commerce, sous **Magasins** > **Configuration** > **Ventes** > **Passage en caisse**, définit **Autoriser le passage en caisse des invités** = *Non*.
-1. Activez PayPal via le Braintree, comme décrit dans la section [Braintree](https://docs.magento.com/user-guide/payment/braintree.html?) dans notre guide d’utilisation.
+1. Dans l’administrateur Commerce, sous **Magasins** > **Configuration** > **Ventes** > **Passage en caisse**, définissez **Autoriser le passage en caisse des invités** = *Non*.
+1. Activez PayPal via Braintree comme décrit dans le [Braintree](https://docs.magento.com/user-guide/payment/braintree.html?) de notre guide d’utilisation.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Ajoutez un produit au panier en tant qu’invité.
-1. Sélectionner **Mini-panier** et cliquez sur **Payer avec PayPal**.
+1. Sélectionnez **Mini-cart** et cliquez sur **Payer avec PayPal**.
 1. Effectuez le passage en caisse de Paypal, puis accédez à la page de vérification des commandes.
-1. Sélectionner **Méthode d’expédition**.
+1. Sélectionnez **Méthode d’expédition**.
 1. Cliquez sur **Passer commande**.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Lorsqu’un client clique sur le bouton PayPal sur la page Mini-panier ou Panier, le message suivant doit s’afficher au client :
 
@@ -47,7 +47,7 @@ Si vous activez la fonctionnalité Paypal direct sans utiliser Braintree, ce sc�
 
 <pre><code class="language-bash">To check out, please sign in with your email address.</code></pre>
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Le client est redirigé vers la page Panier et le message suivant s’affiche :
 
@@ -59,6 +59,6 @@ La solution à ce problème est que le client peut se connecter à un magasin (l
 
 ## Lecture connexe
 
-* [Bonne pratique pour le nombre de produits dans le panier dans Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) dans notre base de connaissances de soutien.
-* [Tutoriel sur le traitement des commandes : Étape 1. Ajouter des éléments au panier](https://devdocs.magento.com/guides/v2.4/rest/tutorials/orders/order-add-items.html) dans notre documentation destinée aux développeurs
-* [Tutoriel sur le passage en caisse GraphQL : Étape 1. Ajout de produits au panier](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-add-product-to-cart.html) dans notre documentation destinée aux développeurs
+* [Bonne pratique pour le nombre de produits dans le panier dans Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) dans notre base de connaissances d’assistance.
+* [Tutoriel sur le traitement des commandes : Étape 1. Ajoutez des éléments au panier ](https://devdocs.magento.com/guides/v2.4/rest/tutorials/orders/order-add-items.html) dans notre documentation destinée aux développeurs.
+* [Tutoriel de passage en caisse GraphQL : Étape 1. Ajout de produits au panier ](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-add-product-to-cart.html) dans notre documentation destinée aux développeurs

@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Création dans Markdown
 
-En règle générale, nous utilisons [Guide de style de syntaxe Adobe Experience League Markdown](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en), mais il existe des différences et des exceptions. En outre, certaines balises de HTML sont requises dans certains cas.
+En règle générale, nous utilisons le [Guide de style de syntaxe Adobe Experience League Markdown](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en), mais il existe des différences et des exceptions. Certaines balises d’HTML sont également requises dans certains cas.
 
 Vous trouverez ci-dessous des exemples de mise en forme Markdown qui est le plus souvent utilisée dans notre référentiel.
 
@@ -23,11 +23,11 @@ Pour mettre le texte en italique, utilisez un seul astérisque :
 
 `This text will be *italics*`
 
-Pour mettre en forme le texte comme souligné, utilisez la méthode `<ins>` tag :
+Pour mettre en forme le texte comme souligné, utilisez la balise `<ins>` :
 
 `<ins>This text will be underlined</ins>`
 
-Pour ajouter un saut de ligne, utilisez la méthode `<br>` Balise de HTML.
+Pour ajouter un saut de ligne, utilisez la balise d&#39;HTML `<br>`.
 
 
 ## En-têtes
@@ -54,8 +54,11 @@ Pour insérer un bloc de code, placez le bloc de code dans une triple apostrophe
 
 \`\`\` sql
 
-SELECT TABLE_NAME AS `Table`, ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024) AS `Size (MB)`
-DEPUIS information_schema.TABLES OÙ TABLE_SCHEMA = &quot;%project_id%&quot; ORDER BY (DATA_LENGTH + INDEX_LENGTH) DESC;
+SELECT TABLE_NAME AS `Table`,
+ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024) AS `Size (MB)`
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = &quot;%project_id%&quot;
+ORDER BY (DATA_LENGTH + INDEX_LENGTH) DESC;
 
 \`\`
 
@@ -73,7 +76,7 @@ Selon nos règles de liaison, vous devez toujours spécifier une langue pour le 
 
 Pour obtenir la liste des langues prises en charge, consultez https://github.com/github/linguist/blob/master/lib/linguist/languages.yml.
 
-Si la mise en surbrillance ne fonctionne pas pour une certaine langue dans Markdown (c’est-à-dire si la langue n’est pas prise en charge), pour la mettre au moins en surbrillance lors de sa publication sur https://support.magento.com/hc/en-us/, utilisez le HTML suivant :
+Si la mise en surbrillance ne fonctionne pas pour une certaine langue dans Markdown (c’est-à-dire si la langue n’est pas prise en charge), pour la mettre au moins en surbrillance lors de sa publication sur https://support.magento.com/hc/en-us/, utilisez l’HTML suivant :
 
 ```html
 <pre><code class="language-%language-code%"
@@ -81,7 +84,7 @@ your code here
 </pre></code>
 ```
 
-Où ``%language-code%`` sont les codes définis par [Langues prises en charge par Prism.js](https://prismjs.com/#supported-languages).
+Où ``%language-code%`` sont les codes définis par les [langues prises en charge par Prism.js](https://prismjs.com/#supported-languages).
 
 ## Listes
 
@@ -130,13 +133,13 @@ Les liens externes sont simples :
 
 Tout type de pièce jointe doit être au format .png, .jpg et .jpeg. Pour des raisons de sécurité, nous acceptons uniquement les pièces jointes qui se présentent dans l’un des trois formats.
 
-Pour insérer une image, placez-la sur *ressources* sous-dossier dans le même dossier de section que l’article, et utilisez la syntaxe suivante pour insérer l’image dans votre article :
+Pour insérer une image, placez l’image dans le sous-dossier *assets* du même dossier de section que l’article, puis utilisez la syntaxe suivante pour insérer l’image dans votre article :
 
 ```markdown
 ![alt text](assets/image.png)
 ```
 
-Si vous souhaitez personnaliser la taille de votre image, vous devez le faire à l’aide de la balise de HTML suivante :
+Si vous souhaitez personnaliser la taille de votre image, vous devez le faire à l’aide de la balise d’HTML suivante :
 
 ```html
 <img src = "assets/image.png" alt = "your alt text" width="custom width, ex: 250px">
@@ -162,17 +165,17 @@ Voici un lien vers cet en-tête :
 [this is link to the anchor in the same article](#this-is-header)
 ```
 
-Si vous devez référencer un élément autre que l’en-tête, utilisez le HTML pour définir l’élément à ajouter. [attribut id](https://www.w3schools.com/html/html_id.asp). Vous pouvez ensuite utiliser Markdown ou HTML pour référencer cet identifiant.
+Si vous devez référencer un élément autre que l’en-tête, utilisez HTML pour définir l’élément à ajouter et utilisez l’ [attribut id](https://www.w3schools.com/html/html_id.asp). Vous pouvez ensuite utiliser Markdown ou HTML pour référencer cet identifiant.
 
 ### Liens et liens relatifs vers d’autres articles
 
-N’utilisez pas de liens relatifs pour faire référence aux articles de notre base de connaissances d’assistance. Ces liens ne fonctionneront pas lorsque votre article sera publié dans la variable [Centre d’aide Adobe Commerce](https://support.magento.com/hc/en-us).
-Utilisez des liens hypertexte complets de la [Centre d’aide Adobe Commerce](https://support.magento.com/hc/en-us).
+N’utilisez pas de liens relatifs pour faire référence aux articles de notre base de connaissances d’assistance. Ces liens ne fonctionneront pas lorsque votre article sera publié dans le [centre d’aide Adobe Commerce](https://support.magento.com/hc/en-us).
+Veuillez utiliser des liens hypertexte complets à partir du [Centre d’aide Adobe Commerce](https://support.magento.com/hc/en-us).
 
 
 ## Tableaux
 
-Utilisation [Formatage des HTMLs pour les tableaux](https://www.w3schools.com/html/html_tables.asp).
+Utilisez [HTML formatage pour les tableaux](https://www.w3schools.com/html/html_tables.asp).
 
 
 ## Avertissements et blocs d’informations

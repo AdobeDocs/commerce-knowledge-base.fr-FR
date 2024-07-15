@@ -18,7 +18,7 @@ Les chiffres d&#39;un rapport donné semblent-ils inexacts ? Des valeurs NULL in
 * [Liste de contrôle de diagnostic des incohérences de données](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
 * [Utilisation d’exportations pour identifier les incohérences de données](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-Nous vous recommandons également de vous assurer que la variable [méthodes de réplication](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-replication-methods.html) et [révérifications](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-data-rechecks.html) ont été définis pour les tables et les colonnes impliquées dans l’incohérence. Notez que vous avez besoin d’autorisations d’administrateur pour accéder à la méthode de réplication et vérifier les informations.
+Nous vous recommandons également de vous assurer que les [méthodes de réplication](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-replication-methods.html) et [rechecks](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-data-rechecks.html) corrects ont été définis pour les tables et les colonnes impliquées dans l’incohérence. Notez que vous avez besoin d’autorisations d’administrateur pour accéder à la méthode de réplication et vérifier les informations.
 
 ## J&#39;ai encore besoin d&#39;aide !
 
@@ -32,4 +32,4 @@ Si le rapport est toujours inexact, ne vous inquiétez pas : notre équipe de su
 ## Lecture connexe
 
 * [Colonnes calculées](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
-* [Modifications des bases de données structurelles](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html)
+* [ Modifications de la base de données structurelle](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html)

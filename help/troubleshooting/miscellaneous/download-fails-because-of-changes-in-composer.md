@@ -52,5 +52,5 @@ Pour contourner ce problème :
    * Mise à niveau du compositeur vers une version ultérieure au 26 novembre 2015 : `composer self-update`.
 
 1. Supprimez votre répertoire Adobe Commerce et vos sous-répertoires.
-1. Essayez à nouveau le téléchargement à l’aide de l’une des méthodes suivantes : `[composer create-project](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html)` ou `[git clone](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/dev_install.html)`.
+1. Essayez à nouveau le téléchargement en utilisant `[composer create-project](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html)` ou `[git clone](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/dev_install.html)`.
 1. Après avoir téléchargé le logiciel Adobe Commerce, mettez à jour le compositeur : `composer self-update`.

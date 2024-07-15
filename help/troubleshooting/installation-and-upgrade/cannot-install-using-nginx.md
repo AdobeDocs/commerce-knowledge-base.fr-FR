@@ -21,7 +21,7 @@ Si vous utilisez le serveur web nginx et que vous tentez d’installer le logici
 
 ## Solution
 
-Vous pouvez confirmer le problème en affichant l’erreur suivante dans la variable `var/report` directory:
+Vous pouvez confirmer le problème par l’erreur suivante dans le répertoire `var/report` :
 
 ```php
 NOTE: You cannot install Adobe Commerce using the Setup Wizard because the Adobe Commerce setup directory cannot be accessed.
@@ -31,4 +31,4 @@ If you are using the sample nginx configuration, please go to http://ce.mtf03.bc
 
 ### Solution
 
-Installez le logiciel Adobe Commerce à l’aide du [ligne de commande](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli.html).
+Installez le logiciel Adobe Commerce à l&#39;aide de la [ligne de commande](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli.html).

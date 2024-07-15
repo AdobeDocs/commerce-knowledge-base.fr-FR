@@ -29,12 +29,12 @@ Lorsque vous passez une commande en utilisant le mode de paiement paiement paiem
 
 1. Au niveau du magasin, ajoutez n’importe quel produit au panier (produit A, prix de 50 $).
 1. Cliquez sur le lien du panier pour ouvrir le panier.
-1. Cliquez sur le bouton **Passage en caisse PayPal** bouton .
+1. Cliquez sur le bouton **PayPal Checkout** .
 1. Utilisez vos informations d’identification PayPal pour vous connecter à PayPal et envoyer le paiement.
 1. Terminez le placement de la commande côté magasin.
 1. Revenez au catalogue et ajoutez un autre produit (produit B, prix 100 $) au panier.
 1. Cliquez sur le lien du panier pour ouvrir le panier.
-1. Cliquez sur le bouton **Passage en caisse PayPal** bouton .
+1. Cliquez sur le bouton **PayPal Checkout** .
 
 <u>Résultat réel :</u>
 

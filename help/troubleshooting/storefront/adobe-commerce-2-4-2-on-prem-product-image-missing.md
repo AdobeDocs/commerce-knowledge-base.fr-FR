@@ -21,21 +21,21 @@ Cet article décrit un problème connu d’Adobe Commerce sur site 2.4.2, en rai
 
 ## Problème
 
-L’image du produit est enregistrée dans la variable `s3` , mais il n’est pas resynchronisé sur la variable `pub/media` répertoire . Ce problème survient uniquement lors de l’utilisation des deux :
+L’image du produit est enregistrée dans le compartiment `s3`, mais elle n’est pas resynchronisée dans le répertoire `pub/media`. Ce problème survient uniquement lors de l’utilisation des deux :
 
 * Nginx activé par le site pour redimensionner les images
 * AWS `s3` en tant que stockage multimédia
 
-<u>Conditions préalables</u>:
+<u>Conditions préalables</u> :
 
 Adobe Commerce installé avec Nginx.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Configurer Adobe Commerce pour utiliser AWS `s3` en tant que stockage multimédia.
-1. Configurez Nginx à l’aide de la fonction `nginx.conf.sample` fichier de configuration fourni dans le répertoire d’installation d’Adobe Commerce et un hôte virtuel Nginx. Voir [Configuration de Nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html#configure-nginx-ubuntu) dans notre documentation destinée aux développeurs.
+1. Configurez Adobe Commerce pour utiliser AWS `s3` comme stockage multimédia.
+1. Configurez Nginx à l’aide du fichier de configuration `nginx.conf.sample` fourni dans le répertoire d’installation d’Adobe Commerce et d’un hôte virtuel Nginx. Voir [Configuration de Nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html#configure-nginx-ubuntu) dans notre documentation destinée aux développeurs.
 1. Créez un produit simple avec une image de produit.
-1. Nginx dispose d’une configuration non commentée pour le redimensionnement d’image dans `nginx.conf.sample` similaire à ceci :
+1. Nginx possède une configuration non commentée pour le redimensionnement d’image dans `nginx.conf.sample` similaire à celle-ci :
 
 ```conf
 load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
@@ -54,11 +54,11 @@ location /media/ {
     }
 ```
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 L’image du produit est téléchargée sur la page du produit.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 L’image du produit n’est pas téléchargée sur la page du produit.
 

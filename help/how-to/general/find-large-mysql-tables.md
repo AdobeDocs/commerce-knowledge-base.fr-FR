@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Recherche de tables MySQL volumineuses
 
-Pour identifier les grandes tables, connectez-vous à la base de données comme décrit dans la section [Connexion à la base de données](https://devdocs.magento.com/cloud/project/project-conf-files_services-mysql.html#connect-to-the-database) et exécutez la commande suivante, où `project_id` correspond à votre ID de projet Cloud :
+Pour identifier les tables volumineuses, connectez-vous à la base de données comme décrit dans l’article [Se connecter à la base de données](https://devdocs.magento.com/cloud/project/project-conf-files_services-mysql.html#connect-to-the-database) et exécutez la commande suivante, où `project_id` est votre ID de projet Cloud :
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

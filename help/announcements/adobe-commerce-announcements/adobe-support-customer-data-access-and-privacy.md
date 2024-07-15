@@ -21,12 +21,12 @@ L’assistance technique d’Adobe peut nécessiter l’accès à vos données l
 
 Pour autoriser l’accès :
 
-1. [Connexion](https://account.magento.com/customer/account/login) en tant que support, ayant le droit d’utiliser l’utilisateur principal.
-1. Sur le **[!UICONTROL My Account]** page > **[!UICONTROL Account Settings]**, assurez-vous que vous avez terminé la [profil de compte](https://account.magento.com/customer/account/edit) et cliquez sur **[!UICONTROL Save]**.
-1. Sur le **[!UICONTROL My Account]** page > **[!UICONTROL Account Settings]** > **[!UICONTROL Privacy Settings]**. Vous verrez un formulaire de consentement pour accorder au personnel du support technique d’Adobe l’accès à vos données.
-1. Après avoir consulté les informations sur les paramètres de confidentialité, choisissez de cocher la case en regard de **J’autorise l’accès à mes données pour la durée suivante :**.
+1. [Connectez-vous à ](https://account.magento.com/customer/account/login) en tant que support autorisé pour l’utilisateur principal.
+1. Sur la page **[!UICONTROL My Account]** > **[!UICONTROL Account Settings]**, vérifiez que vous avez terminé votre [profil de compte](https://account.magento.com/customer/account/edit) et cliquez sur **[!UICONTROL Save]**.
+1. Sur la page **[!UICONTROL My Account]** > **[!UICONTROL Account Settings]** > **[!UICONTROL Privacy Settings]**. Vous verrez un formulaire de consentement pour accorder au personnel du support technique d’Adobe l’accès à vos données.
+1. Après avoir consulté les informations sur les paramètres de confidentialité, choisissez de cocher la case en regard de **J’autorise l’accès à mes données pendant la durée suivante :**.
 1. Dans la liste déroulante Durée , sélectionnez la période pendant laquelle vous souhaitez que le personnel de support technique Adobe ait accès aux données de vos clients. Vous pouvez sélectionner 7 jours, 30 jours, un an ou indéfiniment.
-1. Cliquez sur **[!UICONTROL Save]**. Les dates de début et de fin sont alors mises à jour au bas de la page sous **Vous avez donné votre consentement pour la durée suivante :** (capture d’écran). Une fois le consentement accordé, l’utilisateur principal autorisé aura la possibilité de retirer le consentement en bas de l’écran.
+1. Cliquez sur **[!UICONTROL Save]**. La date de début et de fin est alors mise à jour au bas de la page sous **Vous avez donné votre consentement pour la durée suivante** (capture d’écran). Une fois le consentement accordé, l’utilisateur principal autorisé aura la possibilité de retirer le consentement en bas de l’écran.
    ![magento-account-privacy-settings.png](assets/magento-account-privacy-settings.png)
 
-Cliquez sur **Retirer le consentement** à tout moment pour retirer votre consentement pour que le personnel du service Adobe ait accès à vos données.
+Vous pouvez cliquer à tout moment sur **Retirer le consentement** pour retirer votre consentement pour que le personnel de support d’Adobe ait accès à vos données.

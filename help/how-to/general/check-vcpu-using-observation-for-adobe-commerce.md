@@ -25,15 +25,15 @@ Pour accéder à l’horodatage d’observation New Relic pour Adobe Commerce et
 1. Sur la page d’accueil de New Relic, cliquez sur **Applications**.
 1. Cliquez sur **Observation pour Adobe Commerce**.
 1. Le point d’entrée Observation pour Adobe Commerce s’ouvre.
-1. Cliquez sur le bouton **Sélection d’un compte** et sélectionnez un compte.
+1. Cliquez sur la liste déroulante **Sélectionner un compte** et sélectionnez un compte.
 1. Vous pouvez renseigner l’ID de projet, le numéro de compte ou le nom du compte New Relic, ou parcourir la liste des comptes.
 1. Cliquez sur le menu déroulant bleu clair avec l’icône d’horloge (en haut à droite de la fenêtre du sélecteur de couches).
 1. Si vous essayez d’identifier la cause d’un événement/problème, sélectionnez une heure avant la date et l’heure du ticket pour voir s’il y avait eu des événements/données précédents. Vous pouvez utiliser les périodes prédéfinies ou définir une période personnalisée en sélectionnant **Définir personnalisé**.
-1. Cliquez sur les onglets. **infrarouge**. Il existe trois graphiques de niveau vCPU :
-   * Le premier graphique affiche **Vue au niveau du processeur sur la chronologie SUPÉRIEURE à 2 semaines (vous devrez sélectionner une chronologie SUPÉRIEURE à 2 semaines). REMARQUE : Le taux d’échantillonnage sera par jour. Si la grappe se met à niveau/réduit sur une journée, la taille du niveau de fin s’affiche le jour suivant.**.
-   * Le deuxième graphique affiche **Vue au niveau du processeur sur la chronologie (vous devez sélectionner une chronologie SUPÉRIEURE à 24 heures, mais ne dépassant pas 2 semaines)**.
-   * Le troisième graphique affiche la variable **Vue de niveau vCPU sur la chronologie PAR NODE, doit examiner la chronologie MOINS de 24 heures**.
+1. Sur les onglets, cliquez sur **infrara**. Il existe trois graphiques de niveau vCPU :
+   * Le premier graphique affiche une **vue de niveau CPU sur une chronologie SUPÉRIEURE 2 semaines (vous devez sélectionner une chronologie SUPÉRIEURE À 2 semaines). REMARQUE : Le taux d’échantillonnage sera par jour. Si des mises à niveau/réductions de cluster se produisent un jour, la taille du niveau de fin s’affiche le jour suivant**.
+   * Le deuxième graphique affiche la **vue de niveau processeur sur la chronologie (nécessité de sélectionner une chronologie SUPÉRIEURE à 24 heures mais pas supérieure à 2 semaines)**.
+   * Le troisième graphique montre la vue de niveau **vCPU sur la chronologie PAR NODE, doit examiner la chronologie MOINS de 24 heures**.
 
 ## Lecture connexe
 
-* [Présentation de l’observation pour Adobe Commerce](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md) dans notre base de connaissances de soutien.
+* [Présentation de l’observation pour Adobe Commerce](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md) dans notre base de connaissances d’assistance.

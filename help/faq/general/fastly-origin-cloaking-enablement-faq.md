@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Fastly] FAQ sur l’activation du verrouillage d’origine"
-description: Cette FAQ présente les questions courantes relatives à [!DNL Fastly] activation du cloaking d’origine dans Adobe Commerce (mise en oeuvre complète depuis 2021).
+title: "[!DNL Fastly] FAQ sur l’activation du cloaking d’origine"
+description: Cette FAQ aborde les questions courantes concernant l’activation du cloaking d’origine  [!DNL Fastly] dans Adobe Commerce (mise en oeuvre complète depuis 2021).
 exl-id: d608abe7-7d64-44ce-bea1-34b201c29113
 source-git-commit: 1021a1ab81481f92e850bd49330f1742fe9a21f2
 workflow-type: tm+mt
@@ -9,17 +9,17 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Fastly] FAQ sur l’activation du verrouillage d’origine
+# [!DNL Fastly] FAQ sur l’activation du cloaking d’origine
 
-Cette FAQ présente les questions courantes relatives à [!DNL Fastly] activation du cloaking d’origine dans Adobe Commerce (mise en oeuvre complète depuis 2021).
+Cette FAQ aborde les questions courantes concernant l’activation du cloaking d’origine [!DNL Fastly] dans Adobe Commerce (mise en oeuvre complète depuis 2021).
 
-## Présentation [!DNL Fastly] les cloaking d&#39;origine ?
+## Qu’est-ce que le cloaking d’origine [!DNL Fastly] ?
 
-Le cloaking d’origine est une fonctionnalité de sécurité qui permet à Adobe Commerce sur l’infrastructure cloud de bloquer tout type de [!DNL non-Fastly] trafic (pour empêcher les attaques DDoS, en allant à l’infrastructure cloud (origine).
+Le cloaking d’origine est une fonctionnalité de sécurité qui permet à Adobe Commerce sur l’infrastructure cloud de bloquer tout trafic [!DNL non-Fastly] (pour empêcher les attaques DDoS, d’accéder à l’infrastructure cloud (origine).
 
 ## Quels sont les avantages du cloaking d’origine ?
 
-Le masquage des origines est conçu pour empêcher le trafic de contourner la variable [!DNL Fastly Web Application Firewall] (WAF) et le routage via le flux strictement défini de **[!DNL Fastly]** > **Équilibreur de charge** > **Instances**. Avec cette mise en oeuvre, tout le trafic est garanti par la variable [!DNL Fastly] WAF ainsi que le WAF interne intégré dans l’équilibreur de charge.
+Le cloaking d’origine est conçu pour empêcher le trafic de contourner le [!DNL Fastly Web Application Firewall] (WAF) et de le router à travers le flux strictement défini de **[!DNL Fastly]** > **équilibreur de charge** > **Instances**. Avec cette implémentation, tout le trafic est garanti via le WAF [!DNL Fastly] ainsi que le WAF interne intégré dans l’équilibreur de charge.
 
 ## Pourquoi cette activation du bouchon d’origine se produit-elle ?
 
@@ -55,7 +55,7 @@ mcstaging2.mywebsite.com.c.abcdefghijkl.dev.ent.magento.cloud
 mcstagingX.mywebsite.com.c.abcdefghijkl.X.dev.ent.magento.cloud
 ```
 
-Dans cet exemple, le client pourra toujours accéder à l’API s’il change l’URL en ``mywebsite.com``:
+Dans cet exemple, le client pourra toujours accéder à l’API s’il change l’URL en ``mywebsite.com`` :
 
 ```php
 mywebsite.com/rest/default/V1/integration/admin/token?username=XXXX&password=XXXXX;
@@ -66,7 +66,7 @@ mywebsite.com/rest/default/V1/inventory/source-items
 
 ## Ce changement aura-t-il une incidence sur le déploiement et les temps d’arrêt ?
 
-Non, cette modification va **NOT** impacter le déploiement et les temps d’arrêt.
+Non, cette modification aura un impact **NOT** sur le déploiement et le temps d’arrêt.
 
 ## Si le projet comporte plusieurs environnements d’évaluation, le bouclier d’origine sera-t-il appliqué à tous les environnements d’évaluation ?
 

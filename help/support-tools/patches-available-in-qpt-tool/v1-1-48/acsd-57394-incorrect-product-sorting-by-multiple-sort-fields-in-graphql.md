@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-57394 : tri incorrect des produits selon plusieurs attributs de tri dans [!DNL GraphQL]'
+title: 'ACSD-57394 : Tri incorrect des produits selon plusieurs attributs de tri dans [!DNL GraphQL]'
 description: Appliquez le correctif ACSD-57394 pour résoudre le problème Adobe Commerce en raison duquel les produits sont incorrectement triés lors de l’utilisation de plusieurs attributs de tri dans [!DNL GraphQL].
 feature: GraphQL, Products
 role: Admin, Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-57394 : Tri incorrect des produits selon plusieurs attributs de tri dans [!DNL GraphQL]
 
-Le correctif ACSD-57394 corrige le problème de tri incorrect des produits lors de l’utilisation de plusieurs attributs de tri dans [!DNL GraphQL]. Ce correctif est disponible lorsque la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.48 est installée. L’ID de correctif est ACSD-57394. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.5.0.
+Le correctif ACSD-57394 corrige le problème de tri incorrect des produits lors de l’utilisation de plusieurs attributs de tri dans [!DNL GraphQL]. Ce correctif est disponible lorsque [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.48 est installé. L’ID de correctif est ACSD-57394. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.5.0.
 
 ## Produits et versions concernés
 
@@ -27,17 +27,17 @@ Le correctif ACSD-57394 corrige le problème de tri incorrect des produits lors 
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 Les produits sont incorrectement triés lors de l’utilisation de plusieurs attributs de tri dans [!DNL GraphQL].
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Créez quelques produits avec des prix et des noms différents.
 1. Créez une catégorie et affectez-lui les produits créés.
-1. Envoyer un [!DNL GraphQL] requête de produits pour la catégorie créée avec quelques *sort* attributs. Par exemple :
+1. Envoyez une requête de produits [!DNL GraphQL] pour la catégorie créée avec quelques attributs *sort* . Par exemple :
 
    ```
    {
@@ -78,13 +78,13 @@ Les produits sont incorrectement triés lors de l’utilisation de plusieurs att
     }
    ```
 
-1. Vérifier la réponse après la création *sort* attributs.
+1. Vérifiez la réponse après avoir créé les attributs *sort* .
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Les produits doivent être renvoyés dans le bon ordre. Le tri des produits selon plusieurs attributs doit fonctionner.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Les produits ne sont pas renvoyés dans le bon ordre. Le tri des produits selon plusieurs attributs ne fonctionne pas.
 
@@ -92,15 +92,15 @@ Les produits ne sont pas renvoyés dans le bon ordre. Le tri des produits selon 
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le [!DNL Quality Patches Tool] guide.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce en utilisant  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le [!DNL Quality Patches Tool] guide.
+Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].
 

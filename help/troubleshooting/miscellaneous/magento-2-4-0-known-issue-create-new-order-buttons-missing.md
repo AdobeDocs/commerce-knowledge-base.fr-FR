@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Problème connu d’Adobe Commerce 2.4.0 : absence des boutons Créer un ordre
 
-Cet article fournit une solution à un problème connu dans l’administration de Commerce pour deux boutons manquants sur la page de création de commande. Lors de la création d’une commande pour un nouveau client ou un client existant, il n’est pas possible d’ajouter des produits à la commande à partir du catalogue depuis la variable **Ajout de produits par SKU** et **Ajouter des produits** les boutons sont manquants. Cela est dû à l’activation du regroupement JS. Un correctif sera disponible dans Adobe Commerce 2.4.1.
+Cet article fournit une solution à un problème connu dans l’administration de Commerce pour deux boutons manquants sur la page de création de commande. Lors de la création d’une nouvelle commande pour un nouveau client ou un client existant, il n’est pas possible d’ajouter des produits à la commande à partir du catalogue puisque les boutons **Ajouter des produits par SKU** et **Ajouter des produits** sont manquants. Cela est dû à l’activation du regroupement JS. Un correctif sera disponible dans Adobe Commerce 2.4.1.
 
 ## Produits et versions concernés
 
@@ -24,17 +24,17 @@ Cet article fournit une solution à un problème connu dans l’administration d
 
 <u>Étapes à reproduire</u>
 
-1. Accédez à **Clients > Tous les clients**.
-1. Cliquez sur le bouton **Modifier** lien sur un client.
-1. Cliquez sur le bouton **Créer une commande** bouton .
+1. Accédez à **Clients > Tous les Clients**.
+1. Cliquez sur le lien **Modifier** sur un client.
+1. Cliquez sur le bouton **Créer une commande** .
 
 <u>Résultat attendu</u>
 
-La variable **Ajout de produits par SKU** et **Ajouter des produits** des boutons **Créer une commande** page.
+Les boutons **Ajouter des produits par SKU** et **Ajouter des produits** apparaissent sur la page **Créer une commande**.
 
 <u>Résultat réel</u>
 
-La variable **Ajout de produits par SKU** et **Ajouter des produits** n’apparaît pas sur les boutons **Créer une commande** page.
+Les boutons **Ajouter des produits par SKU** et **Ajouter des produits** sont manquants sur la page **Créer une commande**.
 
 ## Solution
 

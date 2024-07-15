@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-11189 : lignes cataloginventory_stock supprimées après importation CSV
 
-Le correctif Adobe Commerce MDVA-11189 corrige le problème après l’importation d’un fichier .csv pour mettre à jour le stock de produits, les lignes du `cataloginventory_stock` sont supprimées. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.0.20 est installée. L’ID de correctif est MDVA-1189. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.3.5.
+Le correctif Adobe Commerce MDVA-11189 corrige le problème après l’importation d’un fichier .csv pour mettre à jour le stock de produits, les lignes de la table `cataloginventory_stock` sont supprimées. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.20 est installé. L’ID de correctif est MDVA-1189. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.3.5.
 
 ## Produits et versions concernés
 
@@ -23,27 +23,27 @@ Le correctif Adobe Commerce MDVA-11189 corrige le problème après l’importati
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-Correction d’un problème lors de l’importation d’une `.csv` pour mettre à jour le stock de produits, les lignes du `cataloginventory_stock` sont supprimées.
+Correction du problème qui se produisait lorsque, après l’importation d’un `.csv` pour mettre à jour le stock de produits, les lignes de la table `cataloginventory_stock` étaient supprimées.
 
 <u>Étapes à reproduire :</u>
 
 1. Dans la base de données, exécutez la commande MySQL suivante : `select count(*) from cataloginventory_stock_status;`
 1. Notez le nombre de lignes.
 1. Définissez crontab comme suit : `* * * * * /usr/bin/php <path to installation>/bin/magento cron:run  | grep -v "Ran jobs by schedule" >> <path to installation>/var/log/cron.log 2>&1`
-1. Accédez au panneau Admin dans **Système** > **Outils** > **Gestion des index**.
-1. Définir les indexeurs sur *Mettre à jour par planification.*
+1. Accédez au panneau d’administration dans **Système** > **Outils** > **Gestion des index**.
+1. Définissez les indexeurs sur *Mettre à jour par planification.*
 1. Accédez à **Système** > *Transfert de données* > **Exporter**.
-1. Définir **Type d’entité** égal à *Produits* > **Continuer**.
-1. Ouvrez le fichier enregistré `.csv` fichier > Supprimer toutes les colonnes, à l’exception de SKU et QTY.
+1. Définissez **Type d’entité** sur *Produits* > **Continuer**.
+1. Ouvrez le fichier `.csv` enregistré > Supprimer toutes les colonnes, à l’exception de SKU et QTY.
 1. Remplacez la quantité de tous les produits par 150.
-1. Enregistrez le `.csv` fichier .
+1. Enregistrez le fichier `.csv`.
 1. Accédez à **Système** > *Transfert de données* > **Importer** .
 1. Définissez les valeurs suivantes :
-   1. Type d’entité : *Produits*
+   1. Type d’entité : *Products*
    1. Comportement d’importation : *Ajouter/Mettre à jour*
    1. Conservez toutes les autres valeurs par défaut.
    1. Sélectionnez Fichier pour sélectionner la feuille de calcul du produit catalogue.
@@ -53,24 +53,24 @@ Correction d’un problème lors de l’importation d’une `.csv` pour mettre �
 
 <u>Résultat réel :</u>
 
-Le nombre de lignes dans `cataloginventory_stock` est diminué après l’importation CSV pour mettre à jour le stock.
+Le nombre de lignes dans `cataloginventory_stock` est réduit après l’importation CSV pour mettre à jour le stock.
 
 <u>Résultat attendu :</u>
 
-Le nombre de lignes dans `cataloginventory_stock` doit rester identique après l’importation CSV pour mettre à jour le stock.
+Le nombre de lignes dans `cataloginventory_stock` doit rester le même après l’importation CSV pour mettre à jour le stock.
 
 ## Appliquer le correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) dans notre documentation destinée aux développeurs.
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) de notre documentation destinée aux développeurs.

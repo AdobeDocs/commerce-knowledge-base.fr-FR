@@ -29,19 +29,19 @@ Adobe Commerce sur l’infrastructure cloud, [toutes les versions prises en char
 
 ## Problème
 
-Échec du déploiement avec un **curl error 7** message.
+Échec du déploiement avec un message **curl error 7**.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Déclenchez un déploiement.
 
-<u>Comportement attendu</u>:
+<u>Comportement attendu</u> :
 
 Le déploiement a réussi.
 
-<u>Comportement réel</u>:
+<u>Comportement réel</u> :
 
-Le déploiement échoue et l’erreur suivante s’affiche : *erreur curl 7 lors du téléchargement ... port 443 : connexion refusée* apparaît dans le journal de déploiement.
+Le déploiement échoue et l’erreur suivante : *curl error 7 while downloading ... port 443: Connection Failed* apparaît dans le journal de déploiement.
 
 ## Cause
 
@@ -55,10 +55,10 @@ Demandez à un super utilisateur du projet d’exécuter cette commande :
 magento-cloud project:clear-build-cache -p <project ID>
 ```
 
-Pour vérifier qui est un super utilisateur dans le projet, reportez-vous à la section [Affichage du rôle de projet d’un utilisateur](/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user’s-project-role) dans le guide Commerce on Cloud Infrastructure.
+Pour vérifier qui est un super utilisateur dans le projet, reportez-vous à la section [Affichage du rôle de projet d’un utilisateur](/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user’s-project-role) du guide Commerce on Cloud Infrastructure.
 
 ## Lecture recommandée
 
-* [Dépannage du déploiement d’Adobe Commerce](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
-* [Impossible d’accéder à Adobe Commerce sur le référentiel cloud : erreur 403 Forbidden ou 404 Not Found lors du déploiement](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
-* [Échec du déploiement avec &quot;Projet de création d’erreur : le crochet de génération a échoué avec le code d’état 1&quot;](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).
+* [Résolution des problèmes de déploiement Adobe Commerce](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
+* [Impossible d’accéder à Adobe Commerce sur le référentiel cloud : erreur 403 Forbidden ou 404 Not Found lors du déploiement de](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
+* [Échec du déploiement avec &quot;Erreur lors de la création du projet : le crochet de génération a échoué avec le code d’état 1&quot;](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).

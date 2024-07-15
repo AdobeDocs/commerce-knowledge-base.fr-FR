@@ -21,7 +21,7 @@ Les clients passent en caisse et remplissent tous les formulaires, y compris l�
 
 <u>Étapes à reproduire</u> :
 
-**Conditions préalables**: la fonctionnalité de panier persistant est activée. Vérifiez s’il est activé dans l’Admin, sous **Magasins** > **Configuration** > **Clients** ou **Magasins** > **Configuration** > **Ventes,** selon votre version d’Adobe Commerce.
+**Conditions préalables** : la fonctionnalité de panier persistant est activée. Vérifiez s’il est activé dans l’administrateur, sous **Magasins** > **Configuration** > **Clients** ou **Magasins** > **Configuration** > **Ventes,** selon votre version Adobe Commerce.
 
 1. Allez à la vitrine.
 1. Ajoutez des produits au panier.
@@ -31,11 +31,11 @@ Les clients passent en caisse et remplissent tous les formulaires, y compris l�
 1. Vérifiez que l’adresse de livraison s’affiche dans la section Ship to (Expéditeur).
 1. Actualisez la page.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 Vous pouvez continuer l’extraction et toutes les données sont enregistrées.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 L&#39;adresse d&#39;expédition est vide, vous devez la saisir à nouveau.
 
@@ -61,6 +61,6 @@ Le correctif est joint à cet article. Pour le télécharger, faites défiler l�
 
 ## Comment appliquer le correctif
 
-Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de soutien.
+Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Fichiers attachés

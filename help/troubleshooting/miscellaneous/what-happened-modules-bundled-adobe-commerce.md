@@ -17,7 +17,7 @@ Cet article fournit une solution lorsque les modules inclus dans les versions pr
 
 ## Produits et versions concernés
 
-* Adobe Commerce (toutes les méthodes de déploiement) toutes  [versions prises en charge](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce (toutes les méthodes de déploiement) toutes les [versions prises en charge](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problème
 
@@ -31,8 +31,8 @@ Ce comportement est attendu, car les extensions groupées par fournisseur ont é
 
 ## Solution
 
-Installez/achetez les extensions officielles séparément. Ils sont disponibles sur la page [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+Installez/achetez les extensions officielles séparément. Elles sont disponibles sur le [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
 
 ## Lecture connexe
 
-[Extensions groupées par des fournisseurs](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?#vendor-bundled-extensions) dans Documentation Adobe Commerce > Informations de mise à jour > Notes de mise à jour d’Adobe Commerce 2.4.4.
+[Extensions groupées par fournisseur](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?#vendor-bundled-extensions) dans la documentation Adobe Commerce > Informations de mise à jour > Notes de mise à jour d’Adobe Commerce 2.4.4.

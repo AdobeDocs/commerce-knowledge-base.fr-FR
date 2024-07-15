@@ -24,21 +24,21 @@ Cet article fournit une clarification sur le problème de différence entre les 
 
 <u>Conditions préalables :</u>
 
-Vous disposez de produits avec des valeurs d’attribut. `Saga 1` et `Saga 16` dans Adobe Commerce 2.3 et Adobe Commerce 2.4.
+Vous avez des produits avec des valeurs d’attribut `Saga 1` et `Saga 16` dans les magasins Adobe Commerce 2.3 et Adobe Commerce 2.4.
 
 <u>Étapes à reproduire :</u>
 
-1. Sur le devant d’un magasin Adobe Commerce 2.3, saisissez *Saga 1* dans le champ de recherche, puis cliquez sur **Rechercher**.
-1. Notez que dans les résultats de recherche, vous obtenez uniquement les produits avec la valeur d’attribut . `Saga 1`.
-1. Sur le devant d’un magasin Adobe Commerce 2.4, saisissez *Saga 1* dans le champ de recherche, puis cliquez sur **Rechercher**.
+1. Sur le devant d’un magasin Adobe Commerce 2.3, saisissez *Saga 1* dans le champ de recherche et cliquez sur **Rechercher**.
+1. Notez que dans les résultats de recherche, vous obtenez uniquement les produits avec la valeur d’attribut `Saga 1`.
+1. Sur le devant d’un magasin Adobe Commerce 2.4, saisissez *Saga 1* dans le champ de recherche et cliquez sur **Rechercher**.
 
 <u>Résultat réel :</u>
 
-Dans la version 2.4, les résultats de recherche incluent des produits avec des valeurs d’attribut. `Saga 1` et `Saga 16`.
+Dans la version 2.4, les résultats de recherche incluent les produits avec des valeurs d’attribut `Saga 1` et `Saga 16`.
 
 <u>Résultat attendu :</u>
 
-Les résultats de recherche dans la version 2.4 sont similaires à la version 2.3 et incluent uniquement les produits avec une valeur d’attribut `Saga 1`.
+Les résultats de recherche dans la version 2.4 sont similaires à la version 2.3 et incluent uniquement les produits avec la valeur d’attribut `Saga 1`.
 
 ## Cause
 
@@ -46,6 +46,6 @@ La fonctionnalité de recherche native d’Adobe Commerce utilisée dans la vers
 
 ## Lecture connexe
 
-[Installer la recherche en direct](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) dans notre guide d’utilisation.
+[Installez Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) dans notre guide d’utilisation.
 
-[Recherche en direct](https://devdocs.magento.com/live-search/overview.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=Live%20Search) dans notre documentation destinée aux développeurs.
+[Recherche en direct](https://devdocs.magento.com/live-search/overview.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=Live%20Search) dans la documentation destinée aux développeurs.

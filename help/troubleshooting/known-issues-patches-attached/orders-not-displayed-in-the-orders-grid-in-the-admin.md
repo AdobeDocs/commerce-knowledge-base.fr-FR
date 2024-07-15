@@ -21,24 +21,24 @@ Dans Adobe Commerce 2.2.1 avec l’extension B2B installée, les commandes cré�
 
 `report.CRITICAL: You cannot define a correlation name ‘company_order’ more than once`
 
-<u>Conditions préalables</u>:
+<u>Conditions préalables</u> :
 
 Votre catalogue de magasins contient des produits, et non des exemples de données Adobe Commerce, et l’extension B2B est installée.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Accédez à l’interface du magasin et créez un compte client.
 1. Ajoutez un produit au panier, effectuez le passage en caisse et envoyez une commande.
 1. Connectez-vous à l’administrateur.
-1. Accédez à **Clients,** Sélectionnez **Tous les clients**.
+1. Accédez à **Customers,** puis sélectionnez **All Customers**.
 1. Pour le client nouvellement créé, cliquez sur **Modifier**.
 1. Cliquez sur **Commandes** dans le panneau de gauche.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 La commande récemment envoyée est répertoriée dans la grille.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 La grille Commandes ne s’affiche pas. Une page vierge s’affiche à la place.
 
@@ -61,6 +61,6 @@ Le correctif est également compatible (mais peut ne pas résoudre le problème)
 
 ## Comment appliquer le correctif
 
-Voir [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) pour obtenir des instructions.
+Pour obtenir des instructions, reportez-vous à la section [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Fichiers attachés

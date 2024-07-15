@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [Le moteur de recherche de catalogue MySQL sera supprimé dans Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). L’hôte Elasticsearch doit être configuré et configuré avant d’installer la version 2.4.0. Voir [Installation et configuration de l’Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) dans notre documentation destinée aux développeurs.
+> [Le moteur de recherche de catalogue MySQL sera supprimé dans Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). L’hôte Elasticsearch doit être configuré et configuré avant d’installer la version 2.4.0. Reportez-vous à la section [Installation et configuration de l’Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) dans notre documentation destinée aux développeurs.
 
 Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur l’infrastructure cloud 2.2.3 lié à l’obtention de différents résultats de recherche pour la même requête de recherche avec MySQL et Elasticsearch.
 
@@ -26,13 +26,15 @@ Les résultats de recherche de votre catalogue avec le même jeu de filtres diff
 1. Installez et configurez Elasticsearch.
 1. Sur le storefront, sélectionnez l’un des filtres.
 1. Notez le nombre de produits correspondants.
-1. Configuration de la valeur par défaut [Recherche MySQL](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md).
+1. Configurez la [recherche MySQL](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md) par défaut.
 1. Sur le storefront, sélectionnez l’un des filtres.
 1. Notez le nombre de produits correspondants.
 
-<u>Résultat attendu</u>: le nombre de produits correspondants est le même.
+<u>Résultat attendu</u> :
+Le nombre de produits correspondants est le même.
 
-<u>Résultat réel</u>: le nombre de produits correspondants est différent.
+<u>Résultat réel</u> :
+Le nombre de produits correspondants est différent.
 
 ## Correctif
 
@@ -46,10 +48,10 @@ Les correctifs sont joints à cet article. Pour télécharger un correctif, fait
 
 Les correctifs ont été créés pour :
 
-* Adobe Commerce sur l’infrastructure cloud 2.2.3 (le `MDVA-12312_EE_2.2.3_COMPOSER_v1.patch` fichier)
-* Adobe Commerce sur l’infrastructure cloud 2.2.6 (le `MDVA-14172_EE_2.2.6_COMPOSER_v1.patch` fichier)
+* Adobe Commerce sur l’infrastructure cloud 2.2.3 (fichier `MDVA-12312_EE_2.2.3_COMPOSER_v1.patch`)
+* Adobe Commerce sur l’infrastructure cloud 2.2.6 (fichier `MDVA-14172_EE_2.2.6_COMPOSER_v1.patch`)
 
-La variable `MDVA-12312_EE_2.2.3_COMPOSER_v1.patch` Le correctif est également compatible (mais peut ne pas résoudre le problème) avec les versions et éditions Adobe Commerce suivantes :
+Le correctif `MDVA-12312_EE_2.2.3_COMPOSER_v1.patch` est également compatible (mais peut ne pas résoudre le problème) avec les versions et éditions Adobe Commerce suivantes :
 
 * Adobe Commerce sur l’infrastructure cloud 2.2.4
 * Adobe Commerce sur l’infrastructure cloud 2.2.5
@@ -57,12 +59,12 @@ La variable `MDVA-12312_EE_2.2.3_COMPOSER_v1.patch` Le correctif est également 
 * Adobe Commerce on-premise 2.2.4
 * Adobe Commerce On-Premise 2.2.5
 
-La variable `MDVA-14172_EE_2.2.6_COMPOSER_v1.patch` Le correctif est également compatible (mais peut ne pas résoudre le problème) avec les versions et éditions Adobe Commerce suivantes :
+Le correctif `MDVA-14172_EE_2.2.6_COMPOSER_v1.patch` est également compatible (mais peut ne pas résoudre le problème) avec les versions et éditions Adobe Commerce suivantes :
 
 * Adobe Commerce on-premise 2.2.6
 
 ## Comment appliquer le correctif
 
-Voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) pour obtenir des instructions.
+Pour obtenir des instructions, reportez-vous à la section [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Fichiers attachés

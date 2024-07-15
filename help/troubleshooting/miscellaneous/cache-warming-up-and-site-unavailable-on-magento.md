@@ -17,28 +17,28 @@ Cet article fournit une solution lorsque le cache de la page se réchauffe et qu
 
 ## Produits et versions concernés
 
-* Adobe Commerce sur l’infrastructure cloud, tous [versions prises en charge](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+* Adobe Commerce sur l’infrastructure cloud, toutes les [versions prises en charge](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 ## Problème
 
 Le script de nettoyage de la mémoire cache, à la fin de la phase de post-déploiement, envoie les demandes à un débit si élevé que certaines instances, comme 4 processeurs, ne peuvent pas gérer. Leur épingle épuise le nombre de travailleurs.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Démarrez les opérations de nettoyage du cache.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 Pages ou chargement de site entier.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 Le site n’est pas disponible ou le temps de réponse est trop élevé.
 
 ## Solution
 
-Limitez le nombre de connexions simultanées pendant le nettoyage du cache. Cela nécessite l’ajout de la variable `WARM_UP_CONCURRENCY` post-déploiement pour spécifier le nombre de demandes de nettoyage que le script de nettoyage du cache peut envoyer simultanément. La définition de cette option peut vous aider à gérer la charge sur l’infrastructure cloud Adobe Commerce. Pour connaître les étapes, voir [Variables de post-déploiement > WARM\_UP\_CONCURRENCY](https://devdocs.magento.com/cloud/env/variables-post-deploy.html#warm_up_concurrency) dans notre documentation destinée aux développeurs.
+Limitez le nombre de connexions simultanées pendant le nettoyage du cache. Pour ce faire, il faut ajouter la variable de post-déploiement `WARM_UP_CONCURRENCY` afin de spécifier le nombre de demandes de nettoyage que le script de nettoyage du cache peut envoyer simultanément. La définition de cette option peut vous aider à gérer la charge sur l’infrastructure cloud Adobe Commerce. Pour connaître les étapes, voir [Variables de déploiement Post > WARM\_UP\_CONCURRENCY](https://devdocs.magento.com/cloud/env/variables-post-deploy.html#warm_up_concurrency) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
-[Cache de page entière](https://docs.magento.com/user-guide/system/cache-full-page.html) dans notre guide d’utilisation
+[Cache de page complète](https://docs.magento.com/user-guide/system/cache-full-page.html) dans notre guide d’utilisation

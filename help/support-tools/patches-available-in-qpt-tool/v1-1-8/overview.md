@@ -17,11 +17,11 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.8 comprend les correctifs suivants :
 
-1. **MDVA-38393**: corrige le problème en raison duquel les règles du catalogue ne fonctionnaient plus pour un produit configurable si son produit simple était renommé.
-1. **MDVA-39153**: correction d’un problème en raison duquel un montant de remise n’était pas correctement calculé lors d’une réorganisation dans l’Admin.
-1. **MDVA-41139**: correction d’un problème en raison duquel les produits configurables étaient en rupture de stock après l’importation du produit lorsqu’une quantité=0 d’un produit simple était utilisée pour l’une de ses sources.
-1. **MDVA-41215**: corrige le problème en raison duquel les utilisateurs obtenaient l’erreur 500 après avoir défini la variable *mage-messages* s’il existe déjà, mais qu’il n’y a aucun nouveau message.
-1. **MDVA-42326**: correction d’un problème en raison duquel les clients obtenaient une erreur lors de l’extraction après un délai d’expiration de session, même si le panier persistant était activé.
-1. **MDVA-42341**: corrige le problème en raison duquel la variable `categoryList` La requête GraphQL ne filtre pas les résultats si une requête comporte l’en-tête Magasin .
+1. **MDVA-38393** : résolution du problème de l’arrêt du fonctionnement des règles du catalogue pour un produit configurable si son produit simple est renommé.
+1. **MDVA-39153** : correction d’un problème en raison duquel un montant de remise n’était pas correctement calculé lors d’une réorganisation dans l’Admin.
+1. **MDVA-41139** : corrige le problème en raison duquel les produits configurables deviennent hors stock après l’importation d’un produit lorsque la quantité=0 d’un produit simple est épuisée pour l’une de ses sources.
+1. **MDVA-41215** : corrige le problème en raison duquel les utilisateurs obtenaient l’erreur 500 après avoir défini le cookie *mage-messages* s’il existe déjà, mais qu’il n’y a aucun nouveau message.
+1. **MDVA-42326** : correction d’un problème en raison duquel les clients obtenaient une erreur lors du passage en caisse après un délai d’expiration de session, même si le panier persistant était activé.
+1. **MDVA-42341** : corrige le problème en raison duquel la requête GraphQL `categoryList` ne filtre pas les résultats si une requête contient l’en-tête Boutique.
 
 Utilisez le menu de gauche pour accéder à une page de correctif spécifique.

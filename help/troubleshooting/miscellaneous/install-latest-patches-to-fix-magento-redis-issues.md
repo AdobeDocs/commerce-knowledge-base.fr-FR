@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Installez les derniers correctifs pour résoudre les problèmes liés aux redis d’Adobe Commerce
 
-Cet article fournit des informations sur les derniers correctifs liés aux Redis disponibles dans [Correctifs d’infrastructure cloud d’Adobe Commerce](https://devdocs.magento.com/cloud/project/project-patch.html) module.
+Cet article fournit des informations sur les derniers correctifs liés aux Redis disponibles dans le package [Adobe Commerce on Cloud Infrastructure Patches](https://devdocs.magento.com/cloud/project/project-patch.html).
 
 ## Produits et versions concernés
 
@@ -25,7 +25,7 @@ La consommation supplémentaire de processeur et de mémoire par Redis peut réd
 
 ## Solution
 
-Appliquez les derniers correctifs fournis par Adobe Commerce sur le package Correctifs d’infrastructure cloud. Pour obtenir des instructions détaillées, voir [Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+Appliquez les derniers correctifs fournis par Adobe Commerce sur le package Correctifs d’infrastructure cloud. Pour obtenir des instructions détaillées, reportez-vous à la section [Application de correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 Les derniers correctifs Redis fournis par Adobe Commerce sur le package Correctifs d’infrastructure cloud contribuent aux éléments suivants :
 

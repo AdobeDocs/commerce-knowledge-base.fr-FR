@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # E : Erreur lors de la vérification de routes.yaml lors du déploiement d’évaluation ou de production
 
-Cet article fournit une solution à Adobe Commerce pour le problème d’infrastructure cloud, où vous obtenez la variable *&quot;E : Erreur lors de la vérification de routes.yaml&quot;* message d’erreur lors de la tentative de déploiement du projet dans l’environnement d’évaluation ou de production.
+Cet article fournit une solution pour Adobe Commerce concernant le problème d’infrastructure cloud, où vous obtenez le message d’erreur *&quot;E: Error while verifying routes.yaml&quot;* lors de la tentative de déploiement du projet dans l’environnement d’évaluation ou de production.
 
 ## Versions affectées
 
@@ -21,45 +21,53 @@ Cet article fournit une solution à Adobe Commerce pour le problème d’infrast
 
 ## Problème
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 Déclenchez un déploiement en poussant le code dans l’environnement d’évaluation ou de production.
 
-<u>Comportement attendu</u>:
+<u>Comportement attendu</u> :
 
 Le déploiement a réussi.
 
-<u>Comportement réel</u>:
+<u>Comportement réel</u> :
 
 Le déploiement est bloqué et le message d&#39;erreur suivant s&#39;affiche dans le journal :
 
 <pre>Déploiement des applications Vérification de la configuration E : erreur lors de la vérification de routes.yaml.
-Les domaines suivants sont configurés pour votre grappe, mais aucun itinéraire n’est défini dans votre fichier routes.yaml : - store1.example.com - store2.example.com - test-store.example.com Avec votre configuration actuelle de routes.yaml, ces domaines ne seraient PAS servis !
+Les domaines suivants sont configurés pour votre grappe, mais aucun itinéraire n’est défini dans votre fichier routes.yaml :
 
-Pour continuer, reportez-vous ici pour obtenir des instructions de dépannage : /help/troubleshooting/deployment/e-error-verifying-routes-yaml-error-during-staging-or-production-deploy.md</pre>
+- store1.example.com
+- store2.example.com
+- test-store.example.com
+
+Avec votre configuration de routes.yaml actuelle,
+  ces domaines ne seraient PAS servis !
+
+Pour continuer, reportez-vous ici pour obtenir des instructions de dépannage :
+ /help/troubleshooting/deployment/e-error-verifying-routes-yaml-error-during-staging-or-production-deploy.md</pre>
 
 ## Cause
 
-Cette erreur se produit si la configuration de l’itinéraire de tous les domaines supplémentaires qui ont été ajoutés à votre projet est absente de la variable `routes.yaml` fichier .
+Cette erreur se produit si la configuration d’itinéraire pour tout domaine supplémentaire qui a été ajouté à votre projet est manquante dans le fichier `routes.yaml`.
 
-Dans le cadre de la mise à niveau de l’activation en libre-service d’Adobe Commerce pour la configuration de l’itinéraire en libre-service, nous avons ajouté une vérification préalable au déploiement pour nous assurer que tous les domaines de votre projet ont des itinéraires configurés dans la variable `routes.yaml` fichier . Si la configuration d’itinéraire d’un domaine est manquante, le déploiement est bloqué.
+Dans le cadre de la mise à niveau de l’activation en libre-service d’Adobe Commerce pour la configuration de l’itinéraire en libre-service, nous avons ajouté une vérification préalable au déploiement pour nous assurer que tous les domaines de votre projet ont des itinéraires configurés dans le fichier `routes.yaml`. Si la configuration d’itinéraire d’un domaine est manquante, le déploiement est bloqué.
 
 ## Solution
 
-Pour résoudre le déploiement bloqué, mettez à jour la variable `routes.yaml` pour configurer les itinéraires des domaines répertoriés dans le message d’erreur en utilisant l’une des méthodes suivantes :
+Pour résoudre le déploiement bloqué, mettez à jour le fichier `routes.yaml` afin de configurer les itinéraires pour les domaines répertoriés dans le message d’erreur en utilisant l’une des méthodes suivantes :
 
 * Appliquez le correctif fourni par Adobe Commerce lors de la mise à niveau.
-* Ajoutez manuellement la configuration d’itinéraire manquante au `routes.yaml` fichier .
+* Ajoutez manuellement la configuration d’itinéraire manquante au fichier `routes.yaml`.
 
 ### Méthode 1 : appliquez le correctif fourni par Adobe Commerce
 
-1. Recherchez un ticket d’assistance Adobe Commerce récent avec le titre &quot;*Activation des fonctionnalités en libre-service pour &lt;project _id=&quot;&quot;>&quot;.*
+1. Recherchez un ticket de support Adobe Commerce récent intitulé &quot;*Activer les fonctionnalités en libre-service pour &lt;project\_ID>&quot;.*
 1. Suivez les instructions du ticket pour appliquer le correctif, qui met à jour la configuration de l’itinéraire pour votre environnement cloud.
 1. С omettez et poussez les modifications pour redéployer votre projet.
 
 ### Méthode 2 : ajout manuel de la configuration d’itinéraire manquante
 
-1. Pour desservir tous les domaines de votre projet à l’aide de la même configuration d’itinéraire, mettez à jour la variable `routes.yaml` Ajout de modèles d’itinéraire pour le domaine par défaut et tous les autres domaines de votre projet, comme illustré dans l’exemple suivant :
+1. Pour desservir tous les domaines de votre projet en utilisant la même configuration d’itinéraire, mettez à jour le fichier `routes.yaml` en ajoutant des modèles d’itinéraire pour le domaine par défaut et tous les autres domaines de votre projet, comme illustré dans l’exemple suivant :
 
    ```yaml
    "http://{default}/":
@@ -72,8 +80,8 @@ Pour résoudre le déploiement bloqué, mettez à jour la variable `routes.yaml`
 
 1. С omettez et poussez vos modifications pour redéployer votre projet.
 
-Pour obtenir des instructions détaillées sur la mise à jour de la configuration de l’itinéraire, voir [Cloud pour Adobe Commerce > Configuration des itinéraires](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_routes.html) dans notre documentation destinée aux développeurs.
+Pour obtenir des instructions détaillées sur la mise à jour de la configuration de l’itinéraire, voir [Cloud for Adobe Commerce > Configurer les itinéraires](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_routes.html) dans notre documentation destinée aux développeurs.
 
 >[!NOTE]
 >
->Si votre configuration de projet spécifie les domaines qui ne sont plus utilisés, procédez comme suit pour les supprimer de votre projet dès que possible : 1. Envoyez un ticket d’assistance avec une liste de domaines à supprimer de vos environnements de projet. 2. Une fois que l’équipe d’assistance a supprimé les domaines, mettez à jour la variable `routes.yaml` pour supprimer toute référence aux domaines obsolètes.
+>Si votre configuration de projet spécifie les domaines qui ne sont plus utilisés, procédez comme suit pour les supprimer de votre projet dès que possible : 1. Envoyez un ticket d’assistance avec une liste de domaines à supprimer de vos environnements de projet. 2. Une fois que l’équipe d’assistance a supprimé les domaines, mettez à jour le fichier `routes.yaml` pour supprimer toute référence aux domaines obsolètes.

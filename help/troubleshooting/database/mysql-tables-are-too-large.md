@@ -28,10 +28,10 @@ La taille des tables MySQL n’a pas d’incidence directe sur les performances 
 
 Tenez compte des options suivantes pour éviter une baisse des performances :
 
-* Créez une tâche CRON qui nettoie les tables volumineuses. Voir [Recherche de tables MySQL volumineuses](/help/how-to/general/find-large-mysql-tables.md) dans notre base de connaissances d’assistance pour obtenir des recommandations sur l’identification des tables volumineuses.
+* Créez une tâche CRON qui nettoie les tables volumineuses. Voir [Trouver des tables MySQL volumineuses](/help/how-to/general/find-large-mysql-tables.md) dans notre base de connaissances de support pour obtenir des recommandations sur la manière d’identifier les tables volumineuses.
 * Pour les tables de plus de 1 Go, utilisez un moteur MySQL optimisé pour l’écriture des logs. Par exemple, le moteur d’archivage.
 * Mise à jour de la fonctionnalité afin d’éviter le stockage des journaux dans DB.
 
 ## Lecture connexe
 
-[Des tables de journal des modifications surdimensionnées provoquant des retards dans les mises à jour des entités](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md) dans notre base de connaissances de soutien.
+[Des tables de logs de modifications surdimensionnées provoquent des retards dans les mises à jour des entités](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md) dans notre base de connaissances de support.

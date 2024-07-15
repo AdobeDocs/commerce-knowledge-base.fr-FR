@@ -23,17 +23,17 @@ Cet article fournit un correctif pour le problème connu d’Adobe Commerce 2.2.
 
 Lorsque les clients passent des commandes, elles apparaissent dans la grille des commandes archivées au lieu de la grille des commandes standard.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Ajoutez n’importe quel produit au panier sur le storefront, passez en caisse et passez la commande.
-1. Dans l’administrateur de Commerce, accédez à **Ventes** > **Opérations** > **Commande**. Voir l’ordre d’affichage dans la grille.
-1. Accédez à **Ventes** > **Archiver** > **Commandes**. Voir le nouvel ordre dans la grille.
+1. Dans l’administrateur Commerce, accédez à **Sales** > **Operations** > **Order**. Voir l’ordre d’affichage dans la grille.
+1. Accédez à **Sales** > **Archive** > **Commandes**. Voir le nouvel ordre dans la grille.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 La commande est affichée uniquement dans la grille Commandes .
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 L&#39;ordre est affiché dans la grille Commandes et dans la grille d&#39;archivage des commandes.
 
@@ -59,10 +59,10 @@ Le correctif est également compatible (mais peut ne pas résoudre le problème)
 
 ## Comment appliquer le correctif
 
-Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de soutien.
+Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Liens utiles dans notre guide d’utilisation
 
-* [Gestion des commandes archivées](https://docs.magento.com/user-guide/sales/order-archive.html)
+* [Gérer les commandes archivées](https://docs.magento.com/user-guide/sales/order-archive.html)
 
 ## Fichiers attachés

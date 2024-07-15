@@ -27,10 +27,10 @@ Après l’installation ou la mise à niveau initiale pour qu’Inventory manage
 
 ## Cause
 
-Lors de la première installation/mise à niveau, tous vos produits sont attribués à la source par défaut, ce qui associe toutes les quantités à cette source. La source par défaut est affectée au stock par défaut, le site web par défaut étant associé.
+Lors de la première installation/mise à niveau, tous vos produits sont attribués à la source par défaut, ce qui associe toutes les quantités à cette source. Le Source par défaut est affecté au stock par défaut, le site web par défaut étant associé.
 
 ## Solution
 
 Si vous disposez de plusieurs sites web, vous devez les ajouter en tant que Sales Channel aux actions par défaut ou aux autres actions personnalisées.
 
-Voir [Section Stock du guide de l’utilisateur/du wiki](https://docs.magento.com/m2/ce/user_guide/catalog/inventory-stock.html) dans notre guide d’utilisation pour plus d’informations sur la façon de procéder.
+Consultez la section [Stock du guide de l’utilisateur/du wiki](https://docs.magento.com/m2/ce/user_guide/catalog/inventory-stock.html) dans notre guide de l’utilisateur pour plus d’informations sur la façon de procéder.

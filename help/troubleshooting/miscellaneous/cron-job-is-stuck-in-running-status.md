@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Cron] La tâche est bloquée dans l’état **running**"
-description: Cet article fournit des solutions pour les cas où Adobe Commerce [!DNL cron] les tâches ne se terminent pas et sont conservées dans un état "en cours", ce qui empêche d’autres [!DNL cron] à partir de l’exécution. Cela peut se produire pour plusieurs raisons, telles que des problèmes réseau, des blocages d’application, des problèmes de redéploiement.
+title: La tâche "[!DNL Cron] est bloquée dans l’état **running**"
+description: Cet article fournit des solutions lorsque les tâches Adobe Commerce [!DNL cron] ne se terminent pas et persistent dans un état "en cours d’exécution", ce qui empêche l’exécution d’autres tâches  [!DNL cron] de s’exécuter. Cela peut se produire pour plusieurs raisons, telles que des problèmes réseau, des blocages d’application, des problèmes de redéploiement.
 exl-id: 11e01a2b-2fcf-48c2-871c-08f29cd76250
 feature: Configuration
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Cron] La tâche est bloquée dans l’état &quot;running&quot;
+# La tâche [!DNL Cron] est bloquée dans l’état &quot;en cours&quot;
 
-Cet article fournit des solutions pour les cas où Adobe Commerce [!DNL cron] les tâches ne se terminent pas et sont conservées dans un état &quot;en cours&quot;, ce qui empêche d’autres [!DNL cron] à partir de l’exécution. Cela peut se produire pour plusieurs raisons, telles que des problèmes réseau, des blocages d’application, des problèmes de redéploiement.
+Cet article fournit des solutions pour les tâches Adobe Commerce [!DNL cron] dont l’exécution n’est pas terminée et qui restent dans un état &quot;en cours d’exécution&quot;, ce qui empêche les autres tâches [!DNL cron] de s’exécuter. Cela peut se produire pour plusieurs raisons, telles que des problèmes réseau, des blocages d’application, des problèmes de redéploiement.
 
 ## Produits et versions concernés
 
@@ -21,38 +21,38 @@ Adobe Commerce sur l’infrastructure cloud, toutes les versions
 
 ## Symptôme {#symptom}
 
-Symptômes de [!DNL cron] les tâches qui doivent être réinitialisées sont les suivantes :
+Les symptômes des tâches [!DNL cron] qui doivent être réinitialisées sont les suivants :
 
-* Une grande quantité de tâches s’affiche dans la variable `cron_schedule` queue
+* Une grande quantité de tâches s’affiche dans la file d’attente `cron_schedule`
 * Les performances du site commencent à diminuer
 * Les tâches ne s’exécutent pas selon le calendrier
 
 ## Solutions {#solutions}
 
-### Solution pour arrêter tout [!DNL cron] tâches à la fois {#solution-stop-all-crons-at-once}
+### Solution pour arrêter toutes les tâches [!DNL cron] à la fois {#solution-stop-all-crons-at-once}
 
 >[!WARNING]
 >
->Exécutez cette commande sans le `--job-code` options de réinitialisation *all* [!DNL cron] les tâches, y compris celles en cours d’exécution. Nous vous recommandons donc de ne l’utiliser que dans des cas exceptionnels, par exemple après avoir vérifié que toutes les [!DNL cron] les tâches doivent être réinitialisées. Le redéploiement exécute cette commande par défaut pour réinitialiser [!DNL cron] les tâches, de sorte qu’elles récupèrent correctement une fois l’environnement sauvegardé. Évitez d’utiliser cette solution lorsque les indexeurs sont en cours d’exécution.
+>L’exécution de cette commande sans l’option `--job-code` réinitialise *toutes* [!DNL cron] tâches, y compris celles en cours d’exécution. Nous vous recommandons donc de ne l’utiliser que dans des cas exceptionnels, par exemple après avoir vérifié que toutes les [!DNL cron] tâches doivent être réinitialisées. Le redéploiement exécute cette commande par défaut pour réinitialiser les tâches [!DNL cron], de sorte qu’elles récupèrent correctement une fois l’environnement sauvegardé. Évitez d’utiliser cette solution lorsque les indexeurs sont en cours d’exécution.
 
-Pour résoudre ce problème, vous devez réinitialiser la variable [!DNL cron] tâche(s) à l’aide du `cron:unlock` . Cette commande modifie l’état de la fonction [!DNL cron] dans la base de données, mettant fin à la tâche pour permettre à d’autres tâches planifiées de continuer.
+Pour résoudre ce problème, vous devez réinitialiser la ou les tâches [!DNL cron] à l’aide de la commande `cron:unlock`. Cette commande modifie l’état de la tâche [!DNL cron] dans la base de données, mettant ainsi fin à la tâche pour permettre la poursuite d’autres tâches planifiées.
 
-1. Ouvrez un terminal et utilisez [Clés SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour se connecter à l’environnement concerné.
+1. Ouvrez un terminal et utilisez vos [clés SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour vous connecter à l’environnement concerné.
 1. Obtenez les informations d’identification de la base de données MySQL :    ```shell    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp    ```
 1. Connectez-vous à la base de données à l’aide de `mysql` :    ```shell    mysql -hdatabase.internal -uuser -ppassword main    ```
-1. Sélectionnez la variable `main` base de données :    ```shell    use main    ```
-1. Tout exécuter [!DNL cron] jobs :    ```shell    SELECT * FROM cron_schedule WHERE status = 'running';    ```
+1. Sélectionnez la base de données `main` :    ```shell    use main    ```
+1. Recherchez toutes les tâches [!DNL cron] en cours d’exécution :    ```shell    SELECT * FROM cron_schedule WHERE status = 'running';    ```
 1. Copiez le `job_code` de toute tâche s’exécutant plus longtemps que d’habitude.
-1. Utilisez les ID de planification de l’étape précédente pour déverrouiller des [!DNL cron] jobs :    ```shell    ./vendor/bin/ece-tools cron:unlock --job-code=<job_code_1> [... --job-code=<job_code_x>]    ```
+1. Utilisez les ID de planification de l’étape précédente pour déverrouiller des tâches [!DNL cron] spécifiques :    ```shell    ./vendor/bin/ece-tools cron:unlock --job-code=<job_code_1> [... --job-code=<job_code_x>]    ```
 
 ### Solution pour arrêter un seul [!DNL cron] {#solution-stop-a-single-cron}
 
-1. Ouvrez un terminal et utilisez [Clés SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour se connecter à l’environnement concerné.
+1. Ouvrez un terminal et utilisez vos [clés SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour vous connecter à l’environnement concerné.
 1. Vérifiez les tâches longues en cours à l’aide de la commande suivante :
 
    ```date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'```
 
-1. Dans la sortie, comme dans l’exemple de sortie ci-dessous, vous verrez la date actuelle et la liste des processus. La variable `START` affiche l’heure ou la date de début du processus :
+1. Dans la sortie, comme dans l’exemple de sortie ci-dessous, vous verrez la date actuelle et la liste des processus. La colonne `START` indique l’heure ou la date de début du processus :
 
    ```
    Wed May  8 22:41:31 UTC 2019
@@ -72,8 +72,8 @@ Pour résoudre ce problème, vous devez réinitialiser la variable [!DNL cron] t
    bxc2qly+ 25896 29.0  0.6 475320 109876 ?       R    20:51   0:00 /usr/bin/php7.1-zts /app/bxc2qlykqhbqe/bin/magento cron:run --group=ddg_automation --bootstrap=standaloneProcessStarted=1
    ```
 
-1. Si vous constatez une longue exécution [!DNL cron] tâches pouvant être le processus de déploiement par bloc, vous pouvez arrêter le processus à l’aide de la fonction `kill` . Vous pouvez identifier la variable **ID de processus** (Recherchez la variable `PID` ), puis placez-le. `PID` dans la commande pour tuer le processus.
-La variable **tuer le processus** est la commande suivante :
+1. Si vous voyez une tâche [!DNL cron] longue qui peut être le processus de déploiement bloqué, vous pouvez arrêter le processus à l’aide de la commande `kill`. Vous pouvez identifier l’ **ID de processus** (colonne `PID` trouvée), puis placer cet `PID` dans la commande pour tuer le processus.
+La commande **kill process** est la suivante :
 
    ```kill -9 <PID>```
 

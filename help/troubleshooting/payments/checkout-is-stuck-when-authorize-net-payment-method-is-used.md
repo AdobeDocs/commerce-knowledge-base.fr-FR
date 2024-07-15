@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Le passage en caisse est bloqué lorsque le mode de paiement Authorize.net est utilisé
 
-Cet article fournit une explication et une solution au problème d’Adobe Commerce 2.3.X où le passage en caisse est bloqué si Authorize.net est utilisé, avec la variable *&quot;Impossible de lire la propriété ’length’ de null&quot;* message d’erreur dans le journal de la console du navigateur.
+Cet article fournit une explication et un correctif pour le problème d’Adobe Commerce 2.3.X où le passage en caisse est bloqué si Authorize.net est utilisé, avec le message d’erreur *&#39;Cannot read property &#39;length&#39; of null&#39;* dans le journal de la console du navigateur.
 
 ## Produits et versions concernés
 
@@ -21,7 +21,7 @@ Cet article fournit une explication et une solution au problème d’Adobe Comme
 
 >[!NOTE]
 >
->L’intégration de paiement principale d’Adobe Commerce Authorize.Net est obsolète depuis la version 2.3.4 et a été complètement supprimée de la version 2.4.0. Utilisez une extension qui répond à vos besoins depuis la [Adobe Commerce [!DNL Marketplace]](https://commercemarketplace.adobe.com/) au lieu de .
+>L’intégration de paiement principale d’Adobe Commerce Authorize.Net est obsolète depuis la version 2.3.4 et a été complètement supprimée de la version 2.4.0. Utilisez plutôt une extension qui répond à vos besoins à partir de [Adobe Commerce [!DNL Marketplace]](https://commercemarketplace.adobe.com/).
 
 ## Problème
 
@@ -39,7 +39,7 @@ L’iframe Authorize.net est chargé.
 
 <u>Résultat réel</u>
 
-Le compteur Ajax s’affiche et la page ne se charge jamais. L’erreur JS suivante s’affiche dans le journal de la console du navigateur : *&#39;Uncaught TypeError : impossible de lire la propriété ’length’ de null à l’adresse b (jstest.authorize.net/v1/AcceptCore.js:1)&#39;)*
+Le compteur Ajax s’affiche et la page ne se charge jamais. L’erreur JS suivante s’affiche dans le journal de la console du navigateur : *’Uncaught TypeError: Cannot read property ’length’ of null at b (jstest.authorize.net/v1/AcceptCore.js:1)&#39;*)
 
 ## Cause
 
@@ -47,7 +47,7 @@ L’une des raisons les plus courantes de ce problème est que la clé du client
 
 ## Solution
 
-Sous **Magasins** > **Paramètres** > **Configuration** > **Ventes** > **Méthodes de paiement**, dans la variable **Authorize.net** , vérifiez si la valeur est spécifiée dans la variable **Clé client publique** champ . S’il est vide, saisissez la valeur de clé de votre compte marchand Authorize.Net.
+Sous **Magasins** > **Paramètres** > **Configuration** > **Ventes** > **Méthodes de paiement**, dans la section **Authorize.net**, vérifiez si la valeur est spécifiée dans le champ **Clé client publique**. S’il est vide, saisissez la valeur de clé de votre compte marchand Authorize.Net.
 
 Pour que les modifications soient appliquées, videz le cache en exécutant
 

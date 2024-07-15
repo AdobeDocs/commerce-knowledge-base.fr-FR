@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Problème connu d’Adobe Commerce 2.3.6, 2.4.0-p1, 2.4.1 : connexion numérique
 
-Cet article décrit un problème connu d’Adobe Commerce 2.3.6, 2.4.0-p1 et 2.4.1 où il est impossible de se connecter à [dotdigital](https://dotdigital.com/) via le panneau d’administration lorsque le compte numérique est activé.
+Cet article décrit un problème connu d’Adobe Commerce 2.3.6, 2.4.0-p1 et 2.4.1 où il est impossible de se connecter à [dotdigital](https://dotdigital.com/) via le panneau d’administration lorsque le compte dotdigital est activé.
 
 ## Produits et versions concernés
 
@@ -23,21 +23,21 @@ Cet article décrit un problème connu d’Adobe Commerce 2.3.6, 2.4.0-p1 et 2.4
 
 ## Problème
 
-<u>Conditions préalables</u>:
+<u>Conditions préalables</u> :
 
 1. dotdigital account existe.
 1. Des informations d’identification d’API numériques valides existent dans Adobe Commerce.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Accédez à **Magasins** > **Configuration** > **DOTDIGITAL** > **Paramètres de conversation** > **Activé** est défini sur *Oui.*
-1. Cliquez sur **Configurer** in **Configurer le widget Chat** ou **Configuration des équipes de discussion**.
+1. Cliquez sur **Configurer** dans **Configurer le widget de conversation** ou **Configurer les équipes de discussion**.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 La page des paramètres de conversation doit s’ouvrir correctement via le panneau d’administration.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Connexion à dotdigital impossible.
 
@@ -47,4 +47,4 @@ Solution : utilisez un autre navigateur que Safari pour cette situation particul
 
 ## Lecture connexe
 
-[Problème connu d’Adobe Commerce 2.4.1 - Adresse de sommet non valide avec des adresses de livraison/facturation différentes](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) dans notre base de connaissances de soutien.
+[ Problème connu d’Adobe Commerce 2.4.1 : l’adresse de sommet ne s’affichant pas avec des adresses de livraison/facturation différentes](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) dans notre base de connaissances de support.

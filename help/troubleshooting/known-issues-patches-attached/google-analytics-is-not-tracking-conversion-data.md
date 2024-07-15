@@ -23,19 +23,19 @@ Cet article fournit un correctif pour le problème connu d’Adobe Commerce 2.2.
 
 Les données de conversion n’ont pas été suivies par les Google Analytics en raison d’une erreur dans le code du composant Google Analytics.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Activez et configurez la fonctionnalité Google Analytics dans l’Admin Commerce sous **Magasins** > **Paramètres** > **Configuration** > **Ventes** > **API GOOGLE** > **Google Analytics**.
+1. Activez et configurez la fonctionnalité Google Analytics dans l’administrateur Commerce sous **Magasins** > **Paramètres** > **Configuration** > **Ventes** > **API Google** > **Google Analytics**.
 1. Cliquez sur **Enregistrer la configuration**.
 1. Passer une commande sur la vitrine.
-1. Accédez à **Tableau de bord des Google Analytics** > **Conversions** > **Présentation**.
+1. Accédez à **Tableau de bord des Google Analytics** > **Conversions** > **Aperçu**.
 1. Définissez la période sur la date actuelle.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 L’ordre apparaît dans les données de conversion.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 L’ordre n’apparaît pas dans les données de conversion.
 

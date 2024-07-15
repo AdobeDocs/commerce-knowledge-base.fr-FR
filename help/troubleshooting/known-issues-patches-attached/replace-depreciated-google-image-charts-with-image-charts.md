@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Remplacer les graphiques Google dépréciés par les graphiques à images
 
-La plupart des versions et éditions Adobe Commerce utilisent actuellement [Graphiques d’images Google](https://developers.google.com/chart/image/) pour effectuer le rendu des graphiques statiques dans les tableaux de bord d’administration. À compter du 14 mars 2019, Google cessera de prendre en charge les graphiques d’images Google. Pour résoudre ce problème, nous fournissons un correctif pour remplacer les graphiques Google avec [Graphiques d’images](https://www.image-charts.com/) service gratuit.
+La plupart des éditions et versions d’Adobe Commerce utilisent actuellement les [Graphiques d’images Google](https://developers.google.com/chart/image/) pour effectuer le rendu de graphiques statiques dans les tableaux de bord d’administration. À compter du 14 mars 2019, Google cessera de prendre en charge les graphiques d’images Google. Pour résoudre ce problème, nous fournissons un correctif pour remplacer les graphiques d’images Google par le service gratuit [Graphiques d’images](https://www.image-charts.com/).
 
 ## Versions affectées
 
@@ -26,7 +26,7 @@ La plupart des versions et éditions Adobe Commerce utilisent actuellement [Grap
 
 ## Problème
 
-Google a cessé de prendre en charge les graphiques d’images Google le 14 mars 2019. Les utilisateurs d’Adobe Commerce 1.X et d’Adobe Commerce 2.2.X de toutes les versions ne pourront pas afficher les graphiques statiques à moins de télécharger et d’appliquer le correctif, en remplaçant les Graphiques d’image Google par la solution de graphiques à images. Les graphiques affichés auront la même conception et la même fonctionnalité que les graphiques d’image Google grâce au service de compte libre Graphiques d’images avec une [RGPD](https://www.image-charts.com/data-processing-addendum.html) politique de confidentialité de la conformité. Pour connaître les autres options, voir [Graphiques d’images](https://www.image-charts.com/).
+Google a cessé de prendre en charge les graphiques d’images Google le 14 mars 2019. Les utilisateurs d’Adobe Commerce 1.X et d’Adobe Commerce 2.2.X de toutes les versions ne pourront pas afficher les graphiques statiques à moins de télécharger et d’appliquer le correctif, en remplaçant les Graphiques d’image Google par la solution de graphiques à images. Les graphiques affichés auront la même conception et la même fonctionnalité que les graphiques d’image Google grâce au service de compte libre Image-Grapts avec une politique de confidentialité de conformité [ au RGPD ](https://www.image-charts.com/data-processing-addendum.html). Pour plus d’options, voir [Graphiques d’images](https://www.image-charts.com/).
 
 ## Solution
 
@@ -34,7 +34,7 @@ Pour pouvoir afficher des graphiques statiques dans l’administrateur Commerce,
 
 ### Adobe Commerce sur site
 
-1. Enregistrez le [joint MAGETWO-98833\_compositeur\_patch-2019-04-15-04-38-57.patch](assets/MAGETWO-98833_composer_patch-2019-04-15-04-38-57.patch.zip) corrigez et téléchargez-le dans votre répertoire racine Adobe Commerce.
+1. Enregistrez le correctif [joint MAGETWO-98833\_compositeur\_patch-2019-04-15-04-38-57.patch](assets/MAGETWO-98833_composer_patch-2019-04-15-04-38-57.patch.zip) et téléchargez-le dans votre répertoire racine Adobe Commerce.
 1. Exécutez la commande SSH suivante, en remplaçant le nom du correctif par le nom réel :
 
    ```git
@@ -43,7 +43,7 @@ Pour pouvoir afficher des graphiques statiques dans l’administrateur Commerce,
 
    Si la commande ci-dessus ne fonctionne pas, essayez d’utiliser `-p2` au lieu de `-p1`.)
 
-1. Pour que les modifications soient répercutées, actualisez le cache dans l’Admin sous **Système** > **Gestion du cache**.
+1. Pour que les modifications soient prises en compte, actualisez le cache dans l’Admin sous **Système** > **Gestion du cache**.
 
 ### Adobe Commerce sur l’infrastructure cloud
 
@@ -52,7 +52,7 @@ Pour les commerçants Cloud, le correctif sera inclus à la mise à jour des out
 ### Magento 2 Open Source
 
 1. Accédez à [https://magento.com/tech-resources/download\#download2291](https://magento.com/tech-resources/download#download2291).
-1. Dans le **Sélectionner votre format** , sélectionnez la version du compositeur et cliquez sur **Télécharger**.
+1. Dans la liste déroulante **Sélectionnez votre format**, sélectionnez la version du compositeur et cliquez sur **Télécharger**.
 1. Téléchargez le correctif dans votre répertoire racine Adobe Commerce.
 1. Exécutez la commande SSH suivante, en remplaçant le nom du correctif par le nom réel :
 
@@ -62,13 +62,13 @@ Pour les commerçants Cloud, le correctif sera inclus à la mise à jour des out
 
    (Si la commande ci-dessus ne fonctionne pas, essayez d’utiliser `-p2` au lieu de `-p1`.)
 
-1. Pour que les modifications soient répercutées, actualisez le cache dans l’Admin sous **Système** > **Gestion du cache**.
+1. Pour que les modifications soient prises en compte, actualisez le cache dans l’Admin sous **Système** > **Gestion du cache**.
 
 ### Adobe Commerce 1 sur site
 
 Pour télécharger et appliquer le correctif, procédez comme suit :
 
-1. Enregistrez le [joint MPERF-10509-EE-2019-03-13-06-32-19.diff](assets/MPERF-10509-EE-2019-03-13-06-32-19.diff.zip) corrigez et téléchargez-le dans votre répertoire racine Adobe Commerce.
+1. Enregistrez le correctif [joint MPERF-10509-EE-2019-03-13-06-32-19.diff](assets/MPERF-10509-EE-2019-03-13-06-32-19.diff.zip) et téléchargez-le dans votre répertoire racine Adobe Commerce.
 1. Exécutez la commande SSH suivante :
 
    ```git
@@ -77,7 +77,7 @@ Pour télécharger et appliquer le correctif, procédez comme suit :
 
    (Si la commande ci-dessus ne fonctionne pas, essayez d’utiliser `-p2` au lieu de `-p1`.)
 
-1. Pour que les modifications soient répercutées, actualisez le cache dans l’Admin sous **Système** > **Gestion du cache**.
+1. Pour que les modifications soient prises en compte, actualisez le cache dans l’Admin sous **Système** > **Gestion du cache**.
 
 ### Magento 1 Open Source
 
@@ -90,7 +90,7 @@ Pour télécharger et appliquer le correctif, procédez comme suit :
    MPERF-10509.diff
    ```
 
-   de la **Sélectionner votre format** puis cliquez sur Télécharger.
+   dans la liste déroulante **Sélectionnez votre format** et cliquez sur Télécharger.
 
 1. Téléchargez le fichier dans le répertoire racine Adobe Commerce.
 1. Exécutez la commande SSH suivante :
@@ -101,7 +101,7 @@ Pour télécharger et appliquer le correctif, procédez comme suit :
 
    (Si la commande ci-dessus ne fonctionne pas, essayez d’utiliser `-p2` au lieu de `-p1`.)
 
-1. Pour que les modifications soient répercutées, actualisez le cache dans l’Admin sous **Système** > **Gestion du cache**.
+1. Pour que les modifications soient prises en compte, actualisez le cache dans l’Admin sous **Système** > **Gestion du cache**.
 
 ## Fichiers attachés
 

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # ACSD-50813 : L’administrateur ne peut pas ajouter de produits groupés contenant une barre oblique
 
-Le correctif ACSD-50813 corrige le problème où l’administrateur ne peut pas ajouter de produits groupés contenant une barre oblique (`/`) dans le SKU avec la variable *[!UICONTROL Add Products by SKU]* à l’ordre d’administration. Ce correctif est disponible lorsque la variable [!DNL Quality Patches Tool (QPT)] La version 1.1.34 est installée. L’ID de correctif est ACSD-50813. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
+Le correctif ACSD-50813 corrige le problème où l’administrateur ne peut pas ajouter de produits groupés contenant une barre oblique (`/`) dans le SKU avec la fonctionnalité *[!UICONTROL Add Products by SKU]* dans l’ordre d’administration. Ce correctif est disponible lorsque [!DNL Quality Patches Tool (QPT)] 1.1.34 est installé. L’ID de correctif est ACSD-50813. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.7.
 
 ## Produits et versions concernés
 
@@ -25,31 +25,31 @@ Le correctif ACSD-50813 corrige le problème où l’administrateur ne peut pas 
 
 >[!NOTE]
 >
->Le correctif peut s’appliquer à d’autres versions avec de nouvelles [!DNL Quality Patches Tool] versions. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-L’administrateur ne peut pas ajouter de produits groupés contenant une barre oblique (`/`) dans le SKU avec la variable *[!UICONTROL Add Products by SKU]* à l’ordre d’administration.
+L’administrateur ne peut pas ajouter à l’ordre d’administration des produits regroupés contenant une barre oblique (`/`) dans le SKU avec la fonctionnalité *[!UICONTROL Add Products by SKU]*.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Accédez à **[!UICONTROL Catalog]** > **[!UICONTROL Products]**.
 1. Créez un produit simple.
 1. Créez un produit fourni.
-1. Ajouter une barre oblique (`/`) au milieu du SKU (par exemple : *Bu/ndle*).
+1. Ajoutez une barre oblique (`/`) au milieu du SKU (par exemple : *Bu/ndle*).
 1. Ajoutez une option regroupée avec **[!UICONTROL Input Type]** = *[!UICONTROL Dropdown]*.
 1. Attribuez au moins un produit simple à l’option .
-1. Accédez à **[!UICONTROL Sales]** > **[!UICONTROL Orders]**, puis créez un ordre.
+1. Accédez à **[!UICONTROL Sales]** > **[!UICONTROL Orders]** et créez une nouvelle commande.
 1. Cliquez sur **[!UICONTROL Add Products by SKU]**.
 1. Saisissez votre SKU, puis cliquez sur **[!UICONTROL Add to Order]**.
 1. Ouvrez la console du navigateur.
 1. Cliquez sur **[!UICONTROL Configure]**.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Il n’y a pas d’erreur.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Erreur JS dans la console :
 
@@ -59,14 +59,14 @@ Erreur JS dans la console :
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le [!DNL Quality Patches Tool] guide.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
+* Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans le guide [!DNL Quality Patches Tool].
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
 
 ## Lecture connexe
 
 Pour en savoir plus sur [!DNL Quality Patches Tool], voir :
 
-* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [[!DNL Quality Patches Tool] publié : un nouvel outil pour les correctifs de qualité en libre-service](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce en utilisant  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [[!DNL Quality Patches Tool]: recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le [!DNL Quality Patches Tool] guide.
+Pour plus d&#39;informations sur les autres correctifs disponibles dans QPT, reportez-vous à [[!DNL Quality Patches Tool] : Recherche de correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide [!DNL Quality Patches Tool].

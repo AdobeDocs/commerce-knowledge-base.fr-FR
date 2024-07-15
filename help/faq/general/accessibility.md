@@ -16,11 +16,11 @@ Nous comprenons l’importance de l’accessibilité dans Adobe. Bien que la res
 
 Adobe Commerce est hautement personnalisable. Nos clients peuvent étendre le thème Luma, créer leurs modules d’accessibilité et consulter notre Commerce Marketplace pour trouver les extensions qui répondent à leurs exigences d’accessibilité.
 
-La plupart de nos clients utilisent la variable [Normes d’accessibilité du W3C](https://www.w3.org/WAI/standards-guidelines/) et utilisez la variable [Rapport de conformité à l’accessibilité des Adobes pour Adobe Commerce](https://www.adobe.com/accessibility/compliance/adobe-commerce-2021-acr.html).
+La plupart de nos clients utilisent les [normes d’accessibilité du W3C](https://www.w3.org/WAI/standards-guidelines/) et utilisent le [rapport de conformité à l’accessibilité des Adobes pour Adobe Commerce](https://www.adobe.com/accessibility/compliance/adobe-commerce-2021-acr.html).
 
 À l’aide d’outils de développement standard, vous pouvez travailler avec un partenaire d’accessibilité clé ou mettre en oeuvre des extensions à partir du Commerce Marketplace en fonction des besoins spécifiques des clients ou du rapport de conformité de l’Adobe.
 
-Les solutions se trouvent dans la section [Commerce Marketplace](https://marketplace.magento.com/).
+Les solutions se trouvent dans le [Commerce Marketplace](https://marketplace.magento.com/).
 
 ## Lecture connexe
 

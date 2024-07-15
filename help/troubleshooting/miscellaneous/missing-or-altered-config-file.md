@@ -21,16 +21,16 @@ Cet article explique comment résoudre le problème de modification ou d’absen
 
 ## Problème
 
-Fichiers de configuration `config.php` et/ou `env.php` ont été modifiés à tort ou sont manquants.
+Les fichiers de configuration `config.php` et/ou `env.php` ont été modifiés incorrectement ou sont manquants.
 
 ## Solution
 
 Le processus de déploiement crée un fichier de sauvegarde pour chaque fichier de configuration :
 
-* `app/etc/config.php.bak` — contient des paramètres spécifiques au système et est généré automatiquement lors de la génération s’il n’existe pas
+* `app/etc/config.php.bak` : contient des paramètres spécifiques au système et est généré automatiquement lors de la génération si elle n’existe pas.
 * `app/etc/env.php.bak` — contient des données de configuration sensibles
 
-Vous pouvez les restaurer à l’aide des outils de la CEE. `backup:restore` .
+Vous pouvez les restaurer à l&#39;aide de la commande CEE-outils `backup:restore` .
 
 Les fichiers BAK sont un produit du processus de déploiement. Si vous modifiez manuellement un fichier de configuration après le déploiement, vos modifications ne sont pas répercutées dans les fichiers BAK existants.
 
@@ -62,7 +62,7 @@ Pour restaurer les fichiers de configuration :
    app/etc/config.php file exists! If you want to rewrite existed files use --force
    ```
 
-1. Utilisez la variable `--force` pour remplacer tous les fichiers.
+1. Utilisez l’option `--force` pour remplacer tous les fichiers.
 
    ```
    ./vendor/bin/ece-tools backup:restore --force

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Cet article fournit un correctif lorsque les commerçants tentent de mettre à niveau vers Adobe Commerce (toutes les méthodes de déploiement) ou Magento Open Source 2.4.3 ou 2.3.7-p1, ils voient l’erreur suivante :
 
-*Erreur fatale PHP : erreur non interceptée : appel à une fonction non définie Magento\Framework\Filesystem\Directory\str_contains() dans &lt;...>/magento/vendor/magento/framework/Filesystem/Directory/DenyListPathValidator.php:74*
+*Erreur fatale PHP : erreur non interceptée : appel à la fonction non définie Magento\Framework\Filesystem\Directory\str_contains() dans &lt;...>/magento/vendor/magento/framework/Filesystem/Directory/DenyListPathValidator.php:74*
 
 Le problème sera corrigé dans le cadre des versions 2.4.4, 2.4.3-p1 et 2.3.7-p2.
 
@@ -26,7 +26,7 @@ Le problème sera corrigé dans le cadre des versions 2.4.4, 2.4.3-p1 et 2.3.7-p
 
 ## Problème
 
-Le problème est dû aux nouvelles versions d’Adobe Commerce 2.4.3 et 2.3.7-p1 utilisant uniquement la fonction PHP 8. `str_contains`. Adobe Commerce 2.4.3 et 2.3.7-p1 sont uniquement compatibles avec PHP 7.4. Cette fonction ne peut donc pas être utilisée.
+Le problème est dû aux nouvelles versions d’Adobe Commerce 2.4.3 et 2.3.7-p1 utilisant la fonction PHP 8 uniquement `str_contains`. Adobe Commerce 2.4.3 et 2.3.7-p1 sont uniquement compatibles avec PHP 7.4. Cette fonction ne peut donc pas être utilisée.
 
 <u>Étapes à reproduire</u> :
 

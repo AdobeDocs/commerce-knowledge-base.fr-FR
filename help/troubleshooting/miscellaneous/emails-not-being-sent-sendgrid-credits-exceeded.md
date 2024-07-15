@@ -25,7 +25,7 @@ Il n’existe aucune limite stricte au nombre d’emails pouvant être envoyés 
 
 ## Comment vérifier si vos crédits ont été dépassés :
 
-Architecture du forfait Adobe Commerce on cloud infrastructure Pro : consultez la section `/var/log/mail.log` - un message comme celui-ci peut s’afficher :
+Architecture de plan d’Adobe Commerce sur l’infrastructure cloud Pro : vérifiez le `/var/log/mail.log`. Un message tel que celui-ci peut s’afficher :
 
 `May 28 21:13:00 <i-node> postfix/error[21335]: BC7941A2BBF: to=<to@email.com>, relay=none, delay=4642, delays=4642/0.56/0/0.03, dsn=4.0.0, status=deferred (delivery temporarily suspended: SASL authentication failed; server smtp.sendgrid.net[ip address] said: 451 Authentication failed: Maximum credits exceeded).`
 
@@ -35,8 +35,8 @@ Le nombre d’emails autorisés pouvant être envoyés est limité.
 
 ## Solution
 
-* Si ce message s’affiche dans l’environnement de production, [envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) et indiquez le message ci-dessus et demandez que les crédits soient augmentés.
-* Si ce message ne s’affiche pas ou si vous utilisez Adobe Commerce sur l’architecture du plan de démarrage de l’infrastructure cloud, [envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) et mentionnez que la variable `mail.log` n’indique pas que les crédits ont été dépassés.
+* Si ce message s’affiche dans l’environnement de production, [envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), fournissez le message ci-dessus et demandez l’augmentation des crédits.
+* Si ce message ne s’affiche pas ou si vous utilisez l’architecture de plan de démarrage pour l’infrastructure cloud d’Adobe Commerce, [envoyez également un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) et indiquez que le fichier `mail.log` n’indique pas que les crédits ont été dépassés.
 
 ## Lecture connexe
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # L’invalidation de la mise en cache d’Adobe Commerce sur l’infrastructure cloud v2.3.5 GraphQL ne fonctionne pas
 
-Cet article fournit un correctif pour le problème de GraphQL `GET` request renvoie des informations obsolètes si le client modifie les informations sur le produit.
+Cet article fournit un correctif pour le problème où la requête GraphQL `GET` renvoie des informations obsolètes si le client modifie les informations sur le produit.
 
 ## Produits et versions concernés
 
@@ -23,7 +23,7 @@ Adobe Commerce sur l’infrastructure cloud v2.3.5.
 
 Les requêtes GraphQL sont mises en cache rapidement et la version mise en cache est récupérée pour chaque requête ultérieure à partir de Fastly. Lorsqu’un produit est réenregistré dans le serveur principal Adobe Commerce, le cache Fastly doit invalider lorsqu’un produit est mis à jour. Cependant, elle reste valide.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Déclenchez la requête GraphQL suivante pour obtenir des produits pour certaines catégories, par exemple :
    <pre><magento2-server>
@@ -31,13 +31,13 @@ Les requêtes GraphQL sont mises en cache rapidement et la version mise en cache
 1. Enregistrez à nouveau l’un des produits récupérés par la requête ci-dessus dans l’administrateur Commerce.
 1. Déclenchez à nouveau la requête.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
-La variable `X-Cache` L’en-tête contient `MISS`.
+L’en-tête `X-Cache` contient `MISS`.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
-La variable `X-Cache` L’en-tête contient `HIT`, ce qui signifie que la réponse est mise en cache.
+L’en-tête `X-Cache` contient `HIT`, ce qui signifie que la réponse est mise en cache.
 
 ## Solution
 
@@ -73,6 +73,6 @@ Le correctif est également compatible (mais peut ne pas résoudre le problème)
 
 ## Comment appliquer le correctif
 
-Voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) pour obtenir des instructions sur la façon d’appliquer un correctif de compositeur.
+Voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) pour obtenir des instructions sur la manière d’appliquer un correctif de compositeur.
 
 ## Fichiers attachés

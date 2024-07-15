@@ -17,7 +17,7 @@ Cet article décrit les solutions aux problèmes de version PHP que vous pouvez 
 
 >[!WARNING]
 >
->Sur Adobe Commerce sur l’infrastructure cloud, notez que les mises à niveau de service ne peuvent pas être transférées vers l’environnement de production sans préavis de 48 heures ouvrables à notre équipe d’infrastructure. Cela est nécessaire, car nous devons nous assurer qu’un ingénieur du support de l’infrastructure est disponible pour mettre à jour votre configuration dans les délais voulus, avec un temps d’arrêt minimal pour votre environnement de production. 48 heures avant que vos modifications ne soient en production [envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) détaillant la mise à niveau de service requise et indiquant l’heure à laquelle le processus de mise à niveau doit commencer.
+>Sur Adobe Commerce sur l’infrastructure cloud, notez que les mises à niveau de service ne peuvent pas être transférées vers l’environnement de production sans préavis de 48 heures ouvrables à notre équipe d’infrastructure. Cela est nécessaire, car nous devons nous assurer qu’un ingénieur du support de l’infrastructure est disponible pour mettre à jour votre configuration dans les délais voulus, avec un temps d’arrêt minimal pour votre environnement de production. Ainsi, 48 heures avant le moment où vos modifications doivent être en production [envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) détaillant la mise à niveau de service requise et indiquant l’heure à laquelle vous souhaitez que le processus de mise à niveau démarre.
 
 ## Produits et versions concernés
 
@@ -32,7 +32,7 @@ La vérification échoue car vous utilisez une version PHP non prise en charge.
 
 ### Solution
 
-Pour résoudre ce problème, utilisez l’une des versions prises en charge répertoriées dans notre documentation destinée aux développeurs. [Configuration requise 2.3.x](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html) et [Configuration requise 2.2.x](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements.html).
+Pour résoudre ce problème, utilisez l’une des versions prises en charge répertoriées dans notre documentation destinée aux développeurs [2.3.x Configuration système requise](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html) et [2.2.x Configuration système requise](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements.html).
 
 ## La vérification de la préparation PHP ne s’affiche pas
 
@@ -43,7 +43,7 @@ La vérification de l’état de préparation PHP n’affiche pas la version PHP
 
 ### Solution
 
-Ceci est le symptôme d’une configuration de tâche cron incorrecte. Pour plus d’informations, voir [Configuration de tâches cron](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron) dans notre documentation destinée aux développeurs.
+Ceci est le symptôme d’une configuration de tâche cron incorrecte. Pour plus d’informations, voir [Configuration des tâches cron](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron) dans notre documentation destinée aux développeurs.
 
 ## Version PHP incorrecte
 
@@ -51,7 +51,7 @@ Ceci est le symptôme d’une configuration de tâche cron incorrecte. Pour plus
 
 La vérification indique une version PHP incorrecte. En règle générale, cela se produit uniquement pour les utilisateurs avancés qui ont installé plusieurs versions de PHP. Dans certains cas, la vérification de l’état de préparation échoue ; dans d’autres cas, elle peut réussir.
 
-Si la version PHP signalée par la vérification de l’état de préparation est incorrecte, cela résulte d’une incohérence des versions PHP entre l’interface de ligne de commande de PHP et le module externe de serveur web. Adobe Commerce requiert que vous utilisiez *une version* de PHP pour l’interface de ligne de commande (qui exécute cron) et le serveur web (qui exécute l’administrateur Commerce, le gestionnaire de composants et la mise à niveau du système).
+Si la version PHP signalée par la vérification de l’état de préparation est incorrecte, cela résulte d’une incohérence des versions PHP entre l’interface de ligne de commande de PHP et le module externe de serveur web. Adobe Commerce exige que vous utilisiez *une version* de PHP pour l’interface en ligne de commande (qui exécute cron) et le serveur web (qui exécute l’administrateur Commerce, le gestionnaire de composants et la mise à niveau du système).
 
 ### Solution
 
@@ -60,10 +60,10 @@ Nous supposons que si vous rencontrez ce problème, vous êtes un utilisateur av
 Pour résoudre ce problème, essayez les méthodes suivantes :
 
 * Redémarrez votre serveur web ou php-fm.
-* Vérifiez les `$PATH` Variable d’environnement pour plusieurs chemins d’accès à PHP.
-* Utilisez la variable `which php` pour localiser le premier fichier exécutable PHP dans votre chemin d’accès ; s’il n’est pas correct, supprimez-le ou créez un lien symbolique vers la version PHP correcte.
-* Utilisez une [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo) pour collecter plus d’informations.
+* Vérifiez la variable d&#39;environnement `$PATH` pour plusieurs chemins vers PHP.
+* Utilisez la commande `which php` pour localiser le premier fichier exécutable PHP dans votre chemin d’accès. Si ce n’est pas le cas, supprimez-le ou créez un lien symbolique vers la version PHP appropriée.
+* Utilisez une page [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo) pour collecter plus d’informations.
 * Assurez-vous d’exécuter une version PHP prise en charge en fonction de la configuration requise, dans la documentation destinée aux développeurs :
    * [Configuration requise pour Adobe Commerce 2.3.x](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html)
    * [Configuration requise pour Adobe Commerce 2.2.x](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements.html)
-* Définissez les mêmes paramètres PHP pour la ligne de commande PHP et le plug-in du serveur Web PHP comme décrit dans la section [options de configuration PHP](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-centos-ubuntu.html) dans notre documentation destinée aux développeurs.
+* Définissez les mêmes paramètres PHP pour la ligne de commande PHP et le module externe de serveur Web PHP comme décrit dans la section [Options de configuration PHP](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-centos-ubuntu.html) de notre documentation destinée aux développeurs.

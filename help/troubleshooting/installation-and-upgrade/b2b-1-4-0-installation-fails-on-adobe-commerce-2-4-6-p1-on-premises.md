@@ -1,6 +1,6 @@
 ---
-title: '[!DNL B2B] Échec de l’installation de la version 1.4.0 sur Adobe Commerce 2.4.6-p1 sur site'
-description: Cet article fournit une solution de contournement pour le problème local Adobe Commerce 2.4.6-p1 où [!DNL B2B] L’installation de la version 1.4.0 échoue.
+title: Échec de l’installation de '[!DNL B2B] 1.4.0 sur Adobe Commerce 2.4.6-p1 sur site'
+description: Cet article fournit une solution de contournement pour le problème local d’Adobe Commerce 2.4.6-p1 où l’installation de la version 1.4.0 échoue. [!DNL B2B]
 feature: Install, Upgrade, B2B
 role: Developer
 exl-id: 4a557c13-7ec2-4cfe-b86e-bb0d1a441658
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL B2B] Échec de l’installation de la version 1.4.0 sur Adobe Commerce 2.4.6-p1 sur site
+# Échec de l’installation de [!DNL B2B] 1.4.0 sur Adobe Commerce 2.4.6-p1 sur site
 
-Cet article fournit une solution de contournement pour le problème local Adobe Commerce 2.4.6-p1 où [!DNL B2B] L’installation de la version 1.4.0 échoue.
+Cet article fournit une solution de contournement pour le problème local d’Adobe Commerce 2.4.6-p1 où l’installation de [!DNL B2B] version 1.4.0 échoue.
 
 ## Produits et versions concernés
 
@@ -22,11 +22,11 @@ Cet article fournit une solution de contournement pour le problème local Adobe 
 
 >[!NOTE]
 >
->[!DNL B2B] La version 1.4.0 s’installe correctement sur **Adobe Commerce Cloud 2.4.6-p1**.
+>[!DNL B2B] version 1.4.0 s’installe correctement sur **Adobe Commerce Cloud 2.4.6-p1**.
 
 ## Problème
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Installez Adobe Commerce 2.4.6-p1.
 
@@ -34,17 +34,17 @@ Cet article fournit une solution de contournement pour le problème local Adobe 
    m2install.sh -s composer --ee -v 2.4.6-p1
    ```
 
-1. Essayer d’installer [!DNL B2B] version 1.4.0.
+1. Essayez d&#39;installer [!DNL B2B] version 1.4.0.
 
    ```terminal
    composer require magento/extension-b2b:1.4.0
    ```
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
-[!DNL B2B] La version 1.4.0 s’installe correctement sur Adobe Commerce 2.4.6-p1.
+[!DNL B2B] version 1.4.0 s’installe correctement sur Adobe Commerce 2.4.6-p1.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 L&#39;installation échoue avec l&#39;erreur suivante :
 
@@ -61,9 +61,9 @@ Installation failed, reverting ./composer.json and ./composer.lock to their orig
 
 ## Solution
 
-Installation ou mise à niveau réussie vers [!DNL B2B] version 1.4.0 sur Adobe Commerce 2.4.6-p1 en ajoutant des dépendances manuelles pour la variable [!DNL B2B] package de sécurité avec un [balise de stabilité](https://getcomposer.org/doc/04-schema.md#package-links).
+Installation ou mise à niveau vers la version 1.4.0 de [!DNL B2B] sur Adobe Commerce 2.4.6-p1 avec succès en ajoutant des dépendances manuelles pour le package de sécurité [!DNL B2B] avec une [balise de stabilité](https://getcomposer.org/doc/04-schema.md#package-links).
 
-1. Dans le répertoire d’installation Adobe Commerce, mettez à jour `composer.json` avec les dépendances requises :
+1. Dans le répertoire d&#39;installation d&#39;Adobe Commerce, mettez à jour `composer.json` avec les dépendances requises :
 
    ```terminal
    composer require magento/module-re-captcha-company=1.0.3-beta1@beta magento/security-package-b2b=1.0.4-beta1@beta
@@ -92,7 +92,7 @@ Installation ou mise à niveau réussie vers [!DNL B2B] version 1.4.0 sur Adobe 
    No security vulnerability advisories found
    ```
 
-1. Mettre à jour `composer.json` ajouter [!DNL B2B] version 1.4.0.
+1. Mettez à jour `composer.json` pour ajouter [!DNL B2B] version 1.4.0.
 
    ```terminal
    composer require magento/extension-b2b=1.4.0
@@ -114,5 +114,5 @@ Installation ou mise à niveau réussie vers [!DNL B2B] version 1.4.0 sur Adobe 
 
 1. Procédez à l&#39;installation ou à la mise à niveau.
 
-   * [Installer [!DNL B2B] sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html)
+   * [Installer [!DNL B2B]  sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html)
    * [Installation sur site](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html)

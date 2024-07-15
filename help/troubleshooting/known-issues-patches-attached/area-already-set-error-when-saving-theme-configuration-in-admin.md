@@ -13,23 +13,23 @@ ht-degree: 0%
 
 # Erreur &quot;Zone déjà définie&quot; lors de l’enregistrement de la configuration du thème dans Admin
 
-Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur l’infrastructure cloud 2.2.4 lié à l’obtention de la variable *&quot;La zone est déjà définie&quot;* message d’erreur lors de la tentative de définition d’un thème pour l’affichage de magasin par défaut dans l’administrateur Commerce.
+Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur l’infrastructure cloud 2.2.4 lié à l’obtention du message d’erreur &quot;La zone est déjà définie&quot;*lors de la tentative de définition d’un thème pour la vue de magasin par défaut dans l’administrateur Commerce.*
 
 ## Problème
 
-Vous obtenez le *Un problème s’est produit lors de l’enregistrement de cette configuration : la zone est déjà définie* &quot; message d’erreur lors de la tentative de définition d’un thème pour l’affichage de magasin par défaut.
+Vous obtenez le message d’erreur &quot;*Une erreur s’est produite lors de l’enregistrement de cette configuration : la zone est déjà définie*&quot; lors de la tentative de définition d’un thème pour la vue de magasin par défaut.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Connectez-vous à l’administrateur Commerce.
 1. Accédez à **Contenu** > **Conception** > **Configuration**.
-1. Définissez la portée de la configuration sur *Affichage de magasin par défaut*.
-1. Modifiez le thème dans le **Thème appliqué** menu déroulant. Par exemple, à partir de *Luma* to *Vide.*
+1. Définissez la portée de configuration sur *Default Store View*.
+1. Modifiez le thème dans la liste déroulante **Thème appliqué** . Par exemple, de *Luma* à *Vierge.*
 1. Cliquez sur **Enregistrer la configuration**.
 
-<u>Résultat attendu</u>: le thème sélectionné est appliqué pour la vue de magasin par défaut.
+<u>Résultat attendu</u> : le thème sélectionné est appliqué pour la vue de magasin par défaut.
 
-<u>Résultat réel</u> : le thème n’est pas appliqué, la variable *&quot;Un problème s’est produit lors de l’enregistrement de cette configuration : la zone est déjà définie&quot;* message d’erreur s’affiche.
+<u>Résultat réel</u> : le thème n’est pas appliqué, *&quot;Quelque chose s’est mal passé lors de l’enregistrement de cette configuration : la zone est déjà définie&quot;* le message d’erreur s’affiche.
 
 ## Correctif
 
@@ -54,6 +54,6 @@ Le correctif est également compatible (mais peut ne pas résoudre le problème)
 
 ## Comment appliquer le correctif
 
-Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de soutien.
+Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Fichiers attachés

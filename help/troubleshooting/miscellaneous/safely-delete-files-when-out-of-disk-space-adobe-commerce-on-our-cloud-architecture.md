@@ -16,7 +16,7 @@ ht-degree: 0%
 ## Produits et versions concernés
 
 * Adobe Commerce sur l’infrastructure cloud 2.4.2 - 2.4.7
-* Ceci est spécifique aux grappes Pro dédiées. Les environnements de démarrage et d’intégration sont à un seul noeud et ne comportent pas la variable `/data/exports` répertoire .
+* Ceci est spécifique aux grappes Pro dédiées. Les environnements de démarrage et d’intégration sont un noeud unique et ne possèdent pas le répertoire `/data/exports`.
 
 ## Signes de faible espace disque
 
@@ -28,15 +28,15 @@ Pour voir la quantité d’espace disque utilisée par le système de fichiers, 
 
 ## Comment supprimer des fichiers en toute sécurité pour augmenter l’espace disque
 
-Vous pouvez supprimer des fichiers des points de montage de l’application, depuis votre `/app` chemin ou `/mnt/shared`. Il existe deux manières différentes d’accéder aux mêmes fichiers.
+Vous pouvez supprimer des fichiers des points de montage de l’application, de votre chemin `/app` ou via `/mnt/shared`. Il existe deux manières différentes d’accéder aux mêmes fichiers.
 
 >[!WARNING]
 >
->**Ne jamais modifier ou supprimer le contenu de`/data/exports`**.
+>**Ne modifiez jamais ou ne supprimez jamais le contenu de`/data/exports`**.
 >
->`/data/exports` est le stockage sous-jacent du système de fichiers partagé et il est géré par GlusterFS.
+>`/data/exports` est le stockage sous-jacent derrière le système de fichiers partagé et il est géré par GlusterFS.
 >
->Le système de fichiers contient non seulement le contenu du fichier, mais aussi des métadonnées sur l’état du système de fichiers pour permettre la synchronisation > entre les noeuds de la grappe. **La modification ou la suppression de fichiers directement dans ce système de fichiers endommagera le système de fichiers partagé, ce qui nécessite des réparations importantes ou la récupération des données.**
+>Le système de fichiers contient non seulement le contenu du fichier, mais aussi des métadonnées sur l’état du système de fichiers pour permettre la synchronisation > entre les noeuds de la grappe. **La modification ou la suppression de fichiers directement dans ce système de fichiers corrompt le système de fichiers partagé >et nécessite des réparations importantes ou la récupération de données.**
 
 Pour localiser les fichiers les plus volumineux pouvant être pertinents pour l’effacement, exécutez la commande suivante (sur les projets volumineux ou occupés, il peut s’écouler jusqu’à une heure) :
 
@@ -59,4 +59,4 @@ Dans notre base de connaissances de soutien :
 
 Dans notre documentation destinée aux développeurs :
 
-* [Gestion de l’espace disque](https://devdocs.magento.com/cloud/project/manage-disk-space.html)
+* [Gérer l’espace disque](https://devdocs.magento.com/cloud/project/manage-disk-space.html)

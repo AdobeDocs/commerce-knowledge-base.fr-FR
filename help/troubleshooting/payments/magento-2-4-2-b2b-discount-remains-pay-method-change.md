@@ -26,7 +26,7 @@ Cet article décrit un problème connu d’Adobe Commerce 2.4.2 B2B dans lequel 
 
 <u>Étapes à reproduire</u> :
 
-1. Création d’un panier **Règle de prix** qui est lié à un mode de paiement (par exemple : les utilisateurs de Paypal bénéficient d’une remise de 20 %).
+1. Créez un panier **Règle de prix** liée à un mode de paiement (par exemple : les utilisateurs de paypal bénéficient d’une remise de 20 %).
 1. Créez un bon de commande et sélectionnez Paypal comme mode de paiement. La remise est appliquée.
 1. Le bon de commande est approuvé.
 1. Accédez à la page de paiement pour terminer la commande.
@@ -36,7 +36,7 @@ Cet article décrit un problème connu d’Adobe Commerce 2.4.2 B2B dans lequel 
 
 La remise du mode de paiement reste appliquée au total de la commande.  Aucun message d’erreur ne s’affiche. Le propriétaire du magasin pourra voir que cela s’est produit en vérifiant l’historique des commandes.
 
-<u>Résultats attendus</u> : la remise du mode de paiement est supprimée du total de la commande, comme prévu.
+<u>Résultats attendus</u> : la remise sur le mode de paiement est supprimée du total de la commande, comme prévu.
 
 ## Solution
 

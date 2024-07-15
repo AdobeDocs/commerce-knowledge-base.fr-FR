@@ -17,4 +17,4 @@ L’observation pour Adobe Commerce est un nerdlet New Relic permettant de voir 
 
 L’onglet Résumé de l’observation pour Adobe Commerce est conçu pour afficher rapidement certains des problèmes rencontrés par les sites pour vous aider à résoudre ou à identifier automatiquement les causes potentielles des problèmes du site. Les onglets supplémentaires fournissent des informations de niveau plus détaillé sur les services de composants, la base de données, l’infrastructure et les états de processus.
 
-Pour consulter le guide complet sur l’utilisation de l’observation pour Adobe Commerce sur l’infrastructure cloud, rendez-vous sur [Observation pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) dans Experience League.
+Pour consulter le guide complet sur l’utilisation d’Observation pour Adobe Commerce sur l’infrastructure cloud, consultez le guide [Observation pour Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) dans Experience League.

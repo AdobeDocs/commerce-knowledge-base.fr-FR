@@ -21,7 +21,7 @@ Cet article décrit un problème connu d’Adobe Commerce 2.4.2, en raison duque
 
 ## Problème
 
-<u>Condition préalable</u> :
+<u>Precondition</u> :
 
 Activez le paiement Venmo dans la configuration du Braintree.
 
@@ -30,15 +30,15 @@ Activez le paiement Venmo dans la configuration du Braintree.
 1. Sur le storefront, ajoutez n’importe quel article au panier.
 1. Passez à **Passage en caisse**.
 1. Sélectionnez le mode de livraison approprié.
-1. Sélectionner **Venmo** comme mode de paiement.
+1. Sélectionnez **Venmo** comme mode de paiement.
 1. Cliquez sur **Payer avec Venmo**.
 1. Cliquez sur **Passer commande**.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 La commande n’est pas créée dans le code Adobe Commerce une fois que le client a été redirigé vers la boutique à partir de l’application Venmo et qu’aucun message d’erreur ne s’affiche. La commande est créée dans Braintree.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 La commande est créée dans Adobe Commerce une fois que le client est redirigé vers la boutique à partir de l’application Venmo et que la commande est créée dans Braintree, comme prévu.
 

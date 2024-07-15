@@ -20,15 +20,15 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.3.x, 2.4.x.
 
 Créez un vidage &quot;frotté&quot; à partir de l’administrateur :
 
-1. Dans l’administrateur de Commerce, accédez à **Système** > **Assistance** > **Collecteur de données**.
+1. Dans l’administrateur Commerce, accédez à **Système** > **Assistance** > **Collecteur de données**.
 1. Cliquez sur **Nouvelle sauvegarde**.
-1. Après quelques minutes, cliquez sur **Actualiser l’état** (peut prendre plus de temps, répétez toutes les 5 minutes jusqu’à ce qu’il soit terminé).
-1. Délocalisez les fichiers de vidage générés à partir du `/var/support` vers le répertoire racine Adobe Commerce.
+1. Après quelques minutes, cliquez sur **Actualiser l’état** (ce qui peut prendre plus de temps, répétez toutes les 5 minutes jusqu’à ce qu’il soit terminé).
+1. Délocalisez les fichiers de vidage générés du répertoire `/var/support` vers le répertoire racine Adobe Commerce.
 
 Vous pouvez ensuite fournir pour prendre en charge le lien de téléchargement direct vers les fichiers de vidage (l’adresse de votre magasin et le nom du fichier tel qu’affiché).
 
-Si vous rencontrez des problèmes lors de la création de vidages à partir de l’administrateur, pensez à utiliser les commandes de l’interface de ligne de commande, comme décrit dans la section [Exécution des utilitaires de support](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-spt-util.html) dans notre documentation destinée aux développeurs.
+Si vous rencontrez des problèmes lors de la création de vidages à partir de l’administrateur, pensez à utiliser les commandes de l’interface de ligne de commande comme décrit dans la section [Exécution des utilitaires de support](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-spt-util.html) de notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
-* [Création d’une sauvegarde complète de la base de données pour Adobe Commerce sur l’infrastructure cloud](/help/how-to/general/create-database-dump-on-cloud.md) dans notre base de connaissances de soutien.
+* [ Créez une sauvegarde complète de la base de données pour Adobe Commerce sur l’infrastructure cloud ](/help/how-to/general/create-database-dump-on-cloud.md) dans notre base de connaissances de support.

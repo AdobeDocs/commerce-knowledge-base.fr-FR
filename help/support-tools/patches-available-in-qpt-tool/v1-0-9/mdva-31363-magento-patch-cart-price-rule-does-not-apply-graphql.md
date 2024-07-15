@@ -15,9 +15,9 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Un nouveau correctif appelé MDVA-33975 corrige les problèmes de calcul des prix de GraphQL. Le MDVA-31363 est déprécié et il est recommandé d’appliquer le correctif MDVA-33975. Pour accéder à ce patch, reportez-vous à la section [Correctif MDVA-33975 : calculs des prix GraphQL](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/mdva-33975-magento-patch-graphql-price-calculations.html).
+>Un nouveau correctif appelé MDVA-33975 corrige les problèmes de calcul des prix de GraphQL. Le MDVA-31363 est déprécié et il est recommandé d’appliquer le correctif MDVA-33975. Pour accéder à ce correctif, reportez-vous à la section [Correctif MDVA-33975 : calculs des prix GraphQL](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/mdva-33975-magento-patch-graphql-price-calculations.html).
 
-Le correctif MDVA-31363 corrige le problème en raison duquel la règle de prix du panier avec coupon ne s’applique pas via GraphQL lorsque l’action &quot;Remise sur le montant fixe pour le panier entier&quot; est utilisée. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.0.9 est installée. Le problème devrait être corrigé dans Adobe Commerce version 2.4.2.
+Le correctif MDVA-31363 corrige le problème en raison duquel la règle de prix du panier avec coupon ne s’applique pas via GraphQL lorsque l’action &quot;Remise sur le montant fixe pour le panier entier&quot; est utilisée. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.9 est installé. Le problème devrait être corrigé dans Adobe Commerce version 2.4.2.
 
 ## Produits et versions concernés
 
@@ -31,13 +31,13 @@ Adobe Commerce sur l’infrastructure cloud et Adobe Commerce sur site 2.3.2 - 2
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 Recalculer les totaux des guillemets avant de donner une réponse sur les prix entraîne la perte des règles appliquées.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Créez un produit simple.
 1. Créez une règle de prix de panier avec une remise fixe pour l’ensemble du panier.
@@ -46,11 +46,11 @@ Recalculer les totaux des guillemets avant de donner une réponse sur les prix e
 1. Activez la règle de prix du panier en ajoutant le code de coupon au panier à l’aide de GraphQL.
 1. Vérifiez le prix en réponse.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 La remise est appliquée.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 La remise n’est pas appliquée.
 
@@ -59,13 +59,13 @@ La remise n’est pas appliquée.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) dans notre documentation destinée aux développeurs.
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) de notre documentation destinée aux développeurs.

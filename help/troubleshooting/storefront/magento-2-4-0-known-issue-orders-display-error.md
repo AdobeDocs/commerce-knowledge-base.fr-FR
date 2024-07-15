@@ -1,6 +1,6 @@
 ---
 title: 'Problème connu d’Adobe Commerce 2.4.0 : erreur d’affichage des commandes'
-description: "Cet article fournit une solution à un problème connu dans Adobe Commerce pour une erreur d’affichage des commandes. Lorsque les clients connectés examinent leurs commandes dans le menu **Mon compte** (**Mon compte et mon compte ; mes commandes**), la grille des commandes ne peut pas passer le nombre de commandes par page à 20 à partir de la page 2 lorsqu’il y a 11 commandes. En outre, s’il existe plus de commandes que de commandes configurées pour être affichées par page, lorsque vous accédez à la dernière page avec des commandes, la modification du nombre de commandes affichées par page génère le message d’erreur : *Vous n’avez passé aucune commande*. Ce problème sera résolu dans Adobe Commerce 2.4.1."
+description: "Cet article fournit une solution à un problème connu dans Adobe Commerce pour une erreur d’affichage des commandes. Lorsque les clients connectés examinent leurs commandes dans le menu **Mon compte** (**Mon compte &gt; Mes commandes**), la grille des commandes ne peut pas passer le nombre de commandes par page à 20 à partir de la page 2 lorsqu’il y a 11 commandes. En outre, s’il existe plus de commandes que de commandes configurées pour être affichées par page, lorsque vous accédez à la dernière page avec des commandes, la modification du nombre de commandes affichées par page génère le message d’erreur : *Vous n’avez passé aucune commande*. Ce problème sera résolu dans Adobe Commerce 2.4.1."
 exl-id: a6d300e1-1cbc-42b9-997d-d72f8765517b
 feature: B2B, Categories, Storefront
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Problème connu d’Adobe Commerce 2.4.0 : erreur d’affichage des commandes
 
-Cet article fournit une solution à un problème connu dans Adobe Commerce pour une erreur d’affichage des commandes. Lorsque les clients connectés examinent leurs commandes dans la variable **Mon compte** (**Mon compte > Mes commandes**), la grille des commandes ne peut pas passer le nombre de commandes par page à 20 à partir de la page 2 lorsqu’il y a 11 commandes. En outre, s’il existe plus de commandes que de commandes configurées pour être affichées par page, lorsque vous accédez à la dernière page avec des commandes, la modification du nombre de commandes affichées par page génère le message d’erreur : *Vous n’avez passé aucune commande*. Ce problème sera résolu dans Adobe Commerce 2.4.1.
+Cet article fournit une solution à un problème connu dans Adobe Commerce pour une erreur d’affichage des commandes. Lorsque les clients connectés examinent leurs commandes dans le menu **Mon compte** (**Mon compte > Mes commandes**), la grille des commandes ne peut pas passer le nombre de commandes par page à 20 à partir de la page 2 lorsqu’il y a 11 commandes. En outre, s’il y a plus de commandes que de commandes configurées pour être affichées par page, lorsque vous accédez à la dernière page avec des commandes, la modification du nombre de commandes affichées par page génère le message d’erreur : *Vous n’avez pas passé de commandes*. Ce problème sera résolu dans Adobe Commerce 2.4.1.
 
 ## Produits et versions concernés
 
@@ -33,7 +33,7 @@ Cet article fournit une solution à un problème connu dans Adobe Commerce pour 
 1. Accédez à **Mon compte**.
 1. Accédez à **Mes commandes**.
 1. Cliquez sur la deuxième page pour afficher la 11e commande sur la grille des commandes.
-1. Sélectionner **Afficher = 20 par page** dans le menu déroulant.
+1. Sélectionnez **Afficher = 20 par page** dans le menu déroulant.
 
 <u>Résultat attendu</u>
 
@@ -41,11 +41,11 @@ Les 11 commandes s’affichent sur la première page, comme prévu.
 
 <u>Résultat réel</u>
 
-La variable *Vous n’avez passé aucune commande* message d’erreur s’affiche.
+Le message d&#39;erreur *Vous n&#39;avez pas passé de commande* s&#39;affiche.
 
 ## Solution
 
-La solution consiste à faire rouvrir l’acheteur **Mes commandes** et la liste des commandes s’affiche correctement. Le problème sera corrigé dans la prochaine version d’Adobe Commerce 2.4.1, qui sera publiée au quatrième trimestre 2020.
+La solution consiste à demander à l’acheteur de rouvrir la page **Mes commandes**, puis la liste des commandes s’affiche correctement. Le problème sera corrigé dans la prochaine version d’Adobe Commerce 2.4.1, qui sera publiée au quatrième trimestre 2020.
 
 ## Lectures connexes dans notre base de connaissances de support
 

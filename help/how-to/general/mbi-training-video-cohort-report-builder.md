@@ -1,5 +1,5 @@
 ---
-title: "Vidéo de formation sur le renseignement Adobe Commerce : Report Builder de cohortes"
+title: "Vidéo de formation Adobe Commerce Intelligence : Report Builder de cohortes"
 description: Avez-vous déjà voulu étudier le comportement des différents sous-ensembles de vos utilisateurs au fil du temps ? Par exemple, vous êtes-vous déjà demandé si les utilisateurs qui s’inscrivent lors d’une période de promotion ont des revenus de durée de vie moyens supérieurs à ceux qui ne s’y inscrivent pas ? Si la réponse est "Oui !", le Report Builder de cohortes est l’outil idéal pour vous. Commerce Intelligence est particulièrement optimisé pour effectuer cette analyse et la rendre pertinente pour votre entreprise.
 exl-id: c3e2415a-7251-46ae-9ddc-a5b86c85602c
 feature: Commerce Intelligence
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Vidéo de formation sur le renseignement Adobe Commerce : Report Builder des cohortes
+# Vidéo de formation à Adobe Commerce Intelligence : Report Builder de cohortes
 
 Avez-vous déjà voulu étudier le comportement des différents sous-ensembles de vos utilisateurs au fil du temps ? Par exemple, vous êtes-vous déjà demandé si les utilisateurs qui s’inscrivent lors d’une période de promotion ont des revenus de durée de vie moyens supérieurs à ceux qui ne s’y inscrivent pas ? Si la réponse est &quot;Oui !&quot;, le Report Builder de cohortes est l’outil idéal pour vous. Commerce Intelligence est particulièrement optimisé pour effectuer cette analyse et la rendre pertinente pour votre entreprise.
 
@@ -20,8 +20,8 @@ Dans cette vidéo, vous apprendrez :
 * Pourquoi c&#39;est important
 * Comment créer votre propre analyse des cohortes dans Magento BI
 
-Pour regarder la vidéo, accédez à [Commerce Intelligence - Report Builder de cohortes](/docs/commerce-learn/tutorials/business-intelligence/cohort-report-builder.html) dans Adobe Experience League.
+Pour regarder la vidéo, accédez à [Commerce Intelligence - Cohort Report Builder](/docs/commerce-learn/tutorials/business-intelligence/cohort-report-builder.html) dans Adobe Experience League.
 
-**Vous voulez suivre ?** Consultez notre [Tutoriel sur les Reports Builder de cohortes](/docs/commerce-business-intelligence/mbi/analyze/sql/cohort-rpt-bldr.html) pour obtenir des instructions écrites.
+**Vous souhaitez suivre ?** Consultez notre [tutoriel sur le Report Builder de cohortes](/docs/commerce-business-intelligence/mbi/analyze/sql/cohort-rpt-bldr.html) pour obtenir des instructions écrites.
 
-Une fois que vous êtes à l’aise avec le Report Builder de cohortes, pourquoi ne pas explorer la création d’un **qualitatif** analyse des cohortes ? Consultez la section [Tutoriel Créer une analyse qualitative des cohortes](/docs/commerce-business-intelligence/mbi/analyze/sql/create-qual-cohort-analysis.html?lang=en) pour plus d’informations !
+Une fois que vous êtes à l’aise avec l’utilisation du Report Builder de cohortes, pourquoi ne pas explorer la création d’une analyse de cohortes **qualitative** ? Pour plus d’informations, consultez le [tutoriel sur la création d’une analyse qualitative des cohortes](/docs/commerce-business-intelligence/mbi/analyze/sql/create-qual-cohort-analysis.html?lang=en) .

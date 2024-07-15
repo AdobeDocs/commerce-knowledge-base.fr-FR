@@ -23,7 +23,7 @@ Cet article fournit une solution au problème où le système de Magento Order M
 
 >[!WARNING]
 >
->Clause de non-responsabilité : Adobe Commerce ne recommande ni n’approuve aucun outil particulier pour la création de tunnels. Les suggestions ci-dessus ne sont que des suggestions. Pour plus d’informations, consultez la [Documentation sur ngrok](https://ngrok.com/docs).
+>Clause de non-responsabilité : Adobe Commerce ne recommande ni n’approuve aucun outil particulier pour la création de tunnels. Les suggestions ci-dessus ne sont que des suggestions. Pour plus d’informations, consultez la [documentation ngrok](https://ngrok.com/docs).
 
 ## Problème
 
@@ -31,7 +31,7 @@ Cet article fournit une solution au problème où le système de Magento Order M
 
 1. Installez Adobe Commerce sur votre environnement local.
 1. Configurez ngrok pour créer un tunnel qui expose votre serveur local.
-1. Essayer [connexion à OMS](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/).
+1. Essayez de [vous connecter à OMS](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/).
 
 <u>Résultat attendu</u>
 

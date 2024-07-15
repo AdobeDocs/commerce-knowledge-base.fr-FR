@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.0 : exception lors de l’installation B2B 1.2.0
 
-Cet article fournit un correctif pour un problème connu d’Adobe Commerce pour une exception générée pendant la `setup:upgrade` lors de l’installation de B2B 1.2.0.
+Cet article fournit un correctif pour un problème connu d’Adobe Commerce pour une exception générée pendant l’installation de B2B 1.2.0.`setup:upgrade`
 
 ## Produits et versions concernés
 
@@ -39,7 +39,7 @@ B2B 1.2.0 installe .
 
 <u>Résultat réel</u>
 
-When `setup:upgrade` s’exécute pour installer B2B 1.2.0. Cette erreur s’affiche sur la page `PurchaseOrder` module :
+Lorsque `setup:upgrade` s’exécute pour installer B2B 1.2.0, cette erreur s’affiche sur le module `PurchaseOrder` :
 
 ```php
 Module 'Magento_PurchaseOrder':
@@ -54,7 +54,7 @@ Appliquez le correctif fourni dans cet article.
 
 ## Correctif
 
-Le correctif est joint à cet article, disponible en téléchargement dans les deux `.composer` et `.git` formats (après avoir décompressé les fichiers).
+Le correctif est joint à cet article, disponible au téléchargement aux formats `.composer` et `.git` (après avoir décompressé les fichiers).
 
 Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’article et cliquez sur le nom du fichier, ou cliquez sur l’un des liens suivants :
 
@@ -63,13 +63,13 @@ Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’artic
 
 ## Comment appliquer un correctif
 
-<u>Compositeur </u>
+<u>Correctif du compositeur </u>
 
-Voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) pour les instructions de correctif du compositeur.
+Voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) pour obtenir des instructions de correctif de compositeur.
 
 <u>Correctif Git </u>
 
-* Voir [Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans la documentation destinée aux développeurs pour les instructions de correctif git pour Adobe Commerce sur l’infrastructure cloud.
+* Voir [Application de correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans la documentation destinée aux développeurs pour obtenir des instructions sur les correctifs git pour Adobe Commerce sur l’infrastructure cloud.
 * Voir [Application de correctifs : correctifs personnalisés](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) dans la documentation destinée aux développeurs pour obtenir des instructions sur les correctifs git pour Adobe Commerce.
 
 ## Lecture connexe

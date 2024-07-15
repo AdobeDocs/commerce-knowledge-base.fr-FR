@@ -31,5 +31,5 @@ Le problème a été corrigé dans Adobe Commerce 2.3.1.
 
 ## Lecture connexe
 
-* [Différentes adresses non autorisées lors de la désélection de l’option &quot;Mes adresses de facturation et de livraison sont identiques&quot; à l’aide du nettoyage des adresses de sommet](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md) dans notre base de connaissances de soutien.
-* [Mise à jour de l’adresse de message après validation de l’adresse du sommet Adobe Commerce 2.4.1](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) dans notre base de connaissances de soutien.
+* [Différentes adresses non autorisées lors de la désélection de l’option &quot;Mes adresses de facturation et de livraison sont identiques&quot; à l’aide du nettoyage des adresses de sommet](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md) dans notre base de connaissances de support.
+* [Adobe Commerce 2.4.1 Vertex Validation des adresses après la mise à jour de l’adresse](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) dans notre base de connaissances de support.

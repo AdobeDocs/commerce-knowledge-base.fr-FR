@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Création d’un correctif pour l’installation du compositeur Adobe Commerce à partir d’une validation GitHub
 
-Reportez-vous à [Correctifs personnalisés dans la section Application de correctifs](https://devdocs.magento.com/guides/v2.3/comp-mgr/patching.html#custom-patches) dans notre documentation destinée aux développeurs.
+Reportez-vous à la section [Correctifs personnalisés de l&#39;application de correctifs](https://devdocs.magento.com/guides/v2.3/comp-mgr/patching.html#custom-patches) dans notre documentation destinée aux développeurs.

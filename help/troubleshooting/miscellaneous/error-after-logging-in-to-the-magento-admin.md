@@ -19,14 +19,14 @@ Cet article fournit une solution au problème où vous recevez un message d’er
 
 L’URL demandée /magento2index.php/admin/admin/dashboard/index/key/0c81957145a968b697c32a846598dc2e/ est introuvable sur ce serveur.
 
-Notez l’absence de barre oblique entre les `magento2` et `index.php` dans l’URL.
+Notez l’absence de barre oblique entre `magento2` et `index.php` dans l’URL.
 
 ## Solution
 
 L’URL de base n’est pas correcte. L’URL de base doit :
 
 * Commencer par `http://` ou `https://`
-* Se terminer par une barre oblique ( `/` )
-* Respectez la casse de la variable `web/unsecure/base_url` enregistrement dans la variable `core_config_data` table de base de données
+* Terminer par une barre oblique ( `/` )
+* Correspondance avec la casse de l’enregistrement `web/unsecure/base_url` dans la table de base de données `core_config_data`
 
 Exécutez à nouveau l’installation à l’aide d’une valeur valide.

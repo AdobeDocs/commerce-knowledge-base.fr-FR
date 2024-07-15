@@ -30,10 +30,10 @@ Un message d’erreur s’affiche et disparaît à l’étape Facturation du pas
 1. Ajoutez un produit au panier.
 1. Cliquez sur pour ouvrir l’aperçu du panier.
 1. Cliquez sur **Afficher et modifier le panier**.
-1. Sur la page Panier, cliquez sur **Extraction avec plusieurs adresses**.
-1. Cliquez sur **Accéder aux informations d’expédition** et indiquez les adresses.
+1. Sur la page Panier, cliquez sur **Extraire avec plusieurs adresses**.
+1. Cliquez sur **Accéder aux Informations d’expédition** et indiquez les adresses.
 1. Cliquez sur **Continuer vers les informations de facturation**.
-1. Sélectionner **Braintree PayPal** et cliquez sur le bouton **PayPal** bouton .
+1. Sélectionnez **Braintree PayPal** et cliquez sur le bouton **PayPal** .
 1. Dans la fenêtre contextuelle, cliquez sur **Accepter et payer**.
 
 <u>Résultat attendu :</u>
@@ -42,7 +42,7 @@ La commande est passée sans erreur.
 
 <u>Résultat réel :</u>
 
-La commande est placée, mais avec une erreur. La variable *Le passage en caisse PayPal n’a pas pu être initialisé. Veuillez contacter le propriétaire du magasin*.  s’affiche pendant une seconde et disparaît.
+La commande est placée, mais avec une erreur. Le *paiement PayPal n&#39;a pas pu être initialisé. Veuillez contacter le propriétaire du magasin*.  s’affiche pendant une seconde et disparaît.
 
 ## Correction
 

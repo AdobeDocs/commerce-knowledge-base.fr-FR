@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Cloud Adobe Commerce : la réindexation prend fin avec `Killed` message
+# Cloud Adobe Commerce : la réindexation est arrêtée avec le message `Killed`
 
 ## Produits et versions concernés
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Problème
 
-Vous tentez d’exécuter une réindexation sur la branche d’intégration (ou sur l’évaluation du projet d’architecture de Starter), et le processus est arrêté avec l’événement `Killed` message.
+Vous tentez d’exécuter une réindexation sur la branche d’intégration (ou sur l’évaluation du projet d’architecture Starter), et le processus est arrêté avec le message `Killed`.
 
 ## Cause
 
@@ -31,7 +31,7 @@ La raison la plus courante est un grand nombre de produits, magasins et/ou group
 1. Réduire le nombre de produits (ainsi que les groupes de clients et les magasins, le cas échéant).
 1. Limitez l’utilisation à un ou deux utilisateurs simultanés.
 1. Désactivez les tâches cron et exécutez-les manuellement si nécessaire.
-1. Si cela n’a pas été fait précédemment, demandez une mise à niveau vers les environnements d’intégration améliorée. Notez la restriction quant au nombre d’environnements auxquels vous seriez limité une fois la mise à niveau effectuée. Voir [Demande d’amélioration de l’environnement d’intégration - Pro et Starter](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) pour plus d’informations.
+1. Si cela n’a pas été fait précédemment, demandez une mise à niveau vers les environnements d’intégration améliorée. Notez la restriction quant au nombre d’environnements auxquels vous seriez limité une fois la mise à niveau effectuée. Pour plus d’informations, reportez-vous à l’article [Demande d’amélioration de l’environnement d’intégration - Pro et Starter](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) dans notre base de connaissances de prise en charge.
 
 ## Lecture connexe :
 

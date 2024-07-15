@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Cet article traite d’une solution à un problème connu dans Adobe Commerce lors du passage en caisse, où un message d’erreur s’affiche lors de la sélection d’un mode de paiement local pour certains pays. Cela se produit pour les pays suivants : Belgique, Italie, Pays-Bas, Pologne et Espagne.
 
-Message d’erreur : &quot;*Il n’existe actuellement aucun moyen de paiement. Mettez à jour votre adresse de facturation.*&quot; apparaîtra, mais les méthodes de paiement locales continueront à apparaître et à fonctionner correctement. Un correctif permanent sera disponible dans Adobe Commerce 2.4.1.
+Message d’erreur, &quot;*&quot; Il n’existe actuellement aucun mode de paiement disponible. Mettez à jour votre adresse de facturation.*&quot; s’affiche, mais les méthodes de paiement locales continuent d’apparaître et de fonctionner correctement. Un correctif permanent sera disponible dans Adobe Commerce 2.4.1.
 
 ## Produits et versions concernés
 
@@ -24,13 +24,13 @@ Message d’erreur : &quot;*Il n’existe actuellement aucun moyen de paiement. 
 
 ## Problème
 
-<u>Conditions préalables</u>:
+<u>Conditions préalables</u> :
 
 * Adobe Commerce 2.4.0 est installé.
 * Créez un produit et une catégorie.
-* Configurer [Mode de paiement Braintree](https://devdocs.magento.com/guides/v2.4/graphql/payment-methods/braintree.html).
+* Configurez le [mode de paiement du Braintree](https://devdocs.magento.com/guides/v2.4/graphql/payment-methods/braintree.html).
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Accédez au storefront.
 1. Sélectionnez les éléments à ajouter au panier.
@@ -38,13 +38,13 @@ Message d’erreur : &quot;*Il n’existe actuellement aucun moyen de paiement. 
 1. Remplissez le formulaire d’adresse avec une adresse valide.
 1. Accédez à la page Révision et paiements .
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 Les modes de paiement locaux doivent s&#39;afficher normalement, sans message d&#39;erreur.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
-Message d’erreur : &quot;*Il n’existe actuellement aucun moyen de paiement. Mettez à jour votre adresse de facturation.*&quot; s’affiche, mais les méthodes de paiement locales s’affichent et fonctionnent toujours correctement.
+Message d’erreur, &quot;*&quot; Il n’existe actuellement aucun mode de paiement disponible. Mettez à jour votre adresse de facturation.*&quot; s’affiche, mais les méthodes de paiement locales s’affichent toujours et fonctionnent correctement.
 
 ## Solution
 

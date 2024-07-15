@@ -19,7 +19,7 @@ Le correctif MDVA-33106 corrige le problème en raison duquel les modifications 
 bin/magento cron:run
 ```
 
-est exécutée. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) La version 1.0.13 est installée. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.2.
+est exécutée. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.13 est installé. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.2.
 
 ## Produits et versions concernés
 
@@ -33,17 +33,17 @@ Adobe Commerce sur l’infrastructure cloud et Adobe Commerce sur site 2.3.0 - 2
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Dans Commerce Admin, accédez à **Catalogue** > **Produits** et cliquez sur modifier. Remarquez que la variable **Prix** par exemple *9,99*.
+1. Dans Commerce Admin, accédez à **Catalog** > **Products** et cliquez sur Modifier. Notez la valeur **Price**, par exemple *9.99*.
 1. Cliquez sur **Planifier une nouvelle mise à jour** et renseignez les détails :
    * Le nom de la mise à jour n’est pas important.
    * Définissez une date dans le futur, +1 an pour les dates de début et de fin.
-   * Définir le prix sur *1,99*.
+   * Définissez le prix sur *1.99*.
    * Enregistrez les modifications.
 1. Accédez au tableau de bord intermédiaire de contenu et sélectionnez le mode Grille pour voir si la correspondance planifiée ci-dessus est recherchée.
 1. Sélectionnez l’action de modification en regard de la mise à jour planifiée. Les données doivent toujours correspondre à celles ci-dessus.
@@ -52,11 +52,11 @@ Adobe Commerce sur l’infrastructure cloud et Adobe Commerce sur site 2.3.0 - 2
 1. Attendez qu&#39;une tâche cron s&#39;exécute.
 1. Cliquez à nouveau sur Modifier dans la modification planifiée et vérifiez le prix.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Le prix est de 1,99.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Le prix est de 9,99.
 
@@ -65,13 +65,13 @@ Le prix est de 9,99.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) dans notre documentation destinée aux développeurs.
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) de notre documentation destinée aux développeurs.

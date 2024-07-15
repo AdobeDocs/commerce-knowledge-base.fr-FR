@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio : le navigateur ne peut pas résoudre le site .local.pwadev
 
-Cet article fournit une solution pour lorsqu’un autre programme ou processus a modifié votre [fichier hôte](https://en.wikipedia.org/wiki/Hosts_(file\) et a supprimé l’entrée correspondant au domaine de votre projet.
+Cet article fournit une solution lorsque un autre programme ou processus a modifié votre [fichier hôte](https://en.wikipedia.org/wiki/Hosts_(file\) et supprimé l’entrée pour votre domaine de projet.
 
 ## Produits et versions concernés
 
@@ -21,17 +21,17 @@ PWA Studio pour Adobe Commerce
 
 ## Problème
 
-Lorsque vous accédez au site de développement/d’évaluation, vous ne pouvez pas voir la variable `.local.pwadev` site.
+Lorsque vous accédez au site de développement/d’évaluation, vous ne pouvez pas voir le site `.local.pwadev`.
 
 ## Cause
 
 PWA Studio vous permet d’attribuer un nom d’hôte personnalisé et un certificat SSL pour votre projet à votre ordinateur local. Cela implique de créer une nouvelle entrée dans le fichier d’hôte de votre ordinateur qui ressemble à `my-storefront-project-abc123.local.pwadev`.
 
-Cette entrée indique à n’importe quel navigateur de l’ordinateur du développeur d’examiner le projet storefront local lorsqu’il accède à cette URL. Si un autre programme ou processus est entré et a supprimé cette entrée, le navigateur ne sait pas où aller et le navigateur ne peut pas résoudre la variable `.local.pwadev` site.
+Cette entrée indique à n’importe quel navigateur de l’ordinateur du développeur d’examiner le projet storefront local lorsqu’il accède à cette URL. Si un autre programme ou processus est entré et a supprimé cette entrée, le navigateur ne sait pas où aller et le navigateur ne peut pas résoudre le site `.local.pwadev`.
 
 ## Solution
 
-Vous pouvez [modification manuelle de votre fichier d’hôtes](https://support.rackspace.com/how-to/modify-your-hosts-file/) pour ajouter l’entrée en arrière, mais vous devez examiner votre autre logiciel installé pour voir ce qui a écrasé la modification précédente.
+Vous pouvez [modifier manuellement votre fichier d’hôtes](https://support.rackspace.com/how-to/modify-your-hosts-file/) pour ajouter l’entrée en retour, mais vous devez examiner votre autre logiciel installé pour voir ce qui a écrasé la modification précédente.
 
 ## Lecture connexe dans notre base de connaissances de soutien
 

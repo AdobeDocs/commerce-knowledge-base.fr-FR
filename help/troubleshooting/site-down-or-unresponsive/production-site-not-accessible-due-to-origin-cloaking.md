@@ -26,13 +26,13 @@ https: &#x200B;//mydomain.com.c.&lt;projectid>.magento.cloud/ n’est plus acces
 <u>Étapes à reproduire :</u>
 
 1. Connectez-vous à votre projet.
-1. Cliquez sur **Accès au projet** pour une liste d’URL et de SSH.
+1. Cliquez sur **Accéder au projet** pour obtenir une liste d’URL et de SSH.
 
 <u>Résultats réels :</u>
 
 Échec du chargement de la page avec l’erreur suivante :
 
-*NET : ERR\_CERT\_INVALID*  *Alerte TLS, mauvais certificat (554) :*
+*NET::ERR\_CERT\_INVALID* *Alerte TLS, mauvais certificat (554) :*
 
 <u>Résultats attendus :</u>
 
@@ -47,8 +47,8 @@ Le cloaking d’origine est une fonctionnalité de sécurité qui permet à Adob
 ## Solution
 
 * Si votre site cloud est actif, passez à https://mydomain.com/.
-* Si vous disposez d’un site actif (non cloud), à l’aide du domaine https://mydomain.com/, configurez un sous-domaine. `mcprod.mydomain.com` et mettez à jour votre **URL de base** to *https://mcprod.mydomain.com* à la place, puis [Pointez le DNS sur Fastly.](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings).
+* Si vous disposez d’un site actif (non cloud), à l’aide du domaine https://mydomain.com/, configurez un sous-domaine `mcprod.mydomain.com` et remplacez par mettre à jour votre **URL de base** vers *https://mcprod.mydomain.com*, puis [pointez le DNS vers Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings).
 
 ## Lecture connexe
 
-[FAQ sur l’activation du verrouillage à origine rapide](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) dans notre base de connaissances de soutien.
+[FAQ sur l’activation du cloaking d’origine Fastly](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) dans notre base de connaissances d’assistance.

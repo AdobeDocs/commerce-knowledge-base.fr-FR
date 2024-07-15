@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Message d’erreur lors de l’ajout de sites à l’analyse de sécurité
 
-Cet article fournit des solutions possibles au problème lorsqu’un utilisateur n’est pas en mesure d’ajouter des sites dans la variable [Analyse de sécurité Commerce](https://account.magento.com/scanner/dashboard/).
+Cet article fournit des solutions possibles au problème lorsqu’un utilisateur n’est pas en mesure d’ajouter des sites dans l’ [analyse de sécurité Commerce](https://account.magento.com/scanner/dashboard/).
 
 ## Produits et versions concernés
 
@@ -22,7 +22,7 @@ Cet article fournit des solutions possibles au problème lorsqu’un utilisateur
 
 ## Problème
 
-L’utilisateur ne peut pas ajouter de sites dans la variable [Analyse de sécurité Commerce](https://account.magento.com/scanner/dashboard/). Le message d’erreur suivant s’affiche lors de la tentative d’ajout d’un site : *Impossible d’envoyer le site pour analyse.*
+L’utilisateur n’est pas en mesure d’ajouter des sites dans l’ [analyse de sécurité Commerce](https://account.magento.com/scanner/dashboard/). Le message d’erreur suivant s’affiche lors de la tentative d’ajout d’un site : *Impossible d’envoyer le site pour l’analyse.*
 
 ## Solution
 
@@ -31,14 +31,14 @@ L’utilisateur ne peut pas ajouter de sites dans la variable [Analyse de sécur
    * 34.196.167.176
    * 3.218.25.102
 
-1. Le code de confirmation est sensible au temps. Si plus de 30 minutes se sont écoulées après la variable **Ajouter un site** a fait l’objet d’un clic, le code a probablement expiré.
-1. N’oubliez pas de nettoyer le cache et de vous assurer que le code de validation apparaît dans le corps de la source de la page d’accueil. Le code de confirmation doit être injecté en fonction des spécifications du balisage du HTML : le commentaire du HTML peut être injecté dans le corps de la page (nous vous conseillons de le placer dans la section du pied de page) ; la balise META doit se trouver uniquement dans la section head .
-1. Avant de cliquer sur **Vérification du code de confirmation**, ouvrez la console de développement du navigateur, puis cliquez sur le bouton **Réseau** et vérifiez la réponse à partir de magento.com. Il doit s’agir de HTTP 200 (OK) et le corps de la réponse doit contenir un objet JSON.
-1. Si le code de réponse est HTTP 200 et que le corps de la réponse est un objet JSON et que la variable `verified` La valeur de la propriété est `false`, cela signifie que le code est introuvable sur la page. La variable `details` La valeur de la propriété doit contenir l’explication. Par exemple, si la boutique utilise un certificat SSL auto-signé, il y aura probablement une erreur de connexion.
+1. Le code de confirmation est sensible au temps. Si plus de 30 minutes se sont écoulées depuis le clic sur le lien **Ajouter un site**, le code a probablement expiré.
+1. N’oubliez pas de nettoyer le cache et de vous assurer que le code de validation apparaît dans le corps de la source de la page d’accueil. Le code de confirmation doit être injecté en fonction des spécifications de balisage de l’HTML : le commentaire de l’HTML peut être injecté dans le corps de la page (nous vous suggérons de le placer dans la section de pied de page) ; la balise META doit se trouver uniquement dans la section head .
+1. Avant de cliquer sur **Vérifier le code de confirmation**, ouvrez la console de développement du navigateur, cliquez sur l’onglet **Réseau** et vérifiez la réponse à partir de magento.com. Il doit s’agir de HTTP 200 (OK) et le corps de la réponse doit contenir un objet JSON.
+1. Si le code de réponse est HTTP 200 et que le corps de la réponse est un objet JSON et que la valeur de la propriété `verified` est `false`, cela signifie que le code est introuvable sur la page. La valeur de la propriété `details` doit contenir l’explication. Par exemple, si la boutique utilise un certificat SSL auto-signé, il y aura probablement une erreur de connexion.
 
 Si vous ne pouvez toujours pas ajouter de sites, procédez comme suit :
 
-1. Placez un autre commentaire HTML sur la page :
+1. Placez un autre commentaire d’HTML sur la page :
 
    ```HTML
    <!-- MAGEID:Your magento.com ID, EMAIL:your email address -->

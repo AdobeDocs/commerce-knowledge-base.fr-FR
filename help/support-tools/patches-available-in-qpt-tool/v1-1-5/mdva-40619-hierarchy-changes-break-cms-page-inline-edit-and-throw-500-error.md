@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-40619 : les modifications de hiérarchie interrompent l’édition en ligne de la page CMS et génèrent une erreur 500
 
-Le correctif MDVA-40619 résout le problème en raison duquel les modifications de la hiérarchie de la page CMS interrompent la modification en ligne de la page CMS et génèrent &quot;500 erreurs&quot;. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.5 est installée. L’ID de correctif est MDVA-40619. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
+Le correctif MDVA-40619 résout le problème en raison duquel les modifications de la hiérarchie de la page CMS interrompent la modification en ligne de la page CMS et génèrent &quot;500 erreurs&quot;. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.5 est installé. L’ID de correctif est MDVA-40619. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
 
 ## Produits et versions concernés
 
@@ -27,27 +27,27 @@ Le correctif MDVA-40619 résout le problème en raison duquel les modifications 
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 Les modifications de la hiérarchie de la page CMS rompent la modification en ligne de la page CMS et génèrent &quot;une erreur 500&quot;.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Accédez au Panneau d’administration > **Contenu** > **Hiérarchie**.
 1. Sélectionnez &quot;Affichage de magasin par défaut&quot;.
 1. Décochez la case &quot;Utiliser la hiérarchie des noeuds parents&quot;.
-1. Sélectionnez la page manuellement, puis cliquez sur **Enregistrer**.
-1. Ensuite, sélectionnez **Contenu** > **Pages**.
+1. Sélectionnez la page manuellement et cliquez sur **Enregistrer**.
+1. Ensuite, accédez à **Contenu** > **Pages**.
 1. Essayez de modifier une page CMS de la grille.
 1. Cliquez sur **Enregistrer**.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 La page est enregistrée avec succès.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Vous obtenez l’erreur suivante :
 
@@ -60,13 +60,13 @@ Vous obtenez l’erreur suivante :
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
 Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) .

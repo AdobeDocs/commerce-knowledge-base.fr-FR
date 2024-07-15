@@ -23,11 +23,11 @@ Adobe Commerce 2.4.4 avec PHP 8.1
 
 Les utilisateurs ne peuvent pas ajouter de produits au panier si l’option Autoriser les pays n’est pas sélectionnée.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Connectez-vous à l’administrateur Commerce.
 1. Accédez à **Magasin** > **Configuration** > **Général** > **Options de pays**
-1. Désélectionnez toutes les options de **Autoriser les pays** champ .
+1. Désélectionnez toutes les options du champ **Autoriser les pays** .
 1. Cliquez sur **Enregistrer la configuration** pour enregistrer la configuration.
 1. Positionnez-vous sur le storefront et essayez d&#39;ajouter un produit au panier.
 
@@ -51,7 +51,7 @@ customer-data.js:87 Uncaught Error: [object Object]
 
 ## Cause
 
-La configuration Adobe Commerce récupère `null` dans le cas où une configuration à sélection multiple ne comporte aucun élément sélectionné. Cette configuration si elle est traitée avec succès dans des versions PHP antérieures à la version 8.1. Cependant, dans PHP 8.1, il ne fonctionne pas correctement en raison des erreurs provoquées par le paramètre[Transmission obsolète de la valeur null aux arguments non nullables des fonctions internes en PHP 8.1](https://wiki.php.net/rfc/deprecate_null_to_scalar_internal_arg)&quot;.
+La configuration Adobe Commerce récupère `null` si une configuration à sélection multiple ne comporte aucun élément sélectionné. Cette configuration si elle est traitée avec succès dans des versions PHP antérieures à la version 8.1. Cependant, en PHP 8.1, cela ne fonctionne pas correctement en raison des erreurs provoquées par &quot;[Deprecate pass null to non-nullable arguments of internal fonctions in PHP 8.1](https://wiki.php.net/rfc/deprecate_null_to_scalar_internal_arg)&quot;.
 
 ## Solutions
 
@@ -61,8 +61,8 @@ Pour résoudre ce problème, appliquez le correctif suivant :
 
 ## Comment appliquer le correctif
 
-Voir [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) pour obtenir des instructions.
+Pour obtenir des instructions, reportez-vous à la section [Comment appliquer un correctif de compositeur fourni par Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Liens utiles
 
-[Application de correctifs personnalisés à Adobe Commerce sur l’infrastructure cloud](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+[Appliquez des correctifs personnalisés à Adobe Commerce sur l’infrastructure cloud](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.

@@ -11,16 +11,16 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Quality Patches Tool] (QPT) Présentation de la version 1.1.7
+# [!DNL Quality Patches Tool] (QPT) v1.1.7 - Aperçu
 
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.7.
 
 QPT v1.1.7 comprend les correctifs suivants :
 
-1. **MDVA-27239**: corrige le problème d’affichage des produits de vente croisée.
-1. **MDVA-39711**: correction d’un problème en raison duquel les utilisateurs administrateurs ne pouvaient pas accéder à la grille du client après la suppression du site web.
-1. **MDVA-40311**: corrige le problème en raison duquel les utilisateurs administrateurs recevaient le message d’erreur *Sécurité ou clé de formulaire non valide. Actualisez la page* après vous être connecté à l’administrateur si le chemin d’accès d’administrateur personnalisé est configuré et que la clé secrète est activée.
-1. **MDVA-41631**: corrige le problème qui entraînait une erreur des utilisateurs lors de la tentative de récupération des informations de commande sans option *telephone* via GraphQL.
+1. **MDVA-27239** : corrige le problème d’affichage des produits de vente croisée.
+1. **MDVA-39711** : correction d’un problème en raison duquel les utilisateurs administrateurs ne pouvaient pas accéder à la grille du client après avoir supprimé le site web.
+1. **MDVA-40311** : correction d’un problème en raison duquel les utilisateurs administrateurs recevaient le message d’erreur *Clé de formulaire ou de sécurité non valide. Actualisez la page* après la connexion à l’administrateur si le chemin d’accès d’administrateur personnalisé est configuré et si la clé secrète est activée.
+1. **MDVA-41631** : résolution du problème d’erreur des utilisateurs lorsqu’ils tentent de récupérer des informations de commande sans valeur facultative *telephone* via GraphQL.
 
 
 Utilisez le menu de gauche pour accéder à une page de correctif spécifique.

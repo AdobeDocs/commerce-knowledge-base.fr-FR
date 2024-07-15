@@ -11,15 +11,15 @@ ht-degree: 0%
 
 ---
 
-# Aperçu : [!DNL Quality Patches Tool] (QPT) v1.1.47
+# Présentation : [!DNL Quality Patches Tool] (QPT) v1.1.47
 
 Cette sous-section fournit une description détaillée des problèmes résolus par les correctifs disponibles dans [!DNL Quality Patches Tool] (QPT) v1.1.47.
 
 QPT v1.1.47 comprend les correctifs suivants :
 
-1. **ACSD-55241**: résout le problème en raison duquel *[!UICONTROL Used]* et *[!UICONTROL Times Used]* Les attributs affichent des valeurs incorrectes pour les bons générés lorsqu’ils sont utilisés lors du passage en caisse avec plusieurs adresses.
-1. **ACSD-56760**: correction du problème en raison duquel un utilisateur administrateur limité à un site web spécifique ne pouvait pas trier ou ajouter de nouveaux produits dans une catégorie si le magasin web avait sa propre catégorie racine.
-1. **ACSD-56858**: correction d’un problème en raison duquel les autorisations de rôle d’entreprise B2B s’affichaient incorrectement pour un administrateur d’entreprise restreint.
-1. **ACSD-57074**: corrige le problème en raison duquel la variable *Oui/Non* attribut personnalisé avec `attrbute_code` en commençant par `price_` ne fonctionne pas correctement avec l’indexation, et les produits avec de tels attributs ne sont pas disponibles au front-end.
+1. **ACSD-55241** : correction d’un problème en raison duquel les attributs *[!UICONTROL Used]* et *[!UICONTROL Times Used]* affichaient des valeurs incorrectes pour les bons générés lors de l’extraction avec plusieurs adresses.
+1. **ACSD-56760** : correction du problème en raison duquel un utilisateur administrateur limité à un site web spécifique ne pouvait pas trier ou ajouter de nouveaux produits dans une catégorie si le magasin web avait sa propre catégorie racine.
+1. **ACSD-56858** : résolution du problème d’affichage incorrect des autorisations de rôle d’entreprise B2B pour un administrateur de société restreint.
+1. **ACSD-57074** : corrige le problème en raison duquel l’attribut personnalisé *Oui/Non* avec `attrbute_code` commençant par `price_` ne fonctionne pas correctement avec l’indexation et les produits avec de tels attributs ne sont pas disponibles sur le front-end.
 
 Utilisez le menu de gauche pour accéder à une page de correctif spécifique.

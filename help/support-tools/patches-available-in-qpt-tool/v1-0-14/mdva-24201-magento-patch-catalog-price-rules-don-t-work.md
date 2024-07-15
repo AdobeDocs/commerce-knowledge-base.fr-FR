@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Le correctif MDVA-24201 résout le problème en raison duquel les règles de prix du catalogue actives dans la base de données ne s’appliquent pas sur le front-end.
 
-Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) La version 1.0.14 est installée. Veuillez noter que le problème a été corrigé dans Adobe Commerce version 2.3.5.
+Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.14 est installé. Veuillez noter que le problème a été corrigé dans Adobe Commerce version 2.3.5.
 
 ## Produits et versions concernés
 
@@ -25,37 +25,37 @@ Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (Q
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-<u>Condition requise</u>:
+<u>Condition préalable requise</u> :
 
 Installez une nouvelle instance Magento avec des exemples de données.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Connexion à **Panneau d’administration** > **Marketing** > **Règle de prix du catalogue** > **Ajouter une nouvelle règle**, définissez les paramètres suivants :
-   1. Définissez la variable **Nom de la règle**.
-   1. Définir **Actif** = *Non.*
-   1. Définir des conditions : **Catégorie** = *4*. (Exemple : Bags)
+1. Connectez-vous à **Admin panel** > **Marketing** > **Règle de prix du catalogue** > **Ajouter une nouvelle règle**, effectuez les paramètres suivants :
+   1. Définissez le **nom de la règle**.
+   1. Définissez **Actif** = *Non*
+   1. Définissez des conditions : **Category** = *4*. (Exemple : Bags)
    1. Définir des actions :
-      1. Définir **Appliquer comme**   **pourcentage d’origine**.
-      1. Définir **Montant de la remise** = *10*.
+      1. Définissez **Appliquer comme**   **Pourcentage de l’original**.
+      1. Définissez **Montant de remise** = *10*.
       1. Enregistrez, puis cliquez sur Continuer la modification.
-   1. Cliquez sur **Planifier une nouvelle mise à jour**:
-      * Définissez la variable **Nom de la règle**.
-      * Définir **Actif** = *Oui*.
+   1. Cliquez sur **Planifier une nouvelle mise à jour** :
+      * Définissez le **nom de la règle**.
+      * Définissez **Actif** = *Oui*.
       * Enregistrez.
 1. Accédez au serveur principal et exécutez :
 
    `php    bin/magento cron:run`
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Les prix des produits de la catégorie 4 &quot;Bags&quot; doivent être réduits de 10% du prix d&#39;origine, tel qu&#39;il a été défini par la règle de prix du catalogue, comme prévu.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Aucune modification de prix ne se produit même si la règle de prix du catalogue est active.
 
@@ -64,13 +64,13 @@ Aucune modification de prix ne se produit même si la règle de prix du catalogu
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
 Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) .

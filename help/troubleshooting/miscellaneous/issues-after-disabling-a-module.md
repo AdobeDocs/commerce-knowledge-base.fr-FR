@@ -22,14 +22,14 @@ Cet article fournit une solution aux problèmes de fonctionnalité de module apr
 
 ## Problème
 
-Désactivation de la sortie du module dans l’administrateur Commerce, sous **Magasins** > **Paramètres** > **Configuration** > AVANCÉ > **Avancé**, vous pouvez commencer à voir les problèmes liés à la fonctionnalité du module.
+Ayant désactivé la sortie du module dans l’administrateur Commerce, sous **Magasins** > **Paramètres** > **Configuration** > AVANCÉ > **Avancé**, vous pouvez commencer à voir des problèmes liés à la fonctionnalité du module.
 
 ## Cause
 
-Désactivation d’une sortie de module sous **Magasins** > **Paramètres** > **Configuration** > AVANCÉ > **Avancé** désactive uniquement la sortie (HTML, JS), mais ne désactive pas la fonctionnalité de ce module.
+La désactivation d’une sortie de module sous **Magasins** > **Paramètres** > **Configuration** > AVANCÉ > **Avancé** désactive uniquement la sortie (HTML, JS), mais ne désactive pas la fonctionnalité de ce module.
 
 ## Solution
 
-Si vous devez désactiver la fonctionnalité du module, désactivez le module comme décrit dans la section [Activation ou désactivation des modules](https://devdocs.magento.com/guides/v2.1/install-gde/install/cli/install-cli-subcommands-enable.html) dans notre documentation destinée aux développeurs.
+Si vous devez désactiver la fonctionnalité du module, désactivez le module comme décrit dans la section [Activer ou désactiver les modules](https://devdocs.magento.com/guides/v2.1/install-gde/install/cli/install-cli-subcommands-enable.html) de notre documentation destinée aux développeurs.
 
 La fonctionnalité de désactivation de la sortie du module a été supprimée à partir de la version 2.2.0.

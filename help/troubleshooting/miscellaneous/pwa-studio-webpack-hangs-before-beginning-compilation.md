@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio : Webpack se bloque avant de commencer la compilation
 
-Cet article décrit une solution suggérée pour le moment où un JavaScript [Webpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack) se bloque longtemps avant de commencer la compilation dans Progressive Web App Studio (PWA Studio).
+Cet article parle d’une solution suggérée lorsqu’un [Webpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack) JavaScript se bloque longtemps avant de commencer la compilation dans Progressive Web App Studio (PWA Studio).
 
 ## Produits et versions concernés
 
@@ -21,13 +21,13 @@ Cet article décrit une solution suggérée pour le moment où un JavaScript [We
 
 ## Problème
 
-[Vérifiez quelle est la dernière version de pwa-buildpack.](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack), et la variable
+[Vérifiez quelle est la dernière version de pwa-buildpack](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack) et la variable
 
 ```yaml
 pwa-buildpack
 ```
 
-Le numéro de version est en regard de la variable `package.json` liste des noms de fichier. Si vous disposez d’une ancienne version de la variable
+Le numéro de version sera à côté de la liste des noms de fichier `package.json`. Si vous disposez d’une ancienne version de la variable
 
 ```yaml
 pwa-buildpack
@@ -35,9 +35,9 @@ pwa-buildpack
 
 , le webpack peut être suspendu pendant longtemps avant de commencer la compilation.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-<u>Conditions préalables</u>: configurez une vitrine de PWA Studio, telle que Venia, avec une instance Adobe Commerce locale et exécutez une
+<u>Conditions préalables</u> : configurez une vitrine de PWA Studio, telle que Venia, avec une instance Adobe Commerce locale et exécutez une
 
 ```yaml
 build
@@ -51,12 +51,12 @@ watch
 
 .
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 * Si vous utilisez la variable    ```yaml    build    ```    , elle génère normalement les artefacts de version pour Venia.
 * Si vous utilisez la variable    ```yaml    watch    ```    , il démarre normalement le storefront Venia.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 Votre
 
@@ -88,12 +88,12 @@ openssl version
 
 La version doit être 1.0 ou supérieure (ou LibreSSL 2, dans le cas d&#39;OSX High Sierra).
 
-Vous pouvez installer des versions plus élevées d’OpenSSL avec [Homebrew](https://brew.sh/) sur OSX, [Chocolatey](https://chocolatey.org/) sous Windows ou le gestionnaire de modules de votre distribution Linux.
+Vous pouvez installer des versions plus élevées d&#39;OpenSSL avec [Homebrew](https://brew.sh/) sur OSX, [Chocolatey](https://chocolatey.org/) sur Windows, ou le gestionnaire de packages de votre distribution Linux.
 
 ## Lecture connexe
 
-* [Webpack JavaScript : concepts](https://webpack.js.org/concepts/)
+* [Javascript Webpack : Concepts](https://webpack.js.org/concepts/)
 * [Configuration de la vitrine Venia](https://magento.github.io/pwa-studio/venia-pwa-concept/setup/)
 * [PWA Buildpack](https://magento.github.io/pwa-studio/pwa-buildpack/)
-* [Interface de ligne de commande de buildpack](https://magento.github.io/pwa-studio/pwa-buildpack/reference/buildpack-cli/)
-* [Outils et bibliothèques : buildpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack)
+* [Interface de ligne de commande buildpack](https://magento.github.io/pwa-studio/pwa-buildpack/reference/buildpack-cli/)
+* [ Outils et bibliothèques : buildpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack)

@@ -19,16 +19,16 @@ Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur 
 
 Les emails de confirmation de commande sont envoyés à partir de l’adresse email du serveur Apache. D’autres emails (mot de passe oublié, etc.) sont envoyés à partir des adresses email configurées.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
-1. Placez une commande à l’aide de la fonction **Envoyer la confirmation de commande** case cochée.
+1. Placez une commande avec la case **Envoyer la confirmation de commande** cochée.
 1. Vérifier l&#39;email.
 
-<u>Résultat attendu</u>:
+<u>Résultat attendu</u> :
 
 L&#39;email a été envoyé à partir de l&#39;adresse d&#39;envoi configurée par Adobe Commerce.
 
-<u>Résultat réel</u>:
+<u>Résultat réel</u> :
 
 L&#39;email a été envoyé à partir de l&#39;adresse email configurée dans le serveur Apache en cours d&#39;utilisation.
 
@@ -59,6 +59,6 @@ Le correctif est également compatible (mais peut ne pas résoudre le problème)
 
 ## Comment appliquer le correctif
 
-Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de soutien.
+Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
 
 ## Fichiers attachés

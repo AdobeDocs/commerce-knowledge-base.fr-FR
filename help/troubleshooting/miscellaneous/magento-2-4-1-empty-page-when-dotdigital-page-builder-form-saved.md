@@ -25,9 +25,9 @@ Cet article fournit une solution à un problème connu dans Adobe Commerce 2.4.1
 <u>Étapes à reproduire</u>
 
 1. Accédez à **Panneau d’administration** > **Contenu** > **Pages**, puis sélectionnez **Modifier** de n’importe quelle page.
-1. Accédez à **Contenu** et cliquez sur le bouton **Modifier avec le générateur de pages** bouton .
-1. Faites glisser le **formulaire dotdigital** block et select **Modifier**.
-1. Sélectionnez l’un des formulaires de test, puis choisissez **Incorporer** et enregistrez le formulaire.
+1. Accédez à **Contenu** et cliquez sur le bouton **Modifier avec le générateur de pages** .
+1. Faites glisser le bloc **dotdigital form** et sélectionnez **Edit**.
+1. Sélectionnez l’un des formulaires de test, puis le mode **Incorporé** et enregistrez le formulaire.
 1. Enregistrez la modification de la page.
 
 <u>Résultat attendu :</u>
@@ -47,4 +47,4 @@ La solution consiste à utiliser un autre navigateur que Safari. Le problème de
 * [Qu’est-ce que le créateur de pages ?](https://devdocs.magento.com/page-builder/docs/) dans notre documentation destinée aux développeurs.
 * [Configuration du créateur de pages](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html) dans notre documentation destinée aux développeurs.
 * [Page Builder](https://docs.magento.com/user-guide/cms/page-builder.html) dans notre guide d’utilisation.
-* [Créateur de pages - Éléments](https://docs.magento.com/user-guide/cms/page-builder-elements.html) dans notre guide d’utilisation.
+* [Page Builder - Elements](https://docs.magento.com/user-guide/cms/page-builder-elements.html) dans notre guide d’utilisation.

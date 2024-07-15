@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-45143 : mutation setShippingAddressesOnCart ne définissant pas le code de région numérique comme &quot;région&quot;
 
-Le correctif ACSD-45143 corrige le problème en raison duquel la mutation setShippingAddressesOnCart ne permet pas de définir le code de région numérique comme &quot;région&quot;. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) La version 1.1.17 est installée. L’ID de correctif est ACSD-45143. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
+Le correctif ACSD-45143 corrige le problème en raison duquel la mutation setShippingAddressesOnCart ne permet pas de définir le code de région numérique comme &quot;région&quot;. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.17 est installé. L’ID de correctif est ACSD-45143. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
 
 ## Produits et versions concernés
 
@@ -27,13 +27,13 @@ Le correctif ACSD-45143 corrige le problème en raison duquel la mutation setShi
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
 La mutation setShippingAddressesOnCart ne permet pas de définir le code de région numérique comme &quot;région&quot;.
 
-<u>Étapes à reproduire</u>:
+<u>Étapes à reproduire</u> :
 
 1. Créez un panier à l’aide de la requête ci-dessous.
 
@@ -93,15 +93,15 @@ La mutation setShippingAddressesOnCart ne permet pas de définir le code de rég
       </code>
       </pre>
 
-   Remarque : le code de pays est défini sur &quot;FR&quot; et le code de région sur &quot;58&quot; dans cet exemple. Selon les `directory_country_region` Table Db, indicatif régional 58 est &quot;Nièvre&quot;.
+   Remarque : le code de pays est défini sur &quot;FR&quot; et le code de région sur &quot;58&quot; dans cet exemple. Selon la table `directory_country_region` Db, le code de région 58 est &quot;Nièvre&quot;.
 
 1. Vérifiez la réponse renvoyée.
 
-<u>Résultats attendus</u>:
+<u>Résultats attendus</u> :
 
 Adobe Commerce permet de définir le code de région numérique dans la requête GraphQL.
 
-<u>Résultats réels</u>:
+<u>Résultats réels</u> :
 
 Le code de région a été remplacé par 47.
 
@@ -144,13 +144,13 @@ Le code de région a été remplacé par 47.
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) dans notre documentation destinée aux développeurs.
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) de notre documentation destinée aux développeurs.

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Correctif MDVA-28409 : panne du serveur web Adobe Commerce - mémoire insuffisante
 
-Le correctif MDVA-28409 résout le problème en raison duquel la tâche cron de suppression des guillemets s’arrêtait en raison du traitement d’un grand nombre d’éléments. Ce correctif est disponible lorsque la variable [Outil Correctifs de qualité (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) v.1.0.5 est installé.
+Le correctif MDVA-28409 résout le problème en raison duquel la tâche cron de suppression des guillemets s’arrêtait en raison du traitement d’un grand nombre d’éléments. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) v.1.0.5 est installé.
 
 ## Produits et versions concernés
 
@@ -21,7 +21,7 @@ Adobe Commerce sur site et Adobe Commerce sur l’infrastructure cloud 2.3.4 - 2
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour la variable `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool]: recherchez la page des correctifs.](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -37,13 +37,13 @@ select * from cron_schedule where job_code like '%sales_clean_quotes%'
 
 <u>Résultat attendu :</u>
 
-L’état de `sales_clean_quotes` la tâche cron doit `success`.
+L’état de la tâche cron `sales_clean_quotes` doit être `success`.
 
 <u>Résultat réel :</u>
 
-L’état de `sales_clean_quotes` la tâche cron est `running` ou `error`.
+L’état de la tâche `sales_clean_quotes` cron est `running` ou `error`.
 
-Une autre manière de confirmer qu’il existe une tâche cron qui ne peut pas supprimer les guillemets obsolètes consiste à mapper la sortie de la requête à partir de **Étape 1** (`executed_at`) par rapport aux horodatages des erreurs de mémoire dans `/var/log/cron.log`. Si une tâche cron ne peut pas traiter la quantité de données, un message similaire à celui-ci peut s’afficher :
+Une autre manière de confirmer qu’il existe une tâche cron qui ne peut pas supprimer les guillemets obsolètes consiste à mapper la sortie de la requête de **Étape 1** (`executed_at`) sur les horodatages des erreurs de mémoire dans `/var/log/cron.log`. Si une tâche cron ne peut pas traiter la quantité de données, un message similaire à celui-ci peut s’afficher :
 
 ```
 PHP Fatal error:  Allowed memory size of 1073741824 bytes exhausted (tried to allocate 4096 bytes) in /app/vendor/magento/framework/DB/Statement/Pdo/Mysql.php on line 91
@@ -58,13 +58,13 @@ Fatal error: Allowed memory size of 1073741824 bytes exhausted (tried to allocat
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [Mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
 Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
 
-* [L’outil Correctifs de qualité est disponible : un nouvel outil pour les correctifs de qualité en libre-service.](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de soutien.
-* [Vérifiez si le correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de soutien.
+* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
 
 Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) .
