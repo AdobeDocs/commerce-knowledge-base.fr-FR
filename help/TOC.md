@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: c8e688b59f0d66dc32da098c185d81b14c6770bc
+source-git-commit: c75a1ecbf5d89ede71eb3f873c75a5e7d8720a2b
 workflow-type: tm+mt
-source-wordcount: '11064'
+source-wordcount: '11069'
 ht-degree: 0%
 
 ---
@@ -1093,6 +1093,7 @@ ht-degree: 0%
       * [Impossible de modifier le moteur de recherche dans app/etc/env.php](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
       * [L’interface de ligne de commande de Magento-cloud n’affiche pas d’environnement actif](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [Limite de fichier [!DNL SendGrid] pour Adobe Commerce Cloud](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
+      * [ Mauvaises performances dans les environnements d’intégration](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
    * Déploiement {#deployment}
       * [Échec du déploiement : versions Elasticsearch et Adobe Commerce incompatibles](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [Échec du déploiement : impossible d’appliquer le correctif MDVA-43395](/help/troubleshooting/deployment/deployment-failed-unable-to-apply-mdva-43395-patch.md)
