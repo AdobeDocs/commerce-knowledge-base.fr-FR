@@ -4,9 +4,9 @@ description: Appliquez le correctif ACSD-52041 pour résoudre le problème Adobe
 feature: Page Builder
 role: Admin, Developer
 exl-id: f2a1fd36-2098-46a7-aa42-3a5a0014adc9
-source-git-commit: fc5dc9fcf610cae6f8c0a334b4ef15029c462c66
+source-git-commit: b5c253a5c0651c6027c0795edb2f230bd65f734a
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -23,25 +23,28 @@ Le correctif ACSD-52041 corrige le problème de rendu de Page Builder pendant ci
 
 **Compatible avec les versions d’Adobe Commerce :**
 
-* Adobe Commerce (toutes les méthodes de déploiement) 2.4.4 - 2.4.4-p8, 2.4.5 - 2.4.5-p7, 2.4.6 - 2.4.6-p6
+* Adobe Commerce (toutes les méthodes de déploiement) 2.4.4 - 2.4.4-p5, 2.4.5 - 2.4.5-p4 et 2.4.6 - 2.4.6-p2.
+
+
 
 >[!NOTE]
 >
 >Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
+
 ## Problème
 
-Le Créateur de pages effectue un rendu pendant cinq secondes sans déclencher de verrous.
+Le **[!DNL Page Builder]** effectue le rendu pendant *5* secondes sans relâcher les verrous.
 
 <u>Étapes à reproduire</u> :
 
-1. Modifiez une page CMS, une page de produit ou tout autre page comportant le Créateur de pages.
+1. Modifiez une page CMS, une page de produit ou tout autre élément qui possède **[!DNL Page Builder]**.
 1. Enregistrez les modifications.
 1. Remarquez le temps d’économie de la page.
 
 <u>Résultats attendus</u>
 
-Le contenu est enregistré. Aucune erreur n’a été trouvée dans le journal du navigateur.
+Le contenu est enregistré. Aucune erreur n’est trouvée dans le journal du navigateur.
 
 <u>Résultats réels</u>
 
@@ -50,7 +53,7 @@ Erreur dans la console : ``Page Builder was rendering for 5 seconds without rele
 
 ## Appliquer le correctif
 
-Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
+Pour appliquer des correctifs individuels pour les versions **2.4.4 - 2.4.4-p5, 2.4.5 - 2.4.5-p4 et 2.4.6 - 2.4.6-p2**, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
 * Adobe Commerce ou Magento Open Source sur site : [[!DNL Quality Patches Tool] > Utilisation](<https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html>) dans le guide [!DNL Quality Patches Tool].
 * Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) dans le guide Commerce on Cloud Infrastructure.
