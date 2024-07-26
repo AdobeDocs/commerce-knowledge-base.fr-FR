@@ -4,7 +4,7 @@ description: Cet article fournit des solutions pour les erreurs de paramètres P
 exl-id: 51fb3c95-2e25-4d86-a6cf-e08e90d097ca
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Pour augmenter votre limite de mémoire PHP :
 
 Les configurations comportant un grand nombre de storeviews, de produits, d’attributs ou d’options peuvent générer des formulaires qui dépassent la limite prédéfinie PHP. Si le nombre de valeurs envoyées dépasse la limite `max-input-vars` définie dans `php.ini` (la valeur par défaut est 1 000), les données restantes ne sont pas transférées et ces valeurs de base de données ne sont pas mises à jour. Dans ce cas, un avertissement s’affiche dans le journal PHP :
 
-```terminal
+```bash
 PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini.
 ```
 
@@ -58,7 +58,7 @@ Voir [Lors de l’installation, xdebug maximum function imbrication level error]
 
 Le texte d’erreur est généralement :
 
-```terminal
+```bash
 Parse error: syntax error, unexpected 'data' (T_STRING)
 ```
 
