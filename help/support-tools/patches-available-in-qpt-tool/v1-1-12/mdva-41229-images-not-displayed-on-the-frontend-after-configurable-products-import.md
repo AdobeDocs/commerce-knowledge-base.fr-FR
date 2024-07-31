@@ -4,7 +4,7 @@ description: Le correctif MDVA-41229 résout le problème en raison duquel les i
 exl-id: 69d7374f-9f8b-4ec4-8a7f-135ee06135a3
 feature: Data Import/Export, Configuration, Products
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 143a694fd573aeb2a52f47d194359e98f74f8033
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 2%
@@ -37,12 +37,15 @@ Les images disponibles sur le serveur principal ne s’affichent pas sur le serv
 
 1. Installez une Adobe Commerce propre.
 1. Ajoutez un attribut personnalisé en accédant à **Magasins** > **Attributs** > **Produit** > **Ajouter un nouvel attribut** avec les paramètres ci-dessous :
+
    * Propriétés :
       * Propriétés d’attribut :
+
          * Libellé par défaut : Définir la taille
          * Type d’entrée de catalogue pour le propriétaire du magasin : nuance de texte
          * Valeurs requises : Non
          * Mettre à jour l’image d’aperçu du produit : Oui
+
       * Gérer l’échantillon (valeurs de votre attribut) :
 
         | Is Default | Echantillon d’administration | Description de l’administrateur | Échantillon d’affichage de magasin par défaut | Description de la vue de magasin par défaut |
@@ -52,17 +55,24 @@ Les images disponibles sur le serveur principal ne s’affichent pas sur le serv
         | non | 30 | 30 | 30 | 30 |
         | non | 60 | 60 | 60 | 60 |
         | non | 68 | 68 | 68 | 68 |
+
       * Propriétés d’attribut avancées :
+
          * Code d’attribut : set_size
          * Portée : globale
          * Valeur unique : non
          * Validation d’entrée pour le propriétaire du magasin : aucune
          * Ajouter aux options de colonne : Non
          * Utiliser dans les options de filtre : Non
+
    * Gérer les étiquettes :
+
       * Gestion des titres (taille, couleur, etc.)
+
          * Affichage de magasin par défaut : définir la taille
+
    * Propriétés Storefront :
+
       * Utiliser dans la recherche : Oui
       * Poids de recherche : 1
       * Visible dans la recherche avancée : Non
@@ -73,12 +83,17 @@ Les images disponibles sur le serveur principal ne s’affichent pas sur le serv
       * Visible sur les pages de catalogue sur Storefront : Oui
       * Utilisé dans la liste des produits : Oui
       * Utilisé pour le tri dans la liste des produits : Non
+
 1. Ajoutez cet attribut au jeu d’attributs par défaut dans le groupe Détails du produit (**Magasins** > **Attributs** > **Jeu d’attributs**).
 1. Téléchargez les images définies dans le dossier var dans le répertoire racine Adobe Commerce.
 1. Accédez à **Système** > **Transfert de données** > et importez le fichier à l’aide des options suivantes :
+
    * Paramètres d’importation :
+
       * Type d’entité : Produits
+
    * Comportement d’importation :
+
       * Comportement d’importation : ajout/mise à jour
       * Stratégie de validation : Arrêter en cas d’erreur
       * Nombre d’erreurs autorisées : 1
@@ -86,9 +101,12 @@ Les images disponibles sur le serveur principal ne s’affichent pas sur le serv
       * Séparateur de valeurs multiples : `,`
       * Constante de valeur d’attribut : EMPTYVALUE
       * Enfermement Champs : non coché
+
    * Fichier à importer :
+
       * Sélectionner un fichier à importer
       * Images File Directory : laissez-le vide
+
 1. Accédez au storefront vers la page `/product-set.html` et basculez entre différentes tailles de visionneuse. Pour la Taille de la visionneuse 24, il n’y aura pas de galerie.
 
 <u>Résultats attendus</u> :
