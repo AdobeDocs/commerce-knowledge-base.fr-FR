@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: a520ef45f1c55dbf34a98c4f4d3ab49814535434
+source-git-commit: 4c1199c31f83d7c2aaf28e259d63473779bf2efe
 workflow-type: tm+mt
-source-wordcount: '11073'
+source-wordcount: '11080'
 ht-degree: 0%
 
 ---
@@ -1054,6 +1054,7 @@ ht-degree: 0%
       * [ERREUR : Échec du nettoyage sur Adobe Commerce sur l’infrastructure cloud](/help/troubleshooting/miscellaneous/error-warming-up-failed-on-magento-commerce-cloud.md)
       * [Impossible de cloner le référentiel GitHub du Magento](/help/troubleshooting/miscellaneous/cannot-clone-the-magento-github-repository.md)
       * [Catalogue de recherche en direct non synchronisé](/help/troubleshooting/miscellaneous/live-search-catalog-data-sync.md)
+      * [Le tableau de bord et le classement des résultats de recherche [!DNL Live Search] sont incorrects](/help/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect.md)
       * [Profils client n’apparaissant pas dans l’Experience Platform](/help/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported.md)
       * [PWA Studio : le navigateur ne peut pas résoudre le site .local.pwadev](/help/troubleshooting/miscellaneous/pwa-studio-browser-cannot-resolve-local-pwadev-site.md)
       * [Recommendations de produit ne s’affiche pas dans le créateur de pages](/help/troubleshooting/miscellaneous/product-recommendations-do-not-show-in-page-builder.md)
