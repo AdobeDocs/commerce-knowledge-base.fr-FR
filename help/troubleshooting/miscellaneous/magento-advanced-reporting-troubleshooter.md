@@ -4,9 +4,9 @@ description: Les problèmes de création de rapports avancés sur Adobe Commerce
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 84b4ca4c4144381f0b404d2eae6684e7b21755df
+source-git-commit: b3bfc41a67eb9ef0bbb52d1c1c3940b1aa49cf44
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ b. NO - Passez à [Étape 4](#step-4).
 
 +++**La création de rapports avancés est-elle activée ?**
 
-Cochez **Admin** > **Magasins** > **Paramètres** > **Configuration** > **Général** > **Avancé**. Pour obtenir des instructions détaillées, consultez la section [Création de rapports avancés : activer la création de rapports avancés](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting).
+Cochez **Admin** > **Magasins** > **Paramètres** > **Configuration** > **Général** > **Création de rapports avancés**. Pour obtenir des instructions détaillées, consultez la section [Création de rapports avancés : activer la création de rapports avancés](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting).
 
 a. OUI - Passez à l’ [étape 5](#step-5).\
 b. NO - [Activez les rapports avancés](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) et enregistrez-les, puis attendez 24 heures que les rapports avancés et Adobe Commerce se synchronisent. Vérifiez si vos données sont désormais chargées. Si c&#39;est le cas, vous avez résolu le problème. S’il ne passe pas à [Étape 5](#step-5).
