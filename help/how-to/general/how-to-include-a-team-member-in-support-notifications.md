@@ -4,9 +4,9 @@ description: Cet article explique comment inclure un membre de l’équipe dans 
 feature: Cloud, Support, Admin Workspace
 role: Admin, Developer
 exl-id: 63ea3f60-a509-447c-ac3d-bb2133141c80
-source-git-commit: 1c568d75534bbfe322d9f980b40c5dd64fc5b7a2
+source-git-commit: 771793d45000e65c1bf41137cd984d2977b0a9ff
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,6 @@ Cet article explique comment inclure un membre de l’équipe pour recevoir auto
 
 1. Accédez à **[!DNL Cloud Project URL]** (Exemple : `https://us-3.magento.cloud/projects/xxxxxx/edit`).
 1. Vérifiez si le membre de l’équipe a été ajouté au projet et est un [!DNL Super User].
-
-S&#39;ils n&#39;ont pas besoin de l&#39;accès à [!DNL cloud project], envoyez une [demande d&#39;assistance au centre d&#39;assistance Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) afin qu&#39;ils soient automatiquement CC : sur tous les tickets et fournissez également leur **[!DNL MAGE ID]** (le cas échéant).
 
 S’ils n’ont pas été ajoutés au projet, vous devrez les ajouter en tant que [!DNL Super User] et accorder [!DNL Shared Access] :
 
