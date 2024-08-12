@@ -3,9 +3,9 @@ title: Puis-je planifier des mises à jour d’évaluation de contenu pour les p
 description: Adobe Commerce ne propose pas la fonctionnalité de planification d’une mise à jour de prix ([Évaluation du contenu](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)) pour un ou plusieurs produits dans un catalogue partagé.
 exl-id: 5482326f-54c2-4efc-8e5e-6d075ee5be55
 feature: Catalog Management, Customer Service
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: c3120f7df24e105b082df6544ab82241d6b6851f
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
