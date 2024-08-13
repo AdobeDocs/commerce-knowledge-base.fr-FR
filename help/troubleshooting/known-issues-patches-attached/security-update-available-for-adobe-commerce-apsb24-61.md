@@ -4,21 +4,21 @@ promoted: true
 description: Appliquez un correctif isolé pour corriger  [!DNL CVE-2024-39397] pour Adobe Commerce 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10, et les instances de versions antérieures s’exécutant uniquement  [!DNL Apache].
 feature: Compliance, Security
 role: Developer
-source-git-commit: 2038e766d65c81172391091a0cdff4abb04e84d5
+source-git-commit: 76ff7669a0a57925a176e08031e0789ced0a7f0e
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
 # Mise à jour de sécurité disponible pour Adobe Commerce - [!DNL APSB24-61]
 
-Le 13 août 2024, Adobe a publié une mise à jour de sécurité pour le module externe Adobe Commerce, Magento Open Source et Adobe Commerce Webhooks.
+Le 13 août 2024, Adobe a publié une mise à jour de sécurité régulièrement planifiée pour le module externe Adobe Commerce, Magento Open Source et Adobe Commerce Webhooks.
 Cette mise à jour corrige les vulnérabilités [[!DNL critical, important] et  [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html) . Une exploitation réussie peut entraîner l’exécution arbitraire du code, la lecture arbitraire du système de fichiers, le contournement des fonctionnalités de sécurité et la transmission des privilèges. Le bulletin d&#39;information est le suivant : [Bulletin de sécurité des Adobes ([!DNL APSB24-61])](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
 >[!NOTE]
 >
->**[!DNL CVE-2024-39397]s’applique uniquement lors de l’utilisation du serveur web [!DNL Apache].** Pour vous assurer que la correction de cette vulnérabilité peut être appliquée aussi rapidement que possible, Adobe a également publié un correctif isolé qui résout [!DNL CVE-2024-39397].
+>**[!DNL CVE-2024-39397], répertorié dans le bulletin de sécurité ci-dessus, ne s&#39;applique que lors de l&#39;utilisation du serveur web [!DNL Apache].** Pour vous assurer que la correction de cette vulnérabilité peut être appliquée aussi rapidement que possible, Adobe a également publié un correctif isolé qui résout [!DNL CVE-2024-39397].
 
 **Appliquez les dernières mises à jour de sécurité dès que possible. Si vous ne le faites pas, vous serez vulnérable à ces problèmes de sécurité, et l&#39;Adobe aura des moyens limités pour vous aider à y remédier.**
 
