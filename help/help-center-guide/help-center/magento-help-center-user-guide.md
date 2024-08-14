@@ -3,9 +3,9 @@ title: Guide de l’utilisateur de l’assistance Experience League pour Adobe C
 description: Découvrez comment envoyer un ticket d’assistance à l’assistance Experience League, fournir un accès partagé aux comptes et parcourir la base de connaissances Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 23f19c3b8fff3b31bb42625d210c5330292b79b3
+source-git-commit: 38e67144f337c8359a5602e49d8a0ee91cd20b53
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2117'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,11 @@ Pour soumettre un nouveau cas d’assistance à l’aide de la page de démarrag
 
    ![open-support-page](assets/click_support.png)
 
-1. Pour commencer le processus d’admission de l’assistance, cliquez sur **[!UICONTROL Open Ticket]** dans le menu de gauche, ou cliquez sur **[!UICONTROL Get Started]** dans la carte *[!UICONTROL Open a support ticket]*.
+1. Pour lancer le processus d’appel à l’assistance, assurez-vous d’avoir sélectionné l’organisation appropriée dans la liste déroulante (le cas échéant), car vous pouvez avoir plusieurs organisations portant des noms similaires, chacune disposant de ses propres droits.
+
+   ![image](https://git.corp.adobe.com/storage/user/38345/files/230d6ecd-bce2-4170-b377-3989fa8be615)
+
+1. Cliquez sur **[!UICONTROL Open Ticket]** dans le menu de gauche ou sur **[!UICONTROL Get Started]** dans la carte *[!UICONTROL Open a support ticket]*.
 
    ![open-support-case](assets/open_support_case.png)
 
