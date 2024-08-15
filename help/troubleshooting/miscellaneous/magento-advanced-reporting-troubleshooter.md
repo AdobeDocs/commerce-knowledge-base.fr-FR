@@ -4,9 +4,9 @@ description: Les problèmes de création de rapports avancés sur Adobe Commerce
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: b3bfc41a67eb9ef0bbb52d1c1c3940b1aa49cf44
+source-git-commit: dfe9b9cf4751e28bd151fce36df168e48fb914ed
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -117,13 +117,13 @@ c. OUI - S’il existe des enregistrements mais qu’une erreur s’est produite
 
 +++**Le fichier `data.tgz` existe-t-il dans le système et des enregistrements sont-ils présents dans les journaux d’accès ?**
 
-Pour vérifier que le fichier `data.tgz` existe, exécutez la commande :
+Pour vérifier que le fichier `data.tgz` existe, exécutez cette commande : elle doit renvoyer le ou les répertoires avec le ou les noms de hachage :
 
 ```
-ls -ltr pub/media/analytics/<there should be a directory with hash name>/
+ls -ltr pub/media/analytics/
 ```
 
-Pour vérifier qu’il existe des enregistrements dans access.logs, exécutez la commande :
+Pour vérifier qu’il existe des enregistrements dans access.logs, exécutez la commande suivante :
 
 ```
 zgrep -i analytics /var/log/platform/[cluster_id|cluster_id_stg]/access.log* | grep MagentoBI
