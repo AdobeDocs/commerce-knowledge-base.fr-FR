@@ -4,9 +4,9 @@ description: Cet article fournit des solutions au problème Adobe Commerce en ra
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: a1b049dab989d5d8594d86b64b778e6e277a9f41
+source-git-commit: ab39a21ca325cdad30debf89a1cff660bf5925e5
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Si les données de votre produit ne sont pas synchronisées correctement pour un
 1. Si vous voyez les données correctes dans `catalog_data_exporter_products`, utilisez la requête SQL suivante pour vérifier l’horodatage de la dernière exportation. Elle doit être postérieure à l’horodatage `modified_at` :
 
    ```sql
-   select * from flag where flag_code = 'products-feed-version';
+   select * from scopes_website_data_exporter;
    ```
 
 1. Si l’horodatage est plus ancien, vous pouvez attendre la prochaine exécution cron ou la déclencher vous-même à l’aide de la commande suivante :
@@ -111,7 +111,7 @@ Si vous voyez les données correctes dans `catalog_data_exporter_product_attribu
 1. Utilisez la requête SQL suivante pour vérifier l’horodatage de la dernière exportation. Elle doit être postérieure à l’horodatage `modified_at`.
 
    ```sql
-   select * from flag where flag_code = 'product-attributes-feed-version';
+   select * from scopes_website_data_exporter;
    ```
 
 1. Si l’horodatage est plus ancien, vous pouvez attendre la prochaine exécution cron ou la déclencher vous-même à l’aide de la commande suivante :
@@ -133,4 +133,5 @@ bin/magento saas:resync --feed productattributes
 
 ## Lecture connexe
 
-Voir [Recherche en direct intégrée](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) dans notre documentation utilisateur.
+* Voir [Recherche en direct intégrée](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) dans notre documentation utilisateur.
+* Voir [Consultez les journaux et résolvez les problèmes d’exportation et de synchronisation des données SaaS Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) dans le guide d’exportation des données SaaS Adobe Commerce.
