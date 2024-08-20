@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 01d815edd76b749df036021d75d4456d9d7b5550
+source-git-commit: ac71666c082f59c8f40df57c31ae15a4ef595a18
 workflow-type: tm+mt
-source-wordcount: '11096'
+source-wordcount: '11100'
 ht-degree: 0%
 
 ---
@@ -801,6 +801,8 @@ ht-degree: 0%
          * [ACSD-58008 : si vous modifiez la date de fin comme vide, la mise à jour du planning disparaît.](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-58008-editing-the-end-date-as-empty-causes-the-schedule-update-to-disappear.md)
          * [ACSD-57854 : la réponse GraphQL contient des catégories désactivées qui ne doivent pas être répertoriées dans les agrégations de catégories.](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57854-graphql-response-contains-disabled-categories-that-should-not-be-listed-in-the-category-aggregations.md)
          * [ACSD-57565 : le tableau de bord des commandes affiche des informations de commande incorrectes.](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57565-the-order-dashboard-displays-incorrect-order-information.md)
+      * v1.1.49 {#v1-1-49}
+         * [Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.49](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/overview.md)
       * [Correctif du problème Adobe Commerce avec l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)
 * Annonces {#announcements}
    * [Présentation des annonces](/help/announcements/overview.md)
