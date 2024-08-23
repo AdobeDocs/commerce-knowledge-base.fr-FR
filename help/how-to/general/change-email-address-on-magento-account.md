@@ -3,16 +3,20 @@ title: Comment modifier l'adresse email sur le compte magento.com lorsque le cha
 description: Cet article explique comment modifier l’adresse électronique de votre compte [Magento.com](https://account.magento.com) lorsque le champ est grisé.
 exl-id: cd527203-345c-4318-8ca8-0063109b5f79
 feature: Communications
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 123027ee291b44ad4b234e561b9c3f4156af7c90
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
 # Comment modifier l&#39;adresse email sur le compte magento.com lorsque le champ est grisé ?
 
-Cet article explique comment modifier l’adresse électronique de votre compte [Magento.com](https://account.magento.com) lorsque le champ est grisé.
+Cet article explique comment modifier l’adresse électronique de votre compte [Magento.com](https://account.magento.com) lorsque le champ est grisé dans des circonstances telles que :
+
+* Vous ou l’utilisateur d’origine avez quitté la société.
+* Votre entreprise a migré vers un nouveau domaine de messagerie.
+* Vous passez à une liste de distribution ou à une adresse électronique fourre-tout.
 
 ## Produits et versions concernés
 
@@ -30,7 +34,7 @@ Modification de l’adresse électronique d’un utilisateur disposant de son pr
 
 <u>Solution</u>
 
-1. Envoyez un e-mail à Grp-magento-HelpCenterLoginIssues@adobe.com indiquant ce qui suit :
+1. [Envoyez une demande d’assistance](https://experienceleague.adobe.com/home#support) à l’adresse https://experienceleague.adobe.com/home#support en indiquant ce qui suit :
 
    * Adresse électronique existante à mettre à jour
    * Nouvelle adresse email
@@ -59,3 +63,4 @@ Cependant, si vous n’avez pas accès aux courriers électroniques envoyés à 
 ## Lecture connexe
 
 [Réinitialiser le mot de passe oublié](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) dans le Guide de l’utilisateur du Creative Cloud.
+[Mettez à jour votre profil de compte](https://helpx.adobe.com/manage-account/using/edit-adobe-account-personal-profile.html) dans le Guide de l’utilisateur du Creative Cloud.
