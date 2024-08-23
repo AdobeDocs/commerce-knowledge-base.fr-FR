@@ -3,7 +3,7 @@ title: Correction des données non mises à jour dans les flux  [!DNL Commerce D
 description: Cet article fournit une solution pour résoudre les problèmes de synchronisation des données provoqués par l’utilisation d’un ID d’affichage incorrect dans l’abonnement  [!DNL Commerce Data Exporter mview] .
 feature: Data Import/Export, Saas, Logs
 role: Developer
-source-git-commit: cf87b5f1280a2d1d23c7ace37616feb337b5142f
+source-git-commit: 3581e39e7054cf765403fd963e22a051457c1097
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -48,4 +48,4 @@ L’exemple suivant montre le code qui spécifie les tables suivies par l’abon
 
 ## Lecture connexe
 
-[[!DNL SaaS] Notes de mise à jour de l’extension d’exportation de données](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes) dans le guide d’exportation de données Adobe Commerce pour les services [!DNL SaaS].
+[[!DNL SaaS] Notes de mise à jour de l’extension d’exportation de données](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes) dans le guide d’exportation de données Adobe Commerce pour les services [!DNL SaaS]
