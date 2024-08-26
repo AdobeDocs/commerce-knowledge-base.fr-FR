@@ -3,9 +3,9 @@ title: "ACSD-56979 : suppression des images de produit après suppression de la 
 description: Appliquez le correctif ACSD-56979 pour résoudre le problème Adobe Commerce en raison duquel les images de produit sont supprimées après la suppression d’une mise à jour intermédiaire.
 feature: Products
 role: Admin, Developer
-source-git-commit: e97850bcaa98b1ccc1522fb6ee0046cd38bf1c93
+source-git-commit: 8e916feab8be9d92d047fae8861a479070d448e8
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Le correctif ACSD-56979 corrige le problème de suppression des images de produi
 
 **Compatible avec Adobe Commerce et les versions de Magento Open Source :**
 
-* Adobe Commerce (toutes les méthodes de déploiement) >=2.4.3 &lt;2.4.7
+* Adobe Commerce (toutes les méthodes de déploiement) 2.4.3 - 2.4.6-p7
 
 >[!NOTE]
 >
