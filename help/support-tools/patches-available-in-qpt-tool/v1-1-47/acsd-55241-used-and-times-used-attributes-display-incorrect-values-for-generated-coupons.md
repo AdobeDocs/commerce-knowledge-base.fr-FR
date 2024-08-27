@@ -4,7 +4,7 @@ description: Appliquez le correctif ACSD-55241 pour résoudre le problème Adobe
 feature: Price Rules
 role: Admin, Developer
 exl-id: cfe0f8af-423a-4e12-a332-053392cbabed
-source-git-commit: 5d0b4743fe49d22c099102490f93dc4065ab4413
+source-git-commit: f830486ab3b00fca92dda897bbf0bfbae41543c1
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -37,10 +37,10 @@ Les attributs **Used** et **Times Used** affichent des valeurs incorrectes pour 
 
 1. Créez **[!UICONTROL Cart Price Rules]** à partir de **[!UICONTROL Admin]** > **[!UICONTROL Marketing]** > **[!UICONTROL Promotion]** et ajoutez toute condition qui correspond lors du placement d’une commande (par exemple : sous-total supérieur à *5$*).
 
-* Appliquez n’importe quelle remise.
-* Sélectionnez **[!UICONTROL Auto Coupon]**.
-* Il génère quelques codes de bon à partir de **Gérer les codes de bon**.
-* Réindexez et nettoyez le cache.
+   * Appliquez n’importe quelle remise.
+   * Sélectionnez **[!UICONTROL Auto Coupon]**.
+   * Il génère quelques codes de bon à partir de **Gérer les codes de bon**.
+   * Réindexez et nettoyez le cache.
 
 1. Créez un **[!UICONTROL customer account]** et connectez-vous au front-end.
 1. Ajoutez un produit avec plus de *2* quantités dans le panier et appliquez un coupon.
