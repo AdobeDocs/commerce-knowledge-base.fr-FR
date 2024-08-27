@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 7cda7f53226b878e8900b79443c4be28ff056862
+source-git-commit: b59572c37b12d14e40ec70cb09e8f998a773d988
 workflow-type: tm+mt
-source-wordcount: '11141'
+source-wordcount: '11153'
 ht-degree: 0%
 
 ---
@@ -803,6 +803,7 @@ ht-degree: 0%
          * [ACSD-57565 : le tableau de bord des commandes affiche des informations de commande incorrectes.](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57565-the-order-dashboard-displays-incorrect-order-information.md)
       * v1.1.49 {#v1-1-49}
          * [Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.49](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/overview.md)
+         * [ACSD-57588 : Erreur dans le traitement des identifiants de région lors de l&#39;expédition vers plusieurs adresses](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57588-region-id-error-when-shipping-to-multiple-addresses.md)
          * [ACSD-56979 : suppression des images de produit après la mise à jour intermédiaire supprimée](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-56979-product-images-removed-after-staging-update-deleted.md)
       * v1.1.50 {#v1-1-50}
          * [Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.50](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/overview.md)
