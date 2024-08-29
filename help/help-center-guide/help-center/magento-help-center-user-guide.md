@@ -3,9 +3,9 @@ title: Guide de l’utilisateur de l’assistance Experience League pour Adobe C
 description: Découvrez comment envoyer un ticket d’assistance à l’assistance Experience League, fournir un accès partagé aux comptes et parcourir la base de connaissances Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 88a9fad5d4a38a82001175af4a1611acf6d4e413
+source-git-commit: 7c6cc2fc3cd76fc4c156d7cdb15bfbc3a24f39cb
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2500'
 ht-degree: 0%
 
 ---
@@ -89,14 +89,20 @@ Pour soumettre un nouveau cas d’assistance à l’aide de la page de démarrag
 
 >[!INFO]
 >
->1. Si vous appartenez à plusieurs organisations, vous devez sélectionner l’organisation appropriée dans la liste déroulante.
->1. Pour soumettre un dossier, vous devez avoir le droit de demander de l&#39;aide. Si ce n’est pas le cas, une barre s’affiche en haut de la page pour vous informer que vous n’êtes pas un utilisateur ayant les droits d’assistance dans l’organisation.
+>1. Pour soumettre un dossier, vous devez avoir le droit de prendre en charge le produit approprié (par exemple, Adobe Commerce, Adobe Commerce Intelligence, Experience Platform, etc.). Si vous n’êtes pas autorisé à bénéficier d’une assistance, une barre apparaît en haut de la page vous informant que vous n’êtes pas un utilisateur autorisé par l’assistance au sein de l’organisation.
+>1. Si vous appartenez à plusieurs organisations ou si plusieurs organisations portent des noms similaires (chacune d’elles représente l’un des autres produits Adobe auxquels l’organisation s’abonne), vous devez d’abord sélectionner l’organisation appropriée dans la liste déroulante.
+
+>[!NOTE]
+>
+>Assurez-vous d’avoir sélectionné la bonne organisation avant d’envoyer le dossier et que l’organisation que vous avez sélectionnée dispose des droits appropriés pour le produit pour lequel vous demandez de l’aide. Par exemple, si votre problème est lié à Adobe Commerce, mais que vous avez sélectionné Experience Platform comme produit et que le dossier a bien été envoyé, cela peut entraîner un mauvais routage de votre cas et des délais de réponse.
+>
+>En outre, si la mauvaise organisation a été sélectionnée, votre équipe ne pourra pas afficher le cas sous [!UICONTROL My Cases] pour l’organisation appropriée/correcte. L’équipe d’assistance n’a plus la possibilité de modifier l’organisation associée au cas à l’avenir.
 
 1. Cliquez sur **Assistance** dans l’en-tête. Elle ouvrira la page d’accueil du service clientèle.
 
    ![open-support-page](assets/click_support.png)
 
-1. Pour lancer le processus d’appel à l’assistance, assurez-vous d’avoir sélectionné l’organisation appropriée dans la liste déroulante (le cas échéant), car vous pouvez avoir plusieurs organisations portant des noms similaires, chacune disposant de ses propres droits.
+1. Pour lancer le processus d’appel à l’assistance, assurez-vous d’avoir sélectionné l’organisation appropriée dans la liste déroulante Organisation (si elle est visible).
 
    ![select_relevant_org](assets/select_appropriate_org.png)
 
@@ -104,7 +110,7 @@ Pour soumettre un nouveau cas d’assistance à l’aide de la page de démarrag
 
    ![open-support-case](assets/open_support_case.png)
 
-1. Sélectionnez un produit dans le menu déroulant et fournissez un titre et une description de la casse.
+1. Sélectionnez un produit dans le menu déroulant et fournissez un titre et une description de la casse. REMARQUE : si la liste déroulante n’affiche aucun produit ou si Commerce n’est pas une option disponible, essayez de changer d’organisation dans la colonne de gauche et vérifiez à nouveau.
 
    ![select_product](assets/support_case_product.png)
 
@@ -123,6 +129,18 @@ Pour soumettre un nouveau cas d’assistance à l’aide de la page de démarrag
 >1. Sélectionnez votre organisation dans le menu déroulant de l’organisation. 
 >1. Si votre entreprise n’apparaît toujours pas, contactez votre administrateur Commerce pour obtenir les droits des délégués de l’assistance. Pour plus d’informations, voir l’article d’aide [Commerce Account Share](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) . 
 
+>[!NOTE]
+>
+>Pourquoi l’organisation/le produit importe
+>
+>**Exemple A** : vous avez un accès partagé à une seule société et cette société a des droits pour deux produits Adobes : Product1 et Product2.
+>1. Puisque chaque organisation représente un produit, vous verrez deux organisations dans la liste déroulante, par exemple OrgA-Product1 et OrgB-Product2.
+>1. Si vous avez sélectionné Produit = Produit1 mais que votre problème est lié à Produit2, la demande sera acheminée vers la prise en charge de Produit2 et des retards seront pris lors du transfert de la demande vers la prise en charge de Produit1.
+>1. Si vous avez soumis l’affaire pour OrgA-Product1 et que vous souhaitez réviser [!UICONTROL My Cases] pour cette organisation à l’avenir, vous ne le verrez pas si vous sélectionnez OrgA-Product2 comme organisation (vous n’aurez qu’à sélectionner l’autre organisation, par rapport à l’exemple B).
+>
+>**Exemple B** : vous disposez d’un accès partagé à deux sociétés et chaque société n’a des droits que pour Adobe Commerce.
+>1. Si vous avez soumis le dossier pour l’organisation A mais que le problème a un impact sur l’organisation B, les membres de l’organisation B ne pourront plus voir ce cas sous [!UICONTROL My Cases] à l’avenir.
+>1. En outre, les membres de l’organisationA pourront voir les cas sous [!UICONTROL My Cases] qui sont réellement destinés à l’organisationB, ce qui peut entraîner des problèmes de confidentialité.
 
 Vous devez disposer d’un compte sur https://account.adobe.com et https://account.magento.com pour vous connecter à l’Experience League afin de soumettre un cas d’assistance. Vous ne pourrez pas soumettre de demande d’assistance tant que vous n’aurez pas été connecté.
 
