@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: f8f09e3aeadb27724c431c275ce13d8f8699dd20
+source-git-commit: a57747c4c4dd994fed95686772bce71cf02ccc90
 workflow-type: tm+mt
-source-wordcount: '11246'
+source-wordcount: '11253'
 ht-degree: 0%
 
 ---
@@ -806,6 +806,7 @@ ht-degree: 0%
          * [ACSD-57643 : les produits avec des options personnalisées sont incorrectement ajoutés](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57643-products-with-custom-options-are-incorrectly-added.md)
          * [ACSD-57588 : Erreur dans le traitement des identifiants de région lors de l&#39;expédition vers plusieurs adresses](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57588-region-id-error-when-shipping-to-multiple-addresses.md)
          * [ACSD-56979 : suppression des images de produit après la mise à jour intermédiaire supprimée](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-56979-product-images-removed-after-staging-update-deleted.md)
+         * [ACSD-58739 : La réindexation partielle renvoie une erreur](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58739-partial-reindexing-throws-an-error.md)
          * [ACSD-57846 : recherche de produits GraphQL avec filtre pour zéro prix ne renvoyant aucun résultat](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57846-graphql-products-search-with-filter-for-zero-prices-not-returning-results.md)
          * [ACSD-58054 : génération de jetons API pour les clients inactifs](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58054-generate-tokens-for-inactive-customers-via-api.md)
       * v1.1.50 {#v1-1-50}
