@@ -1,27 +1,28 @@
 ---
-source-git-commit: 1fe71f13dbfc433886db900c359b7de2c6d0e7f3
+source-git-commit: eadb0294b716cdd24bb378364bc01b61e48d0521
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 6%
 
 ---
-# Article sur les contributions
+# Article de Contribute
 
 Nous acceptons les contributions de notre communauté ainsi que des employés d’Adobe qui ne font pas partie des équipes de documentation.
 
-## Adobe de code de conduite Open Source
+
+## Adobe Ouvrir le code de conduite Source
 
 Ce projet respecte le [Code de conduite d’Adobe Open Source](code-of-conduct.md) ou le [Code de conduite .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Pour plus d’informations, consultez l’article [Contribution](contributing.md).
 
 ## À propos de vos contributions pour Adobe du contenu
 
-Voir [Guide du contributeur de documents d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Voir le [Guide du contributeur de documents d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Votre contribution dépend de qui vous êtes et du type de modifications que vous souhaitez apporter :
 
 ### Modifications mineures
 
-Si vous contribuez à des mises à jour mineures, consultez l’article et cliquez sur le bouton **Modifier** lien dans l’article qui accède à la source GitHub de l’article. Ensuite, utilisez simplement l’interface utilisateur GitHub pour effectuer vos mises à jour. Voir le [Guide du contributeur pour Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) pour plus d’informations.
+Si vous contribuez à des mises à jour mineures par pure générosité, consultez l’article et cliquez sur le lien **Edit** (Modifier) de l’article qui accède à la source GitHub de celui-ci. Ensuite, utilisez simplement l’interface utilisateur GitHub pour effectuer vos mises à jour. Pour plus d’informations, consultez le [Guide du contributeur à la documentation d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) .
 
 Les corrections mineures ou les clarifications que vous envoyez pour la documentation et les exemples de code dans ce référentiel sont couvertes par les conditions d’utilisation Adobe.
 
@@ -43,18 +44,18 @@ Si vous êtes rédacteur technique, chef de programme ou développeur de l’éq
 
 Les contributeurs de la communauté peuvent utiliser l’interface utilisateur GitHub pour effectuer des modifications de base ou dupliquer le référentiel pour apporter des contributions majeures.
 
-Voir [Guide du contributeur de documents d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) pour plus d’informations.
+Pour plus d’informations, consultez le [Guide du contributeur de documents d’Adobe](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) .
 
 ## Utilisation de Markdown pour formater votre rubrique
 
 Tous les articles de ce référentiel utilisent GitHub Flavored Markdown. Si vous ne connaissez pas Markdown, voir :
 
-* [Concepts de base de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Markdown cheatsheet imprimable](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+* [ Concepts de base de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [Aide-mémoire imprimable pour le markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Étiquettes
 
 Dans le référentiel public, des étiquettes automatisées sont attribuées aux demandes d’extraction afin de nous aider à gérer le workflow de demande d’extraction et de vous aider à savoir ce qui se passe avec votre demande d’extraction :
 
-* **Modification envoyée à l’auteur**: l’auteur a été informé de la demande d’extraction en attente.
-* **ready-to-merge**: prêt à être analysé par notre équipe d’examen des demandes d’extraction.
+* **Modification envoyée à l’auteur** : l’auteur a été informé de la demande d’extraction en attente.
+* **Prêt à fusionner** : prêt à être analysé par notre équipe d’analyse de demande de tirage.
