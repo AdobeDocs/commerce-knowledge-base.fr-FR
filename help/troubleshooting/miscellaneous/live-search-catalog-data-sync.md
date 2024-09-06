@@ -4,9 +4,9 @@ description: Cet article fournit des solutions au problème Adobe Commerce en ra
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: ab39a21ca325cdad30debf89a1cff660bf5925e5
+source-git-commit: fe276c444c235b096ea6d61b02d8362314b5c154
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,11 @@ Cet article fournit des solutions au problème Adobe Commerce en raison duquel l
 
 ## Problème
 
-Les données de votre catalogue ne sont pas synchronisées correctement ou un nouveau produit a été ajouté, mais n’apparaît pas dans les résultats de recherche.
+Les données de votre catalogue ne sont pas synchronisées correctement ou un nouveau produit a été ajouté, mais n’apparaît pas dans les résultats de la recherche.
+
+>[!NOTE]
+>
+>Les noms de table `catalog_data_exporter_products` et `catalog_data_exporter_product_attributes` sont désormais appelés `cde_products_feed` et `cde_product_attributes_feed` à partir de la version 4.2.1 de [!DNL Live Search]. Pour les marchands sur des versions antérieures à la version 4.2.1, recherchez les données des anciens noms de table, `catalog_data_exporter_products` et `catalog_data_exporter_product_attributes`.
 
 <u>Étapes à reproduire</u>
 
@@ -59,20 +63,20 @@ Si les données de votre produit ne sont pas synchronisées correctement pour un
 1. Utilisez la requête SQL suivante et vérifiez que vous disposez des données attendues dans la colonne `feed_data`. Notez également l’horodatage `modified_at`.
 
    ```sql
-   select * from catalog_data_exporter_products where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
+   select * from cde_products_feed where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
    ```
 
 1. Si vous ne voyez pas les données correctes, essayez de réindexer à l’aide de la commande suivante et réexécutez la requête SQL à l’étape 1 pour vérifier les données :
 
    ```bash
-   bin/magento indexer:reindex catalog_data_exporter_products
+   bin/magento indexer:reindex cde_products_feed
    ```
 
 1. Si vous ne voyez toujours pas les données correctes, [créez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Vérification de l’horodatage de la dernière exportation de produit
 
-1. Si vous voyez les données correctes dans `catalog_data_exporter_products`, utilisez la requête SQL suivante pour vérifier l’horodatage de la dernière exportation. Elle doit être postérieure à l’horodatage `modified_at` :
+1. Si vous voyez les données correctes dans `cde_products_feed`, utilisez la requête SQL suivante pour vérifier l’horodatage de la dernière exportation. Elle doit être postérieure à l’horodatage `modified_at` :
 
    ```sql
    select * from scopes_website_data_exporter;
@@ -93,20 +97,20 @@ Si les données d’attribut de produit ne sont pas synchronisées correctement 
 1. Utilisez la requête SQL suivante et vérifiez que vous disposez des données attendues dans la colonne `feed_data`. Notez également l’horodatage `modified_at`.
 
    ```sql
-   select * from catalog_data_exporter_product_attributes where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
+   select * from cde_product_attributes_feed where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
    ```
 
 1. Si vous ne voyez pas les données correctes, utilisez la commande suivante pour réindexer, puis réexécutez la requête SQL à l’étape 1 pour vérifier les données.
 
    ```bash
-   bin/magento indexer:reindex catalog_data_exporter_product_attributes
+   bin/magento indexer:reindex cde_product_attributes_feed
    ```
 
 1. Si vous ne voyez toujours pas les données correctes, [créez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Vérification de l’horodatage de la dernière exportation d’attributs de produit
 
-Si vous voyez les données correctes dans `catalog_data_exporter_product_attributes` :
+Si vous voyez les données correctes dans `cde_product_attributes_feed` :
 
 1. Utilisez la requête SQL suivante pour vérifier l’horodatage de la dernière exportation. Elle doit être postérieure à l’horodatage `modified_at`.
 
