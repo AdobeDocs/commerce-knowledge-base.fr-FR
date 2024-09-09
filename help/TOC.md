@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 87b0024615d3aa02df40a6d6de56594e225d32b6
+source-git-commit: f309e4cde788475ae624520a76abaca1cc784f93
 workflow-type: tm+mt
-source-wordcount: '11278'
+source-wordcount: '11297'
 ht-degree: 0%
 
 ---
@@ -819,6 +819,8 @@ ht-degree: 0%
          * [ACSD-46938 : problèmes de performances avec les déclencheurs DB lors de la configuration:mise à niveau](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
          * [ACSD-59229 : inaffectation des données du groupe client en raison d’une valeur X-Magento-Vary obsolète](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
          * [ACSD-60441 : la mise à jour des clients via le point d’entrée V1/customers [!DNL REST] API renvoie une erreur](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
+         * [ACSD-59280 : erreur ReflectionUnionType::getName() dans les installations 2.4.4-pX](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
+         * [ACSD-60303 : résolution du problème d’emplacement des commandes d’administration avec la minification d’HTML activée](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60303-admin-order-placement-fix.md)
       * [Correctif du problème Adobe Commerce avec l’outil Correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)
 * Annonces {#announcements}
    * [Présentation des annonces](/help/announcements/overview.md)
