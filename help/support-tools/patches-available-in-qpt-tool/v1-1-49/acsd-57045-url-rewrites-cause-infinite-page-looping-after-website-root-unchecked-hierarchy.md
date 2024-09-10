@@ -3,7 +3,7 @@ title: '''ACSD-57045 : les réécritures d''URL provoquent une boucle de page in
 description: Appliquez le correctif ACSD-57045 pour résoudre le problème Adobe Commerce où les réécritures d’URL provoquent une boucle infinie de page après que [!UICONTROL Website Root] n’a pas été coché à partir de [!UICONTROL Hierarchy].
 feature: CMS
 role: Admin, Developer
-source-git-commit: df6cfc392f6afa4639a1ab9da52a85b8b15878d2
+source-git-commit: a39e5c857aae398a0b0ba44308ea417525a410d3
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 0%
