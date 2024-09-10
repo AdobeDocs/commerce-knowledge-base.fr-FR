@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 3ed9838bfb117888b3e4cfef052d39d7ada35b4b
+source-git-commit: 7bfbf1853dddc10199dcb97135535b9e8ee79293
 workflow-type: tm+mt
-source-wordcount: '11346'
+source-wordcount: '11357'
 ht-degree: 0%
 
 ---
@@ -811,6 +811,7 @@ ht-degree: 0%
          * [ACSD-58739 : La réindexation partielle renvoie une erreur](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58739-partial-reindexing-throws-an-error.md)
          * [ACSD-57846 : recherche de produits GraphQL avec filtre pour zéro prix ne renvoyant aucun résultat](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57846-graphql-products-search-with-filter-for-zero-prices-not-returning-results.md)
          * [ACSD-58054 : génération de jetons API pour les clients inactifs](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58054-generate-tokens-for-inactive-customers-via-api.md)
+         * [ACSD-57045 : les réécritures d’URL provoquent une boucle de page infinie après [!UICONTROL Website Root] non coché à partir de [!UICONTROL Hierarchy]](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57045-url-rewrites-cause-infinite-page-looping-after-website-root-unchecked-hierarchy.md)
          * [ACSD-58446 : La suppression d’une équipe avec des utilisateurs ou des équipes enfants via GraphQL génère un message d’erreur informatif.](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/ascd-58446-deleting-a-team-with-child-users-or-teams-via-graphql-gives-an-uninformative-error-message.md)
          * [ACSD-58375 : Une clé d’API YouTube mal configurée entraîne une erreur lors de l’ajout de vidéos au niveau de l’affichage de la boutique.](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58375-wrong-youtube-api-key-configuration-causes-an-error-when-adding-a-youtube-video-at-the-store-view-level.md)
       * v1.1.50 {#v1-1-50}
