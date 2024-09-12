@@ -3,9 +3,9 @@ title: Réinitialisation de l’environnement sur Adobe Commerce sur l’infrast
 description: Cet article présente différents scénarios de restauration d’un environnement sur Adobe Commerce sur l’infrastructure cloud.
 exl-id: e6b27838-ca1e-415f-a098-2aa2576e3f20
 feature: Best Practices, Build, Cloud, Console
-source-git-commit: 4439ee25e929a1bdb2216cc10fa0d4506c4f3aed
+source-git-commit: 598459365cad811966ed529356cb9ab876f49a38
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1093'
 ht-degree: 0%
 
 ---
@@ -36,8 +36,9 @@ Avec un déploiement ou une mise à niveau planifié, le [!UICONTROL Rollback] l
 
 <u>Le jour des modifications</u> :
 
-1. Placez le site web dans [!UICONTROL Maintenance Mode].<br>
-Pour en savoir plus sur [Activer ou désactiver [!UICONTROL Maintenance Mode]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html) dans notre guide de l’utilisateur et [[!UICONTROL Maintenance Mode] options de mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html) dans notre guide de mise à niveau.
+1. Placez le site web dans [!UICONTROL Maintenance Mode].
+Pour en savoir plus sur [Activer ou désactiver [!UICONTROL Maintenance Mode]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html) dans notre guide d’utilisation et [[!UICONTROL Maintenance Mode] options de mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html) dans notre guide de mise à niveau.
+1. Désactivez les tâches cron. Pour en savoir plus sur la désactivation des tâches cron, consultez notre [guide des propriétés crons](<https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property#disable-cron-jobs>).
 1. Prenez un [[!UICONTROL Database Dump]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html) local.
 
 <u>Si un [!UICONTROL Rollback] est requis</u> :
@@ -123,7 +124,7 @@ Avec la réinitialisation de [!DNL git], nous avons rétabli le code à l’éta
 1. Cloner l’environnement vers votre environnement de développement local. Vous pouvez copier la commande dans la console cloud :    ![copy_git_clone.png](assets/copy_git_clone.png)
 1. Accédez à l’historique des validations. Utilisez `--reverse` pour afficher l’historique dans l’ordre inverse afin de plus de commodité : `git log --reverse`
 1. Sélectionnez le hachage de validation sur lequel vous avez été bon. Pour réinitialiser le code à son état authentique (Vanilla), recherchez la toute première validation qui a créé votre branche (environnement).
-   ![Sélectionner un hachage de validation dans la console Git](assets/select_commit_hash.png)
+   ![texte alternatif](image.png)
 1. Appliquez la réinitialisation difficile [!DNL git] : `git reset --h <commit_hash>`
 1. Modifications push sur le serveur : `git push --force <origin> <branch>`
 
