@@ -4,9 +4,9 @@ description: Cet article fournit un dépannage lorsque vous ne recevez pas le co
 exl-id: 7ab6b2b4-6aca-4323-a45b-2b4e52955160
 feature: Admin Workspace, Communications
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 435a545adcf2a1d6b023abaec55c4b73e942ee1a
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,12 @@ Si vous n&#39;avez pas correctement configuré l&#39;email de l&#39;expéditeur,
    ```
 
    * S&#39;il ne renvoie aucun résultat, cela signifie que l&#39;adresse de l&#39;expéditeur n&#39;a pas été configurée.
+Puisque vous n&#39;avez pas accès à l&#39;administrateur, vous devrez insérer la configuration dans la base de données. Connectez l’adresse électronique appropriée et exécutez l’instruction MySQL :
+
+   ```
+   insert into core_config_data (scope,scope_id,path,value) values ('default',0,'trans_email/ident_general/email', your-email@here.com)
+   ```
+
    * S’il renvoie un résultat, passez à l’ **étape 2**.
 
 1. Si l&#39;email apparaît dans votre dossier Spam, cliquez sur le lien contenu dans l&#39;email. Si le lien a expiré depuis, essayez de vous reconnecter pour répéter le processus.
