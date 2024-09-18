@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 97e61803978e9e18e9784020d53eb4b448cab830
+source-git-commit: 7ece2f2dd578fc455bc2d584ffa401f25f561630
 workflow-type: tm+mt
-source-wordcount: '11432'
+source-wordcount: '11443'
 ht-degree: 0%
 
 ---
@@ -825,6 +825,7 @@ ht-degree: 0%
          * [ACSD-58141 : PHPSESSID se régénère sur les demandes de POST pour les clients connectés si le cache des segments L2 est activé.](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers-with-l2-redis-cache-enabled.md)
          * [ACSD-59229 : inaffectation des données du groupe client en raison d’une valeur X-Magento-Vary obsolète](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
          * [ACSD-60441 : la mise à jour des clients via le point d’entrée V1/customers [!DNL REST] API renvoie une erreur](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
+         * [ACSD-59514 : Forms dans l’administration avec  [!DNL Page Builder] générer une erreur dans la console du navigateur](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
          * [ACSD-58790 : corrige la fonction de pincement pour zoomer sur les images de la page des détails du produit dans la vue mobile sur [!DNL Chrome]](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58790-fixes-pinch-to-zoom-functionality-on-the-product-detail-page-images-in-mobile-view-on-chrome.md)
          * [ACSD-58442 : corrige le problème des périphériques avec une largeur de 768 px traités comme mobiles, en raison duquel le menu et l’en-tête se chargeaient dans la vue mobile et non sur le bureau](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58442-fixes-issue-devices-768px-mobile-view-instead-desktop.md)
          * [ACSD-48210 : l’attribut de portée spécifique de la vue de magasin remplace les valeurs globales.](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-48210-store-view-specific-scope-attribute-overrides-global-values.md)
