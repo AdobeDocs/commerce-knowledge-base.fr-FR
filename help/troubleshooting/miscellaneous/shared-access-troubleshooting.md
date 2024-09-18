@@ -4,9 +4,9 @@ description: '**Problème :** vous souhaitez fournir un accès partagé à votre
 exl-id: 9e03c031-2359-42a6-9de4-943451a16456
 feature: Cache
 role: Developer
-source-git-commit: e77322c04c7245538c10dfb397094eee6cfe6be9
+source-git-commit: ff863a9c8ebf3759c7ecf0549f79cc3a5efe4b46
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 1. Cliquez sur le compte **[!UICONTROL Shared Access]** avec lequel vous rencontrez des problèmes et examinez les ressources auxquelles vous avez accès.
 1. Si la ressource spécifique est manquante, contactez le Propriétaire du compte (titulaire du compte de Principal).
 
-Si vous continuez à rencontrer des problèmes, contactez votre équipe de compte d’Adobe ou envoyez un courrier électronique à l’adresse grp-Magento-HelpCenterLoginIssues@adobe.com. Indiquez votre nom et l&#39;email associé à votre compte.
+Si vous continuez à rencontrer des problèmes, contactez votre équipe de compte d’Adobe. Indiquez votre nom et l&#39;email associé à votre compte.
 
 ## J&#39;ai utilisé l&#39;accès partagé et cliqué sur [!UICONTROL Support], mais lorsque j&#39;ai ouvert un nouveau ticket, la liste déroulante [!UICONTROL Organization] ne s&#39;affiche pas.
 
@@ -51,7 +51,7 @@ Si vous continuez à rencontrer des problèmes, contactez votre équipe de compt
 1. Revenez à **[!UICONTROL My Account]**.
 1. S’il ne répertorie qu’un **[!UICONTROL Shared Name]**, il s’agira de l’ *organisation par défaut* sous laquelle vos tickets seront ouverts.
 
-Si vous continuez à rencontrer des problèmes, contactez votre équipe de compte d’Adobe ou envoyez un courrier électronique à l’adresse grp-Magento-HelpCenterLoginIssues@adobe.com. Indiquez votre nom et l’adresse électronique associée à votre compte.
+Si vous continuez à rencontrer des problèmes, contactez votre équipe de compte d’Adobe. Indiquez votre nom et l’adresse électronique associée à votre compte.
 
 ## J’ai utilisé l’accès partagé mais je vois toujours mes tickets au lieu de ceux partagés.
 

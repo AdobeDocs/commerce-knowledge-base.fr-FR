@@ -3,9 +3,9 @@ title: Guide de l’utilisateur de l’assistance Experience League pour Adobe C
 description: Découvrez comment envoyer un ticket d’assistance à l’assistance Experience League, fournir un accès partagé aux comptes et parcourir la base de connaissances Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 7c6cc2fc3cd76fc4c156d7cdb15bfbc3a24f39cb
+source-git-commit: ab51577ea212470e9fa5a93dce3748de9c5c00a6
 workflow-type: tm+mt
-source-wordcount: '2500'
+source-wordcount: '2560'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ Dans ce guide, découvrez comment envoyer un ticket d’assistance à l’[assis
 >[!NOTE]
 >
 >La prise en charge d’Adobe Commerce a été migrée du Centre d’aide Adobe Commerce vers Experience League. Utilisez le flux de formulaire de cas Experience League décrit [ici](#what-is-experience-support) pour soumettre des cas d’assistance.
+
+>[!NOTE]
+>
+>Pour consulter les dossiers précédemment soumis sur le centre d’aide d’Adobe Commerce, vous devrez vous rendre à l’adresse https://support.magento.com/hc/en-us/requests , car ces dossiers n’ont pas été migrés vers le nouveau système de tickets d’assistance. Le centre d’aide est maintenant en lecture seule ; pour continuer à recevoir l’assistance pour le problème d’origine, vous devrez envoyer un ticket de relance à l’[assistance Experience League](https://experienceleague.adobe.com/home#support).
 
 >[!NOTE]
 >
