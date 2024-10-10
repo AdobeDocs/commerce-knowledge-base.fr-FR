@@ -4,16 +4,16 @@ description: 'Cet article fournit une solution au problème en cas d’échec du
 feature: Deploy
 role: Admin
 exl-id: a18f4213-7381-4001-a5a0-3f8db4525469
-source-git-commit: 9f9dc8374bb681398ed1c295ac15679553cfc74e
+source-git-commit: 2a1c97c65282d03010bffabbcd2d1be7fb9ff9a6
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
 # Échec du déploiement avec les clés d’accès correctes dans env:COMPOSER_AUTH ou auth.json
 
-Cet article fournit une solution au problème lorsque votre déploiement échoue avec une erreur telle que celle ci-dessous, dans le [log de déploiement](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) :
+Cet article fournit une solution au problème lorsque votre déploiement échoue avec une erreur telle que celle ci-dessous, dans le [log de déploiement](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) :
 
 ```
 W:   [Composer\Downloader\TransportException]
@@ -40,7 +40,7 @@ Déploiement réussi.
 >
 >Il s’agit d’un exemple d’erreur. Une erreur peut s’afficher, indiquant un fichier différent (selon la version d’Adobe Commerce que vous déployez).
 
-Vous ne déployez pas correctement. Une erreur de type *Le fichier &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; n’a pas pu être téléchargé (HTTP/1.1 404 Not Found)* s’affiche dans le [log de déploiement](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+Vous ne déployez pas correctement. Une erreur de type *Le fichier &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; n’a pas pu être téléchargé (HTTP/1.1 404 Not Found)* s’affiche dans le [log de déploiement](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 ### Cause
 
