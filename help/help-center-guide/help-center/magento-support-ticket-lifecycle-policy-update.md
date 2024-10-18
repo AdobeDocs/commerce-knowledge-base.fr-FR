@@ -2,76 +2,52 @@
 title: Mise à jour de la stratégie de cycle de vie des tickets du support Adobe Commerce
 description: Cet article fournit des informations sur la mise à jour de la stratégie de cycle de vie des tickets d’assistance Adobe Commerce.
 exl-id: c3fbcb4a-107f-48b3-afed-b9a0c5d0425c
-source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
+source-git-commit: 5d291a221509c35c8bc34fd0957534c24342c59c
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 1%
+source-wordcount: '449'
+ht-degree: 0%
 
 ---
 
 # Mise à jour de la stratégie de cycle de vie des tickets du support Adobe Commerce
 
-Cet article fournit des informations sur la mise à jour de la stratégie de cycle de vie des tickets d’assistance Adobe Commerce.
+Cette documentation présente les améliorations apportées au cycle de vie du cas de support DX Adobe avec l’intention d’améliorer la communication et de fournir des résolutions aux clients aussi rapidement que possible afin d’assurer le succès de leurs clients. Vous pouvez également le trouver dans [Aperçu des plans de réussite d’Adobe : cycle de vie du cas d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon).
+Vous trouverez ci-dessous les chronologies et notifications relatives aux différents scénarios rencontrés lors du processus d’assistance :
 
-Le tableau suivant illustre les scénarios mis à jour. Vous trouverez des détails sur chaque scénario dans la section ci-dessous.
+## Rappels de suivi de cas
 
-<table>
- <tbody>
- <tr>
- <td class="wysiwyg-text-align-center"> </td>
- <td class="wysiwyg-text-align-center"><strong>État du ticket</strong></td>
- <td class="wysiwyg-text-align-center"><strong>Jours pour "résoudre"</strong></td>
- <td class="wysiwyg-text-align-center"><strong>Jours jusqu’à "Fermé"</strong></td>
- <td class="wysiwyg-text-align-center"><strong>Délai de notification</strong></td>
- </tr>
- <tr>
- <td class="wysiwyg-text-align-left"><strong>L’ingénieur fournit une solution</strong></td>
- <td class="wysiwyg-text-align-center">"En attente de votre réponse"</td>
- <td class="wysiwyg-text-align-center">3</td>
- <td class="wysiwyg-text-align-center">6</td>
- <td class="wysiwyg-text-align-center">Jours 3 et 6</td>
- </tr>
- <tr>
- <td class="wysiwyg-text-align-left"><strong>Informations en attente du client</strong></td>
- <td class="wysiwyg-text-align-center">"En attente de votre réponse"</td>
- <td class="wysiwyg-text-align-center">N/A</td>
- <td class="wysiwyg-text-align-center">6</td>
- <td class="wysiwyg-text-align-center">Jours 1, 3 et 6</td>
- </tr>
- <tr>
- <td class="wysiwyg-text-align-left"><strong>Le client définit sur "résolu" ou demande à l’ingénieur de définir sur "résolu".</strong></td>
- <td class="wysiwyg-text-align-center">"Résolu"</td>
- <td class="wysiwyg-text-align-center">Immédiat</td>
- <td class="wysiwyg-text-align-center">1</td>
- <td class="wysiwyg-text-align-center">Jour 1</td>
- </tr>
- </tbody>
- </table>
+| Notification | Statut du cas | Minutage de notification | État du délai de clôture des jours |
+|--- |--- |--- |--- |
+| **1st** | Réponse En Attente Ou Résolution Fournie | 24 heures / 1 jour | 5 jours |
+| **2nd** | Réponse En Attente Ou Résolution Fournie | 72 heures / 3 jours | 3 jours |
+| **3rd** | Réponse En Attente Ou Résolution Fournie | 120 heures / 5 jours | 1 jour |
+| **4th** | Réponse en attente ou résolution fournie remplacée par &quot;Fermeture automatique&quot; | 144 heures / 6 jours | fermée |
 
 ## Scénarios détaillés
 
-### Lorsqu’un ingénieur fournit une solution
-
-1. Une fois qu’une solution est fournie au client, l’ingénieur définit le statut du ticket sur &quot;En attente de votre réponse&quot;.
-1. Si le client ne répond pas pendant 3 jours après la modification de l’état à &quot;En attente de réponse&quot;, le ticket est déplacé vers &quot;Résolu&quot; et le client est informé.
-1. Si le client ne répond pas pendant 6 jours après la modification de l’état à &quot;En attente de réponse&quot;, le ticket est fermé et le client est informé.
-
 ### Lorsque des informations supplémentaires sont requises d’un client
 
-1. Si une mise à jour du client est requise, l’ingénieur définit le ticket sur &quot;En attente de votre réponse&quot;.
-1. Les notifications sont envoyées au client les 1er et 3 jours pour demander le suivi du client.
-1. Si le client ne répond pas pendant 6 jours après la modification de l’état à &quot;En attente de réponse&quot;, le ticket est fermé et le client est informé.
+Dans ce scénario, lorsque des informations supplémentaires sont nécessaires pour un client, les étapes sont les suivantes :
 
-### Billet défini sur &quot;Résolu&quot; par un client
+* L&#39;ingénieur envoie une mise à jour demandant des informations et l&#39;état du dossier est défini sur &quot;En attente de réponse&quot;.
+* Les 1er, 3e et 5e jours suivant l’état défini sur &quot;En attente de réponse&quot;, des notifications de suivi sont envoyées au client pour lui demander des informations supplémentaires.
+* Si le client n’a pas répondu pendant 6 jours après que l’état a été défini sur &quot;En attente de réponse&quot;, le dossier est fermé et une notification de fermeture est envoyée.
 
-Lorsqu’un ticket est défini sur &quot;Résolu&quot; par un client, il est fermé dans la journée et le client est informé.
+Les clients peuvent rouvrir un dossier clos dans les 14 jours pour continuer la communication. Au-delà de 14 jours, un nouveau cas d’assistance peut être ouvert pour continuer la communication concernant un cas précédemment clos.
 
-### Le client demande à l’assistance de fermer le ticket.
+### Lorsqu’un ingénieur fournit une solution
 
-Lorsqu’un client demande à l’assistance Adobe Commerce de fermer le ticket, il est fermé dans la journée et le client en est informé.
+Dans ce scénario, lorsqu’un ingénieur propose une solution, les étapes sont les suivantes :
+
+* L’ingénieur envoie une mise à jour avec une solution proposée et l’état du cas est défini sur &quot;Résolution fournie&quot;.
+* Les 1er, 3e et 5e jours suivant le statut défini sur &quot;Résolution fournie&quot;, des notifications de suivi sont envoyées au client demandant la confirmation de la solution fournie.
+* Si le client n’a pas répondu pendant 6 jours après que l’état a été défini sur &quot;Résolution fournie&quot;, le cas est réglé sur fermé et une notification de fermeture est envoyée.
+
+Les clients peuvent rouvrir un dossier clos dans les 14 jours pour continuer la communication. Au-delà de 14 jours, un nouveau cas d’assistance peut être ouvert pour continuer la communication concernant un cas précédemment clos.
 
 ## Lecture connexe
 
-* [Envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)
-* [Le lien &quot;Envoyer un ticket&quot; ne s’affiche pas sur la page de démarrage du centre d’aide Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#no-submit-link)
-* [Formulaire d’envoi de ticket : le marchand ne s’affiche pas dans la liste déroulante Organisation .](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed)
+* [Envoyer un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)
+* [ Le lien &quot;Envoyer un ticket&quot; ne s’affiche pas sur la page de début du centre d’aide Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
+* [Formulaire d’envoi de ticket : le marchand ne s’affiche pas dans la liste déroulante Organisation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)
+* [Aperçu des plans de succès d’Adobe : cycle de vie des cas d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)
