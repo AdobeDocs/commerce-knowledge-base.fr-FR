@@ -4,7 +4,7 @@ description: Les problèmes de création de rapports avancés sur Adobe Commerce
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: dfe9b9cf4751e28bd151fce36df168e48fb914ed
+source-git-commit: ae6dde9ecc01a0e1c561d1e91dbd2f7bc3504fe0
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%
@@ -94,7 +94,7 @@ b. NO - Si la requête ne renvoie rien, procédez comme suit : 1. [Désactivez e
 
 Vérifiez que la tâche `analytics_collect_data` a été exécutée en exécutant cette requête : `SELECT * FROM cron_schedule WHERE job_code LIKE 'analytics_collect_data' \G`
 
-a. OUI - S’il existe des enregistrements et que la colonne **status** indique _manqué_, utilisez le correctif dans cet article de la base de connaissances [Mettre à jour les rapports avancés pour fonctionner sur son propre groupe cron](/help/troubleshooting/known-issues-patches-attached/update-advanced-reporting-to-run-on-its-own-cron-group.md).\
+a. OUI - S’il existe des enregistrements et que la colonne **status** indique _manqué_, utilisez le correctif dans cet article de la base de connaissances Mise à jour des rapports avancés pour exécuter sur son propre groupe cron.\
 b. OUI - S’il existe des enregistrements et que la colonne **status** indique _success_, passez à l’ [étape 9](#step-9).\
 c. OUI - S’il existe des enregistrements et que la colonne **status** indique _error_, passez à l’ [étape 8.](#step-8)\
 d. NO - S’il n’existe aucun enregistrement, passez à l’ [étape 8](#step-8).
@@ -151,7 +151,7 @@ b. NO - Passez à l&#39;[étape 11](#step-11).
 
 Exemple : `report.ERROR: Cron Job analytics_collect_data has an error: substr_count() expects parameter 1 to be string, null given. Statistics: {"sum":0,"count":1,"realmem":0,"emalloc":0,"realmem_start":224919552,"emalloc_start":216398384} [] []`
 
-a. OUI - Utilisez le correctif MDVA-19391 dans [Common Advanced Reporting Con job errors sur Adobe Commerce](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-cron-job-errors-magento-commerce.md), attendez 24 heures pour que la tâche s’exécute à nouveau et réessayez.\
+a. OUI - Utilisez le correctif MDVA-19391 dans les erreurs de tâche cron de création de rapports avancés communes sur Adobe Commerce. Patientez 24 heures pour que la tâche s’exécute à nouveau et réessayez.\
 b. NO - [soumettez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++
