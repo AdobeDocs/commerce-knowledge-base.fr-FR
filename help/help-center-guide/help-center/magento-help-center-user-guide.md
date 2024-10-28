@@ -3,9 +3,9 @@ title: Guide de l’utilisateur de l’assistance Experience League pour Adobe C
 description: Découvrez comment envoyer un ticket d’assistance à l’assistance Experience League, fournir un accès partagé aux comptes et parcourir la base de connaissances Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: d8f832869916c04cacc0cefeeb9b45bd3c1f3b80
+source-git-commit: 8ee52f47d9e230ecd633ead3429d864f9df7c33e
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2583'
 ht-degree: 0%
 
 ---
@@ -84,9 +84,6 @@ Pour vous connecter à l’assistance Adobe Experience League, procédez comme s
 
 Une fois connecté en tant que propriétaire du compte ou utilisateur d’accès partagé, vous pouvez soumettre un cas d’assistance à l’aide de la page d’accueil de Adobe Experience League, de votre page de compte Adobe Commerce et de votre page de compte Adobe Commerce Cloud.
 
-* Si vous êtes le propriétaire du compte ou un utilisateur d’accès partagé récurrent, procédez comme suit.
-* Si vous êtes un utilisateur d’accès partagé et que le propriétaire du compte vient de [vous fournir un accès partagé](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#provide-shared-access), vous devez d’abord changer de compte avant de passer aux étapes ci-dessous. Pour plus d’informations, voir [Accès au compte partagé (changer de compte)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#switch-accounts) .
-
 #### Page de début Adobe Experience League {#experience-league-start-page}
 
 Pour soumettre un nouveau cas d’assistance à l’aide de la page de démarrage de Adobe Experience League, procédez comme suit :
@@ -106,7 +103,7 @@ Pour soumettre un nouveau cas d’assistance à l’aide de la page de démarrag
 
    ![open-support-page](assets/click_support.png)
 
-1. Pour lancer le processus d’appel à l’assistance, assurez-vous d’avoir sélectionné l’organisation appropriée dans la liste déroulante Organisation (si elle est visible).
+1. Pour lancer le processus d’appel à l’assistance, assurez-vous d’avoir sélectionné l’organisation appropriée dans la liste déroulante Organisation (si elle est visible). Pour soumettre un dossier pour Adobe Commerce, sélectionnez le nom de l’organisation qui se termine par *[!DNL Commerce]*.
 
    ![select_relevant_org](assets/select_appropriate_org.png)
 
