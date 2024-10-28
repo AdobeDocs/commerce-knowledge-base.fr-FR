@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: fdca2b0345bbd259007f5eeef10dd63455395d4f
+source-git-commit: 7a4d6ab8a96cd739bc692ae6b91fc2613d3b115f
 workflow-type: tm+mt
-source-wordcount: '9662'
+source-wordcount: '9623'
 ht-degree: 0%
 
 ---
@@ -968,18 +968,13 @@ ht-degree: 0%
       * [Correctif Adobe Commerce 2.4.0 : renvoie un problème de création d’étiquettes d’expédition](/help/troubleshooting/known-issues-patches-attached/magento-2-4-0-patch-returns-shipping-label-creation-issue.md)
       * [&quot;Erreur 500&quot; après avoir double-cliqué sur Supprimer le lien dans le panier](/help/troubleshooting/known-issues-patches-attached/500-error-after-double-clicking-remove-link-in-shopping-cart.md)
       * [Packages rétrogradation après mise à niveau de 2.4.4 à 2.4.4-p1](/help/troubleshooting/known-issues-patches-attached/packages-downgraded-after-upgrading-from-2-4-4-to-2-4-4-p1.md)
-      * [La pagination du catalogue ne fonctionne pas avec Elasticsearch 6.x](/help/troubleshooting/known-issues-patches-attached/catalog-pagination-doesn-t-work-when-elasticsearch-6-x-is-used.md)
       * [Adobe Commerce 2.3.6, 2.4.1 CAPTCHA dans le passage en caisse ne fonctionne pas](/help/troubleshooting/known-issues-patches-attached/magento-commerce-2-3-6-2-4-1-captcha-in-checkout-not-working.md)
       * [Commande d’email envoyée à partir de l’adresse email du serveur](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
       * [Erreur de création de rapports avancée 404 sur la solution de base de données partagée](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-404-error-on-split-database-solution.md)
       * [Problèmes de performances provoqués par les requêtes Ajax excessives](/help/troubleshooting/known-issues-patches-attached/performance-issues-caused-by-excessive-ajax-requests.md)
       * [La suppression de la mise à jour d’évaluation supprime l’entité associée.](/help/troubleshooting/known-issues-patches-attached/removing-staging-update-deletes-related-entity.md)
       * [Les Google Analytics ne suivent pas les données de conversion](/help/troubleshooting/known-issues-patches-attached/google-analytics-is-not-tracking-conversion-data.md)
-      * [Mauvaise date pour le prix spécial](/help/troubleshooting/known-issues-patches-attached/wrong-date-for-special-price.md)
       * [Adobe Commerce 2.4.1 et 2.3.6 créent un bouton de compte désactivé.](/help/troubleshooting/known-issues-patches-attached/2-4-1-and-2-3-6-create-an-account-button-disabled-hotfix.md)
-      * [Erreur &quot;Zone déjà définie&quot; lors de l’enregistrement de la configuration du thème dans Admin](/help/troubleshooting/known-issues-patches-attached/area-already-set-error-when-saving-theme-configuration-in-admin.md)
-      * [Adobe Commerce invite les clients à se connecter à un lien non valide](/help/troubleshooting/known-issues-patches-attached/magento-prompts-customers-log-in-invalid-link.md)
-      * [B2B : les entreprises ne peuvent pas accéder aux pages de profil au premier plan du magasin](/help/troubleshooting/known-issues-patches-attached/b2b-companies-cannot-access-profile-pages-on-store-front.md)
       * [Erreur Adobe Commerce 2.4.6 lors du placement de l’ordre à partir du panneau d’administration](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
       * [Problèmes d’étiquette [!UICONTROL salesRule] lors de la mise à niveau à partir des versions &lt; 2.4.5](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)
       * [Vulnérabilité de sécurité [!DNL JQuery UI] [!DNL CVE-2022-31160] correctif pour les versions 2.4.4, 2.4.5 et 2.4.6](/help/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6.md)

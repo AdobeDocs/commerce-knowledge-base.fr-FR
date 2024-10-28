@@ -4,9 +4,9 @@ description: Cet article fournit une solution au problème connu lié au crédit
 exl-id: a0cca226-4d95-40b3-bd37-f13d28591366
 feature: Checkout, Orders, Storefront
 role: Admin
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: d51fd4d7b064b8eea6cd3771af279b74a8bdec48
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,6 @@ Articles relatifs aux problèmes connus d’Adobe Commerce 2.3.5 dans notre base
 
 * [Problème lié au mode de paiement par pays dans Adobe Commerce sur l’infrastructure cloud et Adobe Commerce sur site 2.3.5 et 2.3.5-p1](/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md)
 
-* [Adobe Commerce invite les clients à se connecter, mais fournit un lien non valide](/help/troubleshooting/known-issues-patches-attached/magento-prompts-customers-log-in-invalid-link.md)
 
 * [Problème connu du comptage de produit d’action en bloc dans Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
 
