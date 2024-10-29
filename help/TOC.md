@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 7a4d6ab8a96cd739bc692ae6b91fc2613d3b115f
+source-git-commit: 61b3cc2fc40b320c3c657a7dd0c6ea2b9db71c75
 workflow-type: tm+mt
-source-wordcount: '9623'
+source-wordcount: '9626'
 ht-degree: 0%
 
 ---
@@ -348,7 +348,7 @@ ht-degree: 0%
          * [ACSD-50234 : nom de client incorrect dans l&#39;email de confirmation pour les commandes passées à l&#39;aide de [!DNL PayPal]](/help/support-tools/patches-available-in-qpt-tool/v1-1-29/acsd-50234-incorrect-customer-name-in-confirmation-email-for-orders-placed-with-paypal.md)
          * [ACSD-48813 : la recherche n’affiche pas les résultats pertinents en fonction du poids de la recherche des attributs.](/help/support-tools/patches-available-in-qpt-tool/v1-1-29/acsd-48813-search-not-showing-relevant-results-based-on-search-weight-of-attributes.md)
          * [ACSD-49464 : Factures, envois et notes de crédit ne sont pas revenus de l’archive](/help/support-tools/patches-available-in-qpt-tool/v1-1-29/acsd-49464-invoices-shipments-credit-memos-not-moved-back-from-archive.md)
-         * [ACSD-48771 : l’éditeur WYSIWYG effectue un rendu du contenu différent](/help/support-tools/patches-available-in-qpt-tool/v1-1-29/acsd-48771-wyswigy-editor-rendering-content-differently.md)
+         * [ACSD-48771 : l’éditeur WYSIWYG effectue un rendu différent du contenu](/help/support-tools/patches-available-in-qpt-tool/v1-1-29/acsd-48771-wyswigy-editor-rendering-content-differently.md)
          * [ACSD-49527 : les rôles de société GraphQL n’affichent pas correctement la pagination](/help/support-tools/patches-available-in-qpt-tool/v1-1-29/acsd-49527-graphql-company-roles-dont-display-pagination-correctly.md)
       * v1.1.30 {#v1-1-30}
          * [Présentation : [!DNL Quality Patches Tool]  (QPT) v1.1.30](/help/support-tools/patches-available-in-qpt-tool/v1-1-30/overview.md)
@@ -938,7 +938,7 @@ ht-degree: 0%
       * [Erreur de déploiement : &quot;erreur 7 lors du téléchargement ... port 443 : connexion refusée&quot;](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
       * [Erreurs de déploiement lors de la validation de fichiers incorrects](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
       * [Erreurs de déploiement où des correctifs sont introuvables](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
-      * [Échec du déploiement : aucune commande n’est définie dans l’erreur d’espace de noms &quot;cache&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
+      * [Échec du déploiement lors de la purge du cache : aucune commande n’est définie dans l’erreur d’espace de noms &quot;cache&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [Échec du déploiement avec les clés d’accès correctes dans env:COMPOSER_AUTH ou auth.json](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Problèmes connus {#known-issues-patches-attached}
       * [Mise à jour de sécurité disponible pour Adobe Commerce - [!DNL APSB24-73]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73.md)
