@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: a0b8fdf0e04cad2260a04af7c1049c6831d2921b
+source-git-commit: 2212ec66c04445db791c5bd852d7498161de410d
 workflow-type: tm+mt
-source-wordcount: '9617'
+source-wordcount: '9625'
 ht-degree: 0%
 
 ---
@@ -940,6 +940,7 @@ ht-degree: 0%
       * [Échec du déploiement lors de la purge du cache : erreur &quot;Aucune commande n’est définie dans l’espace de noms &#39;cache&#39;&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [Échec du déploiement avec les clés d’accès correctes dans env:COMPOSER_AUTH ou auth.json](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Problèmes connus {#known-issues-patches-attached}
+      * [Modifications incompatibles à l’envers pour [!DNL GraphQL "placeOrder" API] dans Adobe Commerce 2.4.6-p8](/help/troubleshooting/known-issues-patches-attached/backwards-incompatible-changes-for-graphql-placeorder-api-in-adobe-commerce-2-4-6-p8.md)
       * [Mise à jour de sécurité disponible pour Adobe Commerce - [!DNL APSB24-73]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73.md)
       * [Conseils pour sécuriser votre boutique et faire pivoter les clés de chiffrement : [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
       * [Mise à jour de sécurité disponible pour Adobe Commerce - [!DNL APSB24-61]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61.md)
@@ -1026,7 +1027,7 @@ ht-degree: 0%
    * [Comment trouver la documentation du produit Adobe Commerce](/help/how-to/general/how-to-find-magento-product-documentation.md)
    * [Redirection HTTP vers HTTPS pour toutes les pages d’Adobe Commerce sur l’infrastructure cloud (Forcer TLS)](/help/how-to/general/redirect-http-to-https-for-all-pages-on-cloud-force-tls.md)
    * [Allouer plus d’espace pour MySQL dans Adobe Commerce sur le cloud](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
-   * [Modifier l’identifiant d’incrément d’une entité DB (commande, facture, note de crédit, etc.) sur un magasin particulier](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
+   * [Modifiez l’identifiant d’incrément d’une entité DB (commande, facture, note de crédit, etc.) sur un magasin particulier.](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
    * [Configuration rapide pour le plan de démarrage sur Cloud](/help/how-to/general/set-up-fastly-for-starter-plan-on-cloud.md)
    * [Vidéo de formation à Adobe Commerce Intelligence : Report Builder de cohortes](/help/how-to/general/mbi-training-video-cohort-report-builder.md)
    * [Mise à niveau de MariaDB 10.0 vers 10.2 pour Adobe Commerce sur le cloud](/help/how-to/general/upgrade-mariadb-10-0-to-10-2-for-magento-commerce-cloud.md)
