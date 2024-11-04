@@ -3,7 +3,7 @@ title: Guide de l’utilisateur de l’assistance Experience League pour Adobe C
 description: Découvrez comment envoyer un ticket d’assistance à l’assistance Experience League, fournir un accès partagé aux comptes et parcourir la base de connaissances Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 529bfc97ab05b839fca6d76f2d2f2f3dc040c9b9
+source-git-commit: 8438978de04746c8a66816fe4f03d5f0d2d11521
 workflow-type: tm+mt
 source-wordcount: '2649'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Pour soumettre un nouveau cas d’assistance à l’aide de la page de démarrag
 
 >[!INFO]
 >
->1. Pour soumettre un dossier, vous devez avoir le droit de prendre en charge le produit approprié (par exemple, Adobe Commerce, Adobe Commerce Reporting, Adobe Commerce payment Services, Experience Platform, etc.). Si vous n’êtes pas autorisé à bénéficier d’une assistance, une barre apparaît en haut de la page vous informant que vous n’êtes pas un utilisateur autorisé par l’assistance au sein de l’organisation. Pour soumettre un dossier pour les problèmes liés à Commerce, vous devez d’abord sélectionner le nom d’organisation approprié qui se termine par *[!DNL Commerce]*.
+>1. Pour soumettre un dossier, vous devez avoir le droit de prendre en charge le produit approprié (par exemple, Adobe Commerce, Adobe Commerce Reporting, Adobe Commerce payment Services, Experience Platform, etc.). Si vous n’êtes pas autorisé à bénéficier d’une assistance, une barre apparaît en haut de la page vous informant que vous n’êtes pas un utilisateur autorisé par l’assistance au sein de l’organisation. Pour soumettre un dossier pour les problèmes liés à Commerce, vous devez d’abord sélectionner le nom d’organisation approprié qui se termine par *[!DNL (Commerce)]*.
 >1. Si vous appartenez à plusieurs organisations ou si plusieurs organisations portent des noms similaires (chacune d’elles représente l’un des autres produits Adobe auxquels l’organisation s’abonne), vous devez d’abord sélectionner l’organisation appropriée dans la liste déroulante.
 >1. Si vous ne voyez pas Adobe Commerce dans la liste déroulante [!UICONTROL Select a product], vous devez d’abord obtenir l’[accès partagé](#shared-access) auprès du propriétaire du compte Commerce. Une fois que vous avez reçu l’accès partagé, vous devrez [synchroniser votre compte](#switch-accounts) pour finaliser le processus avant de pouvoir envoyer un dossier.
 
