@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 2212ec66c04445db791c5bd852d7498161de410d
+source-git-commit: 5110233220a6db734be2802b792869759f46b8c0
 workflow-type: tm+mt
-source-wordcount: '9625'
+source-wordcount: '9627'
 ht-degree: 0%
 
 ---
@@ -841,7 +841,7 @@ ht-degree: 0%
       * [robots.txt renvoie une erreur 404 Adobe Commerce sur l’infrastructure cloud 2.3.x](/help/troubleshooting/miscellaneous/robots-txt-gives-404-error-magento-commerce-cloud-2-3-x.md)
       * [Restriction de l’accès administrateur provoquant des problèmes de performances](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)
       * [Les tâches de blocage verrouillent les tâches d’autres groupes.](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
-      * [Champs verrouillés dans l’administrateur Commerce](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md)
+      * [Champs verrouillés (grisés) dans l’administrateur Commerce](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md)
       * [Impossible de modifier le moteur de recherche à l’aide de l’administrateur Commerce (le menu Moteur de recherche est inaccessible)](/help/troubleshooting/miscellaneous/cannot-change-search-engine-using-magento-admin-search-engine-menu-is-inaccessible.md)
       * [Erreur d’imbrication de la fonction maximale d’installation xdebug](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
       * [Impossible d’enregistrer le serveur principal Adobe Commerce de l’entité](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)

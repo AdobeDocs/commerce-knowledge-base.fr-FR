@@ -2,9 +2,9 @@
 title: Impossible de modifier le moteur de recherche dans "app/etc/env.php"
 description: Cet article fournit une solution au problème qui se produit lorsque vous essayez de modifier le moteur de recherche dans l’administrateur Commerce, mais que les champs sont verrouillés.
 exl-id: 61006ce7-34f9-4e4d-a197-f3d627dd277f
-source-git-commit: c903360ffb22f9cd4648f6fdb4a812cb61cd90c5
+source-git-commit: bc800397a3c0c3a86eb717db60e445e13b299688
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -42,4 +42,4 @@ La configuration du moteur de recherche est verrouillée dans le fichier `app/et
 
 ## Lecture connexe
 
-* [Champs verrouillés dans l’administrateur Commerce](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md) dans le guide d’infrastructure de Commerce on Cloud.
+* [Champs verrouillés (grisés) dans Commerce Admin](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md) dans le guide d’infrastructure de Commerce on Cloud.
