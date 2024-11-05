@@ -4,9 +4,9 @@ description: Cet article fournit un correctif pour lorsqu’un administrateur Co
 exl-id: 0e91198e-66b9-456a-9b75-5986369ed8e6
 feature: Admin Workspace, Logs
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,6 @@ Après l&#39;installation de la mise à jour de sécurité, le mot de passe est 
 
 ## Plus d&#39;informations {#Adminpasswordsaresavedasplaintexttoactionslog('magento_logging_event_changes'table)-Moreinformation}
 
-[Page de mise à jour de sécurité Adobe Commerce 2.0.16 et 2.1.9](https://magento.com/security/patches/magento-2016-and-219-security-update) dans notre centre de sécurité.
-
-[Mettez à niveau l’application et les composants Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) dans notre documentation destinée aux développeurs.
+* [Page de mise à jour de sécurité Adobe Commerce 2.0.16 et 2.1.9](https://magento.com/security/patches/magento-2016-and-219-security-update) dans notre centre de sécurité
+* [Mettez à niveau l’application et les composants Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) dans notre documentation destinée aux développeurs
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

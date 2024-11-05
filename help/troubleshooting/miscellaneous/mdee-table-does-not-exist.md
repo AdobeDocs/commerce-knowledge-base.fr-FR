@@ -3,9 +3,10 @@ title: Correction des données non mises à jour dans les flux  [!DNL Commerce D
 description: Cet article fournit une solution pour résoudre les problèmes de synchronisation des données provoqués par l’utilisation d’un ID d’affichage incorrect dans l’abonnement  [!DNL Commerce Data Exporter mview] .
 feature: Data Import/Export, Saas, Logs
 role: Developer
-source-git-commit: 3581e39e7054cf765403fd963e22a051457c1097
+exl-id: 50f2223b-bfcf-4c3c-b0f1-dbcc4365edc2
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -48,4 +49,5 @@ L’exemple suivant montre le code qui spécifie les tables suivies par l’abon
 
 ## Lecture connexe
 
-[[!DNL SaaS] Notes de mise à jour de l’extension d’exportation de données](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes) dans le guide d’exportation de données Adobe Commerce pour les services [!DNL SaaS]
+* [[!DNL SaaS] Notes de mise à jour de l’extension d’exportation de données](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes) dans le guide d’exportation de données Adobe Commerce pour les services [!DNL SaaS]
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

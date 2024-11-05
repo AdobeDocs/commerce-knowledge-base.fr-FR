@@ -4,9 +4,9 @@ description: Cet article fournit une solution au problème où il existe plusieu
 feature: Catalog Management, Categories, Services, Storefront
 role: Developer
 exl-id: 09d5c321-9c45-4041-b6f6-831efca0977e
-source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Par exemple, après avoir reçu une liste d’enregistrements avec des identifia
 SELECT * FROM $entityTable WHERE $column = <$entityID> ORDER BY created_in;
 ```
 
-Où `$entityID = ID` de la page CMS/règle de prix de catégorie/produit/panier/règle de prix de catalogue/page CMS.
+Où `$entityID = ID` de la page CMS/règle de prix de catégorie/produit/panier/règle de prix de catalogue/règle de prix de catalogue
 
 | Entité | $entityTable | $column |
 |------------------|-----------------------------------|------------------|
@@ -67,5 +67,6 @@ Il s’agit du comportement attendu qui ne provoquera des problèmes que s’il 
 
 ## Lecture connexe
 
-* [Les modifications apportées aux catégories ne sont pas enregistrées](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) dans notre base de connaissances de support.
-* [Dupliquez les entrées dans la table de catalogrule après avoir modifié la date de fin d’une mise à jour de planning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) dans notre base de connaissances de support.
+* [Les modifications apportées aux catégories ne sont pas enregistrées](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) dans notre base de connaissances de l’assistance
+* [Dupliquer les entrées dans la table du catalogue après avoir modifié la date de fin d&#39;une mise à jour de planning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) dans notre base de connaissances de support
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

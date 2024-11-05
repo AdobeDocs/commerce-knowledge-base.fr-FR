@@ -1,19 +1,19 @@
 ---
 title: Utilisation des exportations de données pour identifier les disparités
-description: Cet article fournit des solutions pour résoudre les problèmes liés aux incohérences entre les données de la BI du Magento. Les exportations de données constituent un outil utile pour comparer vos données de BI Magento à vos données source afin de mettre en évidence les incohérences de données dans vos rapports, en particulier si la [liste de contrôle de diagnostic de l’incohérence de données](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md) ne vous a pas aidé à identifier le problème. Cet article vous présente un exemple concret de la manière dont les écarts de données peuvent être identifiés à l’aide des exportations de données.
+description: Cet article fournit des solutions pour résoudre les problèmes liés aux incohérences entre les données de la BI du Magento. Les exportations de données constituent un outil utile pour comparer vos données de BI Magento à vos données source afin de mettre en évidence les incohérences de données dans vos rapports, en particulier si la [liste de contrôle de diagnostic de l’incohérence de données](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) ne vous a pas aidé à identifier le problème. Cet article vous présente un exemple concret de la manière dont les écarts de données peuvent être identifiés à l’aide des exportations de données.
 exl-id: b42d585c-ad8c-4685-9ad4-a13686566f18
 feature: Commerce Intelligence, Data Import/Export
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1300'
 ht-degree: 0%
 
 ---
 
 # Utilisation des exportations de données pour identifier les disparités
 
-Cet article fournit des solutions pour résoudre les problèmes liés aux incohérences entre les données de la BI du Magento. Les exportations de données sont un outil utile pour comparer vos données de Magento BI à vos données source afin de mettre en évidence les incohérences de données dans vos rapports, en particulier si la [liste de contrôle de diagnostic d’incohérence de données](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md) ne vous a pas aidé à identifier le problème. Cet article vous présente un exemple concret de la manière dont les écarts de données peuvent être identifiés à l’aide des exportations de données.
+Cet article fournit des solutions pour résoudre les problèmes liés aux incohérences entre les données de la BI du Magento. Les exportations de données sont un outil utile pour comparer vos données de Magento BI à vos données source afin de mettre en évidence les incohérences de données dans vos rapports, en particulier si la [liste de contrôle de diagnostic d’incohérence de données](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) ne vous a pas aidé à identifier le problème. Cet article vous présente un exemple concret de la manière dont les écarts de données peuvent être identifiés à l’aide des exportations de données.
 
 Prenez cette analyse, par exemple :
 
@@ -27,9 +27,9 @@ Pour commencer, cliquez sur l’engrenage dans le coin supérieur droit du graph
 
 ![](assets/Export_Discrepancies_5.gif)
 
-Dans le menu Exportation des données brutes, vous pouvez sélectionner le tableau à exporter avec les colonnes à inclure dans l’exportation. Les filtres peuvent également être appliqués au jeu de résultats.
+Dans le menu **Exportation de données brutes**, vous pouvez sélectionner la table à exporter avec les colonnes à inclure dans l’exportation. Les filtres peuvent également être appliqués au jeu de résultats.
 
-Dans notre exemple, la mesure **Recettes** utilisée sur ce rapport utilise le champ **order\_total** défini sur la table **commandes**, en utilisant la **date** comme horodatage. Dans notre exportation, nous voulons inclure toutes les valeurs **order\_id** pour novembre 2014 et leur **order\_total** . La mesure **Recettes** n’utilise aucun filtre, mais nous allons ajouter un filtre à l’exportation pour limiter le jeu de résultats à seulement novembre 2014.
+Dans notre exemple, la mesure **Recettes** utilisée sur ce rapport utilise le champ **order\_total** défini sur la table **`orders`**, en utilisant la **date** comme horodatage. Dans notre exportation, nous voulons inclure toutes les valeurs **order\_id** pour novembre 2014 et leur **order\_total** . La mesure **Recettes** n’utilise aucun filtre, mais nous allons ajouter un filtre à l’exportation pour limiter le jeu de résultats à seulement novembre 2014.
 
 Voici à quoi ressemble le menu Exportation de données brutes pour cet exemple :
 
@@ -51,7 +51,7 @@ Maintenant que toutes les données sont à un seul endroit, nous pouvons cherche
 
 Si les deux systèmes ont le même nombre de lignes et que la mesure **Recettes** ne correspond pas aux données source, la **commande\_total** doit être décalée d’un emplacement. Il est possible que le champ **order\_total** ait été mis à jour dans votre base de données source et que Magento BI ne sélectionne pas ces modifications.
 
-Pour confirmer cela, vérifiez si la colonne **order\_total** est réactivée ou non. Accédez au Gestionnaire de Data Warehouse et cliquez sur la table des commandes. Vous verrez la [fréquence de nouveau-contrôle](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html) répertoriée dans &quot;Modifications ?&quot; colonne . Le champ **order\_total** doit être défini pour une nouvelle vérification aussi souvent qu’il est prévu de changer. S’il ne l’est pas, continuez et définissez-le sur la fréquence de nouveau contrôle souhaitée.
+Pour confirmer cela, vérifiez si la colonne **order\_total** est réactivée ou non. Accédez au Gestionnaire de Data Warehouse et cliquez sur la table **`orders`**. Vous verrez la [fréquence de nouveau-contrôle](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html) répertoriée dans &quot;Modifications ?&quot; colonne . Le champ **order\_total** doit être défini pour une nouvelle vérification aussi souvent qu’il est prévu de changer. S’il ne l’est pas, continuez et définissez-le sur la fréquence de nouveau contrôle souhaitée.
 
 ### ![](assets/Export_Discrepancies_4.gif)
 
@@ -61,7 +61,7 @@ Si la fréquence de nouveau contrôle est déjà définie correctement, alors qu
 
 Si la base de données source contient plus de lignes que Magento BI et que l’écart est supérieur au nombre de commandes que vous pouvez vous attendre à recevoir pendant la durée d’un cycle de mise à jour, un problème de connexion peut se produire. Cela signifie que Magento BI ne peut pas extraire de nouvelles données de la base de données source, ce qui peut se produire pour plusieurs raisons.
 
-Accédez à la page Connexions et examinez l’état de la source de données contenant le tableau de commande :
+Accédez à la page Connexions et examinez l’état de la source de données contenant la table `order` :
 
 1. **Si l’état est Re-auth** , la connexion n’utilise pas les informations d’identification correctes. Cliquez sur la connexion, saisissez les informations d’identification correctes, puis réessayez.
 1. **Si l’état est En échec** , la connexion peut ne pas être configurée correctement du côté serveur. Les connexions en échec proviennent généralement d’un nom d’hôte incorrect ou du serveur cible qui n’accepte pas les connexions sur le port spécifié. Cliquez sur dans la connexion et vérifiez l’orthographe du nom d’hôte et que le port correct est saisi. Côté serveur, assurez-vous que le port peut accepter les connexions et que votre pare-feu dispose de l’adresse IP Magento BI (54.88.76.97/32) comme autorisé. **Si la connexion continue à échouer** , reportez-vous à la [section de contact du support](#support) à la fin de cet article pour les étapes suivantes.
@@ -87,7 +87,9 @@ Si vous ne parvenez pas à déterminer la source du problème, vous devrez effec
 * **Si votre base de données source contient PLUS de lignes que Magento BI** et que la connexion s’affiche comme réussie ou continue d’échouer, nous devrons connaître le nom de la connexion et le message d’erreur que vous voyez, le cas échéant.
 * **Si votre base de données source contient MOINS de lignes que Magento BI,** lignes ne sont pas supprimées de la table et les fréquences de vérification sont correctement définies, effectuez une VLOOKUP dans votre feuille de calcul **pour trouver les valeurs order\_id qui se trouvent dans Magento BI** mais pas dans votre base de données source. Incluez ces valeurs lorsque vous envoyez votre ticket.
 
-## Associé
+## Lecture connexe
 
-* [Liste de contrôle de diagnostic des incohérences de données](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
-* [Envoi d’un ticket d’incohérence de données](https://support.magento.com/hc/en-us/articles/360016506472-Submitting-a-data-discrepancy-ticket)
+* [ Liste de contrôle de diagnostic d’incohérence des données](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy)
+* [Stratégies de service Adobe Commerce Intelligence](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+

@@ -4,9 +4,9 @@ description: Cet article fournit des solutions au problème Adobe Commerce en ra
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: fe276c444c235b096ea6d61b02d8362314b5c154
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -60,13 +60,13 @@ Une fois que vous avez configuré et connecté, il peut s’écouler plus de 30 
 
 Si les données de votre produit ne sont pas synchronisées correctement pour un SKU spécifique, procédez comme suit :
 
-1. Utilisez la requête SQL suivante et vérifiez que vous disposez des données attendues dans la colonne `feed_data`. Notez également l’horodatage `modified_at`.
+1. Utilisez la requête [!DNL SQL] suivante et vérifiez que vous disposez des données attendues dans la colonne `feed_data`. Notez également l’horodatage `modified_at`.
 
    ```sql
    select * from cde_products_feed where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
    ```
 
-1. Si vous ne voyez pas les données correctes, essayez de réindexer à l’aide de la commande suivante et réexécutez la requête SQL à l’étape 1 pour vérifier les données :
+1. Si vous ne voyez pas les données correctes, essayez de réindexer à l’aide de la commande suivante et réexécutez la requête [!DNL SQL] à l’étape 1 pour vérifier les données :
 
    ```bash
    bin/magento indexer:reindex cde_products_feed
@@ -76,7 +76,7 @@ Si les données de votre produit ne sont pas synchronisées correctement pour un
 
 ### Vérification de l’horodatage de la dernière exportation de produit
 
-1. Si vous voyez les données correctes dans `cde_products_feed`, utilisez la requête SQL suivante pour vérifier l’horodatage de la dernière exportation. Elle doit être postérieure à l’horodatage `modified_at` :
+1. Si vous voyez les données correctes dans `cde_products_feed`, utilisez la requête [!DNL SQL] suivante pour vérifier l’horodatage de la dernière exportation. Elle doit être postérieure à l’horodatage `modified_at` :
 
    ```sql
    select * from scopes_website_data_exporter;
@@ -94,13 +94,13 @@ Si les données de votre produit ne sont pas synchronisées correctement pour un
 
 Si les données d’attribut de produit ne sont pas synchronisées correctement pour un code d’attribut spécifique, procédez comme suit :
 
-1. Utilisez la requête SQL suivante et vérifiez que vous disposez des données attendues dans la colonne `feed_data`. Notez également l’horodatage `modified_at`.
+1. Utilisez la requête [!DNL SQL] suivante et vérifiez que vous disposez des données attendues dans la colonne `feed_data`. Notez également l’horodatage `modified_at`.
 
    ```sql
    select * from cde_product_attributes_feed where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
    ```
 
-1. Si vous ne voyez pas les données correctes, utilisez la commande suivante pour réindexer, puis réexécutez la requête SQL à l’étape 1 pour vérifier les données.
+1. Si vous ne voyez pas les données correctes, utilisez la commande suivante pour réindexer, puis réexécutez la requête [!DNL SQL] à l’étape 1 pour vérifier les données.
 
    ```bash
    bin/magento indexer:reindex cde_product_attributes_feed
@@ -112,7 +112,7 @@ Si les données d’attribut de produit ne sont pas synchronisées correctement 
 
 Si vous voyez les données correctes dans `cde_product_attributes_feed` :
 
-1. Utilisez la requête SQL suivante pour vérifier l’horodatage de la dernière exportation. Elle doit être postérieure à l’horodatage `modified_at`.
+1. Utilisez la requête [!DNL SQL] suivante pour vérifier l’horodatage de la dernière exportation. Elle doit être postérieure à l’horodatage `modified_at`.
 
    ```sql
    select * from scopes_website_data_exporter;
@@ -137,5 +137,6 @@ bin/magento saas:resync --feed productattributes
 
 ## Lecture connexe
 
-* Voir [Recherche en direct intégrée](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) dans notre documentation utilisateur.
-* Voir [Consultez les journaux et résolvez les problèmes d’exportation et de synchronisation des données SaaS Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) dans le guide d’exportation des données SaaS Adobe Commerce.
+* [Recherche en direct intégrée](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) dans notre documentation utilisateur
+* [Consultez les journaux et résolvez les problèmes d’exportation et de synchronisation des données SaaS Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) dans le guide d’exportation des données SaaS Adobe Commerce
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

@@ -4,9 +4,9 @@ description: Cet article fournit un correctif pour la mise à jour des catégori
 exl-id: d951205c-add9-478c-9c7d-2ba975d53b14
 feature: Categories
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -88,4 +88,8 @@ Procédez comme suit :
 1. Recherchez les enregistrements de catégorie avec la même valeur `entity_id` et la même valeur `created_in`.
 1. Sélectionnez l’enregistrement où `row_id` = `entity_id` et copiez la valeur `updated_in`.
 1. Sélectionnez l’enregistrement où `row_id` n’est pas égal à `entity_id` et collez la valeur `updated_in` copiée comme valeur `created_in`. Reportez-vous à la capture d’écran ci-dessous comme illustration.    ![Copie de la valeur created_in value.png](assets/copy_created-in_value.png)
-1. Vérifiez que l’enregistrement de mise à jour de catégorie, dont la valeur `created_in` a été mise à jour (à l’étape 3), existe dans la table `staging_update`. *Par exemple :* Si la valeur `created_in` copiée est 1509281953, ALORS l’entité avec `row_id` = 1509281953 doit exister dans la table `staging_update`
+1. Vérifiez que l’enregistrement de mise à jour de catégorie, dont la valeur `created_in` a été mise à jour (à l’étape 3), existe dans la table `staging_update`. *Par exemple :* Si la valeur `created_in` copiée est 1509281953, ALORS l’entité avec `row_id` = 1509281953 doit exister dans la table `staging_update`.
+
+## Lecture connexe
+
+[ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

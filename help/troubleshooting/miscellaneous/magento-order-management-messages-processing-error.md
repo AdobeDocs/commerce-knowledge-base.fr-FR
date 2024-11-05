@@ -4,9 +4,9 @@ description: Cet article fournit une solution au problème lorsque vous obtenez 
 exl-id: 83089465-f810-4a3b-bdb6-4720b44f0b49
 feature: System
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -61,10 +61,11 @@ Cela se produit lorsque le connecteur tente de traiter des messages `magento.inv
 
 ## Solution
 
-Pour résoudre le problème, exécutez l’instruction SQL suivante dans l’interface de ligne de commande, qui supprime tous les enregistrements de la table `mcom_api_messages` :
+Pour résoudre le problème, exécutez l’instruction [!DNL SQL] suivante dans l’interface de ligne de commande qui supprime tous les enregistrements de la table `mcom_api_messages` :
 
 `delete from mcom_api_messages;`
 
 ## Lecture connexe
 
-Voir le [tutoriel de configuration du connecteur OMS](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/) des documents OMS.
+* [ Tutoriel de configuration du connecteur OMS](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/)
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

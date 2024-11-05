@@ -4,9 +4,9 @@ description: Cliquez sur chaque question pour afficher les détails de la répon
 exl-id: 10a2313e-cc82-4ffc-9247-624884f3e165
 feature: Support
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ Cliquez sur chaque question pour afficher les détails de la réponse à chaque 
 
 +++**<https://status.adobe.com> présente-t-il des problèmes ?**
 
-a. OUI - Si vous avez coché [Adobe Magento Status](https://status.adobe.com/products/3350) et qu’un problème s’est produit, ouvrez un [ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour plus d’informations.\
-b. NO - Si vous avez coché [Adobe Magento Status](https://status.adobe.com/products/3350) et qu’il n’y a pas de problème, passez à l’ [étape 2](#step-2).
+a. OUI - Si vous avez coché [Statut Adobe Commerce](https://status.adobe.com/cloud/experience_cloud) et qu’un problème s’est produit, ouvrez un [ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) pour plus d’informations.\
+b. NON - Si vous avez coché [État Adobe Commerce](https://status.adobe.com/cloud/experience_cloud) et qu’il n’y a pas eu de problème, passez à l’ [Étape 2](#step-2).
 
 +++
 
@@ -28,8 +28,8 @@ b. NO - Si vous avez coché [Adobe Magento Status](https://status.adobe.com/prod
 
 +++**http://status.fastly.com affiche-t-il des problèmes ?**
 
-a. OUI - Si vous avez coché [État Fastly](https://status.fastly.com/) et qu’un problème s’est produit, ouvrez un [ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour plus d’informations.\
-b. NO - Si vous avez coché [Fastly Status](https://status.fastly.com/) et qu’il n’y a pas de problème, passez à l’ [Étape 3](#step-3).
+a. OUI - Si vous avez coché [[!DNL Fastly] Status](https://status.fastly.com/) et qu’un problème s’est produit, ouvrez un [ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) pour plus d’informations.\
+b. NO - Si vous avez coché [[!DNL Fastly] Status](https://status.fastly.com/) et qu&#39;il n&#39;y a pas de problème, passez à l&#39;[Étape 3](#step-3).
 
 +++
 
@@ -39,7 +39,7 @@ b. NO - Si vous avez coché [Fastly Status](https://status.fastly.com/) et qu’
 
 Pour vérifier les codes d’erreur dans **Firefox** : cliquez sur l’icône **Open Menu** > **Web Developer** > **Toggle Tools** > **Network** > **All** filter > **Status** column. Pour vérifier les codes d’erreur dans **Chrome** : cliquez sur l’icône **Ouvrir le menu** > **Plus d’outils** > **Outils de développement** > **Onglet Réseau** > **Filtre All** > Colonne **État**.
 
-a. OUI - Ouvrez un [ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour plus d’informations.\
+a. OUI - Ouvrez un [ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) pour plus d’informations.\
 b. NO - Passez à [Étape 4](#step-4).
 
 +++
@@ -48,11 +48,11 @@ b. NO - Passez à [Étape 4](#step-4).
 
 +++**Quel code d’erreur de site web avez-vous reçu ?**
 
-a. Code d’erreur 500 - Vérifier le journal de `/var/log/platform/`. Si ces données ne vous présentent pas le problème, vous pouvez ouvrir un [ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) et inclure les informations de dépannage dont vous disposez jusqu’à présent pour plus d’informations.
+a. Code d’erreur 500 - Vérifier le journal de `/var/log/platform/`. Si ces données ne vous présentent pas le problème, vous pouvez ouvrir un [ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) et inclure les informations de dépannage dont vous disposez jusqu’à présent pour plus d’informations.
 
-b. Code d’erreur 503 - Vérifier le journal de `var/reports`. Si ces données ne vous présentent pas le problème, vous pouvez ouvrir un [ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) et inclure les informations de dépannage dont vous disposez jusqu’à présent pour plus d’informations.
+b. Code d’erreur 503 - Vérifier le journal de `var/reports`. Si ces données ne vous présentent pas le problème, vous pouvez ouvrir un [ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) et inclure les informations de dépannage dont vous disposez jusqu’à présent pour plus d’informations.
 
-c. Code d’erreur 404 - Exécutez la requête suivante : `SELECT f.flag_data->>'$.current_version' as flag_version, (su.id IS NOT NULL) as update_exists FROM flag f LEFT JOIN staging_update su ON su.id = f.flag_data->>'$.current_version' WHERE flag_code = 'staging';` Si la requête renvoie une table, où la valeur `update_exists` est &quot;0&quot;, reportez-vous à l’article [Erreur 404 sur toutes les pages, storefront et Admin, en raison d’un problème d’évaluation de contenu](/help/troubleshooting/site-down-or-unresponsive/error-404-on-all-pages-due-to-content-staging-issue.md). Dans tous les autres cas, passez à l&#39;[étape 5](#step-5).
+c. Code d’erreur 404 - Exécutez la requête suivante : `SELECT f.flag_data->>'$.current_version' as flag_version, (su.id IS NOT NULL) as update_exists FROM flag f LEFT JOIN staging_update su ON su.id = f.flag_data->>'$.current_version' WHERE flag_code = 'staging';` Si la requête renvoie une table, où la valeur `update_exists` est &quot;0&quot;, reportez-vous à l’article [Erreur 404 sur toutes les pages, storefront et Admin, en raison d’un problème d’évaluation de contenu](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/error-404-on-all-pages-due-to-content-staging-issue). Dans tous les autres cas, passez à l&#39;[étape 5](#step-5).
 
 d. Autres codes d’erreur - Passez à l’ [étape 5](#step-5).
 
@@ -60,9 +60,9 @@ d. Autres codes d’erreur - Passez à l’ [étape 5](#step-5).
 
 ## Étape 5 {#step-5}
 
-+++**Votre site est-il lent ou son serveur est-il trop chargé, le processeur est trop chargé, le traitement des requêtes trop lent ou les pannes dans MySQL ou Redis ?**
++++**Votre site est-il lent ou son serveur est-il très chargé, charge importante du processeur, traitement lent des requêtes ou panne dans [!DNL MySQL] ou Redis ?**
 
-a. OUI - Passez à la procédure [Vérification des attaques DDOS de l’interface de ligne de commande](/help/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.md).\
+a. OUI - Passez à la procédure [Vérification des attaques DDOS de l’interface de ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli).\
 b. NO - Vérifiez les journaux de `/var/log/exception.log` et `/var/log/deploy.log`, et si ces données ne vous présentent pas le problème, passez à l&#39;[étape 6](#step-6).
 
 +++
@@ -80,16 +80,16 @@ b. NO - Passez à l’ [étape 7](#step-7).
 
 +++**Y a-t-il des erreurs de l’Elasticsearch ?**
 
-a. OUI - Passez à la procédure de [vérification d’Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html).\
+a. OUI - Passez à la procédure de [vérification d’Elasticsearch](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch/).\
 b. NO - Passez à [Étape 8](#step-8).
 
 +++
 
 ## Étape 8 {#step-8}
 
-+++**Votre base de données MySQL comportant des requêtes lentes ou incorrectes ?**
++++**Votre base de données [!DNL MySQL] contenait-elle des requêtes lentes ou incorrectes ?**
 
-a. OUI - Poursuivez en [vérifiant que les requêtes et les processus lents prennent trop de temps dans MySQL](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md) et en vérifiant la structure de vos requêtes dans ce [tutoriel sur les requêtes MySQL](https://dev.mysql.com/doc/refman/5.5/en/entering-queries.html).\
+a. OUI - Poursuivez en [vérifiant que les requêtes et les processus lents prennent trop de temps dans le  [!DNL MySQL]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/checking-slow-queries-and-processes-mysql) and checking your query structure in this [[!DNL MySQL] tutoriel sur les requêtes](https://dev.mysql.com/doc/refman/5.5/en/entering-queries.html).\
 b. NO - Passez à [Étape 9](#step-9).
 
 +++
@@ -98,7 +98,7 @@ b. NO - Passez à [Étape 9](#step-9).
 
 +++**Votre contenu statique n’est-il pas disponible ?**
 
-a. OUI - Continuez avec la consultation de l&#39;article [Vérification du contenu statique](https://support.magento.com/hc/en-us/articles/360031624091) .\
+a. OUI - Continuez avec la consultation de l&#39;article [Vérification du contenu statique](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment) .\
 b. NO - Passez à l’ [étape 10](#step-10).
 
 +++
@@ -107,7 +107,7 @@ b. NO - Passez à l’ [étape 10](#step-10).
 
 +++**Vous voyez des erreurs fatales PHP dans vos logs ?**
 
-a. OUI - Continuez avec le service de conseil [Erreurs et solutions fatales PHP courantes](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md).\
+a. OUI - Continuez avec le service de conseil [Erreurs et solutions fatales PHP courantes](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions).\
 b. NO - Passez à l&#39;[étape 11](#step-11).
 
 +++
@@ -116,7 +116,7 @@ b. NO - Passez à l&#39;[étape 11](#step-11).
 
 +++**Vous voyez des erreurs Redis ?**
 
-a. OUI - Passez à la [vérification que Redis est en cours d’exécution](https://devdocs.magento.com/guides/v2.3/config-guide/redis/redis-session.html#redis-verify) et pour la [résolution des problèmes de Redis](https://redis.io/topics/problems).\
+a. OUI - Passez à la procédure [verify [!DNL Redis] est en cours d’exécution](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/redis#troubleshooting-redis) et pour [[!DNL Redis] la résolution des problèmes](https://redis.io/topics/problems).\
 b. NO - Passez à l&#39;[étape 12](#step-12).
 
 +++
@@ -125,8 +125,8 @@ b. NO - Passez à l&#39;[étape 12](#step-12).
 
 +++**Vous voyez des erreurs de l’indexeur ?**
 
-a. OUI - Si votre index est verrouillé par un autre processus, consultez [L&#39;index est verrouillé par un autre processus](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md). Si vous rencontrez d’autres erreurs de l’indexeur, ouvrez un [ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour plus d’informations.\
-b. NO - Ouvrez un [ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour plus d’informations.
+a. OUI - Si votre index est verrouillé par un autre processus, consultez [L&#39;index est verrouillé par un autre processus](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/index-is-locked-by-another-process). Si vous rencontrez d’autres erreurs de l’indexeur, ouvrez un [ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) pour plus d’informations.\
+b. NO - Ouvrez un [ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) pour plus d’informations.
 
 +++
 
@@ -134,7 +134,7 @@ b. NO - Ouvrez un [ticket d’assistance](/help/help-center-guide/help-center/ma
 
 +++**Vous avez des problèmes avec votre ou vos modules personnalisés ?**
 
-a. OUI - Passez à la [Aide générale de dépannage des modules personnalisés](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md).\
+a. OUI - Passez à la [Aide générale de dépannage des modules personnalisés](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help).\
 b. NO - Passez à l&#39;[étape 14](#step-14).
 
 +++
@@ -143,7 +143,7 @@ b. NO - Passez à l&#39;[étape 14](#step-14).
 
 +++**Avez-vous des échecs post-hook ?**
 
-a. OUI - Continuez en vérifiant votre erreur MySQL dans cette [référence de message d’erreur du serveur MySQL](https://dev.mysql.com/doc/mysql-errors/5.7/en/server-error-reference.html).\
+a. OUI - Continuez en vérifiant votre erreur [!DNL MySQL] dans cette [[!DNL MySQL] référence de message d’erreur du serveur](https://dev.mysql.com/doc/mysql-errors/5.7/en/server-error-reference.html).\
 b. NO - Passez à l’ [étape 15](#step-15).
 
 +++
@@ -152,7 +152,7 @@ b. NO - Passez à l’ [étape 15](#step-15).
 
 +++**Vous avez des problèmes avec les correctifs de compositeur ?**
 
-a. OUI - Passez à la consultation [L’application d’un correctif réduit votre site](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md).\
+a. OUI - Passez à la consultation [L’application d’un correctif réduit votre site](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down).\
 b. NO - Passez à l&#39;[étape 16](#step-16).
 
 +++
@@ -161,20 +161,24 @@ b. NO - Passez à l&#39;[étape 16](#step-16).
 
 +++**Avez-vous des erreurs de base de données SQL ?**
 
-a. OUI - Continuez en vérifiant votre erreur MySQL dans cette [référence de message d’erreur du serveur MySQL](https://dev.mysql.com/doc/mysql-errors/5.7/en/server-error-reference.html).\
+a. OUI - Continuez en vérifiant votre erreur [!DNL MySQL] dans cette [[!DNL MySQL] référence de message d’erreur du serveur](https://dev.mysql.com/doc/mysql-errors/5.7/en/server-error-reference.html).\
 b. NO - Passez à l&#39;[étape 17](#step-17).
 
 +++
 
 ## Étape 17 {#step-17}
 
-+++**Avez-vous des verrous morts de la base de données MySQL ou une base de données MySQL non réactive ?**
++++**Avez-vous des [!DNL MySQL] verrous morts de la base de données ou une base de données [!DNL MySQL] non réactive ?**
 
-a. OUI - Poursuivez la vérification des verrous morts MySQL dans cet article [Deadlocks in MySQL](/help/troubleshooting/database/deadlocks-in-mysql.md) .\
-b. NO - Ouvrez un [ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour plus d’informations.
+a. OUI - Poursuivez la vérification des [!DNL MySQL] blocages dans cet article [Deadlocks in [!DNL MySQL]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/deadlocks-in-mysql) .\
+b. NO - Ouvrez un [ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-cases) pour plus d’informations.
 
 +++
 
 [Retour à l’étape 1](#step-1)
 
-Cliquez sur [HERE](/help/troubleshooting/site-down-or-unresponsive/site-down-troubleshooting-diagram.md) pour afficher l’organigramme de dépannage du site vers le bas.
+Cliquez sur [HERE](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/site-down-troubleshooting-diagram) pour afficher l’organigramme de dépannage du site vers le bas.
+
+## Lecture connexe
+
+[ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

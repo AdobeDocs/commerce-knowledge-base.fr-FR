@@ -4,9 +4,9 @@ description: Cet article fournit une solution au problème lorsque le déploieme
 feature: Deploy
 role: Developer
 exl-id: ee2bddba-36f7-4aae-87a1-5dbeb80e654e
-source-git-commit: 7efa7b5363c7f77d76c02051c7e0e6a0f38ca87d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Vous ne déployez pas correctement. Dans les journaux, une erreur de déploiemen
 
 ### Cause
 
-La table **core_config_data** contient des configurations pour un ID de magasin ou un ID de site web qui n’existe plus dans la base de données. Cela se produit lorsque vous avez importé une sauvegarde de base de données à partir d’une autre instance/un autre environnement et que les configurations de ces portées restent dans la base de données bien que le ou les magasins/sites web associés aient été supprimés.
+La table **`core_config_data`** contient des configurations pour un identifiant de magasin ou un identifiant de site web qui n’existe plus dans la base de données. Cela se produit lorsque vous avez importé une sauvegarde de base de données à partir d’une autre instance/un autre environnement et que les configurations de ces portées restent dans la base de données bien que le ou les magasins/sites web associés aient été supprimés.
 
 ### Solution
 
@@ -67,13 +67,13 @@ Pour résoudre ce problème, identifiez les lignes non valides restantes de ces 
    The store that was requested wasn't found. Verify the store and try again.
    ```
 
-1. Exécutez cette requête MySql pour vérifier que le magasin est introuvable, ce qui est indiqué par le message d’erreur à l’étape 2.
+1. Exécutez cette requête [!DNL MySQL] pour vérifier que le magasin est introuvable, ce qui est indiqué par le message d’erreur à l’étape 2.
 
    ```sql
    select distinct scope_id from core_config_data where scope='stores' and scope_id not in (select store_id from store);
    ```
 
-1. Exécutez l’instruction MySql suivante pour supprimer les lignes non valides :
+1. Exécutez l’instruction [!DNL MySQL] suivante pour supprimer les lignes non valides :
 
    ```sql
    delete from core_config_data where scope='stores' and scope_id not in (select store_id from store);
@@ -91,13 +91,13 @@ Pour résoudre ce problème, identifiez les lignes non valides restantes de ces 
    The website with id X that was requested wasn't found. Verify the website and try again.
    ```
 
-   Exécutez cette requête MySql et vérifiez que le site web est introuvable :
+   Exécutez cette requête [!DNL MySQL] et vérifiez que le site web est introuvable :
 
    ```sql
    select distinct scope_id from core_config_data where scope='stores' and scope_id not in (select store_id from store);
    ```
 
-1. Exécutez cette instruction MySql pour supprimer les lignes non valides de la configuration du site web :
+1. Exécutez cette instruction [!DNL MySQL] pour supprimer les lignes non valides de la configuration du site web :
 
    ```sql
    delete from core_config_data where scope='websites' and scope_id not in (select website_id from store_website);
@@ -107,5 +107,6 @@ Pour confirmer que la solution a fonctionné, réexécutez la commande `bin/mage
 
 ## Lecture connexe
 
-* [Dépannage du déploiement d’Adobe Commerce](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html)
-* [Vérification du journal de déploiement si l’interface utilisateur de Cloud a &quot;extrait de journal&quot;](/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.html)
+* [Résolution des problèmes de déploiement Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter)
+* [Vérification du journal de déploiement si l’interface utilisateur de Cloud a &quot;extrait de journal&quot; erreur](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

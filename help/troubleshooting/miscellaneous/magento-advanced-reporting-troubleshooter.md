@@ -4,9 +4,9 @@ description: Les problèmes de création de rapports avancés sur Adobe Commerce
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: ae6dde9ecc01a0e1c561d1e91dbd2f7bc3504fe0
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,10 @@ b. NON - Renseignez les exigences de création de rapports avancées pour votre 
 
 +++**Plusieurs devises de base sont-elles utilisées ?**
 
-Plusieurs devises de base sont-elles utilisées (dans les commandes et la configuration) ? Exécutez cette commande SQL pour obtenir la configuration actuelle : `SELECT value FROM core_config_data WHERE path = 'currency/options/base';` .
+Plusieurs devises de base sont-elles utilisées (dans les commandes et la configuration) ? Exécutez cette commande [!DNL SQL] pour obtenir la configuration actuelle : `SELECT value FROM core_config_data WHERE path = 'currency/options/base';` .
 
 a. OUI - Si plusieurs lignes sont renvoyées par la requête, vous ne pouvez pas utiliser la création de rapports avancés, car nous ne prenons en charge qu’une seule devise.\
-b. NON - La sortie n’affiche qu’une seule devise. Exemple : `USD`. Plusieurs devises de base ont-elles déjà été utilisées (dans les commandes) ? Exécutez cette commande SQL pour obtenir les données des commandes historiques :\
+b. NON - La sortie n’affiche qu’une seule devise. Exemple : `USD`. Plusieurs devises de base ont-elles déjà été utilisées (dans les commandes) ? Exécutez cette commande [!DNL SQL] pour obtenir les données des commandes historiques :\
 `SELECT DISTINCT base_currency_code FROM sales_order;`.
 **REMARQUE : cette commande nécessite une analyse de table complète. Pour les tables avec un grand nombre d&#39;enregistrements, cela peut avoir un impact sur les performances pendant l&#39;exécution de la requête** pour obtenir des données de commandes historiques.
 Si plusieurs devises de base ont jamais été utilisées, vous ne pouvez pas utiliser la création de rapports avancés, car nous ne prenons en charge qu’une seule devise. Si la sortie n’affiche qu’une seule devise, passez à l’ [étape 3](#step-3).
@@ -157,3 +157,7 @@ b. NO - [soumettez un ticket d’assistance](/help/help-center-guide/help-center
 +++
 
 [Retour à l’étape 1](#step-1)
+
+## Lecture connexe
+
+[ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

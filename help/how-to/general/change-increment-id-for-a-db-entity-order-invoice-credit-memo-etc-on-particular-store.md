@@ -1,18 +1,18 @@
 ---
-title: Modifier l’identifiant d’incrément d’une entité DB (commande, facture, note de crédit, etc.) sur un magasin particulier
-description: Cet article explique comment modifier l’identifiant d’incrément d’une entité de base de données Adobe Commerce (DB) (commande, facture, note de crédit, etc.) sur un magasin Adobe Commerce spécifique à l’aide de l’instruction SQL "ALTER TABLE".
+title: Modifiez l’identifiant d’incrément d’une entité DB (commande, facture, note de crédit, etc.) sur un magasin particulier.
+description: Cet article explique comment modifier l’ID d’incrément d’une entité de base de données Adobe Commerce (DB) (commande, facture, note de crédit, etc.) sur un magasin Adobe Commerce particulier à l’aide de l’instruction SQL "ALTER TABLE".
 exl-id: 3704dd97-3639-44dc-9b8b-cf09f0c04e6c
 feature: Invoices
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
-# Modifier l’identifiant d’incrément d’une entité DB (commande, facture, note de crédit, etc.) sur un magasin particulier
+# Modifiez l’identifiant d’incrément d’une entité DB (commande, facture, note de crédit, etc.) sur un magasin particulier.
 
-Cet article explique comment modifier l’identifiant d’incrément d’une entité de base de données Adobe Commerce (DB) (commande, facture, note de crédit, etc.) sur un magasin Adobe Commerce particulier à l’aide de l’instruction SQL `ALTER TABLE`.
+Cet article explique comment modifier l’ID d’incrément d’une entité de base de données Adobe Commerce (DB) (commande, facture, note de crédit, etc.) sur un magasin Adobe Commerce particulier à l’aide de l’instruction SQL `ALTER TABLE`.
 
 ## Versions affectées
 
@@ -86,5 +86,6 @@ Avant d’exécuter la requête `ALTER TABLE` sur l’environnement de productio
 
 ## Documentation connexe
 
-* [Créez un vidage de base de données sur Cloud](/help/how-to/general/create-database-dump-on-cloud.md) dans notre base de connaissances de support.
-* [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) dans notre documentation destinée aux développeurs.
+* [Créer un vidage de base de données sur Cloud](/help/how-to/general/create-database-dump-on-cloud.md) dans notre base de connaissances de support
+* [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) dans notre documentation destinée aux développeurs
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

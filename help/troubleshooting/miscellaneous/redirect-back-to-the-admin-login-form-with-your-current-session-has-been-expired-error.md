@@ -1,19 +1,19 @@
 ---
-title: Rediriger vers le formulaire de connexion de l’administrateur Commerce avec l’erreur "Votre session actuelle a expiré".
-description: '"Cet article présente les solutions possibles au problème de connexion de l’administrateur Commerce, où vous êtes redirigé vers le formulaire de connexion avec le message d’erreur suivant : *"Votre session actuelle a expiré"*. Les solutions incluent la vérification des problèmes de définition de l’heure du serveur et la modification des paramètres de stockage de session."'
+title: '''Rediriger vers le formulaire de connexion [!UICONTROL Commerce Admin] avec l’erreur "Votre session actuelle a expiré"'
+description: '''Cet article fournit les solutions possibles au problème de connexion [!UICONTROL Commerce Admin], où vous êtes redirigé vers le formulaire de connexion avec le message d’erreur suivant : *"Votre session actuelle a expiré"*. Les solutions incluent la vérification des problèmes de définition de l’heure du serveur et la modification des paramètres de stockage de session."'
 exl-id: 29df2ed2-ff4a-4f1a-bdb7-1160416cda00
 feature: Admin Workspace
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 3f205b1d755bda7056f47bf1e1d036feb47ebadd
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
 
-# Rediriger vers le formulaire de connexion de l’administrateur Commerce avec l’erreur &quot;Votre session actuelle a expiré&quot;.
+# Rediriger vers le formulaire de connexion [!UICONTROL Commerce Admin] avec l’erreur &quot;Votre session actuelle a expiré&quot;.
 
-Cet article fournit les solutions possibles au problème de connexion de l’administrateur Commerce, où vous êtes redirigé vers le formulaire de connexion avec le message d’erreur suivant : *&quot;Votre session actuelle a expiré&quot;*. Les solutions incluent la vérification des problèmes de définition de l’heure du serveur et la modification des paramètres de stockage de session.
+Cet article fournit les solutions possibles au problème de connexion [!UICONTROL Commerce Admin], où vous êtes redirigé vers le formulaire de connexion avec le message d’erreur suivant : *&quot;Votre session actuelle a expiré&quot;*. Les solutions incluent la vérification des problèmes de définition de l’heure du serveur et la modification des paramètres de stockage de session.
 
 ## Éditions et versions affectées :
 
@@ -23,12 +23,12 @@ Toutes les versions et éditions Adobe Commerce
 
 <u>Étapes à reproduire</u> :
 
-1. Accédez à la page d’administration de Commerce.
-1. Saisissez vos informations d’identification, puis cliquez sur Se connecter.
+1. Accédez à la page **[!UICONTROL Commerce Admin]** .
+1. Saisissez vos informations d’identification et cliquez sur **Se connecter**.
 
 <u>Résultat attendu</u> :
 
-Vous êtes connecté à l’administrateur Commerce.
+Vous êtes connecté à [!UICONTROL Commerce Admin].
 
 <u>Résultat réel</u> :
 
@@ -70,6 +70,8 @@ Exécutez la commande `bin/magento app:config:import` pour importer des données
 ## Lecture connexe
 
 * [Importer des données à partir de fichiers de configuration](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-config-mgmt-import.html) dans notre documentation destinée aux développeurs
-* [Configuration de Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html) dans notre documentation destinée aux développeurs
-* [Rediriger vers le formulaire de connexion de l’administrateur Commerce avec l’erreur &quot;Votre compte est temporairement désactivé&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) dans notre base de connaissances de support
-* [ Redirigez-vous vers le formulaire de connexion sans erreur lorsque vous essayez de vous connecter à l’administrateur Commerce ](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md) dans notre base de connaissances de support.
+* [Configurez [!DNL Redis]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) dans notre documentation destinée aux développeurs
+* [Rediriger vers le formulaire de connexion [!UICONTROL Commerce Admin] avec l’erreur &quot;Votre compte est temporairement désactivé&quot;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) dans notre base de connaissances de support
+* [ Redirigez-vous vers le formulaire de connexion sans erreur, lorsque vous essayez de vous connecter à [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) dans notre base de connaissances de support.
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+

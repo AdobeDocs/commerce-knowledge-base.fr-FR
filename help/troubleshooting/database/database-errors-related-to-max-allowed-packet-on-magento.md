@@ -4,9 +4,9 @@ description: Cet article fournit une solution pour les erreurs de connexion à l
 exl-id: e8932b72-91a3-43ea-800e-a6c7a5a17656
 feature: Best Practices, Observability, Services
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Cet article fournit une solution pour les erreurs de connexion à la base de don
 
 ## Problème
 
-Lorsqu’un client MySQL ou le serveur [mysqld](https://dev.mysql.com/doc/refman/8.0/en/mysqld.html) reçoit un paquet supérieur à [max\_allowed\_packet](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_max_allowed_packet) octets, il génère une erreur [ER\_NET\_PACKET\_TOO\_LARGE](https://dev.mysql.com/doc/mysql-errors/8.0/en/server-error-reference.html#error_er_net_packet_too_large) (visible dans l’élément `exception.log`) et ferme la connexion. Avec certains clients, vous pouvez également obtenir une *connexion perdue au serveur MySQL lors de la requête* si le paquet de communication est trop volumineux.
+Lorsqu&#39;un client [!DNL MySQL] ou le serveur [mysqld](https://dev.mysql.com/doc/refman/8.0/en/mysqld.html) reçoit un paquet supérieur à [max\_allowed\_packet](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_max_allowed_packet)}, il génère une erreur [ER\_NET\_PACKET\_TOO\_LARGE](https://dev.mysql.com/doc/mysql-errors/8.0/en/server-error-reference.html#error_er_net_packet_too_large) (qui peut être vue dans `exception.log`) et ferme la connexion. Avec certains clients, vous pouvez également obtenir une *connexion perdue au serveur [!DNL MySQL] lors de la requête* si le paquet de communication est trop volumineux.
 
 <u>Étapes à reproduire</u>
 
@@ -29,7 +29,7 @@ Plusieurs tâches peuvent produire ce problème. Cela peut inclure la tentative 
 
 ## Cause
 
-La valeur par défaut de 16 Mo pour le paramètre MySQL `max_allowed_packets` n’est pas assez grande pour répondre à vos besoins.
+La valeur par défaut de 16 Mo pour le paramètre [!DNL MySQL] `max_allowed_packets` n’est pas assez grande pour répondre à vos besoins.
 
 ## Solution
 
@@ -45,7 +45,8 @@ La valeur par défaut de 16 Mo pour le paramètre MySQL `max_allowed_packets` n�
 
 ## Lecture connexe
 
-* [Guide d’installation > MySQL](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=max%20allowed%2016%20MB) dans notre documentation destinée aux développeurs.
-* [Le chargement de la base de données perd la connexion à MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md) dans notre base de connaissances de support.
+* [Présentation de l’installation sur site](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) dans notre documentation destinée aux développeurs.
+* [Le chargement de la base de données perd la connexion à [!DNL MySQL]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql) dans notre base de connaissances de support.
 * [Bonnes pratiques de base de données pour Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) dans notre base de connaissances d’assistance.
 * [Bonnes pratiques pour résoudre les problèmes de performances de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html) dans notre base de connaissances de support.
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
