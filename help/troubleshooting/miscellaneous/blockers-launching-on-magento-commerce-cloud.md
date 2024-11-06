@@ -4,9 +4,9 @@ description: Cet article fournit un correctif permettant aux bloqueurs de se lan
 exl-id: 3b2c331f-5d90-4051-ada1-4934538fce79
 feature: Cache, Cloud, Marketing Tools, Observability, Paas
 role: Developer
-source-git-commit: 3dd44b72bc9f02fe808b70355c4331fc28aa3606
+source-git-commit: d728d44c4e1be3172ebf595122f3cc215207ac17
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,6 @@ Problème : en l’absence d’un certificat SSL valide et fonctionnel, vous ne 
 
 Recommandation **:** Demandez votre certificat SSL partagé pour les noms de domaine d’évaluation ou de production.
 
-Pour en savoir plus sur les certificats SSL, reportez-vous à cet article [Quick FAQ](/help/announcements/adobe-commerce-announcements/magento-ssl-tls-certificate-requirements-and-clean-up.md) de notre base de connaissances de support.
 
 ## 3. Configuration et test des redirections 301
 
