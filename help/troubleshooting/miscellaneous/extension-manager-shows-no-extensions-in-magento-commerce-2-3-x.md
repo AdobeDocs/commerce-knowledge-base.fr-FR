@@ -4,7 +4,7 @@ description: Cet article fournit une solution de contournement pour les extensio
 exl-id: bed8506d-39b9-449a-891b-466d214a0fe8
 feature: Extensions
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Cet article fournit une solution de contournement pour les extensions manquantes
 
 Lorsque vous achetez des extensions via le Commerce Marketplace, vous ne pouvez pas les installer à l’aide de l’Extension Manager Adobe Commerce principale. Lorsque vous ajoutez vos clés d’accès et que vous effectuez une synchronisation avec Marketplace, l’Extension Manager n’affiche aucune extension.
 
-La **solution** pour le problème consiste à utiliser la ligne de commande Installation d’Adobe Commerce, comme indiqué dans la [Installation générale de l’interface de ligne de commande](https://devdocs.magento.com/extensions/install/) de notre documentation destinée aux développeurs.
+La **solution** pour le problème consiste à utiliser la ligne de commande Installation d’Adobe Commerce, comme indiqué dans la [Installation générale de l’interface de ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) de notre documentation destinée aux développeurs.
 
 <u>Étapes à reproduire</u> :
 
@@ -44,4 +44,4 @@ L’extension apparaît dans la section Extension Manager de l’administrateur 
 
 ## Solution
 
-Utilisez la ligne de commande Installation d’Adobe Commerce comme illustré dans la [Installation générale de l’interface de ligne de commande](https://devdocs.magento.com/extensions/install/) de notre documentation destinée aux développeurs.
+Utilisez la ligne de commande Installation d’Adobe Commerce comme illustré dans la [Installation générale de l’interface de ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) de notre documentation destinée aux développeurs.

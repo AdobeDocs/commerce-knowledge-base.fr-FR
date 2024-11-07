@@ -4,7 +4,7 @@ description: Cet article présente les outils généraux permettant de résoudre
 exl-id: c6603a2b-dc98-4022-ab29-c081c2b07415
 feature: Extensions
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -29,24 +29,24 @@ Vérifiez les journaux pour voir s’il existe des entrées avec le nom du modul
    * [Adobe Commerce sur les journaux d’architecture de plan de démarrage de l’infrastructure cloud](/help/how-to/general/log-locations-directories-for-starter-plan.md) dans notre base de connaissances de support.
    * [Adobe Commerce sur l’infrastructure cloud Logs d’architecture de plan Pro](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) dans notre base de connaissances d’assistance.
 1. En fonction des erreurs que vous trouvez, si vous souhaitez activer, désactiver ou désinstaller un module personnalisé, ces articles détaillent ces actions :
-   * [Activez ou désactivez les modules](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-enable.html) dans notre documentation destinée aux développeurs.
-   * [Désinstallez les modules](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-uninstall-mods.html) dans notre documentation destinée aux développeurs.
+   * [Activez ou désactivez les modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules) dans notre documentation destinée aux développeurs.
+   * [Désinstallez les modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) dans notre documentation destinée aux développeurs.
 
 ### Adobe Commerce sur l’infrastructure cloud, toutes les versions
 
-1. Emplacements des journaux : [Adobe Commerce sur les journaux d’infrastructure cloud](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) dans notre documentation destinée aux développeurs.
+1. Emplacements des journaux : [Adobe Commerce sur les journaux d’infrastructure cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) dans notre documentation destinée aux développeurs.
 1. En fonction des erreurs que vous constatez, si vous souhaitez activer, désactiver ou désinstaller un module personnalisé, ces articles de notre documentation destinée aux développeurs détaillent ces actions :
-   * [Installer, gérer et mettre à niveau les extensions](https://devdocs.magento.com/guides/v2.3/cloud/howtos/install-components.html).
-   * [Échec du déploiement des composants](https://devdocs.magento.com/guides/v2.3/cloud/trouble/trouble_comp-deploy-fail.html).
+   * [Installer, gérer et mettre à niveau les extensions](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+   * [Échec du déploiement des composants](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment).
 
 ## Lecture connexe
 
 Dans notre documentation destinée aux développeurs :
 
-* [Présentation du module](https://devdocs.magento.com/guides/v2.3/architecture/archi_perspectives/components/modules/mod_intro.html)
-* [Erreurs lors de l’installation de données d’exemple facultatives](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/tshoot_sample-data.html)
-* [Gestion des exceptions](https://devdocs.magento.com/guides/v2.3/graphql/develop/exceptions.html)
-* [Exceptions lors de l’installation](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/tshoot_exceptions.html)
-* [Exécutez le gestionnaire de modules](https://devdocs.magento.com/guides/v2.3/comp-mgr/module-man/compman-checklist.html)
-* [ Fichiers de configuration de module](https://devdocs.magento.com/guides/v2.3/config-guide/config/config-files.html)
-* [Erreurs de mémoire insuffisante](https://devdocs.magento.com/guides/v2.3/comp-mgr/trouble/cman/out-of-memory.html)
+* [Présentation du module](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
+* [Erreurs lors de l’installation de données d’exemple facultatives](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data)
+* [Gestion des exceptions](https://developer.adobe.com/commerce/webapi/graphql/develop/exceptions/)
+* [Exceptions lors de l’installation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/exceptions-during-installation)
+* [Exécutez le gestionnaire de modules](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites)
+* [ Fichiers de configuration de module](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/module-files)
+* [Erreurs de mémoire insuffisante](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)

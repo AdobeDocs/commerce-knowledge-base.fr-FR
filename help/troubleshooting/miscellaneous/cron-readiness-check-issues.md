@@ -4,7 +4,7 @@ description: 'Cet article fournit des solutions pour les problèmes de préparat
 exl-id: 1f2cee2c-98ad-4cf5-af16-d736fced2a15
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Cette section explique comment vérifier si cron est en cours d’exécution et 
 
 Pour vérifier si votre crontab est configuré :
 
-1. Connectez-vous à votre serveur Commerce en tant que [ propriétaire du système de fichiers du Magento ](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) ou passez à cette propriété.
+1. Connectez-vous à votre serveur Commerce en tant que [ propriétaire du système de fichiers du Magento ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) ou passez à cette propriété.
 1. Vérifiez si le fichier suivant existe : `$ ls -al <magento_root>/var/.setup_cronjob_status`. Si le fichier existe, cron s’est exécuté avec succès dans le passé. Si le fichier *n’existe pas, vous n’avez pas encore installé Adobe Commerce ou cron n’est pas en cours d’exécution.* Dans les deux cas, passez à l’étape suivante.
 1. Obtenez plus de détails sur cron. En tant qu&#39;utilisateur disposant de droits `root`, saisissez la commande suivante : `$ crontab -u <Magento file system owner name> -l`. Par exemple, sur CentOS `$ crontab -u magento_user -l`. Si aucun onglet crontab n’a été configuré pour l’utilisateur, le message suivant s’affiche :    `no crontab for magento_user`. Votre crontab vous indique ce qui suit :
    * Quel binaire PHP vous utilisez (dans certains cas, vous en avez plusieurs) ?
@@ -40,17 +40,17 @@ Pour vérifier si votre crontab est configuré :
 
 ## Solution : crontab non configuré {#solution-crontab-not-set-up}
 
-Pour vérifier que vos tâches cron sont correctement configurées, voir [Configuration des tâches cron](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron) dans notre documentation destinée aux développeurs.
+Pour vérifier que vos tâches cron sont correctement configurées, voir [Configuration des tâches cron](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration) dans notre documentation destinée aux développeurs.
 
 ## Solution : cron s’exécutant à partir d’un binaire PHP incorrect {#solution-cron-running-from-incorrect-php-binary}
 
 Si votre tâche cron utilise un binaire PHP différent du plug-in du serveur web, des erreurs de paramètres PHP peuvent s’afficher. Pour résoudre ce problème, définissez des paramètres PHP identiques pour la ligne de commande PHP et le module externe de serveur Web PHP.
 
-Pour plus d’informations sur les paramètres PHP, voir [Paramètres PHP requis](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) dans notre documentation destinée aux développeurs.
+Pour plus d’informations sur les paramètres PHP, voir [Paramètres PHP requis](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) dans notre documentation destinée aux développeurs.
 
 ## Solution : cron s’exécutant en erreur {#solution-cron-running-with-errors}
 
-Essayez d’exécuter chaque commande manuellement, car la commande peut afficher des messages d’erreur utiles. Voir [Configuration des tâches cron](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron) dans notre documentation destinée aux développeurs.
+Essayez d’exécuter chaque commande manuellement, car la commande peut afficher des messages d’erreur utiles. Voir [Configuration des tâches cron](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration) dans notre documentation destinée aux développeurs.
 
 >[!NOTE]
 >

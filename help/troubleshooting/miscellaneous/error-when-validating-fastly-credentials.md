@@ -4,7 +4,7 @@ description: Cet article fournit une solution au problème où un utilisateur ob
 exl-id: 02104731-6666-47a6-abc6-215812f09915
 feature: Configuration
 role: Developer
-source-git-commit: 831a928dbe8fd6b37f3fe9ad5dc35ee80e11a578
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -22,11 +22,11 @@ L’utilisateur reçoit une erreur lors de la validation des informations d’id
 ## Produits et versions concernés
 
 * Adobe Commerce (toutes les méthodes de déploiement) : toutes les versions
-* Extension ou technologie (Fastly, New Relic, etc.) version Fastly
+* Version d’extension ou de technologie (Fastly, New Relic, etc.) Fastly
 
 ## Solution
 
-1. Assurez-vous que vous disposez de l’ID de service et du jeton d’API corrects et essayez à nouveau de valider. Pour obtenir des instructions détaillées, reportez-vous à la section [Test des informations d’identification Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) dans notre documentation destinée aux développeurs.
+1. Assurez-vous que vous disposez de l’ID de service et du jeton d’API corrects et essayez à nouveau de valider. Pour obtenir des instructions détaillées, reportez-vous à la section [Test des informations d’identification Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) dans notre documentation destinée aux développeurs.
 1. Si la vérification des informations d’identification échoue, exécutez la commande curl suivante pour confirmer l’état du service :
 
    ```curl
@@ -45,6 +45,6 @@ L’utilisateur reçoit une erreur lors de la validation des informations d’id
 
 ## Lectures connexes dans notre documentation destinée aux développeurs :
 
-* [Cloud pour Adobe Commerce > Fastly > Compte de service et informations d’identification Fastly](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html#fastly-service-account-and-credentials)
+* [Cloud pour Adobe Commerce > Fastly > Compte de service et informations d’identification Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#fastly-service-account-and-credentials)
 
-* [Cloud pour Adobe Commerce > Configurer rapidement > Tester les informations d’identification rapides](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials)
+* [Cloud pour Adobe Commerce > Configurer rapidement > Tester les informations d’identification rapides](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)

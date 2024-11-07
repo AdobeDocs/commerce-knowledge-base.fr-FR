@@ -4,9 +4,9 @@ description: Cet article fournit des solutions aux erreurs qui peuvent se produi
 exl-id: 9beb31ae-ed3c-42e1-b0bf-33fb1c91e0ea
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### Cause
 
-Une classe du code base Adobe Commerce 1 est introuvable dans le code base d’Adobe Commerce 2 pendant l’ [étape de migration d’EAV](https://devdocs.magento.com/guides/v2.3/migration/migration-tool-internal-spec.html#eav) de notre documentation destinée aux développeurs. Dans la plupart des cas, la classe manquante appartient à une [extension](https://glossary.magento.com/extension).
+Une classe du code base Adobe Commerce 1 est introuvable dans le code base d’Adobe Commerce 2 pendant l’ [étape de migration d’EAV](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/basics/technical-specification) de notre documentation destinée aux développeurs. Dans la plupart des cas, la classe manquante appartient à une [extension](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/glossary#extension).
 
 ### Solutions possibles
 
@@ -125,7 +125,7 @@ L’ `Target path` d’une réécriture d’URL doit être spécifié par une pa
 
 Activez l’option `auto_resolve_urlrewrite_duplicates` dans votre fichier `config.xml`.
 
-Cette configuration ajoute une chaîne de hachage aux enregistrements en conflit des réécritures [URL](https://glossary.magento.com/url) et affiche le résultat de la résolution dans votre interface de ligne de commande.
+Cette configuration ajoute une chaîne de hachage aux enregistrements en conflit des réécritures d’URL et affiche le résultat de la résolution dans votre interface de ligne de commande.
 
 ## Discordance des entités {#mismatch-of-entities}
 
@@ -155,7 +155,7 @@ Deltalog for <TABLE_NAME> is not installed
 
 ### Cause
 
-Cette erreur se produit lors de la [migration incrémentielle](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-delta.html) (dans notre documentation destinée aux développeurs) des modifications apportées aux données. Cela signifie que les tables de suppression (avec le préfixe `m2_cl_*`) n’ont pas été trouvées dans la base de données Adobe Commerce 1. L’outil installe ces tables pendant la [migration de données](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-data.html) (dans notre documentation destinée aux développeurs) ainsi que les déclencheurs de base de données qui effectuent le suivi des modifications et remplissent les tables de suppression.
+Cette erreur se produit lors de la [migration incrémentielle](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/delta) (dans notre documentation destinée aux développeurs) des modifications apportées aux données. Cela signifie que les tables de suppression (avec le préfixe `m2_cl_*`) n’ont pas été trouvées dans la base de données Adobe Commerce 1. L’outil installe ces tables pendant la [migration de données](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/data) (dans notre documentation destinée aux développeurs) ainsi que les déclencheurs de base de données qui effectuent le suivi des modifications et remplissent les tables de suppression.
 
 L’erreur peut être due au fait que vous essayez de migrer à partir d’une *copie* de votre boutique Adobe Commerce 1 active, et non à partir du magasin en ligne lui-même. Lorsque vous effectuez une copie à partir d’un magasin Adobe Commerce 1 actif qui n’a jamais été migré, la copie ne contient pas les déclencheurs et les tables de suppression supplémentaires nécessaires pour terminer une migration delta, de sorte que la migration échoue. L’outil de migration de données ne fait PAS de comparaisons entre la base de données d’AC1 et d’AC2 pour migrer les différences. Au lieu de cela, l’outil utilise les déclencheurs et les tables de suppression installés lors de la première migration pour effectuer les migrations delta suivantes. Dans ce cas, votre copie de la base de données Adobe Commerce 1 active ne contient pas les déclencheurs et les tables de déverrouillage utilisés par l’outil de migration des données pour effectuer une migration.
 

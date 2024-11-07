@@ -4,7 +4,7 @@ description: Cet article traite des solutions pour les erreurs de mémoire insuf
 exl-id: c0ed8228-9357-4a3b-a102-1119386ea52a
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -40,7 +40,7 @@ peut également s’afficher sur la ligne de commande.
 
 ## Solution {#solution}
 
-Nous vous recommandons [d’allouer 2 Go de mémoire à PHP](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) dans notre documentation destinée aux développeurs pour vous assurer que votre installation ou mise à niveau réussit.
+Nous vous recommandons [d’allouer 2 Go de mémoire à PHP](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) dans notre documentation destinée aux développeurs pour vous assurer que votre installation ou mise à niveau réussit.
 
 Si vous avez déjà effectué cette opération, créez un fichier de permutation sur votre ordinateur. Une machine Linux utilise *swap space* si elle a besoin de plus de ressources mémoire et si la RAM est pleine. L’espace de permutation est utilisé pour les pages inactives en mémoire.
 

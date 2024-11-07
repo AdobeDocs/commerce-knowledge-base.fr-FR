@@ -4,7 +4,7 @@ description: Cet article fournit un correctif pour le problème où l’outil d�
 exl-id: e5f7f8c6-2dd3-44e3-8d19-f1f38d06dd6c
 feature: Compliance, Security
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Cet article fournit un correctif pour le problème où l’outil d’analyse de 
 
 <u>Étapes à reproduire</u> :
 
-1. Configurez l’outil d’analyse de sécurité pour vérifier votre site web, comme décrit dans [Analyse de sécurité](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html) de notre guide d’utilisation.
+1. Configurez l’outil d’analyse de sécurité pour vérifier votre site web, comme décrit dans [Analyse de sécurité](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) de notre guide d’utilisation.
 1. Dans la colonne Actions, sélectionnez **Exécuter l’analyse**.
 
 <u>Résultats attendus</u> :
@@ -47,5 +47,5 @@ Essayez d’ouvrir votre site web.
 
 ## Lecture connexe
 
-* [Lancer et lancer](https://devdocs.magento.com/guides/v2.3/cloud/live/live.html?_ga=2.73579601.273749082.1559572284-888339099.1547722854#security-scan) dans la documentation destinée aux développeurs.
-* [Analyse de sécurité](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html) dans notre guide d’utilisation.
+* [Lancer et lancer](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview) dans la documentation destinée aux développeurs.
+* [Analyse de sécurité](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) dans notre guide d’utilisation.

@@ -4,7 +4,7 @@ description: Cet article décrit comment résoudre les problèmes de performance
 exl-id: a78ca3c3-85b4-40a1-a693-4703dd3ef4b5
 feature: Best Practices, Cache, Categories, Catalog Management
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Dans n’importe quelle version d’Adobe Commerce, parce que certaines extensions ne fonctionnent qu’avec des tables plats, il existe un risque si vous désactivez les tables plats. Si vous savez que certaines extensions utilisent des indexeurs de catalogue plat, vous devrez peut-être en tenir compte lors de la définition de ces valeurs sur &quot;*Non*&quot;.
 
-Cet article décrit comment résoudre les problèmes de performances du site et les problèmes d’exécution lente et de blocage causés par l’activation de [tables plates et indexeurs](https://docs.magento.com/m2/ce/user_guide/catalog/catalog-flat.html).
+Cet article décrit comment résoudre les problèmes de performances du site et les problèmes d’exécution lente et de blocage causés par l’activation de [tables plates et indexeurs](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/catalog-flat).
 
 PRODUITS ET VERSIONS AFFECTÉS
 

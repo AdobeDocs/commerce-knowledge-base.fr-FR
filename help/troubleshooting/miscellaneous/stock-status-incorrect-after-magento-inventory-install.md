@@ -4,7 +4,7 @@ description: Cet article fournit un correctif pour que l’état du stock soit i
 exl-id: ae32fbe3-deab-4f31-b427-95f8b54a476f
 feature: Install, Inventory, Orders
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
@@ -33,4 +33,4 @@ Lors de la première installation/mise à niveau, tous vos produits sont attribu
 
 Si vous disposez de plusieurs sites web, vous devez les ajouter en tant que Sales Channel aux actions par défaut ou aux autres actions personnalisées.
 
-Consultez la section [Stock du guide de l’utilisateur/du wiki](https://docs.magento.com/m2/ce/user_guide/catalog/inventory-stock.html) dans notre guide de l’utilisateur pour plus d’informations sur la façon de procéder.
+Consultez la section [Stock du guide de l’utilisateur/du wiki](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) dans notre guide de l’utilisateur pour plus d’informations sur la façon de procéder.

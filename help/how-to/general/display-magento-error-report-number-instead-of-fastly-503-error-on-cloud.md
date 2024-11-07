@@ -3,7 +3,7 @@ title: Afficher le numéro du rapport d’erreur Adobe Commerce au lieu de l’e
 description: Par défaut, masque Fastly toutes les erreurs Adobe Commerce derrière l'erreur **503 Service indisponible**. Pour afficher le numéro du rapport du journal des erreurs Adobe Commerce (afin de pouvoir le trouver dans les logs et voir les détails de l’erreur), ouvrez le site web omettant Fastly en procédant comme suit :'
 exl-id: c0a4a9f8-a674-4cef-8088-e844594e6076
 feature: Cache, Cloud
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Par défaut, masque Fastly toutes les erreurs Adobe Commerce derrière l&#39;err
 
 Une fois que vous avez identifié l’erreur Adobe Commerce authentique et le numéro du rapport d’erreur, vous pouvez obtenir les détails dans le fichier de rapport d’erreur en procédant comme suit :
 
-1. SSH vers l’environnement concerné. Reportez-vous à la section [SSH to an environment](https://devdocs.magento.com/guides/v2.3/cloud/env/environments-ssh.html#ssh) dans notre documentation destinée aux développeurs.
+1. SSH vers l’environnement concerné. Reportez-vous à la section [SSH to an environment](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) dans notre documentation destinée aux développeurs.
 1. Recherchez le fichier `./var/report/{error_number}`.
 
 ## Ajoutez le domaine de l’application et l’adresse IP à votre fichier d’hôtes : étapes détaillées

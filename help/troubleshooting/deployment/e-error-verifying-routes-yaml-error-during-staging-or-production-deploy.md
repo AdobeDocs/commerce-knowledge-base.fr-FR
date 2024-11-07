@@ -4,7 +4,7 @@ description: '"Cet article fournit une solution à Adobe Commerce pour le probl�
 exl-id: 7f58591a-5581-46cd-984d-09ac2c0f3903
 feature: Deploy, Routes, Staging
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Pour résoudre le déploiement bloqué, mettez à jour le fichier `routes.yaml` 
 
 1. С omettez et poussez vos modifications pour redéployer votre projet.
 
-Pour obtenir des instructions détaillées sur la mise à jour de la configuration de l’itinéraire, voir [Cloud for Adobe Commerce > Configurer les itinéraires](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_routes.html) dans notre documentation destinée aux développeurs.
+Pour obtenir des instructions détaillées sur la mise à jour de la configuration de l’itinéraire, voir [Cloud for Adobe Commerce > Configurer les itinéraires](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml) dans notre documentation destinée aux développeurs.
 
 >[!NOTE]
 >

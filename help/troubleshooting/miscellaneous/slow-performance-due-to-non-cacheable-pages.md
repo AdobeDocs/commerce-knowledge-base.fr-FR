@@ -4,7 +4,7 @@ description: Cet article fournit des solutions pour augmenter les temps de charg
 exl-id: 7401d9bd-710c-4221-9c3d-d78042c1c1ad
 feature: Cache, Categories
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Ces pages sont les suivantes :
 
 Les termes pouvant être mis en cache ou non sont des termes utilisés pour indiquer si une page doit être mise en cache ou non. Par défaut, toutes les pages peuvent être mises en cache. Toutefois, si un bloc d’une mise en page est considéré comme impossible à mettre en cache, la page entière ne peut pas être mise en cache.
 
-La capture d’écran ci-dessous montre un bloc avec un paramètre `cacheable="false”` ** ** qui crée une page pouvant être mise en cache.
+La capture d’écran ci-dessous montre un bloc avec un paramètre `cacheable="false"` ** ** qui crée une page pouvant être mise en cache.
 
 ![non_cacheable_kb.png](assets/non_cacheable_kb.png)
 
@@ -46,15 +46,15 @@ La liste de pages suivante n’est pas mise en cache (les caches Fastly, Block e
 
 ### Solution
 
-Vérifiez si les fichiers spécifiés ci-dessus ont le paramètre `cacheable="false”` . Si tel est le cas, vérifiez si ce paramètre est nécessaire ou obligatoire.
+Vérifiez si les fichiers spécifiés ci-dessus ont le paramètre `cacheable="false"` . Si tel est le cas, vérifiez si ce paramètre est nécessaire ou obligatoire.
 
-* Si nécessaire, envisagez plutôt de déplacer des blocs non pouvant être mis en cache vers le [mécanisme de contenu privé](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/cache/page-caching/private-content.html?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=private%20co) .
-* Si ce n’est pas nécessaire, supprimez l’attribut `cacheable="false”` et videz le cache de mise en page.
+* Si nécessaire, envisagez plutôt de déplacer des blocs non pouvant être mis en cache vers le [mécanisme de contenu privé](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) .
+* Si ce n’est pas nécessaire, supprimez l’attribut `cacheable="false"` et videz le cache de mise en page.
 
 >[!NOTE]
 >
->Pour Adobe Commerce sur l’infrastructure cloud 2.4.1 et versions ultérieures, vous pouvez utiliser l’ [ outil d’analyse à l’échelle du site ](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html) pour vérifier automatiquement si votre cache de page complète n’est pas correctement configuré.
+>Pour Adobe Commerce sur l’infrastructure cloud 2.4.1 et versions ultérieures, vous pouvez utiliser l’ [ outil d’analyse à l’échelle du site ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) pour vérifier automatiquement si votre cache de page complète n’est pas correctement configuré.
 
 ### Lecture connexe
 
-[Présentation du cache Adobe Commerce](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/cache_for_frontdevs.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=cacheable%2) dans notre documentation destinée aux développeurs.
+[Présentation du cache Adobe Commerce](https://developer.adobe.com/commerce/frontend-core/guide/caching/) dans notre documentation destinée aux développeurs.

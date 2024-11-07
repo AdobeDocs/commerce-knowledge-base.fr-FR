@@ -4,7 +4,7 @@ description: Cet article suggère des solutions à la situation lorsque vous êt
 exl-id: 1b2c25d3-ca1b-4409-8d6b-378aa0952f94
 feature: Storage, Observability
 role: Developer
-source-git-commit: 9ee4145d5516a37fab1c092d539000627f242a93
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Options de solution :
 * Nettoyez le répertoire `var`.
 * Configurez une tâche cron pour effectuer le suivi de la taille du répertoire `var` et la nettoyer.
 * Allouez plus d’espace disque, si vous n’en avez pas. (Voir la section ci-dessous pour plus d’informations sur la façon de vérifier quelle est votre limite d’espace.)
-   * Pour le plan de démarrage, tous les environnements et les environnements d’intégration Pro, vous pouvez allouer l’espace disque si vous n’en avez pas utilisé, comme décrit dans la section [Gestion de l’espace disque : allocation de l’espace disque](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html#application-disk-space).
+   * Pour le plan de démarrage, tous les environnements et les environnements d’intégration Pro, vous pouvez allouer l’espace disque si vous n’en avez pas utilisé, comme décrit dans la section [Gestion de l’espace disque : allocation de l’espace disque](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#application-disk-space).
    * Pour les environnements d’évaluation et de production ProPlan, contactez le support pour allouer plus d’espace disque si vous n’en avez pas.
 * Si vous avez atteint votre limite d’espace et que vous rencontrez toujours des problèmes d’espace, envisagez d’acheter plus d’espace disque, contactez votre équipe de compte d’Adobe pour plus de détails.
 

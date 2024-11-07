@@ -2,7 +2,7 @@
 title: Accès aux services New Relic
 description: 'Cet article explique comment les clients disposant d’une autorisation de licence/abonnement suffisante peuvent accéder à certains services New Relic :'
 exl-id: c01af85e-0590-49e8-a1a0-b901f23c4431
-source-git-commit: e07ade849a4105b5e499b5282d75cb1b5321b6ea
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -28,8 +28,8 @@ Si certains clients ont reçu l’e-mail contenant un lien d’activation de New
 
 **Clients de l’architecture du plan de démarrage d’Adobe Commerce sur l’infrastructure cloud qui souhaitent utiliser New Relic :**
 
-Les clients d’architecture de démarrage ne bénéficient pas du service d’infrastructure New Relic dans le cadre de leur abonnement. Cependant, ils peuvent utiliser New Relic Application Performance Monitoring (APM) s’ils ajoutent une licence en suivant les étapes [Se connecter à New Relic](https://devdocs.magento.com/cloud/project/new-relic.html#connect-to-new-relic) de notre documentation destinée aux développeurs.
+Les clients d’architecture de démarrage ne bénéficient pas du service d’infrastructure New Relic dans le cadre de leur abonnement. Cependant, ils peuvent utiliser New Relic Application Performance Monitoring (APM) s’ils ajoutent une licence en suivant les étapes [Se connecter à New Relic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) de notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
-Pour en savoir plus sur les services New Relic, consultez la section [Performance d’investigation](https://devdocs.magento.com/cloud/project/new-relic.html#investigate-performance) de notre documentation destinée aux développeurs. Vous pouvez également consulter [Résolution des problèmes de performances à l’aide de New Relic sur Adobe Commerce sur l’infrastructure cloud](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md) dans notre base de connaissances de support.
+Pour en savoir plus sur les services New Relic, consultez la section [Performance d’investigation](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) de notre documentation destinée aux développeurs. Vous pouvez également consulter [Résolution des problèmes de performances à l’aide de New Relic sur Adobe Commerce sur l’infrastructure cloud](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md) dans notre base de connaissances de support.

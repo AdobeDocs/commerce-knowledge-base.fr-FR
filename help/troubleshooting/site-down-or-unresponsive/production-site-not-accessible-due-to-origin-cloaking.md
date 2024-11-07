@@ -4,7 +4,7 @@ description: Cet article fournit une solution lorsque votre site d’évaluation
 exl-id: 4412d744-3066-4f78-bc45-8149614ce455
 feature: Products
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Le cloaking d’origine est une fonctionnalité de sécurité qui permet à Adob
 ## Solution
 
 * Si votre site cloud est actif, passez à https://mydomain.com/.
-* Si vous disposez d’un site actif (non cloud), à l’aide du domaine https://mydomain.com/, configurez un sous-domaine `mcprod.mydomain.com` et remplacez par mettre à jour votre **URL de base** vers *https://mcprod.mydomain.com*, puis [pointez le DNS vers Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings).
+* Si vous disposez d’un site actif (non cloud), à l’aide du domaine https://mydomain.com/, configurez un sous-domaine `mcprod.mydomain.com` et remplacez par mettre à jour votre **URL de base** vers *https://mcprod.mydomain.com*, puis [pointez le DNS vers Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings).
 
 ## Lecture connexe
 

@@ -4,7 +4,7 @@ description: Cet article fournit un correctif pour le problème lors de la conne
 exl-id: a91a7a51-7cc4-4910-a9de-3a212788663f
 feature: Admin Workspace, Checkout, Orders, Services
 role: Developer
-source-git-commit: aa8c32e3524d669daea7bcf8bc63ed9f8ed16ffa
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -80,6 +80,6 @@ Après avoir appliqué le correctif avec le correctif, la solution n’est plus 
 
 ## Adobe Commerce sur l’infrastructure cloud 2.2.0 : utilisez les outils CEE v2002.0.8 ou version ultérieure {#h_64593789291526919876198}
 
-Le package de script de déploiement [CEE-Outils](https://devdocs.magento.com/cloud/project/ece-tools-update.html) avec les versions 2002.0.3 à 2002.0.7 [ applique automatiquement la solution de contournement, en définissant `disable_locking` sur `1`. ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) Cela désactive le mécanisme de verrouillage de session pour Adobe Commerce 2.2.0, sur lequel le problème d’origine ne se produit pas.
+Le package de script de déploiement [CEE-Outils](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) avec les versions 2002.0.3 à 2002.0.7 [ applique automatiquement la solution de contournement, en définissant `disable_locking` sur `1`. ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) Cela désactive le mécanisme de verrouillage de session pour Adobe Commerce 2.2.0, sur lequel le problème d’origine ne se produit pas.
 
 Si vous exécutez Adobe Commerce sur l’infrastructure de cloud 2.2.0, mettez à niveau les outils de CEE vers la version 2002.0.8 de la version ultérieure. Vous pouvez également envisager de mettre à niveau votre Adobe Commerce sur l’infrastructure cloud vers la version 2.2.2 ou ultérieure.

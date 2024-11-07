@@ -4,7 +4,7 @@ description: L’article fournit une solution lorsque vous avez configuré corre
 exl-id: 629b1247-9282-49f9-ada3-a804ddbaa0f5
 feature: Configuration
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -42,8 +42,8 @@ L’indexation par les moteurs de recherche est désactivée.
 
 ## Solution
 
-Activez l’indexation par moteur de recherche. Voir [Configuration de l’indexation par moteur de recherche](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html#configure-indexing-by-search-engine) dans notre documentation destinée aux développeurs.
+Activez l’indexation par moteur de recherche. Voir [Configuration de l’indexation par moteur de recherche](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap#configure-indexing-by-search-engine) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
-* [Ajoutez des robots de moteur de recherche et de carte de site](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) dans notre documentation destinée aux développeurs.
+* [Ajoutez des robots de moteur de recherche et de carte de site](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) dans notre documentation destinée aux développeurs.

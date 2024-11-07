@@ -3,7 +3,7 @@ title: Comment appliquer un correctif de compositeur fourni par Adobe
 description: Cet article explique comment appliquer un correctif de compositeur pour Adobe Commerce sur site, Adobe Commerce sur l’infrastructure cloud et Magento Open Source.
 exl-id: a9301ad8-1d4b-49f5-b679-758624928219
 feature: Cache
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Cet article explique comment appliquer un correctif de compositeur pour Adobe Co
    git push origin
    ```
 
-Pour plus d’informations sur l’application de correctifs aux projets Cloud, voir [Application de correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+Pour plus d’informations sur l’application de correctifs aux projets Cloud, voir [Application de correctifs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs.
 
 ### Comment appliquer un correctif de compositeur pour Adobe Commerce sur site et Magento Open Source {#commerce}
 

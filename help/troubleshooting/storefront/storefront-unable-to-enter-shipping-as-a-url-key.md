@@ -4,7 +4,7 @@ description: Cet article fournit une solution au problème lorsque vous ne pouve
 exl-id: df19b597-f615-4b19-82c1-59cc179fa720
 feature: Marketing Tools, Shipping/Delivery, Storefront
 role: Admin
-source-git-commit: 1ce963142a261a17e2b42f79dd567c8484ec5b3e
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.4.x
 
 ## Problème
 
-Vous ne pouvez pas enregistrer une page CMS avec le terme _shipping_ dans la clé d’URL.
+Vous ne pouvez pas enregistrer une page CMS avec le terme _shipping_ dans la clé URL.
 
 <u>Étapes à reproduire</u> :
 
@@ -122,5 +122,5 @@ En outre, évitez d’utiliser ces mots-clés étiquetés comme mots-clés *rés
 
 ## Lecture connexe
 
-* [URL de réécriture](https://docs.magento.com/user-guide/marketing/url-rewrite.html) dans notre Guide de l’utilisateur de marchandisage et de promotions.
-* [Bonnes pratiques d’optimisation pour les moteurs de recherche](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) dans notre Guide de l’utilisateur de marchandisage et de promotions.
+* [URL de réécriture](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) dans notre Guide de l’utilisateur de marchandisage et de promotions.
+* [Bonnes pratiques d’optimisation pour les moteurs de recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) dans notre Guide de l’utilisateur de marchandisage et de promotions.

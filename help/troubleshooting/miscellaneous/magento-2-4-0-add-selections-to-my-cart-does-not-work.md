@@ -4,7 +4,7 @@ description: Cet article fournit une solution à un problème connu lié au bout
 exl-id: b0830ec2-2aea-4afb-8d02-e9c8f54283be
 feature: Orders, Shopping Cart
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Le bouton **Ajouter des sélections à mon panier** situé en haut de la page fo
 
 ## Lecture connexe
 
-* [MerchDocs&#39; Gestion d’un panier](https://docs.magento.com/user-guide/sales/shopping-assisted-cart-manage.html) dans notre guide d’utilisation.
+* [MerchDocs&#39; Gestion d’un panier](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) dans notre guide d’utilisation.
 * [Problème connu d’Adobe Commerce 2.4.0 : les données de message brutes s’affichent sur storefront](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md) dans notre base de connaissances de support.
 * [Problème connu d’Adobe Commerce 2.4.0 : les taux de taxe d’exportation ne fonctionnent pas](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md) dans notre base de connaissances de prise en charge.
 * [Problème connu d’Adobe Commerce 2.4.0 : les méthodes de paiement du Braintree ne s’affichent pas dans le passage en caisse multi-adresses](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md) dans notre base de connaissances de support.

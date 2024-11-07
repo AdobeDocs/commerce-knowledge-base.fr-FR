@@ -3,7 +3,7 @@ title: Elasticsearch 5 est configuré, mais la page de recherche ne se charge pa
 description: "Cette rubrique décrit comment résoudre le problème avec Elasticsearch 5, où la page de recherche ne se charge pas, et l’exception similaire à la suivante est générée :"
 exl-id: f5fa8144-4e7c-45ce-89d0-a8367e91d6db
 feature: Cache
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Le résultat contiendra une liste des attributs utilisés pour la navigation par
 Pour résoudre le problème, vous devez définir `is_filterable` (utilisé dans la navigation par couches) et `filterable_in_search` (utilisé dans la navigation par couches dans les résultats de recherche) sur &quot;0&quot; (non utilisé). Pour ce faire, procédez comme suit :
 
 1. Créez une sauvegarde de base de données.
-1. Utilisez un outil de base de données tel que [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande pour exécuter la requête SQL suivante :
+1. Utilisez un outil de base de données tel que [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande pour exécuter la requête SQL suivante :
 
    ```sql
    UPDATE catalog_eav_attribute AS cea

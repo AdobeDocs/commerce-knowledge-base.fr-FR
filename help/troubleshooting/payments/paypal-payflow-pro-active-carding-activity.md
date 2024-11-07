@@ -4,7 +4,7 @@ description: MISE À JOUR 2 avril 2019
 exl-id: 9fe73788-5b67-445a-9b0d-86489125d271
 feature: Cache, Orders, Payments
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '665'
 ht-degree: 0%
@@ -119,8 +119,8 @@ bin/magento cache:clean
 
 Après avoir installé le package, configurez Google reCAPTCHA (recommandé) ou CAPTCHA comme décrit dans la documentation suivante :
 
-* [Google reCAPTCHA](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html) dans notre guide d’utilisation.
-* [CAPTCHA](https://docs.magento.com/user-guide/stores/security-captcha.html) dans notre guide d’utilisation.
+* [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) dans notre guide d’utilisation.
+* [CAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-captcha) dans notre guide d’utilisation.
 
 La nouvelle option de formulaire de passage en caisse est la suivante :
 

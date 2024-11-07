@@ -4,7 +4,7 @@ description: Cet article fournit une solution pour les images qui ne s’affiche
 exl-id: 7e6bcebd-edff-437a-9103-2743443d2ed9
 feature: Cache, Categories, Deploy, Storefront
 role: Admin
-source-git-commit: c4d586ca3980acbe4f33c5f2616ef7f3051bc7d3
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Si cela se produit, vous pouvez utiliser la commande du Magento pour régénére
 
 Pour ce faire, vous avez besoin des informations SSH et de l’URL du magasin disponibles via la [console cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html).
 
-1. SSH à votre projet qui était une source pour le [vidage de base de données](/help/how-to/general/create-database-dump-on-cloud.md), comme décrit dans [SSH to environment](https://devdocs.magento.com/guides/v2.3/cloud/env/environments-ssh.html#ssh) dans notre documentation destinée aux développeurs.
+1. SSH à votre projet qui était une source pour le [vidage de base de données](/help/how-to/general/create-database-dump-on-cloud.md), comme décrit dans [SSH to environment](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) dans notre documentation destinée aux développeurs.
 1. Régénérez le cache d’image en exécutant :
 
    ```bash

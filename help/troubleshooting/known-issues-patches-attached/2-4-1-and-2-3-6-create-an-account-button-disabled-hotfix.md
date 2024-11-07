@@ -4,7 +4,7 @@ description: Cet article fournit un correctif pour le problème lorsque vous ave
 exl-id: e6e65ede-8156-4e2b-b369-b18395bb3dbf
 feature: Customer Service
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -57,4 +57,4 @@ Voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-
 ## Lecture connexe
 
 * [GitHub Adobe Commerce > Envoi d’un formulaire de compte de création non valide laisse le bouton d’envoi désactivé](https://github.com/magento/magento2/issues/30513)
-* [Guide de l’utilisateur d’Adobe Commerce > Prise en main > Création d’un compte](https://docs.magento.com/user-guide/magento/magento-account-create.html)
+* [Guide de l’utilisateur d’Adobe Commerce > Prise en main > Création d’un compte](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create)

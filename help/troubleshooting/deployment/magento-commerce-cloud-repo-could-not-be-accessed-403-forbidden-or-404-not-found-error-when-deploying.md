@@ -4,7 +4,7 @@ description: "Cet article explique comment résoudre l’erreur de déploiement 
 exl-id: 2f72d80a-05b2-4908-8fa8-61d06885ed07
 feature: Cloud, Deploy, Paas, Variables
 role: Developer
-source-git-commit: 9ca95444aa785191e4c8bf1603773f3430414797
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Si votre licence a été précédemment révoquée en raison de problèmes de pa
 
 ### 2. Ajoutez la valeur keys dans la variable env:COMPOSER\_AUTH et vérifiez si les mêmes clés sont spécifiées dans auth.json.
 
-Consultez les instructions et les informations connexes dans [Préparation de votre système existant](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#auth-json) et [Ajout de clés d’authentification](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#add-authentication-keys) dans notre documentation destinée aux développeurs.
+Consultez les instructions et les informations connexes dans [Préparation de votre système existant](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) et [Ajout de clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) dans notre documentation destinée aux développeurs.
 
 ### 3. Mise à jour ou suppression du fichier auth.json
 

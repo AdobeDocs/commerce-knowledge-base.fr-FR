@@ -4,7 +4,7 @@ description: Cet article fournit une solution au problème lorsque vous ne pouve
 exl-id: 3cbe1e6c-fc73-4331-add7-1ebcb28a4580
 feature: Data Import/Export, Products
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -50,5 +50,5 @@ L’attribut d’état du produit a été renommé dans le fichier CSV. Il s’a
 
 ## Lecture connexe
 
-* [Utilisation de fichiers CSV](https://docs.magento.com/user-guide/system/data-csv.html) dans notre guide d’utilisation.
-* [Référence des attributs d’exportation de produits](https://docs.magento.com/user-guide/system/data-attributes-product.html) dans notre guide d’utilisation.
+* [Utilisation de fichiers CSV](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-csv) dans notre guide d’utilisation.
+* [Référence des attributs d’exportation de produits](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product) dans notre guide d’utilisation.

@@ -4,7 +4,7 @@ description: '''Cet article fournit les solutions possibles au problème de conn
 exl-id: 29df2ed2-ff4a-4f1a-bdb7-1160416cda00
 feature: Admin Workspace
 role: Developer
-source-git-commit: 3f205b1d755bda7056f47bf1e1d036feb47ebadd
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Vérifiez l’enregistrement de session créé dans la table `admin_user_session
 
 ### Modification de l’enregistrement de session
 
-Essayez de modifier le stockage de la session. Utilisez les informations de l’article [Comment localiser vos fichiers de session](https://devdocs.magento.com/guides/v2.3/config-guide/sessions.html) dans notre documentation destinée aux développeurs pour savoir où est stockée votre session et modifiez-la en modifiant le fichier `app/etc/env.php`.
+Essayez de modifier le stockage de la session. Utilisez les informations de l’article [Comment localiser vos fichiers de session](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) dans notre documentation destinée aux développeurs pour savoir où est stockée votre session et modifiez-la en modifiant le fichier `app/etc/env.php`.
 
 Par exemple, pour commencer à stocker une session dans le système de fichiers, modifiez la section `'session'` comme suit :
 
@@ -69,7 +69,7 @@ Exécutez la commande `bin/magento app:config:import` pour importer des données
 
 ## Lecture connexe
 
-* [Importer des données à partir de fichiers de configuration](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-config-mgmt-import.html) dans notre documentation destinée aux développeurs
+* [Importer des données à partir de fichiers de configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration) dans notre documentation destinée aux développeurs
 * [Configurez [!DNL Redis]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) dans notre documentation destinée aux développeurs
 * [Rediriger vers le formulaire de connexion [!UICONTROL Commerce Admin] avec l’erreur &quot;Votre compte est temporairement désactivé&quot;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) dans notre base de connaissances de support
 * [ Redirigez-vous vers le formulaire de connexion sans erreur, lorsque vous essayez de vous connecter à [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) dans notre base de connaissances de support.

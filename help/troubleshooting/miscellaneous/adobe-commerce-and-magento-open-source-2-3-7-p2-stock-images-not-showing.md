@@ -4,7 +4,7 @@ description: Cet article fournit une solution au problème où les images de sto
 exl-id: 84488d87-095f-4739-858f-19a52d6e5822
 feature: Categories, Orders
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -50,4 +50,4 @@ Supprimez les images Adobe Stock téléchargées des dossiers `pub/media` et `pu
 
 ## Lecture connexe
 
-* [Stockage multimédia](https://docs.magento.com/user-guide/v2.3/cms/media-storage.html) dans notre guide d’utilisation.
+* [Stockage multimédia](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/media-storage) dans notre guide d’utilisation.

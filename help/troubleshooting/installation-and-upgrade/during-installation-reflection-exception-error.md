@@ -4,7 +4,7 @@ description: Cet article fournit une solution à l’erreur Reflection Exception
 exl-id: aed5f297-1339-4171-9392-04b3f93277ee
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Pendant l’installation, un message similaire à celui-ci s’affiche :
 
 Effacez tous les répertoires et fichiers sous le sous-répertoire Adobe Commerce `var` et réinstallez le logiciel Adobe Commerce.
 
-En tant que [ propriétaire du système de fichiers Adobe Commerce ](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) ou utilisateur disposant de droits `root`, saisissez les commandes suivantes :
+En tant que [ propriétaire du système de fichiers Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) ou utilisateur disposant de droits `root`, saisissez les commandes suivantes :
 
 ```bash
 $ cd <your Magento install directory>/var

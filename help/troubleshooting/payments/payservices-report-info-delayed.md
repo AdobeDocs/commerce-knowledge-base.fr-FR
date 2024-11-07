@@ -4,7 +4,7 @@ description: Cet article explique pourquoi les données de rapport dans les serv
 exl-id: 2f3249d1-be12-45bc-aa73-bef9766509ae
 feature: Orders, Payments
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Une fois que vous avez facturé (capturé) une commande ou émis un avoir pour u
 
 Conditions préalables : une commande est passée à l’aide de la fonctionnalité Services de paiement.
 
-1. Une commande est [facturée](https://docs.magento.com/user-guide/sales/invoice-create.html) (ou [annulée](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order) ou [remboursée par l&#39;intermédiaire d&#39;une note de crédit](https://docs.magento.com/user-guide/sales/credit-memos.html)) dans le [Admin](https://docs.magento.com/user-guide/stores/admin.html).
+1. Une commande est [facturée](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) (ou [annulée](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order) ou [remboursée par l&#39;intermédiaire d&#39;une note de crédit](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos)) dans le [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin).
 1. Accédez au rapport État du paiement de la commande pour afficher des informations sur cette commande.
 1. L’état est `AUTHORIZED`, qui est l’état de la commande avant la facturation ou toute autre action de commande.
 
@@ -37,7 +37,7 @@ Conditions préalables : une commande est passée à l’aide de la fonctionnali
 
 >[!NOTE]
 >
->Il ne s’agit que d’un cas d’utilisation courant. Il peut y avoir d’autres cas d’utilisation lorsqu’une [action de commande](https://docs.magento.com/user-guide/sales/order-actions.html) se produit et que les données ne sont pas immédiatement disponibles dans le rapport applicable.
+>Il ne s’agit que d’un cas d’utilisation courant. Il peut y avoir d’autres cas d’utilisation lorsqu’une [action de commande](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders#actions) se produit et que les données ne sont pas immédiatement disponibles dans le rapport applicable.
 
 <u>Résultat attendu</u> :
 Les données du rapport sont renseignées immédiatement après qu’une action a été effectuée sur une commande.

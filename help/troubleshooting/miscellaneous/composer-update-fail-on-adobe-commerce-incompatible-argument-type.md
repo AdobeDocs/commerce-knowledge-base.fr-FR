@@ -4,7 +4,7 @@ description: Cet article fournit une solution pour lorsque le déploiement est b
 exl-id: ba2dd229-29f6-43e2-9467-8bd1bf59e6ef
 feature: Console
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Tous les commerçants sur site Adobe Commerce 2.3.5+ doivent exécuter la comman
 
 **Comment résoudre le problème sur Adobe Commerce sur l’infrastructure cloud :**
 
-Exécutez les commandes ci-dessus ou effectuez une mise à niveau vers la dernière version des outils de la CEE (ece-tools: 2002.1.7), qui sera disponible le jeudi 29 juillet. Pour les étapes, reportez-vous à la section [Cloud pour Adobe Commerce > Mise à jour des outils de mise à jour version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) dans notre documentation destinée aux développeurs.
+Exécutez les commandes ci-dessus ou effectuez une mise à niveau vers la dernière version des outils de la CEE (ece-tools: 2002.1.7), qui sera disponible le jeudi 29 juillet. Pour les étapes, reportez-vous à la section [Cloud pour Adobe Commerce > Mise à jour des outils de mise à jour version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) dans notre documentation destinée aux développeurs.
 
 Le correctif complet sera publié dans Adobe Commerce (toutes les méthodes de déploiement) 2.4.4.
 

@@ -4,7 +4,7 @@ description: Cet article fournit une solution au problème lorsque les bons de r
 exl-id: 9c81de40-65a3-422d-9053-3c894b863a0a
 feature: Orders
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -62,8 +62,8 @@ Ajoutez le consommateur `sales.rule.update.coupon.usage` au fichier `app/etc/env
 ...
 ```
 
-Pour obtenir des instructions détaillées, reportez-vous à la section [Gestion des files d’attente de messages > Configuration](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html#configuration) de notre documentation destinée aux développeurs.
+Pour obtenir des instructions détaillées, reportez-vous à la section [Gestion des files d’attente de messages > Configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues#configuration) de notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
-[Présentation des files d’attente de messages](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html) dans notre documentation destinée aux développeurs.
+[Présentation des files d’attente de messages](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework) dans notre documentation destinée aux développeurs.

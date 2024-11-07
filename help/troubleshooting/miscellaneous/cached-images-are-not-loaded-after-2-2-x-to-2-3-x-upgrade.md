@@ -4,7 +4,7 @@ description: Cet article fournit la solution au problème lié au fait que les i
 exl-id: 3e6bd5aa-bd5d-4880-8b78-64f280647abe
 feature: Cache, Upgrade
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
@@ -45,6 +45,6 @@ Le problème est dû à une configuration Nginx incorrecte définie dans `.magen
    * Intégration : corrigez vous-même le fichier et effectuez les modifications.
    * Évaluation et production : corrigez le fichier vous-même, envoyez les modifications et créez un [ticket de support Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour l’appliquer.
 
-1. Activez l’optimisation d’image Fastly dans l’administrateur Commerce (la configuration Fastly doit être effectuée au préalable), comme décrit dans la section <https://devdocs.magento.com/guides/v2.3/cloud/cdn/fastly-image-optimization.html>.
+1. Activez l’optimisation d’image Fastly dans l’administrateur Commerce (la configuration Fastly doit être effectuée au préalable), comme décrit dans la section <https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization>.
 
 Si la configuration est correcte, mais que vous rencontrez toujours le problème, continuez l’enquête ou contactez le [support Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).

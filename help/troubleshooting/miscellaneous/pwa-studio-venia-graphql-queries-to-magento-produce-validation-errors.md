@@ -4,7 +4,7 @@ description: Cet article fournit des recommandations sur la manière de résoudr
 exl-id: ba268945-2a10-4af5-8089-cde21f0687bd
 feature: GraphQL
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -42,9 +42,9 @@ Un rapport de compatibilité s’affiche alors. Si vous avez des incompatibilit�
 Pour obtenir des instructions sur la mise à niveau, reportez-vous à la documentation suivante :
 
 * Pour les mises à niveau de PWA Studio, recherchez la section &quot;Mise à niveau à partir d’une version précédente&quot; des [notes de mise à jour du PWA](https://github.com/magento/pwa-studio/releases/) pour la version vers laquelle vous devez effectuer la mise à niveau.
-* [Mettez à niveau Adobe Commerce sur la version d’infrastructure cloud](https://devdocs.magento.com/cloud/project/project-upgrade.html) dans notre documentation destinée aux développeurs
-* [Mettez à niveau Adobe Commerce sur site (installé à l’aide de &quot;création-projet de compositeur&quot; ou d’une archive)](https://devdocs.magento.com/guides/v2.3/comp-mgr/cli/cli-upgrade.html) dans notre documentation destinée aux développeurs
-* [Mettez à niveau Adobe Commerce sur site (installé par le clonage du référentiel Adobe Commerce)](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/dev_update-magento.html) dans notre documentation destinée aux développeurs
+* [Mettez à niveau Adobe Commerce sur la version d’infrastructure cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) dans notre documentation destinée aux développeurs
+* [Mettez à niveau Adobe Commerce sur site (installé à l’aide de &quot;création-projet de compositeur&quot; ou d’une archive)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) dans notre documentation destinée aux développeurs
+* [Mettez à niveau Adobe Commerce sur site (installé par le clonage du référentiel Adobe Commerce)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/developer/git-installs) dans notre documentation destinée aux développeurs
 
 ## Lecture connexe
 

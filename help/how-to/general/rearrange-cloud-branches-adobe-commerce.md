@@ -3,7 +3,7 @@ title: Réorganisation des branches cloud sur Adobe Commerce
 description: Cet article décrit les étapes à suivre pour réorganiser les branches cloud sur Adobe Commerce si elles ne sont pas organisées selon la bonne hiérarchie. Si les branches ne sont pas organisées dans la bonne hiérarchie, vous ne pourrez pas effectuer de fusion vers la branche parente correcte ; elle sera dirigée vers la branche parente existante.
 exl-id: 4fc0de96-da66-4634-a38a-6a1536855f8f
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Pour réorganiser les branches cloud :
 1. Exécutez la commande suivante pour les branches à déplacer :
    `magento-cloud environment:info -e <branch to move> parent <target parent>`
 
-Remarque : vous pouvez spécifier la branche parente lors de la création d’une nouvelle branche. Pour les étapes, reportez-vous à la section [Prise en main de la création de branches](https://devdocs.magento.com/cloud/env/environments-start.html#getstarted) dans notre documentation destinée aux développeurs.
+Remarque : vous pouvez spécifier la branche parente lors de la création d’une nouvelle branche. Pour les étapes, reportez-vous à la section [Prise en main de la création de branches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) dans notre documentation destinée aux développeurs.
 
 Vous pouvez créer une branche d’environnement à l’aide de la commande d’environnement magento-cloud `branch <environment-name> <parent-environment-ID>`.
 
@@ -42,4 +42,4 @@ La création et l’activation d’une nouvelle branche d’environnement peuven
 
 ## Lecture connexe
 
-[Gérez les branches avec le  [!DNL CLI]](https://devdocs.magento.com/cloud/env/environments-start.html) dans notre documentation destinée aux développeurs.
+[Gérez les branches avec le  [!DNL CLI]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) dans notre documentation destinée aux développeurs.

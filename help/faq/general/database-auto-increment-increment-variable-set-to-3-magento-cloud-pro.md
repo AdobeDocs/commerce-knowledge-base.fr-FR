@@ -3,7 +3,7 @@ title: Variable d’incrément auto_incrémentation de la base de données défi
 description: Il s’agit du comportement attendu pour les solutions d’architecture de plan Adobe Commerce sur l’infrastructure cloud Pro en raison de l’architecture à 3 noeuds et il ne peut pas être modifié.
 exl-id: ea478cbc-2dc2-41c9-8ea7-7e2f308e5948
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -31,5 +31,5 @@ Par exemple, si la principale sélectionnée est le noeud 1 où `auto_increment_
 
 Consultez la documentation destinée aux développeurs :
 
-* [Cloud pour Adobe Commerce > Architecture Pro > Sauvegarde et reprise après sinistre](https://devdocs.magento.com/cloud/architecture/pro-architecture.html#backup-and-disaster-recovery)
-* [Cloud pour Adobe Commerce > Installer les prérequis : base de données](https://devdocs.magento.com/cloud/before/before-workspace-magento-prereqs.html#database)
+* [Cloud pour Adobe Commerce > Architecture Pro > Sauvegarde et reprise après sinistre](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Cloud pour Adobe Commerce > Installer les prérequis : base de données](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview)

@@ -3,7 +3,7 @@ title: Elasticsearch dans le dépannage d’Adobe Commerce
 description: Les problèmes Elasticsearch sur Adobe Commerce peuvent être résolus à l’aide de l’outil de dépannage Elasticsearch. Cliquez sur chaque question pour afficher la réponse à chaque étape de l’outil de dépannage.
 exl-id: acae0da0-2918-4021-9fbe-c138940c5a72
 feature: Categories
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -100,7 +100,7 @@ b. NO - Si l’état de la recherche catalogue est _Réindexation requise_ exéc
 
 +++**`.yaml`fichier récemment mis à jour ?**
 
-a. OUI - Vérifiez la configuration de l’Elasticsearch `.yaml` en vous référant à DevDocs [Configuration de l’Elasticsearch : pour activer l’Elasticsearch](https://devdocs.magento.com/cloud/project/project-conf-files_services-elastic.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=elastic%20search%20yaml).\
+a. OUI - Vérifiez la configuration de l’Elasticsearch `.yaml` en vous référant à DevDocs [Configuration de l’Elasticsearch : pour activer l’Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch).\
 b. NO - [Envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++
@@ -131,7 +131,7 @@ b. NO - Passez à l&#39;[étape 12](#step-12).
 
 +++**Utilisation du stockage > 85 % ?**
 
-a. OUI - Vous devez augmenter le stockage disponible. Voir DevDocs[Configuration de l’Elasticsearch : pour activer l’Elasticsearch](https://devdocs.magento.com/cloud/project/project-conf-files_services-elastic.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=elastic%20search%20yaml). Exécutez ensuite : `localhost:9200/_cat/allocation?v` (si vous utilisez des environnements d’évaluation ou de production Pro). Si vous utilisez l’un des environnements d’intégration (qui inclut toutes les branches de Starter), exécutez : `elasticsearch.internal:9200/_cat/allocation?v`. Passez à [Étape 11](#step-11).\
+a. OUI - Vous devez augmenter le stockage disponible. Voir DevDocs[Configuration de l’Elasticsearch : pour activer l’Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch). Exécutez ensuite : `localhost:9200/_cat/allocation?v` (si vous utilisez des environnements d’évaluation ou de production Pro). Si vous utilisez l’un des environnements d’intégration (qui inclut toutes les branches de Starter), exécutez : `elasticsearch.internal:9200/_cat/allocation?v`. Passez à [Étape 11](#step-11).\
 b. NO - [Envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++

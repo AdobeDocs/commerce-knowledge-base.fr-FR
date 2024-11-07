@@ -4,7 +4,7 @@ description: Cet article fournit des solutions pour éviter les retards ou les i
 exl-id: ac52c808-299f-4d08-902f-f87db1fa7ca6
 feature: Catalog Management, Categories, Services, Storefront
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -26,13 +26,13 @@ Les modifications que vous effectuez dans la base de données ne sont pas réper
 
 ## Cause
 
-Si vos indexeurs sont [ configurés pour une mise à jour par planning](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers), le problème peut être dû à une ou plusieurs tables dont les logs de modification sont trop volumineux ou à des déclencheurs MySQL non configurés.
+Si vos indexeurs sont [ configurés pour une mise à jour par planning](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers), le problème peut être dû à une ou plusieurs tables dont les logs de modification sont trop volumineux ou à des déclencheurs MySQL non configurés.
 
 ### Tables de logs de modifications surdimensionnées
 
 Les tables de journal des modifications deviennent aussi volumineuses si la tâche cron `indexer_update_all_views` n’est pas terminée plusieurs fois avec succès.
 
-Les tables de journal des modifications sont les tables de base de données dans lesquelles les modifications apportées aux entités sont suivies. Un enregistrement est stocké dans une table de journal des modifications tant que la modification n’est pas appliquée, ce qui est effectué par la tâche cron `indexer_update_all_views`. Il existe plusieurs tables de journal des modifications dans une base de données Adobe Commerce. Elles sont nommées selon le modèle suivant : INDEXER\_TABLE\_NAME + &#39;\_cl&#39;, par exemple `catalog_category_product_cl`, `catalog_product_category_cl`. Vous trouverez plus d’informations sur le suivi des modifications dans la base de données dans l’article [Présentation de l’indexation > Aperçu](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) de notre documentation destinée aux développeurs.
+Les tables de journal des modifications sont les tables de base de données dans lesquelles les modifications apportées aux entités sont suivies. Un enregistrement est stocké dans une table de journal des modifications tant que la modification n’est pas appliquée, ce qui est effectué par la tâche cron `indexer_update_all_views`. Il existe plusieurs tables de journal des modifications dans une base de données Adobe Commerce. Elles sont nommées selon le modèle suivant : INDEXER\_TABLE\_NAME + &#39;\_cl&#39;, par exemple `catalog_category_product_cl`, `catalog_product_category_cl`. Vous trouverez plus d’informations sur le suivi des modifications dans la base de données dans l’article [Présentation de l’indexation > Aperçu](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) de notre documentation destinée aux développeurs.
 
 ### [!DNL MySQL] déclencheurs de base de données non configurés
 

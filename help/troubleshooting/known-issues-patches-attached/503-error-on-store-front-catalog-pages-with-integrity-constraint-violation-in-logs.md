@@ -4,7 +4,7 @@ description: Cet article fournit un correctif pour le problème connu d’Adobe 
 exl-id: ad363744-756a-48b9-ae11-58642e0ca6a4
 feature: Catalog Management, Logs
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Cet article fournit un correctif comme solution de contournement, mais le problème a été corrigé de manière permanente dans Adobe Commerce sur la version 2.3.3 de l’infrastructure cloud. Il est recommandé d’effectuer la mise à niveau vers la version 2.3.3. Suivez les étapes de la [mise à niveau d’Adobe Commerce version](https://devdocs.magento.com/cloud/project/project-upgrade.html) dans notre documentation destinée aux développeurs.
+>Cet article fournit un correctif comme solution de contournement, mais le problème a été corrigé de manière permanente dans Adobe Commerce sur la version 2.3.3 de l’infrastructure cloud. Il est recommandé d’effectuer la mise à niveau vers la version 2.3.3. Suivez les étapes de la [mise à niveau d’Adobe Commerce version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) dans notre documentation destinée aux développeurs.
 
 Cet article fournit un correctif pour le problème connu d’Adobe Commerce sur l’infrastructure cloud 2.2.0 lié à l’inaccessibilité des pages du catalogue frontal, avec le message d’erreur similaire au suivant dans le journal : *Violation de contrainte d’intégrité : 1062 Entrée en double &#39;%entry%&#39; pour la clé &#39;PRINCIPAL&#39;, la requête était : INSERT DANS \`search\_tmp\%number%*.
 
@@ -78,6 +78,6 @@ Pour obtenir des instructions, voir [Comment appliquer un correctif de composite
 
 * [Emplacement des fichiers journaux pour Adobe Commerce sur l’architecture de plan de démarrage de l’infrastructure cloud](/help/how-to/general/log-locations-directories-for-starter-plan.md) dans notre base de connaissances de support.
 * [Emplacement des fichiers journaux pour Adobe Commerce sur l’infrastructure cloud Architecture de plan Pro](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) dans notre base de connaissances de support.
-* [Emplacement des fichiers journaux pour Adobe Commerce](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) dans notre documentation destinée aux développeurs.
+* [Emplacement des fichiers journaux pour Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) dans notre documentation destinée aux développeurs.
 
 ## Fichiers attachés

@@ -4,7 +4,7 @@ description: '"Cet article fournit les solutions possibles au problème de conne
 exl-id: 1c7ffa1c-1fb1-4f69-9534-77d1e119318a
 feature: Admin Workspace, Customer Service
 role: Developer
-source-git-commit: f87263cde5aa001f78abc368c949ce150feecb91
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Vous êtes redirigé vers le formulaire de connexion, avec le message d’erreur
 ## Solution
 
 1. Créez une sauvegarde de base de données.
-1. Utilisez un outil de base de données tel que [[!DNL phpMyAdmin]](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande. Dans la table de base de données `admin_user`, pour votre enregistrement utilisateur administrateur, vérifiez si `is_active` est défini sur &quot;`1`&quot; et si `lock_expires` est `NULL`. Réinitialisez ces valeurs, le cas échéant.
+1. Utilisez un outil de base de données tel que [[!DNL phpMyAdmin]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande. Dans la table de base de données `admin_user`, pour votre enregistrement utilisateur administrateur, vérifiez si `is_active` est défini sur &quot;`1`&quot; et si `lock_expires` est `NULL`. Réinitialisez ces valeurs, le cas échéant.
 
 ## Lecture connexe
 

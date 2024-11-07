@@ -4,7 +4,7 @@ description: Cet article fournit une solution pour lorsque vous ne parvenez pas 
 exl-id: e45dc88a-2da0-4524-bd61-6634cfebb169
 feature: Admin Workspace, Marketing Tools
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -44,7 +44,7 @@ La règle est définie sur inactive.
 
 ## Cause
 
-Ce problème est lié à la nouvelle fonctionnalité introduite récemment qui a eu un impact sur la taille de session maximale. Voir [Gestion de session](https://docs.magento.com/user-guide/stores/security-session-management.html) dans notre documentation destinée aux développeurs.
+Ce problème est lié à la nouvelle fonctionnalité introduite récemment qui a eu un impact sur la taille de session maximale. Voir [Gestion de session](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) dans notre documentation destinée aux développeurs.
 
 ## Solution
 
@@ -52,4 +52,4 @@ Augmentez la valeur &quot;Taille de session maximale&quot; dans (**Magasins** > 
 
 ## Lecture connexe
 
-* [Menu marketing](https://docs.magento.com/user-guide/marketing/marketing-menu.html) dans notre guide d’utilisation.
+* [Menu marketing](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/marketing-menu) dans notre guide d’utilisation.

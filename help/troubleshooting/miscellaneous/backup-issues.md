@@ -4,7 +4,7 @@ description: Cet article répertorie les solutions possibles pour les problèmes
 exl-id: 1a6204ad-bd5a-46dc-8a8e-39655a174e09
 feature: Storage, Data Import/Export
 role: Developer
-source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Saisissez la commande d’interface de ligne de commande suivante :
 bin/magento config:set system/backup/functionality_enabled 1
 ```
 
-Pour plus d’informations sur les sauvegardes, voir [Sauvegarde et restauration du système de fichiers, des médias et de la base de données.](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-backup.html)
+Pour plus d’informations sur les sauvegardes, voir [Sauvegarde et restauration du système de fichiers, des médias et de la base de données.](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/backup)
 
 ## Espace disque insuffisant {#insufficient-disk-space-trouble-backup-space-}
 
@@ -55,6 +55,6 @@ Malheureusement, nous ne pouvons rien recommander en raison de la variété des 
 
 ## Échec de la sauvegarde {#backup-fails-trouble-backup-all-}
 
-Si la sauvegarde échoue ou si tous les tests de sauvegarde échouent, il est possible que le [propriétaire du système de fichiers Adobe Commerce](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/file-sys-perms-over.html) ne dispose pas des privilèges et de la propriété suffisants du système de fichiers Adobe Commerce. Par exemple, un autre utilisateur peut posséder les fichiers ou les fichiers peuvent être en lecture seule.
+Si la sauvegarde échoue ou si tous les tests de sauvegarde échouent, il est possible que le [propriétaire du système de fichiers Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) ne dispose pas des privilèges et de la propriété suffisants du système de fichiers Adobe Commerce. Par exemple, un autre utilisateur peut posséder les fichiers ou les fichiers peuvent être en lecture seule.
 
-Accordez une attention particulière aux autorisations du système de fichiers et à la propriété du répertoire et des sous-répertoires `<magento_root>/var`. Pour plus d’informations, voir [Définition des droits d’accès et de la propriété du système de fichiers](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-system-perms.html).
+Accordez une attention particulière aux autorisations du système de fichiers et à la propriété du répertoire et des sous-répertoires `<magento_root>/var`. Pour plus d’informations, voir [Définition des droits d’accès et de la propriété du système de fichiers](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions).

@@ -3,7 +3,7 @@ title: Bloquer le trafic malveillant pour Adobe Commerce à un niveau rapide
 description: Cet article décrit les étapes à suivre pour bloquer le trafic malveillant lorsque vous pensez que votre Adobe Commerce sur le magasin d’infrastructures cloud est en train de subir une attaque DDoS.
 exl-id: 1a834a0a-753b-432e-9c3b-ef8dd034d294
 feature: Cache, Marketing Tools
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Dans cet article, nous supposons que vous disposez déjà des adresses IP malvei
 
 Si votre site web est surchargé par DDoS, vous ne pourrez peut-être pas vous connecter à votre administrateur Commerce (et effectuer toutes les étapes décrites plus loin dans cet article).
 
-Pour accéder à l’administrateur, mettez votre site web en mode de maintenance comme décrit dans [Activer ou désactiver le mode de maintenance](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html#instgde-cli-maint) et whitelistez votre adresse IP. Désactivez le mode de maintenance une fois cette opération terminée.
+Pour accéder à l’administrateur, mettez votre site web en mode de maintenance comme décrit dans [Activer ou désactiver le mode de maintenance](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) et whitelistez votre adresse IP. Désactivez le mode de maintenance une fois cette opération terminée.
 
 ## Bloquer le trafic par IP
 
@@ -74,7 +74,7 @@ Il y a deux points importants à prendre en compte lors de l’utilisation de `r
 * Les robots peuvent ignorer votre `robots.txt`. En particulier les robots malveillants qui analysent le web à la recherche de failles de sécurité, et les collecteurs d&#39;adresses email utilisés par les spammeurs ne prêteront aucune attention.
 * Le fichier `robots.txt` est un fichier disponible publiquement. N&#39;importe qui peut voir quelles sections de votre serveur vous ne voulez pas que les robots utilisent.
 
-Les informations de base et la configuration Adobe Commerce `robots.txt` par défaut sont disponibles dans l’article [Robots de moteur de recherche](https://docs.magento.com/m2/ee/user_guide/marketing/search-engine-robots.html) de notre documentation destinée aux développeurs.
+Les informations de base et la configuration Adobe Commerce `robots.txt` par défaut sont disponibles dans l’article [Robots de moteur de recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) de notre documentation destinée aux développeurs.
 
 Pour obtenir des informations générales et des recommandations sur `robots.txt`, voir :
 

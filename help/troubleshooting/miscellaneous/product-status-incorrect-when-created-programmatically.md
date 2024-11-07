@@ -4,7 +4,7 @@ description: Cet article fournit un correctif lorsque l’état du produit est D
 exl-id: ac02f961-f9e2-4620-839f-b8dbd0befb15
 feature: Products
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Le problème peut apparaître en raison des restrictions d’ACL définies pour 
 
 ## Solution pour un état de produit incorrect
 
-Définissez une préférence d’ID dynamique pour `Magento\Framework\Authorization\PolicyInterface`, comme décrit dans la rubrique [ObjectManager>Mises à jour de produit programmatiques](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/object-manager.html#programmatic-product-updates) de notre documentation destinée aux développeurs.
+Définissez une préférence d’ID dynamique pour `Magento\Framework\Authorization\PolicyInterface`, comme décrit dans la rubrique [ObjectManager>Mises à jour de produit programmatiques](https://developer.adobe.com/commerce/php/development/components/object-manager/) de notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 

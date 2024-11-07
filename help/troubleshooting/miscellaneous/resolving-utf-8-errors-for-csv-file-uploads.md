@@ -4,7 +4,7 @@ description: Cet article fournit un correctif pour lorsque vous recevez le messa
 exl-id: 88d8e0b8-152e-4a6d-bc44-3b285e0eb0c3
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 0%
@@ -23,4 +23,4 @@ Nous vous recommandons d’utiliser [Sublime Text](https://www.sublimetext.com/2
 1. Cliquez sur &#x200B; &#x200B; **Fichier** > **Enregistrer sous** et sélectionnez le format de  **Valeurs séparées par des virgules (.csv)** pour enregistrer le fichier.
 1. Ouvrez le fichier CSV dans Sublime Text.
 1. Dans le texte sous-jacent, accédez à &#x200B; &#x200B; **Fichier** > **Enregistrer avec codage** > **UTF-8\* &#x200B;** . Le fichier CSV sera alors enregistré avec le codage UTF-8.    ![csv_file_UTF-8_sublime_3.2.2_magento_BI.png](assets/csv_file_UTF-8_sublime_3.2.2_magento_BI.png)
-1. [Téléchargez les données](https://docs.magento.com/mbi/data-analyst/importing-data/connecting-data/using-file-uploader.html) (dans notre guide d’utilisation) vers une nouvelle table dans Magento BI.
+1. [Téléchargez les données](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/connecting/using-file-uploader) (dans notre guide d’utilisation) vers une nouvelle table dans Magento BI.

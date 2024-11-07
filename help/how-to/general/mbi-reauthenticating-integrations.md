@@ -3,7 +3,7 @@ title: "MBI : réauthentification des intégrations"
 description: Cet article fournit des solutions pour réautoriser une intégration afin d’accorder à Magento Business Intelligence (MBI) les privilèges requis pour extraire des données d’un service tiers. Une réautorisation est requise lorsque ces privilèges sont révoqués.
 exl-id: c608d6f9-64a5-44f8-9d7b-9a85a2668775
 feature: Commerce Intelligence, Integration
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Cet article fournit des solutions pour réautoriser une intégration afin d’ac
 
 ## Intégrations base de données et SaaS
 
-Pour obtenir la liste des intégrations Base de données et SaaS, reportez-vous à la section [Connexion aux données externes à l’aide d’une intégration](https://docs.magento.com/mbi/data-analyst/importing-data/integrations/integrations.html) dans notre documentation destinée aux développeurs. (Lors de l’ouverture de la page, utilisez la table des matières sur la gauche pour la navigation).
+Pour obtenir la liste des intégrations Base de données et SaaS, reportez-vous à la section [Connexion aux données externes à l’aide d’une intégration](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) dans notre documentation destinée aux développeurs. (Lors de l’ouverture de la page, utilisez la table des matières sur la gauche pour la navigation).
 
 ## Vous rencontrez des problèmes de connexion ?
 

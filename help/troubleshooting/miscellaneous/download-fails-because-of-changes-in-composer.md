@@ -4,7 +4,7 @@ description: Cet article fournit un correctif pour une erreur de téléchargemen
 exl-id: 5abdab97-4b0c-466b-a68f-a2637d2826e5
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
@@ -52,5 +52,5 @@ Pour contourner ce problème :
    * Mise à niveau du compositeur vers une version ultérieure au 26 novembre 2015 : `composer self-update`.
 
 1. Supprimez votre répertoire Adobe Commerce et vos sous-répertoires.
-1. Essayez à nouveau le téléchargement en utilisant `[composer create-project](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html)` ou `[git clone](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/dev_install.html)`.
+1. Essayez à nouveau le téléchargement en utilisant `[composer create-project](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer)` ou `[git clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)`.
 1. Après avoir téléchargé le logiciel Adobe Commerce, mettez à jour le compositeur : `composer self-update`.

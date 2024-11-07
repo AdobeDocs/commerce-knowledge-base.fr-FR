@@ -4,7 +4,7 @@ description: Cet article fournit une solution pour les dépendances de composant
 exl-id: 782049c4-b6e1-4ead-a00f-80d2aa8475c9
 feature: Configuration
 role: Developer
-source-git-commit: 8f0f7412e75e07a22e66236b88c095c698dbf23e
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 0%
@@ -51,14 +51,14 @@ Deux scénarios principaux peuvent entraîner des conflits de dépendances des c
 Si vous effectuez une mise à niveau d’Adobe Commerce sur l’infrastructure cloud, essayez de résoudre les conflits de dépendances de composant :
 
 * Vérifiez les clés utilisées pour la mise à niveau. Les clés sont-elles générées à partir du compte de messagerie approprié ?
-* Vérifiez les autorisations et assurez-vous qu’elles correspondent aux exigences de mise à niveau du Magento. Consultez la section [Présentation de la mise à niveau du Magento > Liste de contrôle de mise à jour et de mise à niveau > Autorisations du système de fichiers](https://devdocs.magento.com/guides/v2.3/comp-mgr/prereq/prereq_compman-checklist.html#perms) dans notre documentation destinée aux développeurs.
+* Vérifiez les autorisations et assurez-vous qu’elles correspondent aux exigences de mise à niveau du Magento. Consultez la section [Présentation de la mise à niveau du Magento > Liste de contrôle de mise à jour et de mise à niveau > Autorisations du système de fichiers](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites#verify-file-system-permissions) dans notre documentation destinée aux développeurs.
 
 ## Incompatibilité avec les modules tiers : {#incompatibility-third-party-modules}
 
 Les dépendances de composants en conflit peuvent également être causées par des modules tiers qui dépendent de composants Commerce antérieurs à ceux que vous avez installés. Procédez comme suit :
 
-1. Dans l’ [exemple](#issue) précédent, le package installé magento/sample-data version 0.74.0-beta15 ne peut pas être mis à niveau vers la version 1.0.0-beta. Cependant, 0.74.0-beta15 peut être mis à niveau vers 0.74.0-beta16 (ou d’autres). Modifiez `composer.json` pour effectuer l’une de ces modifications. En règle générale, les versions demandées par votre projet seront définies dans la propriété `require` ou `require-dev` de l’objet dans ce fichier JSON. Selon les options des versions de package fournies, elles peuvent spécifier une version spécifique ou une contrainte. Pour obtenir des instructions générales sur l’utilisation du compositeur, si vous utilisez notre infrastructure cloud, reportez-vous à [Cloud pour Adobe Commerce > Technologies et exigences > Compositeur](https://devdocs.magento.com/cloud/reference/cloud-composer.html#files) dans la documentation destinée aux développeurs. Si vous utilisez Adobe Commerce sur site, reportez-vous à [Adobe Commerce > Guide d’installation > Installation d’Adobe Commerce à l’aide du compositeur](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html) .
-1. Maintenant, essayez le contrôle de préparation. Consultez [Présentation de la mise à niveau d’Adobe Commerce > Exécutez le gestionnaire de modules > Contrôle de l’état de préparation de l’étape 1](https://devdocs.magento.com/guides/v2.3/comp-mgr/module-man/compman-readiness.html) dans notre documentation destinée aux développeurs.
+1. Dans l’ [exemple](#issue) précédent, le package installé magento/sample-data version 0.74.0-beta15 ne peut pas être mis à niveau vers la version 1.0.0-beta. Cependant, 0.74.0-beta15 peut être mis à niveau vers 0.74.0-beta16 (ou d’autres). Modifiez `composer.json` pour effectuer l’une de ces modifications. En règle générale, les versions demandées par votre projet seront définies dans la propriété `require` ou `require-dev` de l’objet dans ce fichier JSON. Selon les options des versions de package fournies, elles peuvent spécifier une version spécifique ou une contrainte. Pour obtenir des instructions générales sur l’utilisation du compositeur, si vous utilisez notre infrastructure cloud, reportez-vous à [Cloud pour Adobe Commerce > Technologies et exigences > Compositeur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#files) dans la documentation destinée aux développeurs. Si vous utilisez Adobe Commerce sur site, reportez-vous à [Adobe Commerce > Guide d’installation > Installation d’Adobe Commerce à l’aide du compositeur](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) .
+1. Maintenant, essayez le contrôle de préparation. Consultez [Présentation de la mise à niveau d’Adobe Commerce > Exécutez le gestionnaire de modules > Contrôle de l’état de préparation de l’étape 1](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview) dans notre documentation destinée aux développeurs.
 1. Si la vérification de l’état de préparation échoue avec un autre message d’échec de vérification de la dépendance des composants, cliquez sur les liens suivants selon que vous utilisez [Adobe Commerce](#magento-commerce-magento-commerce-cloud) ou [Magento Open Source](#opensource) pour obtenir d’autres étapes de dépannage.
 
 ## Adobe Commerce {#magento-commerce-magento-commerce-cloud}

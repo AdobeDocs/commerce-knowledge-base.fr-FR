@@ -4,9 +4,9 @@ description: Cet article fournit un correctif pour le problème de sécurité Ad
 exl-id: fe147ad5-6019-46c1-b48c-6b957b6e1582
 feature: Admin Workspace
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -48,4 +48,4 @@ Adobe recommande également vivement aux commerçants de déployer des outils po
 * [5 Actions immédiates vers Protect contre les attaques brutales de la force](https://magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks)
 * [Protect Your Magento Installation Password Guider New Update](https://magento.com/security/best-practices/protect-your-magento-installation-password-guessing-new-update)
 * [ Bonnes pratiques de sécurité ](https://magento.com/security/best-practices/security-best-practices)
-* Ajout et configuration de l’authentification à deux facteurs dans Adobe Commerce pour [2.3.x](https://docs.magento.com/user-guide/v2.3/stores/security-two-factor-authentication.html) et [2.4.x](https://docs.magento.com/user-guide/stores/security-two-factor-authentication.html)
+* Ajout et configuration de l’authentification à deux facteurs dans Adobe Commerce pour [2.4.x](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication)

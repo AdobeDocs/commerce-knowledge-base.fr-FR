@@ -4,7 +4,7 @@ description: Cet article fournit des solutions pour les erreurs de paramètres P
 exl-id: 51fb3c95-2e25-4d86-a6cf-e08e90d097ca
 feature: Configuration
 role: Developer
-source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Les configurations comportant un grand nombre de storeviews, de produits, d’at
 PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini.
 ```
 
-Il n’existe pas de valeur &quot;correcte&quot; pour `max-input-vars` ; cela dépend de la taille et de la complexité de votre configuration. Modifiez la valeur du fichier `php.ini` selon vos besoins. Voir [Paramètres PHP requis](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).
+Il n’existe pas de valeur &quot;correcte&quot; pour `max-input-vars` ; cela dépend de la taille et de la complexité de votre configuration. Modifiez la valeur du fichier `php.ini` selon vos besoins. Voir [Paramètres PHP requis](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings).
 
 ## erreur de niveau d&#39;imbrication de fonction maximal xdebug
 
@@ -76,4 +76,4 @@ Plusieurs modèles ont une syntaxe pour la prise en charge du niveau abstrait su
 
 En savoir plus sur [asp\_tags](http://php.net/manual/en/ini.core.php#ini.asp-tags).
 
-Modifiez `php.ini` et définissez `asp_tags = off`. Pour plus d’informations, voir [Paramètres PHP requis](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).
+Modifiez `php.ini` et définissez `asp_tags = off`. Pour plus d’informations, voir [Paramètres PHP requis](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings).

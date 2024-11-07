@@ -4,7 +4,7 @@ description: Cet article fournit une solution au problème où l’option Recomm
 exl-id: e96a446b-2e64-47a6-ac1b-e73183da9fb8
 feature: Page Builder, Configuration, Personalization, Products, Recommendations
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -37,5 +37,5 @@ En activant le Recommendations de produit dans le créateur de pages, vous pourr
 ## Lecture connexe
 
 * [Ajouter du contenu - Recommendations produit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) dans notre guide d’utilisation.
-* [Installez et configurez le produit Recommendations](https://devdocs.magento.com/recommendations/install-configure.html) dans notre documentation destinée aux développeurs.
-* [Guide de l’utilisateur Adobe Commerce](https://docs.magento.com/user-guide/)
+* [Installez et configurez le produit Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) dans notre documentation destinée aux développeurs.
+* [Guide de l’utilisateur Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)

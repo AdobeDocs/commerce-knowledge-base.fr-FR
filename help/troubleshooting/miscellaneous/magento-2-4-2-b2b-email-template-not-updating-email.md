@@ -4,7 +4,7 @@ description: Cet article décrit un problème connu d’Adobe Commerce 2.4.2 B2B
 exl-id: 31b7086f-a941-4682-aa07-301ac31d543b
 feature: B2B, Communications
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%
@@ -45,4 +45,4 @@ Exécutez manuellement la tâche cron ou le consommateur pour propager les nouve
 
 ## Lecture connexe
 
-* [Gérer les files d’attente de messages](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html) dans notre documentation destinée aux développeurs.
+* [Gérer les files d’attente de messages](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) dans notre documentation destinée aux développeurs.

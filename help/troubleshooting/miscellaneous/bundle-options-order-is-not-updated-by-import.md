@@ -4,7 +4,7 @@ description: Cet article fournit une solution au problème lorsque, après l’i
 exl-id: 7f7bf782-4b35-4067-aa94-417097079f1f
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Vous disposez d’un fichier .csv valide contenant des produits de bundle.
 
 <u>Étapes à reproduire</u> :
 
-1. Importez le fichier à l’aide de la [fonctionnalité d’importation](https://docs.magento.com/m2/ee/user_guide/system/data-import.html).
+1. Importez le fichier à l’aide de la [fonctionnalité d’importation](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import).
 1. Ouvrez la page du produit du bundle.
 
 <u>Résultats attendus</u> :
@@ -46,7 +46,7 @@ La position des options n’a pas été déclarée explicitement.
 
 ## Solution
 
-1. Déclarez explicitement une position pour chaque option dans le paramètre `position` de la colonne `bundle_values` du fichier .csv. Pour obtenir des instructions détaillées, voir [Modifier les données du produit](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html#method-2-edit-the-product-data) dans notre guide d’utilisation.
+1. Déclarez explicitement une position pour chaque option dans le paramètre `position` de la colonne `bundle_values` du fichier .csv. Pour obtenir des instructions détaillées, voir [Modifier les données du produit](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products#method-2-edit-the-product-data) dans notre guide d’utilisation.
 1. Répétez l&#39;opération d&#39;import.
 
-Pour obtenir des informations générales sur l’importation, consultez la section [Importation de produit groupé](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html) de notre guide d’utilisation.
+Pour obtenir des informations générales sur l’importation, consultez la section [Importation de produit groupé](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products) de notre guide d’utilisation.

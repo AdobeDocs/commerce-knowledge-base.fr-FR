@@ -4,7 +4,7 @@ description: L’outil de compatibilité de mise à niveau 1.1.0 est un outil de
 exl-id: 312abc5a-1d6a-4f32-9929-a94f4962eddd
 feature: Upgrade
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Clients Adobe Commerce.
 
 ## Installation de l’outil de compatibilité de mise à niveau 1.1.0
 
-Pour connaître les étapes d&#39;installation, reportez-vous à Adobe Commerce : [Outil de compatibilité de mise à niveau > Installer](https://devdocs.magento.com/upgrade-compatibility-tool/install.html) dans notre documentation destinée aux développeurs. Pour connaître les conditions préalables à l’utilisation de l’outil, reportez-vous à Adobe Commerce : [Upgrade Compatibility Tool](https://devdocs.magento.com/upgrade-compatibility-tool/prerequisites.html) dans la documentation destinée aux développeurs.
+Pour connaître les étapes d&#39;installation, reportez-vous à Adobe Commerce : [Outil de compatibilité de mise à niveau > Installer](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run) dans notre documentation destinée aux développeurs. Pour connaître les conditions préalables à l’utilisation de l’outil, reportez-vous à Adobe Commerce : [Upgrade Compatibility Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/prerequisites) dans la documentation destinée aux développeurs.
 
 ## Quel est le numéro en regard de chaque problème ?
 
@@ -47,7 +47,7 @@ Les messages d’erreur de l’outil de compatibilité de mise à niveau sont cl
 * Code d’erreur : identifiant attribué par Adobe Commerce au message d’erreur.
 * Description de l’erreur : description qui résume la cause de l’erreur.
 * Action suggérée pour les erreurs : le cas échéant, fournit des conseils pour dépanner et résoudre l’erreur.
-* Les codes sont répertoriés et décrits sur la [page de référence du message d’erreur](https://devdocs.magento.com/upgrade-compatibility-tool/errors.html).
+* Les codes sont répertoriés et décrits sur la [page de référence du message d’erreur](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/reporting/error-messages).
 
 ## Où puis-je partager mes commentaires sur l’outil ?
 
@@ -56,4 +56,4 @@ Vous pouvez contacter l&#39;équipe UCT sur notre canal de slack [#upgrade-compa
 ## Lecture connexe
 
 * Blog Adobe Commerce : [Présentation de l’outil de compatibilité de mise à niveau (Alpha)](https://magento.com/blog/magento-news/introducing-upgrade-compatibility-tool)
-* Adobe Commerce : [Mise à niveau de l’outil de compatibilité](https://devdocs.magento.com/upgrade-compatibility-tool/introduction.html) dans la documentation destinée aux développeurs.
+* Adobe Commerce : [Mise à niveau de l’outil de compatibilité](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview) dans la documentation destinée aux développeurs.

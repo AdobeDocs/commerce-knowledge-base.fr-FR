@@ -3,7 +3,7 @@ title: FAQ sur la fin de la prise en charge des logiciels Adobe Commerce
 description: Le FAQ suivant a pour but d’aider les marchands, les développeurs et les partenaires à comprendre les implications de la date de fin de prise en charge (EOS) publiée par Adobe Commerce pour les versions concernées d’Adobe Commerce.
 exl-id: ec147307-46eb-4a3a-8572-a014b091c58a
 feature: Best Practices, Compliance, Console
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1733'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Le FAQ suivant a pour but d’aider les marchands, les développeurs et les part
 
 ### Où puis-je trouver les dates de prise en charge des logiciels pour toutes les versions d’Adobe Commerce ?
 
-Vous trouverez la politique de cycle de vie des logiciels Adobe Commerce et les dates de prise en charge des logiciels dans la [stratégie de cycle de vie des logiciels Adobe Commerce](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Nous publions également des dates de fin de prise en charge (EOS) sur notre [ page de documentation destinée aux développeurs ](https://devdocs.magento.com/release/released-versions.html).
+Vous trouverez la politique de cycle de vie des logiciels Adobe Commerce et les dates de prise en charge des logiciels dans la [stratégie de cycle de vie des logiciels Adobe Commerce](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Nous publions également des dates de fin de prise en charge (EOS) sur notre [ page de documentation destinée aux développeurs ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
 
 ### Qu’est-ce que cela signifie lorsque l’Adobe met fin à la prise en charge d’une version du logiciel Adobe Commerce ?
 
@@ -70,7 +70,7 @@ Votre plateforme commerciale est un système commercial important pour votre ent
 
 Le passage à la dernière version du logiciel Adobe Commerce peut nécessiter du temps et des ressources pour s’exécuter correctement. Il est recommandé de planifier au plus tôt la date de fin de l’assistance afin de vous assurer que vous disposez du temps et des ressources nécessaires pour atteindre vos objectifs stratégiques dans les délais et dans les limites du budget. Pour vous aider à effectuer votre prochaine mise à niveau, Adobe a publié le [2.4 Upgrade Guide](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) qui comprend les bonnes pratiques et les étapes techniques à suivre, ainsi que les outils et ressources à utiliser lors de la mise à niveau.
 
-Il est également important de réserver les ressources des développeurs et des partenaires le plus tôt possible. Le temps passé par les partenaires et les ressources sont souvent réservés bien avant la date de fin de l’assistance, ce qui entraîne une diminution significative des ressources destinées à assister les projets de migration. Il est recommandé d’avoir un plan variable de trois ans dont vous discutez chaque année au minimum et de vous assurer que l’année suivante est planifiée et budgétée. Utilisez le [calendrier de publication d’Adobe](https://devdocs.magento.com/release/) pour effectuer le suivi des dates de publication.
+Il est également important de réserver les ressources des développeurs et des partenaires le plus tôt possible. Le temps passé par les partenaires et les ressources sont souvent réservés bien avant la date de fin de l’assistance, ce qui entraîne une diminution significative des ressources destinées à assister les projets de migration. Il est recommandé d’avoir un plan variable de trois ans dont vous discutez chaque année au minimum et de vous assurer que l’année suivante est planifiée et budgétée. Utilisez le [calendrier de publication d’Adobe](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) pour effectuer le suivi des dates de publication.
 
 ### Puis-je utiliser un fournisseur de services tiers pour la prise en charge des logiciels lorsque la prise en charge d’Adobe Commerce cesse ?
 
@@ -94,7 +94,7 @@ Une fois votre licence Adobe Commerce expirée, vous devez cesser d’utiliser l
 
 ### Les tickets de support qui ont été ouverts AVANT la date de fin de prise en charge d’une version logicielle continueront-ils à être résolus même après l’expiration de la date de fin de prise en charge ?
 
-Oui, les tickets d’assistance ouverts avant la date de fin de prise en charge d’une version logicielle continueront à être traités et résolus même si la date de fin de prise en charge de cette version logicielle est dépassée. Cependant, la résolution des tickets de support peut dépendre du fait que la résolution repose sur des composants hors contrôle d’Adobe Commerce (c’est-à-dire PHP, jQuery, etc.). ayant expiré ou atteint la fin de la prise en charge. Dans ces cas, le ticket de support peut être résolu en vous demandant de mettre à niveau vers la dernière version.
+Oui, les tickets d’assistance ouverts avant la date de fin de prise en charge d’une version logicielle continueront à être traités et résolus même si la date de fin de prise en charge de cette version logicielle est dépassée. Cependant, la résolution des tickets d’assistance peut dépendre du fait que la résolution repose sur des composants hors contrôle d’Adobe Commerce (c’est-à-dire PHP, jQuery, etc.) qui ont expiré ou ont atteint la fin de la prise en charge. Dans ces cas, le ticket de support peut être résolu en vous demandant de mettre à niveau vers la dernière version.
 
 ### Si j’ouvre un ticket pour une version de logiciel dont la prise en charge logicielle prend bientôt fin, l’Adobe donnera-t-il la priorité à ces tickets afin qu’ils soient résolus avant la date de fin de prise en charge ?
 

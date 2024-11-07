@@ -2,7 +2,7 @@
 title: Comment créer un vidage "frotté" sur demande de l’agent d’assistance
 description: Cet article fournit des informations sur la création d’un vidage (sauvegarde) "frotté" de votre base de données et de code à partir de l’administrateur Adobe Commerce lorsque celui-ci est invité à en fournir un par un agent de support Adobe Commerce. Ce vidage exclut vos fichiers multimédias afin d’accélérer le processus et de générer un fichier beaucoup plus petit. Toutes les données sensibles sont hachées lors de la sauvegarde de la base.
 exl-id: ad088bd2-3f92-416e-89f0-d037d53cd6a9
-source-git-commit: e07ade849a4105b5e499b5282d75cb1b5321b6ea
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Créez un vidage &quot;frotté&quot; à partir de l’administrateur :
 
 Vous pouvez ensuite fournir pour prendre en charge le lien de téléchargement direct vers les fichiers de vidage (l’adresse de votre magasin et le nom du fichier tel qu’affiché).
 
-Si vous rencontrez des problèmes lors de la création de vidages à partir de l’administrateur, pensez à utiliser les commandes de l’interface de ligne de commande comme décrit dans la section [Exécution des utilitaires de support](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-spt-util.html) de notre documentation destinée aux développeurs.
+Si vous rencontrez des problèmes lors de la création de vidages à partir de l’administrateur, pensez à utiliser les commandes de l’interface de ligne de commande comme décrit dans la section [Exécution des utilitaires de support](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/run-support-utilities) de notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 

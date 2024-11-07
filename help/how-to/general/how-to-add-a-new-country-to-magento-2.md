@@ -3,7 +3,7 @@ title: Comment ajouter un nouveau pays à Adobe Commerce
 description: Cet article explique comment ajouter un pays qui n’est pas présent dans Adobe Commerce et la bibliothèque Zend Locale. Cela nécessite des modifications du code et de la base de données qui constituent des personnalisations du client selon les conditions de votre contrat. Veuillez noter que les exemples de matériaux inclus dans cet article sont fournis "TELS QUELS" sans aucune garantie de quelque type que ce soit. Ni Adobe ni aucune entité affiliée n’est tenue de conserver, corriger, mettre à jour, modifier, modifier ou de toute autre manière de prendre en charge ces documents. Nous décrirons ici les principes de base de ce qui doit être fait pour y parvenir.
 exl-id: af499add-4966-4a3a-972a-62a34c169a1b
 feature: Build, Cache
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 0%
@@ -22,10 +22,10 @@ Pour en créer un nouveau, vous devez maîtriser le développement de module Ado
 
 Reportez-vous aux rubriques suivantes de notre documentation destinée aux développeurs avant de tenter de créer un nouveau module :
 
-* [Guide du développeur PHP](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/bk-extension-dev-guide.html)
-* [Présentation du module](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html)
-* [Créer un module](https://devdocs.magento.com/videos/fundamentals/create-a-new-module/)
-* [ Fichiers de configuration de module](https://devdocs.magento.com/guides/v2.4/config-guide/config/config-files.html)
+* [Guide du développeur PHP](https://developer.adobe.com/commerce/php/development/)
+* [Présentation du module](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
+* [Créer un module](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/backend-development/create-module)
+* [ Fichiers de configuration de module](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/module-files)
 
 ## Informations requises
 
@@ -35,7 +35,7 @@ Un nouveau pays doit posséder un nom, un ID de pays, des codes ISO2 et ISO3 uni
 
 Dans cet exemple, nous allons créer un module appelé \`ExtraCountries\` avec la structure de répertoires suivante :
 
-(Pour en savoir plus sur la structure des modules, consultez la [présentation des modules](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html) dans notre documentation destinée aux développeurs).
+(Pour en savoir plus sur la structure des modules, consultez la [présentation des modules](https://developer.adobe.com/commerce/php/architecture/modules/overview/) dans notre documentation destinée aux développeurs).
 
 <pre><ExtraCountries>
  |
@@ -97,7 +97,7 @@ Une nouvelle configuration de module est définie dans ce fichier XML. Les confi
 </config>
 ```
 
-Pour plus d’informations sur les fichiers de configuration de module, consultez le [Guide du développeur de PHP > Définir les fichiers de configuration](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/required-configuration-files.html) dans notre documentation du développeur.
+Pour plus d’informations sur les fichiers de configuration de module, consultez le [Guide du développeur de PHP > Définir les fichiers de configuration](https://developer.adobe.com/commerce/php/development/build/required-configuration-files/) dans notre documentation du développeur.
 
 Notez que ces modifications sont facultatives et n’affectent que l’appartenance par défaut du nouveau pays aux listes &quot;Autoriser les pays&quot;, &quot;Code postal facultatif pour&quot; et &quot;Pays de l’Union européenne&quot;. Si ce fichier est ignoré de la structure du module, un nouveau pays est toujours ajouté, mais il doit être configuré manuellement à l’adresse **Admin** > **Magasins** > *Paramètres* > **Configuration** > **Général** > **Options de pays** .
 
@@ -123,7 +123,7 @@ Exemple `di.xml`
 
 Dans le fichier d’enregistrement du module, nous devons spécifier la dépendance pour le module &quot;Répertoire Adobe Commerce&quot;, en veillant à ce que le module &quot;Pays supplémentaires&quot; soit enregistré et exécuté après le module Répertoire.
 
-Pour plus d’informations sur les dépendances de module, voir [Gestion des dépendances de module](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_depend.html#managing-module-dependencies) dans la documentation destinée aux développeurs.
+Pour plus d’informations sur les dépendances de module, voir [Gestion des dépendances de module](https://developer.adobe.com/commerce/php/architecture/modules/dependencies/#managing-module-dependencies) dans la documentation destinée aux développeurs.
 
 Exemple `module.xml`
 
@@ -185,7 +185,7 @@ class TranslatedListsPlugin
 
 Ce correctif de données sera exécuté pendant le processus d’installation/mise à niveau d’Adobe Commerce et ajoutera un nouvel enregistrement de pays à la base de données.
 
-Pour plus d’informations sur les correctifs de données, reportez-vous à la section [Développement de correctifs de données et de schémas](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/declarative-schema/data-patches.html) de notre documentation destinée aux développeurs.
+Pour plus d’informations sur les correctifs de données, reportez-vous à la section [Développement de correctifs de données et de schémas](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) de notre documentation destinée aux développeurs.
 
 Dans l’exemple ci-dessous, vous pouvez constater que le tableau `$data` de la méthode `apply()` contient les codes Country ID, ISO2 et ISO3 du nouveau pays, et que ces données sont insérées dans la base de données.
 
@@ -266,7 +266,7 @@ class AddDataForAbstractCountry implements DataPatchInterface, PatchVersionInter
 
 ### ExtraCountries/registration.php
 
-Il s’agit d’un exemple du fichier registration.php. Pour en savoir plus sur l’enregistrement des modules, consultez le [Guide du développeur PHP > Enregistrer votre composant](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html) dans la documentation du développeur.
+Il s’agit d’un exemple du fichier registration.php. Pour en savoir plus sur l’enregistrement des modules, consultez le [Guide du développeur PHP > Enregistrer votre composant](https://developer.adobe.com/commerce/php/development/build/component-registration/) dans la documentation du développeur.
 
 ```php
 <?php
@@ -279,7 +279,7 @@ ComponentRegistrar::register(ComponentRegistrar::MODULE, 'VendorName_ExtraCountr
 
 Il s’agit d’un exemple de fichier compositeur.json.
 
-Pour en savoir plus sur le fichier compositeur.json, consultez le [Guide du développeur PHP > Le fichier compositeur.json](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/composer-integration.html) dans notre documentation du développeur.
+Pour en savoir plus sur le fichier compositeur.json, consultez le [Guide du développeur PHP > Le fichier compositeur.json](https://developer.adobe.com/commerce/php/development/build/composer-integration/) dans notre documentation du développeur.
 
 ```json
 {
@@ -310,7 +310,7 @@ Pour en savoir plus sur le fichier compositeur.json, consultez le [Guide du dév
 
 ## Installation des modules
 
-Pour savoir comment installer le module, voir [Emplacements de module](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html#module-locations) dans notre documentation destinée aux développeurs.
+Pour savoir comment installer le module, voir [Emplacements de module](https://developer.adobe.com/commerce/php/architecture/modules/overview/#module-locations) dans notre documentation destinée aux développeurs.
 
 Une fois que le répertoire du module est placé à un emplacement correct, exécutez `bin/magento setup:upgrade` pour appliquer les correctifs de données et enregistrer le module externe de traduction.
 

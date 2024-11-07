@@ -4,7 +4,7 @@ description: Cet article fournit un correctif pour l’activation du mode de mai
 exl-id: 61b81fbd-a382-44b5-94e9-5b6d72f11349
 feature: Cache
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -45,4 +45,4 @@ Les pages sont toujours mises en cache, de sorte que la page de maintenance ne s
 
 ## Lecture connexe
 
-[Activez ou désactivez le mode de maintenance](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) dans notre documentation destinée aux développeurs.
+[Activez ou désactivez le mode de maintenance](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) dans notre documentation destinée aux développeurs.

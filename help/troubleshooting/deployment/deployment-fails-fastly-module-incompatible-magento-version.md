@@ -4,7 +4,7 @@ description: "MISE À JOUR : 29 février 2019"
 exl-id: aab77407-94e5-42de-92f4-2f0c19e24fa4
 feature: Deploy, Extensions
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Le déploiement peut échouer avec les messages d’erreur suivants :
 [2019-01-23 00:00:00] CRITICAL: Command php ./bin/magento setup:static-content:deploy --ansi --no-interaction --jobs 1 --exclude-theme Magento/luma en_GB en_US returned code 1
 ```
 
-Si vous utilisez Adobe Commerce sur la solution d’infrastructure cloud, ce message d’erreur s’affiche dans le [log de déploiement](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html#log-deploy-log). Pour Adobe Commerce On-Premise, l’erreur s’affiche dans la ligne de commande.
+Si vous utilisez Adobe Commerce sur la solution d’infrastructure cloud, ce message d’erreur s’affiche dans le [log de déploiement](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations). Pour Adobe Commerce On-Premise, l’erreur s’affiche dans la ligne de commande.
 
 ## Cause
 
@@ -70,4 +70,4 @@ Pour ce faire, procédez comme suit :
    * si le module Fastly est inclus dans le package magento-cloud-metapackage :    <pre>mise à jour du compositeur magento/magento-cloud-metapackage</pre>
    * si le module Fastly a été installé séparément (par exemple, si vous utilisez Adobe Commerce sur site, et non l’édition cloud) ; <pre>mise à jour rapide/magento2 du compositeur</pre>
 1. Validez et envoyez les modifications, puis déclenchez le processus de déploiement si ce n’est pas fait automatiquement.
-1. Dans l’Admin, [chargez le nouveau VCL sur Fastly](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets).
+1. Dans l’Admin, [chargez le nouveau VCL sur Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets).

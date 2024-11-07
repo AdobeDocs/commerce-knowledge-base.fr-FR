@@ -4,7 +4,7 @@ description: Cet article fournit une solution pour le problème où de nouveaux 
 exl-id: 279cd6d8-fd45-45ba-8456-8b397a01976f
 feature: Cloud, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Ce n&#39;est pas un bogue. Pour définir une branche parente pour une autre bran
 
 ## Solution
 
-Une branche parente ne peut être définie qu’après que le commerçant a envoyé une branche nouvellement créée et l’a activée. Reportez-vous à la section [Adobe Commerce on cloud infrastructure > Bitbucket integration](https://devdocs.magento.com/cloud/integrations/bitbucket-integration.html#create-a-new-cloud-branch) dans notre documentation destinée aux développeurs.
+Une branche parente ne peut être définie qu’après que le commerçant a envoyé une branche nouvellement créée et l’a activée. Reportez-vous à la section [Adobe Commerce on cloud infrastructure > Bitbucket integration](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/integrations/bitbucket#create-a-cloud-branch) dans notre documentation destinée aux développeurs.
 
 Pour mettre à jour un parent pour la branche existante sur le serveur, utilisez la commande `magento-cloud environment:info` dans l’interface de ligne de commande magento-cloud.
 
@@ -59,4 +59,4 @@ Cela définit la branche parente sur &quot;Évaluation&quot; pour la branche act
 
 ## Lecture connexe
 
-* [Adobe Commerce sur l’infrastructure cloud > CLI magento-cloud](https://devdocs.magento.com/cloud/reference/cli-ref-topic.html) dans notre documentation destinée aux développeurs.
+* [Adobe Commerce sur l’infrastructure cloud > CLI magento-cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) dans notre documentation destinée aux développeurs.

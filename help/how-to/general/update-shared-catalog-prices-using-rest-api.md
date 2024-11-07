@@ -1,9 +1,9 @@
 ---
 title: Mise à jour des prix du catalogue partagé à l’aide de l’API REST
-description: Pour ajouter ou mettre à jour des prix dans les catalogues partagés avec l’API, nous vous recommandons d’utiliser le service "LevelPriceStorageInterface", décrit dans la section [Gestion des prix du niveau](http://devdocs.magento.com/guides/v2.2/rest/modules/catalog-pricing.html#manage-tier-prices) Référence de l’API REST dans notre documentation destinée aux développeurs. Pour les prix du catalogue partagé, nous utilisons les tarifs de niveau et le groupe de clients.
+description: Pour ajouter ou mettre à jour des prix dans les catalogues partagés avec l’API, nous vous recommandons d’utiliser le service "LevelPriceStorageInterface", décrit dans la section [Gestion des prix du niveau](https://developer.adobe.com/commerce/webapi/rest/modules/catalog/catalog-pricing/#manage-tier-prices) Référence de l’API REST dans notre documentation destinée aux développeurs. Pour les prix du catalogue partagé, nous utilisons les tarifs de niveau et le groupe de clients.
 exl-id: 484256d6-4636-4707-a8ce-3f8e1f2b6133
 feature: REST, Catalog Management, Customer Service
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%
@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Mise à jour des prix du catalogue partagé à l’aide de l’API REST
 
-Pour ajouter ou mettre à jour des prix dans les catalogues partagés avec l’API, nous vous recommandons d’utiliser le service `TierPriceStorageInterface`, décrit dans la référence de l’API REST [ de gestion des prix de niveau ](http://devdocs.magento.com/guides/v2.2/rest/modules/catalog-pricing.html#manage-tier-prices) de notre documentation destinée aux développeurs. Pour les prix du catalogue partagé, nous utilisons les tarifs de niveau et le groupe de clients.
+Pour ajouter ou mettre à jour des prix dans les catalogues partagés avec l’API, nous vous recommandons d’utiliser le service `TierPriceStorageInterface`, décrit dans la référence de l’API REST [ de gestion des prix de niveau ](https://developer.adobe.com/commerce/webapi/rest/modules/catalog/catalog-pricing/#manage-tier-prices) de notre documentation destinée aux développeurs. Pour les prix du catalogue partagé, nous utilisons les tarifs de niveau et le groupe de clients.

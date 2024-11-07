@@ -4,7 +4,7 @@ description: Cet article fournit une solution pour éviter l’invalidation du c
 exl-id: 7cb6a39f-923b-4acc-965d-23cf7b52c25a
 feature: Cache, Catalog Management, Categories
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -67,4 +67,4 @@ En règle générale, le cache est invalidé en raison des éléments suivants :
 ## Recommandation
 
 1. Évitez de vider le cache de l’interface de ligne de commande de Commerce.
-1. Configurez les indexeurs sur **Mettre à jour par planning** au lieu de **Mettre à jour en mode d’enregistrement** car ce dernier déclenche une réindexation complète. À titre de référence, voir [Gestion des indexeurs > Configuration des indexeurs](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) dans notre documentation destinée aux développeurs.
+1. Configurez les indexeurs sur **Mettre à jour par planning** au lieu de **Mettre à jour en mode d’enregistrement** car ce dernier déclenche une réindexation complète. À titre de référence, voir [Gestion des indexeurs > Configuration des indexeurs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) dans notre documentation destinée aux développeurs.

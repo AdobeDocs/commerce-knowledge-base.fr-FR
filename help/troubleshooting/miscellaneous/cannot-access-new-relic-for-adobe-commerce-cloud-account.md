@@ -4,7 +4,7 @@ description: Cet article fournit une solution pour lorsque vous ne pouvez pas ac
 exl-id: bafe2dd9-8a16-4249-b814-7e421e25e828
 feature: Cloud, Observability, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 0%
@@ -33,4 +33,4 @@ Contactez le propriétaire du compte New Relic et demandez-lui de vous ajouter �
 
 ## Lecture connexe
 
-[Gérer [!DNL New Relic] compte](https://devdocs.magento.com/cloud/project/new-relic.html#manage-new-relic-account) dans notre documentation destinée aux développeurs.
+[Gérer [!DNL New Relic] compte](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) dans notre documentation destinée aux développeurs.

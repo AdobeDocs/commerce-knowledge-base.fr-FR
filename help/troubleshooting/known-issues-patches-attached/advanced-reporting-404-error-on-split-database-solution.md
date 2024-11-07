@@ -1,10 +1,10 @@
 ---
 title: Erreur de création de rapports avancée 404 sur la solution de base de données partagée
-description: Cet article fournit un correctif pour les utilisateurs d’Adobe Commerce 2.3.x avec la [solution de base de données partagée](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) qui rencontre une erreur 404 lors de la tentative d’utilisation du reporting avancé.
+description: Cet article fournit un correctif pour les utilisateurs d’Adobe Commerce 2.3.x avec la [solution de base de données partagée](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master) qui rencontre une erreur 404 lors de la tentative d’utilisation du reporting avancé.
 exl-id: b81d4ada-5f38-4882-bc5b-ab4ccd63fc5f
 feature: Commerce Intelligence
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Erreur de création de rapports avancée 404 sur la solution de base de données partagée
 
-Cet article fournit un correctif pour les utilisateurs d’Adobe Commerce 2.3.x avec la [solution de base de données partagée](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) qui rencontre une erreur 404 lors de la tentative d’utilisation du reporting avancé.
+Cet article fournit un correctif pour les utilisateurs d’Adobe Commerce 2.3.x avec la [solution de base de données partagée](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master) qui rencontre une erreur 404 lors de la tentative d’utilisation du reporting avancé.
 
 ## Produits et versions concernés
 

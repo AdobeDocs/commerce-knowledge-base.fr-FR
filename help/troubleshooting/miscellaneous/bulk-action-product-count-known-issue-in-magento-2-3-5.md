@@ -4,7 +4,7 @@ description: Cet article décrit un problème connu d’Adobe Commerce 2.3.5, o�
 exl-id: 3ede15d4-4c39-442a-8784-2d5e6650fe67
 feature: Products
 role: Developer
-source-git-commit: d51fd4d7b064b8eea6cd3771af279b74a8bdec48
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 0%
@@ -35,4 +35,4 @@ Un correctif sera disponible dans Adobe Commerce 2.3.6, dont la sortie est prév
    * [Problème connu de la comparaison de produits dans Adobe Commerce 2.3.5](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
    * [Problème lié au mode de paiement par pays dans Adobe Commerce sur l’infrastructure cloud et Adobe Commerce sur site 2.3.5 et 2.3.5-p1](/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md)
    * [Correctif du problème de paiement Amazon dans Adobe Commerce 2.3.5-p1](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
-   * [Adobe Commerce 2.3.5 Problèmes connus dans notre documentation destinée aux développeurs](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
+   * [Adobe Commerce 2.3.5 Problèmes connus dans notre documentation destinée aux développeurs](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)

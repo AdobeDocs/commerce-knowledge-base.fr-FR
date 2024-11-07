@@ -4,7 +4,7 @@ description: Cet article fournit un correctif pour le problème où la fonctionn
 exl-id: 46ab7f4d-ee0a-4cc1-96cc-6eb408319e9c
 feature: Checkout, Orders
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
@@ -19,13 +19,13 @@ Ce problème connu est mentionné dans notre documentation destinée aux dévelo
 
 <u>Pour Adobe Commerce 2.3.6</u> :
 
-* [Notes de mise à jour d’Adobe Commerce 2.3.6 : problèmes connus](https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html#known-issues)
-* [Notes de mise à jour de Magento Open Source 2.3.6 : problèmes connus](https://devdocs.magento.com/guides/v2.3/release-notes/open-source-2-3-6.html#known-issues)
+* [Notes de mise à jour d’Adobe Commerce 2.3.6 : problèmes connus](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/commerce-2-3-6.html)
+* [Notes de mise à jour de Magento Open Source 2.3.6 : problèmes connus](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/open-source-2-3-6.html#known-issues)
 
 <u>Pour Adobe Commerce 2.4.1</u> :
 
-* [Notes de mise à jour d’Adobe Commerce 2.4.1 : problèmes connus](https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-1.html#known-issues)
-* [Notes de mise à jour de Magento Open Source 2.4.1 : problèmes connus](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-1.html#known-issues)
+* [Notes de mise à jour d’Adobe Commerce 2.4.1 : problèmes connus](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-1#known-issues)
+* [Notes de mise à jour de Magento Open Source 2.4.1 : problèmes connus](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-1#known-issues)
 
 ## Produits et versions concernés
 
@@ -83,4 +83,4 @@ Voir [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-
 
 <u>Correctif Git</u>
 
-Voir la documentation destinée aux développeurs [Application de correctifs : correctifs personnalisés](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) pour obtenir des instructions sur les correctifs git pour Adobe Commerce/Magento Open Source.
+Voir la documentation destinée aux développeurs [Application de correctifs : correctifs personnalisés](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) pour obtenir des instructions sur les correctifs git pour Adobe Commerce/Magento Open Source.

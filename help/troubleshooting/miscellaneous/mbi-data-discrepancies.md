@@ -4,7 +4,7 @@ description: "Les chiffres d'un rapport donné semblent-ils inexacts ? Des valeu
 exl-id: 2ecea990-7292-46c1-b6eb-75f0404aaf0b
 feature: Commerce Intelligence
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Les chiffres d&#39;un rapport donné semblent-ils inexacts ? Des valeurs NULL in
 * [Liste de contrôle de diagnostic des incohérences de données](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
 * [Utilisation d’exportations pour identifier les incohérences de données](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-Nous vous recommandons également de vous assurer que les [méthodes de réplication](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-replication-methods.html) et [rechecks](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-data-rechecks.html) corrects ont été définis pour les tables et les colonnes impliquées dans l’incohérence. Notez que vous avez besoin d’autorisations d’administrateur pour accéder à la méthode de réplication et vérifier les informations.
+Nous vous recommandons également de vous assurer que les [méthodes de réplication](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) et [rechecks](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) corrects ont été définis pour les tables et les colonnes impliquées dans l’incohérence. Notez que vous avez besoin d’autorisations d’administrateur pour accéder à la méthode de réplication et vérifier les informations.
 
 ## J&#39;ai encore besoin d&#39;aide !
 

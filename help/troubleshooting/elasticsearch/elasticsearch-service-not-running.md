@@ -2,7 +2,7 @@
 title: Service Elasticsearch non en cours d’exécution
 description: Cet article fournit des solutions aux erreurs que vous pouvez rencontrer lorsque le service Elasticsearch (ES) n’est pas en cours d’exécution (généralement en raison d’un blocage). Les symptômes peuvent inclure des erreurs lors de l’exécution des contrôles de l’intégrité à l’aide de curl, de la réindexation à l’aide de la ligne de commande, des erreurs Exception et PHP, ainsi que des erreurs sur les pages du produit. Le tableau répertorie les erreurs et les liens vers les ressources pour tenter de les résoudre. Un symptôme peut avoir différentes causes.
 exl-id: 2c2230de-cb30-4a03-8c3e-d9f44783dbae
-source-git-commit: 3ff881f1c799201ed25ba9737864b1226d283c22
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Cet article fournit des solutions aux erreurs que vous pouvez rencontrer lorsque
 
    * v2.2.3+ prend en charge ES 5.x
    * Prise en charge de ES 6.x par v2.2.8+ et v2.3.1+
-   * ES v2.x et v5.x ne sont pas recommandés en raison de la [fin de vie](https://www.elastic.co/support/eol). Cependant, si vous disposez d’Adobe Commerce v2.3.1 et que vous souhaitez utiliser ES 2.x ou ES 5.x, vous devez [Changer le client php Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html).
+   * ES v2.x et v5.x ne sont pas recommandés en raison de la [fin de vie](https://www.elastic.co/support/eol). Cependant, si vous disposez d’Adobe Commerce v2.3.1 et que vous souhaitez utiliser ES 2.x ou ES 5.x, vous devez [Changer le client php Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search).
 
 * Magento Open Source v2.3.0+ prend en charge ES 5.x et 6.x (mais la version 6.x est recommandée).
 
@@ -59,8 +59,8 @@ Les index Elasticsuite ne sont pas supprimés.  Voir <a href="https://experience
 <li><a href="https://www.cyberciti.biz/datacenter/linux-unix-bsd-osx-cannot-write-to-hard-disk/">8 conseils pour résoudre les problèmes de disque dur des systèmes Linux et Unix tels que Disque complet ou Impossible d’écrire sur le disque</a></li>
 <li><a href="https://serverfault.com/questions/315181/df-says-disk-is-full-but-it-is-not">serverfault : df indique que le disque est saturé, mais qu’il ne l’est pas.</a></li>
 <li><a href="https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux">unix.stackexchange.com : Suivi de l’emplacement de l’espace disque sous Linux ?</a></li>
-<li>Les fichiers journaux ne sont pas suffisamment archivés régulièrement. Voir <a href="https://docs.magento.com/m2/ee/user_guide/system/action-log-archive.html#configure-the-log-archive">Configuration de l’archive de journaux</a> dans notre documentation destinée aux développeurs.</li>
-<li>Les répertoires système de fichiers ne sont pas optimisés. Voir <a href="https://docs.magento.com/m2/ee/user_guide/system/file-optimization.html">Optimisation de fichier</a> dans notre documentation destinée aux développeurs.</li>
+<li>Les fichiers journaux ne sont pas suffisamment archivés régulièrement. Voir <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/action-logs/action-log-archive">Configuration de l’archive de journaux</a> dans notre documentation destinée aux développeurs.</li>
+<li>Les répertoires système de fichiers ne sont pas optimisés. Voir <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#resource-file-optimization">Optimisation de fichier</a> dans notre documentation destinée aux développeurs.</li>
 <li>Si les solutions présentées dans la documentation ci-dessus ne résolvent pas le problème, contactez votre équipe de compte d’Adobe pour demander un stockage supplémentaire.</li>
 </ul>
 </li>

@@ -4,7 +4,7 @@ description: Cet article fournit une solution permettant aux commerçants de con
 exl-id: eed83713-2d6a-4360-bfa1-bebd4d604f2f
 feature: Orders, Shipping/Delivery, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -36,7 +36,7 @@ L’ID de correctif est AC-3023 et il est disponible dans la version 1.1.2 de [!
 Reportez-vous aux liens suivants sur l’utilisation de [!DNL Quality Patches Tool] et installez les correctifs en fonction de vos méthodes de déploiement :
 
 * Adobe Commerce sur site et Magento Open Source : [Outils de correctifs de qualité > Utilisation](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) dans Adobe Experience League.
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs.
 
 **Le correctif s’applique aux versions Adobe Commerce suivantes (toutes les méthodes de déploiement) :**
 

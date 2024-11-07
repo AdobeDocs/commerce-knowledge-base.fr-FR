@@ -1,10 +1,10 @@
 ---
 title: "MDVA-39935 : GraphQL renvoie les produits enfants configurables désactivés au niveau du site web"
-description: Le correctif Adobe Commerce MDVA-39935 corrige le problème en raison duquel GraphQL renvoie des produits enfants configurables désactivés au niveau du site web. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.2 est installé. L’ID de correctif est MDVA-39935. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
+description: Le correctif Adobe Commerce MDVA-39935 corrige le problème en raison duquel GraphQL renvoie des produits enfants configurables désactivés au niveau du site web. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.2 est installé. L’ID de correctif est MDVA-39935. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
 exl-id: 45bd6bd9-3572-4477-a689-d6b952a3290a
 feature: GraphQL, Configuration, Products
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-39935 : GraphQL renvoie les produits enfants configurables désactivés au niveau du site web.
 
-Le correctif Adobe Commerce MDVA-39935 corrige le problème en raison duquel GraphQL renvoie des produits enfants configurables désactivés au niveau du site web. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.2 est installé. L’ID de correctif est MDVA-39935. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
+Le correctif Adobe Commerce MDVA-39935 corrige le problème en raison duquel GraphQL renvoie des produits enfants configurables désactivés au niveau du site web. Ce correctif est disponible lorsque l’ [outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.2 est installé. L’ID de correctif est MDVA-39935. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
 
 ## Produits et versions concernés
 
@@ -27,7 +27,7 @@ Adobe Commerce (toutes les méthodes de déploiement) 2.4.1 - 2.4.3
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -77,8 +77,8 @@ Les données des produits désactivés sont récupérées dans les résultats de
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre type de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 

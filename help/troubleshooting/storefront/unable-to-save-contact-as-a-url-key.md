@@ -4,7 +4,7 @@ description: Cet article fournit une solution au problème lorsque vous ne pouve
 exl-id: eb340813-aba5-43a4-af5d-8fb64c93e021
 feature: CMS, Marketing Tools, Storefront
 role: Admin
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Impossible d&#39;enregistrer *contact* comme clé d&#39;URL
 
-Cet article fournit une solution au problème lorsque vous ne pouvez pas enregistrer *contact* en tant que clé d’URL (par exemple, &quot;/contact&quot;) pour les produits ou les pages CMS.
+Cet article fournit une solution au problème lorsque vous ne pouvez pas enregistrer *contact* en tant que clé d’URL (par exemple, &quot;/contact&quot;) pour des produits ou des pages CMS.
 
 ## Produits et versions concernés
 
@@ -63,5 +63,5 @@ Effectuez les étapes suivantes :
 
 ## Lecture connexe
 
-* [URL réécrit](https://docs.magento.com/user-guide/marketing/url-rewrite.html) dans notre guide d’utilisation.
-* [Bonnes pratiques d’optimisation pour les moteurs de recherche](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) dans notre guide d’utilisation.
+* [URL réécrit](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) dans notre guide d’utilisation.
+* [Bonnes pratiques d’optimisation pour les moteurs de recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) dans notre guide d’utilisation.

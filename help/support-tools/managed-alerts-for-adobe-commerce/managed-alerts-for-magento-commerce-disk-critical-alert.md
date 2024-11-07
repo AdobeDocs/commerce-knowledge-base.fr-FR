@@ -4,7 +4,7 @@ description: Cet article décrit les étapes de dépannage lorsque vous recevez 
 exl-id: 03e5694b-7689-4fbf-8781-636fa46ca0d3
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
-source-git-commit: c829b4383fa808df29aab03229c59f06ef8a38bc
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Vous recevrez une alerte dans New Relic si vous avez signé jusqu’à [Alertes 
 <u> **Do!** </u>
 
 * Abandonnez tout déploiement planifié jusqu’à ce que cette alerte soit effacée.
-* Mettez votre site en mode de maintenance immédiatement si votre site est ou ne répond plus complètement. Pour les étapes, reportez-vous au [Guide d’installation > Activer ou désactiver le mode de maintenance](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten) . Veillez à ajouter votre adresse IP à la liste des adresses IP exemptées afin de vous assurer que vous pouvez toujours accéder à votre site pour la résolution des problèmes. Pour les étapes, voir [Conserver la liste des adresses IP exemptées](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten#instgde-cli-maint-exempt).
+* Mettez votre site en mode de maintenance immédiatement si votre site est ou ne répond plus complètement. Pour les étapes, reportez-vous au [Guide d’installation > Activer ou désactiver le mode de maintenance](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) . Veillez à ajouter votre adresse IP à la liste des adresses IP exemptées afin de vous assurer que vous pouvez toujours accéder à votre site pour la résolution des problèmes. Pour les étapes, voir [Conserver la liste des adresses IP exemptées](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#instgde-cli-maint-exempt).
 
 **Ne pas faire !**
 

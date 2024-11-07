@@ -3,7 +3,7 @@ title: Réinitialisation de l’environnement sur Adobe Commerce sur l’infrast
 description: Cet article présente différents scénarios de restauration d’un environnement sur Adobe Commerce sur l’infrastructure cloud.
 exl-id: e6b27838-ca1e-415f-a098-2aa2576e3f20
 feature: Best Practices, Build, Cloud, Console
-source-git-commit: 598459365cad811966ed529356cb9ab876f49a38
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 0%
@@ -55,13 +55,13 @@ Lorsque vous comparez cela à l’importation d’un [!UICONTROL Database Dump] 
 
 ## Scénario 2 : restauration d’un instantané
 
-Lecture : [Restaurer un instantané sur Adobe Commerce sur l’infrastructure cloud](https://devdocs.magento.com/cloud/project/project-webint-snap.html#restore-snapshot) dans notre documentation destinée aux développeurs.
+Lecture : [Restaurer un instantané sur Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-snapshot) dans notre documentation destinée aux développeurs.
 
 >[!NOTE]
 >
 >La création d’un instantané doit être notre toute première étape après l’accès à Adobe Commerce sur le compte d’infrastructure cloud et avant l’application de modifications majeures. Il s’agit d’une bonne pratique et vivement recommandée.
 
-Lecture : [Créez un instantané](https://devdocs.magento.com/cloud/project/project-webint-snap.html#create-snapshot) dans notre documentation destinée aux développeurs.
+Lecture : [Créez un instantané](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-snapshot) dans notre documentation destinée aux développeurs.
 
 ## Scénario 3 : aucun instantané, version stable (connexion SSH disponible)
 

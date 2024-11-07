@@ -4,9 +4,9 @@ description: Ce dépannage rapide pour les utilisateurs d’Adobe Commerce vous 
 exl-id: c5c51b89-5a7d-49ba-a0ee-7abbaf78fdad
 feature: Support, Services
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ b. NO - Vérifiez le DNS en exécutant dans la ligne de commande/le terminal : `
 
 +++**Que se passe-t-il lorsque vous exécutez `dig` ?**
 
-Lorsque vous avez exécuté `dig`, il a renvoyé un enregistrement pointant vers prod.magentocloud.map.fastly.net ou l’une des adresses IP suivantes (voir [Mise à jour de la configuration DNS avec paramètre de production](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#dns) dans notre documentation destinée aux développeurs) :
+Lorsque vous avez exécuté `dig`, il a renvoyé un enregistrement pointant vers prod.magentocloud.map.fastly.net ou l’une des adresses IP suivantes (voir [Mise à jour de la configuration DNS avec paramètre de production](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist#update-dns-configuration-with-production-settings) dans notre documentation destinée aux développeurs) :
 
 * 151.101.1.124
 * 151.101.65.124
@@ -56,7 +56,7 @@ Lorsque vous avez exécuté `dig`, il a renvoyé un enregistrement pointant vers
 * 151.101.193.124
 
 a. OUI - Le problème n’est pas lié au DNS. Passez à [Étape 5](#step-5).\
-b. NO - Le problème est probablement lié au DNS. Le client doit [vérifier la configuration DNS](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#dns "https://devdocs.magento.com/cloud/live/site-launch-checklist.html#dns") ou contacter son fournisseur DNS pour plus d’informations.
+b. NO - Le problème est probablement lié au DNS. Le client doit [vérifier la configuration DNS](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist#update-dns-configuration-with-production-settings) ou contacter son fournisseur DNS pour plus d’informations.
 
 +++
 
@@ -74,7 +74,7 @@ b. NO - Rendez-vous sur [http://fastly-debug.com](https://www.fastly-debug.com/)
 +++**Le certificat a-t-il expiré ?**
 
 a. OUI - Vous devez renouveler votre certificat TLS avec l’autorité de certification (CA).\
-b. NON - Vous ne disposez peut-être pas du tout d’un certificat. Si vous disposez d’Adobe Commerce, nous vous recommandons d’acheter un certificat TLS. Si vous utilisez Adobe Commerce sur l’infrastructure cloud, vous pouvez disposer d’un certificat SSL/TLS à validation de domaine pour diffuser rapidement le trafic HTTPS sécurisé. Voir [configuration des certificats SSL/TLS](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#provision-ssltls-certificates) dans notre documentation destinée aux développeurs.
+b. NON - Vous ne disposez peut-être pas du tout d’un certificat. Si vous disposez d’Adobe Commerce, nous vous recommandons d’acheter un certificat TLS. Si vous utilisez Adobe Commerce sur l’infrastructure cloud, vous pouvez disposer d’un certificat SSL/TLS à validation de domaine pour diffuser rapidement le trafic HTTPS sécurisé. Voir [configuration des certificats SSL/TLS](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates) dans notre documentation destinée aux développeurs.
 
 +++
 

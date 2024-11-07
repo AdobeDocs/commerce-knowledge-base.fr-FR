@@ -4,7 +4,7 @@ description: Cet article fournit un correctif pour le moment où le fichier `rob
 exl-id: 6f0b9f47-1901-4c43-88d8-fd992015d70f
 feature: Cloud, Marketing Tools, Paas
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -38,5 +38,5 @@ Si vous avez activé le libre-service, mettez à niveau les outils de la fonctio
 ## Lecture connexe
 
 * [Comment bloquer le trafic malveillant pour les Magento Commerce Cloud à un niveau Fastly](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) dans notre base de connaissances de support.
-* [Ajoutez des robots de moteur de recherche et de carte de site](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) dans notre documentation destinée aux développeurs.
+* [Ajoutez des robots de moteur de recherche et de carte de site](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) dans notre documentation destinée aux développeurs.
 * [Robots de moteur de recherche](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots) dans notre guide d’utilisation.

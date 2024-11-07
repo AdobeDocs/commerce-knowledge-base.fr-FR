@@ -4,7 +4,7 @@ description: Cet article fournit un correctif, permettant aux commerçants utili
 exl-id: 4350e83a-495b-41b4-a526-dae5923e9d41
 feature: Orders, Shipping/Delivery, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Adobe Commerce 2.4.5, dont la publication est prévue pour août 2022, contiendr
 ## Correctif
 
 L’ID de correctif est AC-3022 disponible dans la version 1.1.16 de l’outil Correctifs de qualité.
-Pour plus d’informations sur l’utilisation du protocole QPT et l’installation des correctifs, reportez-vous à l’article [Outil de correctifs de qualité (QPT) > Utilisation](https://devdocs.magento.com/quality-patches/usage.html) de notre documentation destinée aux développeurs.
+Pour plus d’informations sur l’utilisation du protocole QPT et l’installation des correctifs, reportez-vous à l’article [Outil de correctifs de qualité (QPT) > Utilisation](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) de notre documentation destinée aux développeurs.
 
 Le correctif s’applique aux versions Adobe Commerce suivantes :
 
@@ -38,5 +38,5 @@ Le correctif s’applique aux versions Adobe Commerce suivantes :
 
 ## Lecture connexe
 
-* [Carrières de livraison > DHL](https://docs.magento.com/user-guide/shipping/dhl.html) dans notre guide d’utilisation
-* [Méthodes de diffusion](https://docs.magento.com/user-guide/configuration/sales/delivery-methods.html) dans notre guide d’utilisation
+* [Carrières de livraison > DHL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-carriers/dhl) dans notre guide d’utilisation
+* [Méthodes de diffusion](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/delivery-methods) dans notre guide d’utilisation

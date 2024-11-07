@@ -4,7 +4,7 @@ description: Cet article décrit la solution du problème "L’application de mi
 exl-id: 85e55ed8-0bc9-4378-b722-46be98ce2638
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
@@ -29,4 +29,4 @@ Le message suivant est affiché dans la vérification de préparation :
 
 ## Solution
 
-Pour résoudre ce problème, vérifiez s’il existe un répertoire `<magento_root>/update` contenant des fichiers et des sous-répertoires. Sinon, voir [Configuration de la mise à jour](https://devdocs.magento.com/guides/v2.3/comp-mgr/updater/update-updater.html) dans notre documentation destinée aux développeurs.
+Pour résoudre ce problème, vérifiez s’il existe un répertoire `<magento_root>/update` contenant des fichiers et des sous-répertoires. Sinon, voir [Configuration de la mise à jour](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/updater-application-is-not-available-error) dans notre documentation destinée aux développeurs.

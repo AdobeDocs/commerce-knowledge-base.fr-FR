@@ -4,7 +4,7 @@ description: Cet article présente quelques problèmes courants de MySQL (requê
 exl-id: cae02e4f-d8cb-4074-abac-24ead22bdc07
 feature: Services
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -80,5 +80,5 @@ Cela permet d’identifier si le serveur MySQL est actif et s’il n’y a aucun
 
 * [MySQL Show Processlist Syntax](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) dans dev.mysql.com.
 * [Syntaxe de la mort MySQL](https://dev.mysql.com/doc/refman/8.0/en/kill.html) dans dev.mysql.com.
-* [Sécurité, performance et gestion des données](https://devdocs.magento.com/guides/v2.3/ext-best-practices/extension-coding/security-performance-data-bp.html) dans notre documentation destinée aux développeurs.
-* [Aide de MySQL](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/mysql.html) dans notre documentation destinée aux développeurs.
+* [Sécurité, performance et gestion des données](https://developer.adobe.com/commerce/php/best-practices/extensions/security/) dans notre documentation destinée aux développeurs.
+* [Aide de MySQL](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql) dans notre documentation destinée aux développeurs.

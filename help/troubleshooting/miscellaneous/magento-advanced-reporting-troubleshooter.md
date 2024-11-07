@@ -4,7 +4,7 @@ description: Les problèmes de création de rapports avancés sur Adobe Commerce
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -19,10 +19,10 @@ Les problèmes de création de rapports avancés sur Adobe Commerce peuvent êtr
 
 +++**Votre site web répond-il à des exigences de création de rapports avancées ?**
 
-Vous disposez d’une page Erreur 404 lors de l’utilisation du reporting avancé. Votre site web est-il conforme aux [exigences de création de rapports avancées](https://docs.magento.com/user-guide/reports/advanced-reporting.html#requirements) ?
+Vous disposez d’une page Erreur 404 lors de l’utilisation du reporting avancé. Votre site web est-il conforme aux [exigences de création de rapports avancées](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements) ?
 
 a. OUI - Passez à l’ [étape 2](#step-2).\
-b. NON - Renseignez les exigences de création de rapports avancées pour votre site en suivant les étapes de la section [Exigences de création de rapports avancées](https://docs.magento.com/user-guide/reports/advanced-reporting.html#requirements). Ensuite, passez à l’ [étape 2](#step-2).
+b. NON - Renseignez les exigences de création de rapports avancées pour votre site en suivant les étapes de la section [Exigences de création de rapports avancées](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements). Ensuite, passez à l’ [étape 2](#step-2).
 
 +++
 
@@ -44,7 +44,7 @@ Si plusieurs devises de base ont jamais été utilisées, vous ne pouvez pas uti
 
 +++**Utilisez-vous la solution de base de données partagée ?**
 
-Utilisez-vous la [solution de base de données partagée](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) ?
+Utilisez-vous la [solution de base de données partagée](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master) ?
 
 a. OUI - Utilisez le correctif **MDVA-26831** dans [l’erreur Advanced Reporting 404 sur la solution de base de données partagée](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-404-error-on-split-database-solution.md) et effacez le cache. Patientez 24 heures pendant que la tâche s’exécute à nouveau et réessayez.\
 b. NO - Passez à [Étape 4](#step-4).
@@ -55,10 +55,10 @@ b. NO - Passez à [Étape 4](#step-4).
 
 +++**La création de rapports avancés est-elle activée ?**
 
-Cochez **Admin** > **Magasins** > **Paramètres** > **Configuration** > **Général** > **Création de rapports avancés**. Pour obtenir des instructions détaillées, consultez la section [Création de rapports avancés : activer la création de rapports avancés](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting).
+Cochez **Admin** > **Magasins** > **Paramètres** > **Configuration** > **Général** > **Création de rapports avancés**. Pour obtenir des instructions détaillées, consultez la section [Création de rapports avancés : activer la création de rapports avancés](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting).
 
 a. OUI - Passez à l’ [étape 5](#step-5).\
-b. NO - [Activez les rapports avancés](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) et enregistrez-les, puis attendez 24 heures que les rapports avancés et Adobe Commerce se synchronisent. Vérifiez si vos données sont désormais chargées. Si c&#39;est le cas, vous avez résolu le problème. S’il ne passe pas à [Étape 5](#step-5).
+b. NO - [Activez les rapports avancés](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) et enregistrez-les, puis attendez 24 heures que les rapports avancés et Adobe Commerce se synchronisent. Vérifiez si vos données sont désormais chargées. Si c&#39;est le cas, vous avez résolu le problème. S’il ne passe pas à [Étape 5](#step-5).
 
 +++
 
@@ -81,9 +81,9 @@ Vérifiez la valeur du compteur dans la table des indicateurs en exécutant cett
 
 a. OUI - Effectuez les étapes suivantes : 1. Exécutez la requête ci-dessous :\
 ``DELETE from `flag` where `flag_code` = 'analytics_link_subscription_update_reverse_counter';``\
-2\. [Désactivez et activez le module de création de rapports avancé](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) dans les paramètres et [réautorisez le jeton](https://docs.magento.com/user-guide/reports/advanced-reporting.html#verify-that-the-integration-is-active).\
+2\. [Désactivez et activez le module de création de rapports avancé](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) dans les paramètres et [réautorisez le jeton](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
 3\. Patientez 24 heures pour la synchronisation d’Adobe Commerce et des rapports avancés. Si vous ne pouvez toujours pas voir les données dans les rapports avancés, [soumettez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
-b. NO - Si la requête ne renvoie rien, procédez comme suit : 1. [Désactivez et activez le module de création de rapports avancé](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) dans les paramètres et [réautorisez le jeton](https://docs.magento.com/user-guide/reports/advanced-reporting.html#verify-that-the-integration-is-active).\
+b. NO - Si la requête ne renvoie rien, procédez comme suit : 1. [Désactivez et activez le module de création de rapports avancé](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) dans les paramètres et [réautorisez le jeton](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
 2\. Patientez 24 heures pour la synchronisation d’Adobe Commerce et des rapports avancés. Si vous ne pouvez toujours pas voir les données dans les rapports avancés, [soumettez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++

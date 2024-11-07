@@ -2,7 +2,7 @@
 title: Restauration d’un instantané de la base de données à partir de l’évaluation ou de la production
 description: Cet article explique comment restaurer un instantané de la base de données à partir de l’évaluation ou de la production sur Adobe Commerce sur l’infrastructure cloud.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: b99d78845128ca3d995cbbb5df0799449ca954e3
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Les étapes sont les suivantes :
    ```
 
 1. Copiez la base de données [!DNL dump file] (par exemple : `<cluster ID>.sql.gz` pour [!DNL Production] ou `<cluster ID_stg>.sql.gz` pour [!DNL Staging]) sur votre ordinateur local.
-1. Assurez-vous d’avoir configuré le [!DNL SSH tunnel] pour vous connecter à la base de données à distance : [[!DNL SSH]  et  [!DNL sFTP] : [!DNL SSH tunneling]](https://devdocs.magento.com/cloud/env/environments-ssh.html#env-start-tunn) dans la documentation destinée aux développeurs.
+1. Assurez-vous d’avoir configuré le [!DNL SSH tunnel] pour vous connecter à la base de données à distance : [[!DNL SSH]  et  [!DNL sFTP] : [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) dans la documentation destinée aux développeurs.
 1. Connexion à la base de données.
 
    ```sql
@@ -152,5 +152,5 @@ Les étapes sont les suivantes :
 
 Dans notre documentation destinée aux développeurs :
 
-* [Importer le code : importez la base de données](https://devdocs.magento.com/cloud/setup/first-time-setup-import-import.html#cloud-import-db)
-* [[!DNL Snapshots]  et  [!DNL backup] management : [!DNL Dump] votre base de données](https://devdocs.magento.com/cloud/project/project-webint-snap.html#db-dump)
+* [Importer le code : importez la base de données](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
+* [[!DNL Snapshots]  et  [!DNL backup] management : [!DNL Dump] votre base de données](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)

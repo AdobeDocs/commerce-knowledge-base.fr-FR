@@ -4,7 +4,7 @@ description: 'Adobe a publié l’outil de correctifs de qualité pour une dispo
 exl-id: e6a79d16-84be-4a71-a41d-ef2b43ec98d9
 feature: Tools and External Services
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -29,5 +29,5 @@ Une fois l’outil installé, vous pouvez rechercher les correctifs disponibles,
 
 Pour plus d’informations, reportez-vous à notre documentation destinée aux développeurs :
 
-* [Correctifs disponibles dans l’outil Correctifs de qualité](https://devdocs.magento.com/quality-patches/tool.html#patch-grid)
-* [Notes de mise à jour de l’outil Correctifs de qualité](https://devdocs.magento.com/quality-patches/release-notes.html)
+* [Correctifs disponibles dans l’outil Correctifs de qualité](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)
+* [Notes de mise à jour de l’outil Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)

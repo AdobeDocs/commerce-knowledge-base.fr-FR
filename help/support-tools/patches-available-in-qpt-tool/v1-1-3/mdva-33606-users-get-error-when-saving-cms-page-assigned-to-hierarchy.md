@@ -1,10 +1,10 @@
 ---
 title: 'MDVA-33606 : les utilisateurs reçoivent une erreur lors de l’enregistrement de la page CMS affectée à la hiérarchie'
-description: Le correctif MDVA-33606 résout le problème où les utilisateurs obtiennent une erreur *violation de contrainte unique trouvée* lors de l’enregistrement d’une page CMS affectée à l’arborescence de hiérarchie. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.3 est installé. L’ID de correctif est MDVA-33606. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.3.
+description: Le correctif MDVA-33606 résout le problème où les utilisateurs obtiennent l’erreur *violation de contrainte unique trouvée* lors de l’enregistrement d’une page CMS affectée à l’arborescence de hiérarchie. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.3 est installé. L’ID de correctif est MDVA-33606. Veuillez noter que le problème a été corrigé dans Adobe Commerce 2.4.3.
 exl-id: cdefece5-6d13-4003-87e9-810c665e940c
 feature: CMS
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Le correctif MDVA-33606 résout le problème où les utilisateurs reçoivent l�
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
@@ -35,19 +35,19 @@ Lors de l’enregistrement d’une page CMS affectée à l’arborescence, les u
 
 <u>Étapes à reproduire</u> :
 
-1. Créez une page CMS. Définissez la portée sur Toutes les vues de magasin. Il s’agit de votre CMS Page 1.
+1. Créez une page CMS. Définissez la portée sur Toutes les vues de magasin. Il s’agit de votre page CMS 1.
 1. Créez une vue de magasin. Il s’agit de votre vue de magasin 2.
-1. Accédez à **Contenu** > **Hiérarchie** > Ajouter la page 1 du CMS à l’arborescence.
+1. Accédez à **Contenu** > **Hiérarchie** > Ajouter la page CMS 1 à l’arborescence de hiérarchie.
 1. Définissez la portée sur Affichage du magasin 2.
    * Décochez la case &quot;Utiliser la hiérarchie des noeuds parents&quot;.
-   * Ajoutez la page 1 CMS à cette portée et enregistrez-la.
+   * Ajoutez la page CMS 1 à cette portée et enregistrez-la.
 1. Définissez désormais la portée sur Affichage de magasin par défaut.
    * Décochez la case &quot;Utiliser la hiérarchie des noeuds parents&quot;.
-   * Ajoutez la page 1 CMS à cette portée et enregistrez-la.
+   * Ajoutez la page CMS 1 à cette portée et enregistrez-la.
 1. Accédez à **Contenu** > **Pages** > **Ajouter une nouvelle page**.
    * Nommez la page Page 2.
    * Dans la section Page des sites web, affectez-vous à Toutes les vues de magasin et aux deux vues de magasin (vue de magasin par défaut et vue de magasin 2), puis cliquez sur **Enregistrer la page**.
-1. Dans la page de modification du CMS, ouvrez l’onglet Hiérarchie .
+1. Dans la page de modification de CMS, ouvrez l’onglet Hiérarchie .
    * Affectez la page 2 au noeud Affichage de magasin 2, au noeud par défaut et au noeud Tous les sites web.
 
 <u>Résultats attendus</u> :
@@ -62,8 +62,8 @@ Vous obtenez l’erreur suivante : *Violation de contrainte unique trouvée*.
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://devdocs.magento.com/cloud/project/project-patch.html) dans notre documentation destinée aux développeurs.
+* Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 

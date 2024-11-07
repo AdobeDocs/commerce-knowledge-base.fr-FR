@@ -4,7 +4,7 @@ description: Cet article fournit des solutions aux conflits de dépendance de co
 exl-id: e0865226-2aaf-4bdd-8c28-28f32f38ce0c
 feature: Configuration
 role: Developer
-source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 0%
@@ -51,7 +51,7 @@ file_put_contents(/var/www/html/magento2/var/composer_home/cache/repo/https---
 packagist.org/provider-doctrine$instantiator.json): failed to open stream: Permission denied
 ```
 
-Veillez à définir les autorisations du système de fichiers comme décrit dans l’article [Présentation de la propriété et des autorisations](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) de notre documentation destinée aux développeurs.
+Veillez à définir les autorisations du système de fichiers comme décrit dans l’article [Présentation de la propriété et des autorisations](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) de notre documentation destinée aux développeurs.
 
 ## L’état de vérification de la dépendance des composants ne change jamais. {#trouble-depend-state}
 

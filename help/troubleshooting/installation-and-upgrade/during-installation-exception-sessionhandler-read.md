@@ -1,7 +1,7 @@
 ---
 title: Lors de l’installation, exception SessionHandler::read()
 description: "Cet article fournit un correctif pour une erreur **SessionHandler::read()** d’exception lors de l’installation d’Adobe Commerce."
-source-git-commit: 5cec04f8c4f80d34fc26b06eb929960ce21e2dc0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -25,7 +25,7 @@ in ../magento2/lib/internal/Magento/Framework/App/ErrorHandler.php:67
 
 >[!NOTE]
 >
->Cette erreur survient uniquement dans les versions de code antérieures au 28 septembre 2015. Si vous installez le code du 29 septembre ou une date ultérieure, cette erreur ne doit pas se produire. Pour plus d’informations sur les options de configuration pour Redis, voir [Configuration de Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html) dans notre documentation destinée aux développeurs. Pour plus d’informations sur la spécification de Redis à l’aide du programme d’installation de ligne de commande, consultez la [rubrique d’installation](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-install.html) ou la [ rubrique de configuration de déploiement](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-deployment.html#instgde-cli-subcommands-configphp) dans notre documentation destinée aux développeurs.
+>Cette erreur survient uniquement dans les versions de code antérieures au 28 septembre 2015. Si vous installez le code du 29 septembre ou une date ultérieure, cette erreur ne doit pas se produire. Pour plus d’informations sur les options de configuration pour Redis, voir [Configuration de Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) dans notre documentation destinée aux développeurs. Pour plus d’informations sur la spécification de Redis à l’aide du programme d’installation de ligne de commande, consultez la [rubrique d’installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced) ou la [ rubrique de configuration de déploiement](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/deployment) dans notre documentation destinée aux développeurs.
 
 ## Cause
 
@@ -33,7 +33,7 @@ Cela se produit lorsque votre paramètre `session.save_handler` PHP est défini 
 
 ## Solutions :
 
-* Mettez à niveau votre code Adobe Commerce. Reportez-vous au [Guide d&#39;installation > Mise à jour du logiciel Adobe Commerce](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-uninstall.html#instgde-install-magento-update) dans notre documentation destinée aux développeurs.
+* Mettez à niveau votre code Adobe Commerce. Reportez-vous au [Guide d&#39;installation > Mise à jour du logiciel Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall) dans notre documentation destinée aux développeurs.
 * Utilisez la solution de contournement suivante avec le code existant :
 
 ## Localisez `php.ini` {#locate-php-ini}

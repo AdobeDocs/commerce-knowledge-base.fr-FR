@@ -4,7 +4,7 @@ description: Résolvez le problème lié à l’absence ou à la modification du
 exl-id: d80bf981-8ba6-4357-a841-57bf5d3f2a3f
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Les fichiers BAK sont un produit du processus de déploiement. Si vous modifiez 
 
 Pour restaurer les fichiers de configuration :
 
-1. Connectez-vous à votre référentiel distant à l’aide de [SSH](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+1. Connectez-vous à votre référentiel distant à l’aide de [SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
 1. Liste des fichiers de sauvegarde disponibles.
 
    ```

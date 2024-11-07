@@ -4,7 +4,7 @@ description: Cet article fournit une solution à un problème connu dans Adobe C
 exl-id: 682eac73-1ad2-4093-acfb-6a8da4c05cf5
 feature: Page Builder
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -44,7 +44,7 @@ La solution consiste à utiliser un autre navigateur que Safari. Le problème de
 
 ## Lecture connexe
 
-* [Qu’est-ce que le créateur de pages ?](https://devdocs.magento.com/page-builder/docs/) dans notre documentation destinée aux développeurs.
+* [Qu’est-ce que le créateur de pages ?](https://developer.adobe.com/commerce/frontend-core/page-builder/) dans notre documentation destinée aux développeurs.
 * [Configuration du créateur de pages](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html) dans notre documentation destinée aux développeurs.
-* [Page Builder](https://docs.magento.com/user-guide/cms/page-builder.html) dans notre guide d’utilisation.
-* [Page Builder - Elements](https://docs.magento.com/user-guide/cms/page-builder-elements.html) dans notre guide d’utilisation.
+* [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/introduction) dans notre guide d’utilisation.
+* [Page Builder - Elements](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/workspace#elements) dans notre guide d’utilisation.

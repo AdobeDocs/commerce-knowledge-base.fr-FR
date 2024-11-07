@@ -3,7 +3,7 @@ title: Modification du propriétaire du compte pour New Relic sur Cloud
 description: Pour votre projet d’infrastructure cloud Adobe Commerce, vous pouvez modifier le propriétaire du compte New Relic sur la page de l’interface utilisateur de New Relic. Pour obtenir des instructions détaillées, voir [Modification du propriétaire du compte](https://docs.newrelic.com/docs/accounts/accounts/roles-permissions/change-account-owner) dans la documentation New Relic.
 exl-id: fbb778d5-7e5d-4cd9-849a-4071ca9e4bea
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
@@ -20,4 +20,4 @@ Si un utilisateur doit être ajouté en tant qu’utilisateur, mais qu’aucun p
 
 ## Lecture connexe
 
-* [Services New Relic](https://devdocs.magento.com/guides/v2.3/cloud/project/new-relic.html) dans notre documentation destinée aux développeurs.
+* [Services New Relic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) dans notre documentation destinée aux développeurs.

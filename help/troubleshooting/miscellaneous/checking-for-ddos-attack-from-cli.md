@@ -4,7 +4,7 @@ description: Cet article explique comment vérifier les attaques par déni de se
 exl-id: dfdef289-cf51-42d7-b3fb-d4d2d3760951
 feature: Observability
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
@@ -35,8 +35,8 @@ Encore une fois, il est important de noter que l’utilisation de logiciels spé
 ## Étapes de la solution
 
 1. Vérifiez vos journaux Adobe Commerce pour voir si autre chose que l’attaque DDoS se produit. Pour plus d’informations, reportez-vous aux articles suivants de notre documentation destinée aux développeurs :
-   * [Emplacements des journaux Adobe Commerce et Magento Open Source](https://devdocs.magento.com/guides/v2.3/config-guide/cli/logging.html)
-   * [Adobe Commerce sur les emplacements des journaux d’infrastructure cloud](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html)
+   * [Emplacements des journaux Adobe Commerce et Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/enable-logging)
+   * [Adobe Commerce sur les emplacements des journaux d’infrastructure cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations)
 1. Commencez à utiliser votre interface de ligne de commande pour vérifier toutes vos connexions Internet actuelles à l’aide de la commande `netstat` : `netstat -na`. Cette option affiche toutes les connexions établies actives au serveur. Ici, vous pouvez peut-être remarquer trop de connexions provenant de la même adresse IP.
 1. Pour affiner davantage vos résultats de connexion établis à ceux qui se connectent sur le port 80 (le port http de votre site web), afin que vous puissiez trier et reconnaître trop de connexions à partir d’une adresse IP ou d’un groupe d’adresses IP, utilisez la commande suivante : `netstat -an | grep :80 | sort`. Vous pouvez répéter la même commande pour https sur le port 443: `netstat -an | grep :443 | sort`. Une autre option consiste à étendre la commande d&#39;origine aux ports 80 et 443 : `netstat -an | egrep ":80|:443" | sort`.
 1. Pour voir si plusieurs `SYNC_REC` actifs se produisent sur le serveur, utilisez la commande :     `netstat -n -p|grep SYN_REC | wc -l`     Cette valeur est généralement inférieure à 5, mais elle peut être beaucoup plus élevée lors d’une attaque DDoS, même si, pour certains serveurs, un nombre plus élevé peut être une condition normale.
@@ -53,6 +53,6 @@ Si vous constatez que vous êtes attaqué par DDoS, les étapes que vous pouvez 
 
 ## Lectures connexes dans notre documentation destinée aux développeurs :
 
-* [Protection DDoS](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-fastly.html#ddos-protection)
-* [Utilisation de commandes de l’interface de ligne de commande](https://devdocs.magento.com/guides/v2.3/config-guide/deployment/pipeline/example/cli.html)
-* [Interface de ligne de commande cloud pour Commerce](https://devdocs.magento.com/guides/v2.3/cloud/reference/cli-ref-topic.html)
+* [Protection DDoS](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#ddos-protection)
+* [Utilisation de commandes de l’interface de ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli)
+* [Interface de ligne de commande cloud pour Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview)

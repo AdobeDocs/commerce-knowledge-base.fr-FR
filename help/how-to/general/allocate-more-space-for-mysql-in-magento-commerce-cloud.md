@@ -3,7 +3,7 @@ title: Allouer plus d’espace pour MySQL dans Adobe Commerce sur le cloud
 description: Cet article explique comment allouer plus d’espace à MySQL dans Adobe Commerce sur l’infrastructure cloud.
 exl-id: 98501aa0-5ec7-4ea1-8856-13d171ad0be9
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -23,7 +23,7 @@ mysql:
     disk: 2048
 ```
 
-Voir l’article [Configuration du service MySQL](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-mysql.html) à titre de référence.
+Voir l’article [Configuration du service MySQL](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql) à titre de référence.
 
 Une fois que vous avez modifié le fichier `.magento/services.yaml`, vous devez valider et pousser vos modifications pour qu’elles soient appliquées. La notification push déclenche le processus de déploiement.
 

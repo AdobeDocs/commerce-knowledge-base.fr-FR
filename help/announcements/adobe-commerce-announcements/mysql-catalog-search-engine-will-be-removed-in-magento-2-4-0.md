@@ -4,7 +4,7 @@ description: Adobe Commerce sur site, Adobe Commerce sur l’infrastructure clou
 exl-id: 717be515-3cbf-42e9-9b72-caf11b8c3771
 feature: Catalog Management, Search, Services
 role: Admin
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 0%
@@ -36,11 +36,11 @@ La suppression du moteur de recherche MySQL est due au fait qu’Elasticsearch o
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">MySQL</td>
-<td style="width: 478.2px;">Vous devez installer Elasticsearch. Voir <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html">Installation et configuration de l’Elasticsearch</a> dans notre documentation destinée aux développeurs.</td>
+<td style="width: 478.2px;">Vous devez installer Elasticsearch. Voir <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search">Installation et configuration de l’Elasticsearch</a> dans notre documentation destinée aux développeurs.</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">Elasticsearch (sans version répertoriée)</td>
-<td style="width: 478.2px;">Vous utilisez Elasticsearch 2 et devez effectuer la mise à jour vers Elasticsearch 7 (recommandé) ou 6. Pour plus d’informations, voir <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html#es-upgrade6">Mise à niveau d’Elasticsearch</a> et <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html">Configuration de Commerce pour utiliser Elasticsearch</a> dans la documentation destinée aux développeurs.</td>
+<td style="width: 478.2px;">Vous utilisez Elasticsearch 2 et devez effectuer la mise à jour vers Elasticsearch 7 (recommandé) ou 6. Pour plus d’informations, voir <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search#es-upgrade6">Mise à niveau d’Elasticsearch</a> et <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine">Configuration de Commerce pour utiliser Elasticsearch</a> dans la documentation destinée aux développeurs.</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">ELASTICSEARCH 5</td>
@@ -59,7 +59,7 @@ La suppression du moteur de recherche MySQL est due au fait qu’Elasticsearch o
 
 ## Installation :
 
-Lorsque Adobe Commerce on-premise et Magento Open Source 2.4.0 est publié, Elasticsearch est un composant obligatoire. Vous devez donc disposer d’un hôte Elasticsearch configuré et configuré avant d’installer la version 2.4.0. Voir [Installation et configuration de l’Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) dans la documentation du développeur.
+Lorsque Adobe Commerce on-premise et Magento Open Source 2.4.0 est publié, Elasticsearch est un composant obligatoire. Vous devez donc disposer d’un hôte Elasticsearch configuré et configuré avant d’installer la version 2.4.0. Voir [Installation et configuration de l’Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) dans la documentation du développeur.
 
 Par défaut, la recherche Adobe Commerce utilise Elasticsearch 7 comme moteur de recherche et tente de se connecter à un serveur à l’emplacement localhost:9200. Elasticsearch 6.x est également pris en charge. Si votre configuration ne correspond pas aux valeurs par défaut, vous pouvez configurer ces paramètres à l’aide d’arguments transmis à `setup:install`, de la même manière que la connexion à la base de données est configurée.
 

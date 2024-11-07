@@ -4,7 +4,7 @@ description: Cet article fournit un correctif pour une installation qui a échou
 exl-id: ff614018-8e49-4170-a806-8ebdc91ae8a9
 feature: Install, Logs, Upgrade
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Pour résoudre le problème, modifiez la valeur de `open_basedir` et redémarrez
 
 Si vous ne savez pas comment modifier cette valeur, procédez comme suit :
 
-1. Si vous ne l&#39;avez pas déjà fait, créez [phpinfo.php](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo).
+1. Si vous ne l&#39;avez pas déjà fait, créez [phpinfo.php](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software).
 1. Saisissez l’URL suivante dans le champ d’adresse ou d’emplacement de votre navigateur : `https://<your web server IP or hostname>/<path to docroot>/phpinfo.php`
 1. Recherchez l’emplacement de `php.ini`.     `php.ini` est généralement spécifié sous la forme **Fichier de configuration chargé** dans les résultats affichés.
 1. En tant qu&#39;utilisateur disposant de droits racine, ouvrez `php.ini` dans un éditeur de texte.
