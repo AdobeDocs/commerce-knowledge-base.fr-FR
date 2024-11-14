@@ -4,9 +4,9 @@ description: Cet article fournit une solution pour les problèmes de performance
 exl-id: 68dfca8a-826c-4476-acaf-a139052b5dcc
 feature: Cache
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 3bcdbd0536ec71cb80ffa3afbcd53c4ae385d2e3
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Les demandes d’AJAX à débit élevé incluent celles liées au contenu privé
 
 Il existe trois solutions :
 
-* [Mise à niveau vers la version 2.3.4](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version). Si ce n&#39;est pas possible actuellement, [installez le correctif qui corrige le problème](/help/troubleshooting/known-issues-patches-attached/performance-issues-caused-by-excessive-ajax-requests.md).
+* [Mise à niveau vers la version 2.3.4](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version).
 * Veillez à des requêtes plus légères (requêtes de cache ou déplacement vers le contenu privé des clients).
 * Réduire le nombre de requêtes.
 
