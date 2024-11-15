@@ -4,9 +4,9 @@ description: Cet article fournit des recommandations sur la manière d’éviter
 exl-id: 1488e2db-4a5d-4963-b48e-b84f760582d1
 feature: Products, Storefront
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: b3d39e6b02728f05f046adf7be94ffacbca944d5
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '303'
 ht-degree: 0%
 
 ---
@@ -43,9 +43,6 @@ Vous pouvez afficher le correctif dans GitHub (veuillez tenir compte du fait que
 <p title="Commandes multi-expédition avec un produit virtuel non traité correctement dans Adobe Commerce 2.3.5"><a href="/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md">Commandes multi-expédition avec un produit virtuel non traité correctement dans Adobe Commerce 2.3.5</a></p>
 </li>
 <li><a href="/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md">Problème connu du comptage de produit d’action en bloc dans Adobe Commerce 2.3.5</a></li>
-<li>
-<p title="Problème lié au mode de paiement par pays dans Adobe Commerce sur l’infrastructure cloud et Adobe Commerce sur site 2.3.5 et 2.3.5-p1"><a href="/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md">Problème lié au mode de paiement par pays dans Adobe Commerce sur l’infrastructure cloud et Adobe Commerce sur site 2.3.5 et 2.3.5-p1</a></p>
-</li>
 <li>
 <p title="Correctif du problème de paiement Amazon dans Adobe Commerce 2.3.5-p1"><a href="/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md">Correctif du problème de paiement Amazon dans Adobe Commerce 2.3.5-p1</a></p>
 </li>

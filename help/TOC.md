@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: bfbac61b95e895bcea90b6aa2f1190a30de7ba15
+source-git-commit: 63664230a110a4ebf37c058e3bde71f6a359ac13
 workflow-type: tm+mt
-source-wordcount: '9559'
+source-wordcount: '9478'
 ht-degree: 0%
 
 ---
@@ -955,17 +955,10 @@ ht-degree: 0%
       * [Emplacement de l’URL d’administration Adobe Commerce divulgué](/help/troubleshooting/known-issues-patches-attached/magento-admin-url-location-disclosed.md)
       * [Plusieurs tâches cron planifiées pour la même période](/help/troubleshooting/known-issues-patches-attached/multiple-cron-jobs-scheduled-for-the-same-time-period.md)
       * [Échantillons de produits configurables non affichés en rupture de stock](/help/troubleshooting/known-issues-patches-attached/configurable-product-swatches-not-displayed-as-crossed-out-when-out-of-stock.md)
-      * [Erreur 503 sur les pages du catalogue frontal du magasin avec &quot;violation de contrainte d’intégrité&quot; dans les journaux](/help/troubleshooting/known-issues-patches-attached/503-error-on-store-front-catalog-pages-with-integrity-constraint-violation-in-logs.md)
-      * [Plus de produits ont été supprimés qu’ils n’ont été lancés lors d’une suppression en masse dans Admin](/help/troubleshooting/known-issues-patches-attached/not-selected-rows-are-deleted-during-mass-action-deletion.md)
-      * [L’invalidation de la mise en cache d’Adobe Commerce sur l’infrastructure cloud v2.3.5 GraphQL ne fonctionne pas](/help/troubleshooting/known-issues-patches-attached/magento-commerce-cloud-v2-3-5-graphql-caching-invalidation-not-working.md)
       * [L’administrateur ne peut pas créer de commande/réorganisation lorsque le paiement du Braintree est activé](/help/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.md)
-      * [Dupliquer les entrées dans la table du catalogue après avoir modifié la date de fin d’une mise à jour de planning](/help/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.md)
-      * [Correctif Adobe Commerce 2.3.5, 2.3.5-p1 : problème de paiement du pays](/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md)
-      * [&quot;Erreur 500&quot; après avoir double-cliqué sur Supprimer le lien dans le panier](/help/troubleshooting/known-issues-patches-attached/500-error-after-double-clicking-remove-link-in-shopping-cart.md)
       * [Packages rétrogradation après mise à niveau de 2.4.4 à 2.4.4-p1](/help/troubleshooting/known-issues-patches-attached/packages-downgraded-after-upgrading-from-2-4-4-to-2-4-4-p1.md)
       * [Adobe Commerce 2.3.6, 2.4.1 CAPTCHA dans le passage en caisse ne fonctionne pas](/help/troubleshooting/known-issues-patches-attached/magento-commerce-2-3-6-2-4-1-captcha-in-checkout-not-working.md)
       * [Commande d’email envoyée à partir de l’adresse email du serveur](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
-      * [Adobe Commerce 2.4.1 et 2.3.6 créent un bouton de compte désactivé.](/help/troubleshooting/known-issues-patches-attached/2-4-1-and-2-3-6-create-an-account-button-disabled-hotfix.md)
       * [Erreur Adobe Commerce 2.4.6 lors du placement de l’ordre à partir du panneau d’administration](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
       * [Problèmes d’étiquette [!UICONTROL salesRule] lors de la mise à niveau à partir des versions &lt; 2.4.5](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)
       * [Vulnérabilité de sécurité [!DNL JQuery UI] [!DNL CVE-2022-31160] correctif pour les versions 2.4.4, 2.4.5 et 2.4.6](/help/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6.md)
