@@ -3,9 +3,9 @@ title: Guide de l’utilisateur de l’assistance Experience League pour Adobe C
 description: Découvrez comment envoyer un ticket d’assistance à l’assistance Experience League, fournir un accès partagé aux comptes et parcourir la base de connaissances Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 7a70f2c54396f82424e442aca7413c02ebecddb9
+source-git-commit: 7fbedaaf0d4edccc688be24951a7d30a9e774be8
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2782'
 ht-degree: 0%
 
 ---
@@ -186,7 +186,7 @@ Vos cas d’assistance sont ceux que vous avez :
 
 #### Afficher vos dossiers
 
-Vous pouvez visualiser les dossiers que vous avez envoyés personnellement en cliquant sur **[!UICONTROL My Cases]** dans le menu de gauche.
+Vous pouvez visualiser les dossiers que vous avez envoyés personnellement en cliquant sur **[!UICONTROL My Cases]** dans le menu de gauche. Assurez-vous que vous avez sélectionné l’organisation correcte se terminant par &quot;(Commerce)&quot;.
 
 ![view-support-case](assets/view_support_cases.png)
 
