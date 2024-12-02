@@ -1,10 +1,10 @@
 ---
-title: '''MDVA-41631 : erreur lors de la récupération des informations de commande sans valeur "téléphonique" facultative'
+title: 'MDVA-41631 : erreur lors de la récupération des informations de commande sans valeur "téléphonique" facultative'
 description: Le correctif MDVA-41631 corrige le problème en raison duquel les utilisateurs obtenaient une erreur lors de la récupération des informations de commande sans valeur "téléphonique" facultative via GraphQL. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.7 est installé. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
 exl-id: 94b0b918-c1f9-4f5d-8fcd-8b92a9ca8c59
 feature: Orders
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
@@ -37,8 +37,8 @@ Les utilisateurs obtiennent une erreur lors de la récupération des information
 
 1. Accédez à **Magasin** > **Configuration** > **Clients** > **Configuration client** > **Options de nom et d’adresse** > **Afficher le numéro de téléphone** et définissez le numéro de téléphone comme facultatif.
 1. Passez une commande à l’aide de l’API GraphQL en tant que client connecté.
-   * Ne définissez pas le numéro de téléphone lors de la définition des adresses de facturation et de livraison. Suivez les instructions du [tutoriel sur le passage en caisse de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) dans notre documentation destinée aux développeurs.
-1. Récupérez la commande à l’aide de la requête GraphQL [customerCommandes](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html).
+   * Ne définissez pas le numéro de téléphone lors de la définition des adresses de facturation et de livraison. Suivez les instructions du [tutoriel sur le passage en caisse de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) dans notre documentation destinée aux développeurs.
+1. Récupérez la commande à l’aide de la requête GraphQL [customerCommandes](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/).
 
 <pre>
 <code class="language-graphql">

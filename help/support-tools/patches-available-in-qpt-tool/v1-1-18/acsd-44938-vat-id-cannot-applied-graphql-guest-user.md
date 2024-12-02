@@ -1,10 +1,10 @@
 ---
-title: "ACSD-44938 : L’ID de TVA ne peut pas être appliqué dans une demande GraphQL pour un utilisateur invité"
+title: 'ACSD-44938 : L’ID de TVA ne peut pas être appliqué dans la requête GraphQL pour un utilisateur invité.'
 description: Le correctif ACSD-44938 corrige le problème qui empêchait l’application de l’identifiant TVA dans une requête GraphQL pour un utilisateur invité. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18 est installé. L’ID de correctif est ACSD-44938. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.6.
 exl-id: 18b3dfa5-b666-491e-a067-526a53294f39
 feature: Admin Workspace, GraphQL
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -35,12 +35,12 @@ L’attribut TVA_ID ne peut pas être appliqué dans une requête GraphQL pour u
 
 <u>Étapes à reproduire</u> :
 
-1. Suivez les étapes mentionnées dans le [tutoriel GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-shopping-cart.html) de notre documentation destinée aux développeurs pour créer un panier d’invité.
+1. Suivez les étapes mentionnées dans le [tutoriel GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) de notre documentation destinée aux développeurs pour créer un panier d’invité.
 1. Essayez d’appliquer l’attribut TVA_ID pour l’utilisateur invité à l’aide de GraphQL.
 
 <u>Résultats attendus</u> :
 
-L’attribut TVA_ID peut être appliqué de la même manière que pour un client enregistré. Voir l’article [mutation createCustomerAddress](https://developer.adobe.com/commerce/webapi/graphql/mutations/create-customer-address.html) dans notre documentation destinée aux développeurs.
+L’attribut TVA_ID peut être appliqué de la même manière que pour un client enregistré. Voir l’article [mutation createCustomerAddress](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/create-address/) dans notre documentation destinée aux développeurs.
 
 <u>Résultats réels</u> :
 

@@ -1,10 +1,10 @@
 ---
-title: "MDVA-44147 : la demande GraphQL ne renvoie pas les listes de demandes d’acquisition"
+title: 'MDVA-44147 : la requête GraphQL ne renvoie pas les listes de demandes d’acquisition'
 description: Le correctif MDVA-44147 corrige le problème en raison duquel la demande GraphQL ne renvoyait pas les listes de demandes d’acquisition. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 est installé. L’ID de correctif est MDVA-44147. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
 exl-id: c7a526f2-638c-4172-8750-aa076724851a
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -52,7 +52,7 @@ La requête GraphQL ne renvoie pas les listes de demandes d’acquisition.
       </code>
       </pre>
 
-1. Utilisez la requête suivante pour récupérer toutes les listes de demandes auprès du client. Utilisez l’en-tête **Authorization** avec la valeur `Bearer <customer_token>`. Pour plus d’informations, reportez-vous à l’article [Requête client](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) de notre documentation destinée aux développeurs.
+1. Utilisez la requête suivante pour récupérer toutes les listes de demandes auprès du client. Utilisez l’en-tête **Authorization** avec la valeur `Bearer <customer_token>`. Pour plus d’informations, reportez-vous à l’article [Requête client](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/) de notre documentation destinée aux développeurs.
 
    Requête :
 

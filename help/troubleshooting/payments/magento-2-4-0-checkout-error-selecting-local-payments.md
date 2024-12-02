@@ -1,12 +1,12 @@
 ---
-title: "Adobe Commerce 2.4.0 : erreur de paiement lors de la sélection des paiements locaux"
-description: "Cet article parle d’une solution à un problème connu dans Adobe Commerce lors du passage en caisse, où un message d’erreur s’affiche lors de la sélection d’un mode de paiement local pour certains pays. Cela se produit pour les pays suivants : Belgique, Italie, Pays-Bas, Pologne et Espagne."
+title: 'Adobe Commerce 2.4.0 : erreur de paiement lors de la sélection des paiements locaux'
+description: 'Cet article traite d’une solution à un problème connu dans Adobe Commerce lors du passage en caisse, où un message d’erreur s’affiche lors de la sélection d’un mode de paiement local pour certains pays. Cela se produit pour les pays suivants : Belgique, Italie, Pays-Bas, Pologne et Espagne.'
 exl-id: de2eafb0-d03c-4ff8-9615-0f2676d95848
 feature: B2B, Categories, Checkout, Orders, Payments
 role: Developer
-source-git-commit: a8cc7ad0cb9cb111f5b9636ff18aef3b6ed44329
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Message d’erreur, &quot;*&quot; Il n’existe actuellement aucun mode de paiem
 
 * Adobe Commerce 2.4.0 est installé.
 * Créez un produit et une catégorie.
-* Configurez le [mode de paiement du Braintree](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree.html).
+* Configurez le [mode de paiement du Braintree](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree/).
 
 <u>Étapes à reproduire</u> :
 

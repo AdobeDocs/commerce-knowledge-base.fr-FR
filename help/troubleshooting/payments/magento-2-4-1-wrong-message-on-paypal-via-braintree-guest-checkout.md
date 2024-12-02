@@ -1,10 +1,10 @@
 ---
-title: "Adobe Commerce 2.4.1 : message incorrect lors du passage en caisse des invités Braintree PayPal"
+title: 'Adobe Commerce 2.4.1 : message incorrect lors du passage en caisse des invités Braintree PayPal'
 description: Cet article décrit un problème connu d’Adobe Commerce 2.4.1, en raison duquel si le passage en caisse des invités est désactivé, un client invité qui tente de passer une commande avec PayPal via Braintree reçoit un message d’erreur non informatif.
 exl-id: 758f5c57-997e-4aca-b299-9934c94fa121
 feature: Checkout, Orders, Payments
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -61,4 +61,4 @@ La solution à ce problème est que le client peut se connecter à un magasin (l
 
 * [Bonne pratique pour le nombre de produits dans le panier dans Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) dans notre base de connaissances d’assistance.
 * [Tutoriel sur le traitement des commandes : Étape 1. Ajoutez des éléments au panier ](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) dans notre documentation destinée aux développeurs.
-* [Tutoriel de passage en caisse GraphQL : Étape 1. Ajout de produits au panier ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-add-product-to-cart.html) dans notre documentation destinée aux développeurs
+* [Tutoriel de passage en caisse GraphQL : Étape 1. Ajout de produits au panier ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/) dans notre documentation destinée aux développeurs
