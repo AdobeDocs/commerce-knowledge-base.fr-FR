@@ -1,19 +1,19 @@
 ---
 title: Le fichier .csv des produits exportés n’apparaît pas
-description: Cet article fournit un correctif pour le problème qui se produit lorsque vous essayez d’exporter des produits vers un fichier .csv dans l’administrateur Commerce, mais que le fichier n’apparaît pas.
+description: Cet article fournit un correctif pour le problème qui se produit lorsque vous essayez d’exporter le type d’entité souhaité vers un fichier .csv dans l’administrateur Commerce, mais que le fichier n’apparaît pas.
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: d55702ab97f3770d0ec71322f6c24448f0169ad4
+source-git-commit: b6f1222918b027eaecda42b767e6f83b2cf0f5d0
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
 
 # Le fichier .csv des produits exportés n’apparaît pas
 
-Cet article fournit un correctif pour le problème qui se produit lorsque vous essayez d’exporter des produits vers un fichier .csv dans l’administrateur Commerce, mais que le fichier n’apparaît pas.
+Cet article fournit une solution au problème d’affichage du fichier lors de l’exportation du type d’entité souhaité vers un fichier .csv dans Commerce Admin.
 
 ## Produits et versions concernés
 
@@ -30,7 +30,7 @@ Conditions préalables : l’option **Ajouter une clé secrète aux URL** est d�
    ![magento_export_products_2.3.4.png](assets/magento_export_products_2.3.4.png)
 
 1. Sélectionner
-   * **Type d’entité** : *Produits*
+   * **Type d’entité** : l’entité que vous souhaitez exporter
    * **Format du fichier d’exportation** : *CSV*
    * **Field Enclose** : laissez la case décochée.
 1. Cliquez sur **Continuer**.
@@ -38,11 +38,11 @@ Conditions préalables : l’option **Ajouter une clé secrète aux URL** est d�
 
 <u>Résultat attendu</u>
 
-Le fichier .csv contenant les produits exportés s’affiche dans la grille en quelques minutes.
+Le fichier .csv contenant le type d’entité souhaité exporté s’affiche dans la grille en quelques minutes.
 
 <u>Résultat réel</u>
 
-Le fichier .csv contenant les produits exportés ne s’affiche pas dans la grille dans 10 minutes ou plus.
+Le fichier .csv contenant le type d’entité souhaité exporté ne s’affiche pas dans la grille dans 10 minutes ou plus.
 
 ## Cause
 
