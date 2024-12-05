@@ -3,9 +3,9 @@ title: Affichage du niveau vCPU de l’environnement dans votre grappe sur Adobe
 promoted: true
 description: Cet article explique comment vérifier l’allocation de niveau vCPU à l’aide de l’onglet infrarouge New Relic sur Observation pour Adobe Commerce. L’observation pour Adobe Commerce est un point-virgule New Relic qui indique l’état de votre site Adobe Commerce, les vues d’heure actuelle et passées.
 exl-id: a0332e7e-d38d-47d3-b3da-293902f45edc
-source-git-commit: 309fda5284de3b8be54e95bf2bfd8ff1777b6c90
+source-git-commit: ffb7b597d38eaed4b66e23ea533c275746e7181a
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,3 @@ Pour accéder à l’horodatage d’observation New Relic pour Adobe Commerce et
    * Le premier graphique affiche une **vue de niveau CPU sur une chronologie SUPÉRIEURE 2 semaines (vous devez sélectionner une chronologie SUPÉRIEURE À 2 semaines). REMARQUE : Le taux d’échantillonnage sera par jour. Si des mises à niveau/réductions de cluster se produisent un jour, la taille du niveau de fin s’affiche le jour suivant**.
    * Le deuxième graphique affiche la **vue de niveau processeur sur la chronologie (nécessité de sélectionner une chronologie SUPÉRIEURE à 24 heures mais pas supérieure à 2 semaines)**.
    * Le troisième graphique montre la vue de niveau **vCPU sur la chronologie PAR NODE, doit examiner la chronologie MOINS de 24 heures**.
-
-## Lecture connexe
-
-* [Présentation de l’observation pour Adobe Commerce](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md) dans notre base de connaissances d’assistance.

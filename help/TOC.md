@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 63664230a110a4ebf37c058e3bde71f6a359ac13
+source-git-commit: 80b0dc119058ec7533124919d5917cdd219552fe
 workflow-type: tm+mt
-source-wordcount: '9478'
+source-wordcount: '9469'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,6 @@ ht-degree: 0%
    * Outil d&#39;analyse à l&#39;échelle du site {#site-wide-analysis-tool}
       * [Outil d’analyse à l’échelle du site par Adobe : présentation](/help/support-tools/site-wide-analysis-tool/swat-tool-overview.md)
       * [FAQ sur le rapport de l’outil d’analyse à l’échelle du site Adobe Commerce](/help/support-tools/site-wide-analysis-tool/swat-faq.md)
-   * Observation pour Adobe Commerce {#observation}
-      * [Présentation de l’observation pour Adobe Commerce](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md)
    * Alertes gérées sur Adobe Commerce {#managed-alerts}
       * [Alertes gérées sur Adobe Commerce : permet de réduire l’alerte critique de mémoire](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
       * [Alertes gérées pour Adobe Commerce : alerte d’avertissement sur le disque](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
