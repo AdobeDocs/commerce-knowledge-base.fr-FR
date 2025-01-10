@@ -4,7 +4,7 @@ description: Les déploiements bloqués et les déploiements ayant échoué sur 
 exl-id: 5141e079-be61-44c2-8bff-c4b13cb7e07c
 feature: Build, Deploy, Support
 role: Developer
-source-git-commit: 7f4f24c596eac96dc8fef40589a827eb9aa0c468
+source-git-commit: aedf869e96ce6bcbf538805dd6d14d31db8c2e02
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 0%
@@ -30,7 +30,7 @@ b. NON - Maintenance ou pannes globales. Recherchez une estimation de la durée 
 
 +++**Existe-t-il des déploiements dans d’autres environnements qui bloquent le déploiement dans l’environnement existant ?**
 
-Pour obtenir la liste des activités en cours, exécutez la commande suivante à l’aide de l’interface de ligne de commande magento-cloud (si vous n’avez été ajouté qu’à un seul projet cloud). **Remarque** : vérifiez que vous disposez de la dernière version de l’interface de ligne de commande magento-cloud. Pour connaître les étapes, reportez-vous à la section [Mise à jour de l’interface de ligne de commande](/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview#update-the-cli) du guide Commerce sur les infrastructures cloud.
+Pour obtenir la liste des activités en cours, exécutez la commande suivante à l’aide de l’interface de ligne de commande magento-cloud (si vous n’avez été ajouté qu’à un seul projet cloud). **Remarque** : vérifiez que vous disposez de la dernière version de l’interface de ligne de commande magento-cloud. Pour connaître les étapes, reportez-vous à la section [Mise à jour de l’interface de ligne de commande](/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) du guide Commerce sur les infrastructures cloud.
 
 ```bash
 magento-cloud --state=in_progress

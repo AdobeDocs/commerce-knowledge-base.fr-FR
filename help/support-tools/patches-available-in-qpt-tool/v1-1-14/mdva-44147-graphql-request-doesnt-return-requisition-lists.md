@@ -1,19 +1,19 @@
 ---
-title: 'MDVA-44147 : la requête GraphQL ne renvoie pas les listes de demandes d’acquisition'
-description: Le correctif MDVA-44147 corrige le problème en raison duquel la demande GraphQL ne renvoyait pas les listes de demandes d’acquisition. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 est installé. L’ID de correctif est MDVA-44147. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+title: 'MDVA-44147 : la demande GraphQL ne renvoie pas de listes de demandes'
+description: Le correctif MDVA-44147 corrige le problème en raison duquel la demande GraphQL ne renvoie pas de listes de demandes. Ce correctif est disponible lorsque l’[Outil de correctifs de la qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 est installé. L’ID du correctif est MDVA-44147. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 exl-id: c7a526f2-638c-4172-8750-aa076724851a
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
+source-git-commit: aedf869e96ce6bcbf538805dd6d14d31db8c2e02
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
-# MDVA-44147 : la requête GraphQL ne renvoie pas les listes de demandes d’acquisition
+# MDVA-44147 : la demande GraphQL ne renvoie pas de listes de demandes
 
-Le correctif MDVA-44147 corrige le problème en raison duquel la demande GraphQL ne renvoyait pas les listes de demandes d’acquisition. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 est installé. L’ID de correctif est MDVA-44147. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+Le correctif MDVA-44147 corrige le problème en raison duquel la demande GraphQL ne renvoie pas de listes de demandes. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 est installé. L’ID du correctif est MDVA-44147. Notez que le problème est planifié pour être corrigé dans Adobe Commerce 2.4.5.
 
 ## Produits et versions concernés
 
@@ -27,17 +27,17 @@ Le correctif MDVA-44147 corrige le problème en raison duquel la demande GraphQL
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec les nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la [[!DNL Quality Patches Tool] : recherchez des correctifs sur la page ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut s’appliquer à d’autres versions avec de nouvelles versions de l’outil de correctifs de qualité. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package `magento/quality-patches` vers la dernière version et vérifiez la compatibilité sur la page [[!DNL Quality Patches Tool] : Rechercher des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilisez l’ID du correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 
-La requête GraphQL ne renvoie pas les listes de demandes d’acquisition.
+La demande GraphQL ne renvoie pas de listes de demandes d&#39;approvisionnement.
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Accédez à **Magasin** > **Paramètres** > **Configuration** > **Général** > **Fonctionnalités B2B** et activez Liste de demandes.
-1. Connectez-vous en tant que client et ajoutez un produit à la [liste de demandes](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
-1. Créez un [jeton client](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html).
+1. Accédez à **Magasin** > **Paramètres** > **Configuration** > **Général** > **Fonctionnalités B2B** et activez la liste des demandes d’approvisionnement.
+1. Connectez-vous en tant que client et ajoutez un produit à la [Liste des demandes internes](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
+1. Créez un [jeton client](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/).
 
    <pre>
     <code class="language-graphql">
@@ -52,7 +52,7 @@ La requête GraphQL ne renvoie pas les listes de demandes d’acquisition.
       </code>
       </pre>
 
-1. Utilisez la requête suivante pour récupérer toutes les listes de demandes auprès du client. Utilisez l’en-tête **Authorization** avec la valeur `Bearer <customer_token>`. Pour plus d’informations, reportez-vous à l’article [Requête client](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/) de notre documentation destinée aux développeurs.
+1. Utilisez la requête suivante pour récupérer toutes les listes de demandes du client. Utilisez l’en-tête **Authorization** avec la valeur `Bearer <customer_token>`. Pour plus d’informations, reportez-vous à l’article [Requête client](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/) dans la documentation destinée aux développeurs.
 
    Requête :
 
@@ -126,7 +126,7 @@ La requête GraphQL ne renvoie pas les listes de demandes d’acquisition.
       </code>
       </pre>
 
-1. Copiez l’UID de tout élément de la liste renvoyée (MQ==) et utilisez la requête suivante pour que la liste soit filtrée par UID.
+1. Copiez l’UID de n’importe quel élément de la liste renvoyée (MQ==) et utilisez la requête suivante pour obtenir la liste filtrée par UID.
 
    <pre>
     <code class="language-graphql">
@@ -173,18 +173,18 @@ Un résultat est renvoyé.
 
 Aucun résultat n’est renvoyé.
 
-## Appliquer le correctif
+## Application du correctif
 
 Pour appliquer des correctifs individuels, utilisez les liens suivants en fonction de votre méthode de déploiement :
 
-* Adobe Commerce ou Magento Open Source sur site : [Guide de mise à jour logicielle > Appliquer les correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) dans notre documentation destinée aux développeurs.
-* Adobe Commerce sur l’infrastructure cloud : [mises à niveau et correctifs > Appliquer les correctifs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs.
+* Adobe Commerce ou Magento Open Source On-Premise : [Guide de mise à jour logicielle > Application de correctifs](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) dans notre documentation destinée aux développeurs.
+* Adobe Commerce sur les infrastructures cloud : [Mises à niveau et correctifs > Appliquer des correctifs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs et développeuses.
 
 ## Lecture connexe
 
-Pour en savoir plus sur l’outil Correctifs de qualité, consultez :
+Pour en savoir plus sur l’outil de correctifs de la qualité, voir :
 
-* [ L’outil de correctifs de qualité est sorti : un nouvel outil pour les correctifs de qualité en libre-service ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) dans notre base de connaissances de support.
-* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances de support.
+* Publication de l’outil [Correctifs de qualité](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) un nouvel outil permettant d’appliquer des correctifs de qualité en libre-service dans notre base de connaissances d’assistance.
+* [Vérifiez si un correctif est disponible pour votre problème Adobe Commerce à l’aide de l’outil de correctifs de qualité](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) dans notre base de connaissances du support.
 
-Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) de notre documentation destinée aux développeurs.
+Pour plus d’informations sur les autres correctifs disponibles dans QPT, reportez-vous à la section [Correctifs disponibles dans QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans notre documentation destinée aux développeurs et développeuses.
