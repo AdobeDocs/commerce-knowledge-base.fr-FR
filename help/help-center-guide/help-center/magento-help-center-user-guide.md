@@ -3,9 +3,9 @@ title: Guide de l’utilisateur de la prise en charge d’Experience League pour
 description: Découvrez comment envoyer un ticket d’assistance à l’assistance Experience League, fournir un accès partagé aux comptes et naviguer dans la base de connaissances Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 6321dfa57f694a53f4b9b1c1e93182d60fa63c7b
+source-git-commit: c287b45c3cea99f6d536d6ed4d90a5e19d9fa71c
 workflow-type: tm+mt
-source-wordcount: '2939'
+source-wordcount: '2963'
 ht-degree: 0%
 
 ---
@@ -309,6 +309,10 @@ Les utilisateurs et utilisatrices disposant d’un accès partagé ne peuvent pa
 ### Fournir un accès partagé {#provide-shared-access}
 
 Consultez la section [Partage d’un compte Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) du Guide de prise en main d’Adobe Commerce pour obtenir des instructions détaillées sur la configuration d’un compte partagé.
+
+>[!NOTE]
+>
+>L’utilisateur doit disposer d’un compte existant avant de pouvoir bénéficier de l’accès partagé. Pour plus d’informations, voir [Création d’un compte Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account).
 
 Après avoir fourni un accès partagé à un nouvel utilisateur, les informations connexes sont disponibles dans **Accès partagé** > **Gérer les autorisations** de la page de votre compte Adobe Commerce.
 
