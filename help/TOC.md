@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: c46d29aa11b9cbbcccbf1765b4ae972e14ac80ac
+source-git-commit: b14ce46b2e68b76f349c3d2791897c7519088f24
 workflow-type: tm+mt
-source-wordcount: '9397'
+source-wordcount: '9387'
 ht-degree: 0%
 
 ---
@@ -892,7 +892,6 @@ ht-degree: 0%
       * [Le système Magento Order Management (OMS) pour Adobe Commerce expire](/help/troubleshooting/miscellaneous/mom-times-out-when-trying-to-connect-to-a-local-environment.md)
       * [Une mauvaise adresse est sélectionnée pour l&#39;expédition directe](/help/troubleshooting/miscellaneous/drop-shipping-picks-up-wrong-address.md)
       * [Erreur lors de la purge du cache dans Commerce Admin](/help/troubleshooting/miscellaneous/error-purging-cache-in-admin.md)
-      * [E-mails non envoyés lorsque les crédits SendGrid sont dépassés sur Adobe Commerce](/help/troubleshooting/miscellaneous/emails-not-being-sent-sendgrid-credits-exceeded.md)
       * [Adobe Commerce 2.4.1 : page vide lorsque le formulaire dotdigital Page Builder est enregistré](/help/troubleshooting/miscellaneous/magento-2-4-1-empty-page-when-dotdigital-page-builder-form-saved.md)
       * [Adobe Commerce cloud : la réindexation s’arrête avec le message « Tué »](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
       * [Effectuez la mise à niveau vers le schéma DHL version 10.0 pour continuer à proposer l&#39;expédition DHL](/help/troubleshooting/miscellaneous/upgrade-to-v10-dhl-schema-to-continue-using-dhl-as-a-carrier.md)
