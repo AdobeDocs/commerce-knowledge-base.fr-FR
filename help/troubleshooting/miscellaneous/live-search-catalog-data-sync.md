@@ -4,9 +4,9 @@ description: Cet article fournit des solutions au problème d’Adobe Commerce e
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: 96e5bfc677949fb5f925040b95f951ca518fa71a
+source-git-commit: 54f6fb60adca6f639cd315b3d070c7b93aa45bab
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,13 @@ Si les données de votre produit ne sont pas correctement synchronisées pour un
 1. Utilisez la requête [!DNL SQL] suivante et vérifiez que vous disposez des données attendues dans la colonne `feed_data`. Notez également l’horodatage `modified_at`.
 
    ```sql
-   select * from cde_products_feed where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
+   SELECT * FROM cde_products_feed WHERE json_extract(feed_data, '$.sku') = '<your_sku>' AND json_extract(feed_data, '$.storeViewCode') = '<your_ store_view_code>';
+   ```
+
+   Par exemple :
+
+   ```sql
+   SELECT * FROM cde_products_feed WHERE json_extract(feed_data, '$.sku') = '24-MB04' AND json_extract(feed_data, '$.storeViewCode') = 'default';
    ```
 
 1. Si vous ne voyez pas les données correctes, essayez de réindexer à l’aide de la commande suivante et exécutez à nouveau la requête [!DNL SQL] à l’étape 1 pour vérifier les données :
