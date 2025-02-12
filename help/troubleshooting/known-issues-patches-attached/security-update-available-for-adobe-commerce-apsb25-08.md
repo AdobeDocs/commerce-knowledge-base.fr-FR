@@ -5,7 +5,7 @@ description: Application d’un correctif isolé pour corriger  [!DNL critical, 
 feature: Compliance, Security
 role: Developer
 exl-id: 567e6ad2-704e-461f-a54d-75f6bd96e996
-source-git-commit: f4a7a6ac538cf1199aea32875215709fcd165a08
+source-git-commit: babb822cc505e2911ae28cd1a2540799146f19b3
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Adobe Commerce sur les infrastructures cloud, Adobe Commerce sur site et Magento
 * 2.4.5-p10 et versions antérieures
 * 2.4.4-p11 et versions antérieures
 
-## ## Solution pour Adobe Commerce on Cloud, Adobe Commerce on-premise et les logiciels Magento Open Source
+## Solution pour Adobe Commerce sur Cloud, Adobe Commerce sur site et les logiciels Magento Open Source
 
 Pour aider à résoudre la vulnérabilité des produits et versions concernés, vous devez appliquer le correctif isolé [!DNL CVE-2025-24434], en fonction de votre version d’Adobe Commerce/Magento Open Source.
 
