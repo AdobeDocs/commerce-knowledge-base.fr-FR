@@ -1,53 +1,53 @@
 ---
-title: Mise à jour de la stratégie de cycle de vie des tickets du support Adobe Commerce
-description: Cet article fournit des informations sur la mise à jour de la stratégie de cycle de vie des tickets d’assistance Adobe Commerce.
+title: Mise à jour de la politique de cycle de vie des tickets de l’assistance Adobe Commerce
+description: Cet article fournit des informations sur la mise à jour de la politique de cycle de vie des tickets du support Adobe Commerce.
 exl-id: c3fbcb4a-107f-48b3-afed-b9a0c5d0425c
-source-git-commit: 5d291a221509c35c8bc34fd0957534c24342c59c
+source-git-commit: b882fcc3a890fa0eb06c17f877d7d315be66e294
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
 
-# Mise à jour de la stratégie de cycle de vie des tickets du support Adobe Commerce
+# Mise à jour de la politique de cycle de vie des tickets de l’assistance Adobe Commerce
 
-Cette documentation présente les améliorations apportées au cycle de vie du cas de support DX Adobe avec l’intention d’améliorer la communication et de fournir des résolutions aux clients aussi rapidement que possible afin d’assurer le succès de leurs clients. Vous pouvez également le trouver dans [Aperçu des plans de réussite d’Adobe : cycle de vie du cas d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon).
-Vous trouverez ci-dessous les chronologies et notifications relatives aux différents scénarios rencontrés lors du processus d’assistance :
+Cette documentation décrit les améliorations apportées au cycle de vie des cas d’assistance Adobe DX dans le but d’améliorer la communication et de fournir des résolutions aux clients le plus rapidement possible pour garantir la réussite du client. Vous pouvez également le trouver dans [Présentation des plans de réussite Adobe : cycle de vie des cas d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon).
+Vous trouverez ci-dessous la chronologie et les notifications pour divers scénarios rencontrés lors du processus d’assistance :
 
-## Rappels de suivi de cas
+## Rappels de suivi de dossier
 
-| Notification | Statut du cas | Minutage de notification | État du délai de clôture des jours |
+| Notification | Statut du dossier | Notification Timing | Jours avant le statut de clôture du dossier |
 |--- |--- |--- |--- |
-| **1st** | Réponse En Attente Ou Résolution Fournie | 24 heures / 1 jour | 5 jours |
-| **2nd** | Réponse En Attente Ou Résolution Fournie | 72 heures / 3 jours | 3 jours |
-| **3rd** | Réponse En Attente Ou Résolution Fournie | 120 heures / 5 jours | 1 jour |
-| **4th** | Réponse en attente ou résolution fournie remplacée par &quot;Fermeture automatique&quot; | 144 heures / 6 jours | fermée |
+| **1er** | Réponse Ou Résolution En Attente Fournie | 24 heures/1 jour | 5 jours |
+| **2** | Réponse Ou Résolution En Attente Fournie | 72 heures/3 jours | 3 jours |
+| **3** | Réponse Ou Résolution En Attente Fournie | 120 heures/5 jours | 1 jour |
+| **4** | Réponse ou résolution en attente fournie modifiée en « Fermée automatiquement » | 144 heures/6 jours | fermé |
 
-## Scénarios détaillés
+## Scénarios en détail
 
-### Lorsque des informations supplémentaires sont requises d’un client
+### Lorsque des informations supplémentaires sont requises de la part d’un client
 
-Dans ce scénario, lorsque des informations supplémentaires sont nécessaires pour un client, les étapes sont les suivantes :
+Dans ce scénario, lorsque des informations supplémentaires sont nécessaires de la part d’un client, les étapes suivantes sont effectuées :
 
-* L&#39;ingénieur envoie une mise à jour demandant des informations et l&#39;état du dossier est défini sur &quot;En attente de réponse&quot;.
-* Les 1er, 3e et 5e jours suivant l’état défini sur &quot;En attente de réponse&quot;, des notifications de suivi sont envoyées au client pour lui demander des informations supplémentaires.
-* Si le client n’a pas répondu pendant 6 jours après que l’état a été défini sur &quot;En attente de réponse&quot;, le dossier est fermé et une notification de fermeture est envoyée.
+* L’ingénieur envoie une mise à jour pour demander des informations et le statut du dossier est défini sur « Réponse en attente ».
+* Les 1er, 3e et 5e jours suivant la définition du statut sur « Réponse en attente », des notifications de suivi sont envoyées au client pour lui demander des informations supplémentaires.
+* En l&#39;absence de réponse du client pendant les 6 jours suivant la définition du statut sur « Réponse en attente », le dossier est défini sur fermé et une notification de fermeture est envoyée.
 
-Les clients peuvent rouvrir un dossier clos dans les 14 jours pour continuer la communication. Au-delà de 14 jours, un nouveau cas d’assistance peut être ouvert pour continuer la communication concernant un cas précédemment clos.
+Les clients peuvent rouvrir un dossier clos sur Experience League dans les 14 jours pour continuer à communiquer. Au-delà de 14 jours, un nouveau dossier de support peut être ouvert pour continuer à communiquer avec un dossier précédemment clos. Notez que répondre à un e-mail concernant un ticket fermé ne le rouvrira pas.
 
 ### Lorsqu’un ingénieur fournit une solution
 
-Dans ce scénario, lorsqu’un ingénieur propose une solution, les étapes sont les suivantes :
+Dans ce scénario, lorsqu’un ingénieur propose une solution, les étapes suivantes sont effectuées :
 
-* L’ingénieur envoie une mise à jour avec une solution proposée et l’état du cas est défini sur &quot;Résolution fournie&quot;.
-* Les 1er, 3e et 5e jours suivant le statut défini sur &quot;Résolution fournie&quot;, des notifications de suivi sont envoyées au client demandant la confirmation de la solution fournie.
-* Si le client n’a pas répondu pendant 6 jours après que l’état a été défini sur &quot;Résolution fournie&quot;, le cas est réglé sur fermé et une notification de fermeture est envoyée.
+* L’ingénieur envoie une mise à jour avec une solution proposée et le statut du dossier est défini sur « Résolution fournie ».
+* Les 1er, 3e et 5e jours suivant la définition de l’état sur « Résolution fournie », des notifications de suivi sont envoyées au client pour lui demander de confirmer la solution fournie.
+* Si le client ne répond pas pendant les 6 jours suivant la définition du statut sur « Résolution fournie », le dossier est défini sur fermé et une notification de fermeture est envoyée.
 
-Les clients peuvent rouvrir un dossier clos dans les 14 jours pour continuer la communication. Au-delà de 14 jours, un nouveau cas d’assistance peut être ouvert pour continuer la communication concernant un cas précédemment clos.
+Les clients peuvent rouvrir un dossier clos dans les 14 jours pour continuer à communiquer. Au-delà de 14 jours, un nouveau dossier de support peut être ouvert pour continuer à communiquer avec un dossier précédemment clos.
 
 ## Lecture connexe
 
 * [Envoyer un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)
-* [ Le lien &quot;Envoyer un ticket&quot; ne s’affiche pas sur la page de début du centre d’aide Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
-* [Formulaire d’envoi de ticket : le marchand ne s’affiche pas dans la liste déroulante Organisation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)
-* [Aperçu des plans de succès d’Adobe : cycle de vie des cas d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)
+* [ lien « Envoyer un ticket » ne s’affiche pas sur la page de démarrage du Centre d’aide Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
+* [Formulaire d’envoi de ticket : le vendeur n’est pas affiché dans la liste déroulante Organisation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)
+* [Présentation Des Plans De Réussite Adobe : Cycle De Vie Des Cas D’Assistance](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)
