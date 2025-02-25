@@ -3,7 +3,7 @@ title: Guide de l’utilisateur de l’assistance Experience League pour Adobe C
 description: Découvrez comment envoyer un ticket d’assistance à l’assistance Experience League, fournir un accès partagé aux comptes et naviguer dans la base de connaissances Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: c578bdc5684705283bb1d3eb4c42edb62ad769f9
+source-git-commit: cb0d3b47c7b9693c83c6f1e85fa41cce57972c9f
 workflow-type: tm+mt
 source-wordcount: '3072'
 ht-degree: 0%
@@ -130,9 +130,9 @@ Pour soumettre un nouveau cas d’assistance à l’aide de la page de démarrag
 
    ![select_product](assets/support_case_product.png)
 
->[!NOTE]
->
->Si vous soumettez un ticket avec « **[!DNL Commerce]sur l’infrastructure cloud »** sélectionné comme produit et que l’organisation a plusieurs projets répertoriés, vous serez invité à sélectionner le [!UICONTROL Project ID] approprié. Si vous ne parvenez pas à localiser le [!UICONTROL Project ID] souhaité, veillez à ajouter une note sur le ticket indiquant que vous cherchez de l&#39;aide pour un autre « projet X ».<br>Si vous avez l’intention d’envoyer un ticket « **[!DNL Commerce]sur Managed Services** » et que vous êtes sur **[!DNL Commerce]sur une infrastructure cloud** mais que vous ne voyez pas **[!DNL Commerce]sur une infrastructure cloud** comme un produit disponible :<br>1. Saisissez l’objet de votre problème dans **[!UICONTROL Case title]**.<br>2. Saisissez une description de votre problème dans **[!UICONTROL Case description]**.3 <br>. Après avoir saisi ces deux éléments, le champ **[!UICONTROL Cloud Project URL]** ci-dessous s’affiche.
+   >[!NOTE]
+   >
+   >Si vous soumettez un ticket avec « **[!DNL Commerce]sur l’infrastructure cloud »** sélectionné comme produit et que l’organisation a plusieurs projets répertoriés, vous serez invité à sélectionner le [!UICONTROL Project ID] approprié. Si vous ne parvenez pas à localiser le [!UICONTROL Project ID] souhaité, veillez à ajouter une note sur le ticket indiquant que vous cherchez de l&#39;aide pour un autre « projet X ».<br>Si vous avez l’intention d’envoyer un ticket « **[!DNL Commerce]sur Managed Services** » et que vous êtes sur **[!DNL Commerce]sur une infrastructure cloud** mais que vous ne voyez pas **[!DNL Commerce]sur une infrastructure cloud** comme un produit disponible :<br>1. Saisissez l’objet de votre problème dans **[!UICONTROL Case title]**.<br>2. Saisissez une description de votre problème dans **[!UICONTROL Case description]**.3 <br>. Après avoir saisi ces deux éléments, le champ **[!UICONTROL Cloud Project URL]** ci-dessous s’affiche.
 
 
 1. Adobe Experience League vous proposera des articles et des bonnes pratiques qui peuvent vous aider à résoudre votre problème. Si vous avez toujours besoin d&#39;une assistance directe, vous devrez fournir des informations supplémentaires avant de soumettre votre cas.
@@ -143,23 +143,25 @@ Pour soumettre un nouveau cas d’assistance à l’aide de la page de démarrag
 
 >[!IMPORTANT]
 >
->Si votre organisation ne s’affiche pas dans le menu déroulant lorsque vous vous connectez à experienceleague.adobe.com, vous devrez peut-être synchroniser votre profil avec accounts.magento.com avant de demander une assistance ou de gérer un dossier d’assistance existant.   
+>Si votre organisation ne s’affiche pas dans le menu déroulant lorsque vous vous connectez à experienceleague.adobe.com, vous devrez peut-être synchroniser votre profil avec accounts.magento.com avant de demander une assistance ou de gérer un dossier d’assistance existant.
 >
->1. Accédez à accounts.magento.com et connectez-vous avec le même profil (professionnel, scolaire ou personnel) que celui utilisé pour gérer les cas d’assistance dans Adobe Experience League. 
->1. Une fois que vous êtes connecté à votre profil accounts.magento.com, revenez à experienceleague.adobe.com et connectez-vous. 
->1. Sélectionnez votre organisation dans le menu déroulant de l’organisation. 
->1. Si votre organisation n’apparaît toujours pas, contactez votre administrateur Commerce pour obtenir les droits de délégué de l’assistance. Pour plus d’informations, consultez l’article d’aide Partage de compte Commerce [](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share). 
+>1. Accédez à accounts.magento.com et connectez-vous avec le même profil (professionnel, scolaire ou personnel) que celui utilisé pour gérer les cas d’assistance dans Adobe Experience League.
+>1. Une fois que vous êtes connecté à votre profil accounts.magento.com, revenez à experienceleague.adobe.com et connectez-vous.
+>1. Sélectionnez votre organisation dans le menu déroulant de l’organisation.
+>1. Si votre organisation n’apparaît toujours pas, contactez votre administrateur Commerce pour obtenir les droits de délégué de l’assistance. Pour plus d’informations, consultez l’article d’aide Partage de compte Commerce [](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share).
 
 >[!NOTE]
 >
 >Importance de l’organisation/du produit
 >
 >**Exemple A** : vous n’avez partagé l’accès qu’à une seule société et cette société dispose de droits sur deux produits Adobe : Product1 et Product2.
+>
 >1. Comme chaque organisation représente un produit, deux organisations s’affichent dans la liste déroulante, par exemple OrgA-Product1 et OrgB-Product2.
 >1. Si vous avez sélectionné Produit = Produit1 mais que votre problème est lié à Produit2, le dossier sera acheminé vers le support Produit2 et le transfert du dossier au support Produit1 sera retardé.
 >1. Si vous avez soumis le dossier OrgA-Product1 et que vous souhaitez revoir les [!UICONTROL My Cases] de cette organisation à l’avenir, vous ne le verrez pas si vous sélectionnez OrgA-Product2 comme organisation (il vous suffit de sélectionner l’autre organisation, par rapport à l’exemple B).
 >
 >**Exemple B** : vous avez un accès partagé à deux sociétés, et chaque société ne dispose que de droits pour Adobe Commerce.
+>
 >1. Si vous avez soumis le dossier pour OrgA, mais que le problème a un impact réel sur OrgB, les membres de l’organisation ne pourront plus voir ce dossier sous [!UICONTROL My Cases] à l’avenir.
 >1. En outre, les membres d’OrgA pourront consulter les cas sous [!UICONTROL My Cases] qui sont en fait destinés à OrgB, ce qui peut entraîner des problèmes de confidentialité.
 
@@ -170,6 +172,7 @@ Vous devez disposer d’un compte sur https://account.adobe.com et https://accou
 >Si vous disposez déjà d’un compte sur https://account.magento.com mais que vous ne parvenez pas à vous connecter, il se peut que vous ne vous soyez pas enregistré sur https://account.adobe.com, obligatoire à compter d’août 2022.
 >
 >Pour résoudre ce problème :
+>
 >1. Créez un compte à l’adresse https://account.adobe.com en utilisant la même adresse e-mail sur votre ID MAG.
 >1. Accédez à https://account.magento.com pour lier votre Adobe ID à l’ID MAG.
 
