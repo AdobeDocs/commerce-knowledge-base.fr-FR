@@ -1,41 +1,41 @@
 ---
-title: '[!DNL Elasticsearch] s’affiche comme moteur de recherche malgré l’ [!DNL OpenSearch] installation'
-description: Cet article fournit une solution au problème où  [!DNL Elasticsearch] est toujours affiché comme moteur de recherche pour Adobe Commerce sur le cloud, même après l’installation ou la mise à niveau vers [!DNL OpenSearch].
+title: '[!DNL Elasticsearch] s’affiche comme le moteur de recherche malgré  [!DNL OpenSearch] ’installation'
+description: Cet article fournit une solution au problème où  [!DNL Elasticsearch]  s’affiche toujours comme moteur de recherche pour Adobe Commerce sur le cloud, même après l’installation ou la mise à niveau vers  [!DNL OpenSearch].
 exl-id: cdd8a35d-da6f-46d3-b732-65626487c9bb
 feature: Install
-source-git-commit: 1f053f76ae56edc06bfe82e55210244c8ec4b8eb
+source-git-commit: b3f68e43ce3c4fdea001db1d8ba2774900db7dba
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# [!DNL Elasticsearch] s’affiche comme moteur de recherche malgré l’installation de [!DNL OpenSearch]
+# [!DNL Elasticsearch] s’affiche comme le moteur de recherche malgré [!DNL OpenSearch] installation
 
-Cet article fournit une solution au problème où [!DNL Elasticsearch] est toujours affiché comme moteur de recherche pour Adobe Commerce sur le cloud, même après l’installation ou la mise à niveau vers [!DNL OpenSearch].
+Cet article fournit une solution au problème où [!DNL Elasticsearch] s’affiche toujours en tant que moteur de recherche pour Adobe Commerce sur le cloud, même après l’installation ou la mise à niveau vers [!DNL OpenSearch].
 
 ## Versions affectées
 
-Adobe Commerce sur cloud 2.4.3-p2 - 2.4.5-p6
+Adobe Commerce on cloud 2.4.4 - 2.4.5-p11
 
 >[!NOTE]
 >
->[!DNL OpenSearch] est disponible comme moteur de recherche à partir d’Adobe Commerce 2.4.6.
+>[!DNL OpenSearch] est disponible sous la forme d’un moteur de recherche à partir d’Adobe Commerce 2.4.6.
 
 ## Problème
 
-[!DNL Elasticsearch] est toujours affiché comme moteur de recherche pour Adobe Commerce sur le cloud même après l’installation ou la mise à niveau vers [!DNL OpenSearch].
+[!DNL Elasticsearch] s’affiche toujours en tant que moteur de recherche pour Adobe Commerce sur le cloud, même après l’installation ou la mise à niveau vers [!DNL OpenSearch].
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Accédez à **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**.
-1. Vérifiez le moteur de recherche. Il affichera [!DNL Elasticsearch7].
+1. Vérifiez le moteur de recherche. Cela [!DNL Elasticsearch7]’affichera.
 
 ## Cause
 
-Adobe Commerce est codé en dur pour spécifier [!DNL Elasticsearch7] comme moteur de recherche.
+[!DNL Elasticsearch7] est codé en dur dans Adobe Commerce pour être le moteur de recherche utilisé dans ces versions.
 
-Cela ne doit pas être confondu avec la version installée du service. L’application reconnaît uniquement [!DNL Elasticsearch7] comme moteur de recherche, mais pas [!DNL OpenSearch], même si elle utilise le service [!DNL OpenSearch] sous-jacent comme moteur dans le serveur principal.
+À ne pas confondre avec la version installée du service. Bien qu’il n’y ait pas de module [!DNL Opensearch] inclus dans le code, Adobe Commerce peut utiliser le service de [!DNL Opensearch] sous-jacent.
 
 ## Solution
 
@@ -70,8 +70,8 @@ $ curl 127.0.0.1:9200
 
 **Méthode 2** :
 
-* Utilisez la commande suivante sur l’interface de ligne de commande de Magento-cloud : `magento-cloud relationships -p <project_id>`. Après avoir utilisé la commande, localisez [!DNL OpenSearch].
+* Utilisez la commande suivante sur l’interface de ligne de commande Magento-cloud : `magento-cloud relationships -p <project_id>`. Après avoir utilisé la commande , localisez [!DNL OpenSearch].
 
 ## Lecture connexe
 
-[ Configurez le service OpenSearch ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html) dans le guide Commerce on Cloud Infrastructure.
+[Configurez le service OpenSearch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html) dans le guide Commerce sur les infrastructures cloud .

@@ -4,9 +4,9 @@ description: Les problèmes de création de rapports avancés sur Adobe Commerce
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: aed14781c6a7b43d0a719ac89c2965d5044d8c22
+source-git-commit: 207fd4cd11f76a5076e98cda8b6776b2d68ef937
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1017'
 ht-degree: 0%
 
 ---
@@ -125,9 +125,14 @@ ls -ltr pub/media/analytics/
 
 Pour vérifier qu’il existe des enregistrements dans access.logs, exécutez la commande suivante :
 
-```
-zgrep -i analytics /var/log/platform/[cluster_id|cluster_id_stg]/access.log* | grep MagentoBI
-```
+* Sous Commerce Cloud :
+
+  ```
+  {{zgrep -i analytics /var/log/platform/*/access.log* | grep MagentoBI}}
+  ```
+
+* Pour On-Premise, remplacez le chemin d’accès au fichier en conséquence :
+  `zgrep -i analytics <your web server's log path>/access.log* | grep MagentoBI`
 
 a. OUI - Si le fichier `data.tgz` est présent et qu’il existe des enregistrements dans les journaux d’accès, mais que vous rencontrez toujours une erreur 404, vous devez [soumettre un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
 b. NON - Passer à [étape 10](#step-10).
