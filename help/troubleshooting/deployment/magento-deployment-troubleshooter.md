@@ -4,9 +4,9 @@ description: Les déploiements bloqués et les déploiements ayant échoué sur 
 exl-id: 5141e079-be61-44c2-8bff-c4b13cb7e07c
 feature: Build, Deploy, Support
 role: Developer
-source-git-commit: aedf869e96ce6bcbf538805dd6d14d31db8c2e02
+source-git-commit: 4704446d043e3175b5af27c068908e58bfb7a9ff
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Les déploiements bloqués et les déploiements ayant échoué sur Adobe Commerc
 
 +++**Adobe Commerce sur le service d’infrastructure cloud est-il opérationnel ?**
 
-Déploiement bloqué - Le service d’infrastructure cloud d’Adobe Commerce est-il opérationnel ? Vérifiez [Adobe Commerce Cloud](https://status.adobe.com/products/3350/).
+Déploiement bloqué - Le service d’infrastructure cloud d’Adobe Commerce est-il opérationnel ? Cochez [Adobe Commerce Cloud](https://status.adobe.com/products/3350/).
 
 a. OUI - Passer à [étape 2](#step-2).\
 b. NON - Maintenance ou pannes globales. Recherchez une estimation de la durée et des mises à jour.
@@ -30,7 +30,7 @@ b. NON - Maintenance ou pannes globales. Recherchez une estimation de la durée 
 
 +++**Existe-t-il des déploiements dans d’autres environnements qui bloquent le déploiement dans l’environnement existant ?**
 
-Pour obtenir la liste des activités en cours, exécutez la commande suivante à l’aide de l’interface de ligne de commande magento-cloud (si vous n’avez été ajouté qu’à un seul projet cloud). **Remarque** : vérifiez que vous disposez de la dernière version de l’interface de ligne de commande magento-cloud. Pour connaître les étapes, reportez-vous à la section [Mise à jour de l’interface de ligne de commande](/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) du guide Commerce sur les infrastructures cloud.
+Pour obtenir la liste des activités en cours, exécutez la commande suivante à l’aide de l’interface de ligne de commande magento-cloud (si vous n’avez été ajouté qu’à un seul projet cloud). **Remarque** : vérifiez que vous disposez de la dernière version de l’interface de ligne de commande magento-cloud. Pour connaître les étapes, reportez-vous à la section [Mise à jour de l’interface de ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) du guide Commerce sur les infrastructures cloud.
 
 ```bash
 magento-cloud --state=in_progress
@@ -42,7 +42,7 @@ Pour obtenir une liste des activités en cours, exécutez la commande suivante �
 magento-cloud -p <project-id or project-url> --state=in_progress
 ```
 
-Pour obtenir des informations sur une activité de déploiement existante (voir la section [Vérification du journal de déploiement en cas d’erreur de « journal arrêté » dans l’interface utilisateur de Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.html))
+Pour obtenir des informations sur une activité de déploiement existante (voir la section [Vérification du journal de déploiement si l’interface utilisateur de Cloud comporte une erreur « journal arrêté »](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
 pour plus d’informations), vous pouvez exécuter cette commande pour obtenir un journal d’exécution de cette activité :
 
 ```bash
@@ -79,7 +79,7 @@ b. NON - [Envoyer un ticket d’assistance](/help/help-center-guide/help-center/
 +++**Utilisation de Bitbucket ?**
 
 a. OUI - Vérifiez [status.bitbucket.com](https://bitbucket.status.atlassian.com/).\
-b. NON - Vérifiez les erreurs du journal de déploiement dans les journaux [Créer et déployer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html). Passez à [étape 6](#step-6).
+b. NON - Vérifiez les erreurs du journal de déploiement dans les journaux [Créer et déployer](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations). Passez à [étape 6](#step-6).
 
 +++
 
@@ -124,7 +124,7 @@ b. NON - Passer à [étape 11](#step-11).
 +++**Stockage disponible correct ?**
 
 a. OUI - Procédez à l’[étape 11](#step-11).\
-b. NON - Vérifiez [Gérer l’espace disque](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html).
+b. NON - Vérifiez [Gérer l’espace disque](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space).
 
 +++
 
@@ -146,11 +146,11 @@ b. NON - Procédez à [étape 8](#step-8).
 
 +++
 
-## Étape 13 - Vérification de l’échec de la mise à niveau Elasticsearch {#step-13}
+## Étape 13 - Vérification de l’échec de la mise à niveau d’Elasticsearch {#step-13}
 
 +++**Elasticsearch en cours de mise à niveau ou de déploiement ?**
 
-a. OUI - Échec des étapes de mise à niveau de l’Elasticsearch. Pour plus d&#39;informations, consultez la section Compatibilité logicielle [Elasticsearch ](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html). Si la mise à niveau Elasticsearch ne fonctionne toujours pas, [envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). **Remarque** : sur Adobe Commerce sur les infrastructures cloud, sachez que les mises à niveau de service ne peuvent pas être envoyées à l’environnement de production sans avis de 48 heures ouvrables à notre équipe en charge de l’infrastructure. Cela est nécessaire car nous devons nous assurer qu’un ingénieur du support à l’infrastructure est disponible pour mettre à jour votre configuration dans le délai souhaité avec un temps d’arrêt minimal pour votre environnement de production. Ainsi, 48 heures avant le moment où vos modifications doivent être mises en production, [soumettez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) détaillant la mise à niveau de service requise et indiquant l’heure à laquelle vous souhaitez que le processus de mise à niveau démarre.\
+a. OUI - Les étapes de mise à niveau d’Elasticsearch ont échoué. Pour plus d&#39;informations, consultez la section [Compatibilité logicielle Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html). Si la mise à niveau d’Elasticsearch ne fonctionne toujours pas, [envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). **Remarque** : sur Adobe Commerce sur les infrastructures cloud, sachez que les mises à niveau de service ne peuvent pas être envoyées à l’environnement de production sans avis de 48 heures ouvrables à notre équipe en charge de l’infrastructure. Cela est nécessaire car nous devons nous assurer qu’un ingénieur du support à l’infrastructure est disponible pour mettre à jour votre configuration dans le délai souhaité avec un temps d’arrêt minimal pour votre environnement de production. Ainsi, 48 heures avant le moment où vos modifications doivent être mises en production, [soumettez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) détaillant la mise à niveau de service requise et indiquant l’heure à laquelle vous souhaitez que le processus de mise à niveau démarre.\
 b. NON - Passer à [étape 14](#step-14).
 
 +++
@@ -210,7 +210,7 @@ b. NON - Passer à [étape 19](#step-19).
 
 +++**Utilisation d’extensions tierces ?**
 
-a. OUI - Essayez de [désactiver les extensions tierces](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html) et d’exécuter le déploiement (pour voir si elles sont à l’origine du problème), en particulier si des noms d’extension figurent dans des erreurs.\
+a. OUI - Essayez de [désactiver les extensions tierces](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions) et d’exécuter le déploiement (pour voir si elles sont à l’origine du problème), en particulier si des noms d’extension figurent dans des erreurs.\
 b. NON - Passer à [étape 20](#step-20).
 
 +++
@@ -226,9 +226,9 @@ b. NON - [Envoyer un ticket d’assistance](/help/help-center-guide/help-center/
 
 +++
 
-## Étape 21 - Rétrogradation de la version de l’Elasticsearch {#step-21}
+## Étape 21 - Rétrogradation de la version d’Elasticsearch {#step-21}
 
-+++**Mise à niveau des versions Elasticsearch ?**
++++**Mise à niveau des versions d’Elasticsearch ?**
 
 a. OUI - Impossible d’effectuer la configuration. [Envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
 b. NON - [Envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
