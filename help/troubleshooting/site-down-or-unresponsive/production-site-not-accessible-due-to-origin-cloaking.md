@@ -1,54 +1,55 @@
 ---
-title: Site inaccessible en raison du cloaking d’origine
-description: Cet article fournit une solution lorsque votre site d’évaluation de l’infrastructure cloud ou de production Adobe Commerce et/ou l’administrateur n’est pas accessible.
+title: Site non accessible en raison du cloaking de l'origine
+description: Cet article fournit une solution pour le cas où votre Adobe Commerce sur le storefront ou l’administrateur du site d’évaluation ou de production de l’infrastructure cloud n’est pas accessible.
 exl-id: 4412d744-3066-4f78-bc45-8149614ce455
 feature: Products
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: b58e182c64b3fad508145d9078619ddbe0e2b887
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
 
-# Site inaccessible en raison du cloaking d’origine
+# Site non accessible en raison du cloaking de l&#39;origine
 
-Cet article fournit une solution lorsque votre site d’évaluation de l’infrastructure cloud ou de production Adobe Commerce et/ou l’administrateur n’est pas accessible.
+Cet article fournit une solution pour le cas où votre Adobe Commerce sur le storefront ou l’administrateur du site d’évaluation ou de production de l’infrastructure cloud n’est pas accessible.
 
 ## Produits et versions concernés
 
-* Adobe Commerce sur l’infrastructure cloud 2.3.x, 2.4.x
+* Adobe Commerce sur les infrastructures cloud 2.3.x, 2.4.x
 
 ## Problème
 
-https: &#x200B;//mydomain.com.c.&lt;projectid>.magento.cloud/ n’est plus accessible.
+https:&#x200B;//mydomain.com.c.&lt;projectid>.magento.cloud/ n’est plus accessible.
 
-<u>Étapes à reproduire :</u>
+<u>Procédure à suivre :</u>
 
 1. Connectez-vous à votre projet.
-1. Cliquez sur **Accéder au projet** pour obtenir une liste d’URL et de SSH.
+1. Cliquez sur **Accéder au projet** pour obtenir la liste des URL et des SSH.
 
-<u>Résultats réels :</u>
+<u>Résultats réels:</u>
 
-Échec du chargement de la page avec l’erreur suivante :
+Le chargement de la page échoue avec l’erreur suivante :
 
-*NET::ERR\_CERT\_INVALID* *Alerte TLS, mauvais certificat (554) :*
+*NET::ERR\_CERT\_INVALID* *alerte TLS, certificat incorrect (554) :*
 
 <u>Résultats attendus :</u>
 
-Chargement de la page réussi.
+La page se charge correctement.
 
 ## Cause
 
-Le cloaking d’origine a été activé, de sorte que l’origine n’est plus directement accessible.
+Le cloaking d’origine a été activé, de sorte que l’origine n’est plus accessible directement.
 
-Le cloaking d’origine est une fonctionnalité de sécurité qui permet à Adobe Commerce de bloquer tout trafic non-Fastly se rendant dans l’infrastructure cloud (origine) pour empêcher les attaques DDoS.
+Le cloaking d&#39;origine est une fonctionnalité de sécurité qui permet à Adobe Commerce de bloquer tout trafic non Fastly allant vers l&#39;infrastructure cloud (origine) afin d&#39;empêcher les attaques DDoS.
 
 ## Solution
 
 * Si votre site cloud est actif, passez à https://mydomain.com/.
-* Si vous disposez d’un site actif (non cloud), à l’aide du domaine https://mydomain.com/, configurez un sous-domaine `mcprod.mydomain.com` et remplacez par mettre à jour votre **URL de base** vers *https://mcprod.mydomain.com*, puis [pointez le DNS vers Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings).
+* Si vous disposez d’un site actif (non cloud), configurez un `mcprod.mydomain.com` de sous-domaine à l’aide du domaine https://mydomain.com/ et mettez à jour votre **URL de base** en *https://mcprod.mydomain.com*, puis [pointez le DNS vers Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings).
 
 ## Lecture connexe
 
-[FAQ sur l’activation du cloaking d’origine Fastly](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) dans notre base de connaissances d’assistance.
+* [FAQ sur l&#39;activation du cloaking d&#39;origine Fastly](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) dans notre base de connaissances
+* [Liste de contrôle pour la configuration d’un nouveau domaine](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain) dans notre base de connaissances d’assistance
