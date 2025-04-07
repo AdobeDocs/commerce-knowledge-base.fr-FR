@@ -4,7 +4,7 @@ description: Cet article fournit des solutions au problème d’Adobe Commerce e
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: 54f6fb60adca6f639cd315b3d070c7b93aa45bab
+source-git-commit: b0d4b2e541c42095d6d09b91ba6f390064c89af6
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Les données de votre catalogue ne sont pas synchronisées correctement ou un no
 Ou
 
 1. Ajoutez un nouveau produit au catalogue.
-1. Essayez d’exécuter une requête de recherche à l’aide du nom du produit ou d’autres attributs pouvant faire l’objet de recherches après 15 à 20 minutes à compter de l’exécution de l’indexeur du Magento horaire + cron pour synchroniser les données avec le service principal.
+1. Essayez d’exécuter une requête de recherche à l’aide du nom du produit ou d’autres attributs pouvant faire l’objet de recherches après 15 à 20 minutes à compter de l’exécution de l’indexeur Magento + cron pour synchroniser les données avec le service principal.
 
 <u>Résultat attendu</u>
 
@@ -56,7 +56,7 @@ Vous pouvez prendre plusieurs mesures pour essayer de résoudre les problèmes d
 
 ### Attendre que les modifications soient appliquées
 
-Une fois la configuration et la connexion effectuées, la création de l’index dans ES (Elasticsearch) et le renvoi des résultats de la recherche peuvent prendre plus de 30 minutes. Les mises à jour de produit ponctuelles suivantes doivent être indexées dans les minutes qui suivent.
+Une fois que vous avez configuré et connecté, la création de l’index dans ES (Elasticsearch) et le renvoi des résultats de recherche peuvent prendre plus de 30 minutes. Les mises à jour de produit ponctuelles suivantes doivent être indexées dans les minutes qui suivent.
 
 ### Synchroniser les données de produit pour un SKU spécifique
 
@@ -146,7 +146,7 @@ bin/magento saas:resync --feed productattributes
 Exécutez les commandes suivantes pour resynchroniser les flux :
 
 ```
-bin/magento saas:resync --feed productattributes --cleaup-feed
+bin/magento saas:resync --feed productattributes --cleanup-feed
 bin/magento saas:resync --feed products --cleanup-feed
 bin/magento saas:resync --feed scopesCustomerGroup --cleanup-feed
 bin/magento saas:resync --feed scopesWebsite --cleanup-feed
