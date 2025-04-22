@@ -2,14 +2,17 @@
 title: Comment obtenir et appliquer des [!UICONTROL security patch]
 description: Cet article fournit des instructions sur la manière d’obtenir et d’appliquer une [!UICONTROL security patch] qui a été publiée, mais les instructions ne sont pas disponibles.
 exl-id: 55f2be73-2ccc-4750-a7bd-3058fc2d5107
-source-git-commit: 06bc239cb5b1a894d2a60236a9b32b2b0c4eba80
+source-git-commit: 43c8308c6539c53f60fb6457047898a2edd46532
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
 
 # Comment obtenir et appliquer un [!UICONTROL security patch]
+
+>[!NOTE]
+>Si vous disposez d’une installation On-Premise et que vous n’utilisez pas de systèmes de contrôle de version tels que [!DNL CVS] ou [!DNL GitHub] pour gérer votre code, votre hôte web peut vous aider à appliquer le correctif. N’hésitez pas à leur demander de l’aide
 
 Cet article fournit des instructions sur la manière d’obtenir et d’appliquer une [!UICONTROL security patch] qui a été publiée, mais les instructions ne sont pas disponibles.
 
@@ -17,18 +20,17 @@ Cet article fournit des instructions sur la manière d’obtenir et d’applique
 
 Adobe Commerce On-Premise et Cloud - Toutes les versions
 
+
 ## Cause
 
-La plupart des [!UICONTROL Security Patches] sont publiées sans aucun fichier physique ou correctif à appliquer.
+La plupart des [!UICONTROL Security Patches] sont publiés sans correctif ou correctif isolé à appliquer et nécessiteront une mise à niveau vers la version [!UICONTROL Security Patch].
 
 ## Solution
 
 
 ### Cas I :
 
-Si un fichier de correctif physique/correctif est mentionné(e) dans les notes de mise à jour :
-
-* Téléchargez le fichier depuis la section de téléchargement de [https://account.magento.com](https://account.magento.com/downloads/view/). (Les utilisateurs d’accès partagé doivent d’abord recevoir des privilèges de téléchargement de la part du propriétaire du compte/titulaire de la licence)
+* Si un fichier de correctif ou un correctif logiciel isolé est mentionné dans les [notes de mise à jour](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) téléchargez le fichier à partir de la section de téléchargement de [https://account.magento.com](https://account.magento.com/downloads/view/). Les utilisateurs d’accès partagé doivent d’abord recevoir des privilèges de téléchargement de la part du propriétaire du compte ou du titulaire de licence.
 
 **Avertissements:**
 
@@ -42,7 +44,9 @@ Si vous ne disposez pas de la prise en charge étendue, vous pouvez demander à 
 
 ### Cas II :
 
-Si un fichier de correctif physique ou un correctif logiciel n&#39;est pas mentionné dans les notes de mise à jour :
+Les correctifs isolés ne sont fournis que dans des cas exceptionnels, et il ne s’agit pas de la forme préférée pour implémenter des correctifs de sécurité.
+
+Si un fichier de correctif/correctif isolé n’est pas mentionné dans les notes de mise à jour :
 
 * **Cloud:**
 
@@ -51,8 +55,8 @@ Si un fichier de correctif physique ou un correctif logiciel n&#39;est pas menti
 
 * **Cloud ou On-Premise:**
 
-* Si aucun fichier de correctif physique/correctif n’est disponible, [mettez à niveau la version d’Adobe Commerce sur Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) 2.4.X vers la dernière version de correctif 2.4.X-pY.
-* Si aucun fichier de correctif physique/correctif n’est disponible, [mettez à niveau la version On-Premise d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) 2.4.X vers la dernière version de correctif 2.4.X-pY.
+* Si aucun fichier de correctif ou correctif logiciel isolé n’est disponible, [mettez à niveau la version d’Adobe Commerce sur Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) 2.4.X vers la dernière version de correctif 2.4.X-pY.
+* Si aucun fichier de correctif ou correctif logiciel isolé n&#39;est disponible, [mettez à niveau la version On-Premise d&#39;Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) 2.4.X vers la dernière version de correctif 2.4.X-pY.
 
 ## Lecture connexe
 
