@@ -2,16 +2,16 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: dc9a64e1576f93d952b4ff4c24c3845f819e08bd
+source-git-commit: 41948c702d5c4e37847ab18ca2a93798e70a8e98
 workflow-type: tm+mt
-source-wordcount: '9304'
+source-wordcount: '9315'
 ht-degree: 0%
 
 ---
 
 # Base de connaissances Adobe Commerce {#kb}
 
-* [Base de connaissances d’assistance pour Adobe Commerce](/help/overview.md)
+* [Base de connaissances de l’assistance Adobe Commerce](/help/overview.md)
 * Outils d’assistance {#support-tools}
    * [Présentation des outils d’assistance](/help/support-tools/overview.md)
    * Outil d’analyse à l’échelle du site {#site-wide-analysis-tool}
@@ -61,8 +61,8 @@ ht-degree: 0%
          * [MDVA-26005 : impossible de sélectionner une catégorie dans l’arborescence pour les conditions de règle Prix du panier.](/help/support-tools/patches-available-in-qpt-tool/v1-1-4/mdva-26005-unable-to-select-category-in-tree-for-cart-price-rule-conditions.md)
          * [MDVA-29400 : commandes dupliquées passées avec PayPal Express Checkout](/help/support-tools/patches-available-in-qpt-tool/v1-1-4/mdva-29400-duplicated-orders-placed-with-paypal-express-checkout.md)
          * [MDVA-37725 : les e-mails envoyés via des sites non par défaut contiennent les URL de logo du site par défaut](/help/support-tools/patches-available-in-qpt-tool/v1-1-4/mdva-37725-asynchronous-order-emails-sent-via-non-default-websites-containing-default-websites-logo-urls.md)
-         * [MDVA-39482 : le produit est en rupture de stock s’il est importé avec la quantité « 0 » avec les commandes en souffrance activées](/help/support-tools/patches-available-in-qpt-tool/v1-1-4/mdva-39482-product-goes-out-of-stock-when-imported-with-0-quantity.md)
-         * [MDVA-40101 : les articles restent dans le mini-panier après la passation de la commande PayPal paiement express](/help/support-tools/patches-available-in-qpt-tool/v1-1-4/mdva-40101-items-remain-in-mini-cart-after-order-placement-using-paypal-express-checkout.md)
+         * [MDVA-39482 : le produit est en rupture de stock s&#39;il est importé avec une quantité de &#39;0&#39; avec commandes en souffrance activées](/help/support-tools/patches-available-in-qpt-tool/v1-1-4/mdva-39482-product-goes-out-of-stock-when-imported-with-0-quantity.md)
+         * [MDVA-40101 : les articles restent dans le panier après le placement de la commande PayPal Express Checkout](/help/support-tools/patches-available-in-qpt-tool/v1-1-4/mdva-40101-items-remain-in-mini-cart-after-order-placement-using-paypal-express-checkout.md)
          * [MDVA-40399 : impossible de créer simultanément des factures partielles pour une même commande via l&#39;API](/help/support-tools/patches-available-in-qpt-tool/v1-1-4/mdva-40399-partial-invoices-for-same-order-cannot-be-created-simultaneously-via-rest-api.md)
          * [MDVA-40401 : la valeur d’utilisation du coupon change après l’échec de la commande](/help/support-tools/patches-available-in-qpt-tool/v1-1-4/mdva-40401-coupon-usage-value-changes-even-after-failed-order.md)
          * [MDVA-40435 : la remise sur le produit groupé n’est pas appliquée correctement via GraphQL](/help/support-tools/patches-available-in-qpt-tool/v1-1-4/mdva-40435-discount-on-bundle-product-is-not-applied-correctly-via-graphql.md)
@@ -128,11 +128,11 @@ ht-degree: 0%
          * [MDVA-43201 : erreur lors de l’utilisation du champ DOB avec le paramètre régional PT](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-43201-error-when-using-dob-field-with-locale-pt.md)
       * v1.1.11 {#v1-1-11}
          * [Présentation : Outil de correctifs de qualité (QPT) v1.1.11](/help/support-tools/patches-available-in-qpt-tool/v1-1-11/overview.md)
-         * [MDVA-40830 : crédit en magasin appliqué plusieurs fois pendant la commande](/help/support-tools/patches-available-in-qpt-tool/v1-1-11/mdva-40830-store-credit-applied-multiple-times.md)
+         * [MDVA-40830 : crédit de magasin appliqué plusieurs fois pendant la commande](/help/support-tools/patches-available-in-qpt-tool/v1-1-11/mdva-40830-store-credit-applied-multiple-times.md)
          * [MDVA-41350 : exception lorsque l’administrateur ajoute des produits en dehors de son accès](/help/support-tools/patches-available-in-qpt-tool/v1-1-11/mdva-41350-exception-when-admin-adds-products-outside-scope.md)
-         * [MDVA-42237 : prix spécial configurable du produit non mis à jour](/help/support-tools/patches-available-in-qpt-tool/v1-1-11/mdva-42237-configurable-product-special-price-not-updated.md)
-         * [MDVA-42269 : l’utilisateur administrateur ne peut pas se connecter à Admin en raison de l’erreur « TypeError »](/help/support-tools/patches-available-in-qpt-tool/v1-1-11/mdva-42269-admin-user-cannot-log-in-to-admin-due-to-the-typeerror.md)
-         * [MDVA-42520 : taux d’imposition appliqué deux fois lorsque « Activer le commerce transfrontalier » est utilisé](/help/support-tools/patches-available-in-qpt-tool/v1-1-11/mdva-42520-tax-rate-applied-twice-when-enable-cross-border-trade-is-used.md)
+         * [MDVA-42237 : Prix spécial du produit configurable non mis à jour](/help/support-tools/patches-available-in-qpt-tool/v1-1-11/mdva-42237-configurable-product-special-price-not-updated.md)
+         * [MDVA-42269 : l’utilisateur administrateur ne peut pas se connecter à l’administrateur en raison de l’erreur « TypeError »](/help/support-tools/patches-available-in-qpt-tool/v1-1-11/mdva-42269-admin-user-cannot-log-in-to-admin-due-to-the-typeerror.md)
+         * [MDVA-42520 : taux de taxe appliqué deux fois lorsque l&#39;option « Activer le commerce transfrontalier » est utilisée](/help/support-tools/patches-available-in-qpt-tool/v1-1-11/mdva-42520-tax-rate-applied-twice-when-enable-cross-border-trade-is-used.md)
          * [MDVA-42790 : les attributs de prix de produit ne peuvent pas être mis à jour pour un site web spécifique via l’API REST](/help/support-tools/patches-available-in-qpt-tool/v1-1-11/mdva-42790-product-price-attributes-cannot-be-updated-for-specific-website-via-rest-api.md)
       * v1-1-12 {#v1-1-12}
          * [Présentation : Outil de correctifs de qualité (QPT) v1.1.12](/help/support-tools/patches-available-in-qpt-tool/v1-1-12/overview.md)
@@ -144,8 +144,8 @@ ht-degree: 0%
          * [MDVA-41628 : les utilisateurs administrateurs restreints ont accès à de nouvelles ressources](/help/support-tools/patches-available-in-qpt-tool/v1-1-12/mdva-41628-restricted-admin-user-gets-access-to-new-resources.md)
          * [MDVA-42410 : les rapports Coupon affichent uniquement la devise de base par défaut](/help/support-tools/patches-available-in-qpt-tool/v1-1-12/mdva-42410-coupon-reports-only-display-default-base-currency.md)
          * [MDVA-42645 : l&#39;administrateur ne peut pas rembourser les points de récompense pour le crédit de magasin désactivé](/help/support-tools/patches-available-in-qpt-tool/v1-1-12/mdva-42645-admin-cannot-refund-reward-points-if-the-store-credit-functionality-is-disabled.md)
-         * [MDVA-42689 : les utilisateurs obtiennent une erreur de violation de contrainte d’intégrité lors de la mise à jour des catégories de produits pendant l’importation](/help/support-tools/patches-available-in-qpt-tool/v1-1-12/mdva-42689-users-get-integrity-constraint-violation-error-while-updating-product-categories.md)
-         * [MDVA-42855 : la nouvelle adresse du client n’est pas enregistrée dans le carnet d’adresses lors du paiement](/help/support-tools/patches-available-in-qpt-tool/v1-1-12/mdva-42855-new-customer-address-isnt-saved-to-address-book-during-checkout.md)
+         * [MDVA-42689 : erreur de violation de contrainte d’intégrité lors de la mise à jour des catégories de produits lors de l’importation](/help/support-tools/patches-available-in-qpt-tool/v1-1-12/mdva-42689-users-get-integrity-constraint-violation-error-while-updating-product-categories.md)
+         * [MDVA-42855 : la nouvelle adresse du client n’est pas enregistrée dans le carnet d’adresses lors du passage en caisse](/help/support-tools/patches-available-in-qpt-tool/v1-1-12/mdva-42855-new-customer-address-isnt-saved-to-address-book-during-checkout.md)
          * [MDVA-42950 : les vidéos ne sont pas lues sur la page produit](/help/support-tools/patches-available-in-qpt-tool/v1-1-12/mdva-42950-videos-dont-play-on-the-product-page.md)
          * [MDVA-43232 : le tri des produits dans le marchandiseur visuel par Prix spécial en haut (ou en bas) provoque une erreur](/help/support-tools/patches-available-in-qpt-tool/v1-1-12/mdva-43232-sorting-products-in-visual-merchandiser-by-special-price-to-bottom-top-causes-error.md)
          * [MDVA-43348 : la demande de GraphQL de carte cadeau affiche une erreur](/help/support-tools/patches-available-in-qpt-tool/v1-1-12/mdva-43348-gift-card-graphql-request-shows-error.md)
@@ -168,9 +168,9 @@ ht-degree: 0%
       * v1.1.14 {#v1-1-14}
          * [Présentation : Outil de correctifs de qualité (QPT) v1.1.14](/help/support-tools/patches-available-in-qpt-tool/v1-1-14/overview.md)
          * [MDVA-43102 : la quantité vendable n&#39;a pas été mise à jour correctement](/help/support-tools/patches-available-in-qpt-tool/v1-1-14/mdva-43102-salable-quantity-not-updated-correctly.md)
-         * [MDVA-43178 : Impossible de récupérer le jeton client pour le magasin personnalisé dans GraphQL](/help/support-tools/patches-available-in-qpt-tool/v1-1-14/mdva-43178-customer-token-for-custom-store-cannot-be-retrieved.md)
-         * [MDVA-43605 : les données de commande renvoient des valeurs négatives pour les totaux des lignes lors de l’utilisation de l’API REST](/help/support-tools/patches-available-in-qpt-tool/v1-1-14/mdva-43605-order-data-returns-negative-values-for-row-totals-when-using-rest-api.md)
-         * [MDVA-43859 : Erreur « Aucune entité de ce type avec customerId = » enregistrée lors de l’ouverture de session du client supprimé](/help/support-tools/patches-available-in-qpt-tool/v1-1-14/mdva-43859-error-no-such-entity-with-customerid.md)
+         * [MDVA-43178 : impossible de récupérer le jeton client pour le magasin personnalisé dans GraphQL](/help/support-tools/patches-available-in-qpt-tool/v1-1-14/mdva-43178-customer-token-for-custom-store-cannot-be-retrieved.md)
+         * [MDVA-43605 : les données de commande renvoient des valeurs négatives pour les totaux des lignes lors de l’utilisation de l’API Rest](/help/support-tools/patches-available-in-qpt-tool/v1-1-14/mdva-43605-order-data-returns-negative-values-for-row-totals-when-using-rest-api.md)
+         * [MDVA-43859 : erreur « Aucune entité de ce type avec customerId = » consignée lors de la suppression d’une connexion client.](/help/support-tools/patches-available-in-qpt-tool/v1-1-14/mdva-43859-error-no-such-entity-with-customerid.md)
          * [MDVA-43983 : les produits définis comme « Non visibles individuellement » apparaissent dans les résultats de recherche](/help/support-tools/patches-available-in-qpt-tool/v1-1-14/mdva-43983-products-not-visible-individually-still-appear-in-catalog-advanced-search-results.md)
          * [MDVA-44100 : tous les FPT sont affectés au dernier produit du panier](/help/support-tools/patches-available-in-qpt-tool/v1-1-14/mdva-44100-all-fpts-are-assigned-to-the-last-product-in-the-shopping-cart-and-reset-for-other-product.md)
          * [MDVA-44147 : la demande GraphQL ne renvoie pas de listes de demandes](/help/support-tools/patches-available-in-qpt-tool/v1-1-14/mdva-44147-graphql-request-doesnt-return-requisition-lists.md)
@@ -182,8 +182,8 @@ ht-degree: 0%
          * [MDVA-40961 : impossible d&#39;ajouter un article supplémentaire au panier lorsque la quantité minimale de l&#39;article est déjà dans le panier](/help/support-tools/patches-available-in-qpt-tool/v1-1-15/mdva-40961-additional-item-cant-be-added-to-cart-when-minimum-qty-of-the-item-already-in-cart.md)
          * [MDVA-43718 : l’erreur « le client n’est pas autorisé à accéder aux ressources » s’affiche lors de l’accès au catalogue partagé](/help/support-tools/patches-available-in-qpt-tool/v1-1-15/mdva-43718-not-authorized-to-access-resources-error-appears-when-accessing-shared-catalog.md)
          * [MDVA-44533 : remise appliquée de manière incorrecte à un produit enfant groupé](/help/support-tools/patches-available-in-qpt-tool/v1-1-15/mdva-44533-discount-incorrectly-applied-to-bundle-child-product.md)
-         * [MDVA-44660 : l’accent grave ne peut pas être utilisé pour le nom du client](/help/support-tools/patches-available-in-qpt-tool/v1-1-15/mdva-44660-grave-accent-character-cannot-be-used-for-customer-name.md)
-         * [MDVA-44887 : erreur &#39;Uncaught SyntaxError : Unexpected token const&#39; dans le panneau d’administration](/help/support-tools/patches-available-in-qpt-tool/v1-1-15/mdva-44887-uncaught-syntaxerror-unexpected-token-const-error-in-admin-panel.md)
+         * [MDVA-44660 : impossible d’utiliser un caractère d’accent grave pour le nom du client](/help/support-tools/patches-available-in-qpt-tool/v1-1-15/mdva-44660-grave-accent-character-cannot-be-used-for-customer-name.md)
+         * [MDVA-44887 : erreur « Uncaught SyntaxError: Unexpected token const » dans le panneau d’administration](/help/support-tools/patches-available-in-qpt-tool/v1-1-15/mdva-44887-uncaught-syntaxerror-unexpected-token-const-error-in-admin-panel.md)
       * v1.1.16 {#v1-1-16}
          * [Présentation : Outil de correctifs de qualité (QPT) v1.1.16](/help/support-tools/patches-available-in-qpt-tool/v1-1-16/overview.md)
          * [MDVA-42509 : impossible de charger le fichier CSV pour une commande rapide, ce qui entraîne l’erreur « Impossible d’envoyer le cookie »](/help/support-tools/patches-available-in-qpt-tool/v1-1-16/mdva-42509-csv-could-not-be-uploaded-for-quick-order-resulting-in-unable-to-send-the-cookie-error.md)
@@ -249,10 +249,10 @@ ht-degree: 0%
          * [ACSD-47666 : la recherche dans Rôles utilisateur ne fonctionne pas](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/acsd-47666-search-in-user-roles-not-working.md)
          * [ACSD-47232 : le coupon n’est pas appliqué lorsque l’option Identique à l’adresse de facturation est cochée](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/acsd-47232-coupon-is-not-applied-when-same-as-billing-address-is-checked.md)
          * [ACSD-47179 : la suppression en masse de révisions de produits ne fonctionne pas lorsque vous êtes connecté en tant que rôle d’utilisateur limité](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/acsd-47179-mass-delete-product-review-doesnt-work-when-logged-in-as-limited-user.md)
-         * [ACSD-47107 : la règle de prix catalogue s’applique aux options personnalisées](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/acsd-47107-catalog-price-rule-is-applied-to-custom-options.md)
-         * [ACSD-47497 : liste de contrôle d’accès manquante pour OAuth de stockage/configuration/services](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/acsd-47497-missing-acl-for-store-configuration-services-oaut.md)
+         * [ACSD-47107 : la règle de prix de catalogue est appliquée aux options personnalisées](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/acsd-47107-catalog-price-rule-is-applied-to-custom-options.md)
+         * [ACSD-47497 : ACL manquante pour le magasin / la configuration / les services OAuth](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/acsd-47497-missing-acl-for-store-configuration-services-oaut.md)
       * v1.1.24 {#v1-1-24}
-         * [Présentation : Quality Patches Tool (QPT) v1.1.24](/help/support-tools/patches-available-in-qpt-tool/v1-1-24/overview.md)
+         * [Présentation : Outil de correctifs de qualité (QPT) v1.1.24](/help/support-tools/patches-available-in-qpt-tool/v1-1-24/overview.md)
          * [ACSD-46865 : expédition et avoir non renseignés lorsque l&#39;indexation asynchrone est activée](/help/support-tools/patches-available-in-qpt-tool/v1-1-24/acsd-46865-shipment-and-credit-memo-grid-not-populated-when-asynchronous-indexing-is-enabled.md)
          * [ACSD-47559 : aperçu du modèle d’e-mail pas entièrement visible](/help/support-tools/patches-available-in-qpt-tool/v1-1-24/acsd-47559-preview-email-template-not-fully-visible.md)
          * [ACSD-45168 : URL compatibles avec l’optimisation du moteur de recherche non générées pour les produits pour lesquels les attributs url_key sont remplacés](/help/support-tools/patches-available-in-qpt-tool/v1-1-24/acsd-45168-seo-friendly-urls-not-generated-for-products-that-have-url-key-attributes-overridden-on-store-view-level.md)
@@ -289,9 +289,9 @@ ht-degree: 0%
          * [ACSD-48366 : l’image du produit ne s’affiche pas sur le modèle d’e-mail Retour au stock .](/help/support-tools/patches-available-in-qpt-tool/v1-1-26/acsd-48366-product-image-not-displayed-back-stock-email-template.md)
          * [ACSD-48417 : erreur SQL après la création d’une modification de planning](/help/support-tools/patches-available-in-qpt-tool/v1-1-26/acsd-48417-sql-error-after-creating-a-schedule-change.md)
       * V1.1.27 {#v1-1-27}
-         * [ACSD-48404 : Mémoriser la pagination des catégories = yes provoque une erreur](/help/support-tools/patches-available-in-qpt-tool/v1-1-27/acsd-48404-fixes-the-issue-where-remember-category-pagination-yes-causes-an-error.md)
+         * [ACSD-48404 : mémoriser la pagination de catégorie = oui provoque une erreur](/help/support-tools/patches-available-in-qpt-tool/v1-1-27/acsd-48404-fixes-the-issue-where-remember-category-pagination-yes-causes-an-error.md)
          * [Vue d’ensemble](/help/support-tools/patches-available-in-qpt-tool/v1-1-27/overview.md)
-         * [ACSD-48634 : [!DNL JS] erreurs si [!DNL Google Analytics Content Experiments] activée](/help/support-tools/patches-available-in-qpt-tool/v1-1-27/acsd-48634-js-errors-when-google-analytics-content-experiments-enabled.md)
+         * [ACSD-48634: [!DNL JS] errors when [!DNL Google Analytics Content Experiments] enabled](/help/support-tools/patches-available-in-qpt-tool/v1-1-27/acsd-48634-js-errors-when-google-analytics-content-experiments-enabled.md)
          * [ACSD-49042 : produit avec arriéré infini ne peut pas être commandé depuis le storefront](/help/support-tools/patches-available-in-qpt-tool/v1-1-27/acsd-49042-product-with-infinite-backorder-cant-be-ordered-from-storefront.md)
          * [ACSD-47908 : une valeur inférieure ou égale à 0 est une erreur attendue lors de l’extraction](/help/support-tools/patches-available-in-qpt-tool/v1-1-27/acsd-47908-a-value-less-than-or-equal-to-0-is-expected-error-during-checkout.md)
          * [ACSD-48059 : les commerçants ne peuvent pas enregistrer le produit Correspondance par règle pour l’attribut Catégories](/help/support-tools/patches-available-in-qpt-tool/v1-1-27/acsd-48059-merchants-cannot-save-the-match-product-by-rule-for-categories-attribute.md)
@@ -303,9 +303,9 @@ ht-degree: 0%
          * [ACSD-48694 : l&#39;erreur de demande de changement d&#39;état non valide empêche le client de passer commande](/help/support-tools/patches-available-in-qpt-tool/v1-1-27/acsd-48694-invalid-state-change-requested-error-prevents-customer-from-placing-order.md)
       * v1.1.28 {#v1-1-28}
          * [Présentation de  [!DNL Quality Patches Tool] (QPT) v1.1.28](/help/support-tools/patches-available-in-qpt-tool/v1-1-28/overview.md)
-         * [ACSD-49179 : le rapport des commandes affiche des montants incorrects pour différents magasins](/help/support-tools/patches-available-in-qpt-tool/v1-1-28/acsd-49179-orders-report-shows-incorrect-amounts-for-different-stores.md)
-         * [ACSD-49065 : les articles de devis ne sont pas visibles dans l’administrateur s’ils sont affectés à un stock personnalisé](/help/support-tools/patches-available-in-qpt-tool/v1-1-28/acsd-49065-quote-items-are-not-visible-in-admin-if-assigned-to-custom-stock.md)
-         * [ACSD-48866 : Erreur lors de la demande de flux RSS pour les catégories](/help/support-tools/patches-available-in-qpt-tool/v1-1-28/acsd-48866-error-when-requesting-rss-feed-for-categories.md)
+         * [ACSD-49179 : le rapport Commandes affiche des montants incorrects pour différents magasins](/help/support-tools/patches-available-in-qpt-tool/v1-1-28/acsd-49179-orders-report-shows-incorrect-amounts-for-different-stores.md)
+         * [ACSD-49065 : les éléments de devis ne sont pas visibles dans l&#39;administrateur s&#39;ils sont affectés à un stock personnalisé](/help/support-tools/patches-available-in-qpt-tool/v1-1-28/acsd-49065-quote-items-are-not-visible-in-admin-if-assigned-to-custom-stock.md)
+         * [ACSD-48866 : erreur lors de la demande d’un flux RSS pour les catégories](/help/support-tools/patches-available-in-qpt-tool/v1-1-28/acsd-48866-error-when-requesting-rss-feed-for-categories.md)
          * [ACSD-49433 : montant par défaut affiché comme sous-total dans le panier pour la carte cadeau](/help/support-tools/patches-available-in-qpt-tool/v1-1-28/acsd-49433-default-amount-shown-subtotal-in-cart.md)
          * [ACSD-48807 : Avis sur les produits non filtrés par storeview](/help/support-tools/patches-available-in-qpt-tool/v1-1-28/acsd-48807-product-reviews-not-filtered-storeview.md)
          * [ACSD-49574 : impossible de mettre à jour le produit de carte cadeau dans le panier via GraphQL](/help/support-tools/patches-available-in-qpt-tool/v1-1-28/acsd-49574-cannot-update-gift-card-product-in-shopping-cart-via-graphql.md)
@@ -605,8 +605,8 @@ ht-degree: 0%
          * [ACSD-58352 : les libellés d’attribut de retour pour le magasin par défaut sont renvoyés via [!DNL GraphQL] API](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
          * [ACSD-59514 : Forms dans l’administration avec une erreur de  [!DNL Page Builder]  dans la console du navigateur](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
          * [ACSD-58790 : corrige la fonctionnalité de pincement pour zoom sur les images de la page des détails du produit en mode mobile sur  [!DNL Chrome]](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58790-fixes-pinch-to-zoom-functionality-on-the-product-detail-page-images-in-mobile-view-on-chrome.md)
-         * [ACSD-58442 : résout le problème où les périphériques d’une largeur de 768 px étaient traités comme mobiles, ce qui entraînait le chargement du menu et de l’en-tête dans la vue mobile et non sur le bureau](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58442-fixes-issue-devices-768px-mobile-view-instead-desktop.md)
-         * [ACSD-48210 : L’attribut de portée spécifique à l’affichage du magasin remplace les valeurs globales](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-48210-store-view-specific-scope-attribute-overrides-global-values.md)
+         * [ACSD-58442 : correction du problème en raison duquel les appareils d’une largeur de 768 pixels étaient traités comme des appareils mobiles, ce qui entraînait le chargement du menu et de l’en-tête dans la vue mobile et non sur le bureau](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58442-fixes-issue-devices-768px-mobile-view-instead-desktop.md)
+         * [ACSD-48210 : l’attribut d’étendue spécifique à la vue de magasin remplace les valeurs globales](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-48210-store-view-specific-scope-attribute-overrides-global-values.md)
          * [ACSD-59280 : erreur ReflectionUnionType::getName() dans les installations 2.4.4-pX](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
          * [ACSD-60303 : problème d’emplacement de commande administrateur résolu avec la minimisation d’HTML activée](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60303-admin-order-placement-fix.md)
       * [Commerce Vérifiez que le correctif ne présente aucun problème avec l’outil de correctifs de qualité.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)
@@ -672,10 +672,10 @@ ht-degree: 0%
       * [Demande rejetée par la passerelle PayPal - problème de facture en double](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md)
       * [Problème connu dans Adobe Commerce 2.4.0 : pages vierges de la messagerie sur site Klarna](/help/troubleshooting/payments/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
       * [Résolution des problèmes d’installation des services de paiement](/help/troubleshooting/payments/payservices-install.md)
-   * Vitrine {#storefront}
-      * [Problème connu de Adobe Commerce 2.4.0 : erreur d’affichage des commandes](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
-      * [Adobe Commerce local 2.4.2 : image du produit manquante](/help/troubleshooting/storefront/adobe-commerce-2-4-2-on-prem-product-image-missing.md)
-      * [Une fois l’installation terminée, les images et les feuilles de style ne se chargent pas ; Seul le texte s’affiche, aucun graphique](/help/troubleshooting/storefront/after-installing-images-and-stylesheets-do-not-load-only-text-displays-no-graphics.md)
+   * Storefront {#storefront}
+      * [Problème connu dans Adobe Commerce 2.4.0 : erreur d’affichage des commandes](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
+      * [Adobe Commerce on-premise 2.4.2 : image du produit manquante](/help/troubleshooting/storefront/adobe-commerce-2-4-2-on-prem-product-image-missing.md)
+      * [Après l’installation, les images et les feuilles de style ne se chargent pas ; seul le texte s’affiche, pas les graphiques](/help/troubleshooting/storefront/after-installing-images-and-stylesheets-do-not-load-only-text-displays-no-graphics.md)
       * [Impossible d’enregistrer « shipping » comme clé URL](/help/troubleshooting/storefront/storefront-unable-to-enter-shipping-as-a-url-key.md)
       * [Le produit ne s’affiche pas sur le storefront](/help/troubleshooting/storefront/product-is-not-displayed-on-storefront.md)
       * [problème Adobe Commerce 2.4.0 : affichage des données de messages bruts storefront](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
@@ -712,9 +712,9 @@ ht-degree: 0%
       * [Site non accessible en raison du cloaking de l&#39;origine](/help/troubleshooting/site-down-or-unresponsive/production-site-not-accessible-due-to-origin-cloaking.md)
       * [503 erreur d’accès à Adobe Commerce dans le navigateur web](/help/troubleshooting/site-down-or-unresponsive/503-error-accessing-magento-in-web-browser.md)
       * [Échec du chargement du site en raison de l’activation du mode de maintenance](/help/troubleshooting/site-down-or-unresponsive/site-fails-to-load-due-to-maintenance-mode-left-enabled.md)
-      * [Diagramme de dépannage de site descendant](/help/troubleshooting/site-down-or-unresponsive/site-down-troubleshooting-diagram.md)
-      * [Adobe l’utilitaire de résolution des problèmes de panne du site de commerce](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md)
-      * [L’application d’un correctif fait tomber votre site](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
+      * [Diagramme de dépannage du site en panne](/help/troubleshooting/site-down-or-unresponsive/site-down-troubleshooting-diagram.md)
+      * [Résolution des problèmes liés au site Adobe Commerce](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md)
+      * [L’application d’un correctif arrête votre site](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [Erreur 404 sur toutes les pages en raison d’un problème d’évaluation du contenu](/help/troubleshooting/site-down-or-unresponsive/error-404-on-all-pages-due-to-content-staging-issue.md)
       * [Correctifs révisés pour la perte d’accès aux cartes Google sur toutes les versions d’Adobe Commerce](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Divers {#miscellaneous}
@@ -725,8 +725,8 @@ ht-degree: 0%
       * [Les index invalidés et « indexer_reindex_all_invalid » s’exécutent constamment](/help/troubleshooting/miscellaneous/constant-reindexing-with-cron-job-indexer-reindex-all-invalid.md)
       * [Fichier de configuration manquant ou modifié](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [Erreur cURL 60 : certificat SSL expiré](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
-      * [Dépannage du module Recommendations produit dans Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
-      * [Supprimez les fichiers en toute sécurité lorsque le disque manque d’espace dans Adobe Commerce sur l’infrastructure cloud](/help/troubleshooting/miscellaneous/safely-delete-files-when-out-of-disk-space-adobe-commerce-on-our-cloud-architecture.md)
+      * [Résolution des problèmes liés au module de recommandations de produits dans Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
+      * [Supprimer les fichiers en toute sécurité lorsque le disque manque d’espace dans Adobe Commerce sur l’infrastructure cloud](/help/troubleshooting/miscellaneous/safely-delete-files-when-out-of-disk-space-adobe-commerce-on-our-cloud-architecture.md)
       * [robots.txt non mis à jour ou affichage des paramètres par défaut](/help/troubleshooting/miscellaneous/robots-txt-not-updated-or-displaying-default-settings.md)
       * [Dépannage du montage /tmp complet pour Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md)
       * [Module inconnu Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
@@ -792,11 +792,11 @@ ht-degree: 0%
       * [Mots de passe d’administration enregistrés en tant que texte brut dans le journal des actions](/help/troubleshooting/miscellaneous/admin-passwords-saved-as-plain-text-to-actions-log.md)
       * [L&#39;index est verrouillé par un autre processus](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md)
       * [Diagnostiquer une incohérence de données](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
-      * [Admin 2FA notifications électroniques non reçues](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
-      * [Rediriger vers le formulaire de connexion de l’administrateur du commerce avec l’erreur « Votre session en cours a expiré »](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
+      * [Les notifications par e-mail de l’administrateur 2FA ne sont pas reçues](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
+      * [Redirigez-vous vers le formulaire de connexion d’administrateur Commerce avec l’erreur « Votre session en cours a expiré ».](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
       * [Redis unserialize error setup:static-content:deploy](/help/troubleshooting/miscellaneous/redis-unserialize-error-setup-static-content-deploy.md)
-      * [Site en mode maintenance mais disponible pour les clients](/help/troubleshooting/miscellaneous/site-in-maintenance-mode-but-available-to-customers.md)
-      * [Échec du développement d’origine de l’extraction git lors de la mise à jour du logiciel Adobe Commerce](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
+      * [Site en mode de maintenance mais disponible pour les clients](/help/troubleshooting/miscellaneous/site-in-maintenance-mode-but-available-to-customers.md)
+      * [le développement de l’origine d’extraction git échoue lors de la mise à jour du logiciel Adobe Commerce](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
       * [Bloqueurs lancés sur Adobe Commerce sur les infrastructures cloud](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
       * [Erreurs de paramètres PHP](/help/troubleshooting/miscellaneous/php-settings-errors.md)
       * [Résolution du problème de délai de connexion ou de passage en caisse de l’administrateur Commerce](/help/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.md)
@@ -832,9 +832,9 @@ ht-degree: 0%
       * [MBI : incohérences des données](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md)
       * [Scripts côté serveur personnalisés non exécutés dans le répertoire des médias publics](/help/troubleshooting/miscellaneous/custom-server-side-scripts-not-executed-in-pub-media-directory.md)
       * [Problèmes de vérification du niveau de préparation pour les versions PHP](/help/troubleshooting/miscellaneous/php-version-readiness-check-issues.md)
-      * [Le site cloud est lent](/help/troubleshooting/miscellaneous/cloud-site-is-slow.md)
-      * [Erreur lors de la purge rapide du cache sur le cloud (la demande de purge n’a pas été traitée avec succès)](/help/troubleshooting/miscellaneous/error-purging-fastly-cache-on-cloud-the-purge-request-was-not-processed-successfully.md)
-      * [Informations sur l’expiration du certificat SSL personnalisé](/help/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.md)
+      * [Site cloud lent](/help/troubleshooting/miscellaneous/cloud-site-is-slow.md)
+      * [Erreur lors de la purge du cache Fastly sur Cloud (la demande de purge n’a pas été traitée correctement)](/help/troubleshooting/miscellaneous/error-purging-fastly-cache-on-cloud-the-purge-request-was-not-processed-successfully.md)
+      * [Informations d’expiration sur le certificat SSL personnalisé](/help/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.md)
       * [PWA Studio : erreurs de validation lors de l’exécution du mode Développeur](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
       * [Désactiver les e-mails Amazon horaires lors de l’utilisation d’Adobe Commerce](/help/troubleshooting/miscellaneous/turn-off-hourly-amazon-emails-when-using-magento.md)
       * [Le cache invalidé entraîne une dégradation du temps de réponse](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md)
@@ -846,7 +846,7 @@ ht-degree: 0%
       * [Résoudre une erreur de décalage non autorisée](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
       * [La requête GraphQL pour masquer les catégories ne fonctionne pas avec le catalogue partagé B2B](/help/troubleshooting/miscellaneous/graphql-categories-cannot-hide-categories-shared-catalog.md)
       * [Statut de produit incorrect lors de la création par programmation](/help/troubleshooting/miscellaneous/product-status-incorrect-when-created-programmatically.md)
-      * [Erreur rapide : la version du plugin VCL est obsolète ! Veuillez relancer le transfert.](/help/troubleshooting/miscellaneous/fastly-error-plugin-vcl-version-is-outdated-please-re-upload.md)
+      * [Erreur Fastly : la version du plug-in VCL est obsolète ! Veuillez charger à nouveau](/help/troubleshooting/miscellaneous/fastly-error-plugin-vcl-version-is-outdated-please-re-upload.md)
       * [Adobe Commerce 2.4.0 : l’actualisation des activités du client ne fonctionne pas](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
       * [Le problème d’autorisation du dossier var/export Adobe Commerce sur le cloud](/help/troubleshooting/miscellaneous/issue-in-the0email-folder-adobe-commerce.md)
       * [Les mises à jour de l’évaluation de contenu planifiées ne s’affichent pas avec le cache Fastly obsolète](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
@@ -943,6 +943,7 @@ ht-degree: 0%
       * [Problèmes de libellé [!UICONTROL salesRule] lors de la mise à niveau à partir des versions &lt; 2.4.5](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)
       * [[!DNL JQuery UI] de vulnérabilité  [!DNL CVE-2022-31160]  sécurité pour les versions 2.4.4, 2.4.5 et 2.4.6](/help/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6.md)
       * [Migration de l’intégration de la méthode d’expédition [!DNL FedEx] de l’API SOAP vers RESTful](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
+      * [Erreur de dépassement du nombre maximal de cookies dans Adobe Commerce](/help/troubleshooting/known-issues-patches-attached/maximum-number-of-cookies-would-be-exceeded-error.md)
    * Elasticsearch {#elasticsearch}
       * [Retour à  [!DNL Elasticsearch7]  lorsque le moteur de recherche est défini sur  [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [Problèmes Elasticsearch après la mise à niveau de l’infrastructure cloud Adobe Commerce 2.3.1+](/help/troubleshooting/elasticsearch/elasticsearch-issues-after-magento-commerce-cloud-2-3-1-upgrade.md)
