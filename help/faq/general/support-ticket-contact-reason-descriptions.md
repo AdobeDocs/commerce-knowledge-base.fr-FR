@@ -2,7 +2,7 @@
 title: Descriptions du motif de l’événement du ticket d’assistance
 description: Cet article répertorie les options de champ ticket d’assistance **Motif de l’événement** et fournit des descriptions détaillées de chacune d’elles.
 exl-id: 678505fe-8c8d-4963-8dee-eec0a61a2daf
-source-git-commit: d3523be967f16a3e65025917fa6ac65097214100
+source-git-commit: e1f13098e3e0894b1d3acf9ad38fb49f6a5a54f6
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Cet article répertorie les options de champ ticket d’assistance **Motif de l�
   </tr>
   <tr>
     <td>Incident d'infrastructure</td>
-    <td>Vous avez besoin d’aide avec votre Adobe Commerce sur les infrastructures cloud, telles que les déploiements bloqués, l’accès [!DNL New Relic], l’accès SSH/sFTP, les mises à niveau de service ([!DNL OpenSearch], [!DNL MariaDB]/[!DNL MySQL], [!DNL Redis], [!DNL RabbitMQ], mais sans inclure PHP), les certificats SSL, etc. **(ne s’applique pas aux [!DNL Live Search])**</td>
+    <td>Vous avez besoin d’aide avec votre Adobe Commerce sur les infrastructures cloud, telles que les déploiements bloqués, l’accès [!DNL New Relic], l’accès SSH/sFTP, les mises à niveau de service ([!DNL OpenSearch], [!DNL MariaDB]/[!DNL MySQL], [!DNL Redis], [!DNL RabbitMQ], mais sans inclure PHP), les certificats SSL, etc.<strong> (ne s’applique pas aux [!DNL Live Search])</strong>.</td>
   </tr>  
 </tbody>
 </table>
