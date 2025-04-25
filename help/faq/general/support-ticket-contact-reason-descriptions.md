@@ -2,9 +2,9 @@
 title: Descriptions du motif de l’événement du ticket d’assistance
 description: Cet article répertorie les options de champ ticket d’assistance **Motif de l’événement** et fournit des descriptions détaillées de chacune d’elles.
 exl-id: 678505fe-8c8d-4963-8dee-eec0a61a2daf
-source-git-commit: e1f13098e3e0894b1d3acf9ad38fb49f6a5a54f6
+source-git-commit: f502c913964103b88bcb00f942f70439394148f5
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -53,3 +53,7 @@ Cet article répertorie les options de champ ticket d’assistance **Motif de l�
   </tr>  
 </tbody>
 </table>
+
+## Lecture connexe
+
+* [Soumettez un cas d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) dans le Guide de l’utilisateur de l’assistance Experience League pour Adobe Commerce.
