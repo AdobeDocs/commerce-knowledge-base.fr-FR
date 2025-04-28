@@ -4,9 +4,9 @@ description: Cet article fournit des solutions au problème d’Adobe Commerce e
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: b0d4b2e541c42095d6d09b91ba6f390064c89af6
+source-git-commit: fec99ebd6b03f2dc1b70c0ea388935dc5e60ad57
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -136,14 +136,7 @@ Si vous voyez les données correctes dans `cde_product_attributes_feed` :
 
 ### Synchronisation après modification de la configuration de l’API
 
-(Problème connu) Si vous avez modifié la configuration de votre API, ce qui entraîne une modification de votre identifiant d’espace de données, et que vous constatez que vos modifications de catalogue ne se synchronisent plus, exécutez les commandes suivantes :
-
-```bash
-bin/magento saas:resync --feed products
-bin/magento saas:resync --feed productattributes
-```
-
-Exécutez les commandes suivantes pour resynchroniser les flux :
+(Problème connu) Si vous avez modifié la configuration de votre API, ce qui entraîne une modification de votre identifiant d’espace de données, et que vous constatez que vos modifications de catalogue ne se synchronisent plus, exécutez les commandes suivantes pour resynchroniser les flux :
 
 ```
 bin/magento saas:resync --feed productattributes --cleanup-feed
@@ -158,6 +151,9 @@ bin/magento saas:resync --feed categoryPermissions --cleanup-feed
 ```
 
 [Envoyez une demande d’assistance](https://experienceleague.adobe.com/home?support-tab=home#support) pour demander la réindexation de l’index Live Search. Dans la description du problème, incluez votre identifiant d’espace de données/d’environnement figurant dans le panneau d’administration sous **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]**.
+
+>[!IMPORTANT]
+>N’utilisez l’option `--cleanup-feed` que si vous avez mis à jour la configuration de l’API ou si vous exécutez la commande `saas:resync` avec l’option [—dry-run](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-export-cli-commands#--dry-run). Dans d’autres cas, l’utilisation de l’option `--cleanup-feed` entraîne des pertes de données et des problèmes de synchronisation des données.
 
 ## Lecture connexe
 
