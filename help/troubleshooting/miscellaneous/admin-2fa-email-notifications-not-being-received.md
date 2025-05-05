@@ -58,4 +58,4 @@ Recherchez l’email dans le dossier Spam . Si l&#39;email s&#39;y affichait, [e
 
 ## Lecture connexe
 
-* [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/sendgrid) dans notre documentation destinée aux développeurs.
+* [SendGrid](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/project/sendgrid) dans notre documentation destinée aux développeurs.

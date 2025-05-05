@@ -20,4 +20,4 @@ Si un utilisateur doit être ajouté en tant qu’utilisateur, mais qu’aucun p
 
 ## Lecture connexe
 
-* [Services New Relic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) dans notre documentation destinée aux développeurs.
+* [Services New Relic](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) dans notre documentation destinée aux développeurs.

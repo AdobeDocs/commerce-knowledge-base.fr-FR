@@ -24,7 +24,7 @@ Cet article décrit un problème connu d’Adobe Commerce 2.4.1, en raison duque
 
 Conditions préalables :
 
-Activez **le nettoyage des adresses de sommet**. Pour les étapes, reportez-vous à la section [Configuration du nettoyage des adresses de Storefront](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html) dans notre guide d’utilisation.
+Activez **le nettoyage des adresses de sommet**. Pour les étapes, reportez-vous à la section [Configuration du nettoyage des adresses de Storefront](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html?lang=fr) dans notre guide d’utilisation.
 
 <u>Étapes à reproduire :</u>
 

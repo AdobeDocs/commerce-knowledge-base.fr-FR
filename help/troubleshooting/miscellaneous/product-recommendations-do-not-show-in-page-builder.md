@@ -32,10 +32,10 @@ Il n’existe pas d’option dans le Créateur de pages pour ajouter le Recommen
 1. Vérifiez si vous avez installé le module séparément en exécutant la commande : `composer show magento/module-page-builder-product-recommendations`
 1. S&#39;il renvoie le message suivant : *Magento/module-page-builder-product-recommendations introuvable*, vous devrez l&#39;installer en exécutant la commande : `composer require magento/module-page-builder-product-recommendations`
 
-En activant le Recommendations de produit dans le créateur de pages, vous pourrez [ajouter une unité de recommandation](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) à tout contenu créé dans le créateur de pages.
+En activant le Recommendations de produit dans le créateur de pages, vous pourrez [ajouter une unité de recommandation](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=fr) à tout contenu créé dans le créateur de pages.
 
 ## Lecture connexe
 
-* [Ajouter du contenu - Recommendations produit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) dans notre guide d’utilisation.
-* [Installez et configurez le produit Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) dans notre documentation destinée aux développeurs.
-* [Guide de l’utilisateur Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)
+* [Ajouter du contenu - Recommendations produit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=fr) dans notre guide d’utilisation.
+* [Installez et configurez le produit Recommendations](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) dans notre documentation destinée aux développeurs.
+* [Guide de l’utilisateur Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/user-guides/home)

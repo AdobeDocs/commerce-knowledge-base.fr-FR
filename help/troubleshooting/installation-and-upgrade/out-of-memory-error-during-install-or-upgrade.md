@@ -40,7 +40,7 @@ peut également s’afficher sur la ligne de commande.
 
 ## Solution {#solution}
 
-Nous vous recommandons [d’allouer 2 Go de mémoire à PHP](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) dans notre documentation destinée aux développeurs pour vous assurer que votre installation ou mise à niveau réussit.
+Nous vous recommandons [d’allouer 2 Go de mémoire à PHP](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/php-settings) dans notre documentation destinée aux développeurs pour vous assurer que votre installation ou mise à niveau réussit.
 
 Si vous avez déjà effectué cette opération, créez un fichier de permutation sur votre ordinateur. Une machine Linux utilise *swap space* si elle a besoin de plus de ressources mémoire et si la RAM est pleine. L’espace de permutation est utilisé pour les pages inactives en mémoire.
 

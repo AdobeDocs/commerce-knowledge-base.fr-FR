@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Dans n’importe quelle version d’Adobe Commerce, parce que certaines extensions ne fonctionnent qu’avec des tables plats, il existe un risque si vous désactivez les tables plats. Si vous savez que certaines extensions utilisent des indexeurs de catalogue plat, vous devrez peut-être en tenir compte lors de la définition de ces valeurs sur &quot;*Non*&quot;.
 
-Cet article décrit comment résoudre les problèmes de performances du site et les problèmes d’exécution lente et de blocage causés par l’activation de [tables plates et indexeurs](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/catalog-flat).
+Cet article décrit comment résoudre les problèmes de performances du site et les problèmes d’exécution lente et de blocage causés par l’activation de [tables plates et indexeurs](https://experienceleague.adobe.com/fr/docs/commerce-admin/catalog/catalog/catalog-flat).
 
 PRODUITS ET VERSIONS AFFECTÉS
 

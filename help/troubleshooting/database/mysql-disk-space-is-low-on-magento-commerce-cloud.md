@@ -78,7 +78,7 @@ Le montage `/data/mysql` peut devenir plein en raison de divers problèmes, tels
 
 Il y a une étape immédiate que vous pouvez entreprendre pour remettre [!DNL MySQL] sur la piste (ou l&#39;empêcher de rester coincé) : libérer de l&#39;espace en vidant les grandes tables.
 
-Mais une solution à long terme affecterait plus d’espace et suivrait les [Bonnes pratiques de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html), y compris l’activation de la fonctionnalité [ Commande/Facture/Expédition ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive) .
+Mais une solution à long terme affecterait plus d’espace et suivrait les [Bonnes pratiques de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=fr), y compris l’activation de la fonctionnalité [ Commande/Facture/Expédition ](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/order-archive) .
 
 Vous trouverez ci-dessous des informations détaillées sur les solutions rapides et à long terme.
 
@@ -124,7 +124,7 @@ Recherchez un fichier `ibtmp1` volumineux sur `/data/mysql` de chaque noeud : ce
 
 >[!WARNING]
 >
->Il est vivement recommandé de créer une sauvegarde de la base de données avant toute manipulation et de les éviter pendant les périodes de chargement importantes du site. Voir [Sauvegarde de la base de données](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) dans la documentation destinée aux développeurs.
+>Il est vivement recommandé de créer une sauvegarde de la base de données avant toute manipulation et de les éviter pendant les périodes de chargement importantes du site. Voir [Sauvegarde de la base de données](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) dans la documentation destinée aux développeurs.
 
 Vérifiez s’il existe des tables volumineuses et déterminez si l’une d’elles peut être vidée. Effectuez cette opération sur le noeud principal (source).
 
@@ -132,7 +132,7 @@ Par exemple, les tableaux comportant des rapports peuvent généralement être v
 
 S’il n’y a pas d’immenses tableaux de rapports, pensez à vider les tables `_index`, simplement pour rétablir l’application Adobe Commerce sur le suivi. `index_price` tables seraient les meilleurs candidats. Par exemple, `catalog_category_product_index_storeX` tables, où X peut avoir des valeurs allant de &quot;1&quot; au nombre maximal de magasins. Veuillez noter que vous devez réindexer pour restaurer les données dans ces tables. Dans le cas de catalogues volumineux, cette réindexation peut prendre beaucoup de temps.
 
-Une fois que vous les videz, attendez que la synchronisation wsrep soit terminée. Vous pouvez désormais créer des sauvegardes et prendre des mesures plus significatives pour ajouter plus d’espace, comme allouer/acheter plus d’espace et activer la fonctionnalité [ Order/Invoice/Shipment archive](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive) .
+Une fois que vous les videz, attendez que la synchronisation wsrep soit terminée. Vous pouvez désormais créer des sauvegardes et prendre des mesures plus significatives pour ajouter plus d’espace, comme allouer/acheter plus d’espace et activer la fonctionnalité [ Order/Invoice/Shipment archive](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/order-archive) .
 
 ### Vérification des paramètres de journalisation binaire
 
@@ -151,4 +151,4 @@ Si vous avez atteint votre limite d’espace et que vous rencontrez toujours des
 
 ## Lecture connexe
 
-[ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+[ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

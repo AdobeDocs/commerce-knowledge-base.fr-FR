@@ -18,7 +18,7 @@ Cet article explique comment modifier l’ID d’incrément d’une entité de b
 
 * Adobe Commerce sur site : 2.x.x
 * Adobe Commerce sur l’infrastructure cloud : 2.x.x
-* MySQL : toute [version prise en charge](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+* MySQL : toute [version prise en charge](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements)
 
 ## Quand devez-vous modifier l’ID d’incrément (cas) ?
 
@@ -34,7 +34,7 @@ Vous devrez peut-être modifier l’ID d’incrément pour les nouvelles entité
 ## Étapes préalables
 
 1. Recherchez les magasins et les entités pour lesquels le nouvel ID d’incrément doit être modifié.
-1. [Connectez-vous](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) à votre base de données MySQL. Pour Adobe Commerce sur l’infrastructure cloud, vous devez d’abord [SSH dans votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [Connectez-vous](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) à votre base de données MySQL. Pour Adobe Commerce sur l’infrastructure cloud, vous devez d’abord [SSH dans votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
 1. Vérifiez la valeur auto\_incrément actuelle de la table de séquence d’entités à l’aide de la requête suivante :
 
 ```sql
@@ -53,7 +53,7 @@ Si la valeur de la colonne `auto_increment` est *1234*, l’ordre suivant placé
 
 ### Documentation connexe
 
-* [Configurez une connexion à base de données MySQL distante](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) dans notre documentation destinée aux développeurs.
+* [Configurez une connexion à base de données MySQL distante](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) dans notre documentation destinée aux développeurs.
 
 ## Mettre à jour l’entité pour modifier l’ID d’incrément
 
@@ -87,5 +87,5 @@ Avant d’exécuter la requête `ALTER TABLE` sur l’environnement de productio
 ## Documentation connexe
 
 * [Créer un vidage de base de données sur Cloud](/help/how-to/general/create-database-dump-on-cloud.md) dans notre base de connaissances de support
-* [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) dans notre documentation destinée aux développeurs
-* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+* [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr) dans notre documentation destinée aux développeurs
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

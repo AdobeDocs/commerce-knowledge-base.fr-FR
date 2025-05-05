@@ -25,14 +25,14 @@ Lors de l’installation de l’extension Pay Services, un message d’erreur pe
 
 <u>Étapes à reproduire</u> :
 
-1. Tentez d’ [installer les services de paiement](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html).
+1. Tentez d’ [installer les services de paiement](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html?lang=fr).
 1. Voir l’erreur suivante :
 
    *Impossible de trouver une version correspondante du package magento/payment-services. Vérifiez l&#39;orthographe du package, votre contrainte de version et que le package est disponible dans une stabilité correspondant à votre stabilité minimale (stable).*
 
 <u>Résultat attendu</u> :
 
-Vous pouvez suivre ces [instructions d’installation](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) dans notre documentation destinée aux développeurs pour réussir l’installation des services de paiement.
+Vous pouvez suivre ces [instructions d’installation](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html?lang=fr) dans notre documentation destinée aux développeurs pour réussir l’installation des services de paiement.
 
 <u>Résultat réel</u> :
 
@@ -44,7 +44,7 @@ Vous avez utilisé des clés de compositeur incorrectes lors de l’installation
 
 ### Solution
 
-Vérifiez que [vos clés de compositeur sont liées à l’ID de Magento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#incorrect-composer-keys) utilisé lors de l’enregistrement des services de paiement.
+Vérifiez que [vos clés de compositeur sont liées à l’ID de Magento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html?lang=fr#incorrect-composer-keys) utilisé lors de l’enregistrement des services de paiement.
 
 ## Problème : utilisation du même espace de données sur plusieurs instances
 
@@ -59,7 +59,7 @@ Lorsque vous créez un projet SaaS, Commerce génère un ou plusieurs espaces de
 * Adobe Commerce : un espace de données de production ; deux espaces de données de test
 * Magento Open Source : un espace de données de production ; aucun espace de données de test
 
-Suivez les instructions de la section [Clé API Commerce et clé privée](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#obtain-api-credentials) pour configurer correctement votre extension de services de paiement.
+Suivez les instructions de la section [Clé API Commerce et clé privée](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html?lang=fr#obtain-api-credentials) pour configurer correctement votre extension de services de paiement.
 
 ## Problème : mémoire insuffisante pour PHP
 
@@ -67,14 +67,14 @@ Lors de l’installation de l’extension Pay Services, un message d’erreur pe
 
 <u>Étapes à reproduire</u> :
 
-1. Tentez d’ [installer les services de paiement](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html).
+1. Tentez d’ [installer les services de paiement](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html?lang=fr).
 1. Voir l’erreur suivante ou similaire :
 
    *Erreur fatale : taille de mémoire autorisée de 2146435072 octets épuisée (tentative d’allocation de 4 096 octets) dans phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php à la ligne 52*
 
 <u>Résultat attendu</u> :
 
-Vous pouvez suivre ces [instructions d’installation](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) dans notre documentation destinée aux développeurs pour réussir l’installation des services de paiement.
+Vous pouvez suivre ces [instructions d’installation](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html?lang=fr) dans notre documentation destinée aux développeurs pour réussir l’installation des services de paiement.
 
 <u>Résultat réel</u> :
 
@@ -86,4 +86,4 @@ La limite pour PHP sur votre environnement n’est pas définie sur un seuil suf
 
 ### Solution
 
-[Augmentez la limite de mémoire pour PHP](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#not-enough-memory-for-php) sur votre environnement dans `php.ini`.
+[Augmentez la limite de mémoire pour PHP](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html?lang=fr#not-enough-memory-for-php) sur votre environnement dans `php.ini`.

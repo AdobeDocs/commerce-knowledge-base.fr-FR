@@ -51,7 +51,7 @@ Vous pouvez vous connecter au compte avec :
 - Un compte d’entreprise/personnel d’Adobe existant.
 - Si vous ne disposez pas d’un compte d’Adobe, créez-en un avec la même adresse électronique.
 
-Pour les étapes, reportez-vous à [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html) dans Adobe Experience League.
+Pour les étapes, reportez-vous à [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html?lang=fr) dans Adobe Experience League.
 
 ## Lecture connexe
 

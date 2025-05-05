@@ -18,9 +18,9 @@ ht-degree: 0%
 > [Le moteur de recherche de catalogue MySQL sera supprimé dans Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Vous devez avoir configuré et configuré l’hôte Elasticsearch avant d’installer la version 2.4.0.
 > 
 > Voir :
-> [Installez et configurez Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch).
-> [Installation et configuration d’OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
-> [Installation et configuration de Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install)
+> [Installez et configurez Elasticsearch](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch).
+> [Installation et configuration d’OpenSearch](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+> [Installation et configuration de Live Search](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/live-search/install)
 
 Cet article fournit une solution pour modifier le moteur de recherche Adobe Commerce à l’aide de l’administrateur Commerce si le champ **Moteur de recherche** n’est pas affiché ou si la case à cocher **Utiliser la valeur système** est grisée et inaccessible.
 
@@ -74,7 +74,7 @@ Le moteur de recherche est un jeu de configuration global au niveau de l’appli
 
 ![change_store_view.png](assets/change_store_view.png)
 
-**Documentation connexe :** [Modification de la portée](https://experienceleague.adobe.com/docs/commerce-admin/config/scope-change.html#set-the-scope) dans notre guide d’utilisation.
+**Documentation connexe :** [Modification de la portée](https://experienceleague.adobe.com/docs/commerce-admin/config/scope-change.html?lang=fr#set-the-scope) dans notre guide d’utilisation.
 
 ### Problème 2 : impossible de décocher &quot;Utiliser la valeur système&quot;
 
@@ -108,7 +108,7 @@ Supprimez la section avec la configuration par défaut du moteur de recherche de
 
 ### Articles connexes dans notre documentation destinée aux développeurs
 
-[Fichiers de configuration Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html) dans le Guide de configuration Adobe Commerce
+[Fichiers de configuration Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/files/deployment-files.html?lang=fr) dans le Guide de configuration Adobe Commerce
 
 ## Adobe Commerce sur l’infrastructure cloud
 
@@ -137,7 +137,7 @@ stage:
      elasticsearch_server_timeout: '15'
 ```
 
-Si vous passez à [Opening-search (dans la version 2.4.6 et ultérieure)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/search-engine-shown-elasticsearch-despite-open-search), la variable SEARCH\_CONFIGURATION du fichier `.magento.env.yaml` résultant peut se présenter comme suit :
+Si vous passez à [Opening-search (dans la version 2.4.6 et ultérieure)](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/search-engine-shown-elasticsearch-despite-open-search), la variable SEARCH\_CONFIGURATION du fichier `.magento.env.yaml` résultant peut se présenter comme suit :
 
 ```yaml
 stage:
@@ -150,7 +150,7 @@ stage:
      elasticsearch_server_timeout: '15'
 ```
 
-Si vous [ passez à la recherche en direct ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch), la variable SEARCH\_CONFIGURATION du fichier `.magento.env.yaml` obtenu peut se présenter comme suit :
+Si vous [ passez à la recherche en direct ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch), la variable SEARCH\_CONFIGURATION du fichier `.magento.env.yaml` obtenu peut se présenter comme suit :
 
 ```yaml
 stage:
@@ -167,8 +167,8 @@ stage:
 
 #### Documentation destinée aux développeurs
 
-* [Configuration du service Elasticsearch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch.html)
-* [Créer et déployer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) (documentation sur le fichier de configuration `.magento.env.yaml`)
-* [ Déployer des variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) ([section RECHERCHER\_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#search_configuration))
-* [Services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) (documentation sur le fichier de configuration `.magento/services.yaml`)
-* [Recherche en direct](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview)
+* [Configuration du service Elasticsearch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch.html?lang=fr)
+* [Créer et déployer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=fr) (documentation sur le fichier de configuration `.magento.env.yaml`)
+* [ Déployer des variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr) ([section RECHERCHER\_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#search_configuration))
+* [Services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html?lang=fr) (documentation sur le fichier de configuration `.magento/services.yaml`)
+* [Recherche en direct](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/live-search/overview)

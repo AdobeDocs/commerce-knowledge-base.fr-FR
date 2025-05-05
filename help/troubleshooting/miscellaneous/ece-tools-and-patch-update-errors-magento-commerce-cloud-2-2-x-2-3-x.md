@@ -82,4 +82,4 @@ Veuillez modifier votre section supplémentaire pour qu’elle corresponde à ce
 
 ## Lecture connexe
 
-* [Mises à niveau et correctifs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/best-practices) dans notre documentation destinée aux développeurs.
+* [Mises à niveau et correctifs](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/upgrade/best-practices) dans notre documentation destinée aux développeurs.

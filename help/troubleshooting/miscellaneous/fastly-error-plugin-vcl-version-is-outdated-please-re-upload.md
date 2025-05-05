@@ -33,15 +33,15 @@ L’extension Fastly a été mise à jour (avec une configuration et des modèle
 
 ## Solution
 
-1. Vérifiez que vous avez installé les derniers outils de la CEE et dans la [version actuelle](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html) de notre documentation destinée aux développeurs. Le module Outils/CEE a une version du module Fastly dans ses dépendances.
+1. Vérifiez que vous avez installé les derniers outils de la CEE et dans la [version actuelle](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html?lang=fr) de notre documentation destinée aux développeurs. Le module Outils/CEE a une version du module Fastly dans ses dépendances.
 
    Il ne s’agit peut-être pas de la dernière version du module externe Fastly, mais il est probable qu’il s’agisse d’une version ultérieure de celle que vous avez actuellement installée, et il est recommandé d’installer les derniers outils CEE-ONU.
 
-1. Si vous n&#39;utilisez pas la version actuelle de CEE-Outils, suivez ces étapes pour [mettre à niveau](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) dans notre documentation destinée aux développeurs.
+1. Si vous n&#39;utilisez pas la version actuelle de CEE-Outils, suivez ces étapes pour [mettre à niveau](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=fr) dans notre documentation destinée aux développeurs.
 1. Une fois que vous avez mis à niveau les outils ECID, vérifiez si vous disposez désormais d’une version actuelle du [module externe Fastly](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets) installé.
-1. Si le module externe Fastly n’est pas la version actuelle, procédez comme suit pour [mettre à niveau le module externe vers la version la plus récente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#upgrade-the-fastly-module) dans notre documentation destinée aux développeurs.
+1. Si le module externe Fastly n’est pas la version actuelle, procédez comme suit pour [mettre à niveau le module externe vers la version la plus récente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=fr#upgrade-the-fastly-module) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
-* Pour plus d’informations sur la configuration et la configuration rapides, voir [Configuration des services rapides](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) dans notre documentation destinée aux développeurs.
+* Pour plus d’informations sur la configuration et la configuration rapides, voir [Configuration des services rapides](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=fr) dans notre documentation destinée aux développeurs.
 * Pour obtenir des informations générales sur Fastly, voir [fastly.com](https://www.fastly.com/).

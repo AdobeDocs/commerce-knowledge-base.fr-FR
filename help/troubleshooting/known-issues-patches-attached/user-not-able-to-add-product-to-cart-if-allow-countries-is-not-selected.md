@@ -65,4 +65,4 @@ Pour obtenir des instructions, reportez-vous à la section [Comment appliquer un
 
 ## Liens utiles
 
-[Appliquez des correctifs personnalisés à Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs.
+[Appliquez des correctifs personnalisés à Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs.

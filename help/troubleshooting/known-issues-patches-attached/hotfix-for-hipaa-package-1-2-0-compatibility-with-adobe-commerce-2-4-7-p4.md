@@ -22,8 +22,8 @@ Adobe Commerce sur les infrastructures cloud 2.4.7-p4 et versions antérieures
 
 ## Conditions préalables
 
-* Adobe a configuré votre compte Adobe Commerce pour accéder à l’extension **[!DNL HIPAA Ready]**. Voir [[!DNL HIPAA] Préparation sur Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) pour plus d’informations dans notre **Guide de prise en main d’Adobe Commerce**.
-* Accédez à [repo.magento.com](https://repo.magento.com) pour installer l’extension. Pour la génération des clés et l’obtention des droits nécessaires, voir [Obtenir vos clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) dans notre **Guide d’installation d’Adobe Commerce**.
+* Adobe a configuré votre compte Adobe Commerce pour accéder à l’extension **[!DNL HIPAA Ready]**. Voir [[!DNL HIPAA] Préparation sur Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) pour plus d’informations dans notre **Guide de prise en main d’Adobe Commerce**.
+* Accédez à [repo.magento.com](https://repo.magento.com) pour installer l’extension. Pour la génération des clés et l’obtention des droits nécessaires, voir [Obtenir vos clés d’authentification](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) dans notre **Guide d’installation d’Adobe Commerce**.
 
 ## Problème
 
@@ -43,7 +43,7 @@ Pour résoudre le problème d’Adobe Commerce sur Cloud Infrastructure 2.4.7-p4
 
 ## Application du correctif
 
-Décompressez le fichier et consultez [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) dans notre base de connaissances d’assistance pour obtenir des instructions.
+Décompressez le fichier et consultez [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=fr) dans notre base de connaissances d’assistance pour obtenir des instructions.
 
 ## Pour Adobe Commerce sur les commerçants Cloud uniquement : comment déterminer si le correctif a été appliqué
 
@@ -53,7 +53,7 @@ Comme il n’est pas possible de vérifier facilement si le problème a été co
 >
 ><u>Pour ce faire, procédez comme suit, en utilisant le fichier `VULN-27015-2.4.7_COMPOSER.patch` **à titre d’exemple**</u> :
 
-1. [Installation de l’outil de correctifs de qualité](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installation de l’outil de correctifs de qualité](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr).
 1. Exécutez la commande : <br>
    ![cve-2024-34102-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
 1. Vous devriez voir une sortie similaire à celle-ci, **<u>où l’exemple utilisé ici, VULN-27015</u>**, renvoie le statut *Appliqué* :

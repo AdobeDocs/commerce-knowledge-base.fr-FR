@@ -42,9 +42,9 @@ Un rapport de compatibilité s’affiche alors. Si vous avez des incompatibilit�
 Pour obtenir des instructions sur la mise à niveau, reportez-vous à la documentation suivante :
 
 * Pour les mises à niveau de PWA Studio, recherchez la section &quot;Mise à niveau à partir d’une version précédente&quot; des [notes de mise à jour du PWA](https://github.com/magento/pwa-studio/releases/) pour la version vers laquelle vous devez effectuer la mise à niveau.
-* [Mettez à niveau Adobe Commerce sur la version d’infrastructure cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) dans notre documentation destinée aux développeurs
-* [Mettez à niveau Adobe Commerce sur site (installé à l’aide de &quot;création-projet de compositeur&quot; ou d’une archive)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) dans notre documentation destinée aux développeurs
-* [Mettez à niveau Adobe Commerce sur site (installé par le clonage du référentiel Adobe Commerce)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/developer/git-installs) dans notre documentation destinée aux développeurs
+* [Mettez à niveau Adobe Commerce sur la version d’infrastructure cloud](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) dans notre documentation destinée aux développeurs
+* [Mettez à niveau Adobe Commerce sur site (installé à l’aide de &quot;création-projet de compositeur&quot; ou d’une archive)](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) dans notre documentation destinée aux développeurs
+* [Mettez à niveau Adobe Commerce sur site (installé par le clonage du référentiel Adobe Commerce)](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/developer/git-installs) dans notre documentation destinée aux développeurs
 
 ## Lecture connexe
 

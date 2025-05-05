@@ -36,7 +36,7 @@ Les demandes d’AJAX à débit élevé incluent celles liées au contenu privé
 
 Il existe trois solutions :
 
-* [Mise à niveau vers la version 2.3.4](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version).
+* [Mise à niveau vers la version 2.3.4](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version).
 * Veillez à des requêtes plus légères (requêtes de cache ou déplacement vers le contenu privé des clients).
 * Réduire le nombre de requêtes.
 
@@ -46,7 +46,7 @@ Si des demandes d’AJAX tierces sont déclenchées sur chaque page, essayez de 
 
 <u>Réduction du nombre de requêtes</u>
 
-* Désactivez le panier persistant, car il peut augmenter le nombre de demandes `customer/section/load`. Suivez les étapes de la section [Chemins du panier persistant](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/paths/config-reference-general) de notre documentation destinée aux développeurs pour savoir si le panier persistant est activé.
+* Désactivez le panier persistant, car il peut augmenter le nombre de demandes `customer/section/load`. Suivez les étapes de la section [Chemins du panier persistant](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/paths/config-reference-general) de notre documentation destinée aux développeurs pour savoir si le panier persistant est activé.
 * Si vous devez recharger ou invalider du contenu dans `sections.xml`, suivez les étapes de la section [Contenu privé : invalider le contenu privé](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content) de la documentation destinée aux développeurs. Veillez à ne pas utiliser la méthode `customerData.reload()` directement dans vos personnalisations.
 * Cochez d’autres requêtes d’AJAX POST sur la même page. Ouvrez l’outil de développement Google Chrome dans le navigateur Google Chrome. Cliquez sur l’onglet **Réseau** , puis sur l’onglet **XHR** et vous trouverez la liste de toutes les demandes d’AJAX provenant d’une page spécifique. Cliquez ensuite sur chaque requête. Dans le champ Méthode de requête , les requêtes de GET doivent être définies. Remarque : Google Chrome est utilisé comme exemple et il est possible de le faire dans d’autres navigateurs également.
 * Cochez la fonctionnalité Gestionnaire de balises de Google (GTM) qui est une requête d’AJAX spécifique. L’utilisateur peut supprimer cette AJAX et refactoriser sa personnalisation avec des fonctionnalités privées afin de réduire le nombre total de requêtes envoyées au serveur.

@@ -18,11 +18,11 @@ ht-degree: 0%
 >
 >Utilisez le correctif ACSD-61622 de la version 1.1.57 de [!DNL Quality Patches Tool] (QPT) au lieu du correctif fourni précédemment. Le nouveau correctif est compatible avec les versions Adobe Commerce (toutes les méthodes de déploiement) 2.4.6-p1 à 2.4.6-p8. Il peut s’appliquer à d’autres versions avec de nouvelles versions de [!DNL Quality Patches Tool].
 >
->Pour plus d’informations, reportez-vous à l’article [correctif ACSD-61622](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response) dans notre guide des outils Adobe Commerce.
+>Pour plus d’informations, reportez-vous à l’article [correctif ACSD-61622](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response) dans notre guide des outils Adobe Commerce.
 
 >[!WARNING]
 >
->Avant d’installer le nouveau correctif, vous devez désinstaller le correctif précédent fourni dans cet article. Pour obtenir des instructions sur la désinstallation des correctifs, reportez-vous à la section [Rétablir un correctif personnalisé](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches#revert-a-custom-patch) de notre guide d’utilisation.
+>Avant d’installer le nouveau correctif, vous devez désinstaller le correctif précédent fourni dans cet article. Pour obtenir des instructions sur la désinstallation des correctifs, reportez-vous à la section [Rétablir un correctif personnalisé](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches#revert-a-custom-patch) de notre guide d’utilisation.
 
 
 Cet article fournit un correctif pour résoudre les problèmes de migration de l’intégration de la méthode d’expédition [!DNL FedEx] de SOAP vers l’API RESTful pour Adobe Commerce 2.4.4-p4 - 2.4.6-pX.
@@ -75,7 +75,7 @@ Utilisez les correctifs ci-joints, en fonction de la version d’Adobe Commerce 
 
 ## Application du correctif
 
-Décompressez le fichier et consultez [Comment appliquer un correctif de compositeur fourni par Adobe ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) dans notre base de connaissances du support pour obtenir des instructions.
+Décompressez le fichier et consultez [Comment appliquer un correctif de compositeur fourni par Adobe ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=fr) dans notre base de connaissances du support pour obtenir des instructions.
 
 ## Comment déterminer si les patchs ont été appliqués
 
@@ -83,7 +83,7 @@ Comme il n’est pas possible de vérifier facilement si le problème a été co
 
 <u>Pour ce faire, procédez comme suit </u> :
 
-1. [Installez le  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installez le  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr).
 1. Exécutez la commande :
 
    ```bash

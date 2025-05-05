@@ -23,7 +23,7 @@ Adobe Commerce 2.3.x
 
 <u>Étapes à reproduire</u>
 
-(Conditions préalables : assurez-vous que le magasin n’est pas en [mode de maintenance](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode#config-mode-show)).
+(Conditions préalables : assurez-vous que le magasin n’est pas en [mode de maintenance](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/set-mode#config-mode-show)).
 
 Accédez à votre administrateur Commerce ou à votre vitrine dans un navigateur web.
 

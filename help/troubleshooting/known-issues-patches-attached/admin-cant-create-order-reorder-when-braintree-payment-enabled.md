@@ -58,7 +58,7 @@ Le correctif est joint à cet article. Pour le télécharger, cliquez sur le lie
 
 >[!NOTE]
 >
->En outre pour Adobe Commerce sur les marchands d’infrastructure cloud : Adobe a inclus le correctif dans les correctifs cloud pour Commerce version 1.0.18. Reportez-vous aux [notes de mise à jour de Cloud Patches for Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches) dans notre documentation destinée aux développeurs pour obtenir des instructions sur l’application du dernier package.
+>En outre pour Adobe Commerce sur les marchands d’infrastructure cloud : Adobe a inclus le correctif dans les correctifs cloud pour Commerce version 1.0.18. Reportez-vous aux [notes de mise à jour de Cloud Patches for Commerce](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches) dans notre documentation destinée aux développeurs pour obtenir des instructions sur l’application du dernier package.
 
 ### Versions Adobe Commerce compatibles :
 

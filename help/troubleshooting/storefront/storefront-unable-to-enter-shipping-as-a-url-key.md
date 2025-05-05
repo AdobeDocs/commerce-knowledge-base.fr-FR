@@ -122,5 +122,5 @@ En outre, évitez d’utiliser ces mots-clés étiquetés comme mots-clés *rés
 
 ## Lecture connexe
 
-* [URL de réécriture](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) dans notre Guide de l’utilisateur de marchandisage et de promotions.
-* [Bonnes pratiques d’optimisation pour les moteurs de recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) dans notre Guide de l’utilisateur de marchandisage et de promotions.
+* [URL de réécriture](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) dans notre Guide de l’utilisateur de marchandisage et de promotions.
+* [Bonnes pratiques d’optimisation pour les moteurs de recherche](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/seo/seo-overview) dans notre Guide de l’utilisateur de marchandisage et de promotions.

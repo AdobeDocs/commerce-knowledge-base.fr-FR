@@ -28,7 +28,7 @@ Si vous utilisez Adobe Commerce sur l’infrastructure cloud, veuillez travaille
 Remarques supplémentaires sur le redéploiement de votre site Cloud pour cette mise à jour :
 
 * Si votre site utilise toujours la version 7.0 de PHP, vous devrez d’abord effectuer une mise à niveau vers une version de PHP prise en charge avant de procéder au redéploiement afin de tirer parti de ces mises à jour de sécurité.
-* Pour 2.1.x/2.2.x, plus d&#39;informations sur la mise à niveau de PHP sont disponibles [ici](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html).
+* Pour 2.1.x/2.2.x, plus d&#39;informations sur la mise à niveau de PHP sont disponibles [ici](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=fr).
 
 \* *Les versions précédentes de cet article et notre messagerie ont commencé le 19 septembre, mais nos équipes ont terminé leur travail avant l&#39;emploi du temps.*
 

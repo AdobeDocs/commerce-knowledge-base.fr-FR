@@ -36,7 +36,7 @@ Clients Adobe Commerce.
 
 ## Installation de l’outil de compatibilité de mise à niveau 1.1.0
 
-Pour connaître les étapes d&#39;installation, reportez-vous à Adobe Commerce : [Outil de compatibilité de mise à niveau > Installer](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run) dans notre documentation destinée aux développeurs. Pour connaître les conditions préalables à l’utilisation de l’outil, reportez-vous à Adobe Commerce : [Upgrade Compatibility Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/prerequisites) dans la documentation destinée aux développeurs.
+Pour connaître les étapes d&#39;installation, reportez-vous à Adobe Commerce : [Outil de compatibilité de mise à niveau > Installer](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run) dans notre documentation destinée aux développeurs. Pour connaître les conditions préalables à l’utilisation de l’outil, reportez-vous à Adobe Commerce : [Upgrade Compatibility Tool](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/prerequisites) dans la documentation destinée aux développeurs.
 
 ## Quel est le numéro en regard de chaque problème ?
 
@@ -47,7 +47,7 @@ Les messages d’erreur de l’outil de compatibilité de mise à niveau sont cl
 * Code d’erreur : identifiant attribué par Adobe Commerce au message d’erreur.
 * Description de l’erreur : description qui résume la cause de l’erreur.
 * Action suggérée pour les erreurs : le cas échéant, fournit des conseils pour dépanner et résoudre l’erreur.
-* Les codes sont répertoriés et décrits sur la [page de référence du message d’erreur](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/reporting/error-messages).
+* Les codes sont répertoriés et décrits sur la [page de référence du message d’erreur](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/reporting/error-messages).
 
 ## Où puis-je partager mes commentaires sur l’outil ?
 
@@ -56,4 +56,4 @@ Vous pouvez contacter l&#39;équipe UCT sur notre canal de slack [#upgrade-compa
 ## Lecture connexe
 
 * Blog Adobe Commerce : [Présentation de l’outil de compatibilité de mise à niveau (Alpha)](https://magento.com/blog/magento-news/introducing-upgrade-compatibility-tool)
-* Adobe Commerce : [Mise à niveau de l’outil de compatibilité](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview) dans la documentation destinée aux développeurs.
+* Adobe Commerce : [Mise à niveau de l’outil de compatibilité](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview) dans la documentation destinée aux développeurs.

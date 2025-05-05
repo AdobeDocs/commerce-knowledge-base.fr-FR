@@ -37,9 +37,9 @@ Vous êtes redirigé vers le formulaire de connexion, avec le message d’erreur
 ## Solution
 
 1. Créez une sauvegarde de base de données.
-1. Utilisez un outil de base de données tel que [[!DNL phpMyAdmin]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande. Dans la table de base de données `admin_user`, pour votre enregistrement utilisateur administrateur, vérifiez si `is_active` est défini sur &quot;`1`&quot; et si `lock_expires` est `NULL`. Réinitialisez ces valeurs, le cas échéant.
+1. Utilisez un outil de base de données tel que [[!DNL phpMyAdmin]](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande. Dans la table de base de données `admin_user`, pour votre enregistrement utilisateur administrateur, vérifiez si `is_active` est défini sur &quot;`1`&quot; et si `lock_expires` est `NULL`. Réinitialisez ces valeurs, le cas échéant.
 
 ## Lecture connexe
 
-* [ Redirigez-vous vers le formulaire de connexion sans erreur lorsque vous essayez de vous connecter à [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin).
-* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+* [ Redirigez-vous vers le formulaire de connexion sans erreur lorsque vous essayez de vous connecter à [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin).
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

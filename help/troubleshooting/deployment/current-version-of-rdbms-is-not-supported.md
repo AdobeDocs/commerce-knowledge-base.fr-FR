@@ -45,12 +45,12 @@ Votre version de MariaDB n’est pas compatible avec la version d’Adobe Commer
 Vous devez mettre à niveau le service MariaDB vers une version compatible avant de mettre à niveau l’application.
 
 
-Pour la branche d’intégration sur l’architecture de plan Adobe Commerce on Cloud Infrastructure Pro (et toutes les branches dans l’architecture Starter), suivez [Configurer le service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) dans notre documentation destinée aux développeurs.
+Pour la branche d’intégration sur l’architecture de plan Adobe Commerce on Cloud Infrastructure Pro (et toutes les branches dans l’architecture Starter), suivez [Configurer le service](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) dans notre documentation destinée aux développeurs.
 
 Pour l’architecture du plan d’évaluation et de production sur Adobe Commerce sur l’infrastructure cloud Pro, [ envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour demander que les services soient mis à niveau avant de déployer la mise à niveau de la version d’Adobe Commerce.
 
 
 ## Lecture connexe
 
-* [Bonnes pratiques pour les versions et le déploiement](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices) dans notre documentation destinée aux développeurs.
-* [Mise à niveau d’Adobe Commerce 2.3.5 : compacte dans les tables dynamiques](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html) dans notre base de connaissances de prise en charge.
+* [Bonnes pratiques pour les versions et le déploiement](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices) dans notre documentation destinée aux développeurs.
+* [Mise à niveau d’Adobe Commerce 2.3.5 : compacte dans les tables dynamiques](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=fr) dans notre base de connaissances de prise en charge.

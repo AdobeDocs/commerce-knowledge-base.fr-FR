@@ -29,7 +29,7 @@ Vous disposez d’un fichier .csv valide contenant des produits de bundle.
 
 <u>Étapes à reproduire</u> :
 
-1. Importez le fichier à l’aide de la [fonctionnalité d’importation](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import).
+1. Importez le fichier à l’aide de la [fonctionnalité d’importation](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/import/data-import).
 1. Ouvrez la page du produit du bundle.
 
 <u>Résultats attendus</u> :
@@ -46,7 +46,7 @@ La position des options n’a pas été déclarée explicitement.
 
 ## Solution
 
-1. Déclarez explicitement une position pour chaque option dans le paramètre `position` de la colonne `bundle_values` du fichier .csv. Pour obtenir des instructions détaillées, voir [Modifier les données du produit](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products#method-2-edit-the-product-data) dans notre guide d’utilisation.
+1. Déclarez explicitement une position pour chaque option dans le paramètre `position` de la colonne `bundle_values` du fichier .csv. Pour obtenir des instructions détaillées, voir [Modifier les données du produit](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products#method-2-edit-the-product-data) dans notre guide d’utilisation.
 1. Répétez l&#39;opération d&#39;import.
 
-Pour obtenir des informations générales sur l’importation, consultez la section [Importation de produit groupé](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products) de notre guide d’utilisation.
+Pour obtenir des informations générales sur l’importation, consultez la section [Importation de produit groupé](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products) de notre guide d’utilisation.

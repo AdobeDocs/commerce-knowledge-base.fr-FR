@@ -55,7 +55,7 @@ Vous pouvez voir la durée pendant laquelle une période est enregistrée en ex�
 SELECT executed_at FROM cron_schedule WHERE job_code = 'indexer_reindex_all_invalid' AND executed_at IS NOT NULL ORDER BY executed_at ASC LIMIT 1;
 ```
 
-Si cela ne vous donne pas une période suffisamment longue pour effectuer une évaluation appropriée, vous pouvez augmenter le temps de conservation d’un processus `cron` réussi dans le journal suivant ce guide [[!DNL Cron] (tâches planifiées)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) et augmenter la valeur **[!DNL Success History Lifetime]** (la valeur par défaut est de seulement 60 minutes).
+Si cela ne vous donne pas une période suffisamment longue pour effectuer une évaluation appropriée, vous pouvez augmenter le temps de conservation d’un processus `cron` réussi dans le journal suivant ce guide [[!DNL Cron] (tâches planifiées)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=fr) et augmenter la valeur **[!DNL Success History Lifetime]** (la valeur par défaut est de seulement 60 minutes).
 
 
 ## Solution
@@ -77,4 +77,4 @@ Où `ENTITY_CODE` est la valeur utilisée pour le paramètre de nom d’entité 
 
 ## Lecture connexe
 
-[Configurez [!DNL cron] jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) dans le Guide de configuration des opérations Adobe Commerce.
+[Configurez [!DNL cron] jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=fr) dans le Guide de configuration des opérations Adobe Commerce.

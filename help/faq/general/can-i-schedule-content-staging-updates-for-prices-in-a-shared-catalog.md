@@ -1,6 +1,6 @@
 ---
 title: Puis-je planifier des mises à jour d’évaluation de contenu pour les prix dans un catalogue partagé ?
-description: Adobe Commerce ne propose pas la fonctionnalité de planification d’une mise à jour de prix ([Évaluation du contenu](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)) pour un ou plusieurs produits dans un catalogue partagé.
+description: Adobe Commerce ne propose pas la fonctionnalité de planification d’une mise à jour de prix ([Évaluation du contenu](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=fr)) pour un ou plusieurs produits dans un catalogue partagé.
 exl-id: 5482326f-54c2-4efc-8e5e-6d075ee5be55
 feature: Catalog Management, Customer Service
 source-git-commit: c3120f7df24e105b082df6544ab82241d6b6851f
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Puis-je planifier des mises à jour d’évaluation de contenu pour les prix dans un catalogue partagé ?
 
-Adobe Commerce n’offre pas la fonctionnalité de planification d’une mise à jour de prix ([Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)) pour un ou plusieurs produits dans un catalogue partagé.
+Adobe Commerce n’offre pas la fonctionnalité de planification d’une mise à jour de prix ([Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=fr)) pour un ou plusieurs produits dans un catalogue partagé.
 
 Cela signifie que vous ne pouvez pas planifier une telle mise à jour de prix directement à partir du menu **Définir les tarifs et la structure** du panneau d’administration de Commerce (il n’y a pas de bouton **Planifier une nouvelle mise à jour** dans ce menu).
 
@@ -23,7 +23,7 @@ Néanmoins, vous pouvez utiliser d’autres méthodes et planifier une mise à j
 
 ## Planifier la mise à jour du prix pour un groupe de clients
 
-1. Commencez [à planifier une nouvelle mise à jour de produit](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html).
+1. Commencez [à planifier une nouvelle mise à jour de produit](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html?lang=fr).
 1. Faites défiler l’écran jusqu’au champ **Price** et cliquez sur **Advanced PrTarification**.
 
    ![advanced_price.png](assets/advanced_pricing.png){width="600"}
@@ -40,8 +40,8 @@ Rappel : les catalogues partagés tirent parti des tarifs des groupes de clients
 
 **Documentation connexe**
 
-* [Planification d’une mise à jour (évaluation de contenu)](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html) dans notre guide d’utilisation.
-* [Advanced Tarification](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) dans notre guide d’utilisation.
+* [Planification d’une mise à jour (évaluation de contenu)](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html?lang=fr) dans notre guide d’utilisation.
+* [Advanced Tarification](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=fr) dans notre guide d’utilisation.
 
 ## Planifier la mise à jour du prix de base
 

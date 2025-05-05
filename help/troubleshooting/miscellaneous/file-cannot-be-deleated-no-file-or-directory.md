@@ -57,4 +57,4 @@ Adobe Commerce sur site : appliquez ACSD-50165 à l’aide de [Outils de correct
 ## Lecture connexe
 
 * [[!DNL Quality Patches Tool] > Notes de mise à jour](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) dans le guide des outils Commerce.
-* [[!DNL Quality Patches Tool] : recherchez des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) dans le guide des outils Commerce.
+* [[!DNL Quality Patches Tool] : recherchez des correctifs](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr) dans le guide des outils Commerce.

@@ -74,7 +74,7 @@ Utilisez les correctifs ci-joint suivants, en fonction de votre version d’Adob
 
 ## Comment appliquer le correctif
 
-Décompressez le fichier et reportez-vous à la section [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) dans notre base de connaissances de support pour obtenir des instructions.
+Décompressez le fichier et reportez-vous à la section [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=fr) dans notre base de connaissances de support pour obtenir des instructions.
 
 ## Comment déterminer si les correctifs ont été appliqués
 
@@ -82,7 +82,7 @@ Décompressez le fichier et reportez-vous à la section [Comment appliquer un co
 
 <u>Pour ce faire, procédez comme suit</u> :
 
-1. [Installez le  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installez le  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr).
 1. Exécutez la commande :
 
    ```bash

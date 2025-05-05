@@ -48,7 +48,7 @@ Pour désactiver Configuration Management, assurez-vous que votre répertoire `/
 
 Pour supprimer le fichier de configuration, procédez comme suit :
 
-1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
 1. Supprimez le fichier de configuration :
    * Pour Adobe Commerce 2.4 :
 
@@ -65,18 +65,18 @@ Pour supprimer le fichier de configuration, procédez comme suit :
 Pour en savoir plus sur Configuration Management, consultez les sections suivantes :
 
 * [Réduisez le temps d’arrêt du déploiement sur Adobe Commerce sur l’infrastructure cloud](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) dans notre base de connaissances d’assistance.
-* [Gestion des configurations des paramètres de magasin](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) dans notre documentation destinée aux développeurs.
+* [Gestion des configurations des paramètres de magasin](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=fr) dans notre documentation destinée aux développeurs.
 
 ### Étape 1 : désinstallation du logiciel Adobe Commerce avec la commande setup:uninstall {#setup-uninstall}
 
 
 La désinstallation du logiciel Adobe Commerce supprime et restaure la base de données, supprime la configuration de déploiement et efface les répertoires sous `var`.
 
-Consultez la section [Désinstallation du logiciel Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html) dans notre documentation destinée aux développeurs.
+Consultez la section [Désinstallation du logiciel Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html?lang=fr) dans notre documentation destinée aux développeurs.
 
 Pour désinstaller le logiciel Adobe Commerce, procédez comme suit :
 
-1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
 1. Exécutez `setup:uninstall` :
 
    ```php
@@ -147,7 +147,7 @@ git commit --allow-empty -m "<message>" && git push <origin> <branch>
 
 Si l’exécution de la commande `setup:uninstall` échoue avec une erreur et ne peut pas être terminée, nous pouvons effacer manuellement la base de données en procédant comme suit :
 
-1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
 1. Connectez-vous à la base de données MySQL :
 
    ```sql
@@ -168,15 +168,15 @@ Si l’exécution de la commande `setup:uninstall` échoue avec une erreur et ne
 
 1. Supprimer les fichiers de configuration suivants : `config.php`, `config.php` `.bak`, `env.php` et `env.php.bak`.
 
-Après avoir réinitialisé la base de données, [ effectuez une notification push git vers l’environnement pour déclencher le redéploiement ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#git-commands) et installez Adobe Commerce sur une nouvelle base de données. Ou [exécutez la commande de redéploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands).
+Après avoir réinitialisé la base de données, [ effectuez une notification push git vers l’environnement pour déclencher le redéploiement ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=fr#git-commands) et installez Adobe Commerce sur une nouvelle base de données. Ou [exécutez la commande de redéploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=fr#environment-commands).
 
 ## Lecture connexe
 
 Dans notre documentation destinée aux développeurs :
 
-* [Restaurer un instantané sur Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup)
-* [Créer un instantané](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-a-manual-backup)
-* [Gestion des instantanés et des sauvegardes](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Gérer les branches avec la console Cloud - Afficher les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=en#view-logs)
-* [Échec du déploiement des composants](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment.html)
-* [Gérer votre projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)
+* [Restaurer un instantané sur Cloud](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup)
+* [Créer un instantané](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-a-manual-backup)
+* [Gestion des instantanés et des sauvegardes](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Gérer les branches avec la console Cloud - Afficher les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=fr#view-logs)
+* [Échec du déploiement des composants](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment.html?lang=fr)
+* [Gérer votre projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=fr#configure-the-project)

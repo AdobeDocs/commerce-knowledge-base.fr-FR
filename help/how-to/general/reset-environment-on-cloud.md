@@ -37,9 +37,9 @@ Avec un déploiement ou une mise à niveau planifié, le [!UICONTROL Rollback] l
 <u>Le jour des modifications</u> :
 
 1. Placez le site web dans [!UICONTROL Maintenance Mode].
-Pour en savoir plus sur [Activer ou désactiver [!UICONTROL Maintenance Mode]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html) dans notre guide d’utilisation et [[!UICONTROL Maintenance Mode] options de mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html) dans notre guide de mise à niveau.
-1. Désactivez les tâches cron. Pour en savoir plus sur la désactivation des tâches cron, consultez notre [guide des propriétés crons](<https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property#disable-cron-jobs>).
-1. Prenez un [[!UICONTROL Database Dump]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html) local.
+Pour en savoir plus sur [Activer ou désactiver [!UICONTROL Maintenance Mode]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html?lang=fr) dans notre guide d’utilisation et [[!UICONTROL Maintenance Mode] options de mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html?lang=fr) dans notre guide de mise à niveau.
+1. Désactivez les tâches cron. Pour en savoir plus sur la désactivation des tâches cron, consultez notre [guide des propriétés crons](<https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property#disable-cron-jobs>).
+1. Prenez un [[!UICONTROL Database Dump]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html?lang=fr) local.
 
 <u>Si un [!UICONTROL Rollback] est requis</u> :
 
@@ -55,13 +55,13 @@ Lorsque vous comparez cela à l’importation d’un [!UICONTROL Database Dump] 
 
 ## Scénario 2 : restauration d’un instantané
 
-Lecture : [Restaurer un instantané sur Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-snapshot) dans notre documentation destinée aux développeurs.
+Lecture : [Restaurer un instantané sur Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-snapshot) dans notre documentation destinée aux développeurs.
 
 >[!NOTE]
 >
 >La création d’un instantané doit être notre toute première étape après l’accès à Adobe Commerce sur le compte d’infrastructure cloud et avant l’application de modifications majeures. Il s’agit d’une bonne pratique et vivement recommandée.
 
-Lecture : [Créez un instantané](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-snapshot) dans notre documentation destinée aux développeurs.
+Lecture : [Créez un instantané](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-snapshot) dans notre documentation destinée aux développeurs.
 
 ## Scénario 3 : aucun instantané, version stable (connexion SSH disponible)
 
@@ -88,24 +88,24 @@ Pour désactiver Configuration Management, assurez-vous que votre répertoire `/
 
 Pour supprimer le fichier de configuration, procédez comme suit :
 
-1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
 1. Supprimez le fichier de configuration : `rm app/etc/config.php`
 
 En savoir plus sur Configuration Management :
 
 * [Réduisez le temps d’arrêt du déploiement sur Adobe Commerce sur l’infrastructure cloud](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) dans notre base de connaissances d’assistance.
-* [Gestion des configurations des paramètres de magasin](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) dans notre documentation destinée aux développeurs.
+* [Gestion des configurations des paramètres de magasin](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=fr) dans notre documentation destinée aux développeurs.
 
 ### Étape 1 : désinstallation du logiciel Adobe Commerce avec la commande setup:uninstall
 
 
 La désinstallation du logiciel Adobe Commerce supprime et restaure la base de données, supprime la configuration de déploiement et efface les répertoires sous `var`.
 
-Lecture : [Désinstallez le logiciel Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html) dans notre documentation destinée aux développeurs.
+Lecture : [Désinstallez le logiciel Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html?lang=fr) dans notre documentation destinée aux développeurs.
 
 Pour désinstaller le logiciel Adobe Commerce, procédez comme suit :
 
-1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
 1. Exécuter `setup:uninstall` : `bin/magento setup:uninstall`
 1. Confirmez la désinstallation.
 
@@ -155,10 +155,10 @@ git commit --allow-empty -m "<message>" && git push <origin> <branch>
 
 Si l’exécution de la commande `setup:uninstall` échoue avec une erreur et ne peut pas être terminée, nous pouvons effacer manuellement la base de données en procédant comme suit :
 
-1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
-1. Connectez-vous à la base de données MySQL : `mysql -h database.internal` (pour les environnements Pro, voir : [Configuration du service MySQL](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html)).
+1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
+1. Connectez-vous à la base de données MySQL : `mysql -h database.internal` (pour les environnements Pro, voir : [Configuration du service MySQL](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html?lang=fr)).
 1. Déposez la base de données `main` : `drop database main;`
 1. Créez une base de données `main` vide : `create database main;`
 1. Supprimez les fichiers de configuration suivants : `config.php`, `config.php.bak`, `env.php`, `env.php.bak`
 
-Après avoir réinitialisé la base de données, [ effectuez une  [!DNL git] notification push vers l’environnement pour déclencher le redéploiement](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli.html) et installez Adobe Commerce sur une base de données nouvellement créée. Ou [exécutez la commande de redéploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands).
+Après avoir réinitialisé la base de données, [ effectuez une  [!DNL git] notification push vers l’environnement pour déclencher le redéploiement](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli.html?lang=fr) et installez Adobe Commerce sur une base de données nouvellement créée. Ou [exécutez la commande de redéploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=fr#environment-commands).

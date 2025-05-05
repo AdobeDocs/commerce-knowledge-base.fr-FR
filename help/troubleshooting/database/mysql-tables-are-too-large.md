@@ -34,5 +34,5 @@ Tenez compte des options suivantes pour éviter une baisse des performances :
 
 ## Lecture connexe
 
-* [ Tables de logs de modifications surdimensionnées provoquant des retards dans les mises à jour des entités ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront) dans notre base de connaissances de support
-* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+* [ Tables de logs de modifications surdimensionnées provoquant des retards dans les mises à jour des entités ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront) dans notre base de connaissances de support
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

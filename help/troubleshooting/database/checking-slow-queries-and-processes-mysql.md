@@ -44,7 +44,7 @@ Si une panne a pu être provoquée par une base de données surchargée, ces ét
 Si votre projet Adobe Commerce est déployé sur l’architecture Pro, vous pouvez utiliser le [!DNL Percona Toolkit] pour analyser les requêtes.
 
 1. Exécutez la commande `pt-query-digest --type=slowlog` sur les journaux de requête lents MySQL.
-   * Pour trouver l’emplacement des journaux de requêtes lentes, voir **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)** dans notre documentation destinée aux développeurs.
+   * Pour trouver l’emplacement des journaux de requêtes lentes, voir **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=fr)** dans notre documentation destinée aux développeurs.
    * Consultez la documentation [[!DNL Percona Toolkit] > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) .
 1. En fonction des problèmes détectés, suivez les étapes pour corriger la requête afin qu’elle s’exécute plus rapidement.
 
@@ -81,4 +81,4 @@ Cela permet d’identifier si le serveur MySQL est actif et s’il n’y a aucun
 * [MySQL Show Processlist Syntax](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) dans dev.mysql.com.
 * [Syntaxe de la mort MySQL](https://dev.mysql.com/doc/refman/8.0/en/kill.html) dans dev.mysql.com.
 * [Sécurité, performance et gestion des données](https://developer.adobe.com/commerce/php/best-practices/extensions/security/) dans notre documentation destinée aux développeurs.
-* [Aide de MySQL](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql) dans notre documentation destinée aux développeurs.
+* [Aide de MySQL](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql) dans notre documentation destinée aux développeurs.

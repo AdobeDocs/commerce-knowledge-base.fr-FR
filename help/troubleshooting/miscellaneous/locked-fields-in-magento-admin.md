@@ -52,6 +52,6 @@ Assurez-vous que la configuration n&#39;a pas été enregistrée sur `app/etc/en
 
 ## Lecture connexe
 
-* [Exportez la configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration) dans notre documentation destinée aux développeurs.
-* [Définissez les valeurs de configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values) dans notre documentation destinée aux développeurs.
+* [Exportez la configuration](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration) dans notre documentation destinée aux développeurs.
+* [Définissez les valeurs de configuration](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values) dans notre documentation destinée aux développeurs.
 * [Adobe Commerce sur l’infrastructure cloud : réduisez le temps d’arrêt du déploiement avec Configuration Management](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) dans notre base de connaissances de support.

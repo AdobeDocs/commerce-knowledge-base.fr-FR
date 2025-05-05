@@ -29,7 +29,7 @@ Les modifications effectuées dans le fichier `.magento.env.yaml` n’affectent 
 
 <u>Étapes à reproduire :</u>
 
-Modifiez toute valeur de `.magento.env.yaml` et envoyez-la au serveur, où il doit définir la configuration (et les paramètres de déploiement) de l’environnement actuellement extrait. Pour les étapes, voir [Variables d’environnement > Déployer des variables](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy) dans notre documentation destinée aux développeurs.
+Modifiez toute valeur de `.magento.env.yaml` et envoyez-la au serveur, où il doit définir la configuration (et les paramètres de déploiement) de l’environnement actuellement extrait. Pour les étapes, voir [Variables d’environnement > Déployer des variables](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy) dans notre documentation destinée aux développeurs.
 
 <u>Résultat attendu :</u>
 
@@ -45,11 +45,11 @@ Le problème peut être dû à une valeur incorrecte du paramètre `opcache.enab
 
 ## Solution
 
-1. Vérifiez que le système est configuré conformément aux [Bonnes pratiques de performances d’Adobe Commerce > Recommandations logicielles](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/software).
+1. Vérifiez que le système est configuré conformément aux [Bonnes pratiques de performances d’Adobe Commerce > Recommandations logicielles](https://experienceleague.adobe.com/fr/docs/commerce-operations/performance-best-practices/software).
 1. Vérifiez si la directive `opcache.enable_cli` de `php.ini` est définie sur `0` en exécutant : `php -i | grep opcache.enable_cli`
 1. Si la sortie ressemble à `opcache.enable_cli=1` , modifiez le fichier `php.ini` dans le répertoire racine du projet et remplacez `opcache.enable_cli=1` par `opcache.enable_cli=0`.
 1. Redéployez le projet.
 
 ## Lecture connexe
 
-* [Cloud pour Adobe Commerce > Créer et déployer](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml).
+* [Cloud pour Adobe Commerce > Créer et déployer](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml).

@@ -30,11 +30,11 @@ Lors de la tentative d’affichage du journal de déploiement dans l’interface
 
 ## Cause
 
-Notez que le journal affiché dans l’interface utilisateur ne doit pas être traité comme la source de vérité, en particulier si vous constatez que le site ne répond pas ou ne fonctionne pas correctement après que le déploiement a été répertorié avec le statut Succès . Vous devez également vérifier avec les journaux sur le serveur. Voir [Afficher et gérer les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) dans notre documentation destinée aux développeurs.
+Notez que le journal affiché dans l’interface utilisateur ne doit pas être traité comme la source de vérité, en particulier si vous constatez que le site ne répond pas ou ne fonctionne pas correctement après que le déploiement a été répertorié avec le statut Succès . Vous devez également vérifier avec les journaux sur le serveur. Voir [Afficher et gérer les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=fr) dans notre documentation destinée aux développeurs.
 
 ## Solution
 
-1. Assurez-vous que l’interface de ligne de commande [de Magento Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html) est installée dans votre environnement local.
+1. Assurez-vous que l’interface de ligne de commande [de Magento Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=fr) est installée dans votre environnement local.
 1. Vous pouvez exécuter l’une des commandes suivantes :
 
    ```bash
@@ -70,5 +70,5 @@ Notez que le journal affiché dans l’interface utilisateur ne doit pas être t
 
 ## Informations connexes dans notre documentation destinée aux développeurs :
 
-* [Adobe Commerce sur l’infrastructure cloud > Créer et déployer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)
-* [Adobe Commerce sur l’infrastructure cloud > Afficher et gérer les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
+* [Adobe Commerce sur l’infrastructure cloud > Créer et déployer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=fr)
+* [Adobe Commerce sur l’infrastructure cloud > Afficher et gérer les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=fr)

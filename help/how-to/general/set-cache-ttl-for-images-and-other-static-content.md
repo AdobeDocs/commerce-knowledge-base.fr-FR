@@ -1,6 +1,6 @@
 ---
 title: Définir la durée de vie du cache pour les images et autres contenus statiques
-description: Reportez-vous à [Définir le cache pour les fichiers statiques](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/set-cache.html) dans notre guide d’utilisation.
+description: Reportez-vous à [Définir le cache pour les fichiers statiques](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/set-cache.html?lang=fr) dans notre guide d’utilisation.
 exl-id: 3afa1fd8-cfe2-4acf-ac91-c747aa3d6902
 feature: Cache
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Définir la durée de vie du cache pour les images et autres contenus statiques
 
-Reportez-vous à la section [Définir le cache pour les fichiers statiques](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/set-cache.html) de notre guide d’utilisation.
+Reportez-vous à la section [Définir le cache pour les fichiers statiques](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/set-cache.html?lang=fr) de notre guide d’utilisation.

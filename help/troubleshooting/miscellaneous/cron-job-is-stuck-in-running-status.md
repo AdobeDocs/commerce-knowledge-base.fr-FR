@@ -37,7 +37,7 @@ Les symptômes des tâches [!DNL cron] qui doivent être réinitialisées sont l
 
 Pour résoudre ce problème, vous devez réinitialiser la ou les tâches [!DNL cron] à l’aide de la commande `cron:unlock`. Cette commande modifie l’état de la tâche [!DNL cron] dans la base de données, mettant ainsi fin à la tâche pour permettre la poursuite d’autres tâches planifiées.
 
-1. Ouvrez un terminal et utilisez vos [clés SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour vous connecter à l’environnement concerné.
+1. Ouvrez un terminal et utilisez vos [clés SSH](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour vous connecter à l’environnement concerné.
 1. Obtenez les informations d’identification de la base de données MySQL :    ```shell    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp    ```
 1. Connectez-vous à la base de données à l’aide de `mysql` :    ```shell    mysql -hdatabase.internal -uuser -ppassword main    ```
 1. Sélectionnez la base de données `main` :    ```shell    use main    ```
@@ -47,7 +47,7 @@ Pour résoudre ce problème, vous devez réinitialiser la ou les tâches [!DNL c
 
 ### Solution pour arrêter un seul [!DNL cron] {#solution-stop-a-single-cron}
 
-1. Ouvrez un terminal et utilisez vos [clés SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour vous connecter à l’environnement concerné.
+1. Ouvrez un terminal et utilisez vos [clés SSH](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour vous connecter à l’environnement concerné.
 1. Vérifiez les tâches longues en cours à l’aide de la commande suivante :
 
    ```date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'```

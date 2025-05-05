@@ -16,7 +16,7 @@ Cet article fournit des solutions pour réautoriser une intégration afin d’ac
 
 ## Intégrations base de données et SaaS
 
-Pour obtenir la liste des intégrations Base de données et SaaS, reportez-vous à la section [Connexion aux données externes à l’aide d’une intégration](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) dans notre documentation destinée aux développeurs. (Lors de l’ouverture de la page, utilisez la table des matières sur la gauche pour la navigation).
+Pour obtenir la liste des intégrations Base de données et SaaS, reportez-vous à la section [Connexion aux données externes à l’aide d’une intégration](https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) dans notre documentation destinée aux développeurs. (Lors de l’ouverture de la page, utilisez la table des matières sur la gauche pour la navigation).
 
 ## Vous rencontrez des problèmes de connexion ?
 

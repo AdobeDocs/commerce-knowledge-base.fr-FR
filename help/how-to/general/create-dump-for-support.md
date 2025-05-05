@@ -27,7 +27,7 @@ Créez un vidage &quot;frotté&quot; à partir de l’administrateur :
 
 Vous pouvez ensuite fournir pour prendre en charge le lien de téléchargement direct vers les fichiers de vidage (l’adresse de votre magasin et le nom du fichier tel qu’affiché).
 
-Si vous rencontrez des problèmes lors de la création de vidages à partir de l’administrateur, pensez à utiliser les commandes de l’interface de ligne de commande comme décrit dans la section [Exécution des utilitaires de support](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/run-support-utilities) de notre documentation destinée aux développeurs.
+Si vous rencontrez des problèmes lors de la création de vidages à partir de l’administrateur, pensez à utiliser les commandes de l’interface de ligne de commande comme décrit dans la section [Exécution des utilitaires de support](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/run-support-utilities) de notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 

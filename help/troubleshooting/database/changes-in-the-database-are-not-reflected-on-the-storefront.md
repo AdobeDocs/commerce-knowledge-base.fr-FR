@@ -26,7 +26,7 @@ Les modifications que vous effectuez dans la base de données ne sont pas réper
 
 ## Cause
 
-Si vos indexeurs sont [ configurés pour une mise à jour par planning](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers), le problème peut être dû à une ou plusieurs tables dont les logs de modification sont trop volumineux ou à des déclencheurs MySQL non configurés.
+Si vos indexeurs sont [ configurés pour une mise à jour par planning](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers), le problème peut être dû à une ou plusieurs tables dont les logs de modification sont trop volumineux ou à des déclencheurs MySQL non configurés.
 
 ### Tables de logs de modifications surdimensionnées
 
@@ -71,7 +71,7 @@ Utilisez la commande suivante pour effectuer cette opération.
 
 >[!WARNING]
 >
->Avant de passer en mode indexeur, nous vous recommandons de mettre votre site web en mode [maintenance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) et [désactiver les tâches cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) pour éviter les verrous de base de données.
+>Avant de passer en mode indexeur, nous vous recommandons de mettre votre site web en mode [maintenance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=fr#maintenance-mode) et [désactiver les tâches cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=fr#disable-cron-jobs) pour éviter les verrous de base de données.
 
 ```bash
 php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
@@ -83,6 +83,6 @@ php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
 
 ## Lecture connexe
 
-* [[!DNL MySQL] les tables sont trop volumineuses](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-tables-are-too-large) dans notre base de connaissances de support
+* [[!DNL MySQL] les tables sont trop volumineuses](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-tables-are-too-large) dans notre base de connaissances de support
 * [Indexation : [!DNL Mview]](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) dans notre documentation destinée aux développeurs
-* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

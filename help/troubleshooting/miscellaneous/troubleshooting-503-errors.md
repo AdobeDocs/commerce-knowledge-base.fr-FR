@@ -63,4 +63,4 @@ Comme l’accès à l’administrateur s’effectue par le biais du vernis, vous
 $ bin/magento cache:enable
 ```
 
-Pour plus d&#39;informations sur l&#39;utilisation de la ligne de commande, voir [Prise en main de la configuration de ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli).
+Pour plus d&#39;informations sur l&#39;utilisation de la ligne de commande, voir [Prise en main de la configuration de ligne de commande](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/config-cli).

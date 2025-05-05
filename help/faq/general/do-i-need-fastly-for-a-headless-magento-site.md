@@ -25,7 +25,7 @@ Je développe une mise en oeuvre sans interface d’Adobe Commerce. Dois-je touj
 Non, vous ne le faites pas. Dans ce cas, vous pouvez ignorer l’utilisation de Fastly, au moins, au début du développement.
 
 La seule situation que vous pouvez ne pas activer est pour un déploiement sans tête.
-Voir [Cloud pour Adobe Commerce > Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) dans notre documentation destinée aux développeurs.
+Voir [Cloud pour Adobe Commerce > Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly) dans notre documentation destinée aux développeurs.
 
 Néanmoins, vous aurez probablement besoin de Fastly pour utiliser son certificat SSL.
 
@@ -34,4 +34,4 @@ Tous les clients d’Adobe Commerce sur l’infrastructure cloud reçoivent un c
 ## Informations supplémentaires
 
 * [Sites web sans affichage : quel est le Big Deal avec l&#39;architecture découplée ?](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) par [Josh Koenig](https://pantheon.io/team/josh-koenig).
-* [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) dans notre documentation destinée aux développeurs.
+* [Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly) dans notre documentation destinée aux développeurs.

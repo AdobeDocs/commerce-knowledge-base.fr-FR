@@ -34,7 +34,7 @@ Cet article fournit des ressources pour le dépannage de New Relic sur Adobe Com
 <p>Dans ce cas, un utilisateur administrateur doit vous ajouter au projet.</p>
 </td>
 <td>
-<p><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html">Accès aux services New Relic</a> dans notre base de connaissances d’assistance.</p>
+<p><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html?lang=fr">Accès aux services New Relic</a> dans notre base de connaissances d’assistance.</p>
 </td>
 </tr>
 <tr>

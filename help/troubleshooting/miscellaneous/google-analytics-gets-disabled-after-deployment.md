@@ -29,7 +29,7 @@ Il s’agit d’une fonctionnalité prévue pour s’assurer que les données et
 
 ## Solution
 
-Si vous souhaitez que les Google Analytics soient toujours activés, définissez la variable de déploiement `ENABLE_GOOGLE_ANALYTICS = true`, comme décrit dans la section [Déployer des variables](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#enable_google_analytics) de notre documentation destinée aux développeurs.
+Si vous souhaitez que les Google Analytics soient toujours activés, définissez la variable de déploiement `ENABLE_GOOGLE_ANALYTICS = true`, comme décrit dans la section [Déployer des variables](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#enable_google_analytics) de notre documentation destinée aux développeurs.
 
 >[!NOTE]
 >

@@ -42,8 +42,8 @@ L’indexation par les moteurs de recherche est désactivée.
 
 ## Solution
 
-Activez l’indexation par moteur de recherche. Voir [Configuration de l’indexation par moteur de recherche](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap#configure-indexing-by-search-engine) dans notre documentation destinée aux développeurs.
+Activez l’indexation par moteur de recherche. Voir [Configuration de l’indexation par moteur de recherche](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap#configure-indexing-by-search-engine) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
-* [Ajoutez des robots de moteur de recherche et de carte de site](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) dans notre documentation destinée aux développeurs.
+* [Ajoutez des robots de moteur de recherche et de carte de site](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) dans notre documentation destinée aux développeurs.

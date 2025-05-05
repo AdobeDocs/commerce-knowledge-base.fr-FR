@@ -26,7 +26,7 @@ L’utilisateur reçoit une erreur lors de la validation des informations d’id
 
 ## Solution
 
-1. Assurez-vous que vous disposez de l’ID de service et du jeton d’API corrects et essayez à nouveau de valider. Pour obtenir des instructions détaillées, reportez-vous à la section [Test des informations d’identification Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) dans notre documentation destinée aux développeurs.
+1. Assurez-vous que vous disposez de l’ID de service et du jeton d’API corrects et essayez à nouveau de valider. Pour obtenir des instructions détaillées, reportez-vous à la section [Test des informations d’identification Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) dans notre documentation destinée aux développeurs.
 1. Si la vérification des informations d’identification échoue, exécutez la commande curl suivante pour confirmer l’état du service :
 
    ```curl
@@ -45,6 +45,6 @@ L’utilisateur reçoit une erreur lors de la validation des informations d’id
 
 ## Lectures connexes dans notre documentation destinée aux développeurs :
 
-* [Cloud pour Adobe Commerce > Fastly > Compte de service et informations d’identification Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#fastly-service-account-and-credentials)
+* [Cloud pour Adobe Commerce > Fastly > Compte de service et informations d’identification Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly#fastly-service-account-and-credentials)
 
-* [Cloud pour Adobe Commerce > Configurer rapidement > Tester les informations d’identification rapides](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)
+* [Cloud pour Adobe Commerce > Configurer rapidement > Tester les informations d’identification rapides](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)

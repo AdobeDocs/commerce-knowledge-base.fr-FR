@@ -51,7 +51,7 @@ Vérifiez l’enregistrement de session créé dans la table `admin_user_session
 
 ### Modification de l’enregistrement de session
 
-Essayez de modifier le stockage de la session. Utilisez les informations de l’article [Comment localiser vos fichiers de session](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) dans notre documentation destinée aux développeurs pour savoir où est stockée votre session et modifiez-la en modifiant le fichier `app/etc/env.php`.
+Essayez de modifier le stockage de la session. Utilisez les informations de l’article [Comment localiser vos fichiers de session](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) dans notre documentation destinée aux développeurs pour savoir où est stockée votre session et modifiez-la en modifiant le fichier `app/etc/env.php`.
 
 Par exemple, pour commencer à stocker une session dans le système de fichiers, modifiez la section `'session'` comme suit :
 
@@ -69,9 +69,9 @@ Exécutez la commande `bin/magento app:config:import` pour importer des données
 
 ## Lecture connexe
 
-* [Importer des données à partir de fichiers de configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration) dans notre documentation destinée aux développeurs
-* [Configurez [!DNL Redis]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) dans notre documentation destinée aux développeurs
-* [Rediriger vers le formulaire de connexion [!UICONTROL Commerce Admin] avec l’erreur &quot;Votre compte est temporairement désactivé&quot;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) dans notre base de connaissances de support
-* [ Redirigez-vous vers le formulaire de connexion sans erreur, lorsque vous essayez de vous connecter à [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) dans notre base de connaissances de support.
-* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+* [Importer des données à partir de fichiers de configuration](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration) dans notre documentation destinée aux développeurs
+* [Configurez [!DNL Redis]](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/redis/config-redis) dans notre documentation destinée aux développeurs
+* [Rediriger vers le formulaire de connexion [!UICONTROL Commerce Admin] avec l’erreur &quot;Votre compte est temporairement désactivé&quot;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) dans notre base de connaissances de support
+* [ Redirigez-vous vers le formulaire de connexion sans erreur, lorsque vous essayez de vous connecter à [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) dans notre base de connaissances de support.
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
 

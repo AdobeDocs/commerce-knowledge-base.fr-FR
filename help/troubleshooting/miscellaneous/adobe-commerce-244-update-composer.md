@@ -29,7 +29,7 @@ Lors d’une mise à jour vers Adobe Commerce 2.4.4 ou version ultérieure aprè
 
 Conditions préalables : Adobe Commerce 2.4.3 ou version antérieure est installé.
 
-1. Démarrez la mise à niveau comme décrit dans [Effectuez une mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html).
+1. Démarrez la mise à niveau comme décrit dans [Effectuez une mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=fr).
 1. Exécutez la commande `composer update` pour mettre à niveau l’application Adobe Commerce.
 
 <u>Résultats attendus</u> :
@@ -64,7 +64,7 @@ Après juillet 2022, le compositeur modifie la valeur par défaut de l’option 
 
 Ajoutez ce qui suit à votre fichier `composer.json`, en fonction de la manière dont vous avez installé Adobe Commerce :
 
-* Si le projet a été créé [à l&#39;aide de la commande `composer create-project`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer#get-the-metapackage) :
+* Si le projet a été créé [à l&#39;aide de la commande `composer create-project`](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/composer#get-the-metapackage) :
 
   ```json
   "config": {

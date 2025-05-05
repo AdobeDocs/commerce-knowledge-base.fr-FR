@@ -47,4 +47,4 @@ Nous vous recommandons également de réindexer manuellement l’indexeur `custo
 Liens vers des sujets connexes dans notre documentation destinée aux développeurs :
 
 * [Présentation de l’indexation](https://developer.adobe.com/commerce/php/development/components/indexing/)
-* [Gérer les indexeurs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)
+* [Gérer les indexeurs](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-indexers)

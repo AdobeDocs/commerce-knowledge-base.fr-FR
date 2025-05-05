@@ -45,4 +45,4 @@ Exécutez manuellement la tâche cron ou le consommateur pour propager les nouve
 
 ## Lecture connexe
 
-* [Gérer les files d’attente de messages](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) dans notre documentation destinée aux développeurs.
+* [Gérer les files d’attente de messages](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) dans notre documentation destinée aux développeurs.

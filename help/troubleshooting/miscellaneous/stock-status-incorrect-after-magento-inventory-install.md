@@ -33,4 +33,4 @@ Lors de la première installation/mise à niveau, tous vos produits sont attribu
 
 Si vous disposez de plusieurs sites web, vous devez les ajouter en tant que Sales Channel aux actions par défaut ou aux autres actions personnalisées.
 
-Consultez la section [Stock du guide de l’utilisateur/du wiki](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) dans notre guide de l’utilisateur pour plus d’informations sur la façon de procéder.
+Consultez la section [Stock du guide de l’utilisateur/du wiki](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/stocks/stocks-manage) dans notre guide de l’utilisateur pour plus d’informations sur la façon de procéder.

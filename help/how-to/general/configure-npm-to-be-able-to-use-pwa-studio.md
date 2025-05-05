@@ -54,4 +54,4 @@ Les modifications prennent effet une fois que vous avez envoyé le fichier YAML 
 
 ## Documentation connexe
 
-* [Configuration de l’application : hooks](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html) dans notre guide d’infrastructure Adobe Commerce on Cloud.
+* [Configuration de l’application : hooks](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html?lang=fr) dans notre guide d’infrastructure Adobe Commerce on Cloud.

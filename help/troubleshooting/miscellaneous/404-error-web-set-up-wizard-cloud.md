@@ -43,9 +43,9 @@ L’assistant de configuration web a été désactivé pour toutes les instances
 
 Cette fonctionnalité est désactivée sur Adobe Commerce sur l’infrastructure cloud.
 
-Pour plus d’informations sur l’exécution de mises à jour ou l’installation de modules externes pour Adobe Commerce sur notre infrastructure cloud, voir [Installation, gestion et mise à niveau d’extensions](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) dans la documentation destinée aux développeurs.
-Pour plus d’informations sur l’exécution des mises à jour ou l’installation de modules externes pour Adobe Commerce sur site, voir [Installation rapide](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) dans la documentation destinée aux développeurs.
+Pour plus d’informations sur l’exécution de mises à jour ou l’installation de modules externes pour Adobe Commerce sur notre infrastructure cloud, voir [Installation, gestion et mise à niveau d’extensions](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/extensions) dans la documentation destinée aux développeurs.
+Pour plus d’informations sur l’exécution des mises à jour ou l’installation de modules externes pour Adobe Commerce sur site, voir [Installation rapide](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/composer) dans la documentation destinée aux développeurs.
 
 ## Lecture connexe
 
-* Voir [Installer une extension](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension) dans notre documentation destinée aux développeurs.
+* Voir [Installer une extension](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension) dans notre documentation destinée aux développeurs.

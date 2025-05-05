@@ -68,5 +68,5 @@ Créez une tâche cron pour supprimer les index de suivi. Cette commande supprim
 
 Si vous souhaitez supprimer des index à une fréquence définie, créez une tâche cron en vous reportant aux articles suivants de notre documentation destinée aux développeurs :
 
-* [Configuration d’une tâche cron personnalisée et d’un groupe cron (tutoriel)](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
-* [Configuration de tâches cron](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)
+* [Configuration d’une tâche cron personnalisée et d’un groupe cron (tutoriel)](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
+* [Configuration de tâches cron](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)

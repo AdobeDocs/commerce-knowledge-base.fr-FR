@@ -24,7 +24,7 @@ Cette rubrique aborde une solution lorsque la charge élevée de MySQL entraîne
 * Outils de la CEE version 2002.0.16 et ultérieure
 * Service New Relic APM (**Votre compte Adobe Commerce sur l’infrastructure cloud inclut le logiciel du service New Relic APM** avec une clé de licence.)
 
-Pour plus d’informations sur le service New Relic APM et sa configuration avec votre compte Adobe Commerce sur l’infrastructure cloud, accédez à [Services New Relic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) et [Introduction à l’APM New Relic](https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-apm/).
+Pour plus d’informations sur le service New Relic APM et sa configuration avec votre compte Adobe Commerce sur l’infrastructure cloud, accédez à [Services New Relic](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) et [Introduction à l’APM New Relic](https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-apm/).
 
 ## Problème
 
@@ -61,7 +61,7 @@ Adobe Commerce peut lire plusieurs bases de données ou Redis de manière asynch
 
    ![KB-372_image004.png](assets/KB-372_image004.png)
 
-   Pour plus d’informations, reportez-vous à la section [Déploiement de variables dans DevDocs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection).
+   Pour plus d’informations, reportez-vous à la section [Déploiement de variables dans DevDocs](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection).
 
 1. Validez vos modifications et poussez-les.
 1. La publication des modifications lancera un nouveau processus de déploiement. Une fois le déploiement terminé, votre instance Adobe Commerce sur l’infrastructure cloud doit maintenant être configurée pour utiliser les connexions esclaves.
@@ -70,7 +70,7 @@ Adobe Commerce peut lire plusieurs bases de données ou Redis de manière asynch
 
 Vous trouverez ci-dessous les questions courantes que vous pouvez vous poser lorsque vous envisagez d’utiliser la fonctionnalité Connexions esclaves pour votre Adobe Commerce sur la boutique d’infrastructures cloud.
 
-* Existe-t-il des problèmes ou des limitations connus pour utiliser les connexions esclaves ? **Nous ne connaissons aucun problème lors de l’utilisation des connexions esclaves. Assurez-vous simplement d’utiliser le module d’outils de la pièce le plus récemment mis à jour. Les instructions se trouvent ici sur [la mise à jour de votre package ece-tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package).**
+* Existe-t-il des problèmes ou des limitations connus pour utiliser les connexions esclaves ? **Nous ne connaissons aucun problème lors de l’utilisation des connexions esclaves. Assurez-vous simplement d’utiliser le module d’outils de la pièce le plus récemment mis à jour. Les instructions se trouvent ici sur [la mise à jour de votre package ece-tools](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package).**
 * Existe-t-il une latence supplémentaire en utilisant les connexions esclaves ? *Oui, la latence entre AZ (zones de disponibilité croisée) est plus élevée et réduit les performances d’une instance Adobe Commerce sur l’infrastructure cloud dans le cas où l’instance n’est pas surchargée et peut transporter la charge entière. Mais clairement, si l&#39;instance est surchargée - master-slave va vous aider à obtenir des performances en répartissant la charge sur la base de données MySQL ou les redis sur différents noeuds.*
 
   **Sur les grappes non surchargées** - **Les connexions esclaves vont ralentir les performances de 10 à 15 %**, ce qui est l’une des raisons pour lesquelles elles ne sont pas par défaut.
@@ -82,9 +82,9 @@ Vous trouverez ci-dessous les questions courantes que vous pouvez vous poser lor
 
 Dans notre documentation destinée aux développeurs :
 
-* [Déployer des variables](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy).
-* [Configurez la réplication de base de données facultative](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master-replication).
-* [Module ece-tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview).
+* [Déployer des variables](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy).
+* [Configurez la réplication de base de données facultative](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/storage/split-db/multi-master-replication).
+* [Module ece-tools](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview).
 
 >[!NOTE]
 >

@@ -80,7 +80,7 @@ Pour résoudre le déploiement bloqué, mettez à jour le fichier `routes.yaml` 
 
 1. С omettez et poussez vos modifications pour redéployer votre projet.
 
-Pour obtenir des instructions détaillées sur la mise à jour de la configuration de l’itinéraire, voir [Cloud for Adobe Commerce > Configurer les itinéraires](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml) dans notre documentation destinée aux développeurs.
+Pour obtenir des instructions détaillées sur la mise à jour de la configuration de l’itinéraire, voir [Cloud for Adobe Commerce > Configurer les itinéraires](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml) dans notre documentation destinée aux développeurs.
 
 >[!NOTE]
 >

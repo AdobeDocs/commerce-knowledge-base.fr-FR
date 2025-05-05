@@ -51,7 +51,7 @@ Les raisons possibles du problème sont les suivantes :
 
 Pour résoudre les problèmes, vous devez effectuer une configuration de vernis supplémentaire et redémarrer Varnish.
 
-1. En tant qu’utilisateur disposant de droits `root`, ouvrez votre fichier de configuration de l’espagnol dans un éditeur de texte. Pour plus d’informations sur l’emplacement de ce fichier pour différents systèmes d’exploitation, reportez-vous à la section [Modification de la configuration du système Varnish](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/config-varnish-server) dans la documentation destinée aux développeurs.
+1. En tant qu’utilisateur disposant de droits `root`, ouvrez votre fichier de configuration de l’espagnol dans un éditeur de texte. Pour plus d’informations sur l’emplacement de ce fichier pour différents systèmes d’exploitation, reportez-vous à la section [Modification de la configuration du système Varnish](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/config-varnish-server) dans la documentation destinée aux développeurs.
 1. Dans le `DAEMON_OPTS variable`, ajoutez `-p feature=+esi_ignore_https`, `-p  feature=+esi_ignore_other_elements`, `-p  feature=+esi_disable_xml_check`. Cela ressemblerait à ceci :
 
    ```bash
@@ -64,5 +64,5 @@ Pour résoudre les problèmes, vous devez effectuer une configuration de vernis 
 
 ## Lecture connexe
 
-* [Configurez Varnish et votre serveur web](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/config-varnish-server) dans notre documentation destinée aux développeurs.
+* [Configurez Varnish et votre serveur web](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/config-varnish-server) dans notre documentation destinée aux développeurs.
 * [&#128279;](https://varnish-cache.org/docs/5.1/reference/index.html)

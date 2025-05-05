@@ -47,5 +47,5 @@ Assurez-vous que le contrôle d’accès n’est pas activé : accédez à la br
 
 ## Lecture connexe
 
-* [Guide de l’utilisateur d’Adobe Commerce > Cache de page complète](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching) dans notre guide de l’utilisateur.
+* [Guide de l’utilisateur d’Adobe Commerce > Cache de page complète](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management#full-page-caching) dans notre guide de l’utilisateur.
 * [Réchauffement du cache et site indisponible sur Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md) dans notre base de connaissances de support.

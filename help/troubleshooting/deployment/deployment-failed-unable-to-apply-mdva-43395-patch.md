@@ -25,7 +25,7 @@ Vous ne pouvez pas appliquer le correctif MDVA-43395.
 
 ## Cause
 
-Les commerçants cloud n’ont pas besoin d’appliquer le correctif MDVA-43395 séparément s’ils ont installé [magento/magento-cloud-Correctifs 1.0.16](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016), qui inclut déjà le correctif.
+Les commerçants cloud n’ont pas besoin d’appliquer le correctif MDVA-43395 séparément s’ils ont installé [magento/magento-cloud-Correctifs 1.0.16](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016), qui inclut déjà le correctif.
 
 ## Solution
 
@@ -45,4 +45,4 @@ $ vendor/bin/magento-patches -n status |grep 43443
 ## Lecture connexe
 
 * [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
-* [Correctifs cloud pour Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) dans notre documentation destinée aux développeurs.
+* [Correctifs cloud pour Commerce](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) dans notre documentation destinée aux développeurs.

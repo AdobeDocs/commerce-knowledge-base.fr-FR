@@ -23,7 +23,7 @@ Cet article fournit un correctif pour le problème où l’outil d’analyse de 
 
 <u>Étapes à reproduire</u> :
 
-1. Configurez l’outil d’analyse de sécurité pour vérifier votre site web, comme décrit dans [Analyse de sécurité](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) de notre guide d’utilisation.
+1. Configurez l’outil d’analyse de sécurité pour vérifier votre site web, comme décrit dans [Analyse de sécurité](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-scan) de notre guide d’utilisation.
 1. Dans la colonne Actions, sélectionnez **Exécuter l’analyse**.
 
 <u>Résultats attendus</u> :
@@ -47,5 +47,5 @@ Essayez d’ouvrir votre site web.
 
 ## Lecture connexe
 
-* [Lancer et lancer](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview) dans la documentation destinée aux développeurs.
-* [Analyse de sécurité](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) dans notre guide d’utilisation.
+* [Lancer et lancer](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/launch/overview) dans la documentation destinée aux développeurs.
+* [Analyse de sécurité](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-scan) dans notre guide d’utilisation.

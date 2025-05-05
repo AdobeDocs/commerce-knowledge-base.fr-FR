@@ -30,7 +30,7 @@ Certains types de cache Adobe Commerce sont désactivés, ce qui peut entraîner
 
 ## Solution
 
-1. Tout d’abord, vérifiez l’état de votre cache Adobe Commerce pour voir s’il s’agit du problème. Pour cela, [SSH vers votre environnement](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) et exécutez la commande suivante :
+1. Tout d’abord, vérifiez l’état de votre cache Adobe Commerce pour voir s’il s’agit du problème. Pour cela, [SSH vers votre environnement](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) et exécutez la commande suivante :
 
    ```bash
    php bin/magento cache:status
@@ -48,7 +48,7 @@ Si vous avez des questions ou des questions concernant la désactivation ou la d
 Documentation sur le cache Adobe Commerce dans notre documentation destinée aux développeurs :
 
 * [Présentation du cache Adobe Commerce](https://developer.adobe.com/commerce/frontend-core/guide/caching/)
-* [Gérer le cache](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-cache)
+* [Gérer le cache](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-cache)
 
 Autres raisons possibles de problèmes de performances et solutions pour eux :
 

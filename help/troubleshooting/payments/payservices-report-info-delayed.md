@@ -29,7 +29,7 @@ Une fois que vous avez facturé (capturé) une commande ou émis un avoir pour u
 
 Conditions préalables : une commande est passée à l’aide de la fonctionnalité Services de paiement.
 
-1. Une commande est [facturée](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) (ou [annulée](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order) ou [remboursée par l&#39;intermédiaire d&#39;une note de crédit](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos)) dans le [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin).
+1. Une commande est [facturée](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) (ou [annulée](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order) ou [remboursée par l&#39;intermédiaire d&#39;une note de crédit](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos)) dans le [Admin](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/admin/admin).
 1. Accédez au rapport État du paiement de la commande pour afficher des informations sur cette commande.
 1. L’état est `AUTHORIZED`, qui est l’état de la commande avant la facturation ou toute autre action de commande.
 
@@ -37,7 +37,7 @@ Conditions préalables : une commande est passée à l’aide de la fonctionnali
 
 >[!NOTE]
 >
->Il ne s’agit que d’un cas d’utilisation courant. Il peut y avoir d’autres cas d’utilisation lorsqu’une [action de commande](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders#actions) se produit et que les données ne sont pas immédiatement disponibles dans le rapport applicable.
+>Il ne s’agit que d’un cas d’utilisation courant. Il peut y avoir d’autres cas d’utilisation lorsqu’une [action de commande](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/order-management/orders/orders#actions) se produit et que les données ne sont pas immédiatement disponibles dans le rapport applicable.
 
 <u>Résultat attendu</u> :
 Les données du rapport sont renseignées immédiatement après qu’une action a été effectuée sur une commande.
@@ -49,7 +49,7 @@ Il peut y avoir un délai dans les données de rapport visibles pour les actions
 
 Deux facteurs affectent ce délai dans les données visibles dans l’administrateur :
 
-* La fréquence à laquelle vous choisissez de synchroniser (exporter et conserver) les données de Commerce, via la configuration [dans l’Admin](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html).
+* La fréquence à laquelle vous choisissez de synchroniser (exporter et conserver) les données de Commerce, via la configuration [dans l’Admin](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html?lang=fr).
 * Période pendant laquelle PayPal publie les données de rapport.
 
 ## Solution

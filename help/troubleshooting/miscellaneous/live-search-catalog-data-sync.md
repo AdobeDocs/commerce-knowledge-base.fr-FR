@@ -31,9 +31,9 @@ Les données de votre catalogue ne sont pas synchronisées correctement ou un no
 
 <u>Procédure à suivre</u>
 
-1. Configurez et connectez Live Search à votre instance Adobe Commerce, comme décrit dans [Installation de Live Search > Configuration des clés d’API](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#configure-api-keys) dans notre documentation utilisateur.
-1. Au bout de 30 minutes, vérifiez les données de catalogue exportées, comme décrit dans [Installer Live Search > Vérifier l’exportation](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#verify-export) dans notre documentation utilisateur.
-1. Au bout de 30 minutes, testez la connexion comme décrit dans [Installer Live Search > Tester la connexion](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#test-connection) dans notre documentation utilisateur.
+1. Configurez et connectez Live Search à votre instance Adobe Commerce, comme décrit dans [Installation de Live Search > Configuration des clés d’API](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=fr#configure-api-keys) dans notre documentation utilisateur.
+1. Au bout de 30 minutes, vérifiez les données de catalogue exportées, comme décrit dans [Installer Live Search > Vérifier l’exportation](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=fr#verify-export) dans notre documentation utilisateur.
+1. Au bout de 30 minutes, testez la connexion comme décrit dans [Installer Live Search > Tester la connexion](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=fr#test-connection) dans notre documentation utilisateur.
 
 Ou
 
@@ -150,13 +150,13 @@ bin/magento saas:resync --feed categories --cleanup-feed
 bin/magento saas:resync --feed categoryPermissions --cleanup-feed
 ```
 
-[Envoyez une demande d’assistance](https://experienceleague.adobe.com/home?support-tab=home#support) pour demander la réindexation de l’index Live Search. Dans la description du problème, incluez votre identifiant d’espace de données/d’environnement figurant dans le panneau d’administration sous **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]**.
+[Envoyez une demande d’assistance](https://experienceleague.adobe.com/home?lang=fr&support-tab=home#support) pour demander la réindexation de l’index Live Search. Dans la description du problème, incluez votre identifiant d’espace de données/d’environnement figurant dans le panneau d’administration sous **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]**.
 
 >[!IMPORTANT]
->N’utilisez l’option `--cleanup-feed` que si vous avez mis à jour la configuration de l’API ou si vous exécutez la commande `saas:resync` avec l’option [—dry-run](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-export-cli-commands#--dry-run). Dans d’autres cas, l’utilisation de l’option `--cleanup-feed` entraîne des pertes de données et des problèmes de synchronisation des données.
+>N’utilisez l’option `--cleanup-feed` que si vous avez mis à jour la configuration de l’API ou si vous exécutez la commande `saas:resync` avec l’option [—dry-run](https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/data-export-cli-commands#--dry-run). Dans d’autres cas, l’utilisation de l’option `--cleanup-feed` entraîne des pertes de données et des problèmes de synchronisation des données.
 
 ## Lecture connexe
 
-* [ Intégration de la recherche en direct ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) dans notre documentation utilisateur
-* [Consultez les journaux et résolvez les problèmes d’exportation et de synchronisation des données SaaS Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) dans le Guide d’exportation des données SaaS Adobe Commerce
-* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+* [ Intégration de la recherche en direct ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html?lang=fr) dans notre documentation utilisateur
+* [Consultez les journaux et résolvez les problèmes d’exportation et de synchronisation des données SaaS Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) dans le Guide d’exportation des données SaaS Adobe Commerce
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook

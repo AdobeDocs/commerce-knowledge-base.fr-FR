@@ -38,7 +38,7 @@ La mise à niveau vers la version 1.5.2 de B2B échoue avec une erreur de syntax
 
 <u>Procédure à suivre </u> :
 
-1. Affectez une société à une société parent pour établir une hiérarchie de société. Pour plus d’informations, voir [Gérer la hiérarchie de l’entreprise](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) dans le guide B2B d’Adobe Commerce.
+1. Affectez une société à une société parent pour établir une hiérarchie de société. Pour plus d’informations, voir [Gérer la hiérarchie de l’entreprise](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) dans le guide B2B d’Adobe Commerce.
 1. Mettez à niveau B2B vers la version 1.5.2.
 
 <u>Résultats attendus</u> :
@@ -78,4 +78,4 @@ Pour Adobe Commerce sur les infrastructures cloud, procédez comme suit :
    composer update magento/magento-cloud-patches
    ```
 
-1. Validez et envoyez les modifications pour lancer le redéploiement. Pour obtenir des instructions, reportez-vous à la section [Application de correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) de notre guide Adobe Commerce sur Cloud .
+1. Validez et envoyez les modifications pour lancer le redéploiement. Pour obtenir des instructions, reportez-vous à la section [Application de correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) de notre guide Adobe Commerce sur Cloud .

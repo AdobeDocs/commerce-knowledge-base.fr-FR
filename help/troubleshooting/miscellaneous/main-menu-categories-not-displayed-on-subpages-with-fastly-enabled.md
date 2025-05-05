@@ -1,6 +1,6 @@
 ---
 title: Menu principal (Catégories) non affiché sur les sous-pages dont l’option est Fastly
-description: Cet article fournit un correctif lorsque le menu principal (ou le [menu de navigation supérieure de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) de notre guide d’utilisation) n’est pas affiché sur le storefront pour les sous-pages (par exemple, *blog/page*) lorsque l’option Fastly ou Varnish est activée.
+description: Cet article fournit un correctif lorsque le menu principal (ou le [menu de navigation supérieure de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html?lang=fr) de notre guide d’utilisation) n’est pas affiché sur le storefront pour les sous-pages (par exemple, *blog/page*) lorsque l’option Fastly ou Varnish est activée.
 exl-id: 7c54791d-8aa6-4f01-a28b-a7aecdb8ff74
 feature: Categories, Marketing Tools
 role: Developer

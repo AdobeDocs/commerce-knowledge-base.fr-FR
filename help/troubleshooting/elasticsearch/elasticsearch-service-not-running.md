@@ -19,7 +19,7 @@ Cet article fournit des solutions aux erreurs que vous pouvez rencontrer lorsque
 
    * v2.2.3+ prend en charge ES 5.x
    * Prise en charge de ES 6.x par v2.2.8+ et v2.3.1+
-   * ES v2.x et v5.x ne sont pas recommandés en raison de la [fin de vie](https://www.elastic.co/support/eol). Cependant, si vous disposez d’Adobe Commerce v2.3.1 et que vous souhaitez utiliser ES 2.x ou ES 5.x, vous devez [Changer le client php Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search).
+   * ES v2.x et v5.x ne sont pas recommandés en raison de la [fin de vie](https://www.elastic.co/support/eol). Cependant, si vous disposez d’Adobe Commerce v2.3.1 et que vous souhaitez utiliser ES 2.x ou ES 5.x, vous devez [Changer le client php Elasticsearch](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/search/overview-search).
 
 * Magento Open Source v2.3.0+ prend en charge ES 5.x et 6.x (mais la version 6.x est recommandée).
 
@@ -37,7 +37,7 @@ Cet article fournit des solutions aux erreurs que vous pouvez rencontrer lorsque
 <code>&lbrace;"0":"&lbrace;\"error\":&lbrace;\"root_cause\":[{\"type\":\"illegal_argument_exception\",\"reason\":\"Fielddata is disabled on text fields by default. Set fielddata=true on [%attribute_code%]] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory.\"}&rbrack;</code>
 </td>
 <td>
-<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html">Elasticsearch 5 est configuré, mais la page de recherche ne se charge pas avec "Field data is disabled..." erreur</a> dans notre base de connaissances de support.
+<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html?lang=fr">Elasticsearch 5 est configuré, mais la page de recherche ne se charge pas avec "Field data is disabled..." erreur</a> dans notre base de connaissances de support.
 </td>
 </tr>
 <tr>
@@ -45,7 +45,7 @@ Cet article fournit des solutions aux erreurs que vous pouvez rencontrer lorsque
 <code>Elasticsearch\Common\Exceptions\NoNodesAvailableException: Noticed exception 'Elasticsearch\Common\Exceptions\NoNodesAvailableException' with message 'No alive nodes found in your cluster' in /app/&lt;projectid&gt;/vendor/elasticsearch/elasticsearch/src/Elasticsearch/ConnectionPool/StaticNoPingConnectionPool.php:51</code>
 </td>
 <td>
-Les index Elasticsuite ne sont pas supprimés.  Voir <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html">Les index de suivi ElasticSuite entraînent des problèmes avec Elasticsearch</a> dans notre base de connaissances de prise en charge.
+Les index Elasticsuite ne sont pas supprimés.  Voir <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html?lang=fr">Les index de suivi ElasticSuite entraînent des problèmes avec Elasticsearch</a> dans notre base de connaissances de prise en charge.
  </td>
 </tr>
 <tr>
@@ -59,15 +59,15 @@ Les index Elasticsuite ne sont pas supprimés.  Voir <a href="https://experience
 <li><a href="https://www.cyberciti.biz/datacenter/linux-unix-bsd-osx-cannot-write-to-hard-disk/">8 conseils pour résoudre les problèmes de disque dur des systèmes Linux et Unix tels que Disque complet ou Impossible d’écrire sur le disque</a></li>
 <li><a href="https://serverfault.com/questions/315181/df-says-disk-is-full-but-it-is-not">serverfault : df indique que le disque est saturé, mais qu’il ne l’est pas.</a></li>
 <li><a href="https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux">unix.stackexchange.com : Suivi de l’emplacement de l’espace disque sous Linux ?</a></li>
-<li>Les fichiers journaux ne sont pas suffisamment archivés régulièrement. Voir <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/action-logs/action-log-archive">Configuration de l’archive de journaux</a> dans notre documentation destinée aux développeurs.</li>
-<li>Les répertoires système de fichiers ne sont pas optimisés. Voir <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#resource-file-optimization">Optimisation de fichier</a> dans notre documentation destinée aux développeurs.</li>
+<li>Les fichiers journaux ne sont pas suffisamment archivés régulièrement. Voir <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/action-logs/action-log-archive">Configuration de l’archive de journaux</a> dans notre documentation destinée aux développeurs.</li>
+<li>Les répertoires système de fichiers ne sont pas optimisés. Voir <a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/developer-tools#resource-file-optimization">Optimisation de fichier</a> dans notre documentation destinée aux développeurs.</li>
 <li>Si les solutions présentées dans la documentation ci-dessus ne résolvent pas le problème, contactez votre équipe de compte d’Adobe pour demander un stockage supplémentaire.</li>
 </ul>
 </li>
 <li>Si votre disque n’est pas saturé de stockage, mais que vous recevez toujours les messages d’erreur dans la colonne de gauche, <a href="/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket"> envoyez un ticket d’assistance</a>.</li>
 </ul>
 <ul>
-<li>Voir <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html">Les index de suivi ElasticSuite entraînent des problèmes avec Elasticsearch</a> dans notre base de connaissances de prise en charge.
+<li>Voir <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html?lang=fr">Les index de suivi ElasticSuite entraînent des problèmes avec Elasticsearch</a> dans notre base de connaissances de prise en charge.
 </li>
 </ul>
 </td>

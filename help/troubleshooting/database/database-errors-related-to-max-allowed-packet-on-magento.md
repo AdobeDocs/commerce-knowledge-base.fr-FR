@@ -45,8 +45,8 @@ La valeur par défaut de 16 Mo pour le paramètre [!DNL MySQL] `max_allowed_pack
 
 ## Lecture connexe
 
-* [Présentation de l’installation sur site](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) dans notre documentation destinée aux développeurs.
-* [Le chargement de la base de données perd la connexion à [!DNL MySQL]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql) dans notre base de connaissances de support.
-* [Bonnes pratiques de base de données pour Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) dans notre base de connaissances d’assistance.
-* [Bonnes pratiques pour résoudre les problèmes de performances de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html) dans notre base de connaissances de support.
-* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+* [Présentation de l’installation sur site](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/overview) dans notre documentation destinée aux développeurs.
+* [Le chargement de la base de données perd la connexion à [!DNL MySQL]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql) dans notre base de connaissances de support.
+* [Bonnes pratiques de base de données pour Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=fr) dans notre base de connaissances d’assistance.
+* [Bonnes pratiques pour résoudre les problèmes de performances de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=fr) dans notre base de connaissances de support.
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

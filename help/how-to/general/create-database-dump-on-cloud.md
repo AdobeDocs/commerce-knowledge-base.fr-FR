@@ -18,7 +18,7 @@ Vous ne devez utiliser qu’une seule variante (option) pour vider votre base de
 
 ## Condition préalable : SSH vers votre environnement
 
-Pour vider votre base de données sur Adobe Commerce sur l’infrastructure cloud avec toute variante abordée dans cet article, vous devez d’abord [SSH vers votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+Pour vider votre base de données sur Adobe Commerce sur l’infrastructure cloud avec toute variante abordée dans cet article, vous devez d’abord [SSH vers votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
 
 >[!WARNING]
 >
@@ -26,7 +26,7 @@ Pour vider votre base de données sur Adobe Commerce sur l’infrastructure clou
 
 ## Option 1 : db-dump (**ece-tools; recommandé**)
 
-Vous pouvez vider votre base de données à l’aide de la commande [CEE-Outils](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) :
+Vous pouvez vider votre base de données à l’aide de la commande [CEE-Outils](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=fr) :
 
 ```php
 vendor/bin/ece-tools db-dump
@@ -34,7 +34,7 @@ vendor/bin/ece-tools db-dump
 
 Il s’agit de l’option recommandée et la plus sûre.
 
-Reportez-vous à la section [Sauvegarde de la base de données (outils ECE)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) dans notre guide Commerce on Cloud Infrastructure.
+Reportez-vous à la section [Sauvegarde de la base de données (outils ECE)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html?lang=fr) dans notre guide Commerce on Cloud Infrastructure.
 
 ## Option 2 : mysqldump
 
@@ -61,4 +61,4 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
 **Documentation connexe :**
 
 * [mysqldump - A Database Backup Program](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) dans la documentation officielle de MySQL.
-* [ Variables spécifiques au cloud ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) (voir `MAGENTO_CLOUD_RELATIONSHIPS`) dans notre guide Commerce on Cloud Infrastructure.
+* [ Variables spécifiques au cloud ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=fr) (voir `MAGENTO_CLOUD_RELATIONSHIPS`) dans notre guide Commerce on Cloud Infrastructure.

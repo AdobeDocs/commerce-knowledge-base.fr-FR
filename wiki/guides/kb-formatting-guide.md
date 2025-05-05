@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Création dans Markdown
 
-En règle générale, nous utilisons le [Guide de style de syntaxe Adobe Experience League Markdown](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en), mais il existe des différences et des exceptions. Certaines balises d’HTML sont également requises dans certains cas.
+En règle générale, nous utilisons le [Guide de style de syntaxe Adobe Experience League Markdown](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=fr), mais il existe des différences et des exceptions. Certaines balises d’HTML sont également requises dans certains cas.
 
 Vous trouverez ci-dessous des exemples de mise en forme Markdown qui est le plus souvent utilisée dans notre référentiel.
 

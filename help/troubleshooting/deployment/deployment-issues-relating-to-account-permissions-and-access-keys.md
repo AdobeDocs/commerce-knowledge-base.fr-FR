@@ -64,4 +64,4 @@ Si vous avez accès au compte Marketplace associé à l’ancienne clé, procéd
 
 ## Lecture connexe
 
-* [Obtenez vos clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) dans notre documentation destinée aux développeurs.
+* [Obtenez vos clés d’authentification](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) dans notre documentation destinée aux développeurs.

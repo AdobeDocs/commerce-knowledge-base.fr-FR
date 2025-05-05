@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Ce problème a été corrigé dans [[!DNL Live Search] [2.0.4]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html). Pour installer la dernière version, reportez-vous à la section [Mise à jour [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#update) du guide de l’utilisateur.
+>Ce problème a été corrigé dans [[!DNL Live Search] [2.0.4]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html?lang=fr). Pour installer la dernière version, reportez-vous à la section [Mise à jour [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=fr#update) du guide de l’utilisateur.
 
 Cet article fournit des informations sur le problème connu où la page de liste de produits (PLP) affiche le *Nous ne pouvons pas trouver de produits correspondant à l’erreur de sélection* tandis que la fenêtre contextuelle de recherche renvoie certains éléments.
 
@@ -49,4 +49,4 @@ Il n&#39;y a pas de solution à ce problème pour le moment. Notre équipe [!DNL
 
 ## Lecture connexe
 
-[Installez  [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install) dans notre guide d’utilisation.
+[Installez  [!DNL Live Search]](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/live-search/install) dans notre guide d’utilisation.

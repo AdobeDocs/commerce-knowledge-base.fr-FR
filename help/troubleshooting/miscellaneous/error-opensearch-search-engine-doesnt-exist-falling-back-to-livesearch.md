@@ -43,4 +43,4 @@ Le message suivant est affiché dans les journaux (et observable dans [!DNL New 
 
 ## Lecture connexe
 
-* [Installer [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) dans notre guide de recherche en direct
+* [Installer [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=fr) dans notre guide de recherche en direct

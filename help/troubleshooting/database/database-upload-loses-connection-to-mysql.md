@@ -42,7 +42,7 @@ web@ddc35c264bd89a72042f1f3e5a:~$ nc database.internal 3306
 Database out of space
 ```
 
-Vous devrez allouer plus d’espace pour la base de données dans votre `services.yaml` et la déployer si vous n’avez pas d’espace disponible. Pour connaître les étapes, voir [Espace disque du service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#service-disk-space).
+Vous devrez allouer plus d’espace pour la base de données dans votre `services.yaml` et la déployer si vous n’avez pas d’espace disponible. Pour connaître les étapes, voir [Espace disque du service](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#service-disk-space).
 
 Remarque : dans le plan d’architecture Pro, vous pouvez vérifier l’espace alloué sur votre partition en exécutant la commande suivante : `df -h`
 
@@ -58,4 +58,4 @@ Filesystem                                         Size  Used Avail Use% Mounted
 
 ## Lecture connexe
 
-[Gérer l’espace disque](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) dans notre documentation destinée aux développeurs
+[Gérer l’espace disque](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) dans notre documentation destinée aux développeurs

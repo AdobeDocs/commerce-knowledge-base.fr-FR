@@ -44,7 +44,7 @@ La règle est définie sur inactive.
 
 ## Cause
 
-Ce problème est lié à la nouvelle fonctionnalité introduite récemment qui a eu un impact sur la taille de session maximale. Voir [Gestion de session](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) dans notre documentation destinée aux développeurs.
+Ce problème est lié à la nouvelle fonctionnalité introduite récemment qui a eu un impact sur la taille de session maximale. Voir [Gestion de session](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-session-management) dans notre documentation destinée aux développeurs.
 
 ## Solution
 
@@ -52,4 +52,4 @@ Augmentez la valeur &quot;Taille de session maximale&quot; dans (**Magasins** > 
 
 ## Lecture connexe
 
-* [Menu marketing](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/marketing-menu) dans notre guide d’utilisation.
+* [Menu marketing](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/marketing-menu) dans notre guide d’utilisation.

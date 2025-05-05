@@ -22,7 +22,7 @@ Toutes les facettes de storefront Adobe Commerce sont triées par ordre alphabé
 
 ## Solution
 
-Cependant, dans certains cas particuliers, les facettes peuvent ne pas être triées par ordre alphabétique comme configuré dans l’ [[!DNL Live Search] espace de travail de facettes](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace).
+Cependant, dans certains cas particuliers, les facettes peuvent ne pas être triées par ordre alphabétique comme configuré dans l’ [[!DNL Live Search] espace de travail de facettes](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace).
 
 Pour pallier ce problème, vous pouvez trier les attributs de produit dans la section [!UICONTROL Admin] attributes .
 

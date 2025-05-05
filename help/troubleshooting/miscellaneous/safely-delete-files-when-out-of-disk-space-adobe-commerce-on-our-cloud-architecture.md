@@ -1,6 +1,6 @@
 ---
 title: Suppression sécurisée de fichiers lorsque le disque manque d’espace dans Adobe Commerce sur l’infrastructure cloud
-description: Cet article fournit une solution pour lorsque vous êtes à court d’espace disque et que vous devez supprimer des fichiers en toute sécurité. Avant d’envisager cette action, consultez [Gérer l’espace disque](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#no-space-left) dans notre documentation destinée aux développeurs. Si les étapes de cet article ne vous conviennent pas ou ne résolvent pas le problème, passez en revue les étapes de cet article.
+description: Cet article fournit une solution pour lorsque vous êtes à court d’espace disque et que vous devez supprimer des fichiers en toute sécurité. Avant d’envisager cette action, consultez [Gérer l’espace disque](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#no-space-left) dans notre documentation destinée aux développeurs. Si les étapes de cet article ne vous conviennent pas ou ne résolvent pas le problème, passez en revue les étapes de cet article.
 exl-id: 6b0a5c1a-8db4-49d7-a785-b4e0bbaea0df
 feature: Cloud, Paas
 role: Developer
@@ -59,4 +59,4 @@ Dans notre base de connaissances de soutien :
 
 Dans notre documentation destinée aux développeurs :
 
-* [Gérer l’espace disque](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space)
+* [Gérer l’espace disque](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space)

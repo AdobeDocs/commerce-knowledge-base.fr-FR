@@ -21,7 +21,7 @@ Adobe Commerce sur l’infrastructure cloud (toutes versions)
 
 ## Problème
 
-Vous obtenez des erreurs de déploiement lorsque vous validez dans le référentiel de fichiers/dossiers. Par exemple, l’erreur suivante est provoquée par une tentative de connexion à la base de données alors qu’elle n’est actuellement pas disponible pendant la [phase de création](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#build-phase) :
+Vous obtenez des erreurs de déploiement lorsque vous validez dans le référentiel de fichiers/dossiers. Par exemple, l’erreur suivante est provoquée par une tentative de connexion à la base de données alors qu’elle n’est actuellement pas disponible pendant la [phase de création](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=fr#build-phase) :
 
 ```SQL
 SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for database.i  
@@ -42,7 +42,7 @@ SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for database.i
 
 ## Cause
 
-Certains fichiers/dossiers ne doivent pas être validés dans le référentiel, car ils provoquent une interruption dans le [workflow de déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html).
+Certains fichiers/dossiers ne doivent pas être validés dans le référentiel, car ils provoquent une interruption dans le [workflow de déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=fr).
 
 ## Solution
 

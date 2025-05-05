@@ -37,8 +37,8 @@ Le site n’est pas disponible ou le temps de réponse est trop élevé.
 
 ## Solution
 
-Limitez le nombre de connexions simultanées pendant le nettoyage du cache. Pour ce faire, il faut ajouter la variable de post-déploiement `WARM_UP_CONCURRENCY` afin de spécifier le nombre de demandes de nettoyage que le script de nettoyage du cache peut envoyer simultanément. La définition de cette option peut vous aider à gérer la charge sur l’infrastructure cloud Adobe Commerce. Pour connaître les étapes, voir [Variables de post-déploiement > WARM\_UP\_CONCURRENCY](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-post-deploy#warm_up_concurrency) dans notre documentation destinée aux développeurs.
+Limitez le nombre de connexions simultanées pendant le nettoyage du cache. Pour ce faire, il faut ajouter la variable de post-déploiement `WARM_UP_CONCURRENCY` afin de spécifier le nombre de demandes de nettoyage que le script de nettoyage du cache peut envoyer simultanément. La définition de cette option peut vous aider à gérer la charge sur l’infrastructure cloud Adobe Commerce. Pour connaître les étapes, voir [Variables de post-déploiement > WARM\_UP\_CONCURRENCY](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-post-deploy#warm_up_concurrency) dans notre documentation destinée aux développeurs.
 
 ## Lecture connexe
 
-[Cache de page complète](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching) dans notre guide d’utilisation
+[Cache de page complète](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management#full-page-caching) dans notre guide d’utilisation

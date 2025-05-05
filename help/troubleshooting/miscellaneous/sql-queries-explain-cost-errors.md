@@ -19,7 +19,7 @@ Il y a quelques raisons à cela. Voici les messages que vous pourriez recevoir, 
 
 ## Impossible d’exécuter la requête. La valeur de coût EXPLAIN de \[xxx\] est trop élevée pour exécuter cette requête.
 
-Si ce message s’affiche, cela signifie que la requête a été jugée trop coûteuse à exécuter. Nous avons deux recommandations pour cette situation : l’une consiste à éliminer toute clause ORDER BY de votre requête, car il s’agit d’opérations coûteuses. La seconde consiste à suivre les conseils de notre [article sur l&#39;optimisation](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html) pour ajuster votre requête.
+Si ce message s’affiche, cela signifie que la requête a été jugée trop coûteuse à exécuter. Nous avons deux recommandations pour cette situation : l’une consiste à éliminer toute clause ORDER BY de votre requête, car il s’agit d’opérations coûteuses. La seconde consiste à suivre les conseils de notre [article sur l&#39;optimisation](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html?lang=fr) pour ajuster votre requête.
 
 ## Impossible d’exécuter la requête. Cette requête renvoie \[xxx\] lignes qui dépassent notre limite de 10 000.
 

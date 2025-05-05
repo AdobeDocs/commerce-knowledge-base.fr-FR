@@ -27,7 +27,7 @@ Une erreur non spécifique s’affiche lorsque le passage en caisse des invités
 <u>Conditions préalables</u> :
 
 1. Dans l’administrateur Commerce, sous **Magasins** > **Configuration** > **Ventes** > **Passage en caisse**, définissez **Autoriser le passage en caisse des invités** = *Non*.
-1. Activez PayPal via Braintree comme décrit dans le [Braintree](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/braintree?) de notre guide d’utilisation.
+1. Activez PayPal via Braintree comme décrit dans le [Braintree](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/payments/braintree?) de notre guide d’utilisation.
 
 <u>Étapes à reproduire</u> :
 

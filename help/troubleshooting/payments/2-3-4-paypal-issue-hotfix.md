@@ -49,7 +49,7 @@ Error 500: NOTICE: PHP message: PHP Fatal error: Uncaught Error: Call to a membe
 
 Pour les commerçants sur site Adobe Commerce : appliquez le [correctif,](https://magento.com/tech-resources/download#download2353) disponible dans la section Téléchargements du portail [magento.com](https://magento.com) de mon compte.
 
-Pour Adobe Commerce sur les marchands d’infrastructure cloud : Adobe a inclus le correctif dans les correctifs cloud pour Commerce v1.0.2. Reportez-vous aux [notes de mise à jour de Cloud Patches for Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=cloud%20patche) dans notre documentation destinée aux développeurs pour obtenir des instructions sur l’application du dernier package.
+Pour Adobe Commerce sur les marchands d’infrastructure cloud : Adobe a inclus le correctif dans les correctifs cloud pour Commerce v1.0.2. Reportez-vous aux [notes de mise à jour de Cloud Patches for Commerce](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=cloud%20patche) dans notre documentation destinée aux développeurs pour obtenir des instructions sur l’application du dernier package.
 
 ## Comment appliquer le correctif
 

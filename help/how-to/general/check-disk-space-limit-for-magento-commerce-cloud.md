@@ -21,4 +21,4 @@ Pour vérifier l’espace dont vous disposez pour chaque environnement d’infra
 
 ## Lecture connexe
 
-[Gérez l’espace disque](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) dans notre documentation destinée aux développeurs.
+[Gérez l’espace disque](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) dans notre documentation destinée aux développeurs.

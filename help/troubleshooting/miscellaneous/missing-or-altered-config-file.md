@@ -36,7 +36,7 @@ Les fichiers BAK sont un produit du processus de déploiement. Si vous modifiez 
 
 Pour restaurer les fichiers de configuration :
 
-1. Connectez-vous à votre référentiel distant à l’aide de [SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
+1. Connectez-vous à votre référentiel distant à l’aide de [SSH](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
 1. Liste des fichiers de sauvegarde disponibles.
 
    ```

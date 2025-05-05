@@ -34,7 +34,7 @@ Les informations suivantes sont disponibles pour chaque requête de redimensionn
 
 **Demande de capacité de surge**
 
-Les commerçants Adobe Commerce de notre infrastructure cloud qui anticipent un besoin de capacité supplémentaire pendant la période des fêtes doivent [envoyer un ticket d’assistance pour les capacités de survol](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) via notre [Centre d’aide](/help/overview.md), indiquant les dates et les besoins de capacité attendus dans le ticket. Veuillez noter que l’augmentation de la capacité nécessitera l’utilisation de votre capacité de surcharge sous licence.
+Les commerçants Adobe Commerce de notre infrastructure cloud qui anticipent un besoin de capacité supplémentaire pendant la période des fêtes doivent [envoyer un ticket d’assistance pour les capacités de survol](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=fr) via notre [Centre d’aide](/help/overview.md), indiquant les dates et les besoins de capacité attendus dans le ticket. Veuillez noter que l’augmentation de la capacité nécessitera l’utilisation de votre capacité de surcharge sous licence.
 
 **Nous vous recommandons d’envoyer ces tickets au moins 48 heures ouvrées avant le moment où la capacité est nécessaire. Nous vous recommandons également de placer autant d’avance que possible les demandes pour la période Black Friday/Cyber Monday, car la capacité pendant cette période est limitée.**
 
@@ -47,7 +47,7 @@ Besoin d’informations supplémentaires sur la préparation du trafic en haute 
 
 Dans notre base de connaissances de soutien :
 
-* [Calcul de l’allocation du processeur pour Adobe Commerce sur le cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-cpu-allocation-calculation.html)
-* [Vérifiez si une mise à niveau de la taille des instances de l’hôte est nécessaire pour Adobe Commerce sur le cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.html)
-* [Vérifiez la configuration du processeur de l’hôte pour Adobe Commerce sur le cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-hosts-cpu-configuration.html)
-* [Identifier et mesurer les pannes d’Adobe Commerce sur le cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-identify-outages.html)
+* [Calcul de l’allocation du processeur pour Adobe Commerce sur le cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-cpu-allocation-calculation.html?lang=fr)
+* [Vérifiez si une mise à niveau de la taille des instances de l’hôte est nécessaire pour Adobe Commerce sur le cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.html?lang=fr)
+* [Vérifiez la configuration du processeur de l’hôte pour Adobe Commerce sur le cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-hosts-cpu-configuration.html?lang=fr)
+* [Identifier et mesurer les pannes d’Adobe Commerce sur le cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-identify-outages.html?lang=fr)

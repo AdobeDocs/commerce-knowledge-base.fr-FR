@@ -30,6 +30,6 @@ La désactivation d’une sortie de module sous **Magasins** > **Paramètres** >
 
 ## Solution
 
-Si vous devez désactiver la fonctionnalité du module, désactivez le module comme décrit dans la section [Activer ou désactiver les modules](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules) de notre documentation destinée aux développeurs.
+Si vous devez désactiver la fonctionnalité du module, désactivez le module comme décrit dans la section [Activer ou désactiver les modules](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/manage-modules) de notre documentation destinée aux développeurs.
 
 La fonctionnalité de désactivation de la sortie du module a été supprimée à partir de la version 2.2.0.

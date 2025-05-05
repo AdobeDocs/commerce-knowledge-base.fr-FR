@@ -17,7 +17,7 @@ Cet article explique les erreurs que vous pouvez rencontrer lors de l’utilisat
 
 ## Produits et versions concernés
 
-* [L’outil de compatibilité de mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) est compatible avec les versions Adobe Commerce à partir de la version 2.3.0.
+* [L’outil de compatibilité de mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=fr) est compatible avec les versions Adobe Commerce à partir de la version 2.3.0.
 
 ## Erreur de segmentation
 
@@ -82,4 +82,4 @@ Cette option de commande permet également à l’outil de compatibilité de mis
 bin/uct upgrade:check /<dir>/<instance-name> -m /vendor/<vendor-name>/
 ```
 
-Pour plus d’informations sur les options de l’interface de ligne de commande, voir la page [Exécuter l’outil dans une interface de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html) .
+Pour plus d’informations sur les options de l’interface de ligne de commande, voir la page [Exécuter l’outil dans une interface de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html?lang=fr) .

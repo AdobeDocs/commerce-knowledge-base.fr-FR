@@ -19,26 +19,26 @@ En fonction de la complexité de votre analyse, la génération du rapport de l�
 
 1. Si un autre membre de votre équipe a créé le rapport, commencez par confirmer l’objectif et les paramètres de son analyse.
 1. Générez les points de données attendus à comparer au rapport de l’IMS en fonction d’une requête, d’un outil de création de rapports tiers ou d’une formule.
-1. Vérifiez et confirmez la ou les définitions [metric](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-metrics.html), soit à partir du lien de mesure en Report Builder, soit en consultant l’onglet [Résumé système](https://support.magento.com/hc/en-us/articles/360016730971-Understand-View-definitions-of-metrics-filters-columns-and-column-references-in-the-System-Summary) :
+1. Vérifiez et confirmez la ou les définitions [metric](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-metrics.html?lang=fr), soit à partir du lien de mesure en Report Builder, soit en consultant l’onglet [Résumé système](https://support.magento.com/hc/en-us/articles/360016730971-Understand-View-definitions-of-metrics-filters-columns-and-column-references-in-the-System-Summary) :
    * Table de données
    * Opération
    * La colonne &quot;Operand&quot;, y compris son calcul s’il est dérivé (via le résumé du système)
    * Horodatage
    * Pour les mesures d’abonnement : dates de début et de fin
-   * Filtres, y compris ceux contenus dans tout [jeu de filtres](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html) appliqué
+   * Filtres, y compris ceux contenus dans tout [jeu de filtres](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html?lang=fr) appliqué
 1. Examinez et confirmez d’autres manipulations de données dans le rapport :
    * Formules calculées
-   * [Groupings](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/tutorials/using-visual-report-builder.html#groupby)
-   * [Perspectives](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/tutorials/using-visual-report-builder.html)
-   * [Options de temps](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/tutorials/using-visual-report-builder.html)
+   * [Groupings](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/tutorials/using-visual-report-builder.html?lang=fr#groupby)
+   * [Perspectives](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/tutorials/using-visual-report-builder.html?lang=fr)
+   * [Options de temps](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/tutorials/using-visual-report-builder.html?lang=fr)
    * Pour [l’analyse des cohortes](https://support.magento.com/hc/en-us/articles/360016504632-Create-cohort-analysis) : date de cohorte
    * Pour [l’analyse des cohortes](https://support.magento.com/hc/en-us/articles/360016504632-Create-cohort-analysis) : perspective des cohortes
 1. Si la différence implique des données récentes, confirmez le dernier point de données disponible en consultant la section **Mettre à jour les détails** sur la page Connexions.
-1. Si une mesure utilisée dans l’analyse est créée sur une table de votre base de données où des lignes ont jamais été supprimées de cette table, vérifiez auprès de l’équipe d’assistance IMS que la table est recherchée pour les lignes supprimées, ainsi que la fréquence de vérification et la [méthode de réplication](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) de la table.
-1. De même, si les colonnes utilisées dans l’analyse peuvent être modifiées après l’ajout d’une ligne, vérifiez avec la prise en charge que ces colonnes sont [vérifiées pour modification](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html), ainsi que la fréquence du nouveau contrôle.
+1. Si une mesure utilisée dans l’analyse est créée sur une table de votre base de données où des lignes ont jamais été supprimées de cette table, vérifiez auprès de l’équipe d’assistance IMS que la table est recherchée pour les lignes supprimées, ainsi que la fréquence de vérification et la [méthode de réplication](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html?lang=fr) de la table.
+1. De même, si les colonnes utilisées dans l’analyse peuvent être modifiées après l’ajout d’une ligne, vérifiez avec la prise en charge que ces colonnes sont [vérifiées pour modification](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html?lang=fr), ainsi que la fréquence du nouveau contrôle.
 
 **Toujours bloquée ?** Ne vous inquiétez pas : nous sommes là pour aider. Envoyez-nous une demande en utilisant [ces instructions](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md).
 
 ## Lecture connexe
 
-[ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+[ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

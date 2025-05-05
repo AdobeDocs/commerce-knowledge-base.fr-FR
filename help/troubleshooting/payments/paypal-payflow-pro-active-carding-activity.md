@@ -119,8 +119,8 @@ bin/magento cache:clean
 
 Après avoir installé le package, configurez Google reCAPTCHA (recommandé) ou CAPTCHA comme décrit dans la documentation suivante :
 
-* [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) dans notre guide d’utilisation.
-* [CAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-captcha) dans notre guide d’utilisation.
+* [Google reCAPTCHA](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) dans notre guide d’utilisation.
+* [CAPTCHA](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/captcha/security-captcha) dans notre guide d’utilisation.
 
 La nouvelle option de formulaire de passage en caisse est la suivante :
 

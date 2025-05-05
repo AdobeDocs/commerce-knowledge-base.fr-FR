@@ -16,9 +16,9 @@ Cet article explique comment se connecter à votre compte Fastly fourni avec Ado
 
 ## Comment afficher vos informations d’identification Fastly
 
-Reportez-vous à la section [Obtention des informations d’identification Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#cloud-fastly-creds) de notre documentation destinée aux développeurs.
+Reportez-vous à la section [Obtention des informations d’identification Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#cloud-fastly-creds) de notre documentation destinée aux développeurs.
 
 ## Comment tester les informations d’identification Fastly
 
-Reportez-vous à la section [Tester les informations d’identification Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) de la documentation destinée aux développeurs.
+Reportez-vous à la section [Tester les informations d’identification Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) de la documentation destinée aux développeurs.
 

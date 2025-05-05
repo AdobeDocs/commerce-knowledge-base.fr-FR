@@ -52,5 +52,5 @@ Pour contourner ce problème :
    * Mise à niveau du compositeur vers une version ultérieure au 26 novembre 2015 : `composer self-update`.
 
 1. Supprimez votre répertoire Adobe Commerce et vos sous-répertoires.
-1. Essayez à nouveau le téléchargement en utilisant `[composer create-project](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer)` ou `[git clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)`.
+1. Essayez à nouveau le téléchargement en utilisant `[composer create-project](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/composer)` ou `[git clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)`.
 1. Après avoir téléchargé le logiciel Adobe Commerce, mettez à jour le compositeur : `composer self-update`.

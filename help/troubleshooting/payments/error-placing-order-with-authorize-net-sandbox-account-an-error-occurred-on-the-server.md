@@ -19,7 +19,7 @@ Cet article fournit un correctif pour le message d’erreur &quot;*Une erreur s�
 >
 >**Avis d’obsolescence**
 >
->En raison de la directive [PSD2](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive) du service de paiement et de l’évolution constante de nombreuses API, Authorize.Net risque de devenir obsolète et de ne plus être conforme à la sécurité à l’avenir. Pour cette raison, il est désormais obsolète et nous vous recommandons de le désactiver dans votre configuration Adobe Commerce et de passer à l’ [extension de Commerce Marketplace](https://marketplace.magento.com/extensions.html) correspondante.
+>En raison de la directive [PSD2](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive) du service de paiement et de l’évolution constante de nombreuses API, Authorize.Net risque de devenir obsolète et de ne plus être conforme à la sécurité à l’avenir. Pour cette raison, il est désormais obsolète et nous vous recommandons de le désactiver dans votre configuration Adobe Commerce et de passer à l’ [extension de Commerce Marketplace](https://marketplace.magento.com/extensions.html) correspondante.
 >
 >**Cette intégration est supprimée de la version Adobe Commerce 2.4.0 et a été abandonnée des versions actuelles de 2.3.**
 >
@@ -27,7 +27,7 @@ Cet article fournit un correctif pour le message d’erreur &quot;*Une erreur s�
 
 ## Problème
 
-Le placement d’une commande à l’aide du compte sandbox [Authorize.Net Direct Post](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) provoque un message d’erreur :
+Le placement d’une commande à l’aide du compte sandbox [Authorize.Net Direct Post](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) provoque un message d’erreur :
 
 &#x200B;>>
 &quot;Une erreur s’est produite sur le serveur. Veuillez essayer de remettre de l&#39;ordre&quot;

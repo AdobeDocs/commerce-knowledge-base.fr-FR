@@ -83,7 +83,7 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### Cause
 
-Une classe du code base Adobe Commerce 1 est introuvable dans le code base d’Adobe Commerce 2 pendant l’ [étape de migration d’EAV](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/basics/technical-specification) de notre documentation destinée aux développeurs. Dans la plupart des cas, la classe manquante appartient à une [extension](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#extension).
+Une classe du code base Adobe Commerce 1 est introuvable dans le code base d’Adobe Commerce 2 pendant l’ [étape de migration d’EAV](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/data-migration/basics/technical-specification) de notre documentation destinée aux développeurs. Dans la plupart des cas, la classe manquante appartient à une [extension](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/glossary#extension).
 
 ### Solutions possibles
 
@@ -155,7 +155,7 @@ Deltalog for <TABLE_NAME> is not installed
 
 ### Cause
 
-Cette erreur se produit lors de la [migration incrémentielle](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/delta) (dans notre documentation destinée aux développeurs) des modifications apportées aux données. Cela signifie que les tables de suppression (avec le préfixe `m2_cl_*`) n’ont pas été trouvées dans la base de données Adobe Commerce 1. L’outil installe ces tables pendant la [migration de données](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/data) (dans notre documentation destinée aux développeurs) ainsi que les déclencheurs de base de données qui effectuent le suivi des modifications et remplissent les tables de suppression.
+Cette erreur se produit lors de la [migration incrémentielle](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/data-migration/migrate-data/delta) (dans notre documentation destinée aux développeurs) des modifications apportées aux données. Cela signifie que les tables de suppression (avec le préfixe `m2_cl_*`) n’ont pas été trouvées dans la base de données Adobe Commerce 1. L’outil installe ces tables pendant la [migration de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/data-migration/migrate-data/data) (dans notre documentation destinée aux développeurs) ainsi que les déclencheurs de base de données qui effectuent le suivi des modifications et remplissent les tables de suppression.
 
 L’erreur peut être due au fait que vous essayez de migrer à partir d’une *copie* de votre boutique Adobe Commerce 1 active, et non à partir du magasin en ligne lui-même. Lorsque vous effectuez une copie à partir d’un magasin Adobe Commerce 1 actif qui n’a jamais été migré, la copie ne contient pas les déclencheurs et les tables de suppression supplémentaires nécessaires pour terminer une migration delta, de sorte que la migration échoue. L’outil de migration de données ne fait PAS de comparaisons entre la base de données d’AC1 et d’AC2 pour migrer les différences. Au lieu de cela, l’outil utilise les déclencheurs et les tables de suppression installés lors de la première migration pour effectuer les migrations delta suivantes. Dans ce cas, votre copie de la base de données Adobe Commerce 1 active ne contient pas les déclencheurs et les tables de déverrouillage utilisés par l’outil de migration des données pour effectuer une migration.
 
@@ -165,5 +165,5 @@ Nous vous recommandons de tester le processus de migration à partir d’une cop
 
 ## Lecture connexe
 
-[ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+[ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
 

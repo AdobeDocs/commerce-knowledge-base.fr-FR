@@ -1,6 +1,6 @@
 ---
 title: Installez les derniers correctifs pour résoudre les problèmes liés aux redis d’Adobe Commerce
-description: Cet article fournit des informations sur les derniers correctifs liés aux Redis disponibles dans le package [Adobe Commerce on cloud infrastructure Patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches).
+description: Cet article fournit des informations sur les derniers correctifs liés aux Redis disponibles dans le package [Adobe Commerce on cloud infrastructure Patches](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches).
 exl-id: 0335bc11-f679-4629-b4e7-6a0e68c3ae44
 feature: Cache, Install, Services
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Installez les derniers correctifs pour résoudre les problèmes liés aux redis d’Adobe Commerce
 
-Cet article fournit des informations sur les derniers correctifs liés aux Redis disponibles dans le package [Adobe Commerce on Cloud Infrastructure Patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches).
+Cet article fournit des informations sur les derniers correctifs liés aux Redis disponibles dans le package [Adobe Commerce on Cloud Infrastructure Patches](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches).
 
 ## Produits et versions concernés
 
@@ -25,7 +25,7 @@ La consommation supplémentaire de processeur et de mémoire par Redis peut réd
 
 ## Solution
 
-Appliquez les derniers correctifs fournis par Adobe Commerce sur le package Correctifs d’infrastructure cloud. Pour obtenir des instructions détaillées, reportez-vous à la section [Application de correctifs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs.
+Appliquez les derniers correctifs fournis par Adobe Commerce sur le package Correctifs d’infrastructure cloud. Pour obtenir des instructions détaillées, reportez-vous à la section [Application de correctifs](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans notre documentation destinée aux développeurs.
 
 Les derniers correctifs Redis fournis par Adobe Commerce sur le package Correctifs d’infrastructure cloud contribuent aux éléments suivants :
 

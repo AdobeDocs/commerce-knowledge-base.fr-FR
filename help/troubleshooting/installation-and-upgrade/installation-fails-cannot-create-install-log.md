@@ -32,7 +32,7 @@ Pour résoudre le problème, modifiez la valeur de `open_basedir` et redémarrez
 
 Si vous ne savez pas comment modifier cette valeur, procédez comme suit :
 
-1. Si vous ne l&#39;avez pas déjà fait, créez [phpinfo.php](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software).
+1. Si vous ne l&#39;avez pas déjà fait, créez [phpinfo.php](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/optional-software).
 1. Saisissez l’URL suivante dans le champ d’adresse ou d’emplacement de votre navigateur : `https://<your web server IP or hostname>/<path to docroot>/phpinfo.php`
 1. Recherchez l’emplacement de `php.ini`.     `php.ini` est généralement spécifié sous la forme **Fichier de configuration chargé** dans les résultats affichés.
 1. En tant qu&#39;utilisateur disposant de droits racine, ouvrez `php.ini` dans un éditeur de texte.

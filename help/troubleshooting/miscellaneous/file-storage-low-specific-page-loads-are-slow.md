@@ -33,8 +33,8 @@ Les images ne sont pas optimisées pour équilibrer les performances et la quali
 
 Avant de télécharger des images, optimisez-les et compressez-les pour équilibrer les performances avec la qualité d’affichage. Cela permet d’augmenter l’espace et de réduire les temps de chargement des pages. Les fichiers PNG offrent des tailles plus petites pour les images avec de grandes zones de couleur unie. Les JPEG donnent des tailles plus petites pour tout le reste. Utilisez la compression la plus élevée (sans dégradation notable). C&#39;est généralement entre 60 et 80%.
 
-Utilisez [l’optimisation rapide des images](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html) pour produire des images plus efficaces en termes de stockage.
+Utilisez [l’optimisation rapide des images](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=fr) pour produire des images plus efficaces en termes de stockage.
 
 ## Lecture connexe
 
-Pour en savoir plus sur la gestion de l’espace disque (si vous utilisez Adobe Commerce sur l’infrastructure cloud), voir [Gestion de l’espace disque dans Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html) dans le guide Commerce on Cloud Infrastructure.
+Pour en savoir plus sur la gestion de l’espace disque (si vous utilisez Adobe Commerce sur l’infrastructure cloud), voir [Gestion de l’espace disque dans Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.

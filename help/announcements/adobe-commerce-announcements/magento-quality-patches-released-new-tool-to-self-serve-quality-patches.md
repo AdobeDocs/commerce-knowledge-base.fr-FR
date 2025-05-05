@@ -29,5 +29,5 @@ Une fois l’outil installé, vous pouvez rechercher les correctifs disponibles,
 
 Pour plus d’informations, reportez-vous à notre documentation destinée aux développeurs :
 
-* [Correctifs disponibles dans l’outil Correctifs de qualité](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)
-* [Notes de mise à jour de l’outil Correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+* [Correctifs disponibles dans l’outil Correctifs de qualité](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=fr)
+* [Notes de mise à jour de l’outil Correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/release-notes)

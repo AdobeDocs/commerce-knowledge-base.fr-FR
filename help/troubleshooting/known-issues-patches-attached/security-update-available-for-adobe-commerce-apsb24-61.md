@@ -14,7 +14,7 @@ ht-degree: 0%
 # Mise à jour de sécurité disponible pour Adobe Commerce - [!DNL APSB24-61]
 
 Le 13 août 2024, Adobe a publié une mise à jour de sécurité régulièrement planifiée pour le module externe Adobe Commerce, Magento Open Source et Adobe Commerce Webhooks.
-Cette mise à jour corrige les vulnérabilités [[!DNL critical, important] et  [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html) . Une exploitation réussie peut entraîner l’exécution arbitraire du code, la lecture arbitraire du système de fichiers, le contournement des fonctionnalités de sécurité et la transmission des privilèges. Le bulletin d&#39;information est le suivant : [Bulletin de sécurité des Adobes ([!DNL APSB24-61])](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
+Cette mise à jour corrige les vulnérabilités [[!DNL critical, important] et  [!DNL moderate]](https://helpx.adobe.com/fr/security/severity-ratings.html) . Une exploitation réussie peut entraîner l’exécution arbitraire du code, la lecture arbitraire du système de fichiers, le contournement des fonctionnalités de sécurité et la transmission des privilèges. Le bulletin d&#39;information est le suivant : [Bulletin de sécurité des Adobes ([!DNL APSB24-61])](https://helpx.adobe.com/fr/security/products/magento/apsb24-61.html).
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Utilisez le patch isolé suivant :
 
 ## Comment appliquer le correctif isolé
 
-Décompressez le fichier et reportez-vous à la section [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) dans notre base de connaissances de support pour obtenir des instructions.
+Décompressez le fichier et reportez-vous à la section [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=fr) dans notre base de connaissances de support pour obtenir des instructions.
 
 ## Pour les marchands Adobe Commerce on Cloud uniquement : comment déterminer si les correctifs isolés ont été appliqués
 
@@ -55,7 +55,7 @@ Décompressez le fichier et reportez-vous à la section [Comment appliquer un co
 
 <u>Pour ce faire, procédez comme suit en utilisant le fichier `VULN-27015-2.4.7_COMPOSER.patch` comme exemple</u> :
 
-1. [Installation de l’outil de correctifs de qualité](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installation de l’outil de correctifs de qualité](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr).
 1. Exécutez la commande :<br>
    ![cve-2024-34102-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
 1. Vous devriez voir une sortie similaire à celle-ci, où VULN-27015 renvoie l’état *Appliqué* :
@@ -74,4 +74,4 @@ Décompressez le fichier et reportez-vous à la section [Comment appliquer un co
 
 Mises à jour de sécurité disponibles pour Adobe Commerce :
 
-* [Bulletin de sécurité Adobe ([!DNL APSB24-61])](https://helpx.adobe.com/security/products/magento/apsb24-61.html)
+* [Bulletin de sécurité Adobe ([!DNL APSB24-61])](https://helpx.adobe.com/fr/security/products/magento/apsb24-61.html)

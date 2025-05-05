@@ -35,10 +35,10 @@ Par exemple, il est recommandé d’éviter un import de base de données MySQL 
 ## Solution
 
 1. Recherchez les erreurs de blocage dans les journaux d’application, de déploiement ou MySQL :
-   * [Emplacements des journaux Adobe Commerce et Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/enable-logging.html)
-   * [Adobe Commerce sur les emplacements des journaux d’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
+   * [Emplacements des journaux Adobe Commerce et Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/enable-logging.html?lang=fr)
+   * [Adobe Commerce sur les emplacements des journaux d’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=fr)
 1. Vérifiez votre liste de processus MySQL pour exécuter des processus avec la commande `mysql -e 'show full processlist';`.
-1. Si vous utilisez Adobe Commerce sur l’infrastructure cloud, vérifiez que l’esclave MySQL est activé. Consultez cet article : [Déployer des variables (MYSQL\_USE\_SLAVE\_CONNECTION)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection).
+1. Si vous utilisez Adobe Commerce sur l’infrastructure cloud, vérifiez que l’esclave MySQL est activé. Consultez cet article : [Déployer des variables (MYSQL\_USE\_SLAVE\_CONNECTION)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#mysql_use_slave_connection).
 1. Selon les erreurs impliquées, la solution peut se présenter ou vous devrez peut-être inclure vos informations de journal si vous devez ouvrir un [ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Lecture connexe

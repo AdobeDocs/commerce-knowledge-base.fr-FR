@@ -56,7 +56,7 @@ Le résultat contiendra une liste des attributs utilisés pour la navigation par
 Pour résoudre le problème, vous devez définir `is_filterable` (utilisé dans la navigation par couches) et `filterable_in_search` (utilisé dans la navigation par couches dans les résultats de recherche) sur &quot;0&quot; (non utilisé). Pour ce faire, procédez comme suit :
 
 1. Créez une sauvegarde de base de données.
-1. Utilisez un outil de base de données tel que [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande pour exécuter la requête SQL suivante :
+1. Utilisez un outil de base de données tel que [phpMyAdmin](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande pour exécuter la requête SQL suivante :
 
    ```sql
    UPDATE catalog_eav_attribute AS cea

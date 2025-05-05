@@ -33,7 +33,7 @@ Voici les causes les plus courantes des problèmes :
 
 ### Emplacement du code d’accès anticipé
 
-Pendant les périodes d’accès bêta, les modules de version ne sont disponibles que via le compositeur sur [repo.magento.com](https://repo.magento.com/). Les packages de version ne sont pas disponibles sur les portails GitHub et Adobe Commerce au cours de cette période, et nous les publierons à ces emplacements à la date de disponibilité générale. Pour plus d’informations sur l’utilisation du compositeur, cliquez [ici](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer).
+Pendant les périodes d’accès bêta, les modules de version ne sont disponibles que via le compositeur sur [repo.magento.com](https://repo.magento.com/). Les packages de version ne sont pas disponibles sur les portails GitHub et Adobe Commerce au cours de cette période, et nous les publierons à ces emplacements à la date de disponibilité générale. Pour plus d’informations sur l’utilisation du compositeur, cliquez [ici](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/composer).
 
 ### MageID que vous devez utiliser
 

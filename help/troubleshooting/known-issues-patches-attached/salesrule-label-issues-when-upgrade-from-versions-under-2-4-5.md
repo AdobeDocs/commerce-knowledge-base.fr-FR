@@ -25,7 +25,7 @@ Utilisez le correctif ci-joint suivant :
 
 ## Comment appliquer le correctif
 
-1. Suivez les étapes décrites dans la section [Effectuer une mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html) du guide Commerce.
+1. Suivez les étapes décrites dans la section [Effectuer une mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=fr) du guide Commerce.
 1. Appliquez le correctif joint avant la phase **[!UICONTROL Update metadata]**.
 (Vous pouvez également appliquer le correctif après avoir terminé la phase **[!UICONTROL Update metadata]**, mais vous devez exécuter à nouveau `bin/magento setup:upgrade`).
-1. Passez au reste des étapes de [Effectuer une mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html).
+1. Passez au reste des étapes de [Effectuer une mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=fr).

@@ -24,9 +24,9 @@ Cet article fournit un correctif pour le problème d’infrastructure de cloud d
 
 >[!NOTE]
 >
->Cet article ne s’applique pas à la situation dans laquelle vous obtenez une erreur 404 lorsque vous essayez de [prévisualiser la mise à jour d’évaluation](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview#preview-the-scheduled-change). Si vous rencontrez ce problème, ouvrez un [ticket de support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+>Cet article ne s’applique pas à la situation dans laquelle vous obtenez une erreur 404 lorsque vous essayez de [prévisualiser la mise à jour d’évaluation](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/guide-overview#preview-the-scheduled-change). Si vous rencontrez ce problème, ouvrez un [ticket de support](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
 
-L’accès à n’importe quelle page de storefront ou à l’administrateur génère l’erreur 404 (la page &quot;Oups, our bad..&quot;) après avoir effectué des opérations avec des mises à jour planifiées pour stocker des ressources de contenu à l’aide de [Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) (mises à jour pour stocker des ressources de contenu planifiées à l’aide du [module Magento\_Staging](https://developer.adobe.com/commerce/php/module-reference/)). Par exemple, vous avez peut-être supprimé un produit avec une mise à jour planifiée ou supprimé la date de fin de la mise à jour planifiée.
+L’accès à n’importe quelle page de storefront ou à l’administrateur génère l’erreur 404 (la page &quot;Oups, our bad..&quot;) après avoir effectué des opérations avec des mises à jour planifiées pour stocker des ressources de contenu à l’aide de [Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=fr) (mises à jour pour stocker des ressources de contenu planifiées à l’aide du [module Magento\_Staging](https://developer.adobe.com/commerce/php/module-reference/)). Par exemple, vous avez peut-être supprimé un produit avec une mise à jour planifiée ou supprimé la date de fin de la mise à jour planifiée.
 
 Une ressource de contenu de magasin comprend :
 
@@ -76,7 +76,7 @@ Si la requête renvoie une table dont la valeur `update_exists` est &quot;1&quot
 
 ![&rbrace;(mises à jour_existent_1.png](assets/updates_exist_1.png)
 
-Dans ce cas, vous pouvez vous reporter à l’[outil de dépannage de Site Down](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter) pour obtenir des idées de dépannage.
+Dans ce cas, vous pouvez vous reporter à l’[outil de dépannage de Site Down](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter) pour obtenir des idées de dépannage.
 
 ## Solution
 
@@ -88,8 +88,8 @@ Dans ce cas, vous pouvez vous reporter à l’[outil de dépannage de Site Down]
 
 1. Attendez que la tâche [!DNL cron] s’exécute (jusqu’à cinq minutes si configurée correctement) ou exécutez-la manuellement si [!DNL cron] n’est pas configuré.
 
-Le problème doit être résolu immédiatement après avoir corrigé le lien non valide. Si le problème persiste, [soumettez un ticket d&#39;assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+Le problème doit être résolu immédiatement après avoir corrigé le lien non valide. Si le problème persiste, [soumettez un ticket d&#39;assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
 
 ## Lecture connexe
 
-[ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+[ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

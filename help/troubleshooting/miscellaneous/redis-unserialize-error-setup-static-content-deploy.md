@@ -99,5 +99,5 @@ Vous pouvez également exécuter la commande `setup:static-content:deploy` suivi
 
 Dans notre documentation destinée aux développeurs :
 
-* [Configurer Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html)
-* [Mise à niveau de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html)
+* [Configurer Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html?lang=fr)
+* [Mise à niveau de ligne de commande](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=fr)

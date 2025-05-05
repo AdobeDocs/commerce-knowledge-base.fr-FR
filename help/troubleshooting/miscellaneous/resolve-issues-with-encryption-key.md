@@ -33,7 +33,7 @@ Vous devez copier la clé de chiffrement de l’environnement source et l’ajou
 
 Pour copier la clé de chiffrement :
 
-1. SSH à votre projet qui était la source du vidage de la base de données, comme décrit dans [SSH to environment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) dans notre documentation destinée aux développeurs.
+1. SSH à votre projet qui était la source du vidage de la base de données, comme décrit dans [SSH to environment](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr) dans notre documentation destinée aux développeurs.
 1. Ouvrez `app/etc/env.php` dans un éditeur de texte.
 1. Copiez la valeur de `key` pour `crypt`.
 
@@ -44,7 +44,7 @@ return array ('crypt' =>      array ('key' => '<your encryption key>', ),);
 Pour définir la valeur clé du projet de destination :
 
 1. Ouvrez la [console cloud](https://console.adobecommerce.com) et localisez votre projet.
-1. Définissez la valeur de la variable [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) (dans notre documentation destinée aux développeurs), comme décrit dans la section [Configuration de votre projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) de notre documentation destinée aux développeurs. Cela déclenchera le processus de déploiement et `CRYPT_KEY` sera remplacé dans le fichier `app/etc/env.php` sur chaque déploiement.
+1. Définissez la valeur de la variable [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr) (dans notre documentation destinée aux développeurs), comme décrit dans la section [Configuration de votre projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=fr) de notre documentation destinée aux développeurs. Cela déclenchera le processus de déploiement et `CRYPT_KEY` sera remplacé dans le fichier `app/etc/env.php` sur chaque déploiement.
 
 Vous pouvez éventuellement remplacer manuellement la clé de chiffrement dans le fichier `app/etc/env.php` :
 

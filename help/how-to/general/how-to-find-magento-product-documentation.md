@@ -44,7 +44,7 @@ Adobe Commerce sur l’infrastructure cloud</td>
 <tr>
 <td>
 <p>Documentation du marchand (utilisateur final) :</p>
-<p><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home">https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home</a></p>
+<p><a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/user-guides/home">https://experienceleague.adobe.com/fr/docs/commerce-admin/user-guides/home</a></p>
 </td>
 </tr>
 <tr>
@@ -54,7 +54,7 @@ Adobe Commerce sur l’infrastructure cloud</td>
 </td>
 <td>
 <p>Documentation du marchand (utilisateur final) :</p>
-<p><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home">https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home</a></p>
+<p><a href="https://experienceleague.adobe.com/fr/docs/commerce-admin/user-guides/home">https://experienceleague.adobe.com/fr/docs/commerce-admin/user-guides/home</a></p>
 </td>
 </tr>
 <tr>
@@ -64,7 +64,7 @@ Adobe Commerce sur l’infrastructure cloud</td>
 </td>
 <td>
 <p>Documentation du marchand (utilisateur final) :</p>
-<p><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/guide-overview.html">https://experienceleague.adobe.com/docs/commerce-admin/b2b/guide-overview.html</a></p>
+<p><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/guide-overview.html?lang=fr">https://experienceleague.adobe.com/docs/commerce-admin/b2b/guide-overview.html?lang=fr</a></p>
 </td>
 </tr>
 <tr>
@@ -85,7 +85,7 @@ Adobe Commerce sur l’infrastructure cloud</td>
 <td>Adobe Commerce Business Intelligence</td>
 <td>
 <p>Documentation du marchand (utilisateur final) :</p>
-<p><a href="https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html">https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html</a></p>
+<p><a href="https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html?lang=fr">https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html?lang=fr</a></p>
 </td>
 </tr>
 <tr>

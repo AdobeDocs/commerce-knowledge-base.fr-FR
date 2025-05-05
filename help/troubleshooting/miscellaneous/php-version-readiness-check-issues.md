@@ -32,7 +32,7 @@ La vérification échoue car vous utilisez une version PHP non prise en charge.
 
 ### Solution
 
-Pour résoudre ce problème, utilisez l’une des versions prises en charge répertoriées dans notre documentation destinée aux développeurs [2.3.x Configuration système requise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) et [2.2.x Configuration système requise](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
+Pour résoudre ce problème, utilisez l’une des versions prises en charge répertoriées dans notre documentation destinée aux développeurs [2.3.x Configuration système requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements) et [2.2.x Configuration système requise](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements).
 
 ## La vérification de la préparation PHP ne s’affiche pas
 
@@ -43,7 +43,7 @@ La vérification de l’état de préparation PHP n’affiche pas la version PHP
 
 ### Solution
 
-Ceci est le symptôme d’une configuration de tâche cron incorrecte. Pour plus d’informations, voir [Configuration des tâches cron](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration) dans notre documentation destinée aux développeurs.
+Ceci est le symptôme d’une configuration de tâche cron incorrecte. Pour plus d’informations, voir [Configuration des tâches cron](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/next-steps/configuration) dans notre documentation destinée aux développeurs.
 
 ## Version PHP incorrecte
 
@@ -62,7 +62,7 @@ Pour résoudre ce problème, essayez les méthodes suivantes :
 * Redémarrez votre serveur web ou php-fm.
 * Vérifiez la variable d&#39;environnement `$PATH` pour plusieurs chemins vers PHP.
 * Utilisez la commande `which php` pour localiser le premier fichier exécutable PHP dans votre chemin d’accès. Si ce n’est pas le cas, supprimez-le ou créez un lien symbolique vers la version PHP appropriée.
-* Utilisez une page [`phpinfo.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software) pour collecter plus d’informations.
+* Utilisez une page [`phpinfo.php`](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/optional-software) pour collecter plus d’informations.
 * Assurez-vous d’exécuter une version PHP prise en charge en fonction de la configuration requise, dans la documentation destinée aux développeurs :
-   * [Configuration requise pour Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
-* Définissez les mêmes paramètres PHP pour la ligne de commande PHP et le module externe de serveur Web PHP comme décrit dans la section [Options de configuration PHP](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements#php-settings) de notre documentation destinée aux développeurs.
+   * [Configuration requise pour Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements)
+* Définissez les mêmes paramètres PHP pour la ligne de commande PHP et le module externe de serveur Web PHP comme décrit dans la section [Options de configuration PHP](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements#php-settings) de notre documentation destinée aux développeurs.

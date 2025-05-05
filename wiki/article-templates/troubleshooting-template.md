@@ -67,7 +67,7 @@ S’il existe une solution de contournement temporaire, spécifiez-la dans une s
 
 ## Lecture connexe
 
-* [Rubrique d’article](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) dans notre guide d’utilisation.
+* [Rubrique d’article](https://experienceleague.adobe.com/fr/docs/commerce-admin/user-guides/home) dans notre guide d’utilisation.
 * [Rubrique d’article](https://developer.adobe.com/commerce/docs/) dans notre documentation destinée aux développeurs. Vous pouvez également indiquer afin de différencier les instructions dans les appareils pour les utilisateurs cloud et sur site : &quot;[Rubrique d’article](https://developer.adobe.com/commerce/docs/) dans la documentation destinée aux développeurs pour Adobe Commerce sur l’infrastructure cloud&quot;. Comparé à &quot;[Rubrique d’article](https://developer.adobe.com/commerce/docs/) dans notre documentation destinée aux développeurs pour Adobe Commerce sur site&quot;.
 * [Rubrique de l’article](https://support.magento.com/hc/en-us) dans notre base de connaissances d’assistance.
 * Toutes les ressources associées (blogs, forums, StackOverflow, etc.)

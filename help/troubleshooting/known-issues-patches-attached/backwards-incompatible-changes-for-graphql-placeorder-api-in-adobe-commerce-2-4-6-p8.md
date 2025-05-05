@@ -60,7 +60,7 @@ Pour le télécharger, cliquez sur le lien suivant :
 
 ## Comment appliquer le correctif
 
-Décompressez le fichier et reportez-vous à la section [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) dans notre base de connaissances de support pour obtenir des instructions.
+Décompressez le fichier et reportez-vous à la section [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=fr) dans notre base de connaissances de support pour obtenir des instructions.
 
 ## Pour les marchands Adobe Commerce on Cloud uniquement : comment déterminer si des correctifs ont été appliqués
 
@@ -68,7 +68,7 @@ Décompressez le fichier et reportez-vous à la section [Comment appliquer un co
 
 <u>Pour ce faire, procédez comme suit en utilisant le fichier d&#39;exemple `VULN-27015-2.4.7_COMPOSER.patch` **comme exemple</u>** :
 
-1. [Installez le  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installez le  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=fr).
 1. Exécutez la commande :<br>
    ![ac-13283-say-if-patch-apply-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
 1. Vous devriez voir une sortie similaire à celle-ci, où VULN-27015 renvoie l’état *Appliqué* :

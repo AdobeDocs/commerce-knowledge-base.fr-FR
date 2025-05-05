@@ -37,6 +37,6 @@ Le code est essentiel pour connecter la source aux commandes. Il s’agit d’un
 
 Vous pouvez supprimer une source d’un produit en transférant l’inventaire ou en déposant le produit de toutes les cargaisons à un emplacement donné.
 
-Si vous devez supprimer une source des calculs [SSA](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/selection-reservations) et du traitement des commandes de l’inventaire Adobe Commerce, vous pouvez désactiver la source. Les sources désactivées conservent toutes les données, les produits attribués et les quantités d’inventaire et peuvent être réactivées à tout moment pour recommencer l’expédition.
+Si vous devez supprimer une source des calculs [SSA](https://experienceleague.adobe.com/fr/docs/commerce-admin/inventory/basics/selection-reservations) et du traitement des commandes de l’inventaire Adobe Commerce, vous pouvez désactiver la source. Les sources désactivées conservent toutes les données, les produits attribués et les quantités d’inventaire et peuvent être réactivées à tout moment pour recommencer l’expédition.
 
 Pour plus d’informations sur la désactivation d’une source, consultez le [guide de création de sources](https://github.com/magento/inventory/wiki/Create-Sources#disable-sources) .

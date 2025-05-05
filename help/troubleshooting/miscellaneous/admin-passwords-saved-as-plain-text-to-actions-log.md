@@ -45,5 +45,5 @@ Après l&#39;installation de la mise à jour de sécurité, le mot de passe est 
 ## Plus d&#39;informations {#Adminpasswordsaresavedasplaintexttoactionslog('magento_logging_event_changes'table)-Moreinformation}
 
 * [Page de mise à jour de sécurité Adobe Commerce 2.0.16 et 2.1.9](https://magento.com/security/patches/magento-2016-and-219-security-update) dans notre centre de sécurité
-* [Mettez à niveau l’application et les composants Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) dans notre documentation destinée aux développeurs
-* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+* [Mettez à niveau l’application et les composants Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html?lang=fr) dans notre documentation destinée aux développeurs
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

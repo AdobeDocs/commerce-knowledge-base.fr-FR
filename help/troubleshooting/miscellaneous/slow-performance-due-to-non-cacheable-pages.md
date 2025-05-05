@@ -53,7 +53,7 @@ Vérifiez si les fichiers spécifiés ci-dessus ont le paramètre `cacheable="fa
 
 >[!NOTE]
 >
->Pour Adobe Commerce sur l’infrastructure cloud 2.4.1 et versions ultérieures, vous pouvez utiliser l’ [ outil d’analyse à l’échelle du site ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) pour vérifier automatiquement si votre cache de page complète n’est pas correctement configuré.
+>Pour Adobe Commerce sur l’infrastructure cloud 2.4.1 et versions ultérieures, vous pouvez utiliser l’ [ outil d’analyse à l’échelle du site ](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/site-wide-analysis-tool/access) pour vérifier automatiquement si votre cache de page complète n’est pas correctement configuré.
 
 ### Lecture connexe
 

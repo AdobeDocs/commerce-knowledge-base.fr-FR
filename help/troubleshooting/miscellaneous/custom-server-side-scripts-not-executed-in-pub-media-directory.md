@@ -35,4 +35,4 @@ Stocker les scripts côté serveur dans des répertoires non modifiables, tels q
 
 ## Documentation connexe
 
-* [Cloud pour Adobe Commerce > Structure de projet > Répertoires modifiables](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/file-structure#writable-directories) dans notre documentation destinée aux développeurs.
+* [Cloud pour Adobe Commerce > Structure de projet > Répertoires modifiables](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/project/file-structure#writable-directories) dans notre documentation destinée aux développeurs.

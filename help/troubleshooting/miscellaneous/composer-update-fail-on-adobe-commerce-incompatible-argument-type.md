@@ -57,7 +57,7 @@ Tous les commerçants sur site Adobe Commerce 2.3.5+ doivent exécuter la comman
 
 **Comment résoudre le problème sur Adobe Commerce sur l’infrastructure cloud :**
 
-Exécutez les commandes ci-dessus ou effectuez une mise à niveau vers la dernière version des outils de la CEE (ece-tools: 2002.1.7), qui sera disponible le jeudi 29 juillet. Pour les étapes, reportez-vous à la section [Cloud pour Adobe Commerce > Mise à jour des outils de mise à jour version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) dans notre documentation destinée aux développeurs.
+Exécutez les commandes ci-dessus ou effectuez une mise à niveau vers la dernière version des outils de la CEE (ece-tools: 2002.1.7), qui sera disponible le jeudi 29 juillet. Pour les étapes, reportez-vous à la section [Cloud pour Adobe Commerce > Mise à jour des outils de mise à jour version](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) dans notre documentation destinée aux développeurs.
 
 Le correctif complet sera publié dans Adobe Commerce (toutes les méthodes de déploiement) 2.4.4.
 

@@ -28,6 +28,6 @@ Si vous n’avez pas accès à l’adresse électronique actuelle, configurez le
 
 Pour modifier l’adresse électronique, procédez comme suit :
 
-1. Réinitialisez le mot de passe utilisé avec l’ancienne adresse électronique. Suivez les instructions de la section [Réinitialiser le mot de passe oublié](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) dans Adobe helpx.
+1. Réinitialisez le mot de passe utilisé avec l’ancienne adresse électronique. Suivez les instructions de la section [Réinitialiser le mot de passe oublié](https://helpx.adobe.com/fr/manage-account/using/change-or-reset-password.html) dans Adobe helpx.
 1. Le lien de réinitialisation du mot de passe est envoyé à la boîte aux lettres du propriétaire actuel avec des instructions.
 1. Accédez à la [page du compte d’Adobe](https://account.adobe.com) pour vous connecter avec le nouveau courrier électronique et configurer le mot de passe.

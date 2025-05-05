@@ -41,8 +41,8 @@ Les emplacements où le stockage des fichiers est susceptible d&#39;être rempli
 
 `du -shc` */path/to/folder*
 
-Si l’utilisation du disque multimédia représente une grande partie de l’espace disque total, vous pouvez envisager d’activer [l’optimisation d’image détaillée rapide](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization), puis de supprimer manuellement les fichiers du dossier *pub/media/catalog/product/cache* sur le serveur.
+Si l’utilisation du disque multimédia représente une grande partie de l’espace disque total, vous pouvez envisager d’activer [l’optimisation d’image détaillée rapide](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization), puis de supprimer manuellement les fichiers du dossier *pub/media/catalog/product/cache* sur le serveur.
 
 ## Lecture connexe
 
-[Vérifiez les clusters dédiés](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dans notre base de connaissances d&#39;assistance.
+[Vérifiez les clusters dédiés](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dans notre base de connaissances d&#39;assistance.

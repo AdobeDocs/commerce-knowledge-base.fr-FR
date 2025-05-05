@@ -45,6 +45,6 @@ La solution consiste à utiliser un autre navigateur que Safari. Le problème de
 ## Lecture connexe
 
 * [Qu’est-ce que le créateur de pages ?](https://developer.adobe.com/commerce/frontend-core/page-builder/) dans notre documentation destinée aux développeurs.
-* [Configuration du créateur de pages](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html) dans notre documentation destinée aux développeurs.
-* [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/introduction) dans notre guide d’utilisation.
-* [Page Builder - Elements](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/workspace#elements) dans notre guide d’utilisation.
+* [Configuration du créateur de pages](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html?lang=fr) dans notre documentation destinée aux développeurs.
+* [Page Builder](https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/introduction) dans notre guide d’utilisation.
+* [Page Builder - Elements](https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/workspace#elements) dans notre guide d’utilisation.

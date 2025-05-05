@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Le tableau de bord et le classement des résultats de recherche [!DNL Live Search] sont incorrects
 
-Si vous constatez que les données affichées dans le tableau de bord [!DNL Live Search] sont incorrectes ou si le [classement des résultats de recherche](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/category-merch#ranking-strategies) ne correspond pas à ce que vous attendez, reportez-vous aux sections suivantes pour des raisons possibles :
+Si vous constatez que les données affichées dans le tableau de bord [!DNL Live Search] sont incorrectes ou si le [classement des résultats de recherche](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/live-search/live-search-admin/category-merch#ranking-strategies) ne correspond pas à ce que vous attendez, reportez-vous aux sections suivantes pour des raisons possibles :
 
 * Le champ `topLevelSku` du contexte du produit dans les événements `productView` est manquant. Cela entraîne des conversions vides et d’autres mesures inattendues.
 

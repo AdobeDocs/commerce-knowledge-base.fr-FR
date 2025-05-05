@@ -95,7 +95,7 @@ Pour ajouter le processus en tant que tâche cron, vous devez éventuellement aj
 
 >[!TIP]
 >
->[Les fichiers YAML](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) sont sensibles à la casse et n’autorisent pas les onglets. Veillez à utiliser une mise en retrait cohérente dans l’ensemble du fichier .magento.env.yaml , sinon votre configuration risque de ne pas fonctionner comme prévu. Les exemples de la documentation et du fichier d’exemple utilisent une mise en retrait à deux espaces. Utilisez la commande de validation de l’outil ece pour vérifier votre configuration.
+>[Les fichiers YAML](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=fr) sont sensibles à la casse et n’autorisent pas les onglets. Veillez à utiliser une mise en retrait cohérente dans l’ensemble du fichier .magento.env.yaml , sinon votre configuration risque de ne pas fonctionner comme prévu. Les exemples de la documentation et du fichier d’exemple utilisent une mise en retrait à deux espaces. Utilisez la commande de validation de l’outil ece pour vérifier votre configuration.
 
 >[!NOTE]
 >

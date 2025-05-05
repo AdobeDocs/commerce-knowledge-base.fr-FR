@@ -40,7 +40,7 @@ Voici les causes les plus courantes des problèmes :
 
 Lors de la version préliminaire, les modules de version sont disponibles à deux emplacements :
 
-1. Par le biais du compositeur sur [magento.com](https://repo.magento.com/) à l’aide de l’ID principal Mage du compte. Pour plus d’informations sur l’utilisation du compositeur, reportez-vous à la section [Installation d’Adobe Commerce à l’aide du compositeur](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) de notre documentation destinée aux développeurs.
+1. Par le biais du compositeur sur [magento.com](https://repo.magento.com/) à l’aide de l’ID principal Mage du compte. Pour plus d’informations sur l’utilisation du compositeur, reportez-vous à la section [Installation d’Adobe Commerce à l’aide du compositeur](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/composer) de notre documentation destinée aux développeurs.
 1. **Mon compte** > **Téléchargements** sur [account.magento.com](https://account.magento.com/customer/account/login).
 
 >[!NOTE]

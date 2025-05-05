@@ -50,4 +50,4 @@ Supprimez les images Adobe Stock téléchargées des dossiers `pub/media` et `pu
 
 ## Lecture connexe
 
-* [Stockage multimédia](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/media-storage) dans notre guide d’utilisation.
+* [Stockage multimédia](https://experienceleague.adobe.com/fr/docs/commerce-admin/content-design/wysiwyg/storage/media-storage) dans notre guide d’utilisation.

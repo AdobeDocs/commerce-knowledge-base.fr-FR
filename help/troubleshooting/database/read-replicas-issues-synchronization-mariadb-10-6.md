@@ -54,7 +54,7 @@ La configuration `slave_parallel_mode` de la base de données a été modifiée 
 
 
 
-Pour les étapes de mise à jour de la configuration de la base de données, reportez-vous à la section [DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#database_configuration) dans la rubrique Déploiement de variables du guide Commerce on Cloud Infrastructure.
+Pour les étapes de mise à jour de la configuration de la base de données, reportez-vous à la section [DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#database_configuration) dans la rubrique Déploiement de variables du guide Commerce on Cloud Infrastructure.
 
 
 ## Lecture connexe

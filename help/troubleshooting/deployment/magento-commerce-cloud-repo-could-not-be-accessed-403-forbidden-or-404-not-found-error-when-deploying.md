@@ -66,11 +66,11 @@ Procédez comme suit pour résoudre le problème à l’aide des clés d’autor
 
 Si vous utilisiez les clés créées sous le compte partagé, vous devez contacter le propriétaire de la licence Adobe Commerce qui vous fournit l’accès et lui demander de générer les clés pour vous.
 
-Si votre licence a été précédemment révoquée en raison de problèmes de paiement et que vous avez résolu ces problèmes et que votre licence a été renouvelée, vous devez [générer les nouvelles clés d’authentification](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html).
+Si votre licence a été précédemment révoquée en raison de problèmes de paiement et que vous avez résolu ces problèmes et que votre licence a été renouvelée, vous devez [générer les nouvelles clés d’authentification](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=fr).
 
 ### 2. Ajoutez la valeur keys dans la variable env:COMPOSER\_AUTH et vérifiez si les mêmes clés sont spécifiées dans auth.json.
 
-Consultez les instructions et les informations connexes dans [Préparation de votre système existant](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) et [Ajout de clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) dans notre documentation destinée aux développeurs.
+Consultez les instructions et les informations connexes dans [Préparation de votre système existant](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/project/overview) et [Ajout de clés d’authentification](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/project/overview) dans notre documentation destinée aux développeurs.
 
 ### 3. Mise à jour ou suppression du fichier auth.json
 

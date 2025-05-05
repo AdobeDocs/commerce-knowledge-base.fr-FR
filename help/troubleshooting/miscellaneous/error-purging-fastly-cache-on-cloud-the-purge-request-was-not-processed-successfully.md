@@ -49,12 +49,12 @@ Si les informations d’identification sont correctes, vous pouvez rencontrer de
 curl -X GET -s https://api.fastly.com/service/<Service ID>/version/<Editable Version #>/snippet -H "Fastly-Key:FASTLY_API_TOKEN"
 ```
 
-Consultez la liste des VCL. Si vous rencontrez des problèmes avec les VCL par défaut de Fastly, vous pouvez charger à nouveau ou vérifier le contenu selon les [VCL par défaut Fastly](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets). Pour modifier vos VCL personnalisés, reportez-vous à la section [Fragments de code VCL personnalisés Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) du guide Commerce on Cloud Infrastructure.
+Consultez la liste des VCL. Si vous rencontrez des problèmes avec les VCL par défaut de Fastly, vous pouvez charger à nouveau ou vérifier le contenu selon les [VCL par défaut Fastly](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets). Pour modifier vos VCL personnalisés, reportez-vous à la section [Fragments de code VCL personnalisés Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=fr) du guide Commerce on Cloud Infrastructure.
 
 ## Informations supplémentaires
 
 Dans notre documentation destinée aux développeurs :
 
-* [À propos de Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [Configurer Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
-* [Fragments de code VCL personnalisés Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)
+* [À propos de Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=fr)
+* [Configurer Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=fr)
+* [Fragments de code VCL personnalisés Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=fr)

@@ -36,6 +36,6 @@ Pour déclencher manuellement la tâche [`CleanExpiredTokens.php`](https://githu
 
 ## Lecture connexe
 
-* [Services > [!DNL OAuth]](https://experienceleague.adobe.com/docs/commerce-admin/config/services/oauth.html) dans le guide de référence de configuration de Commerce
+* [Services > [!DNL OAuth]](https://experienceleague.adobe.com/docs/commerce-admin/config/services/oauth.html?lang=fr) dans le guide de référence de configuration de Commerce
 * [Guide d’authentification](https://developer.adobe.com/developer-console/docs/guides/authentication/) dans le guide Adobe Developer
-* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

@@ -52,9 +52,9 @@ Staging2 :
 ## Solution
 
 * N’utilisez pas de pièces jointes supérieures à 6 Mo ou 10 Mo.
-* Envisagez d’utiliser un serveur SMTP distant sur votre instance Adobe Commerce. Pour les étapes, reportez-vous à la section [Configuration des communications par e-mail](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html) de notre guide des systèmes d’administration.
+* Envisagez d’utiliser un serveur SMTP distant sur votre instance Adobe Commerce. Pour les étapes, reportez-vous à la section [Configuration des communications par e-mail](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html?lang=fr) de notre guide des systèmes d’administration.
 * Reconfigurez votre serveur afin que les fichiers puissent être enregistrés dans votre module, puis joignez le lien aux fichiers des emails.
 
 ## Lecture connexe
 
-* [[!DNL SendGrid] service de messagerie](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html) dans notre guide Commerce on Cloud Infrastructure.
+* [[!DNL SendGrid] service de messagerie](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html?lang=fr) dans notre guide Commerce on Cloud Infrastructure.

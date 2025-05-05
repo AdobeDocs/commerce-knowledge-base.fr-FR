@@ -17,7 +17,7 @@ Cet article fournit un correctif pour les cas où les magasins Adobe Commerce n�
 
 ## Problème
 
-Mises à jour planifiées d’une ressource de contenu de magasin (page, produit, bloc, etc.) ne s’affichent pas sur storefront immédiatement après l’heure de début de la mise à jour. Cela se produit lorsque des mises à jour ont été planifiées à l’aide de la fonctionnalité [Évaluation du contenu](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) .
+Mises à jour planifiées d’une ressource de contenu de magasin (page, produit, bloc, etc.) ne s’affichent pas sur storefront immédiatement après l’heure de début de la mise à jour. Cela se produit lorsque des mises à jour ont été planifiées à l’aide de la fonctionnalité [Évaluation du contenu](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=fr) .
 
 ## Cause
 
@@ -45,6 +45,6 @@ Si la diffusion de contenu obsolète même pour la première demande est inaccep
 
 ## Documentation connexe
 
-* [Configurez les options de purge](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) dans le guide Commerce on Cloud Infrastructure.
-* [Évaluation du contenu](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) dans la documentation sur le contenu et la conception.
+* [Configurez les options de purge](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=fr) dans le guide Commerce on Cloud Infrastructure.
+* [Évaluation du contenu](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=fr) dans la documentation sur le contenu et la conception.
 * [Distribution de contenu obsolète](https://docs.fastly.com/guides/performance-tuning/serving-stale-content) dans la documentation Fastly.
