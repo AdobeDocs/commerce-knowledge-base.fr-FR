@@ -1,6 +1,6 @@
 ---
 title: robots.txt non mis à jour ou affichage des paramètres par défaut
-description: L’article fournit une solution lorsque vous avez configuré correctement `robots.txt`, par exemple par [Bonnes pratiques pour Adobe Commerce robots.txt](https://support.magento.com/hc/en-us/articles/360048754931), mais que le `robots.txt` n’est pas mis à jour ou affiche les paramètres par défaut.
+description: L’article fournit une solution lorsque vous avez configuré correctement &grave;robots.txt&grave;, par exemple par [Bonnes pratiques pour Adobe Commerce robots.txt](https://support.magento.com/hc/en-us/articles/360048754931), mais que le &grave;robots.txt&grave; n’est pas mis à jour ou affiche les paramètres par défaut.
 exl-id: 629b1247-9282-49f9-ada3-a804ddbaa0f5
 feature: Configuration
 role: Developer

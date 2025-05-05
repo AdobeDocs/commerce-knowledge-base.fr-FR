@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-55414 : Mauvaise performance lorsque MariaDB tente de mouler les entitys_ids'
-description: Appliquez le correctif ACSD-55414 pour résoudre le problème Adobe Commerce lorsque la MariaDB tente de convertir `entitys_ids` de chaîne en entier, ce qui entrave les performances de la réindexation.
+description: Appliquez le correctif ACSD-55414 pour résoudre le problème Adobe Commerce lorsque la MariaDB tente de convertir &grave;entitys_ids&grave; de chaîne en entier, ce qui entrave les performances de la réindexation.
 feature: Attributes
 role: Admin, Developer
 exl-id: 008a4fda-5d80-47e2-8fb4-c1e39d15a6ba

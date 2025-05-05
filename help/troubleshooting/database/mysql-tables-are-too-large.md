@@ -28,7 +28,7 @@ La taille des tables [!DNL MySQL] n’affecte pas directement les performances d
 
 Tenez compte des options suivantes pour éviter une baisse des performances :
 
-* Créez une tâche CRON qui nettoie les tables volumineuses. Pour obtenir des recommandations sur la manière d’identifier les tables volumineuses, reportez-vous à la section [Rechercher les tables volumineuses [!DNL MySQL] 2} de notre base de connaissances de support.](/help/how-to/general/find-large-mysql-tables.md)
+* Créez une tâche CRON qui nettoie les tables volumineuses. Pour obtenir des recommandations sur la manière d’identifier les tables volumineuses, reportez-vous à la section [Rechercher les tables volumineuses [!DNL MySQL] 2&rbrace; de notre base de connaissances de support.](/help/how-to/general/find-large-mysql-tables.md)
 * Pour les tables de plus de 1 Go, utilisez un moteur [!DNL MySQL] optimisé pour l’écriture de journaux. Par exemple, le moteur d’archivage.
 * Mise à jour de la fonctionnalité afin d’éviter le stockage des journaux dans DB.
 

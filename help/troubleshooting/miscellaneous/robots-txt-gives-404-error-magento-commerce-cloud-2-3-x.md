@@ -1,6 +1,6 @@
 ---
 title: robots.txt donne une erreur 404 à Adobe Commerce sur l’infrastructure cloud
-description: Cet article fournit un correctif pour le moment où le fichier `robots.txt` renvoie une erreur 404 dans Adobe Commerce sur l’infrastructure cloud.
+description: Cet article fournit un correctif pour le moment où le fichier &grave;robots.txt&grave; renvoie une erreur 404 dans Adobe Commerce sur l’infrastructure cloud.
 exl-id: 6f0b9f47-1901-4c43-88d8-fd992015d70f
 feature: Cloud, Marketing Tools, Paas
 role: Developer

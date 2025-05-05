@@ -17,7 +17,7 @@ Cette sous-section fournit une description détaillée des problèmes résolus p
 
 QPT v1.1.2 comprend les correctifs suivants :
 
-1. **MDVA-37115** : corrige le problème qui entraînait l’affichage d’un avis inutile de *Il ne reste que 0} sur la page du produit configurable.*
+1. **MDVA-37115** : corrige le problème qui entraînait l’affichage d’un avis inutile de *Il ne reste que 0&rbrace; sur la page du produit configurable.*
 1. **MDVA-37364** : résolution du problème en raison duquel l’attribut personnalisé de type date rompt l’interface utilisateur de grille du client.
 1. **MDVA-38447** : corrige deux problèmes : où les produits enfants configurables *Non visibles individuellement* sont renvoyés dans la réponse GraphQL et optimisez la requête MySQL pour les produits GraphQL avec filtre de catégorie.
 1. **MDVA-38852** : résolution du problème en raison duquel l’inventaire des catalogues par conception verrouille les tables pour les mises à jour qui réduisent considérablement les performances dans le cas de plusieurs commandes parallèles.

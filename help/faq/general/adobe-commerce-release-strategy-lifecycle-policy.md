@@ -28,7 +28,7 @@ La politique relative au cycle de vie des logiciels [Adobe Commerce](https://www
 
 ### Quand les clients utilisant les versions 2.4.4, 2.4.5, 2.4.6 et 2.4.7 arriveront-ils à la fin de la prise en charge dans le cadre de cette nouvelle politique ?
 
-Les clients utilisant Adobe Commerce version 2.4.4+ recevront des correctifs de sécurité et de qualité pendant 3 ans à compter de la date de [!DNL GA] de la version, comme indiqué dans le calendrier ci-dessous. Pour connaître les dates de fin de prise en charge spécifiques](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) reportez-vous à la page [Versions publiées sur [!DNL Experience League].
+Les clients utilisant Adobe Commerce version 2.4.4+ recevront des correctifs de sécurité et de qualité pendant 3 ans à compter de la date de [!DNL GA] de la version, comme indiqué dans le calendrier ci-dessous. Pour connaître les dates de fin de prise en charge spécifiques[&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) reportez-vous à la page Versions publiées sur [!DNL Experience League].
 
 ![Graphique 1](assets/MSKB-1978-1.jpg)
 

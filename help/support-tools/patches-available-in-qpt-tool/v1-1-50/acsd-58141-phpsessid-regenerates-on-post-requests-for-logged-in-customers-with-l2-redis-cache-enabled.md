@@ -1,6 +1,6 @@
 ---
 title: "ACSD-58141 : PHPSESSID se régénère sur les demandes de POST pour les clients connectés avec le cache de Redis L2 activé"
-description: Appliquez le correctif ACSD-58141 pour résoudre le problème Adobe Commerce en raison duquel `PHPSESSID` se régénère sur les demandes de POST dans la zone Storefront pour un client connecté avec le cache L2 Redis activé et le client est mis à jour à partir de l’administrateur.
+description: Appliquez le correctif ACSD-58141 pour résoudre le problème Adobe Commerce en raison duquel &grave;PHPSESSID&grave; se régénère sur les demandes de POST dans la zone Storefront pour un client connecté avec le cache L2 Redis activé et le client est mis à jour à partir de l’administrateur.
 feature: Customers, Cache
 role: Admin, Developer
 source-git-commit: 488699c5d880baee2f7191d963368415f90c3340

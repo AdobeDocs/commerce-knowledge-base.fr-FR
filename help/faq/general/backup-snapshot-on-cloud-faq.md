@@ -65,7 +65,7 @@ Pour restaurer un snapshot existant (sur l’environnement pris en charge : Int�
 
 La sauvegarde de la base de données fait partie d’un instantané du cloud :
 
->>
+&#x200B;>>
 Un instantané est une sauvegarde complète d’un environnement qui comprend toutes les données persistantes de tous les services en cours d’exécution (par exemple, **votre base de données MySQL**, Redis, etc.) et tous les fichiers stockés sur les volumes montés.
 
 >[!NOTE]

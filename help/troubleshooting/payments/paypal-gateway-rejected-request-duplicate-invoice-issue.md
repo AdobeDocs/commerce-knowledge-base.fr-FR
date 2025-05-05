@@ -58,7 +58,7 @@ Modifiez votre profil PayPal afin de permettre plusieurs paiements par identifia
 1. Accédez à **Mes outils de vente**.
 1. Accédez à **Obtenir un paiement et gérer mon risque** > **Bloquer les paiements** et cliquez sur **Mettre à jour**.
 1. **Préférences de vente**, cliquez sur **Préférences de réception des paiements**.
-1. Sous **Bloquer les paiements accidentels**, sélectionnez **Non, autorisez plusieurs paiements par identifiant de facture**.    ![paypal_allow_multiple_payments_per_facture_id.png{1](assets/paypal_allow_multiple_payments_per_invoice_id.png)
+1. Sous **Bloquer les paiements accidentels**, sélectionnez **Non, autorisez plusieurs paiements par identifiant de facture**.    ![paypal_allow_multiple_payments_per_facture_id.png&lbrace;1](assets/paypal_allow_multiple_payments_per_invoice_id.png)
 1. Faites défiler l’écran jusqu’au bas de l’écran et cliquez sur **Enregistrer**.
 
 ## Informations supplémentaires

@@ -1,6 +1,6 @@
 ---
 title: "ACSD-55004 : le programme de validation se bloque lors du téléchargement d’un fichier d’importation supérieur à la valeur"
-description: Appliquez le correctif ACSD-55004 pour résoudre le problème Adobe Commerce en raison duquel un programme de validation se bloque lors du téléchargement d’un fichier d’importation supérieur à la valeur configurée dans `php.ini`.
+description: Appliquez le correctif ACSD-55004 pour résoudre le problème Adobe Commerce en raison duquel un programme de validation se bloque lors du téléchargement d’un fichier d’importation supérieur à la valeur configurée dans &grave;php.ini&grave;.
 feature: Data Import/Export
 role: Admin, Developer
 exl-id: 03b7667e-9b5b-4319-9135-dbc7fda7861d

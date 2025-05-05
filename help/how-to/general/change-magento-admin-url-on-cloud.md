@@ -1,6 +1,6 @@
 ---
 title: Modification de l’URL d’administration sur Adobe Commerce sur l’infrastructure cloud
-description: Par défaut, l’URL [Admin Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) est définie sur *&lt;domain\_name&gt;/admin*. Cet article explique comment modifier l’URL.
+description: Par défaut, l’URL [Admin Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) est définie sur *&lt;domain_name&gt;/admin*. Cet article explique comment modifier l’URL.
 exl-id: 6236370c-e0a2-45a6-a38f-12e219c540af
 feature: Admin Workspace, Cloud
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733

@@ -42,7 +42,7 @@ Une erreur SQL se produit lors de l’enregistrement d’une catégorie à parti
 
 1. Créez un stock et une source supplémentaire affectée à ce stock ainsi qu’un canal de vente affecté au second site web.
 1. Créez un produit test affecté au deuxième site web.
-1. Accédez à **Admin** > **Catalogue** > **Catégories**, sélectionnez **Portée** = **Second site Web** et accédez à **Produits de la catégorie** > **Tri automatique** > Déplacer les produits en rupture de stock vers le bas, puis cliquez sur **Enregistrer**} .
+1. Accédez à **Admin** > **Catalogue** > **Catégories**, sélectionnez **Portée** = **Second site Web** et accédez à **Produits de la catégorie** > **Tri automatique** > Déplacer les produits en rupture de stock vers le bas, puis cliquez sur **Enregistrer**&rbrace; .
 
 <u>Résultats attendus</u> :
 

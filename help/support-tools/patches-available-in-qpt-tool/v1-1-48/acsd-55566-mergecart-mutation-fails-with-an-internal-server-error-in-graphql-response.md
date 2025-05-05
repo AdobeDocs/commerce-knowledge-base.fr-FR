@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-55566: [!UICONTROL mergeCart] Échec de la mutation avec une erreur de serveur interne dans [!DNL GraphQL] response'
-description: Appliquez le correctif ACSD-5566 pour résoudre le problème Adobe Commerce où la mutation `mergeCart` échoue avec une erreur de serveur interne dans la réponse [!DNL GraphQL] lors de la fusion de la source et des paniers de destination qui ont les mêmes éléments de lot.
+description: Appliquez le correctif ACSD-5566 pour résoudre le problème Adobe Commerce où la mutation &grave;mergeCart&grave; échoue avec une erreur de serveur interne dans la réponse [!DNL GraphQL] lors de la fusion de la source et des paniers de destination qui ont les mêmes éléments de lot.
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
 exl-id: 84a9b861-351e-4fcc-bb91-3e31c7ae24e6

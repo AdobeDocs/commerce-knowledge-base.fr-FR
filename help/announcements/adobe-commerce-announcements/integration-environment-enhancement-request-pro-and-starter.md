@@ -27,7 +27,7 @@ Si vous êtes un client d’architecture de plan Adobe Commerce on Cloud Infrast
 1. Le commerçant doit [envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) demandant une mise à niveau vers les environnements d’intégration améliorés, en utilisant la raison de contact &quot;*Demander une modification de configuration cloud*&quot;.
 1. L’équipe d’ingénierie client d’Adobe confirme le nombre d’environnements d’intégration et commence la modification.
 1. Le marchand sera informé dans le ticket lorsque la mise à niveau sera terminée.
-1. Le commerçant redéploie les environnements d’intégration. Suivez les étapes de la section [Fusionner une branche](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) de notre documentation destinée aux développeurs. *Remarque* : le déploiement se produit automatiquement lorsque vous exécutez : <pre>origine push git <branch-name></pre>
+1. Le commerçant redéploie les environnements d’intégration. Suivez les étapes de la section [Fusionner une branche](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) de notre documentation destinée aux développeurs. *Remarque* : le déploiement se produit automatiquement lorsque vous exécutez : <pre>origine push git &lt;branch-name></pre>
 
 Des performances accrues indiquent une mise à niveau réussie vers des environnements d’intégration améliorés.
 
@@ -43,7 +43,7 @@ Des performances accrues indiquent une mise à niveau réussie vers des environn
 1. Le commerçant doit [envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) demandant une mise à niveau vers les environnements d’intégration améliorés, en utilisant la raison de contact *&quot;Demander un changement de configuration cloud&quot;* - **votre environnement d’évaluation est un environnement d’intégration appelé**.
 1. L’équipe d’ingénierie client d’Adobe confirme le nombre d’environnements d’intégration et commence la modification.
 1. Le marchand sera informé dans le ticket lorsque la mise à niveau sera terminée.
-1. Le commerçant redéploie les environnements d’intégration. Suivez les étapes de la section [Fusionner une branche](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) de notre documentation destinée aux développeurs. *Remarque* : le déploiement se produit automatiquement lorsque vous exécutez : <pre>origine push git <branch-name></pre>
+1. Le commerçant redéploie les environnements d’intégration. Suivez les étapes de la section [Fusionner une branche](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) de notre documentation destinée aux développeurs. *Remarque* : le déploiement se produit automatiquement lorsque vous exécutez : <pre>origine push git &lt;branch-name></pre>
 
 Des performances accrues indiquent une mise à niveau réussie vers des environnements d’intégration améliorés.
 

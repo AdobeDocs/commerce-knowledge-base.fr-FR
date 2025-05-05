@@ -37,7 +37,7 @@ Un utilisateur administrateur restreint ne peut pas créer d’avoir avec un rem
 1. Créez **un nouveau site Web** avec les *magasin* et *vue de magasin* associés.
 1. Définissez le site web par défaut sur le nouveau site web. Effacez les caches.
 1. Modifier la configuration du client : **Admin** > **Magasin** > **Configuration** > **Clients** > **Configuration du client** > **Partager les comptes du client = Global**.
-1. Créez un nouveau rôle d’utilisateur administrateur avec la portée du rôle définie sur le nouveau site web *(accès aux données commerciales uniquement)* dans **Admin** > **Système** > **Autorisations**}.
+1. Créez un nouveau rôle d’utilisateur administrateur avec la portée du rôle définie sur le nouveau site web *(accès aux données commerciales uniquement)* dans **Admin** > **Système** > **Autorisations**&rbrace;.
 1. Créez un compte administrateur avec ce rôle.
 1. Créez une nouvelle commande à l’aide du mode de paiement en ligne *(par exemple, Auth.net ou PayPal)*.
 1. Connectez-vous en tant qu’utilisateur administrateur restreint.

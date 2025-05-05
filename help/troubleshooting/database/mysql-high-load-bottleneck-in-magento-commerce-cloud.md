@@ -76,7 +76,7 @@ Vous trouverez ci-dessous les questions courantes que vous pouvez vous poser lor
   **Sur les grappes non surchargées** - **Les connexions esclaves vont ralentir les performances de 10 à 15 %**, ce qui est l’une des raisons pour lesquelles elles ne sont pas par défaut.
 
   *Mais sur les grappes surchargées, il y a une amélioration des performances car ces 10 à 15 % sont atténués en réduisant la charge par le trafic.*
-* Dois-je activer ces paramètres pour ma boutique ? *Si vous avez une charge élevée ou si vous attendez une charge élevée sur la base de données MySQL ou sur Redis, vous devez absolument activer les connexions esclaves. Pour un client ordinaire avec un trafic moyen, il s&#39;agit **pas**d&#39;un paramètre optimal à activer.*
+* Dois-je activer ces paramètres pour ma boutique ? *Si vous avez une charge élevée ou si vous attendez une charge élevée sur la base de données MySQL ou sur Redis, vous devez absolument activer les connexions esclaves. Pour un client ordinaire avec un trafic moyen, il s&#39;agit **pas**&#x200B;d&#39;un paramètre optimal à activer.*
 
 ## Lecture connexe
 

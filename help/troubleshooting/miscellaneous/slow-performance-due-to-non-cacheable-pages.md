@@ -36,7 +36,7 @@ Ces pages sont les suivantes :
 
 Les termes pouvant être mis en cache ou non sont des termes utilisés pour indiquer si une page doit être mise en cache ou non. Par défaut, toutes les pages peuvent être mises en cache. Toutefois, si un bloc d’une mise en page est considéré comme impossible à mettre en cache, la page entière ne peut pas être mise en cache.
 
-La capture d’écran ci-dessous montre un bloc avec un paramètre `cacheable="false"` ** ** qui crée une page pouvant être mise en cache.
+La capture d’écran ci-dessous montre un bloc avec un paramètre `cacheable="false"` **&#x200B; ** qui crée une page pouvant être mise en cache.
 
 ![non_cacheable_kb.png](assets/non_cacheable_kb.png)
 

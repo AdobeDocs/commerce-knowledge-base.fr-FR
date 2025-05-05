@@ -1,6 +1,6 @@
 ---
-title: Problème run `setup:static-content:deploy_version.txt
-description: Cet article fournit un correctif pour `deploy_version.txt` n’est pas une erreur en écriture lors de l’exécution manuelle de la commande `setup:static-content:deploy`.
+title: Problème run &grave;setup:static-content:deploy_version.txt
+description: Cet article fournit un correctif pour &grave;deploy_version.txt&grave; n’est pas une erreur en écriture lors de l’exécution manuelle de la commande &grave;setup:static-content:deploy&grave;.
 exl-id: 88d8c126-349f-49cd-8f02-2a32e4994521
 feature: Deploy, Page Content, SCD
 role: Developer

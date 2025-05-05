@@ -1,6 +1,6 @@
 ---
 title: '"ACSD-57074: *Oui/Non* attribut personnalisé avec le préfixe "price_*" dans l’attribut "attribute_code" ne fonctionne pas avec l’indexation"'
-description: Appliquez le correctif ACSD-57074 pour résoudre le problème Adobe Commerce en raison duquel l’attribut personnalisé *Oui/Non* avec le préfixe `price_*` dans l’attribut `attribute_code` ne fonctionne pas avec l’indexation.
+description: Appliquez le correctif ACSD-57074 pour résoudre le problème Adobe Commerce en raison duquel l’attribut personnalisé *Oui/Non* avec le préfixe &grave;price_*&grave; dans l’attribut &grave;attribute_code&grave; ne fonctionne pas avec l’indexation.
 feature: Products, Categories, Catalog Management
 role: Admin, Developer
 exl-id: c620722f-a66d-4cae-9614-becec589a78c

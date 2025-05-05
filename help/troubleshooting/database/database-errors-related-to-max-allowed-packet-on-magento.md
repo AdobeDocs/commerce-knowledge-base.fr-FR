@@ -21,7 +21,7 @@ Cet article fournit une solution pour les erreurs de connexion à la base de don
 
 ## Problème
 
-Lorsqu&#39;un client [!DNL MySQL] ou le serveur [mysqld](https://dev.mysql.com/doc/refman/8.0/en/mysqld.html) reçoit un paquet supérieur à [max\_allowed\_packet](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_max_allowed_packet)}, il génère une erreur [ER\_NET\_PACKET\_TOO\_LARGE](https://dev.mysql.com/doc/mysql-errors/8.0/en/server-error-reference.html#error_er_net_packet_too_large) (qui peut être vue dans `exception.log`) et ferme la connexion. Avec certains clients, vous pouvez également obtenir une *connexion perdue au serveur [!DNL MySQL] lors de la requête* si le paquet de communication est trop volumineux.
+Lorsqu&#39;un client [!DNL MySQL] ou le serveur [mysqld](https://dev.mysql.com/doc/refman/8.0/en/mysqld.html) reçoit un paquet supérieur à [max\_allowed\_packet](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_max_allowed_packet)&rbrace;, il génère une erreur [ER\_NET\_PACKET\_TOO\_LARGE](https://dev.mysql.com/doc/mysql-errors/8.0/en/server-error-reference.html#error_er_net_packet_too_large) (qui peut être vue dans `exception.log`) et ferme la connexion. Avec certains clients, vous pouvez également obtenir une *connexion perdue au serveur [!DNL MySQL] lors de la requête* si le paquet de communication est trop volumineux.
 
 <u>Étapes à reproduire</u>
 

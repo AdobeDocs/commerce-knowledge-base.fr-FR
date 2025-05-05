@@ -41,15 +41,15 @@ L’ajout d’un élément au panier à plusieurs reprises (requête parallèle)
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
         generateCustomerToken(
             email: "customer email"
             password: "customer password"
         )
-        {
+        &lbrace;
             token
-        }
-    }
+        &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -57,9 +57,9 @@ L’ajout d’un élément au panier à plusieurs reprises (requête parallèle)
 
    <pre>
     <code class="language-graphql">
-    mutation{
+    mutation&lbrace;
      createEmptyCart
-    }
+    &rbrace;
     </code>
     </pre>
 

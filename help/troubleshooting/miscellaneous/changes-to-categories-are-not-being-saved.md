@@ -1,6 +1,6 @@
 ---
 title: Les modifications apportées aux catégories ne sont pas enregistrées.
-description: Cet article fournit un correctif pour la mise à jour des catégories de produits via l’administrateur Commerce. Les modifications ne s’affichent pas sur l’administrateur et le storefront. Le problème est dû aux données corrompues de la table `catalog_category_entity`. Pour résoudre ce problème, corrigez ou supprimez les enregistrements de mise à jour de catégorie problématiques dans le tableau. Ensuite, vous devriez pouvoir mettre à jour les catégories de produits à l’aide de l’administrateur.
+description: Cet article fournit un correctif pour la mise à jour des catégories de produits via l’administrateur Commerce. Les modifications ne s’affichent pas sur l’administrateur et le storefront. Le problème est dû aux données corrompues de la table &grave;catalog_category_entity&grave;. Pour résoudre ce problème, corrigez ou supprimez les enregistrements de mise à jour de catégorie problématiques dans le tableau. Ensuite, vous devriez pouvoir mettre à jour les catégories de produits à l’aide de l’administrateur.
 exl-id: d951205c-add9-478c-9c7d-2ba975d53b14
 feature: Categories
 role: Developer

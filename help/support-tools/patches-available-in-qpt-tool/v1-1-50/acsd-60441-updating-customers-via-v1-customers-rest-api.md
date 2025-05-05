@@ -57,7 +57,7 @@ Les données client sont mises à jour.
 Vous obtenez l’erreur suivante :
 
     &quot;json
-    {
+    &lbrace;
     &quot;message&quot; : &quot;Un client avec la même adresse électronique existe déjà dans un site Web associé.&quot;,
     &quot;trace&quot;: ...
     

@@ -1,6 +1,6 @@
 ---
 title: Tester rapidement en production si un site actif utilise le même domaine
-description: Si votre site en ligne est opérationnel sur votre domaine de production (`exemple.com`) et que vous devez tester votre nouvelle boutique dans Adobe Commerce sur l’environnement de production de l’infrastructure cloud avec un réseau de diffusion de contenu Fastly activé, nous vous recommandons d’utiliser le sous-domaine (comme "prod.exemple.com"), l’ayant précédemment ajouté à Fastly, pour toute activité de test de prélancement. Cet article présente les détails et fournit des liens utiles vers les ressources de documentation Adobe Commerce connexes.
+description: Si votre site en ligne est opérationnel sur votre domaine de production (&grave;exemple.com&grave;) et que vous devez tester votre nouvelle boutique dans Adobe Commerce sur l’environnement de production de l’infrastructure cloud avec un réseau de diffusion de contenu Fastly activé, nous vous recommandons d’utiliser le sous-domaine (comme "prod.exemple.com"), l’ayant précédemment ajouté à Fastly, pour toute activité de test de prélancement. Cet article présente les détails et fournit des liens utiles vers les ressources de documentation Adobe Commerce connexes.
 exl-id: bc9d11c8-ce47-461d-b5b8-c03494bc4ceb
 feature: Cache
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8

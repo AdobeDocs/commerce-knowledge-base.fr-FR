@@ -49,30 +49,30 @@ Les modules B2B doivent être installés.
   $search: String
   $pageSize: Int!
   $currentPage : Int!
-) {
+) &lbrace;
   products(
     filter : $filter
     sort : $sort
     search: $search
     pageSize : $pageSize
     currentPage : $currentPage
-  ) {
+  ) &lbrace;
     total_count
-    page_info {
+    page_info &lbrace;
       total_pages
       current_page
       page_size
-    }
-    items {
+    &rbrace;
+    items &lbrace;
       name
       sku
-    }
-  }
-}</pre>
+    &rbrace;
+  &rbrace;
+&rbrace;</pre>
 
 Variables :
 
-<pre>{"filter":{"user_group":{"eq":""},"search":"config-100","sort":{},"pageSize":200,"currentPage":1}
+<pre>&lbrace;"filter":{"user_group":{"eq":""},"search":"config-100","sort":{},"pageSize":200,"currentPage":1}
 </pre>
 
 <u>Résultats attendus</u> :

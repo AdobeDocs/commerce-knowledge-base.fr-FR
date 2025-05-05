@@ -1,6 +1,6 @@
 ---
 title: La commande d’installation du compositeur remplace le fichier .gitignore, Adobe Commerce
-description: Cet article fournit une solution pour le cas où un fichier `.gitignore` tracké est remplacé par le compositeur sur Adobe Commerce sur l’infrastructure cloud 2.4.2-p1 et 2.3.7.
+description: Cet article fournit une solution pour le cas où un fichier &grave;.gitignore&grave; tracké est remplacé par le compositeur sur Adobe Commerce sur l’infrastructure cloud 2.4.2-p1 et 2.3.7.
 exl-id: b0604bae-d630-4292-88d7-6945db30fcf4
 feature: Install, Upgrade
 role: Developer

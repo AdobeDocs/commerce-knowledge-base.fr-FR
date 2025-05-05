@@ -1,6 +1,6 @@
 ---
-title: Redis unserialize error `setup:static-content:deploy`
-description: Cet article fournit un correctif pour l’erreur Redis unserialize lors de l’exécution de `magento setup:static-content:deploy`.
+title: Redis unserialize error &grave;setup:static-content:deploy&grave;
+description: Cet article fournit un correctif pour l’erreur Redis unserialize lors de l’exécution de &grave;magento setup:static-content:deploy&grave;.
 exl-id: 4bc88933-3bf9-4742-b864-b82d3c1b07a9
 feature: Cache, Deploy, Page Content, SCD, Services, Variables
 role: Developer

@@ -74,7 +74,7 @@ Si la requête renvoie une table dont la valeur `update_exists` est &quot;0&quot
 
 Si la requête renvoie une table dont la valeur `update_exists` est &quot;1&quot; ou un résultat vide, cela signifie que votre problème n’est pas lié aux mises à jour intermédiaires. Voici un exemple du résultat de la requête avec la valeur `update_exists` égale à &quot;1&quot; :
 
-![}(mises à jour_existent_1.png](assets/updates_exist_1.png)
+![&rbrace;(mises à jour_existent_1.png](assets/updates_exist_1.png)
 
 Dans ce cas, vous pouvez vous reporter à l’[outil de dépannage de Site Down](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter) pour obtenir des idées de dépannage.
 

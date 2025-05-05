@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-54626 : impossible de créer une règle de bon de commande avec NUMBER_OF_SKUS via GraphQL'
-description: Appliquez le correctif ACSD-54626 pour résoudre le problème Adobe Commerce en raison duquel un client ne peut pas créer de règle de bon de commande (`createPurchaseOrderApprovalRule`) avec l’attribut `NUMBER_OF_SKUS` via GraphQL.
+description: Appliquez le correctif ACSD-54626 pour résoudre le problème Adobe Commerce en raison duquel un client ne peut pas créer de règle de bon de commande (&grave;createPurchaseOrderApprovalRule&grave;) avec l’attribut &grave;NUMBER_OF_SKUS&grave; via GraphQL.
 feature: Attributes, B2B, GraphQL, Purchase Orders
 role: Admin, Developer
 exl-id: 807f06e3-6708-4860-bf46-df4404124f27

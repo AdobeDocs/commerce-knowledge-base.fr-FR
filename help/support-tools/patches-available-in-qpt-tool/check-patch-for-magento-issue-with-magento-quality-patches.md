@@ -38,7 +38,7 @@ L’outil a pour but de vous permettre d’utiliser des correctifs en libre-serv
 
 >[!NOTE]
 >
->QPT est réservé aux correctifs de qualité uniquement. Les correctifs de sécurité sont disponibles dans le Centre de sécurité du Magento [](https://magento.com/security/patches).
+>QPT est réservé aux correctifs de qualité uniquement. Les correctifs de sécurité sont disponibles dans le Centre de sécurité du Magento [&#128279;](https://magento.com/security/patches).
 
 ## Correctifs disponibles dans l’outil de correctifs de la qualité
 

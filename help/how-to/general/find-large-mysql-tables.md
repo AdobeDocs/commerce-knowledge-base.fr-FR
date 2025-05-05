@@ -1,6 +1,6 @@
 ---
 title: Recherche de tables MySQL volumineuses
-description: '''Pour identifier les tables volumineuses, connectez-vous à la base de données comme décrit dans l''article [Se connecter à la base de données](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database), puis exécutez la commande suivante, où `project_id` correspond à votre ID de projet Cloud :'''
+description: '''Pour identifier les tables volumineuses, connectez-vous à la base de données comme décrit dans l''article [Se connecter à la base de données](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database), puis exécutez la commande suivante, où &grave;project_id&grave; correspond à votre ID de projet Cloud :'''
 exl-id: dc5019bc-ab6c-4568-986f-0a294a0f3ac3
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt

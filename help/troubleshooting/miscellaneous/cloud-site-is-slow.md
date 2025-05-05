@@ -127,7 +127,7 @@ magento-cloud log
 
 ne fonctionne pas, vous pouvez vous connecter au serveur distant avec SSH et vérifier le fichier journal à l’adresse `/var/log/access.log`.
 
-Après avoir identifié les adresses IP à l’origine d’une charge importante du serveur, vous pouvez les bloquer en configurant une liste bloquée IP à partir du panneau d’administration de Commerce, sous **Magasins** > **Configuration** > AVANCÉ > **Système** > **Cache de page complet** > **Configuration rapide** > **Blocking**}.
+Après avoir identifié les adresses IP à l’origine d’une charge importante du serveur, vous pouvez les bloquer en configurant une liste bloquée IP à partir du panneau d’administration de Commerce, sous **Magasins** > **Configuration** > AVANCÉ > **Système** > **Cache de page complet** > **Configuration rapide** > **Blocking**&rbrace;.
 
 Si vous ne pouvez pas accéder à votre administrateur en raison d’une charge importante, vous pouvez utiliser l’API Fastly pour configurer les règles de blocage :
 

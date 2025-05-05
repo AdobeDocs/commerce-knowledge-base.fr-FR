@@ -26,7 +26,7 @@ Cet article fournit un correctif pour le problème connu d’Adobe Commerce 2.4.
 
 <u>Étapes à reproduire :</u>
 
-Dans Commerce Admin, accédez à **Sales** > **Braintree Virtual Terminal** . ** **
+Dans Commerce Admin, accédez à **Sales** > **Braintree Virtual Terminal** . **&#x200B; **
 
 <u>Résultat attendu :</u>
 
@@ -40,7 +40,7 @@ L’interface utilisateur de la page **Braintree Virtual Terminal** est endommag
 
 <u>Étapes à reproduire :</u>
 
-Dans Commerce Admin, accédez à **Sales** > **Braintree Virtual Terminal** . ** **
+Dans Commerce Admin, accédez à **Sales** > **Braintree Virtual Terminal** . **&#x200B; **
 
 <u>Résultat attendu :</u>
 

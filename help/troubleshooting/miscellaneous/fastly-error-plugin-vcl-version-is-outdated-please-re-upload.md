@@ -24,7 +24,7 @@ Fastly : cette erreur peut affecter toutes les versions du module Fastly, à l&#
 
 1. Connectez-vous au panneau d’administration de Commerce.
 1. Accédez à **Magasins** > **Configuration** > **Avancé** > **Système** > **Cache de page complète**   **Cache rapide.**
-1. Dans la section **Chargement automatique et activation de service**, il y aura une &quot;*version du module externe VCL obsolète ! Transférez à nouveau.Notification &quot;0}&quot;.*
+1. Dans la section **Chargement automatique et activation de service**, il y aura une &quot;*version du module externe VCL obsolète ! Transférez à nouveau.Notification &quot;0&rbrace;&quot;.*
 1. Vous tentez de charger les fragments de code VCL en cliquant sur le bouton &quot;Télécharger VCL pour Fastly&quot;, mais vous voyez toujours l’avertissement &quot;*La version VCL du module externe est obsolète ! Veuillez recharger.*&quot;
 
 ## Cause

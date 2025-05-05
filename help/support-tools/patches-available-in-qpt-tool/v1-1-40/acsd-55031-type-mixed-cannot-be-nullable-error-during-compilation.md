@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-55031: `Le type "mixte" ne peut pas être nul` lors de la compilation'''
+title: '"ACSD-55031: &grave;Le type "mixte" ne peut pas être nul&grave; lors de la compilation'''
 description: Appliquez le correctif ACSD-55031 pour résoudre le problème Adobe Commerce où l’erreur *Type "mixte" ne peut pas être nulle* lors de la compilation après l’installation d’une extension personnalisée.
 feature: Extensions
 role: Admin, Developer

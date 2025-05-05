@@ -1,6 +1,6 @@
 ---
 title: "PWA Studio : le navigateur ne peut pas résoudre le site .local.pwadev"
-description: Cet article fournit une solution lorsque un autre programme ou processus a modifié votre [fichier hôte](https://en.wikipedia.org/wiki/Hosts_(file\) et supprimé l’entrée pour votre domaine de projet.
+description: Cet article fournit une solution lorsque un autre programme ou processus a modifié votre [fichier hôte] (https://en.wikipedia.org/wiki/Hosts_(file) et supprimé l’entrée pour votre domaine de projet.
 exl-id: a1606016-906a-433f-9e40-9faa5f9bd790
 feature: Configuration
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio : le navigateur ne peut pas résoudre le site .local.pwadev
 
-Cet article fournit une solution lorsque un autre programme ou processus a modifié votre [fichier hôte](https://en.wikipedia.org/wiki/Hosts_(file\) et supprimé l’entrée pour votre domaine de projet.
+Cet article fournit une solution lorsque un autre programme ou processus a modifié votre [fichier hôte] (https://en.wikipedia.org/wiki/Hosts_(file\) et supprimé l’entrée pour votre domaine de projet.
 
 ## Produits et versions concernés
 

@@ -1,6 +1,6 @@
 ---
 title: "MC-42528 : la requête GraphQL de categoryList affiche toutes les catégories"
-description: Le correctif MC-42528 résout le problème en raison duquel la requête GraphQL de `categoryList` renvoie les catégories affectées et non affectées lorsque la catégorie de navigation d’une catégorie spécifique est définie sur "Refuser". Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.4 est installé. L’ID de correctif est MC-42528. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
+description: Le correctif MC-42528 résout le problème en raison duquel la requête GraphQL de &grave;categoryList&grave; renvoie les catégories affectées et non affectées lorsque la catégorie de navigation d’une catégorie spécifique est définie sur "Refuser". Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.4 est installé. L’ID de correctif est MC-42528. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.4.
 exl-id: 8bb29f43-92ae-4f37-b147-7121b55c185b
 feature: Catalog Management, Categories, GraphQL, Customer Service
 role: Admin

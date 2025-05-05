@@ -1,6 +1,6 @@
 ---
 title: Scripts côté serveur personnalisés non exécutés dans le répertoire de média publicitaire
-description: Cet article fournit un correctif pour les cas où les scripts personnalisés côté serveur ne sont pas exécutés s’ils sont placés dans le `.Répertoire /pub/media/` de votre application Adobe Commerce sur l’infrastructure cloud. Il s’agit d’une limitation de sécurité attendue, puisque le ` .Le répertoire /pub/media/` peut être écrit. Pour rendre les scripts exécutables, placez-les dans des répertoires non modifiables, tels que `./app/code/` ou `./pub/`.
+description: Cet article fournit un correctif pour les cas où les scripts personnalisés côté serveur ne sont pas exécutés s’ils sont placés dans le &grave;.Répertoire /pub/media/&grave; de votre application Adobe Commerce sur l’infrastructure cloud. Il s’agit d’une limitation de sécurité attendue, puisque le &grave; .Le répertoire /pub/media/&grave; peut être écrit. Pour rendre les scripts exécutables, placez-les dans des répertoires non modifiables, tels que &grave;./app/code/&grave; ou &grave;./pub/&grave;.
 exl-id: fcad8a5d-47d6-4729-93a4-2410d7710d69
 feature: Media
 role: Developer

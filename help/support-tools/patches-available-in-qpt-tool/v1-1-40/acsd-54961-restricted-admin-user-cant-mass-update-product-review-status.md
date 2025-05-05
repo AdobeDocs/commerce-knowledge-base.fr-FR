@@ -38,7 +38,7 @@ Un utilisateur administrateur restreint ne peut pas mettre à jour en masse [!UI
 1. Créez un site web, un magasin et une vue de magasin supplémentaires.
 1. Ajoutez un produit au 2e magasin, puis ajoutez une révision.
 1. Créez un utilisateur administrateur restreint ayant accès uniquement au 2e magasin.
-1. Connectez-vous en tant qu’utilisateur administrateur restreint, puis accédez à **[!UICONTROL  Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]** et définissez **Status** sur *Approuvé* ou *En attente*.
+1. Connectez-vous en tant qu’utilisateur administrateur restreint, puis accédez à **[!UICONTROL &#x200B; Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]** et définissez **Status** sur *Approuvé* ou *En attente*.
 
 <u>Résultats attendus</u> :
 

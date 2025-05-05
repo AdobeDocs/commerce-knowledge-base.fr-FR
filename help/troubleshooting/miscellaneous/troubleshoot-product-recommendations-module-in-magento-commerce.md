@@ -49,7 +49,7 @@ module correctement (consultez [[!UICONTROL Product Recommendations - Install an
 
 >[!NOTE]
 >
->Si [**[!UICONTROL Cookie Restriction Mode]**](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law) (dans notre guide de l’utilisateur) est *activé*, Adobe Commerce ne collecte pas de données comportementales tant que le client n’a pas donné son consentement. Si **[!UICONTROL Cookie Restriction Mode]**est *désactivé*, Adobe Commerce collecte les données comportementales par défaut.
+>Si [**[!UICONTROL Cookie Restriction Mode]**](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law) (dans notre guide de l’utilisateur) est *activé*, Adobe Commerce ne collecte pas de données comportementales tant que le client n’a pas donné son consentement. Si **[!UICONTROL Cookie Restriction Mode]**&#x200B;est *désactivé*, Adobe Commerce collecte les données comportementales par défaut.
 
 ## Module d&#39;export de catalogue [!DNL SaaS]
 

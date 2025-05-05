@@ -1,6 +1,6 @@
 ---
 title: Réduire les "oauth_tokens" expirés avant la mise à niveau 2.4.6
-description: Cet article fournit une solution au problème où un grand nombre de "oauth_tokens" apparaissent dans la table "oauth_token", ce qui peut entraîner un long délai dans la mise à niveau vers la version 2.4.6. Il est recommandé de réduire la table `oauth_token` à l’aide de CleanExpiredTokens.php.
+description: Cet article fournit une solution au problème où un grand nombre de "oauth_tokens" apparaissent dans la table "oauth_token", ce qui peut entraîner un long délai dans la mise à niveau vers la version 2.4.6. Il est recommandé de réduire la table &grave;oauth_token&grave; à l’aide de CleanExpiredTokens.php.
 feature: Variables, Upgrade
 role: Developer
 exl-id: 92d1d15a-04da-4ba4-b6b8-5c491af9c4c1

@@ -49,7 +49,7 @@ Chacun des points suivants peut résoudre le problème.
 
 * Vérifiez les paramètres du produit dans Admin. Accédez à **Catalog** > **Products**, ouvrez la page produit et assurez-vous que les champs suivants sont correctement configurés :
    * **Activer le produit** = *Oui.*
-   * **État du stock** : *En stock*. Ou si *Out of Stock* est la valeur correcte, assurez-vous que **Display Out of Stock Products** (**STORES** > **Settings** > **Configuration** > **CATALOG** > **Inventory** > **Options**} > {11 6}Display Of Stock Products **) est défini sur *Yes* (configuré au niveau global).**
+   * **État du stock** : *En stock*. Ou si *Out of Stock* est la valeur correcte, assurez-vous que **Display Out of Stock Products** (**STORES** > **Settings** > **Configuration** > **CATALOG** > **Inventory** > **Options**&rbrace; > {11 6}Display Of Stock Products **) est défini sur *Yes* (configuré au niveau global).**
    * **Catégories** : si vous essayez de trouver le produit sur une page de catégorie, vérifiez que le produit est attribué à la catégorie. Pour simplifier le dépannage, créez une catégorie à partir de la page active et affectez-lui un produit.
    * **Visibilité** = *Catalogue, Recherche.*
    * Dans la section **Produit sur les sites web** , assurez-vous que le produit est affecté au bon site web.

@@ -65,4 +65,4 @@ Pour résoudre les problèmes, vous devez effectuer une configuration de vernis 
 ## Lecture connexe
 
 * [Configurez Varnish et votre serveur web](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/config-varnish-server) dans notre documentation destinée aux développeurs.
-* [ ](https://varnish-cache.org/docs/5.1/reference/index.html)
+* [&#128279;](https://varnish-cache.org/docs/5.1/reference/index.html)

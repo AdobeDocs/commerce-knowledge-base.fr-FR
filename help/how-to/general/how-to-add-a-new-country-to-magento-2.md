@@ -37,27 +37,27 @@ Dans cet exemple, nous allons créer un module appelé \`ExtraCountries\` avec l
 
 (Pour en savoir plus sur la structure des modules, consultez la [présentation des modules](https://developer.adobe.com/commerce/php/architecture/modules/overview/) dans notre documentation destinée aux développeurs).
 
-<pre><ExtraCountries>
+<pre>&lt;ExtraCountries>
  |
- <etc>
+ &lt;etc>
  | |
  | config.xml
  | di.xml
  | module.xml
  |
- <Plugin>
+ &lt;Plugin>
  | |
- | <Framework>
+ | &lt;Framework>
  |   |
- |   <Locale>
+ |   &lt;Locale>
  |     |
  |     TranslatedListsPlugin.php
  |
- <Setup>
+ &lt;Setup>
  | |
- | <Patch>
+ | &lt;Patch>
  |   |
- |   <Data>
+ |   &lt;Data>
  |     |
  |     AddDataForAbstractCountry.php
  |

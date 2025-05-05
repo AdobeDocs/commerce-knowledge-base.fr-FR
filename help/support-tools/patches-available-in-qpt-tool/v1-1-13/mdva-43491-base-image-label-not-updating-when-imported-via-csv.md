@@ -1,6 +1,6 @@
 ---
 title: '''MDVA-43491 : Libellé de l''image de base non mis à jour lors d''un import via CSV'''
-description: Le correctif MDVA-43491 corrige le problème en raison duquel le `base_image_label` ne se met pas à jour lors d’un import via un fichier CSV pour un site web multi-magasin. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 est installé. L’ID de correctif est MDVA-43491. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
+description: Le correctif MDVA-43491 corrige le problème en raison duquel le &grave;base_image_label&grave; ne se met pas à jour lors d’un import via un fichier CSV pour un site web multi-magasin. Ce correctif est disponible lorsque l’[outil de correctifs de qualité (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 est installé. L’ID de correctif est MDVA-43491. Veuillez noter que le problème doit être corrigé dans Adobe Commerce 2.4.5.
 exl-id: d744423a-f582-4410-8d66-861229cce1b5
 feature: Data Import/Export
 role: Admin

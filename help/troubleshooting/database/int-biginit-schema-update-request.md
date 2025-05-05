@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Avant d’implémenter la solution dans cet article (`INT` vers `BIGINT` mise à jour du schéma), les marchands doivent toujours vérifier que le champ qu’ils vont modifier N’A AUCUNE relation de clé étrangère avec une autre table. Si le champ a des relations de clé étrangère avec une autre table, des problèmes se produiront car le champ associé est toujours `INT`. Ils peuvent utiliser la requête suivante pour vérifier cela. Cette requête répertorie les relations de clé étrangère disponibles dans la base de données pour le champ de table donné :
 >
-```mysql
+>```mysql
 >SELECT 
 >     TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME,REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME
 >FROM

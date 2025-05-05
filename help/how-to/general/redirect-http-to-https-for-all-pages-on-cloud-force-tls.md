@@ -47,7 +47,7 @@ TLS (Transport Layer Security) est un protocole pour les connexions HTTP sécuri
 
 La fonctionnalité Forcer TLS de manière rapide vous permet de forcer toutes les requêtes non chiffrées entrantes pour les pages de votre site vers TLS.
 
->>
+&#x200B;>>
 Il fonctionne en renvoyant une réponse *301 Déplacée de manière permanente* à toute requête non chiffrée, qui redirige vers l’équivalent TLS. Par exemple, envoyer une requête pour *http://www.example.com/foo.jpeg* redirigerait vers *https://www.example.com/foo.jpeg*.
 
 [Sécurisation des communications](https://docs.fastly.com/guides/securing-communications/) (documentation rapide)
@@ -61,7 +61,7 @@ Il fonctionne en renvoyant une réponse *301 Déplacée de manière permanente* 
 
 ## Aucune modification n’est nécessaire dans routes.yaml
 
-Pour activer la redirection HTTP/HTTPS sur toutes les pages **1} de votre magasin, vous n’avez pas à ajouter les pages au fichier de configuration `routes.yaml`. L’activation de l’option Forcer TLS globalement pour l’ensemble de votre magasin (à l’aide de l’administrateur Commerce) suffit.**
+Pour activer la redirection HTTP/HTTPS sur toutes les pages **1&rbrace; de votre magasin, vous n’avez pas à ajouter les pages au fichier de configuration `routes.yaml`. L’activation de l’option Forcer TLS globalement pour l’ensemble de votre magasin (à l’aide de l’administrateur Commerce) suffit.**
 
 ## Documentation rapide connexe
 

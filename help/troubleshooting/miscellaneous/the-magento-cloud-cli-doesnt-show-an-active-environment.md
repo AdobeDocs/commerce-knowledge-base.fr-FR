@@ -1,5 +1,5 @@
 ---
-title: Le `Magento-cloud` [!DNL CLI]  n’affiche pas d’environnement actif
+title: Le &grave;Magento-cloud&grave; [!DNL CLI]  n’affiche pas d’environnement actif
 description: Cet article décrit un problème Adobe Commerce connu où "Magento-cloud" [!DNL CLI]  (outil de ligne de commande) n’affiche pas d’environnement actif.
 feature: Cloud, Integration, Configuration
 role: Developer
@@ -50,6 +50,6 @@ Your environments are:
 |          Integration 2 | Integration 2    | Active       | Development    |
 ```
 
-2. Spécifiez l’identifiant de l’environnement à l’aide de votre commande :
+&#x200B;2. Spécifiez l’identifiant de l’environnement à l’aide de votre commande :
 
 `magento-cloud ssh -e integration`

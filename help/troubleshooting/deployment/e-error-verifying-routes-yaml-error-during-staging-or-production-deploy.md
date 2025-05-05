@@ -36,9 +36,9 @@ Le déploiement est bloqué et le message d&#39;erreur suivant s&#39;affiche dan
 <pre>Déploiement des applications Vérification de la configuration E : erreur lors de la vérification de routes.yaml.
 Les domaines suivants sont configurés pour votre grappe, mais aucun itinéraire n’est défini dans votre fichier routes.yaml :
 
-- store1.example.com
-- store2.example.com
-- test-store.example.com
+&#x200B;- store1.example.com
+&#x200B;- store2.example.com
+&#x200B;- test-store.example.com
 
 Avec votre configuration de routes.yaml actuelle,
   ces domaines ne seraient PAS servis !

@@ -32,7 +32,7 @@ Il vous permet d’effectuer les opérations suivantes :
 
 Voici un exemple du tableau d’état pour afficher les correctifs disponibles :
 
-![}Magento_Correctifs_list](assets/status_table.png)
+![&rbrace;Magento_Correctifs_list](assets/status_table.png)
 
 L’outil a pour but de vous permettre d’utiliser en libre-service des correctifs pour les problèmes que vous pouvez rencontrer avec Adobe Commerce ou d’appliquer facilement des correctifs suggérés par le support d’Adobe Commerce.
 

@@ -1,6 +1,6 @@
 ---
 title: Résolution des problèmes /tmp de montage complet pour Adobe Commerce
-description: Cet article fournit une solution pour lorsque le montage `/tmp` est plein, que le site peut être hors service et que vous ne pouvez pas SSH dans un noeud.
+description: Cet article fournit une solution pour lorsque le montage &grave;/tmp&grave; est plein, que le site peut être hors service et que vous ne pouvez pas SSH dans un noeud.
 exl-id: e72d0f99-0060-474b-bb1c-2851896e1e43
 feature: Storage
 role: Developer

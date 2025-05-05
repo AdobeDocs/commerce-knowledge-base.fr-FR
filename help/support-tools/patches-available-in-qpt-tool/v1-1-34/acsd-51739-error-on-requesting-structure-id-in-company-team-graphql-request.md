@@ -1,6 +1,6 @@
 ---
-title: '"ACSD-51739 : Erreur lors de la demande `structure_id` dans la demande GraphQL "CompanyTeam`"'
-description: Appliquez le correctif ACSD-51739 pour résoudre le problème Adobe Commerce en raison duquel une erreur est renvoyée lorsque le `structure_id` est demandé dans une requête GraphQL "CompanyTeam`.
+title: '"ACSD-51739 : Erreur lors de la demande &grave;structure_id&grave; dans la demande GraphQL "CompanyTeam&grave;"'
+description: Appliquez le correctif ACSD-51739 pour résoudre le problème Adobe Commerce en raison duquel une erreur est renvoyée lorsque le &grave;structure_id&grave; est demandé dans une requête GraphQL "CompanyTeam&grave;.
 exl-id: 31c085e0-c8be-4709-9620-80ff360dca9a
 source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
 workflow-type: tm+mt

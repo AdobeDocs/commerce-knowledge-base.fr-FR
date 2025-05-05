@@ -27,7 +27,7 @@ L’ACSD-49877 corrige le problème en raison duquel l’option de lecture autom
 
 >[!NOTE]
 >
->Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package [!magento/quality-Correctifs] vers la dernière version et vérifiez la compatibilité sur le [[!DNL Quality Patches Tool] : recherchez des correctifs]. Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
+>Le correctif peut devenir applicable à d’autres versions avec de nouvelles versions [!DNL Quality Patches Tool]. Pour vérifier si le correctif est compatible avec votre version d’Adobe Commerce, mettez à jour le package [ !magento/quality-Correctifs] vers la dernière version et vérifiez la compatibilité sur le [[!DNL Quality Patches Tool] : recherchez des correctifs]. Utilisez l’ID de correctif comme mot-clé de recherche pour localiser le correctif.
 
 ## Problème
 

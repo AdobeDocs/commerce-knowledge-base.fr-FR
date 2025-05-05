@@ -29,7 +29,7 @@ Cet article fournit un correctif pour le message d’erreur &quot;*Une erreur s�
 
 Le placement d’une commande à l’aide du compte sandbox [Authorize.Net Direct Post](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) provoque un message d’erreur :
 
->>
+&#x200B;>>
 &quot;Une erreur s’est produite sur le serveur. Veuillez essayer de remettre de l&#39;ordre&quot;
 
 ## Cause 1 : le mode test est activé
