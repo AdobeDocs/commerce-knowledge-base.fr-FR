@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: a4a913c9159e9267ca20da99b9d690c85667c7db
+source-git-commit: 75bf72db367c120efe650d42fe0cf0bc9d51109b
 workflow-type: tm+mt
-source-wordcount: '9340'
+source-wordcount: '9350'
 ht-degree: 0%
 
 ---
@@ -946,6 +946,7 @@ ht-degree: 0%
       * [Migration de l’intégration de la méthode d’expédition [!DNL FedEx] de l’API SOAP vers RESTful](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
       * [Erreur de dépassement du nombre maximal de cookies dans Adobe Commerce](/help/troubleshooting/known-issues-patches-attached/maximum-number-of-cookies-would-be-exceeded-error.md)
       * [Délai d’exécution plus long pour tous les points d’entrée web asynchrones en bloc après le correctif de sécurité APSB25-08](/help/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch.md)
+      * [Noms de groupes de clients, segments et informations sur les règles promotionnelles exposés via  [!DNL GraphQL]](/help/troubleshooting/known-issues-patches-attached/hotfix-for-exposed-customer-group-segments-promo-rules-information.md)
    * Elasticsearch {#elasticsearch}
       * [Retour à  [!DNL Elasticsearch7]  lorsque le moteur de recherche est défini sur  [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [Problèmes Elasticsearch après la mise à niveau de l’infrastructure cloud Adobe Commerce 2.3.1+](/help/troubleshooting/elasticsearch/elasticsearch-issues-after-magento-commerce-cloud-2-3-1-upgrade.md)
