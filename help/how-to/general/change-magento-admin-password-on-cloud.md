@@ -16,15 +16,15 @@ ht-degree: 0%
 
 ![login_panel_s.png](assets/login_panel_s.png)
 
-Lisez les étapes de la section [ Réinitialiser votre mot de passe de l’option Connexion administrateur ](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html#admin-sign-in) dans notre guide d’utilisation.
+Lisez les étapes de la section [ Réinitialiser votre mot de passe de l’option Connexion administrateur ](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html?lang=fr#admin-sign-in) dans notre guide d’utilisation.
 
 Vous trouverez ci-dessous les notes d’utilisation critiques.
 
 ### Activer les emails sortants
 
-Avant d’utiliser le formulaire **Mot de passe oublié**, assurez-vous d’[activer les e-mails sortants](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html) à l’aide de la [console cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html). Cela s’applique uniquement aux environnements d’intégration et aux projets Sandbox.
+Avant d’utiliser le formulaire **Mot de passe oublié**, assurez-vous d’[activer les e-mails sortants](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html?lang=fr) à l’aide de la [console cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=fr). Cela s’applique uniquement aux environnements d’intégration et aux projets Sandbox.
 
-Si les e-mails sortants sont réellement désactivés sur Pro Production ou Staging (signifiant que l&#39;e-mail n&#39;a pas été récupéré par SendGrid), vous pouvez vérifier cela en cochant la case [ Activer les e-mails dans la console cloud ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/outgoing-emails#enable-emails-in-the-cli). Si le problème persiste, vous pouvez envoyer un ticket d’assistance pour Adobe [ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si les e-mails sortants sont réellement désactivés sur Pro Production ou Staging (signifiant que l&#39;e-mail n&#39;a pas été récupéré par SendGrid), vous pouvez vérifier cela en cochant la case [ Activer les e-mails dans la console cloud ](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/outgoing-emails#enable-emails-in-the-cli). Si le problème persiste, vous pouvez envoyer un ticket d’assistance pour Adobe [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 ### Vérifier votre dossier Courrier indésirable
 
@@ -34,5 +34,5 @@ Si vous ne trouvez pas le message avec un lien Réinitialiser le mot de passe , 
 
 Si vous ne pouvez pas restaurer ou réinitialiser le mot de passe de l’utilisateur existant, vous pouvez créer un utilisateur administrateur et définir un mot de passe pour cet utilisateur. Pour ce faire, procédez comme suit :
 
-1. Utilisez [SSH pour vous connecter à l’environnement distant](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. Utilisez [SSH pour vous connecter à l’environnement distant](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
 1. Exécutez la commande suivante : `bin/magento admin:user:create   --admin-user=%user_name% --admin-password=%your_password% --admin-email=%your_email% --admin-firstname=%admin_user_first_name% --admin-lastname=%admin_user_last_name%`
