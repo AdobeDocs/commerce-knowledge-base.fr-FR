@@ -21,7 +21,7 @@ Adobe Commerce propose tout un éventail d’outils d’assistance qui vous perm
 
 * [!DNL Quality Patches Tool] (QPT)
 
-   * [ Correctifs disponibles dans la présentation de l’outil QPT ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview)
+   * [ Correctifs disponibles dans la présentation de l’outil QPT ](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview)
 
      Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) (QPT) est un outil permettant d’appliquer des correctifs de qualité individuels développés par Adobe et la communauté Magento Open Source.
 
@@ -35,20 +35,20 @@ Adobe Commerce propose tout un éventail d’outils d’assistance qui vous perm
 
 * Observation pour Adobe Commerce
 
-   * [Présentation de l’observation pour Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/observation-for-adobe-commerce/intro)
+   * [Présentation de l’observation pour Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/observation-for-adobe-commerce/intro)
 
 * Alertes gérées sur Adobe Commerce
-   * [Alertes gérées sur Adobe Commerce : alerte critique de mémoire Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert)
-   * [Alertes gérées pour Adobe Commerce : alerte de disque](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert)
-   * [ Alertes gérées pour Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)
-   * [Alertes gérées pour Adobe Commerce : alerte critique de disque](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert)
-   * [Alertes gérées sur Adobe Commerce : alerte d’avertissement de mémoire Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert)
-   * [Alertes gérées pour Adobe Commerce : alerte de mémoire](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert)
-   * [Alertes gérées sur Adobe Commerce : alerte critique de CPU](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert)
-   * [Alertes gérées sur Adobe Commerce : alerte critique de la mémoire](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert)
-   * [Alertes gérées pour Adobe Commerce : alerte critique Apdex](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert)
-   * [Alertes gérées sur Adobe Commerce : alertes MariaDB](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts)
-   * [Alertes gérées pour Adobe Commerce : alerte d’avertissement Apdex](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert)
-   * [Alertes gérées pour Adobe Commerce : alerte d’avertissement de CPU](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert)
+   * [Alertes gérées sur Adobe Commerce : alerte critique de mémoire Redis](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert)
+   * [Alertes gérées pour Adobe Commerce : alerte de disque](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert)
+   * [ Alertes gérées pour Adobe Commerce ](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)
+   * [Alertes gérées pour Adobe Commerce : alerte critique de disque](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert)
+   * [Alertes gérées sur Adobe Commerce : alerte d’avertissement de mémoire Redis](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert)
+   * [Alertes gérées pour Adobe Commerce : alerte de mémoire](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert)
+   * [Alertes gérées sur Adobe Commerce : alerte critique de CPU](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert)
+   * [Alertes gérées sur Adobe Commerce : alerte critique de la mémoire](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert)
+   * [Alertes gérées pour Adobe Commerce : alerte critique Apdex](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert)
+   * [Alertes gérées sur Adobe Commerce : alertes MariaDB](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts)
+   * [Alertes gérées pour Adobe Commerce : alerte d’avertissement Apdex](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert)
+   * [Alertes gérées pour Adobe Commerce : alerte d’avertissement de CPU](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert)
 * Outil d’évaluation de site Commerce
-   * [Évaluation du site Commerce](https://experienceleague.adobe.com/tools/commerce-site-assessment/index.html)
+   * [Évaluation du site Commerce](https://experienceleague.adobe.com/tools/commerce-site-assessment/index.html?lang=fr)
