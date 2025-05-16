@@ -7,7 +7,7 @@ type: Troubleshooting
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/commerce-knowledge-base.fr-FR
 index: true
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 source-git-commit: ec1681bde5a169547fb89314e9bcb642a0d9c6de
 workflow-type: tm+mt
 source-wordcount: '70'
