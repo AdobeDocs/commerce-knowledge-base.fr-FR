@@ -21,13 +21,13 @@ ht-degree: 0%
 
 **Solution :**
 
-* Si vous êtes le propriétaire du compte (titulaire du compte principal), contactez votre équipe de compte Adobe. Si le membre de votre équipe a accès à l’assistance, demandez-lui de [créer un ticket d’assistance](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed). Indiquez le nom et l’adresse e-mail associés à votre compte.
+* Si vous êtes le propriétaire du compte (titulaire du compte principal), contactez votre équipe de compte Adobe. Si le membre de votre équipe a accès à l’assistance, demandez-lui de [créer un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed). Indiquez le nom et l’adresse e-mail associés à votre compte.
 * Si vous n’êtes pas le propriétaire du compte, vous devez le contacter pour fournir un accès partagé et les privilèges nécessaires.
-* Si le titulaire du compte ne fait plus partie de la société et que vous souhaitez transférer le compte à un autre utilisateur, reportez-vous à la section [Transférer un compte Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-transfer).
+* Si le titulaire du compte ne fait plus partie de la société et que vous souhaitez transférer le compte à un autre utilisateur, reportez-vous à la section [Transférer un compte Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/commerce-account/commerce-account-transfer).
 
 >[!NOTE]
 >
->Il est même possible pour un propriétaire qui n’a pas de compte d’avoir l’onglet [!UICONTROL Shared Access] sur son compte. Cependant, seul le propriétaire du compte (titulaire du compte principal) disposant des privilèges nécessaires peut fournir un accès partagé à d’autres utilisateurs. Pour plus d’informations sur l’accès partagé, reportez-vous à la section [Accès partagé : accorder des privilèges à d’autres utilisateurs pour accéder à votre compte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#shared-access) dans le Guide d’utilisation de l’assistance Experience League pour Adobe Commerce.
+>Il est même possible pour un propriétaire qui n’a pas de compte d’avoir l’onglet [!UICONTROL Shared Access] sur son compte. Cependant, seul le propriétaire du compte (titulaire du compte principal) disposant des privilèges nécessaires peut fournir un accès partagé à d’autres utilisateurs. Pour plus d’informations sur l’accès partagé, reportez-vous à la section [Accès partagé : accorder des privilèges à d’autres utilisateurs pour accéder à votre compte](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#shared-access) dans le Guide d’utilisation de l’assistance Experience League pour Adobe Commerce.
 
 ## J’ai utilisé l’accès partagé, mais je ne peux pas accéder à une ressource spécifique
 
@@ -46,7 +46,7 @@ Si vous continuez à rencontrer des problèmes, contactez votre équipe de compt
 
 ## J’ai utilisé l’accès partagé et j’ai cliqué sur [!UICONTROL Support], mais lorsque j’ai ouvert un nouveau ticket pour l’organisation, aucun produit n’était disponible dans le formulaire
 
-**Problème :** je ne peux pas sélectionner le projet cloud approprié lors de l’ouverture d’un ticket sur [Experience League](https://experienceleague.adobe.com/home#support).
+**Problème :** je ne peux pas sélectionner le projet cloud approprié lors de l’ouverture d’un ticket sur [Experience League](https://experienceleague.adobe.com/home?lang=fr#support).
 
 **Cause possible :** vous n’avez pas sélectionné l’organisation appropriée avec des droits d’[!DNL Commerce].
 
@@ -58,20 +58,20 @@ Si vous continuez à rencontrer des problèmes, contactez votre équipe de compt
 
 ## J’ai utilisé l’accès partagé et j’ai cliqué sur [!UICONTROL Support], mais lorsque j’ai ouvert un nouveau ticket pour l’organisation qui dispose des droits [!DNL Commerce], le projet cloud n’était pas répertorié dans le formulaire
 
-**Problème** : je ne peux pas sélectionner le projet cloud approprié lors de l’ouverture d’un ticket sur [Experience League](https://experienceleague.adobe.com/home#support).
+**Problème** : je ne peux pas sélectionner le projet cloud approprié lors de l’ouverture d’un ticket sur [Experience League](https://experienceleague.adobe.com/home?lang=fr#support).
 
 **Cause possible** : il se peut que vous n’ayez pas été ajouté au projet ou que le projet soit associé à une licence différente (certaines organisations peuvent avoir des filiales/sociétés associées portant des noms très similaires).
 
 **Solution** :
 
-1. Assurez-vous que vous avez été ajouté au projet. Voir [Gérer l’accès des utilisateurs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access).
+1. Assurez-vous que vous avez été ajouté au projet. Voir [Gérer l’accès des utilisateurs](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/project/user-access).
 1. Vérifiez que le propriétaire du compte vous a donné un accès partagé à la licence associée au projet.
 
 Si vous continuez à rencontrer des problèmes, contactez votre équipe de compte Adobe. Indiquez le nom et l’adresse e-mail associés à votre compte.
 
 ## J’ai utilisé l’accès partagé et j’ai cliqué sur [!UICONTROL Support], mais lorsque j’ai ouvert un nouveau ticket, la liste déroulante [!UICONTROL Organization] ne s’affichait pas ou ne répertoriait pas cette organisation
 
-**Problème** : je suis passé au compte [!UICONTROL Shared Access], mais lorsque j’essaie d’envoyer un ticket sur [Experience League](https://experienceleague.adobe.com/home#support), aucune organisation n’est disponible ou le nom de l’organisation n’est pas répertorié dans la liste déroulante.
+**Problème** : je suis passé au compte [!UICONTROL Shared Access], mais lorsque j’essaie d’envoyer un ticket sur [Experience League](https://experienceleague.adobe.com/home?lang=fr#support), aucune organisation n’est disponible ou le nom de l’organisation n’est pas répertorié dans la liste déroulante.
 
 **Cause possible** : Vous n&#39;avez reçu qu&#39;un accès partagé à un seul commerçant dans votre compte.
 
@@ -92,5 +92,5 @@ Si vous continuez à rencontrer des problèmes, contactez votre équipe de compt
 
 ## Lecture connexe
 
-* [Impossible de se connecter au support Adobe Commerce ou au compte cloud](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project)
-* [Le propriétaire du compte MageID ne peut pas se connecter ni envoyer de ticket d’assistance](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25231)
+* [Impossible de se connecter au support Adobe Commerce ou au compte cloud](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project)
+* [Le propriétaire du compte MageID ne peut pas se connecter ni envoyer de ticket d’assistance](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-25231)
