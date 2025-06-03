@@ -24,7 +24,7 @@ Voir [Dépannage du déploiement](/help/troubleshooting/deployment/magento-deplo
 
 ## Où/Comment puis-je obtenir de l’aide si nécessaire ? {#wherehow-do-i-get-help-when-needed}
 
-Reportez-vous à la Base de connaissances de l’assistance Adobe Commerce [](https://support.magento.com/hc/en-us).
+Reportez-vous à la Base de connaissances de l’assistance Adobe Commerce [&#128279;](https://support.magento.com/hc/en-us).
 
 ## Où/comment les partenaires de solution ou les partenaires techniques soumettent-ils une demande d’assistance ? {#wherehow-do-solution-partners-or-tech-partners-submit-a-support-request}
 
