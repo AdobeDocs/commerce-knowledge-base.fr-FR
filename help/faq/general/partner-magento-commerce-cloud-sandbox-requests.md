@@ -30,7 +30,7 @@ Reportez-vous à la Base de connaissances de l’assistance Adobe Commerce [&#12
 
 Les partenaires disposant d’un projet cloud de sandbox partenaire ne peuvent pas envoyer de tickets pour les problèmes liés aux sandbox via Experience League. N&#39;utilisez pas le compte d&#39;un marchand pour soumettre ces billets, car ils peuvent sembler avoir été soumis en leur nom et créer de la confusion.
 
-Si vous soumettez un ticket au nom d&#39;un commerçant qui n&#39;a pas obtenu l&#39;accès partagé, veuillez demander l&#39;accès au propriétaire du compte. Pour savoir comment demander l’accès, reportez-vous à la section [Accès partagé : accorder des privilèges à d’autres utilisateurs pour accéder à votre compte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#shared-access).
+Si vous soumettez un ticket au nom d&#39;un commerçant qui n&#39;a pas obtenu l&#39;accès partagé, veuillez demander l&#39;accès au propriétaire du compte. Pour savoir comment demander l’accès, reportez-vous à la section [Accès partagé : accorder des privilèges à d’autres utilisateurs pour accéder à votre compte](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#shared-access).
 
 * Les partenaires en solutions doivent soumettre des demandes d’assistance liées aux sandbox par e-mail à l’adresse [SPPHelp@adobe.com](mailto:SPPHelp@adobe.com). Ces demandes seront acheminées à l’équipe d’assistance technique partenaire.
 * Les partenaires techniques doivent contacter [assistance marketing](mailto:commercemarketplacesupport@adobe.com).
