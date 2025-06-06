@@ -2,7 +2,7 @@
 title: Restaurer un instantané de base de données à partir de l’évaluation ou de la production
 description: Cet article explique comment restaurer un instantané de base de données à partir de l’évaluation ou de la production sur Adobe Commerce sur une infrastructure cloud.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: 20aaeacc4f71725c005e7bec3b9d6ac3aa844170
+source-git-commit: 3d75b53dd290731380b2da33e3c0a1f746b9275b
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Les étapes sont les suivantes :
    cd /mnt/shared/<cluster ID/ | cd /mnt/shared/<cluster ID_stg>
    gunzip all-databases.sql.gz 
    head -n 17 all-databases.sql > <cluster ID_stg>.sql
-   sed -n '/^-- Current Database: `wyf2o4zlrljjs`/,/^-- Current Database: `/p' all-databases.sql >> <cluster ID_stg>.sql 
+   sed -n '/^-- Current Database: <cluster ID_stg>/,/^-- Current Database: `/p' all-databases.sql >> <cluster ID_stg>.sql 
    gzip <cluster ID_stg>.sql  
    zcat <cluster ID_stg>.sql.gz | \
    sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | \
@@ -62,7 +62,7 @@ Les étapes sont les suivantes :
    ```
 
 1. Copiez le [!DNL dump file] de la base de données (par exemple : `<cluster ID>.sql.gz` pour [!DNL Production] ou `<cluster ID_stg>.sql.gz` pour [!DNL Staging]) sur votre ordinateur local.
-1. Vérifiez que vous avez configuré la [!DNL SSH tunnel] pour vous connecter à la base de données à distance : [[!DNL SSH] et [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) dans notre documentation destinée aux développeurs.
+1. Vérifiez que vous avez configuré la [!DNL SSH tunnel] pour vous connecter à la base de données à distance : [[!DNL SSH] et [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) dans notre documentation destinée aux développeurs.
 1. Connexion à la base de données.
 
    ```sql
@@ -158,6 +158,6 @@ Les étapes sont les suivantes :
 
 Dans notre documentation destinée aux développeurs :
 
-* [Code d’import : import de la base de données](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
-* [[!DNL Snapshots] and [!DNL backup] management :  [!DNL Dump]  votre base de données](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Sauvegarde (instantané) sur le cloud : FAQ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
+* [Code d’import : import de la base de données](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
+* [[!DNL Snapshots] and [!DNL backup] management :  [!DNL Dump]  votre base de données](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Sauvegarde (instantané) sur le cloud : FAQ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
