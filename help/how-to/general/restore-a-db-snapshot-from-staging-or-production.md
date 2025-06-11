@@ -79,7 +79,7 @@ Les étapes sont les suivantes :
    ```
 
 1. Copiez le [!DNL dump file] de la base de données (par exemple : `<cluster ID>.sql.gz` pour [!DNL Production] ou `<cluster ID_stg>.sql.gz` pour [!DNL Staging]) sur votre ordinateur local.
-1. Vérifiez que vous avez configuré la [!DNL SSH tunnel] pour vous connecter à la base de données à distance : [[!DNL SSH] et [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) dans notre documentation destinée aux développeurs.
+1. Vérifiez que vous avez configuré la [!DNL SSH tunnel] pour vous connecter à la base de données à distance : [[!DNL SSH] et [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) dans notre documentation destinée aux développeurs.
 1. Connexion à la base de données.
 
    ```bash
@@ -175,6 +175,6 @@ Les étapes sont les suivantes :
 
 Dans notre documentation destinée aux développeurs :
 
-* [Code d’import : import de la base de données](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
-* [[!DNL Snapshots] and [!DNL backup] management :  [!DNL Dump]  votre base de données](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Sauvegarde (instantané) sur le cloud : FAQ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
+* [Code d’import : import de la base de données](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
+* [[!DNL Snapshots] and [!DNL backup] management :  [!DNL Dump]  votre base de données](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Sauvegarde (instantané) sur le cloud : FAQ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)

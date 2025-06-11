@@ -40,7 +40,7 @@ Vous pouvez [envoyer un ticket d’assistance Adobe Commerce](/help/help-center-
 Notez également que la prise en charge n’effectue pas la restauration de la base de données à votre place : l’instantané est récupéré, mais vous devez restaurer la base de données vous-même.
 * Les sauvegardes sont créées à l’aide des instantanés **encrypted Amazon Web Services Elastic Block Store (AWS EBS)**.
 * Les instantanés d’environnement incluent l’ensemble du système (système de fichiers et base de données).
-* La durée de conservation des instantanés automatiques **est différente** et suit [le planning](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery).
+* La durée de conservation des instantanés automatiques **est différente** et suit [le planning](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery).
 
 >[!NOTE]
 >
@@ -57,8 +57,8 @@ Notez également que la prise en charge n’effectue pas la restauration de la b
 
 **Articles connexes dans notre documentation destinée aux développeurs :**
 
-* [Sauvegarde et reprise après sinistre](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
-* [Créer un instantané](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
+* [Sauvegarde et reprise après sinistre](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Créer un instantané](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
 
 ## Instantané d’environnement, Plan de démarrage
 
@@ -68,7 +68,7 @@ Notez également que la prise en charge n’effectue pas la restauration de la b
 
 ## Restaurer un instantané d’environnement
 
-Pour restaurer un snapshot existant (sur l’environnement pris en charge : Intégration, Staging, Production sur le plan de démarrage ou Intégration sur le plan Pro), suivez les étapes décrites dans la section [ Gestion des sauvegardes : Restaurer une sauvegarde manuelle ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) dans notre Guide de Commerce sur les infrastructures cloud.
+Pour restaurer un snapshot existant (sur l’environnement pris en charge : Intégration, Staging, Production sur le plan de démarrage ou Intégration sur le plan Pro), suivez les étapes décrites dans la section [ Gestion des sauvegardes : Restaurer une sauvegarde manuelle ](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) dans notre Guide de Commerce sur les infrastructures cloud.
 
 ## Sauvegarde de la base de données (BD)
 
@@ -78,8 +78,8 @@ Un instantané est une sauvegarde complète d’un environnement qui comprend to
 
 >[!NOTE]
 >
->Les volumes montés ne comprennent/ne font référence qu&#39;aux [montages inscriptibles](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) et n&#39;incluent pas l&#39;ensemble de votre répertoire `/app`. Quant aux autres fichiers, ils sont créés/générés par [le processus de création et de déploiement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) et vous devrez également extraire les fichiers restants de votre référentiel Git.
+>Les volumes montés ne comprennent/ne font référence qu&#39;aux [montages inscriptibles](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) et n&#39;incluent pas l&#39;ensemble de votre répertoire `/app`. Quant aux autres fichiers, ils sont créés/générés par [le processus de création et de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) et vous devrez également extraire les fichiers restants de votre référentiel Git.
 
-[Snapshots et gestion des sauvegardes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) dans notre documentation destinée aux développeurs.
+[Snapshots et gestion des sauvegardes](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) dans notre documentation destinée aux développeurs.
 
 Envoyez une [demande d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md) pour un instantané de base de données à partir de Pro Production and Staging uniquement si vous avez besoin de la base de données à un moment donné. Si vous avez uniquement besoin d’une sauvegarde à jour de votre base de données (sur n’importe quel environnement), consultez l’article de la base de connaissances : [Générer des vidages de base de données sur le cloud](/help/how-to/general/create-database-dump-on-cloud.md).
