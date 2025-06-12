@@ -1,6 +1,6 @@
 ---
 title: FAQ sur la stratégie des versions 2024 et 2023 d’Adobe Commerce et la politique de cycle de vie
-description: Pour répondre aux besoins critiques des clients Adobe Commerce, nous étendons notre fenêtre d’assistance pour Adobe Commerce 2.4.4 et versions ultérieures à **3 ans à compter de la version [!DNL GA] date**. La prise en charge inclut **correctifs de sécurité et de qualité**. Consultez notre nouveau [calendrier des versions](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) pour en savoir plus sur le calendrier.
+description: Pour répondre aux besoins critiques des clients Adobe Commerce, nous étendons notre fenêtre d’assistance pour Adobe Commerce 2.4.4 et versions ultérieures à **3 ans à compter de la version [!DNL GA] date**. La prise en charge inclut **correctifs de sécurité et de qualité**. Consultez notre nouveau [calendrier des versions](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=fr) pour en savoir plus sur le calendrier.
 exl-id: f2bfd79c-9766-4a82-a65c-bf66b80bd34a
 feature: Compliance
 source-git-commit: 68587ca3e861ef326e006a7ab086d197f37ae9b3
@@ -28,7 +28,7 @@ La politique relative au cycle de vie des logiciels [Adobe Commerce](https://www
 
 ### Quand les clients utilisant les versions 2.4.4, 2.4.5, 2.4.6 et 2.4.7 arriveront-ils à la fin de la prise en charge dans le cadre de cette nouvelle politique ?
 
-Les clients utilisant Adobe Commerce version 2.4.4+ recevront des correctifs de sécurité et de qualité pendant 3 ans à compter de la date de [!DNL GA] de la version, comme indiqué dans le calendrier ci-dessous. Pour connaître les dates de fin de prise en charge spécifiques[&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) reportez-vous à la page Versions publiées sur [!DNL Experience League].
+Les clients utilisant Adobe Commerce version 2.4.4+ recevront des correctifs de sécurité et de qualité pendant 3 ans à compter de la date de [!DNL GA] de la version, comme indiqué dans le calendrier ci-dessous. Pour connaître les dates de fin de prise en charge spécifiques[&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html?lang=fr) reportez-vous à la page Versions publiées sur [!DNL Experience League].
 
 ![Graphique 1](assets/MSKB-1978-1.jpg)
 
@@ -44,14 +44,14 @@ La mise à disposition de nouvelles fonctionnalités en tant que services de [!D
 
 En 2023, les clients pourront accéder aux versions des correctifs d’Adobe Commerce environ deux semaines avant leur disponibilité générale.
 
-À compter de 2024, Adobe ne fournit plus d’accès « version préliminaire » aux correctifs. À la place, pour la version 2.4.7 et les versions ultérieures, les clients peuvent utiliser les versions [bêta](https://experienceleague.adobe.com/docs/commerce-operations/release/beta.html) pour accéder au code de disponibilité prégénérale à des fins de test et de développement. L’accès à la version préliminaire est toujours prévu pour les versions 2023 suivantes :
+À compter de 2024, Adobe ne fournit plus d’accès « version préliminaire » aux correctifs. À la place, pour la version 2.4.7 et les versions ultérieures, les clients peuvent utiliser les versions [bêta](https://experienceleague.adobe.com/docs/commerce-operations/release/beta.html?lang=fr) pour accéder au code de disponibilité prégénérale à des fins de test et de développement. L’accès à la version préliminaire est toujours prévu pour les versions 2023 suivantes :
 
 * L’accès en version préliminaire du 8 août 2023 est le 25 juillet 2023
 * 10 octobre 2023 l’accès en version préliminaire est le 26 septembre 2023
 
 ### Où le planning des versions d’Adobe Commerce est-il publié ?
 
-Consultez le [planning des versions d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) sur [!DNL Experience League] pour plus d’informations.
+Consultez le [planning des versions d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=fr) sur [!DNL Experience League] pour plus d’informations.
 
 ### Quels sont les différents types de rejets inclus dans le planning ?
 
@@ -62,11 +62,11 @@ Consultez le [planning des versions d’Adobe Commerce](https://experienceleague
 
 ### Où vont les clients pour obtenir des correctifs de qualité ?
 
-Les correctifs de qualité permettent de distribuer des correctifs pour les problèmes de qualité individuels. Les clients peuvent contacter l’assistance Adobe ou utiliser le [[!DNL Quality Patch Tool]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) pour rechercher des correctifs de qualité.
+Les correctifs de qualité permettent de distribuer des correctifs pour les problèmes de qualité individuels. Les clients peuvent contacter l’assistance Adobe ou utiliser le [[!DNL Quality Patch Tool]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) pour rechercher des correctifs de qualité.
 
 ### Quelles ressources sont disponibles pour faciliter la planification, la budgétisation et les mises à niveau en général ?
 
-Les ressources disponibles comprennent un guide de mise à niveau vers la version 2.4, un enregistrement d’atelier de mise à niveau technique et le [!DNL Upgrade Compatibility Tool]. Vous trouverez une liste complète des ressources sur [Experience League](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-reading.html).
+Les ressources disponibles comprennent un guide de mise à niveau vers la version 2.4, un enregistrement d’atelier de mise à niveau technique et le [!DNL Upgrade Compatibility Tool]. Vous trouverez une liste complète des ressources sur [Experience League](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-reading.html?lang=fr).
 
 ### En tant que client Managed Services, comment l’ingénierie client peut-elle m’aider à effectuer la mise à niveau vers la version 2.4.4 +?
 
@@ -191,7 +191,7 @@ Ces plans comprennent des correctifs de qualité et de sécurité pour l’appli
 
 Grâce à l’assistance étendue, notre équipe d’ingénierie client continuera à fournir les mêmes correctifs de qualité et de sécurité que d’habitude, sans dégradation de la portée. Toutefois, les clients devront prendre des mesures supplémentaires pour rester en conformité avec la [!DNL PCI] si les technologies tierces sous-jacentes, telles que [!DNL MariaDB], arrivent en fin de prise en charge.
 
-Adobe ne prend pas en charge les technologies tierces qui ont atteint la fin de la prise en charge. Adobe recommande aux clients de travailler avec leur [[!DNL PCI] évaluateur](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors/) pour assurer la conformité. Consultez [Configuration requise pour Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) pour obtenir la liste complète des technologies tierces testées et prises en charge.
+Adobe ne prend pas en charge les technologies tierces qui ont atteint la fin de la prise en charge. Adobe recommande aux clients de travailler avec leur [[!DNL PCI] évaluateur](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors/) pour assurer la conformité. Consultez [Configuration requise pour Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements) pour obtenir la liste complète des technologies tierces testées et prises en charge.
 
 <table style="height: 444px; width: 632.2px;">
 <tbody>
