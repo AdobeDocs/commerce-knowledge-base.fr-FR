@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Guide de l’utilisateur de l’assistance Experience League pour Adobe Commerce
 
-Dans ce guide, découvrez comment envoyer un ticket d’assistance à l’assistance [Experience League](https://experienceleague.adobe.com/home#support) et fournir un accès partagé aux comptes Adobe Commerce.
+Dans ce guide, découvrez comment envoyer un ticket d’assistance à l’assistance [Experience League](https://experienceleague.adobe.com/home?lang=fr#support) et fournir un accès partagé aux comptes Adobe Commerce.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ Dans ce guide, découvrez comment envoyer un ticket d’assistance à l’assist
 
 >[!NOTE]
 >
->Actuellement, pour afficher les cas précédemment envoyés sur le Centre d’aide Adobe Commerce, vous devez accéder à https://support.magento.com/hc/en-us/requests, car ces cas n’ont pas été migrés vers le nouveau système de ticket d’assistance. Le Centre d&#39;aide est maintenant en lecture seule ; pour continuer à recevoir de l&#39;aide pour le problème d&#39;origine, vous devrez envoyer un ticket de relance à l&#39;assistance [Experience League](https://experienceleague.adobe.com/home#support).
+>Actuellement, pour afficher les cas précédemment envoyés sur le Centre d’aide Adobe Commerce, vous devez accéder à https://support.magento.com/hc/en-us/requests, car ces cas n’ont pas été migrés vers le nouveau système de ticket d’assistance. Le Centre d&#39;aide est maintenant en lecture seule ; pour continuer à recevoir de l&#39;aide pour le problème d&#39;origine, vous devrez envoyer un ticket de relance à l&#39;assistance [Experience League](https://experienceleague.adobe.com/home?lang=fr#support).
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Pour soumettre un nouveau cas d’assistance à l’aide de la page de démarrag
 >1. Accédez à accounts.magento.com et connectez-vous avec le même profil (professionnel, scolaire ou personnel) que celui utilisé pour gérer les cas d’assistance dans Adobe Experience League.
 >1. Une fois que vous êtes connecté à votre profil accounts.magento.com, revenez à experienceleague.adobe.com et connectez-vous.
 >1. Sélectionnez votre organisation dans le menu déroulant de l’organisation.
->1. Si votre organisation n’apparaît toujours pas, contactez votre administrateur Commerce pour obtenir les droits de délégué de l’assistance. Pour plus d’informations, consultez l’article d’aide Partage de compte Commerce [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share).
+>1. Si votre organisation n’apparaît toujours pas, contactez votre administrateur Commerce pour obtenir les droits de délégué de l’assistance. Pour plus d’informations, consultez l’article d’aide Partage de compte Commerce [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/commerce-account/commerce-account-share).
 
 >[!NOTE]
 >
@@ -178,7 +178,7 @@ Vous devez disposer d’un compte sur https://account.adobe.com et https://accou
 
 Pour envoyer un nouveau ticket d’assistance à l’aide de la page Compte Adobe Commerce, procédez comme suit :
 
-1. Connectez-vous à votre compte Adobe Commerce. Voir [instructions détaillées](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-create.html?lang=en#create-a-commerce-account) dans notre guide de l’utilisateur.
+1. Connectez-vous à votre compte Adobe Commerce. Voir [instructions détaillées](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-create.html?lang=fr#create-a-commerce-account) dans notre guide de l’utilisateur.
 1. Cliquez sur l’onglet **Assistance**.
 
    ![magento_account_support_tab](assets/magento_account_support_tab.png){width="800"}
@@ -271,7 +271,7 @@ Pour fermer votre valise, cliquez sur **[!UICONTROL Close case]** en bas à droi
 
 >[!NOTE]
 >
->Vous ne pouvez pas rouvrir un dossier en répondant à une notification par e-mail provenant d&#39;un ticket fermé. Pour rouvrir le dossier, assurez-vous que le propriétaire du compte vous a donné [Accès partagé](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26164).
+>Vous ne pouvez pas rouvrir un dossier en répondant à une notification par e-mail provenant d&#39;un ticket fermé. Pour rouvrir le dossier, assurez-vous que le propriétaire du compte vous a donné [Accès partagé](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26164).
 
 ### Envoyer le ticket à l’aide de Cloud Console {#cloud-console}
 
@@ -290,7 +290,7 @@ L’article sur la ligne d’assistance P1 d’Adobe Commerce [&#128279;](https:
 
 ### Modèle opérationnel de responsabilité partagée d’Adobe Commerce {#shared-responsibility-operational-model}
 
-Voir l’article sur le [modèle opérationnel de responsabilité partagée Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#operational-responsibilities-summary),
+Voir l’article sur le [modèle opérationnel de responsabilité partagée Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/security-and-compliance/shared-responsibility#operational-responsibilities-summary),
 qui vise à clarifier les responsabilités opérationnelles de notre offre d&#39;infrastructure Pro uniquement.
 
 ### Ouvrir un ticket de relance {#follow-up}
@@ -315,17 +315,17 @@ Les utilisateurs et utilisatrices disposant d’un accès partagé ne peuvent pa
 
 ### Fournir un accès partagé {#provide-shared-access}
 
-Consultez la section [Partage d’un compte Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) du Guide de prise en main d’Adobe Commerce pour obtenir des instructions détaillées sur la configuration d’un compte partagé.
+Consultez la section [Partage d’un compte Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/commerce-account/commerce-account-share) du Guide de prise en main d’Adobe Commerce pour obtenir des instructions détaillées sur la configuration d’un compte partagé.
 
 >[!NOTE]
 >
->L’utilisateur doit disposer d’un compte existant avant de pouvoir bénéficier de l’accès partagé. Pour plus d’informations, voir [Création d’un compte Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account).
+>L’utilisateur doit disposer d’un compte existant avant de pouvoir bénéficier de l’accès partagé. Pour plus d’informations, voir [Création d’un compte Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account).
 
 Après avoir fourni un accès partagé à un nouvel utilisateur, les informations connexes sont disponibles dans **Accès partagé** > **Gérer les autorisations** de la page de votre compte Adobe Commerce.
 
 >[!NOTE]
 >
->L’accès partagé n’accorde pas automatiquement l’accès à la console Commerce Cloud. Vous devez [ajouter l’utilisateur séparément au projet cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access#add-a-user-to-the-project).
+>L’accès partagé n’accorde pas automatiquement l’accès à la console Commerce Cloud. Vous devez [ajouter l’utilisateur séparément au projet cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/user-access#add-a-user-to-the-project).
 
 ![magento-account-shared-manage-permissions](assets/magento_account_shared_manage_permissions.png)
 
@@ -373,7 +373,7 @@ Cependant, une fois que vous avez révoqué les autorisations de ces utilisateur
 
 ![grant-account-permissions-image](assets/help-center-user-guide-grant-account-permissions-image.png){width="800"}
 
-Pour plus d’informations, reportez-vous à la documentation [Gérer l’accès utilisateur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-from-the-project-web-interface) dans notre guide Commerce sur les infrastructures cloud.
+Pour plus d’informations, reportez-vous à la documentation [Gérer l’accès utilisateur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=fr#manage-users-from-the-project-web-interface) dans notre guide Commerce sur les infrastructures cloud.
 
 ### Accès au compte partagé (changer de compte) {#switch-accounts}
 
