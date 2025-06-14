@@ -75,7 +75,7 @@ La connexion vous permet d’envoyer, de mettre à jour et de répondre aux ques
 
 Pour vous connecter à l’assistance d’Adobe Experience League, procédez comme suit :
 
-1. Accédez à [experienceleague.adobe.com](https://experienceleague.adobe.com/).
+1. Accédez à [experienceleague.adobe.com](https://experienceleague.adobe.com/fr).
 1. Connectez-vous à l’aide de vos identifiants de connexion Adobe.
 
 ![connexion-experience-league](assets/experience_league_sign_in.png)
@@ -185,7 +185,7 @@ Pour envoyer un nouveau ticket d’assistance à l’aide de la page Compte Adob
 
 1. La page d’assistance d’Adobe Experience League se charge pour vous.
 1. Sélectionnez **[!UICONTROL Open Ticket]** dans le menu de gauche.
-1. Renseignez les [champs](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions).
+1. Renseignez les [champs](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions).
 1. Cliquez sur **Soumettre**.
 
 #### *Vérifiez votre adresse e-mail* erreur sur la page Compte Adobe Commerce . {#verify-email-address-error}
@@ -210,7 +210,7 @@ Vous pouvez consulter les cas que vous avez soumis personnellement en cliquant s
 
 #### Affichage de vos cas historiques à partir du Centre d’aide Adobe Commerce
 
-Pour en savoir plus sur la manière **d’afficher vos cas historiques**, consultez le Centre d’aide d’Adobe Commerce dans [Déclassement du Centre d’aide d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/news/decommissioning-of-adobe-commerce-help-center) dans notre base de connaissances Adobe Commerce.
+Pour en savoir plus sur la manière **d’afficher vos cas historiques**, consultez le Centre d’aide d’Adobe Commerce dans [Déclassement du Centre d’aide d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/announcements/news/decommissioning-of-adobe-commerce-help-center) dans notre base de connaissances Adobe Commerce.
 
 #### Afficher vos affaires surveillées
 
@@ -281,12 +281,12 @@ Pour envoyer un nouveau ticket d’assistance à l’aide de Cloud Console, proc
 1. Sélectionnez **[!UICONTROL Support]** dans le menu utilisateur.
 1. La page **[!UICONTROL My Tickets]** charge.
 1. Cliquez sur **[!UICONTROL Submit a ticket]** dans le coin supérieur droit.
-1. Renseignez les [champs](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions).
+1. Renseignez les [champs](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions).
 1. Cliquez sur **[!UICONTROL Submit]**.
 
 ### Ligne d’assistance d’Adobe Commerce P1 {#P1-hotline}
 
-L’article sur la ligne d’assistance P1 d’Adobe Commerce [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html) fournit les numéros d’assistance P1 d’Adobe Commerce lors de la recherche d’aide lors d’un incident P1 et explique les informations à fournir.
+L’article sur la ligne d’assistance P1 d’Adobe Commerce [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html?lang=fr) fournit les numéros d’assistance P1 d’Adobe Commerce lors de la recherche d’aide lors d’un incident P1 et explique les informations à fournir.
 
 ### Modèle opérationnel de responsabilité partagée d’Adobe Commerce {#shared-responsibility-operational-model}
 

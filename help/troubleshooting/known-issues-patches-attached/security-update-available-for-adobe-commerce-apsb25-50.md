@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Le 10 juin 2025, Adobe a publié une mise à jour de sécurité régulièrement programmée pour Adobe Commerce et Magento Open Source. Cette mise à jour résout les vulnérabilités [[!DNL critical] et [!DNL important]](https://helpx.adobe.com/fr/security/severity-ratings.html). L’exploitation réussie de ces vulnérabilités peut entraîner le contournement des fonctionnalités de sécurité, la réaffectation des privilèges et l’exécution arbitraire du code.
 
-Vous trouverez plus d’informations dans le [Bulletin de sécurité Adobe ([!DNL APSB25-50]) ici](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
+Vous trouverez plus d’informations dans le [Bulletin de sécurité Adobe ([!DNL APSB25-50]) ici](https://helpx.adobe.com/fr/security/products/magento/apsb25-50.html).
 
 >[!NOTE]
 >
@@ -122,5 +122,5 @@ Comme il n’est pas possible de vérifier facilement si le problème a été co
 
 Mises à jour de sécurité disponibles pour Adobe Commerce :
 
-* [Bulletin de sécurité Adobe ([!DNL APSB25-50])](https://helpx.adobe.com/security/products/magento/apsb25-50.html)
+* [Bulletin de sécurité Adobe ([!DNL APSB25-50])](https://helpx.adobe.com/fr/security/products/magento/apsb25-50.html)
 * [Dernières mises à jour de sécurité disponibles pour Adobe Commerce](https://helpx.adobe.com/fr/security/products/magento.html)
