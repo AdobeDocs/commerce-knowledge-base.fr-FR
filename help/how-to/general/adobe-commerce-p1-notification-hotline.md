@@ -21,7 +21,7 @@ Comme défini dans les [conditions générales des services d&#39;assistance Ado
 ## Stratégies de la ligne d’assistance téléphonique de notification P1
 
 * La ligne d’assistance téléphonique de notification P1 est disponible pour signaler les problèmes de niveau P1. (voir la définition de l&#39;incident P1 dans la section précédente).
-* [Envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) avant d’appeler la ligne d’urgence de notification P1 d’Adobe Commerce.
+* [Envoyez un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) avant d’appeler la ligne d’urgence de notification P1 d’Adobe Commerce.
 * L’enquête, le dépannage et la communication auront lieu exclusivement dans le ticket d’assistance.
 * Ajoutez toutes les informations supplémentaires que vous pouvez avoir concernant le problème directement sur le ticket, avant d’appeler.
 * Lorsque vous appelez, assurez-vous d&#39;avoir le numéro du ticket.
