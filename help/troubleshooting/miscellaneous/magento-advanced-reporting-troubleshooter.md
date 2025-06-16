@@ -19,10 +19,10 @@ Les problèmes de création de rapports avancés sur Adobe Commerce peuvent êtr
 
 +++**Votre site web répond-il aux exigences de reporting avancé ?**
 
-Une page d’erreur 404 s’affiche lors de l’utilisation des rapports avancés. Votre site web répond-il aux [exigences de reporting avancé](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements) ?
+Une page d’erreur 404 s’affiche lors de l’utilisation des rapports avancés. Votre site web répond-il aux [exigences de reporting avancé](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements) ?
 
 a. OUI - Passer à [étape 2](#step-2).\
-b. NON - Renseignez les exigences de création de rapports avancés pour votre site en suivant les étapes indiquées dans [ Exigences de création de rapports avancés ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements). Passez ensuite à [Étape 2](#step-2).
+b. NON - Renseignez les exigences de création de rapports avancés pour votre site en suivant les étapes indiquées dans [ Exigences de création de rapports avancés ](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements). Passez ensuite à [Étape 2](#step-2).
 
 +++
 
@@ -44,7 +44,7 @@ Si plusieurs devises de base ont déjà été utilisées, vous ne pouvez pas uti
 
 +++**Utilisez-vous une solution de base de données partagée ?**
 
-Utilisez-vous [solution de base de données partagée](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master) ?
+Utilisez-vous [solution de base de données partagée](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/storage/split-db/multi-master) ?
 
 a. OUI - Utilisez le correctif **MDVA-26831** dans Advanced Reporting 404 - Erreur sur la solution de base de données partagée et effacez le cache. Patientez 24 heures pour que le traitement s’exécute à nouveau et réessayez.\
 b. NON - Passer à [étape 4](#step-4).
@@ -55,10 +55,10 @@ b. NON - Passer à [étape 4](#step-4).
 
 +++**Les rapports avancés sont-ils activés ?**
 
-Cochez **Admin** > **Magasins** > **Paramètres** > **Configuration** > **Général** > **Rapports avancés**. Pour obtenir des instructions détaillées, consultez [Rapports avancés : activer les rapports avancés](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting).
+Cochez **Admin** > **Magasins** > **Paramètres** > **Configuration** > **Général** > **Rapports avancés**. Pour obtenir des instructions détaillées, consultez [Rapports avancés : activer les rapports avancés](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting).
 
 a. OUI - Passer à [étape 5](#step-5).\
-b. NON - [Activer la création de rapports avancée](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) et enregistrez-les, puis attendez 24 heures pour qu’Adobe Commerce et la création de rapports avancée se synchronisent. Vérifiez si vos données se chargent maintenant. Si c&#39;est le cas, vous avez résolu le problème. S’il ne passe pas à l’[étape 5](#step-5).
+b. NON - [Activer la création de rapports avancée](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) et enregistrez-les, puis attendez 24 heures pour qu’Adobe Commerce et la création de rapports avancée se synchronisent. Vérifiez si vos données se chargent maintenant. Si c&#39;est le cas, vous avez résolu le problème. S’il ne passe pas à l’[étape 5](#step-5).
 
 +++
 
@@ -81,9 +81,9 @@ Vérifiez la valeur du compteur dans la table des indicateurs en exécutant cett
 
 a. OUI - Prendre les mesures suivantes : 1. Exécutez la requête ci-dessous :\
 ``DELETE from `flag` where `flag_code` = 'analytics_link_subscription_update_reverse_counter';``\
-2\ [Désactivez et activez le module Rapports avancés](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) dans les paramètres et [réautorisez le jeton](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
+2\ [Désactivez et activez le module Rapports avancés](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) dans les paramètres et [réautorisez le jeton](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
 3\ Patientez 24 heures pour qu’Adobe Commerce et les rapports avancés se synchronisent. Si vous ne pouvez toujours pas voir les données dans les rapports avancés, [envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
-b. NON - Si la requête ne renvoie rien, procédez comme suit : 1. [Désactivez et activez le module Rapports avancés](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) dans les paramètres et [réautorisez le jeton](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
+b. NON - Si la requête ne renvoie rien, procédez comme suit : 1. [Désactivez et activez le module Rapports avancés](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) dans les paramètres et [réautorisez le jeton](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
 2\ Patientez 24 heures pour qu’Adobe Commerce et les rapports avancés se synchronisent. Si vous ne pouvez toujours pas voir les données dans les rapports avancés, [envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++
@@ -145,7 +145,7 @@ b. NON - Passer à [étape 10](#step-10).
 
 Exemple : dans le tableau `cron_schedule`, l’erreur *Le fichier « /app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0 ne peut pas être supprimé* s’affiche. Avertissement!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0?lang=fr) : aucun fichier ou répertoire de ce type*
 
-a. OUI - Utilisez le correctif ACSD-50165 dans [Le fichier ne peut pas être supprimé. Avertissement!unlink : aucune erreur de fichier ou de répertoire de ce type de la part de l’administrateur](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26887), attendez 24 heures pour que le traitement s’exécute à nouveau, puis réessayez.\
+a. OUI - Utilisez le correctif ACSD-50165 dans [Le fichier ne peut pas être supprimé. Avertissement!unlink : aucune erreur de fichier ou de répertoire de ce type de la part de l’administrateur](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26887), attendez 24 heures pour que le traitement s’exécute à nouveau, puis réessayez.\
 b. NON - Passer à [étape 11](#step-11).
 
 +++
@@ -165,4 +165,4 @@ b. NON - [soumettez un ticket d’assistance](/help/help-center-guide/help-cente
 
 ## Lecture connexe
 
-[Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+[Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook

@@ -21,7 +21,7 @@ Cet article propose des solutions pour la situation lorsque vous manquez d’esp
 
 ## Problème
 
-L’espace disque sur le disque contenant des répertoires accessibles en écriture est insuffisant. Un symptôme peut être [déploiement bloqué](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26878).
+L’espace disque sur le disque contenant des répertoires accessibles en écriture est insuffisant. Un symptôme peut être [déploiement bloqué](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26878).
 
 Pour vérifier l’utilisation du disque, exécutez la commande suivante :
 
@@ -45,7 +45,7 @@ Options de solution :
 * Nettoyez le répertoire `var`.
 * Configurez une tâche cron pour suivre la taille du répertoire `var` et le nettoyer.
 * Allouez plus d’espace disque, si vous en avez inutilisé. (Pour plus d’informations sur la façon de vérifier votre limite d’espace, reportez-vous à la section ci-dessous.)
-   * Pour le plan de démarrage, tous les environnements et les environnements d’intégration de plan Pro, vous pouvez allouer l’espace disque si vous en avez inutilisé, comme décrit dans la section [Gérer l’espace disque : allouer l’espace disque](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#application-disk-space).
+   * Pour le plan de démarrage, tous les environnements et les environnements d’intégration de plan Pro, vous pouvez allouer l’espace disque si vous en avez inutilisé, comme décrit dans la section [Gérer l’espace disque : allouer l’espace disque](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#application-disk-space).
    * Pour les environnements d’évaluation et de production ProPlan, contactez l’assistance pour allouer plus d’espace disque si vous en avez inutilisé.
 * Si vous avez atteint votre limite d’espace et rencontrez toujours des problèmes d’espace disque faible, pensez à acheter plus d’espace disque. Pour plus d’informations, contactez l’équipe chargée de votre compte Adobe.
 
