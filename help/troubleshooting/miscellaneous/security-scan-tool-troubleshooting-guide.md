@@ -1,37 +1,37 @@
 ---
-title: Guide de dépannage de l’outil d’analyse de sécurité Adobe Commerce
-description: Découvrez comment résoudre les différents problèmes liés à l’outil d’analyse de sécurité pour Adobe Commerce et Magento Open Source.
+title: Guide de dépannage de l’outil Adobe Commerce Security Scan
+description: Découvrez comment résoudre les différents problèmes liés à l’outil Analyse de la sécurité pour Adobe Commerce et Magento Open Source.
 exl-id: 35e18a11-bda9-47eb-924a-1095f4f01017
 feature: Compliance, Security
 role: Developer
-source-git-commit: 525352027bfa4a8728bdbbfe61af3dca5dbb18f9
+source-git-commit: c6e338fb33477ab107fe4de382b485339b57275a
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
 
-# Guide de dépannage de l’outil d’analyse de sécurité Adobe Commerce
+# Guide de dépannage de l’outil Adobe Commerce Security Scan
 
-Découvrez comment résoudre les différents problèmes liés à l’outil d’analyse de sécurité pour Adobe Commerce et Magento Open Source.
+Découvrez comment résoudre les différents problèmes liés à l’outil Analyse de la sécurité pour Adobe Commerce et Magento Open Source.
 
 ## Problème : impossible d’envoyer le site
 
-L’outil d’analyse de sécurité requiert que vous prouviez la propriété de votre site avant que le domaine ne puisse être ajouté à l’outil d’analyse de sécurité. Pour ce faire, ajoutez un code de confirmation à votre site à l’aide d’un commentaire d’HTML ou de la balise `<meta>`. Le commentaire de l’HTML doit être placé à l’intérieur de la balise `<body>`, par exemple, dans la section de pied de page. La balise `<meta>` doit être placée dans la section `<head>` de la page.
+L&#39;outil Analyse de sécurité exige que vous prouviez que vous êtes propriétaire de votre site avant de pouvoir ajouter le domaine à l&#39;outil Analyse de sécurité. Pour ce faire, ajoutez un code de confirmation à votre site à l’aide d’un commentaire HTML ou de la balise `<meta>`. Le commentaire HTML doit être placé à l’intérieur de la balise `<body>`, par exemple dans la section de pied de page. La balise `<meta>` doit être placée dans la section `<head>` de la page.
 
-Un problème courant rencontré par les commerçants se produit lorsque l’outil d’analyse de sécurité ne peut pas confirmer la propriété du site du commerçant.
+Un problème courant auquel sont confrontés les commerçants se produit lorsque l’outil de scan de sécurité n’est pas en mesure de confirmer la propriété du site du commerçant.
 
-Si vous obtenez une erreur et que vous ne pouvez pas envoyer votre site pour l’analyse, reportez-vous au [message d’erreur lors de l’ajout de sites dans l’article de dépannage de l’analyse de sécurité](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md) de notre base de connaissances de support.
+Si vous obtenez une erreur et que vous ne pouvez pas envoyer votre site pour l’analyse, reportez-vous à l’article [ Message d’erreur lors de l’ajout de sites à l’analyse de sécurité ](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md) dépannage dans notre base de connaissances d’assistance.
 
 ## Problème : rapports vides générés par l’outil Analyse de sécurité
 
-Vous obtenez des rapports d’analyse vides de l’outil d’analyse de sécurité ou obtenez des rapports contenant une seule erreur, comme *L’outil de sécurité n’a pas pu atteindre l’URL de base* ou *l’installation du Magento est introuvable sur l’URL fournie*.
+Vous obtenez des rapports d&#39;analyse vides de l&#39;outil Analyse de sécurité ou des rapports contenant une seule erreur comme *L&#39;outil de sécurité n&#39;a pas pu atteindre l&#39;URL de base* ou l&#39;installation de *Magento est introuvable sur l&#39;URL fournie*.
 
 ### Solution
 
-1. Vérifiez que les adresses IP 52.87.98.44, 34.196.167.176 et 3.218.25.102 ne sont pas bloquées à 80 et 443 ports.
-1. Vérifiez l’URL envoyée pour les redirections (par exemple, `https://mystore.com` redirections vers `https://www.mystore.com` ou vice versa ou redirections vers d’autres noms de domaine).
-1. Recherchez les journaux d’accès WAF/serveur web pour les demandes rejetées/non satisfaites. HTTP 403 `Forbidden` et HTTP 500 `Internal server error` sont les réponses de serveur courantes qui provoquent la génération de rapports vides. Voici un exemple du code de confirmation qui bloque les demandes par les agents utilisateur :
+1. Vérifiez que les adresses IP 52.87.98.44, 34.196.167.176 et 3.218.25.102 ne sont pas bloquées sur les ports 80 et 443.
+1. Recherchez des redirections dans l’URL envoyée (par exemple, des redirections `https://mystore.com` vers `https://www.mystore.com` ou vice versa ou des redirections vers d’autres noms de domaine).
+1. Vérifiez les journaux d’accès WAF/serveur web pour les demandes rejetées/non satisfaites. Les `Forbidden` HTTP 403 et les `Internal server error` HTTP 500 sont les réponses courantes du serveur qui provoquent la génération de rapports vides. Voici un exemple de code de confirmation qui bloque les requêtes des agents utilisateurs :
 
 ```code block
 if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent_allowlist)
@@ -39,73 +39,73 @@ if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent
 {   error 403;   }
 ```
 
-Vous pouvez également voir l’article [L’outil d’analyse de sécurité est vide](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md) dans notre base de connaissances d’assistance pour plus d’informations.
+Consultez également l’article [Le rapport de l’outil d’analyse de sécurité est vierge](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md) dans notre base de connaissances d’assistance pour plus d’informations.
 
-## Problème : problème de sécurité résolu, mais toujours visible comme vulnérable lors de l’analyse.
+## Problème : problème de sécurité résolu, mais toujours visible comme vulnérable lors de l’analyse
 
-Vous avez résolu un problème de sécurité et vous vous attendez à ce que l’ analyse de sécurité indique que vous n’êtes plus vulnérable au problème nouvellement résolu. Au lieu de cela, vous constatez que le rapport généré par l’analyse de sécurité vous signale toujours comme vulnérable au problème de sécurité.
-
-### Cause
-
-Les métadonnées de l’instance cloud sont collectées uniquement pour les projets cloud `active` et `live` et il ne s’agit PAS d’un processus en temps réel.
-
-Le script de collecte des statistiques est exécuté une fois par jour, puis l’outil d’analyse de sécurité doit récupérer les nouvelles données ultérieurement.
-
-La latence attendue du cycle de synchronisation peut aller jusqu’à une semaine et dure au moins 24 heures.
-
-Les états suivants peuvent apparaître à partir des vérifications :
-
-1. **Pass** : l’outil d’analyse de sécurité a analysé vos données mises à jour et approuvé les modifications.
-1. **Inconnu** : l’outil d’analyse de sécurité ne contient pas encore de données sur votre domaine ; attendez le cycle de synchronisation suivant.
-1. **Fail** : si l’état indique un échec, vous devrez résoudre le problème (activer 2FA, modifier l’URL d’administration, etc.) et attendez le cycle de synchronisation suivant.
-
-Si 24 heures se sont écoulées depuis que les modifications ont été apportées à l’instance et qu’elles ne sont pas répercutées dans le rapport d’analyse de sécurité, vous pouvez [envoyer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Indiquez l’URL du magasin lors de l’envoi du ticket.
-
-## Échec de BotNet Suspect
-
-Vous recevez une notification concernant l’échec de &quot;Suspect BotNet&quot;.
+Vous avez résolu un problème de sécurité et vous attendez que l&#39;analyse de sécurité indique que vous n&#39;êtes plus vulnérable au problème nouvellement résolu. Au lieu de cela, vous constatez que le rapport généré par l’analyse de sécurité vous signale toujours comme vulnérable au problème de sécurité.
 
 ### Cause
 
-1. Le nom de domaine du magasin est entré dans une &quot;liste de participants potentiels de BotNet&quot; en 2019, et a eu la fonction Admin panel, downloader, ou RSS publiquement exposée, et/ou son URL a été mentionnée dans les forums de skimming CC.
-1. L’alerte peut être provoquée par des signes de compromis et/ou de malware de magasin, comme JavaScript trouvé sur la page.
-1. Il ne s&#39;agit pas nécessairement d&#39;une question en cours. Si le magasin a été compromis précédemment, son nom d&#39;hôte peut toujours flotter autour du web noir comme nom de &#39;victime&#39;.
-1. Il se peut également qu’il soit dû non pas à Adobe Commerce, mais à un compromis système (au niveau du système d’exploitation).
+Les métadonnées des instances cloud sont collectées uniquement pour les projets cloud `active` et `live` et ne constituent PAS un processus en temps réel.
+
+Le script de collecte de statistiques est exécuté une fois par jour, puis l&#39;outil Analyse de sécurité doit récupérer les nouvelles données ultérieurement.
+
+La latence prévue du cycle de synchronisation peut aller jusqu’à une semaine et prend au moins 24 heures.
+
+Les statuts suivants peuvent apparaître à partir des contrôles :
+
+1. **Réussite** : l’outil Analyse de sécurité a analysé vos données mises à jour et approuvé les modifications.
+1. **Inconnu** : l’outil Analyse de sécurité ne dispose pas encore de données sur votre domaine ; attendez le prochain cycle de synchronisation.
+1. **Échec** : si le statut indique un échec, vous devrez résoudre le problème (activer 2FA, modifier l’URL d’administration, etc.) et attendre le prochain cycle de synchronisation.
+
+Si 24 heures se sont écoulées depuis que les modifications ont été apportées à l’instance et qu’elles ne sont pas reflétées dans le rapport d’analyse de sécurité, vous pouvez [soumettre un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Indiquez l’URL du magasin lors de l’envoi du ticket.
+
+## Échec suspect de BotNet
+
+Vous recevez une notification concernant l’échec de « BotNet Suspect ».
+
+### Cause
+
+1. Le nom de domaine de magasin est entré dans une « Liste de participants potentiels de BotNet » en 2019, et le panneau d&#39;administration, le téléchargeur ou la fonctionnalité RSS ont été publiquement exposés, et/ou son URL a été mentionnée dans les forums d&#39;écumage CC.
+1. L’alerte peut être due à des signes de compromission de magasin et/ou à des programmes malveillants, comme JavaScript sur la page.
+1. Ce n&#39;est pas nécessairement un problème permanent. Si le magasin a déjà été compromis, son nom d&#39;hôte peut toujours flotter sur le web sombre comme nom de « victime ».
+1. Elle peut également être due non pas à Adobe Commerce, mais à une erreur système (au niveau du système d’exploitation).
 
 ### Solution
 
-1. Recherchez les comptes SSH nouvellement créés, les modifications de système de fichiers, etc.
-1. Effectuez une vérification de sécurité.
-1. Vérifiez la version et la mise à niveau d’Adobe Commerce, en particulier s’il exécute toujours le Magento 1, qui n’est plus pris en charge.
-1. Si le problème persiste, [soumettez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) et fournissez l’URL du magasin.
+1. Recherchez les comptes SSH nouvellement créés, les modifications apportées au système de fichiers, etc.
+1. Effectuez une vérification de la sécurité.
+1. Vérifiez la version d’Adobe Commerce et la mise à niveau, en particulier si elle exécute toujours Magento 1, qui n’est plus pris en charge.
+1. Si le problème persiste, [envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) et indiquez l’URL du magasin.
 
-## Problème : échec de l’injection du compromis
+## Problème : échec de l’injection de compromis
 
-Vous recevez une erreur concernant un échec de type &quot;Injection de compromis&quot;.
+Vous recevez une erreur concernant un échec d’« injection de compromis ».
 
 ### Solution
 
-1. Examinez les scripts indiqués dans le rapport de l’outil d’analyse de sécurité.
-1. Examinez le corps de la source de la page d’accueil pour les injections de script intégrées.
-1. Effectuez une révision des modifications de configuration du système, en particulier les valeurs de section `HTML head` et `Miscellaneous HTML` personnalisées dans `footer` .
-1. Effectuez une révision du code et de la base de données pour détecter les modifications inconnues et les signes de malware injectés.
+1. Examinez les scripts indiqués dans le rapport de l’outil Analyse de sécurité .
+1. Consultez le corps source de la page d’accueil pour les injections de script en ligne.
+1. Passez en revue les modifications apportées à la configuration du système, en particulier les `HTML head` et `Miscellaneous HTML` personnalisés dans les valeurs de section `footer`.
+1. Effectuez une révision du code et de la base de données pour détecter les modifications et signes inhabituels de programmes malveillants injectés.
 
-Si aucun des éléments ci-dessus ne vous aide, [envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) et fournissez l’URL de magasin et le message d’erreur du rapport.
+Si rien de ce qui précède ne vous aide, [envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) et indiquez l’URL du magasin et le message d’erreur à partir du rapport.
 
 ## Questions fréquentes
 
-### L’analyse de sécurité va-t-elle affecter les performances de mon site web ?
+### L’analyse de sécurité affectera-t-elle les performances de mon site web ?
 
-Non. L’analyse de sécurité effectue toutes les requêtes une par une, comme un utilisateur unique. Pour cette raison, l’analyse de sécurité ne doit pas affecter les performances du site web.
+Non. L’analyse de sécurité effectue une par une toutes les demandes comme s’il s’agissait d’un seul utilisateur. Pour cette raison, l’analyse de sécurité ne doit pas affecter les performances du site web.
 
-### Combien de temps Adobe Commerce conserve-t-il les rapports d’analyse de sécurité ?
+### Pendant combien de temps Adobe Commerce conserve-t-il les rapports d’analyse de sécurité ?
 
-Vous pouvez générer les 10 rapports précédents à partir de votre fin. Si des rapports plus anciens sont requis, contactez l’assistance d’Adobe Commerce.
+Vous pouvez générer les 10 rapports précédents de votre côté. Si des rapports plus anciens sont requis, contactez l’assistance Adobe Commerce.
 
-### Quelles informations sont requises lors de l’envoi d’un ticket d’assistance ?
+### Quelles informations sont nécessaires lors de l’envoi d’un ticket d’assistance ?
 
-Veillez à indiquer le nom de domaine.
+Indiquez le nom de domaine tel qu’il est envoyé pour l’[analyse de sécurité](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID et Cloud Project_ID. Notez que l’ID de projet cloud n’est pas obligatoire pour Adobe Commerce On-premise.
 
-### Que se passe-t-il si je supprime mon magasin de l’analyse de l’outil d’analyse ?
+### Que se passe-t-il si je supprime mon magasin de l’analyse des outils de numérisation ?
 
-Si vous supprimez l’envoi du magasin, toutes les données associées, y compris les rapports d’analyse, seront supprimées. Cette opération est irréversible. L’envoi du domaine de magasin après sa suppression crée un nouvel envoi.
+Si vous supprimez l’envoi du magasin, toutes les données associées, y compris les rapports d’analyse, seront supprimées. Cette opération est irréversible. L’envoi du domaine de magasin après sa suppression crée un NOUVEL envoi.
