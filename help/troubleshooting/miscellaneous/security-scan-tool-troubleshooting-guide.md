@@ -104,7 +104,7 @@ Vous pouvez générer les 10 rapports précédents de votre côté. Si des rappo
 
 ### Quelles informations sont nécessaires lors de l’envoi d’un ticket d’assistance ?
 
-Indiquez le nom de domaine tel qu’il est envoyé pour l’[analyse de sécurité](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID et Cloud Project_ID. Notez que l’ID de projet cloud n’est pas obligatoire pour Adobe Commerce On-premise.
+Indiquez le nom de domaine tel qu’il est envoyé pour l’[analyse de sécurité](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID et Cloud Project_ID. Notez que l’ID de projet cloud n’est pas obligatoire pour Adobe Commerce On-premise.
 
 ### Que se passe-t-il si je supprime mon magasin de l’analyse des outils de numérisation ?
 
