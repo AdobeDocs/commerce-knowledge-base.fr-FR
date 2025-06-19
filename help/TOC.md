@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
+source-git-commit: dc2149f886d46826610f2f74b48ef9060a4ff376
 workflow-type: tm+mt
-source-wordcount: '3327'
+source-wordcount: '3263'
 ht-degree: 0%
 
 ---
@@ -76,14 +76,11 @@ ht-degree: 0%
       * [Problème connu dans Adobe Commerce 2.4.0 : erreur d’affichage des commandes](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
       * [Adobe Commerce on-premise 2.4.2 : image du produit manquante](/help/troubleshooting/storefront/adobe-commerce-2-4-2-on-prem-product-image-missing.md)
       * [Après l’installation, les images et les feuilles de style ne se chargent pas ; seul le texte s’affiche, pas les graphiques](/help/troubleshooting/storefront/after-installing-images-and-stylesheets-do-not-load-only-text-displays-no-graphics.md)
-      * [Impossible d’enregistrer « shipping » comme clé URL](/help/troubleshooting/storefront/storefront-unable-to-enter-shipping-as-a-url-key.md)
       * [Le produit ne s’affiche pas sur le storefront](/help/troubleshooting/storefront/product-is-not-displayed-on-storefront.md)
       * [problème Adobe Commerce 2.4.0 : affichage des données de messages bruts storefront](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
       * [Problème de crédit de magasin lors du passage en caisse dans Adobe Commerce 2.3.5](/help/troubleshooting/storefront/store-credit-issue-during-checkout-in-magento-2-3-5.md)
       * [Stocker les images non affichées après le déploiement](/help/troubleshooting/storefront/store-images-not-displayed-after-deployment.md)
       * [Problème connu de comparaison de produits dans Adobe Commerce 2.3.5](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
-      * [Le panneau de navigation supérieur ne se charge pas sur storefront](/help/troubleshooting/storefront/top-navigation-panel-does-not-load-on-storefront.md)
-      * [Les images de produit ne s’affichent pas malgré les rôles d’image de modification de produit](/help/troubleshooting/storefront/product-images-do-not-display-despite-product-edit-image-roles.md)
       * [Adobe Commerce 2.4.0 : erreur 404 lors de la suppression des points de récompense lors du passage en caisse avec expédition multiple](/help/troubleshooting/storefront/magento-2-4-0-404-error-removing-rewards-points-on-multi-shipping-checkout.md)
       * [Les clients sont déconnectés ou perdent le contenu du panier sur le storefront Adobe Commerce](/help/troubleshooting/storefront/customers-get-logged-out-or-lose-cart-content-on-magento-storefront.md)
       * [Impossible d’enregistrer le contact en tant que clé URL](/help/troubleshooting/storefront/unable-to-save-contact-as-a-url-key.md)
@@ -108,7 +105,6 @@ ht-degree: 0%
       * [La mise à niveau vers B2B 1.5.2 échoue avec une erreur de syntaxe SQL en raison de l’absence de la fonction REGEXP_LIKE](/help/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function.md)
       * [Problème de performance lors de la mise à niveau du module Magento_Company après la mise à jour B2B 1.5.2](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)
    * Site inactif ou ne répondant pas {#site-down-or-unresponsive}
-      * [Site non accessible en raison du cloaking de l&#39;origine](/help/troubleshooting/site-down-or-unresponsive/production-site-not-accessible-due-to-origin-cloaking.md)
       * [503 erreur d’accès à Adobe Commerce dans le navigateur web](/help/troubleshooting/site-down-or-unresponsive/503-error-accessing-magento-in-web-browser.md)
       * [Échec du chargement du site en raison de l’activation du mode de maintenance](/help/troubleshooting/site-down-or-unresponsive/site-fails-to-load-due-to-maintenance-mode-left-enabled.md)
       * [Diagramme de dépannage du site en panne](/help/troubleshooting/site-down-or-unresponsive/site-down-troubleshooting-diagram.md)
@@ -120,7 +116,6 @@ ht-degree: 0%
       * [Correction des erreurs de données non mises à jour dans  [!DNL Commerce Data Exporter]  flux et les journaux  [!DNL cron]  avec la table changelog qui n&#39;existe pas](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
       * [Erreur  [!DNL opensearch]  le moteur de recherche n&#39;existe pas. Retour à [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-mail indiquant que le stockage de l’exportation est presque plein](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
-      * [Les index invalidés et « indexer_reindex_all_invalid » s’exécutent constamment](/help/troubleshooting/miscellaneous/constant-reindexing-with-cron-job-indexer-reindex-all-invalid.md)
       * [Fichier de configuration manquant ou modifié](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [Erreur cURL 60 : certificat SSL expiré](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
       * [Résolution des problèmes liés au module de recommandations de produits dans Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
@@ -148,7 +143,6 @@ ht-degree: 0%
       * [Résolution des erreurs UTF-8 pour les chargements de fichiers CSV](/help/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.md)
       * [Résolution des problèmes de performances à l’aide de New Relic sur Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md)
       * [Problème connu du nombre de produits d’action en masse dans Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
-      * [Désactivez la sortie Adobe Commerce Banner pour améliorer les performances du site.](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md)
       * [Recherche d’une attaque DDoS à partir de l’interface de ligne de commande](/help/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.md)
       * [Erreur de page vierge ou de boucle de redirection lors de l’accès à storefront ou Commerce Admin](/help/troubleshooting/miscellaneous/blank-page-or-redirect-loop-error-when-accessing-storefront-or-magento-admin.md)
       * [Adobe Commerce 2.4.1 Message de validation d’adresse de sommet après la mise à jour de l’adresse](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md)
@@ -160,7 +154,6 @@ ht-degree: 0%
       * [Statut du stock incorrect après l’installation d’Inventory management](/help/troubleshooting/miscellaneous/stock-status-incorrect-after-magento-inventory-install.md)
       * [problème connu d’Adobe Commerce 2.3.5 : commandes de produits virtuels avec expédition multiple](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
       * [Utilisation des exportations de données pour identifier les incohérences](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
-      * [Plug-in du compositeur contre les attaques de confusion de dépendance](/help/troubleshooting/miscellaneous/composer-plugin-against-dependency-confusion-attacks.md)
       * [Images Stock non affichées, Adobe Commerce et Magento Open Source 2.3.7-p2](/help/troubleshooting/miscellaneous/adobe-commerce-and-magento-open-source-2-3-7-p2-stock-images-not-showing.md)
       * [Erreur d’activation de l’optimisation des images dans Adobe Commerce](/help/troubleshooting/miscellaneous/error-enabling-image-optimization-in-magento-commerce.md)
       * [Dépannage de l’outil de migration de données](/help/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.md)
@@ -208,7 +201,6 @@ ht-degree: 0%
       * [Dépannage de l&#39;erreur 503 causée par la nécessité de modifier les paramètres par défaut du vernis](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
       * [Accès administrateur limité provoquant des problèmes de performances](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)
       * [Les tâches cron verrouillent les tâches d&#39;autres groupes](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
-      * [Impossible de modifier le moteur de recherche avec Commerce Admin (le menu Moteur de recherche est inaccessible)](/help/troubleshooting/miscellaneous/cannot-change-search-engine-using-magento-admin-search-engine-menu-is-inaccessible.md)
       * [Erreur de niveau d’imbrication de la fonction maximale xdebug d’installation](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
       * [Impossible d’enregistrer le serveur principal Adobe Commerce de l’entité](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)
       * [Erreur de version PHP ou erreur 404 lors de l’accès à Adobe Commerce dans le navigateur](/help/troubleshooting/miscellaneous/php-version-error-or-404-error-when-accessing-magento-in-browser.md)
