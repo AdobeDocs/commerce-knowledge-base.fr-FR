@@ -36,7 +36,7 @@ Les requêtes AJAX à haut débit incluent celles liées au contenu privé des c
 
 Il existe trois solutions :
 
-* [Mise à niveau vers la version 2.3.4](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version).
+* [Mise à niveau vers la version 2.3.4](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version).
 * Veillez à ce que les requêtes soient moins lourdes (requêtes de mise en cache ou déplacement vers le contenu privé des clients).
 * Réduisez le nombre de requêtes.
 
@@ -46,11 +46,11 @@ Si des requêtes AJAX tierces sont déclenchées sur chaque page, essayez de les
 
 <u>Réduction du nombre de requêtes</u>
 
-* Désactivez le panier persistant, car il peut augmenter le nombre de requêtes `customer/section/load`. Suivez les étapes de la section [Chemins d’accès persistants au panier](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/paths/config-reference-general) de notre documentation destinée aux développeurs pour voir si le panier persistant est activé.
+* Désactivez le panier persistant, car il peut augmenter le nombre de requêtes `customer/section/load`. Suivez les étapes de la section [Chemins d’accès persistants au panier](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/paths/config-reference-general) de notre documentation destinée aux développeurs pour voir si le panier persistant est activé.
 * Si vous devez recharger ou invalider du contenu dans `sections.xml` suivez les étapes de la section [Contenu privé : invalider le contenu privé](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content) de notre documentation destinée aux développeurs et développeuses. Assurez-vous que vous n’utilisez pas directement la méthode `customerData.reload()` dans vos personnalisations.
 * Vérifiez les autres requêtes POST AJAX sur la même page. Ouvrez l’outil de développement Google Chrome dans le navigateur Google Chrome. Cliquez sur l’onglet **Réseau** puis sur l’onglet **XHR** pour obtenir la liste de toutes les requêtes AJAX de cette page spécifique. Cliquez ensuite sur chaque requête et, dans le champ Méthode de requête , doit correspondre aux requêtes GET. Remarque : Google Chrome est utilisé à titre d’exemple, et il est possible de le faire dans d’autres navigateurs.
 * Vérifiez la fonctionnalité du Gestionnaire de balises Google (GTM) qui est une requête AJAX spécifique. L’utilisateur peut supprimer cet AJAX et refactoriser sa personnalisation avec des fonctionnalités privées afin de réduire le nombre total de requêtes au serveur.
-* Vérifiez si la bannière Adobe Commerce est activée mais non utilisée. Vous devrez peut-être [Désactiver la sortie de la bannière Adobe Commerce pour améliorer les performances du site](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26909).
+* Vérifiez si la bannière Adobe Commerce est activée mais non utilisée. Vous devrez peut-être [Désactiver la sortie de la bannière Adobe Commerce pour améliorer les performances du site](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26909).
 
 ### Lectures connexes
 
