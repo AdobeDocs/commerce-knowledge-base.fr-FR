@@ -30,7 +30,7 @@ Si vous ressentez l’un des symptômes décrits ci-dessus, vérifiez l’état 
 
 UIse% > 90% ?
 
-a. OUI - Cela est dû au fait qu’il y a trop de fichiers. Examinez les étapes pour supprimer les fichiers en toute sécurité dans [Supprimer en toute sécurité les fichiers lorsqu’ils ne disposent pas d’espace disque, Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26889). Passez à l’[étape 2](#step-2) une fois ces étapes terminées. Pour demander de l’espace supplémentaire, [envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
+a. OUI - Cela est dû au fait qu’il y a trop de fichiers. Examinez les étapes pour supprimer les fichiers en toute sécurité dans [Supprimer en toute sécurité les fichiers lorsqu’ils ne disposent pas d’espace disque, Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26889). Passez à l’[étape 2](#step-2) une fois ces étapes terminées. Pour demander de l’espace supplémentaire, [envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
 b. NON - Vérifiez l’espace. Exécutez `df -h | grep mysql` puis `df -h | grep tmp` dans l’interface de ligne de commande/Terminal pour vérifier l’utilisation de l’espace disque dans les répertoires `/tmp` et `/data/mysql`. Passez à [étape 3](#step-3).
 
 +++
@@ -93,4 +93,4 @@ b. NON - [Envoyez un ticket d’assistance](/help/help-center-guide/help-center/
 
 ## Lecture connexe
 
-* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook

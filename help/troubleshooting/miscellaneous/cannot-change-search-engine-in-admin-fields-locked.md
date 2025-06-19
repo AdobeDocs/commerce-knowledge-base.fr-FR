@@ -42,4 +42,4 @@ La configuration du moteur de recherche est verrouillée dans le fichier `app/et
 
 ## Lecture connexe
 
-* Guide sur les [champs verrouillés (grisés) dans Commerce Admin](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26879) dans Commerce sur les infrastructures cloud.
+* Guide sur les [champs verrouillés (grisés) dans Commerce Admin](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26879) dans Commerce sur les infrastructures cloud.

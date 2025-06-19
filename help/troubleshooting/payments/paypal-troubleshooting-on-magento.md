@@ -41,7 +41,7 @@ Si votre mode de paiement PayPal implique une API avec des accords de facturatio
 
 Consultez les articles suivants :
 
-* [Demande rejetée par la passerelle PayPal - problème de facture en double](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) dans notre base de connaissances d&#39;assistance.
+* [Demande rejetée par la passerelle PayPal - problème de facture en double](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26838) dans notre base de connaissances d&#39;assistance.
 * [Modifier l’ID d’incrément pour la nouvelle entité de magasin](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) dans notre base de connaissances d’assistance.
 
 ## Contactez l’assistance pour collecter les journaux de paiement avancés

@@ -26,7 +26,7 @@ Les modifications apportées à la base de données ne sont pas répercutées su
 
 ## Cause
 
-Si vos indexeurs sont [configurés pour effectuer une mise à jour par planning](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers), le problème peut être dû au fait qu&#39;une ou plusieurs tables avec des journaux de modifications trop volumineux ou que des déclencheurs MySQL ne sont pas configurés.
+Si vos indexeurs sont [configurés pour effectuer une mise à jour par planning](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers), le problème peut être dû au fait qu&#39;une ou plusieurs tables avec des journaux de modifications trop volumineux ou que des déclencheurs MySQL ne sont pas configurés.
 
 ### Tables de logs des modifications surdimensionnées
 
@@ -71,7 +71,7 @@ Utilisez la commande suivante pour effectuer cette opération.
 
 >[!WARNING]
 >
->Avant de changer de mode d’indexation, nous vous recommandons de placer votre site web en mode [maintenance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) et de [désactiver les tâches cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) pour éviter les verrous de base de données.
+>Avant de changer de mode d’indexation, nous vous recommandons de placer votre site web en mode [maintenance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=fr#maintenance-mode) et de [désactiver les tâches cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=fr#disable-cron-jobs) pour éviter les verrous de base de données.
 
 ```bash
 php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
@@ -83,6 +83,6 @@ php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
 
 ## Lecture connexe
 
-* [[!DNL MySQL] les tableaux sont trop volumineux](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26945) dans notre base de connaissances de support
+* [[!DNL MySQL] les tableaux sont trop volumineux](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26945) dans notre base de connaissances de support
 * [Indexation : [!DNL Mview]](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) dans notre documentation destinée aux développeurs
-* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
