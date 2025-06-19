@@ -1,41 +1,41 @@
 ---
-title: Modifiez l’identifiant d’incrément d’une entité DB (commande, facture, note de crédit, etc.) sur un magasin particulier.
-description: Cet article explique comment modifier l’ID d’incrément d’une entité de base de données Adobe Commerce (DB) (commande, facture, note de crédit, etc.) sur un magasin Adobe Commerce particulier à l’aide de l’instruction SQL "ALTER TABLE".
+title: Modifier l'ID incrément d'une entité de base de données (commande, facture, avoir, etc.) dans un magasin particulier
+description: Cet article explique comment modifier l’ID d’incrément d’une entité de base de données (DB) Adobe Commerce (commande, facture, avoir, etc.) sur une boutique Adobe Commerce spécifique à l’aide de l’instruction SQL « ALTER TABLE ».
 exl-id: 3704dd97-3639-44dc-9b8b-cf09f0c04e6c
 feature: Invoices
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
 
-# Modifiez l’identifiant d’incrément d’une entité DB (commande, facture, note de crédit, etc.) sur un magasin particulier.
+# Modifier l&#39;ID incrément d&#39;une entité de base de données (commande, facture, avoir, etc.) dans un magasin particulier
 
-Cet article explique comment modifier l’ID d’incrément d’une entité de base de données Adobe Commerce (DB) (commande, facture, note de crédit, etc.) sur un magasin Adobe Commerce particulier à l’aide de l’instruction SQL `ALTER TABLE`.
+Cet article explique comment modifier l’ID d’incrément d’une entité de base de données (DB) Adobe Commerce (commande, facture, avoir, etc.) sur une boutique Adobe Commerce spécifique à l’aide de l’instruction SQL `ALTER TABLE`.
 
 ## Versions affectées
 
-* Adobe Commerce sur site : 2.x.x
+* Adobe Commerce on-premise : 2.x.x
 * Adobe Commerce sur l’infrastructure cloud : 2.x.x
-* MySQL : toute [version prise en charge](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements)
+* MySQL : toute [version prise en charge](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
 
 ## Quand devez-vous modifier l’ID d’incrément (cas) ?
 
 Vous devrez peut-être modifier l’ID d’incrément pour les nouvelles entités de base de données dans les cas suivants :
 
-* Après une restauration sur un site Live
-* Certains enregistrements de commande ont été perdus, mais leurs identifiants sont déjà utilisés par les passerelles de paiement (comme PayPal) pour votre compte marchand actuel. Dans ce cas, les passerelles de paiement arrêtent de traiter de nouvelles commandes ayant le même identifiant, renvoyant l’erreur &quot;Dupliquer l’identifiant de facture&quot;.
+* Après une restauration par sauvegarde irréversible sur un site actif
+* Certains enregistrements de commande ont été perdus, mais leurs identifiants sont déjà utilisés par les passerelles de paiement (comme PayPal) pour votre compte marchand actuel. Dans ce cas, les passerelles de paiement arrêtent le traitement des nouvelles commandes ayant les mêmes ID, renvoyant l&#39;erreur « ID de facture en double »
 
 >[!NOTE]
 >
->Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par identifiant de facture dans les préférences de réception des paiements de PayPal. Voir [Demande de refus de la passerelle PayPal - problème de facture en double](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md) dans notre base de connaissances d’assistance.
+>Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par ID de facture dans les Préférences de réception des paiements de PayPal. Voir [Demande rejetée de la passerelle PayPal - problème de facture en double](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) dans notre base de connaissances du support.
 
 ## Étapes préalables
 
 1. Recherchez les magasins et les entités pour lesquels le nouvel ID d’incrément doit être modifié.
-1. [Connectez-vous](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) à votre base de données MySQL. Pour Adobe Commerce sur l’infrastructure cloud, vous devez d’abord [SSH dans votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
-1. Vérifiez la valeur auto\_incrément actuelle de la table de séquence d’entités à l’aide de la requête suivante :
+1. [Connexion](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) à votre base de données MySQL. Pour Adobe Commerce sur les infrastructures cloud, vous devez d’abord [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. Vérifiez la valeur auto\_increment actuelle pour la table de séquences d&#39;entités à l&#39;aide de la requête suivante :
 
 ```sql
 SHOW TABLE STATUS FROM `{database_name}` WHERE `name` LIKE 'sequence_{entity_type}_{store_id}';
@@ -43,21 +43,21 @@ SHOW TABLE STATUS FROM `{database_name}` WHERE `name` LIKE 'sequence_{entity_typ
 
 ### Exemple
 
-Si vous cochez une auto-incrémentation pour une commande sur le magasin avec *ID=1*, le nom de la table sera :
+Si vous vérifiez une incrémentation automatique pour une commande sur le magasin avec l’*ID=1*, le nom de la table serait :
 
 ```sql
 'sequence_order_1'
 ```
 
-Si la valeur de la colonne `auto_increment` est *1234*, l’ordre suivant placé dans le magasin avec *ID=1* aura le *ID \#100001234*.
+Si la valeur de la colonne `auto_increment` est *1234*, la commande suivante passée dans le magasin avec *ID=1* aura le *ID \#100001234*.
 
 ### Documentation connexe
 
-* [Configurez une connexion à base de données MySQL distante](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) dans notre documentation destinée aux développeurs.
+* [Configurez une connexion à la base de données MySQL distante](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) dans notre documentation destinée aux développeurs.
 
 ## Mettre à jour l’entité pour modifier l’ID d’incrément
 
-Mettez à jour l’entité à l’aide de la requête suivante :
+Mettez à jour l&#39;entité à l&#39;aide de la requête suivante :
 
 ```sql
 ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_value};
@@ -65,7 +65,7 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 
 >[!WARNING]
 >
->Important : La nouvelle valeur d’incrément doit être supérieure à la valeur actuelle, et non inférieure !
+>Important : la nouvelle valeur d’incrément doit être supérieure à la valeur actuelle, et non inférieure.
 
 ### Exemple
 
@@ -75,17 +75,17 @@ Après avoir exécuté la requête suivante :
 ALTER TABLE sequence_order_1 AUTO_INCREMENT = 2000;
 ```
 
-la commande suivante placée dans le magasin avec *ID=1* aura le *ID \#100002000*.
+la prochaine commande passée dans le magasin avec *ID=1* aura le *ID \#100002000*.
 
-## Autres étapes recommandées dans l’environnement de production (Cloud)
+## Étapes supplémentaires recommandées dans l’environnement de production (cloud)
 
 Avant d’exécuter la requête `ALTER TABLE` sur l’environnement de production d’Adobe Commerce sur l’infrastructure cloud, nous vous recommandons vivement d’effectuer les étapes suivantes :
 
-* Testez l’ensemble de la procédure de modification de l’identifiant d’incrément dans votre environnement d’évaluation.
-* [Créez](/help/how-to/general/create-database-dump-on-cloud.md) une sauvegarde de base de données pour restaurer la base de données de production en cas d’échec
+* Tester l’ensemble de la procédure de modification de l’ID d’incrément dans votre environnement d’évaluation
+* [Créer](/help/how-to/general/create-database-dump-on-cloud.md) une sauvegarde de base de données pour restaurer votre base de données de production en cas d’échec
 
 ## Documentation connexe
 
-* [Créer un vidage de base de données sur Cloud](/help/how-to/general/create-database-dump-on-cloud.md) dans notre base de connaissances de support
-* [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr) dans notre documentation destinée aux développeurs
-* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+* [Créer une image mémoire de la base de données sur Cloud](/help/how-to/general/create-database-dump-on-cloud.md) dans notre base de connaissances d’assistance
+* [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) dans notre documentation destinée aux développeurs
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
