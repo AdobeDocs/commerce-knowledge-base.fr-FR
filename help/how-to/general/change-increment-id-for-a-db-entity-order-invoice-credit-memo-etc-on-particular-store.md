@@ -3,9 +3,9 @@ title: Modifier l'ID incrément d'une entité de base de données (commande, fac
 description: Cet article explique comment modifier l’ID d’incrément d’une entité de base de données (DB) Adobe Commerce (commande, facture, avoir, etc.) sur une boutique Adobe Commerce spécifique à l’aide de l’instruction SQL « ALTER TABLE ».
 exl-id: 3704dd97-3639-44dc-9b8b-cf09f0c04e6c
 feature: Invoices
-source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
+source-git-commit: e33d0bf6c857d0d54ec1373db79910d78296b054
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,19 @@ ht-degree: 0%
 
 Cet article explique comment modifier l’ID d’incrément d’une entité de base de données (DB) Adobe Commerce (commande, facture, avoir, etc.) sur une boutique Adobe Commerce spécifique à l’aide de l’instruction SQL `ALTER TABLE`.
 
+>[!NOTE]
+>
+>Cet article décrit uniquement comment modifier la valeur numérique de départ de l&#39;ID incrément pour les commandes, les factures, les avoirs, etc.
+>
+>Elle ne couvre pas la modification du format d’ID d’incrément ou l’ajout de préfixes/suffixes personnalisés (par exemple, modifier le 10000001 en ORDER-10000001, MYSTORE-10000001, 2A10000001, etc.)
+>
+>Pour personnaliser le format, vous aurez besoin d’une extension personnalisée ou d’un travail de développement.
+
 ## Versions affectées
 
 * Adobe Commerce on-premise : 2.x.x
 * Adobe Commerce sur l’infrastructure cloud : 2.x.x
-* MySQL : toute [version prise en charge](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements)
+* MySQL : toute [version prise en charge](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
 
 ## Quand devez-vous modifier l’ID d’incrément (cas) ?
 
@@ -29,12 +37,12 @@ Vous devrez peut-être modifier l’ID d’incrément pour les nouvelles entité
 
 >[!NOTE]
 >
->Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par ID de facture dans les Préférences de réception des paiements de PayPal. Voir [Demande rejetée de la passerelle PayPal - problème de facture en double](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26838) dans notre base de connaissances du support.
+>Vous pouvez également résoudre le problème de passerelle de paiement pour PayPal en autorisant plusieurs paiements par ID de facture dans les Préférences de réception des paiements de PayPal. Voir [Demande rejetée de la passerelle PayPal - problème de facture en double](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) dans notre base de connaissances du support.
 
 ## Étapes préalables
 
 1. Recherchez les magasins et les entités pour lesquels le nouvel ID d’incrément doit être modifié.
-1. [Connexion](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) à votre base de données MySQL. Pour Adobe Commerce sur les infrastructures cloud, vous devez d’abord [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
+1. [Connexion](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) à votre base de données MySQL. Pour Adobe Commerce sur les infrastructures cloud, vous devez d’abord [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Vérifiez la valeur auto\_increment actuelle pour la table de séquences d&#39;entités à l&#39;aide de la requête suivante :
 
 ```sql
@@ -53,7 +61,7 @@ Si la valeur de la colonne `auto_increment` est *1234*, la commande suivante pas
 
 ### Documentation connexe
 
-* [Configurez une connexion à la base de données MySQL distante](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) dans notre documentation destinée aux développeurs.
+* [Configurez une connexion à la base de données MySQL distante](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) dans notre documentation destinée aux développeurs.
 
 ## Mettre à jour l’entité pour modifier l’ID d’incrément
 
@@ -87,5 +95,5 @@ Avant d’exécuter la requête `ALTER TABLE` sur l’environnement de productio
 ## Documentation connexe
 
 * [Créer une image mémoire de la base de données sur Cloud](/help/how-to/general/create-database-dump-on-cloud.md) dans notre base de connaissances d’assistance
-* [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr) dans notre documentation destinée aux développeurs
-* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+* [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) dans notre documentation destinée aux développeurs
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
