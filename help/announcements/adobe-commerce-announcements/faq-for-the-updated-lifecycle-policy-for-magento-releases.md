@@ -18,7 +18,7 @@ ht-degree: 0%
 Adobe Commerce fournit des correctifs de qualité pour une version mineure pendant au moins 12 mois à compter de la date de disponibilité générale de la prochaine version mineure du logiciel. La manière dont nous fournissons des correctifs de qualité au cours de cette période change :
 
 * **Politique précédente :** actuellement, les correctifs de qualité de la ligne précédente qui se trouve dans la fenêtre EOS de 12 mois sont fournis via notre version trimestrielle de correctifs, ce qui fait des correctifs trimestriels une combinaison de sécurité et de qualité.
-* **Nouvelle stratégie :** à partir de la version 2.4 comme ligne de version mineure la plus récente, les correctifs de version pour la ligne précédente prise en charge (2.3) passeront en sécurité seule. Nous continuerons à fournir des correctifs de qualité pour la ligne précédente prise en charge pendant les 12 mois qui suivent la publication d’une version mineure (comme la version 2.4) et les nouvelles lignes de version mineure suivantes. Toutefois, ces correctifs seront disponibles via l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) et seront axés uniquement sur les problèmes critiques.
+* **Nouvelle stratégie :** à partir de la version 2.4 comme ligne de version mineure la plus récente, les correctifs de version pour la ligne précédente prise en charge (2.3) passeront en sécurité seule. Nous continuerons à fournir des correctifs de qualité pour la ligne précédente prise en charge pendant les 12 mois qui suivent la publication d’une version mineure (comme la version 2.4) et les nouvelles lignes de version mineure suivantes. Toutefois, ces correctifs seront disponibles via l’[outil de correctifs de qualité (QPT)](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) et seront axés uniquement sur les problèmes critiques.
 
 ## Quand cette politique entre-t-elle en vigueur ?
 
@@ -38,7 +38,7 @@ Adobe continuera également à disposer de versions de sécurité uniquement pou
 
 ## Qu’est-ce que l’outil de correctifs de qualité ?
 
-Consultez l’article [Outil de correctifs de qualité publié : un nouvel outil pour appliquer des correctifs de qualité en libre-service](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans notre base de connaissances du support.
+Consultez l’article [Outil de correctifs de qualité publié : un nouvel outil pour appliquer des correctifs de qualité en libre-service](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) dans notre base de connaissances du support.
 
 ## Qui devrait envisager d’utiliser cette nouvelle politique ?
 
@@ -50,7 +50,7 @@ En fin de compte, tous les commerçants doivent toujours donner la priorité à 
 
 ## Comment puis-je obtenir des correctifs de qualité sur les versions mineures prises en charge qui ne sont pas de la dernière ligne ?
 
-Les correctifs seront disponibles via l’[outil de correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
+Les correctifs seront disponibles via l’[outil de correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
 
 ## Comment puis-je obtenir des correctifs de qualité sur la dernière ligne ?
 
