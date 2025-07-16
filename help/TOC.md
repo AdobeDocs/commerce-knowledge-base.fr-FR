@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: f0c2e20e0bd6dab713be59c1c686ee2948445bd4
+source-git-commit: 4d3f571c55feb4752037429b9708e71dcf2c571b
 workflow-type: tm+mt
-source-wordcount: '3192'
+source-wordcount: '3164'
 ht-degree: 0%
 
 ---
@@ -286,10 +286,6 @@ ht-degree: 0%
       * [Échec du déploiement lors du vidage du cache : erreur « Aucune commande n’est définie dans l’espace de noms du cache »](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
    * Problèmes connus {#known-issues-patches-attached}
       * [Conseils sur la sécurisation de votre magasin et la rotation des clés de chiffrement : [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
-      * [Mise à jour de sécurité disponible pour Adobe Commerce - [!DNL APSB24-61]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61.md)
-      * [Résolution des problèmes de rotation de la clé de chiffrement : [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102.md)
-      * [Mise à jour de sécurité disponible pour Adobe Commerce - [!DNL APSB24-40] révisée afin d’inclure un correctif isolé pour  [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
-      * [[!DNL UPS] la migration de l’intégration de la méthode d’expédition  [!DNL SOAP] vers [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [Erreur lors du filtrage des commandes dans Admin](/help/troubleshooting/known-issues-patches-attached/error-when-filtering-orders-in-admin.md)
       * [Les utilisateurs ne peuvent pas ajouter de produit au panier si rien n’est sélectionné dans les pays autorisés.](/help/troubleshooting/known-issues-patches-attached/user-not-able-to-add-product-to-cart-if-allow-countries-is-not-selected.md)
       * [Emplacement de l’URL d’administration Adobe Commerce divulgué](/help/troubleshooting/known-issues-patches-attached/magento-admin-url-location-disclosed.md)
