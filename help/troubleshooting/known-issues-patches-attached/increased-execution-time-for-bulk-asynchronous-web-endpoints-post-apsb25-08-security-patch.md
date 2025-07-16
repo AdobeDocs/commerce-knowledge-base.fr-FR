@@ -3,9 +3,10 @@ title: Délai d’exécution plus long pour les points d’entrée web asynchron
 description: Cet article fournit un correctif pour le problème où les requêtes POST rest/all/async/bulk/V1/products pour plus de 1 000 entrées subissent une augmentation significative du temps d’exécution après l’application du correctif de sécurité APSB25-08.
 feature: Security, Cache, REST, Products, Customers
 role: Admin, Developer
-source-git-commit: fce7f860b9fddd694b311ffc4acd56a48c06e14b
+exl-id: 784a48cb-1ef1-432b-b09f-ebcbb9bebf01
+source-git-commit: f0c2e20e0bd6dab713be59c1c686ee2948445bd4
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -55,8 +56,8 @@ Pour résoudre ce problème, appliquez le [AC-14078-2-4x-composer-patch.zip](ass
 
 ## Application du correctif
 
-Décompressez le fichier et consultez [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=fr) dans notre base de connaissances d’assistance pour obtenir des instructions.
+Décompressez le fichier et consultez [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) dans notre base de connaissances d’assistance pour obtenir des instructions.
 
 ## Lecture connexe
 
-* [Mise à jour de sécurité disponible pour Adobe Commerce - APSB25-08](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08.md)
+* [Mise à jour de sécurité disponible pour Adobe Commerce - APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)
