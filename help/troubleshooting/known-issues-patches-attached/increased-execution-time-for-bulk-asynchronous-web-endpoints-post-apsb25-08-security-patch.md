@@ -56,8 +56,8 @@ Pour résoudre ce problème, appliquez le [AC-14078-2-4x-composer-patch.zip](ass
 
 ## Application du correctif
 
-Décompressez le fichier et consultez [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) dans notre base de connaissances d’assistance pour obtenir des instructions.
+Décompressez le fichier et consultez [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=fr) dans notre base de connaissances d’assistance pour obtenir des instructions.
 
 ## Lecture connexe
 
-* [Mise à jour de sécurité disponible pour Adobe Commerce - APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)
+* [Mise à jour de sécurité disponible pour Adobe Commerce - APSB25-08](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27149)

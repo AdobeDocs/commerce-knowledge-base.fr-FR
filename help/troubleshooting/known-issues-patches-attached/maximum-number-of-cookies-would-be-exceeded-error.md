@@ -19,9 +19,9 @@ Cet article fournit des correctifs pour résoudre l’erreur indiquant *Le nombr
 
 Adobe Commerce (toutes les méthodes de déploiement) 2.4.4 à 2.4.7, avec l’un des correctifs suivants appliqués :
 
-* Correctif MDVA-12304 appliqué à l’aide du [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
-* [Mise à jour de sécurité disponible pour Adobe Commerce - APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)
-* [Correctifs cloud pour [!DNL Commerce] 1.1.4](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
+* Correctif MDVA-12304 appliqué à l’aide du [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+* [Mise à jour de sécurité disponible pour Adobe Commerce - APSB25-08](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27149)
+* [Correctifs cloud pour [!DNL Commerce] 1.1.4](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
 
 ## Problème
 
@@ -50,6 +50,6 @@ Le problème se produit, car le nombre maximal de cookies autorisés est défini
 
 ### Lecture connexe
 
-* [ Application de correctifs ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/apply) dans le guide de mise à niveau d’Adobe Commerce
-* [Bonnes pratiques pour distribuer les correctifs Adobe Commerce à grande échelle](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale) dans le guide d’implémentation d’Adobe Commerce
-* [Notes de mise à jour de la suite d’outils Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) dans le guide Commerce sur le cloud .
+* [ Application de correctifs ](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/patches/apply) dans le guide de mise à niveau d’Adobe Commerce
+* [Bonnes pratiques pour distribuer les correctifs Adobe Commerce à grande échelle](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale) dans le guide d’implémentation d’Adobe Commerce
+* [Notes de mise à jour de la suite d’outils Commerce Cloud](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) dans le guide Commerce sur le cloud .
