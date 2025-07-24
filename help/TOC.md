@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 15d38d9b0cb18536326c0afbb12b8a21eaee596c
+source-git-commit: 0569b4874400e0d313ad556cc7c07abfc7647368
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3013'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,6 @@ ht-degree: 0%
 * [Base de connaissances de l’assistance Adobe Commerce](/help/overview.md)
 * Outils d’assistance {#support-tools}
    * [Présentation des outils d’assistance](/help/support-tools/overview.md)
-   * Outil d’analyse à l’échelle du site {#site-wide-analysis-tool}
-      * [Outil d’analyse à l’échelle du site d’Adobe : présentation](/help/support-tools/site-wide-analysis-tool/swat-tool-overview.md)
-      * [FAQ sur le rapport d’outil d’analyse à l’échelle du site Adobe Commerce](/help/support-tools/site-wide-analysis-tool/swat-faq.md)
 * Annonces {#announcements}
    * [Présentation des annonces](/help/announcements/overview.md)
    * Annonces Adobe Commerce {#commerce-announcements}
