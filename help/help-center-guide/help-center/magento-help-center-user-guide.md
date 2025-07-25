@@ -146,7 +146,7 @@ Pour soumettre un nouveau cas d’assistance à l’aide de la page de démarrag
 >1. Accédez à accounts.magento.com et connectez-vous avec le même profil (professionnel, scolaire ou personnel) que celui utilisé pour gérer les cas d’assistance dans Adobe Experience League.
 >1. Une fois que vous êtes connecté à votre profil accounts.magento.com, revenez à experienceleague.adobe.com et connectez-vous.
 >1. Sélectionnez votre organisation dans le menu déroulant de l’organisation.
->1. Si votre organisation n’apparaît toujours pas, contactez votre administrateur Commerce pour obtenir les droits de délégué de l’assistance. Pour plus d’informations, consultez l’article d’aide Partage de compte Commerce [](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share).
+>1. Si votre organisation n’apparaît toujours pas, contactez votre administrateur Commerce pour obtenir les droits de délégué de l’assistance. Pour plus d’informations, consultez l’article d’aide Partage de compte Commerce [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share).
 
 >[!NOTE]
 >
@@ -286,7 +286,7 @@ Pour envoyer un nouveau ticket d’assistance à l’aide de Cloud Console, proc
 
 ### Ligne d’assistance d’Adobe Commerce P1 {#P1-hotline}
 
-L’article sur la ligne d’assistance P1 d’Adobe Commerce [](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html) fournit les numéros d’assistance P1 d’Adobe Commerce lors de la recherche d’aide lors d’un incident P1 et explique les informations à fournir.
+L’article sur la ligne d’assistance P1 d’Adobe Commerce [&#128279;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html) fournit les numéros d’assistance P1 d’Adobe Commerce lors de la recherche d’aide lors d’un incident P1 et explique les informations à fournir.
 
 ### Modèle opérationnel de responsabilité partagée d’Adobe Commerce {#shared-responsibility-operational-model}
 
