@@ -40,7 +40,7 @@ Pour définir la version NPM nécessaire, spécifiez-la dans le fichier de confi
    >
    >Si vous souhaitez exécuter Node.JS dans votre application et pas seulement dans votre build, ajoutez les commandes suivantes pour modifier votre hook de build :
    > 
-   ```
+   > ```
    > echo 'unset NPM_CONFIG_PREFIX' >> .environment
    > echo 'export NO_UPDATE_NOTIFIER=1' >> .environment
    > echo 'export NVM_DIR="$MAGENTO_CLOUD_DIR/.nvm"' >> .environment
