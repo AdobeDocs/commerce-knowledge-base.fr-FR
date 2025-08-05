@@ -1,41 +1,41 @@
 ---
-title: '"Cloud Adobe Commerce : la réindexation est arrêtée avec le message "Tué"'
-description: '* Adobe Commerce sur l’infrastructure cloud (toutes versions)'
+title: 'Adobe Commerce cloud : la réindexation s’arrête avec le message « Tué »'
+description: '* Adobe Commerce sur les infrastructures cloud (toutes versions)'
 exl-id: 36ed9c9f-8280-41db-9df3-fe842dade4b1
 feature: Cloud, Paas
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
 
-# Cloud Adobe Commerce : la réindexation est arrêtée avec le message `Killed`
+# Adobe Commerce cloud : la réindexation se termine par `Killed` message
 
 ## Produits et versions concernés
 
-* Adobe Commerce sur l’infrastructure cloud (toutes versions)
+* Adobe Commerce sur les infrastructures cloud (toutes versions)
 
 ## Problème
 
-Vous tentez d’exécuter une réindexation sur la branche d’intégration (ou sur l’évaluation du projet d’architecture Starter), et le processus est arrêté avec le message `Killed`.
+Vous essayez d’exécuter une réindexation sur la branche Intégration (ou sur l’évaluation du projet d’architecture de démarrage) et le processus est en cours d’arrêt avec le message `Killed` .
 
 ## Cause
 
 Cela se produit généralement parce que les processus PHP manquent de mémoire.
-La raison la plus courante est un grand nombre de produits, magasins et/ou groupes de clients sur l’instance.
+La raison la plus courante est un grand nombre de produits, de magasins et/ou de groupes de clients sur l’instance .
 
 ## Solution
 
-1. Réduire le nombre de produits (ainsi que les groupes de clients et les magasins, le cas échéant).
+1. Réduisez le nombre de produits (ainsi que le nombre de groupes de clients et de magasins, le cas échéant).
 1. Limitez l’utilisation à un ou deux utilisateurs simultanés.
-1. Désactivez les tâches cron et exécutez-les manuellement si nécessaire.
-1. Si cela n’a pas été fait précédemment, demandez une mise à niveau vers les environnements d’intégration améliorée. Notez la restriction quant au nombre d’environnements auxquels vous seriez limité une fois la mise à niveau effectuée. Pour plus d’informations, reportez-vous à l’article [Demande d’amélioration de l’environnement d’intégration - Pro et Starter](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) dans notre base de connaissances de prise en charge.
+1. Désactivez les tâches cron et exécutez-les manuellement selon vos besoins.
+1. Si cela n’a pas été fait auparavant, demandez une mise à niveau vers les environnements d’intégration améliorée - prenez note de la restriction du nombre d’environnements auxquels vous seriez limité une fois la mise à niveau effectuée. Pour plus d’informations, consultez l’article [ Demande d’amélioration de l’environnement d’intégration - Pro et Starter ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) dans notre base de connaissances d’assistance.
 
 ## Lecture connexe :
 
 Dans notre documentation destinée aux développeurs :
 
-* [Architecture Pro > Environnement d’intégration](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [Architecture de démarrage > Environnement d’évaluation](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)
+* [Architecture Pro > Environnement d’intégration](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [Architecture de démarrage > Environnement d’évaluation](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)

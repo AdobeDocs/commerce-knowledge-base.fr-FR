@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 0569b4874400e0d313ad556cc7c07abfc7647368
+source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
 workflow-type: tm+mt
-source-wordcount: '3013'
+source-wordcount: '3006'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 0%
 * Annonces {#announcements}
    * [Présentation des annonces](/help/announcements/overview.md)
    * Annonces Adobe Commerce {#commerce-announcements}
-      * [Demande d’amélioration de l’environnement d’intégration - Pro et Starter](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md)
       * [Demandes de capacité de pointe pendant les fêtes pour Adobe Commerce sur notre infrastructure cloud](/help/announcements/adobe-commerce-announcements/holiday-surge-capacity-requests-for-magento-commerce-cloud.md)
       * [Outil de compatibilité de mise à niveau 1.1.0 pour Adobe Commerce](/help/announcements/adobe-commerce-announcements/upgrade-compatibility-tool-for-magento.md)
       * [FAQ sur la politique de cycle de vie mise à jour pour les versions d’Adobe Commerce](/help/announcements/adobe-commerce-announcements/faq-for-the-updated-lifecycle-policy-for-magento-releases.md)
