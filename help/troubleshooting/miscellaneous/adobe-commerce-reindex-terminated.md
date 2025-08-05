@@ -31,11 +31,11 @@ La raison la plus courante est un grand nombre de produits, de magasins et/ou de
 1. Réduisez le nombre de produits (ainsi que le nombre de groupes de clients et de magasins, le cas échéant).
 1. Limitez l’utilisation à un ou deux utilisateurs simultanés.
 1. Désactivez les tâches cron et exécutez-les manuellement selon vos besoins.
-1. Si cela n’a pas été fait auparavant, demandez une mise à niveau vers les environnements d’intégration améliorée - prenez note de la restriction du nombre d’environnements auxquels vous seriez limité une fois la mise à niveau effectuée. Pour plus d’informations, consultez l’article [ Demande d’amélioration de l’environnement d’intégration - Pro et Starter ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) dans notre base de connaissances d’assistance.
+1. Si cela n’a pas été fait auparavant, demandez une mise à niveau vers les environnements d’intégration améliorée - prenez note de la restriction du nombre d’environnements auxquels vous seriez limité une fois la mise à niveau effectuée. Pour plus d’informations, consultez l’article [ Demande d’amélioration de l’environnement d’intégration - Pro et Starter ](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27242) dans notre base de connaissances d’assistance.
 
 ## Lecture connexe :
 
 Dans notre documentation destinée aux développeurs :
 
-* [Architecture Pro > Environnement d’intégration](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [Architecture de démarrage > Environnement d’évaluation](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)
+* [Architecture Pro > Environnement d’intégration](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [Architecture de démarrage > Environnement d’évaluation](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)

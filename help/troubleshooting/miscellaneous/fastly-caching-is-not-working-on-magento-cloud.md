@@ -170,13 +170,13 @@ Pour vérifier que Fastly est activé dans les environnements d’évaluation et
    "fastly-magento2": {    "type": "vcs",    "url": "https://github.com/fastly/fastly-magento2.git"    }
    ```
 
-1. Si vous utilisez Configuration Management, vous devez disposer d’un fichier de configuration. Modifiez le fichier app/etc/config.app.php (2.0, 2.1) ou app/etc/config.php (2.2) et assurez-vous que le paramètre `'Fastly_Cdn' => 1` est correct. Le paramètre ne doit pas être `'Fastly_Cdn' => 0` (c’est-à-dire désactivé). Si vous avez activé Fastly, supprimez le fichier de configuration et exécutez la commande bin/magento-cloud:scd-dump pour mettre à jour. Pour une présentation de ce fichier, consultez [Exemple de gestion des paramètres spécifiques au système](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html#manage-the-system-specific-configuration) dans le guide de configuration.
+1. Si vous utilisez Configuration Management, vous devez disposer d’un fichier de configuration. Modifiez le fichier app/etc/config.app.php (2.0, 2.1) ou app/etc/config.php (2.2) et assurez-vous que le paramètre `'Fastly_Cdn' => 1` est correct. Le paramètre ne doit pas être `'Fastly_Cdn' => 0` (c’est-à-dire désactivé). Si vous avez activé Fastly, supprimez le fichier de configuration et exécutez la commande bin/magento-cloud:scd-dump pour mettre à jour. Pour une présentation de ce fichier, consultez [Exemple de gestion des paramètres spécifiques au système](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html?lang=fr#manage-the-system-specific-configuration) dans le guide de configuration.
 
-Si le module n’est pas installé, vous devez l’installer dans une branche [Environnement d’intégration](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) et la déployer dans les environnements d’évaluation et de production. Voir [Configuration rapide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) pour obtenir des instructions dans le guide Commerce sur les infrastructures cloud.
+Si le module n’est pas installé, vous devez l’installer dans une branche [Environnement d’intégration](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27242) et la déployer dans les environnements d’évaluation et de production. Voir [Configuration rapide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=fr) pour obtenir des instructions dans le guide Commerce sur les infrastructures cloud.
 
 ### Fastly-Magento-VCL-Uploaded est absent
 
-Lors de l’installation et de la configuration, vous devez avoir téléchargé le Fastly VCL. Il s’agit des fragments de code VCL de base fournis par le module Fastly , et non des fragments de code VCL personnalisés que vous créez. Pour obtenir des instructions, consultez [Chargement rapide de fragments de code VCL](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#upload-vcl-to-fastly) dans le Guide de Commerce sur les infrastructures cloud.
+Lors de l’installation et de la configuration, vous devez avoir téléchargé le Fastly VCL. Il s’agit des fragments de code VCL de base fournis par le module Fastly , et non des fragments de code VCL personnalisés que vous créez. Pour obtenir des instructions, consultez [Chargement rapide de fragments de code VCL](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=fr#upload-vcl-to-fastly) dans le Guide de Commerce sur les infrastructures cloud.
 
 ### X-Cache inclut MISS
 
@@ -190,7 +190,7 @@ Si vous obtenez le même résultat, utilisez les commandes curl et vérifiez les
 
 Si le problème persiste, une autre extension réinitialise probablement ces en-têtes. Répétez la procédure suivante dans Évaluation pour désactiver les extensions afin de trouver celle qui cause le problème. Après avoir localisé la ou les extensions à l’origine du problème, vous devez désactiver la ou les extensions dans Production.
 
-1. Pour désactiver les extensions, suivez les étapes décrites dans la section [Gérer les extensions](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=en#manage-extensions) du guide Commerce sur les infrastructures cloud.
+1. Pour désactiver les extensions, suivez les étapes décrites dans la section [Gérer les extensions](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=fr#manage-extensions) du guide Commerce sur les infrastructures cloud.
 1. Après avoir désactivé les extensions, accédez à **[!UICONTROL System]** > **[!UICONTROL Tools]** > **[!UICONTROL Cache Management]**.
 1. Cliquez sur **[!UICONTROL Flush Magento Cache]**.
 1. Activez maintenant une extension à la fois, ce qui permet d’enregistrer la configuration et de vider le cache.
@@ -201,6 +201,6 @@ Lorsque vous isolez l’extension qui réinitialise les en-têtes Fastly, contac
 
 ## Pour plus d’informations, consultez notre documentation destinée aux développeurs :
 
-* [À propos de Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [Configuration rapide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
-* [Extraits personnalisés Fastly VCL](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)
+* [À propos de Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=fr)
+* [Configuration rapide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=fr)
+* [Extraits personnalisés Fastly VCL](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=fr)

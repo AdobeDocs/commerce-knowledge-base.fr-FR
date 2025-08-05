@@ -48,10 +48,10 @@ Pour définir la version NPM nécessaire, spécifiez-la dans le fichier de confi
    > ```
 
 1. Enregistrez les modifications dans le fichier .
-1. Envoyez le fichier modifié par Git à votre [environnement d’intégration](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242).
+1. Envoyez le fichier modifié par Git à votre [environnement d’intégration](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27242).
 
 Les modifications prennent effet après que vous avez envoyé le fichier YAML mis à jour dans Git à l’environnement.
 
 ## Documentation connexe
 
-* [Configuration de l’application : points d’extension](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html) dans notre guide Adobe Commerce sur les infrastructures cloud.
+* [Configuration de l’application : points d’extension](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html?lang=fr) dans notre guide Adobe Commerce sur les infrastructures cloud.

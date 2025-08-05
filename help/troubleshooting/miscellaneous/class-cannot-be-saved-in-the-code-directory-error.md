@@ -26,7 +26,7 @@ Cet article décrit comment résoudre le problème où la manière dont vous ave
 1. Dans votre environnement local, écrivez une classe personnalisée avec une dépendance sur la classe générée automatiquement.
 1. Exécutez le scénario, où votre classe personnalisée est déclenchée, et vérifiez qu’elle fonctionne correctement.
 1. Validez et envoyez vos modifications à l’environnement d’intégration. Cela déclencherait le processus de déploiement. Le déploiement a réussi.
-1. Dans l’[environnement d’intégration](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242), exécutez le scénario dans lequel votre classe personnalisée est déclenchée.
+1. Dans l’[environnement d’intégration](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27242), exécutez le scénario dans lequel votre classe personnalisée est déclenchée.
 
 <u>Résultat attendu</u>
 

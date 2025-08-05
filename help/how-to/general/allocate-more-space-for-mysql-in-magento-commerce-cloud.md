@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Allouer de l’espace sur l’intégration du plan de démarrage et du plan pro
 
-Pour tous les environnements de plan de démarrage et de plan Pro [environnement d’intégration](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242), vous pouvez allouer plus d’espace à MySQL dans le fichier `.magento/services.yaml` en augmentant le paramètre `mysql: disk:`. Par exemple :
+Pour tous les environnements de plan de démarrage et de plan Pro [environnement d’intégration](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27242), vous pouvez allouer plus d’espace à MySQL dans le fichier `.magento/services.yaml` en augmentant le paramètre `mysql: disk:`. Par exemple :
 
 ```yaml
 mysql:
@@ -23,7 +23,7 @@ mysql:
     disk: 2048
 ```
 
-Consultez l’article [Configurer le service MySQL](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql) pour plus de références.
+Consultez l’article [Configurer le service MySQL](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/mysql) pour plus de références.
 
 Une fois que vous avez modifié le fichier `.magento/services.yaml`, vous devez valider et transmettre vos modifications pour qu’elles soient appliquées. La notification push déclenche le processus de déploiement.
 
