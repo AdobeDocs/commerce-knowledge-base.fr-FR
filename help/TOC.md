@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
+source-git-commit: acb00b0e25b85a558675993d63a80a59df7af5d7
 workflow-type: tm+mt
-source-wordcount: '3006'
+source-wordcount: '2998'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 0%
    * [Présentation des annonces](/help/announcements/overview.md)
    * Annonces Adobe Commerce {#commerce-announcements}
       * [Demandes de capacité de pointe pendant les fêtes pour Adobe Commerce sur notre infrastructure cloud](/help/announcements/adobe-commerce-announcements/holiday-surge-capacity-requests-for-magento-commerce-cloud.md)
-      * [Outil de compatibilité de mise à niveau 1.1.0 pour Adobe Commerce](/help/announcements/adobe-commerce-announcements/upgrade-compatibility-tool-for-magento.md)
       * [FAQ sur la politique de cycle de vie mise à jour pour les versions d’Adobe Commerce](/help/announcements/adobe-commerce-announcements/faq-for-the-updated-lifecycle-policy-for-magento-releases.md)
       * [Passage à OpenSearch pour Adobe Commerce sur Cloud 2.4.4](/help/announcements/adobe-commerce-announcements/switching-to-opensearch-for-adobe-commerce-on-cloud-2-4-4.md)
       * [Recommandations Adobe Commerce pour les vulnérabilités PHP](/help/announcements/adobe-commerce-announcements/magento-recommendations-for-php-vulnerabilities.md)
