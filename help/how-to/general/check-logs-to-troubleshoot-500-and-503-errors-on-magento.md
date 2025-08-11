@@ -20,16 +20,16 @@ Bob - not in TOC
 
 ## Produits et versions concernés
 
-* Adobe Commerce sur les infrastructures cloud, toutes les [versions prises en charge](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html).
+* Adobe Commerce sur les infrastructures cloud, toutes les [versions prises en charge](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=fr).
 
 Pour afficher les journaux de ces erreurs de serveur, vérifiez les `access.log` sur le serveur web, par exemple `<ip address>` `<timestamp>` `<request uri>` `<response code>` `<referer url>`
 
 Pour vérifier les journaux associés :
 
 1. Exécutez la commande suivante dans l’interface de ligne de commande si elle se trouve le jour même (pour Adobe Commerce sur l’infrastructure cloud, architecture de plan Pro). Ou jusqu’à un certain point dans le passé (pour Adobe Commerce sur l’architecture du plan de démarrage de l’infrastructure cloud), car la durée de couverture des journaux est limitée et la rotation des journaux n’est pas disponible : `grep -r "\" [50[0-9]" /path/to/access.log` Si l’erreur s’est produite dans le passé, exécutez la commande suivante dans l’interface de ligne de commande (architecture Pro uniquement) : `zgrep "\" 50[0-9]" /path/to/access.log.<rotation ID>.gz`
-1. Vérifiez ensuite les `exception.log` et `error.log` ou le [journal pivoté](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#log-rotation) équivalent (journaux qui sont automatiquement pivotés et compressés lorsqu’ils atteignent une certaine taille de fichier) de la même date et heure afin de localiser l’erreur potentielle et de voir ce qui pouvait se produire et en être la cause. Remarque : pour vérifier le `exception.log` et `error.log` exécuter les commandes ci-dessus dans l’interface de ligne de commande, mais remplacez `access.log` par `exception.log` ou `error.log`.
+1. Vérifiez ensuite les `exception.log` et `error.log` ou le [journal pivoté](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=fr#log-rotation) équivalent (journaux qui sont automatiquement pivotés et compressés lorsqu’ils atteignent une certaine taille de fichier) de la même date et heure afin de localiser l’erreur potentielle et de voir ce qui pouvait se produire et en être la cause. Remarque : pour vérifier le `exception.log` et `error.log` exécuter les commandes ci-dessus dans l’interface de ligne de commande, mais remplacez `access.log` par `exception.log` ou `error.log`.
 
 ## Lecture connexe
 
-* Voir [Afficher et gérer les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) dans le *Guide d’Adobe Commerce sur les infrastructures cloud*.
+* Voir [Afficher et gérer les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=fr) dans le *Guide d’Adobe Commerce sur les infrastructures cloud*.
 * Consultez la section [Dépannage des erreurs 503](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md) dans notre base de connaissances d’assistance.
