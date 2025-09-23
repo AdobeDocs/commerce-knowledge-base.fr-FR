@@ -1,37 +1,37 @@
 ---
-title: Le service Redis est bloqué.
-description: L’article recommande comment corriger Redis.
+title: Service Redis bloqué
+description: L'article recommande comment réparer Redis.
 exl-id: 5eb8fb70-0f41-433a-8d3f-c368781a2d1d
 feature: Services
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 649e01b29b59bf77e6396acbeb7a83bd9c67e1ef
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
-# Le service Redis est bloqué.
+# Service Redis bloqué
 
-L’article recommande comment corriger Redis.
+L&#39;article recommande comment réparer Redis.
 
 ## Produits et versions concernés
 
-* Adobe Commerce sur l’infrastructure cloud 2.2.x, 2.3.x
+* Adobe Commerce sur les infrastructures cloud 2.2.x. et 2.3.x
 * Adobe Commerce on-premise 2.2.x., 2.3x
 * Toutes les versions de Redis
 
 ## Problème
 
-Lenteur ou panne du site web en raison d’un débordement de mémoire dans Redis.
+Lenteur ou panne du site Web due à un dépassement de mémoire à Redis.
 
 ## Cause
 
-Un débordement de mémoire peut entraîner le blocage du service Redis. Pendant le pic, le service Redis peut nécessiter plus de mémoire que ce qui est actuellement alloué.
+Un dépassement de mémoire peut entraîner le blocage du service Redis. Pendant les heures de pointe, le service Redis peut nécessiter plus de mémoire que celle actuellement allouée.
 
 ## Solution
 
-Pour vérifier la configuration actuelle et la mémoire utilisée, exécutez la commande suivante dans l’interface de ligne de commande. Il recherche la mémoire utilisée, le maximum de mémoire, les clés expulsées et le temps de réapprovisionnement en jours :
+Pour vérifier la configuration actuelle et la mémoire utilisée, exécutez la commande suivante dans l’interface de ligne de commande. Il vérifie la mémoire utilisée, maxmemory, les clés évincées et le temps de reprise en jours :
 
 ```
 redis-cli -p REDIS_PORT -h REDIS_HOST info | egrep --color "(role|used_memory_peak|maxmemory|evicted_keys|uptime_in_days)"
@@ -39,8 +39,17 @@ redis-cli -p REDIS_PORT -h REDIS_HOST info | egrep --color "(role|used_memory_pe
 
 Les variables *REDIS\_PORT* et *REDIS\_HOST* peuvent être récupérées à partir de `app/etc/env.php`.
 
-Si la sortie de l’exécution de la requête ci-dessus indique que le pourcentage de mémoire libre est inférieur à 40 %, [envoyez une demande à l’assistance Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) demandant une augmentation du paramètre `maxmemory` dans Redis Server. Si la valeur des clés expulsées n’est pas &quot;0&quot; ou que la durée de réactivation en jours est égale à 0 (ce qui indique que Redis s’est bloqué aujourd’hui), vous devez également [envoyer une demande au service clientèle d’Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) demandant une enquête et un correctif pour ce problème.
+>[!NOTE]
+>
+>Vous pouvez également récupérer l’adresse et le numéro de port de l’hôte Redis en exécutant cette commande d’interface de ligne de commande :
+>   
+```bash
+>   echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
+>   ```
 
-## Lecture connexe
 
-Pour en savoir plus sur la mémoire Redis, reportez-vous à la section [Optimisation de la mémoire Redis](https://redis.io/topics/memory-optimization).
+Si la sortie de l’exécution de la requête ci-dessus indique que le pourcentage de mémoire libre est inférieur à 40 %, [envoyez un ticket à l’assistance Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) en demandant une augmentation du paramètre `maxmemory` dans Redis Server. Si la valeur des clés évincées n’est pas « 0 » ou si le temps d’attente de Redis en jours est égal à 0 (indiquant que Redis s’est bloqué aujourd’hui), vous devez également [envoyer un ticket à l’assistance d’Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) afin de demander une enquête et un correctif pour ce problème.
+
+## Lectures connexes
+
+Pour en savoir plus sur la mémoire Redis, consultez [Optimisation de la mémoire Redis](https://redis.io/topics/memory-optimization).
