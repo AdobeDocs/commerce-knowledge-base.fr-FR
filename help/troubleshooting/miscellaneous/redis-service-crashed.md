@@ -43,7 +43,7 @@ Les variables *REDIS\_PORT* et *REDIS\_HOST* peuvent être récupérées à part
 >
 >Vous pouvez également récupérer l’adresse et le numéro de port de l’hôte Redis en exécutant cette commande d’interface de ligne de commande :
 >   
-```bash
+>   ```bash
 >   echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
 >   ```
 
