@@ -3,16 +3,18 @@ title: Bloquer le trafic malveillant pour Adobe Commerce au niveau Fastly
 description: Cet article décrit les mesures que vous pouvez prendre pour bloquer le trafic malveillant lorsque vous suspectez que votre Adobe Commerce sur le magasin d’infrastructure cloud subit une attaque DDoS.
 exl-id: 1a834a0a-753b-432e-9c3b-ef8dd034d294
 feature: Cache, Marketing Tools
-source-git-commit: b58e182c64b3fad508145d9078619ddbe0e2b887
+source-git-commit: 2555fbdb8a7a53d41c746df6414a7b0bad2de5d9
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '775'
 ht-degree: 0%
 
 ---
 
 # Bloquer le trafic malveillant pour Adobe Commerce au niveau Fastly
 
-Cet article décrit les mesures que vous pouvez prendre pour bloquer le trafic malveillant lorsque vous suspectez que votre Adobe Commerce sur le magasin d’infrastructure cloud subit une attaque DDoS.
+Cet article explique comment bloquer le trafic indésirable vers votre boutique, non seulement en réponse aux menaces malveillantes, mais également comme méthode de filtrage géographique.
+
+Adobe Commerce sur les infrastructures cloud (et Fast CDN) fournit des outils pour gérer le trafic vers votre boutique en réponse aux menaces malveillantes telles que les attaques DDoS. En outre, il vous permet de bloquer les demandes provenant de pays ou de régions spécifiques, même si aucune intention malveillante n’est détectée, afin de respecter les politiques commerciales, les exigences réglementaires ou d’autres besoins opérationnels.
 
 ## Produits et versions concernés :
 
@@ -24,7 +26,7 @@ Dans cet article, nous supposons que vous disposez déjà des adresses IP malvei
 
 Si votre site web est surchargé par DDoS, il se peut que vous ne puissiez pas vous connecter à votre administrateur Commerce (et effectuer toutes les étapes décrites plus en détail dans cet article).
 
-Pour accéder à l’administrateur, mettez votre site web en mode de maintenance comme décrit dans la section [ Activer ou désactiver le mode de maintenance ](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) et placez votre adresse IP sur liste blanche. Désactivez le mode de maintenance une fois cette opération terminée.
+Pour accéder à l’administrateur, mettez votre site web en mode de maintenance comme décrit dans la section [ Activer ou désactiver le mode de maintenance ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) et placez votre adresse IP sur liste blanche. Désactivez le mode de maintenance une fois cette opération terminée.
 
 ## Bloquer le trafic par adresse IP
 
@@ -74,7 +76,7 @@ Deux points importants doivent être pris en compte lors de l’utilisation de `
 * Les robots peuvent ignorer vos `robots.txt`. Surtout les robots malveillants, qui analysent le Web à la recherche de failles de sécurité, et les collecteurs d&#39;adresses électroniques utilisés par les spammeurs ne prêteront aucune attention.
 * Le fichier `robots.txt` est un fichier accessible au public. Tout le monde peut voir les sections de votre serveur que vous ne voulez pas que les robots utilisent.
 
-Vous trouverez les informations de base et la configuration par défaut du `robots.txt` Adobe Commerce dans l’article [Robots de moteurs de recherche](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) de notre documentation destinée aux développeurs et développeuses.
+Vous trouverez les informations de base et la configuration par défaut du `robots.txt` Adobe Commerce dans l’article [Robots de moteurs de recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) de notre documentation destinée aux développeurs et développeuses.
 
 Pour obtenir des informations générales et des recommandations sur les `robots.txt`, voir :
 
@@ -86,4 +88,4 @@ Contactez votre développeur et/ou un expert en SEO pour déterminer les agents 
 ## Lecture connexe
 
 * [Termes de licence spécifiques au produit pour Adobe Commerce on Cloud](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
-* [VCL personnalisé pour le blocage des requêtes](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) dans le guide Commerce sur le cloud
+* [VCL personnalisé pour le blocage des requêtes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) dans le guide Commerce sur le cloud
