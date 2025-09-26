@@ -41,6 +41,6 @@ Le bouton **Ajouter des sélections à mon panier** situé en haut de la page fo
 
 ## Lecture connexe
 
-* [MerchDocs’ Gérer un panier](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) dans notre guide de l’utilisateur.
+* [MerchDocs’ Gérer un panier](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) dans notre guide de l’utilisateur.
 * [Problème connu d&#39;Adobe Commerce 2.4.0 : les taux de taxe à l&#39;exportation ne fonctionnent pas](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md) dans notre base de connaissances de support.
 * [Problème connu d’Adobe Commerce 2.4.0 : les méthodes de paiement Braintree ne s’affichent pas lors du passage en caisse de plusieurs adresses](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md) dans notre base de connaissances d’assistance.
