@@ -1,19 +1,19 @@
 ---
-title: "Problème connu d’Adobe Commerce 2.3.5 : commandes multi-produits virtuelles"
-description: Cet article explique un problème connu dans Adobe Commerce 2.3.5, en raison duquel une commande multi-expédition contenant un produit virtuel n’est pas traitée correctement.
+title: 'problème connu d’Adobe Commerce 2.3.5 : commandes de produits virtuels avec expédition multiple'
+description: Cet article explique un problème connu dans Adobe Commerce 2.3.5, où une commande à expédition multiple contenant un produit virtuel n’est pas traitée correctement.
 exl-id: 34ce79a2-5157-492b-8ee4-bdc09aae0c40
 feature: Orders, Products, Shipping/Delivery
 role: Developer
-source-git-commit: b3d39e6b02728f05f046adf7be94ffacbca944d5
+source-git-commit: 60f68b9edabd13a69e84705b85d84fd10ee6e2be
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
 
-# Problème connu d’Adobe Commerce 2.3.5 : commandes multi-produits virtuelles
+# problème connu d’Adobe Commerce 2.3.5 : commandes de produits virtuels avec expédition multiple
 
-Cet article explique un problème connu dans Adobe Commerce 2.3.5, en raison duquel une commande multi-expédition contenant un produit virtuel n’est pas traitée correctement.
+Cet article explique un problème connu dans Adobe Commerce 2.3.5, où une commande à expédition multiple contenant un produit virtuel n’est pas traitée correctement.
 
 ## Produits et versions concernés
 
@@ -22,32 +22,30 @@ Cet article explique un problème connu dans Adobe Commerce 2.3.5, en raison duq
 
 ## Problème
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 1. Sur le storefront, ajoutez des produits physiques et virtuels au panier.
-1. Passez à la caisse et sélectionnez **Extraire avec plusieurs adresses**.
+1. Passez à l’extraction et sélectionnez **Extraire avec plusieurs adresses**.
 1. Ajoutez toutes les informations requises et passez la commande.
 
-<u>Résultat attendu</u> :
+<u>Résultat attendu </u> :
 
-Les commandes sont passées avec succès pour tous les produits.
+Les commandes sont passées pour tous les produits avec succès.
 
 <u>Résultat réel</u> :
 
 La commande du produit virtuel est vide.
 
-## Correction
+## Correctif
 
-Un correctif sera disponible dans Adobe Commerce 2.3.6, dont la sortie est prévue au quatrième trimestre 2020.
+Un correctif sera disponible dans Adobe Commerce 2.3.6, dont la publication est prévue pour le 4e trimestre 2020.
 
 ## Lecture connexe
 
-Dans notre base de connaissances de soutien :
+Dans notre base de connaissances du support :
 
-* [Problème connu de la comparaison de produits dans Adobe Commerce 2.3.5](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
-* [Problème connu du comptage de produit d’action en bloc dans Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
-* [Correctif du problème de paiement Amazon dans Adobe Commerce 2.3.5-p1](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
+* [Problème connu du nombre de produits d’action en masse dans Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
 
 Dans notre documentation destinée aux développeurs :
 
-* [Notes de mise à jour d’Adobe Commerce 2.3.5](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
+* [Notes De Mise À Jour D’Adobe Commerce 2.3.5](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)

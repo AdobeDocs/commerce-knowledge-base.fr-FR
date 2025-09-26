@@ -1,19 +1,19 @@
 ---
-title: Échec de l’installation d’Adobe Commerce 2.4.0 avec le cache de magasins obsolète
-description: "Cet article fournit une solution au problème d’échec de l’installation d’Adobe Commerce 2.4.0 avec le message d’erreur : *Le site web par défaut n’est pas défini. Définissez le site web et réessayez.* affiché dans la console."
+title: L’installation d’Adobe Commerce 2.4.0 échoue avec un cache de magasins obsolète
+description: 'Cet article fournit une solution au problème d’échec de votre installation d’Adobe Commerce 2.4.0 avec le message d’erreur suivant : *Le site web par défaut n’est pas défini. Définissez le site web et réessayez.* affiché dans la console.'
 exl-id: 0680199b-7e47-4a8c-91fe-9f6c32839a0e
 feature: B2B, Cache, Console, Install, Upgrade
 role: Developer
-source-git-commit: a1046621259ea49eab74cd6ba3bba550e0c70283
+source-git-commit: 9cd9720a73b8ecde3baf6a7a5b5732ad1330feee
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
-# Échec de l’installation d’Adobe Commerce 2.4.0 avec le cache de magasins obsolète
+# L’installation d’Adobe Commerce 2.4.0 échoue avec un cache de magasins obsolète
 
-Cet article fournit une solution au problème d’échec de l’installation d’Adobe Commerce 2.4.0 avec le message d’erreur : *Le site web par défaut n’est pas défini. Définissez le site web et réessayez.* affiché dans la console.
+Cet article fournit une solution au problème d’échec de votre installation d’Adobe Commerce 2.4.0 avec le message d’erreur suivant : *Le site web par défaut n’est pas défini. Définissez le site web et réessayez.* affichées dans la console.
 
 ## Produits et versions concernés
 
@@ -22,35 +22,33 @@ Cet article fournit une solution au problème d’échec de l’installation d�
 
 ## Problème
 
-<u>Conditions préalables :</u>
-Une extension tierce avec des dépendances sur les API pour le module Store dans les commandes de l’interface de ligne de commande est configurée comme requis dans `composer.json`. L&#39;installation d&#39;Adobe Commerce 2.4.0 échoue alors avec un message d&#39;erreur : *Le site web par défaut n&#39;est pas défini. Définissez le site web et réessayez.* affiché dans la console.
+<u>Conditions préalables : </u>
+Une extension tierce avec des dépendances sur les API pour le module Store dans les commandes CLI est configurée comme requis dans `composer.json`. Cela entraîne l’échec de l’installation d’Adobe Commerce 2.4.0 avec un message d’erreur : *Le site web par défaut n’est pas défini. Définissez le site web et réessayez.* affichées dans la console.
 
 ## Cause
 
-Le problème s’affiche pour les extensions tierces qui dépendent des magasins dans leurs commandes d’interface de ligne de commande. L’un est les Sales Channel Amazon.
+Le problème apparaît pour les extensions tierces qui possèdent des dépendances de magasins dans leurs commandes d’interface de ligne de commande. L’un d’eux est celui des canaux de vente Amazon.
 
 ## Solution
 
-Avant l&#39;installation d&#39;Adobe Commerce 2.4.0, les commerçants doivent :
+Avant l’installation d’Adobe Commerce 2.4.0, les commerçants doivent :
 
 1. Supprimez ces extensions tierces de `composer.json`.
 1. Installez Adobe Commerce sans extensions.
 1. Ajoutez les extensions après l’installation.
 
-Le problème sera corrigé dans la portée de la version 2.4.1.
+Le problème sera corrigé dans le cadre de la version 2.4.1.
 
-## Lectures connexes dans notre base de connaissances de support :
+## Informations connexes dans notre base de connaissances de support :
 
-* [Problème connu d&#39;Adobe Commerce 2.4.0 : absence de l&#39;étiquette &quot;Remboursement&quot; en larna](/help/troubleshooting/payments/magento-2-4-0-known-issue-missing-refund-label-in-klarna.md)
-* [Problème connu d’Adobe Commerce 2.4.0 : absence de deux boutons sur la page Créer une commande dans Admin](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-create-new-order-buttons-missing.md)
-* [Adobe Commerce 2.4.0, 2.4.1 : activation du problème de facture partielle Venmo Braintree](/help/troubleshooting/payments/magento-2-4-0-2-4-1-enable-braintree-venmo-partial-invoice-issue.md)
-* [Problème connu d’Adobe Commerce 2.4.0 : message d’erreur lors de la sélection du mode de paiement local affiché pour certains pays lors du passage en caisse](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
-* [Problème connu d’Adobe Commerce 2.4.0 : paiement Amazon activé, méthodes de paiement manquantes lors du retour au paiement standard utilisé](/help/troubleshooting/payments/magento-2-4-0-known-issue-amazon-pay-no-payment-methods.md)
-* [Problème connu d’Adobe Commerce 2.4.0 : erreur 404 lors de la suppression des points de récompense lors du passage en caisse multi-expédition](/help/troubleshooting/storefront/magento-2-4-0-404-error-removing-rewards-points-on-multi-shipping-checkout.md)
-* [Problème connu d’Adobe Commerce 2.4.0 : erreur d’affichage des commandes](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
-* [L’administrateur d’Adobe Commerce 2.4.0 B2B ne peut pas ajouter de produit configurable pour le devis](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
-* [Problème connu d’Adobe Commerce 2.4.0 : les méthodes de paiement du Braintree ne s’affichent pas dans le passage en caisse de plusieurs adresses](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
+* [Problème connu d’Adobe Commerce 2.4.0 : libellé « Remboursement » manquant dans Klarna](/help/troubleshooting/payments/magento-2-4-0-known-issue-missing-refund-label-in-klarna.md)
+* [Problème connu dans Adobe Commerce 2.4.0 : deux boutons manquants sur la page Créer une commande dans Admin](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-create-new-order-buttons-missing.md)
+* [Adobe Commerce 2.4.0 et 2.4.1 : activer l’émission de facture partielle Braintree Venmo](/help/troubleshooting/payments/magento-2-4-0-2-4-1-enable-braintree-venmo-partial-invoice-issue.md)
+* [Problème connu dans Adobe Commerce 2.4.0 : message d’erreur lors de la sélection du mode de paiement local affiché pour certains pays lors du passage en caisse](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
+* [Problème connu dans Adobe Commerce 2.4.0 : Amazon Pay activé, modes de paiement manquants lorsque le retour à la caisse standard est utilisé](/help/troubleshooting/payments/magento-2-4-0-known-issue-amazon-pay-no-payment-methods.md)
+* [L’administrateur B2B d’Adobe Commerce 2.4.0 ne peut pas ajouter de produit configurable au devis](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
+* [Problème connu dans Adobe Commerce 2.4.0 : les méthodes de paiement Braintree ne s’affichent pas lors du passage en caisse de plusieurs adresses](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
 * [Problème connu d’Adobe Commerce 2.4.0 : l’actualisation des activités du client ne fonctionne pas](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
-* [Problème connu d’Adobe Commerce 2.4.0 - Les taux de taxe d’exportation ne fonctionnent pas](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
-* [Problème connu d’Adobe Commerce 2.4.0 : le bouton &quot;Ajouter des sélections à mon panier&quot; ne fonctionne pas](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)
-* [Problème connu d’Adobe Commerce 2.4.0 : affichage des données de message brutes sur le storefront](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
+* [Problème connu d’Adobe Commerce 2.4.0 - Les taux de taxe à l’exportation ne fonctionnent pas](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
+* [Problème connu d’Adobe Commerce 2.4.0 : le bouton « Ajouter des sélections à mon panier » ne fonctionne pas](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)
+

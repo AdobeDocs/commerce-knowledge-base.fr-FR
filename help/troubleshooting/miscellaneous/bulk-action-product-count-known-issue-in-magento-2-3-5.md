@@ -1,19 +1,19 @@
 ---
-title: Problème connu du comptage de produit d’action en bloc dans Adobe Commerce 2.3.5
-description: Cet article décrit un problème connu d’Adobe Commerce 2.3.5, où la notification qu’un commerçant reçoit après une action en masse dans Admin contient un nombre incorrect d’articles affectés.
+title: Problème connu du nombre de produits d’action en masse dans Adobe Commerce 2.3.5
+description: Cet article décrit un problème Adobe Commerce 2.3.5 connu, où la notification qu’un commerçant reçoit après une action en masse dans Admin contient un nombre incorrect d’éléments affectés.
 exl-id: 3ede15d4-4c39-442a-8784-2d5e6650fe67
 feature: Products
 role: Developer
-source-git-commit: b3d39e6b02728f05f046adf7be94ffacbca944d5
+source-git-commit: ce456c46653c826b38c590eef89b67bea87ca605
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
-# Problème connu du comptage de produit d’action en bloc dans Adobe Commerce 2.3.5
+# Problème connu du nombre de produits d’action en masse dans Adobe Commerce 2.3.5
 
-Cet article décrit un problème connu d’Adobe Commerce 2.3.5, où la notification qu’un commerçant reçoit après une action en masse dans Admin contient un nombre incorrect d’articles affectés.
+Cet article décrit un problème Adobe Commerce 2.3.5 connu, où la notification qu’un commerçant reçoit après une action en masse dans Admin contient un nombre incorrect d’éléments affectés.
 
 ## Produits et versions concernés
 
@@ -22,16 +22,14 @@ Cet article décrit un problème connu d’Adobe Commerce 2.3.5, où la notifica
 
 ## Problème
 
-Le message système affiché par Adobe Commerce après une action en bloc (par exemple, une mise à jour de produit en masse ou un import/export) affiche 0 au lieu d’un comptage précis des produits affectés par l’action en masse.
+Le message système affiché par Adobe Commerce après une action en masse (par exemple, une mise à jour de produit en masse ou une importation/exportation) affiche un nombre égal à 0 au lieu d’un nombre précis de produits affectés par l’action en masse.
 
-## Correction
+## Correctif
 
-Un correctif sera disponible dans Adobe Commerce 2.3.6, dont la sortie est prévue au quatrième trimestre 2020.
+Un correctif sera disponible dans Adobe Commerce 2.3.6, dont la publication est prévue pour le 4e trimestre 2020.
 
 ## Lecture connexe
 
-* Articles de la base de connaissances de la prise en charge d’Adobe Commerce pour les problèmes connus d’Adobe Commerce 2.3.5 :
-   * [Commandes multi-expédition avec un produit virtuel non traité correctement dans Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
-   * [Problème connu de la comparaison de produits dans Adobe Commerce 2.3.5](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
-   * [Correctif du problème de paiement Amazon dans Adobe Commerce 2.3.5-p1](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
-   * [Adobe Commerce 2.3.5 Problèmes connus dans notre documentation destinée aux développeurs](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
+* Problèmes connus dans les articles de la base de connaissances de la prise en charge d’Adobe Commerce pour Adobe Commerce 2.3.5 :
+   * [Les commandes d’expédition multiple avec un produit virtuel ne sont pas traitées correctement dans Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
+   * [Problèmes connus dans Adobe Commerce 2.3.5 dans la documentation destinée aux développeurs](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
