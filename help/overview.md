@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ![Page d’accueil de la base de connaissances](../help/assets/knowledge-base-home-page-cover.jpg){width="100%"}
 
-Les informations de cette base de connaissances sont conçues pour compléter la [documentation Adobe Commerce destinée aux développeurs](https://developer.adobe.com/commerce/docs) le [guide Adobe Commerce destiné aux commerçants](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) ainsi que d’autres publications Adobe Commerce. Il couvre le dépannage et les bonnes pratiques, les annonces d’hôtes, les questions fréquentes et met en évidence des scénarios spécifiques qui n’ont pas été mentionnés (pour une raison quelconque) dans la documentation officielle.
+Les informations de cette base de connaissances sont conçues pour compléter la [documentation Adobe Commerce destinée aux développeurs](https://developer.adobe.com/commerce/docs) le [guide Adobe Commerce destiné aux commerçants](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=fr) ainsi que d’autres publications Adobe Commerce. Il couvre le dépannage et les bonnes pratiques, les annonces d’hôtes, les questions fréquentes et met en évidence des scénarios spécifiques qui n’ont pas été mentionnés (pour une raison quelconque) dans la documentation officielle.
 
 ## Que contient cette base de connaissances ?
 
