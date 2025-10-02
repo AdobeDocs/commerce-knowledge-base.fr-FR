@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 750c0c41580af90cc5c883472326f2073cfe0b23
+source-git-commit: d1a9f509bdf4a4c75220145069810e55eddcc43e
 workflow-type: tm+mt
-source-wordcount: '2891'
+source-wordcount: '2881'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,6 @@ ht-degree: 0%
       * [503 erreur d’accès à Adobe Commerce dans le navigateur web](/help/troubleshooting/site-down-or-unresponsive/503-error-accessing-magento-in-web-browser.md)
       * [Échec du chargement du site en raison de l’activation du mode de maintenance](/help/troubleshooting/site-down-or-unresponsive/site-fails-to-load-due-to-maintenance-mode-left-enabled.md)
       * [L’application d’un correctif arrête votre site](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
-      * [Erreur 404 sur toutes les pages en raison d’un problème d’évaluation du contenu](/help/troubleshooting/site-down-or-unresponsive/error-404-on-all-pages-due-to-content-staging-issue.md)
       * [Correctifs révisés pour la perte d’accès aux cartes Google sur toutes les versions d’Adobe Commerce](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Divers {#miscellaneous}
       * [Correction des erreurs de données non mises à jour dans  [!DNL Commerce Data Exporter]  flux et les journaux  [!DNL cron]  avec la table changelog qui n&#39;existe pas](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
