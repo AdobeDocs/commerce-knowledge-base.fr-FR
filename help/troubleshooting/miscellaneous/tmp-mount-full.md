@@ -92,7 +92,7 @@ Plusieurs services peuvent enregistrer des fichiers dans `/tmp`.
 
 #### Vérifier et libérer de l&#39;espace MySQL
 
-Suivez les instructions de la section [L’espace disque MySQL est faible sur Adobe Commerce sur l’infrastructure cloud > Vérifier et libérer de l’espace de stockage](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806#check-and-free-up-storage-space) dans notre base de connaissances du support.
+Suivez les instructions de la section [L’espace disque MySQL est faible sur Adobe Commerce sur l’infrastructure cloud > Vérifier et libérer de l’espace de stockage](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27806#check-and-free-up-storage-space) dans notre base de connaissances du support.
 
 #### Vérifier les vidages de tas d’Elasticsearch
 
@@ -120,7 +120,7 @@ Recherchez `/tmp` fichiers `.sql` ou `.sql.gz` et nettoyez-les. Ils peuvent avoi
 
 Pour éviter tout problème lié au remplissage du `/tmp`, suivez ces recommandations :
 
-* N’utilisez pas MySQL pour la recherche. Elasticsearch for search élimine généralement la nécessité de créer des tables temporaires volumineuses. Voir [Configuration d’Adobe Commerce pour utiliser Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) dans notre documentation destinée aux développeurs.
+* N’utilisez pas MySQL pour la recherche. Elasticsearch for search élimine généralement la nécessité de créer des tables temporaires volumineuses. Voir [Configuration d’Adobe Commerce pour utiliser Elasticsearch](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/search/configure-search-engine) dans notre documentation destinée aux développeurs.
 * Évitez d’exécuter la requête `SELECT` sur des colonnes sans index, car cela consomme une grande quantité d’espace disque temporaire. Vous pouvez également ajouter les index.
 * Créez un cron pour nettoyer les `/tmp` en exécutant la commande suivante dans l’interface de ligne de commande :
 
@@ -130,4 +130,4 @@ Pour éviter tout problème lié au remplissage du `/tmp`, suivez ces recommanda
 
 ## Lecture connexe
 
-[L’espace disque MySQL est faible sur Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806) dans notre base de connaissances d’assistance.
+[L’espace disque MySQL est faible sur Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27806) dans notre base de connaissances d’assistance.
