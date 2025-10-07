@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: d1a9f509bdf4a4c75220145069810e55eddcc43e
+source-git-commit: 4ba5d701280fa41bea1102fa1ca46e1e3cc35256
 workflow-type: tm+mt
-source-wordcount: '2881'
+source-wordcount: '2860'
 ht-degree: 0%
 
 ---
@@ -33,10 +33,8 @@ ht-degree: 0%
    * Base de données {#database}
       * [Vérification des requêtes lentes et des processus MySQL](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)
       * [Le chargement de la base de données perd la connexion à MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
-      * [Les modifications apportées à la base de données ne sont pas répercutées sur le storefront](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md)
       * [Goulot d’étranglement à forte charge MySQL dans Adobe Commerce sur les infrastructures cloud](/help/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.md)
       * [MySQL server a disparu&#x200B; erreur sur Adobe Commerce on cloud](/help/troubleshooting/database/mysql-server-has-gone-away-error-on-magento-commerce-cloud.md)
-      * [L’espace disque de MySQL est faible sur Adobe Commerce sur les infrastructures cloud](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md)
       * [Résolution des problèmes de stockage de la base de données sur Adobe Commerce](/help/troubleshooting/database/database-storage-troubleshooter-on-adobe-commerce.md)
       * [Erreurs de base de données liées à max_allowed_paquets sur Adobe Commerce](/help/troubleshooting/database/database-errors-related-to-max-allowed-packet-on-magento.md)
       * [Valeur numérique de base de données Adobe Commerce hors plage  [!DNL INT] à [!DNL BIGINT]](/help/troubleshooting/database/int-biginit-schema-update-request.md)

@@ -1,19 +1,19 @@
 ---
-title: Résolution des problèmes /tmp de montage complet pour Adobe Commerce
-description: Cet article fournit une solution pour lorsque le montage &grave;/tmp&grave; est plein, que le site peut être hors service et que vous ne pouvez pas SSH dans un noeud.
+title: Dépannage du montage /tmp complet pour Adobe Commerce
+description: Cet article fournit une solution pour le cas où le montage `/tmp` est plein, où le site est en panne et où vous ne pouvez pas effectuer de SSH dans un nœud.
 exl-id: e72d0f99-0060-474b-bb1c-2851896e1e43
 feature: Storage
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: aa4cfbceb745f1a06b8a8f9e93cbdebbc151458b
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
 
-# Résolution des problèmes /tmp de montage complet pour Adobe Commerce
+# Dépannage du montage /tmp complet pour Adobe Commerce
 
-Cet article fournit une solution pour lorsque le montage `/tmp` est plein, que le site peut être hors service et que vous ne pouvez pas SSH dans un noeud.
+Cet article fournit une solution pour le cas où le montage `/tmp` est saturé, où le site est en panne et où vous ne pouvez pas effectuer de SSH sur un nœud.
 
 ## Produits et versions concernés
 
@@ -21,45 +21,45 @@ Cet article fournit une solution pour lorsque le montage `/tmp` est plein, que l
 
 ## Problème
 
-Le montage `/tmp` étant complet, il se peut que plusieurs symptômes se produisent, notamment les erreurs suivantes :
+Le montage `/tmp` étant saturé, divers symptômes peuvent se produire, notamment les erreurs suivantes :
 
-* *SQLSTATE[HY000] : Erreur générale : 3 Erreur lors de l’écriture du fichier*
-* *Code d’erreur : 28*
-* *Aucun espace laissé sur l’appareil (28)*
-* *error session_start() : échec : aucun espace restant sur l’appareil*
-* *ERROR 1 (HY000) : impossible de créer/écrire dans le fichier &#39;/tmp/*
+* *SQLSTATE[HY000] : Erreur générale : 3 Erreur lors de l&#39;écriture du fichier*
+* *Code d&#39;erreur : 28*
+* *Pas d&#39;espace restant sur l&#39;appareil (28)*
+* *error session_start(): failed: No space left on device*
+* *ERREUR 1 (HY000) : impossible de créer/écrire dans le fichier &#39;/tmp/*
 * *Erreur SQL : 3, SQLState : HY000*
-* *Erreur générale : 1021 disque plein (/tmp)*
-* *Impossible d&#39;accéder au noeud via SSH:*
-  *bash : impossible de créer un fichier temporaire pour le document ici : aucun espace ne reste sur l’appareil*
-* *errno : 28 &quot;No space left on device&quot;*
-* *mysqld : le disque est en écriture complète &#39;/tmp&#39;*
+* *Erreur générale : 1 021 Disque plein (/tmp)*
+* *Impossible d’accéder au nœud via SSH:*
+  *bash: impossible de créer un fichier temporaire pour here-document: Il ne reste plus d&#39;espace sur l&#39;appareil*
+* *errno : 28 « Aucun espace restant sur l&#39;appareil »*
+* *mysqld : le disque est en pleine écriture &#39;/tmp&#39;*
 * *[ERROR] mysqld : disque plein (/tmp)*
-* *SQLSTATE[HY000] : Erreur générale : 1 Impossible de créer/écrire dans le fichier &#39;/tmp/&#39;*
-* *SQLSTATE[HY000] : Erreur générale : 23 ressources épuisées lors de l’ouverture du fichier &#39;/tmp/&#39;*
-* *Errcode : 24 &quot;Trop de fichiers ouverts&quot;*
-* *Erreur de récupération : 23 : ressources épuisées lors de l&#39;ouverture du fichier*
+* *SQLSTATE[HY000] : erreur générale : 1 impossible de créer/écrire dans le fichier &#39;/tmp/&#39;*
+* *SQLSTATE[HY000] : Erreur générale : 23 ressources insuffisantes lors de l&#39;ouverture du fichier &#39;/tmp/&#39;*
+* *Code d’erreur : 24 « Trop de fichiers ouverts »*
+* *Erreur reçue : 23 : ressources insuffisantes lors de l’ouverture du fichier*
 
 
-<u>Étapes à reproduire :</u>
+<u>Procédure à suivre :</u>
 
-Pour vérifier l’intégralité du montage `/tmp`, dans l’interface de ligne de commande, passez à `/tmp` et exécutez la commande suivante :
+Pour vérifier si le montage `/tmp` est plein, dans l’interface de ligne de commande, passez à `/tmp` et exécutez la commande suivante :
 
 ```bash
  df -h
 ```
 
-<u>Résultat attendu</u> :
+<u>Résultat attendu </u> :
 
-Moins de 80%.
+Moins de 80 %.
 
 <u>Résultat réel</u> :
 
-Environ 100%.
+Environ 100 %.
 
 ## Cause
 
-Le montage `/tmp` contient trop de fichiers, qui peuvent être causés par :
+Le montage `/tmp` comporte trop de fichiers, ce qui peut être dû aux éléments suivants :
 
 * Requêtes SQL incorrectes générant des tables temporaires volumineuses et/ou trop nombreuses.
 * Services écrivant dans le répertoire `/tmp`.
@@ -67,11 +67,11 @@ Le montage `/tmp` contient trop de fichiers, qui peuvent être causés par :
 
 ## Solution
 
-Il existe des choses que vous pouvez faire pour libérer de l’espace une fois, et il existe des bonnes pratiques qui empêcheraient `\tmp` d’être complet.
+Il y a des choses que vous pouvez faire pour libérer de l&#39;espace une fois, et il y a des pratiques exemplaires qui empêcheraient les `\tmp` d&#39;être pleines.
 
-### Vérifier et libérer des informations
+### Vérifier et libérer des nœuds
 
-Assurez-vous que suffisamment d’informations sont disponibles. Pour cela, exécutez la commande suivante :
+Assurez-vous qu’il y a suffisamment d’inodes disponibles. Pour cela, exécutez la commande suivante :
 
 ```bash
 df -i
@@ -84,45 +84,45 @@ Filesystem Inodes   Used   Free Use% Mounted on
 /dev/nvme2n1 655360    1695  653665    1% /data/mysql
 ```
 
-Vérifiez que le taux d’utilisation est inférieur à 70 %. Les noeuds sont corrélés avec des fichiers. Si vous supprimez des fichiers de la partition, vous libérez des informations.
+Vérifiez que le pourcentage d’utilisation est &lt; 70 %. Les nœuds sont corrélés aux fichiers. Si vous supprimez des fichiers de la partition, vous libérez des inodes.
 
-### Vérifier et libérer l’espace de stockage
+### Vérifier et libérer de l&#39;espace de stockage
 
 Plusieurs services peuvent enregistrer des fichiers dans `/tmp`.
 
-#### Vérifier et libérer l’espace MySQL
+#### Vérifier et libérer de l&#39;espace MySQL
 
-Suivez les instructions de la section [L’espace disque MySQL est faible sur Adobe Commerce sur l’infrastructure cloud > Vérifier et libérer l’espace de stockage](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md#check_and_free) dans notre base de connaissances de support.
+Suivez les instructions de la section [L’espace disque MySQL est faible sur Adobe Commerce sur l’infrastructure cloud > Vérifier et libérer de l’espace de stockage](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806#check-and-free-up-storage-space) dans notre base de connaissances du support.
 
-#### Vérification des vidages Elasticsearch
+#### Vérifier les vidages de tas d’Elasticsearch
 
 >[!WARNING]
 >
->Les images mémoire contiennent des informations de journalisation qui peuvent s’avérer utiles pour enquêter sur des problèmes. Envisagez de les stocker dans un emplacement distinct pendant au moins 10 jours.
+>Les images mémoire contiennent des informations de journalisation qui peuvent s’avérer utiles pour enquêter sur les problèmes. Envisagez de les stocker dans un emplacement distinct pendant au moins 10 jours.
 
-Supprimez les vidages (`*.hprof`) à l’aide du shell système :
+Supprimez les vidages de tas (`*.hprof`) à l’aide du shell système :
 
 ```bash
 find /tmp/*.hprof -type f -delete
 ```
 
-Si vous ne disposez pas des autorisations nécessaires pour supprimer des fichiers créés par un autre utilisateur (dans ce cas, Elasticsearch), mais que vous constatez que les fichiers sont volumineux, veuillez [créer un ticket d&#39;assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour les traiter.
+Si vous ne disposez pas des autorisations nécessaires pour supprimer les fichiers créés par un autre utilisateur (dans ce cas, Elasticsearch), mais que vous constatez que les fichiers sont volumineux, veuillez [créer un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour les gérer.
 
-#### Vérification des vidages/sauvegardes de base de données
+#### Vérifier les sauvegardes/vidages de bases de données
 
 >[!WARNING]
 >
->Les sauvegardes de la base de données sont généralement créées à des fins spécifiques. Si vous ne savez pas si le fichier est toujours nécessaire, envisagez de le déplacer vers un emplacement distinct au lieu de le supprimer.
+>Les sauvegardes de base de données sont généralement créées dans un but précis. Si vous ne savez pas si le fichier est toujours nécessaire, envisagez de le déplacer vers un emplacement distinct au lieu de le supprimer.
 
-Vérifiez les fichiers `/tmp` ou `.sql` et nettoyez-les. `.sql.gz` Ils peuvent avoir été créés par des outils de base de données lors de la sauvegarde ou lors de la création manuelle de vidages de base de données à l’aide de l’outil `mysqldump`.
+Recherchez `/tmp` fichiers `.sql` ou `.sql.gz` et nettoyez-les. Ils peuvent avoir été créés par ece-tools pendant la sauvegarde ou lors de la création manuelle de vidages de base de données à l&#39;aide de l&#39;outil `mysqldump`.
 
 ### Bonnes pratiques
 
-Pour éviter d’obtenir des problèmes avec `/tmp` saturés, suivez ces recommandations :
+Pour éviter tout problème lié au remplissage du `/tmp`, suivez ces recommandations :
 
-* N’utilisez pas MySQL pour la recherche. L’Elasticsearch pour la recherche élimine généralement la nécessité de la plupart des créations de tables temporaires volumineuses. Voir [Configuration d’Adobe Commerce pour utiliser Elasticsearch](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/search/configure-search-engine) dans notre documentation destinée aux développeurs.
-* Évitez d’exécuter la requête `SELECT` sur des colonnes sans index, car cela consomme beaucoup d’espace disque temporaire. Vous pouvez également ajouter les index.
-* Créez un cron pour nettoyer `/tmp` en exécutant la commande suivante dans l’interface de ligne de commande :
+* N’utilisez pas MySQL pour la recherche. Elasticsearch for search élimine généralement la nécessité de créer des tables temporaires volumineuses. Voir [Configuration d’Adobe Commerce pour utiliser Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) dans notre documentation destinée aux développeurs.
+* Évitez d’exécuter la requête `SELECT` sur des colonnes sans index, car cela consomme une grande quantité d’espace disque temporaire. Vous pouvez également ajouter les index.
+* Créez un cron pour nettoyer les `/tmp` en exécutant la commande suivante dans l’interface de ligne de commande :
 
   ```bash
   sudo find /tmp -type f -atime +10 -delete
@@ -130,4 +130,4 @@ Pour éviter d’obtenir des problèmes avec `/tmp` saturés, suivez ces recomma
 
 ## Lecture connexe
 
-[L’espace disque MySQL est faible sur Adobe Commerce sur l’infrastructure cloud](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md) dans notre base de connaissances de support.
+[L’espace disque MySQL est faible sur Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806) dans notre base de connaissances d’assistance.
