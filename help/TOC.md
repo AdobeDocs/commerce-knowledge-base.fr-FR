@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 4ba5d701280fa41bea1102fa1ca46e1e3cc35256
+source-git-commit: 4b92294b26082da2ac5984b729cea2a49663f4b2
 workflow-type: tm+mt
-source-wordcount: '2860'
+source-wordcount: '2852'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,6 @@ ht-degree: 0%
       * [Modes de paiement non affichés lors du passage en caisse avec plusieurs adresses](/help/troubleshooting/payments/payment-methods-not-displayed-on-checkout-with-multiple-addresses.md)
       * [Problème connu dans Adobe Commerce 2.4.0 : pages vierges de la messagerie sur site Klarna](/help/troubleshooting/payments/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
    * Storefront {#storefront}
-      * [Adobe Commerce on-premise 2.4.2 : image du produit manquante](/help/troubleshooting/storefront/adobe-commerce-2-4-2-on-prem-product-image-missing.md)
       * [Le produit ne s’affiche pas sur le storefront](/help/troubleshooting/storefront/product-is-not-displayed-on-storefront.md)
       * [Stocker les images non affichées après le déploiement](/help/troubleshooting/storefront/store-images-not-displayed-after-deployment.md)
       * [Les clients sont déconnectés ou perdent le contenu du panier sur le storefront Adobe Commerce](/help/troubleshooting/storefront/customers-get-logged-out-or-lose-cart-content-on-magento-storefront.md)
