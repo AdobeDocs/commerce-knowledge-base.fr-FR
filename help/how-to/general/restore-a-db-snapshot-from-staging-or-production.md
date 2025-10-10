@@ -17,7 +17,7 @@ Cet article explique comment restaurer une base de données [!DNL snapshot] à p
 >[!NOTE]
 >
 >Ces méthodes restaurent l’**instantané complet**.
->>Si vous devez restaurer l&#39;instantané **partiellement**, par exemple en restaurant uniquement les tables du catalogue tout en laissant les tables de commandes intactes, vous devez consulter votre développeur ou votre administrateur de base de données.
+>&#x200B;>Si vous devez restaurer l&#39;instantané **partiellement**, par exemple en restaurant uniquement les tables du catalogue tout en laissant les tables de commandes intactes, vous devez consulter votre développeur ou votre administrateur de base de données.
 
 
 ## Produits et versions concernés
