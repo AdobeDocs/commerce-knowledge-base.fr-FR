@@ -168,7 +168,7 @@ Si l’exécution de la commande `setup:uninstall` échoue avec une erreur et ne
 
 1. Supprimer les fichiers de configuration suivants : `config.php`, `config.php` `.bak`, `env.php` et `env.php.bak`.
 
-Après avoir réinitialisé la base de données, [ effectuez une notification push git vers l’environnement pour déclencher le redéploiement ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=fr#git-commands) et installez Adobe Commerce sur une nouvelle base de données. Ou [exécutez la commande de redéploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=fr#environment-commands).
+Après avoir réinitialisé la base de données, [&#x200B; effectuez une notification push git vers l’environnement pour déclencher le redéploiement &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=fr#git-commands) et installez Adobe Commerce sur une nouvelle base de données. Ou [exécutez la commande de redéploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=fr#environment-commands).
 
 ## Lecture connexe
 

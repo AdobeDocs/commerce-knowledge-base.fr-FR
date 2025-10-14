@@ -16,7 +16,7 @@ Cet article de FAQ contient des liens vers des ressources utiles pour Adobe Comm
 
 ## Comment actualiser mon sandbox Adobe Commerce sur les infrastructures cloud ? {#how-do-i-refresh-my-cloud-sandbox}
 
-Consultez la section [ Réinitialiser l’environnement sur le cloud ](/help/how-to/general/reset-environment-on-cloud.md) dans notre base de connaissances d’assistance.
+Consultez la section [&#x200B; Réinitialiser l’environnement sur le cloud &#x200B;](/help/how-to/general/reset-environment-on-cloud.md) dans notre base de connaissances d’assistance.
 
 ## Que faire avec un déploiement bloqué ? {#what-do-i-do-with-a-stuck-deployment}
 

@@ -48,5 +48,5 @@ Dans notre documentation destinée aux développeurs :
 * [Gestion des exceptions](https://developer.adobe.com/commerce/webapi/graphql/develop/exceptions/)
 * [Exceptions lors de l’installation](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/exceptions-during-installation)
 * [Exécutez le gestionnaire de modules](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/prepare/prerequisites)
-* [ Fichiers de configuration de module](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/files/module-files)
+* [&#x200B; Fichiers de configuration de module](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/files/module-files)
 * [Erreurs de mémoire insuffisante](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)

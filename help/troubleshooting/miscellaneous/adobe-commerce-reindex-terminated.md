@@ -31,7 +31,7 @@ La raison la plus courante est un grand nombre de produits, de magasins et/ou de
 1. Réduisez le nombre de produits (ainsi que le nombre de groupes de clients et de magasins, le cas échéant).
 1. Limitez l’utilisation à un ou deux utilisateurs simultanés.
 1. Désactivez les tâches cron et exécutez-les manuellement selon vos besoins.
-1. Si cela n’a pas été fait auparavant, demandez une mise à niveau vers les environnements d’intégration améliorée - prenez note de la restriction du nombre d’environnements auxquels vous seriez limité une fois la mise à niveau effectuée. Pour plus d’informations, consultez l’article [ Demande d’amélioration de l’environnement d’intégration - Pro et Starter ](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27242) dans notre base de connaissances d’assistance.
+1. Si cela n’a pas été fait auparavant, demandez une mise à niveau vers les environnements d’intégration améliorée - prenez note de la restriction du nombre d’environnements auxquels vous seriez limité une fois la mise à niveau effectuée. Pour plus d’informations, consultez l’article [&#x200B; Demande d’amélioration de l’environnement d’intégration - Pro et Starter &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27242) dans notre base de connaissances d’assistance.
 
 ## Lecture connexe :
 

@@ -21,7 +21,7 @@ L&#39;outil Analyse de sécurité exige que vous prouviez que vous êtes propri�
 
 Un problème courant auquel sont confrontés les commerçants se produit lorsque l’outil de scan de sécurité n’est pas en mesure de confirmer la propriété du site du commerçant.
 
-Si vous obtenez une erreur et que vous ne pouvez pas envoyer votre site pour l’analyse, reportez-vous à l’article [ Message d’erreur lors de l’ajout de sites à l’analyse de sécurité ](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md) dépannage dans notre base de connaissances d’assistance.
+Si vous obtenez une erreur et que vous ne pouvez pas envoyer votre site pour l’analyse, reportez-vous à l’article [&#x200B; Message d’erreur lors de l’ajout de sites à l’analyse de sécurité &#x200B;](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md) dépannage dans notre base de connaissances d’assistance.
 
 ## Problème : rapports vides générés par l’outil Analyse de sécurité
 

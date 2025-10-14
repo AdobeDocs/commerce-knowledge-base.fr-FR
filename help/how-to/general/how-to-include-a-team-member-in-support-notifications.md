@@ -37,7 +37,7 @@ S’ils n’ont pas été ajoutés au projet, vous devrez les ajouter en tant qu
 
 S’ils ont été ajoutés à la [!DNL cloud project], mais ne disposent pas du [!DNL Super User role], mettez à jour leur [!DNL role] en conséquence dans [Gérer l’accès utilisateur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=fr).
 
-Si vous souhaitez permettre à un membre de l’équipe d’être observateur sur tous les cas ouverts pour votre organisation, envoyez un ticket [support](https://experienceleague.adobe.com/home?lang=fr&amp;support-tab=home#support).
+Si vous souhaitez permettre à un membre de l’équipe d’être observateur sur tous les cas ouverts pour votre organisation, envoyez un ticket [support](https://experienceleague.adobe.com/home?lang=fr&support-tab=home#support).
 
 ## Lecture connexe
 

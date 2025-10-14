@@ -38,4 +38,4 @@ Si cela a déjà été fait et que les notifications par e-mail continuent d’i
 ## Lecture connexe
 
 * [Afficher le rôle de projet d’un utilisateur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=fr#view-a-user&?lang=fr#39;s-project-role) dans le guide Commerce sur les infrastructures cloud .
-* [Comment inclure un membre de l’équipe dans les notifications d’assistance ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-include-a-team-member-in-support-notifications.html?lang=fr) dans la base de connaissances de Commerce.
+* [Comment inclure un membre de l’équipe dans les notifications d’assistance &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-include-a-team-member-in-support-notifications.html?lang=fr) dans la base de connaissances de Commerce.

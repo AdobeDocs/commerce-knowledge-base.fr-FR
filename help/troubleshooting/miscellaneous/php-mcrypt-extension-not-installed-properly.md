@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->REMARQUE : La fonctionnalité de bibliothèque de chiffrement a été [ obsolète de PHP 7.1 et a été supprimée de PHP 7.2](https://www.php.net/manual/en/intro.mcrypt.php).
+>REMARQUE : La fonctionnalité de bibliothèque de chiffrement a été [&#x200B; obsolète de PHP 7.1 et a été supprimée de PHP 7.2](https://www.php.net/manual/en/intro.mcrypt.php).
 
 ## Détail
 

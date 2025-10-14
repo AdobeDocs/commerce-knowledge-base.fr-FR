@@ -21,7 +21,7 @@ Adobe Commerce propose tout un éventail d’outils d’assistance qui vous perm
 
 * [!DNL Quality Patches Tool] (QPT)
 
-   * [ Correctifs disponibles dans la présentation de l’outil QPT ](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview)
+   * [&#x200B; Correctifs disponibles dans la présentation de l’outil QPT &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview)
 
      Le [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) (QPT) est un outil permettant d’appliquer des correctifs de qualité individuels développés par Adobe et la communauté Magento Open Source.
 
@@ -40,7 +40,7 @@ Adobe Commerce propose tout un éventail d’outils d’assistance qui vous perm
 * Alertes gérées sur Adobe Commerce
    * [Alertes gérées sur Adobe Commerce : alerte critique de mémoire Redis](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert)
    * [Alertes gérées pour Adobe Commerce : alerte de disque](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert)
-   * [ Alertes gérées pour Adobe Commerce ](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)
+   * [&#x200B; Alertes gérées pour Adobe Commerce &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce)
    * [Alertes gérées pour Adobe Commerce : alerte critique de disque](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert)
    * [Alertes gérées sur Adobe Commerce : alerte d’avertissement de mémoire Redis](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert)
    * [Alertes gérées pour Adobe Commerce : alerte de mémoire](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert)

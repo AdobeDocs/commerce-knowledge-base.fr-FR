@@ -47,4 +47,4 @@ Solution : utilisez un autre navigateur que Safari pour cette situation particul
 
 ## Lecture connexe
 
-[ Problème connu d’Adobe Commerce 2.4.1 : l’adresse de sommet ne s’affichant pas avec des adresses de livraison/facturation différentes](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) dans notre base de connaissances de support.
+[&#x200B; Problème connu d’Adobe Commerce 2.4.1 : l’adresse de sommet ne s’affichant pas avec des adresses de livraison/facturation différentes](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) dans notre base de connaissances de support.

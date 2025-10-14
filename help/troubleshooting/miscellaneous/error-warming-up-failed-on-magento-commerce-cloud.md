@@ -19,7 +19,7 @@ Cet article fournit une solution lorsque le cache de page se réchauffe et écho
 
 ## Produits et versions concernés
 
-* Adobe Commerce sur l’infrastructure cloud, toutes les [ versions prises en charge](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce sur l’infrastructure cloud, toutes les [&#x200B; versions prises en charge](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## Problème
 

@@ -276,4 +276,4 @@ En général, suivez les recommandations du Chicago Manual of Style pour la ponc
 
 ## Marques
 
-* Magento Commerce est désormais Adobe Commerce. Pour plus d’informations sur l’utilisation d’un langage de branding à jour, reportez-vous au wiki [ Rebrand terms](https://github.com/magento/knowledge-base/wiki) .
+* Magento Commerce est désormais Adobe Commerce. Pour plus d’informations sur l’utilisation d’un langage de branding à jour, reportez-vous au wiki [&#x200B; Rebrand terms](https://github.com/magento/knowledge-base/wiki) .

@@ -44,7 +44,7 @@ Si vous êtes toujours verrouillé, assurez-vous que votre adresse électronique
 
 Si vous ne parvenez toujours pas à accéder à votre compte, nous vous recommandons de vérifier les erreurs et d’envoyer un ticket à notre équipe d’assistance. Comment pouvez-vous faire ceci ? En ouvrant les outils de développement de votre navigateur et en réalisant une capture d’écran des erreurs affichées dans la console ou la fenêtre de journal du site. Dans le GIF ci-dessous, j’ouvre les outils de développement pour Google Chrome :
 
-![ Ouverture des outils de développement Chrome.](assets/Opening_Chrome_dev_tools.gif)
+![&#x200B; Ouverture des outils de développement Chrome.](assets/Opening_Chrome_dev_tools.gif)
 
 Dans l’exemple ci-dessus, nous avons utilisé la méthode la plus courante (**clic droit** > **Inspect**) pour ouvrir la console. Si votre navigateur ne dispose pas de cette méthode ou si vous avez besoin d’aide, utilisez les liens de documentation ci-dessous pour le navigateur web que vous utilisez :
 

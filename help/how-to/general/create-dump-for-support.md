@@ -31,4 +31,4 @@ Si vous rencontrez des problèmes lors de la création de vidages à partir de l
 
 ## Lecture connexe
 
-* [ Créez une sauvegarde complète de la base de données pour Adobe Commerce sur l’infrastructure cloud ](/help/how-to/general/create-database-dump-on-cloud.md) dans notre base de connaissances de support.
+* [&#x200B; Créez une sauvegarde complète de la base de données pour Adobe Commerce sur l’infrastructure cloud &#x200B;](/help/how-to/general/create-database-dump-on-cloud.md) dans notre base de connaissances de support.

@@ -96,4 +96,4 @@ Vous pouvez installer des versions plus élevées d&#39;OpenSSL avec [Homebrew](
 * [Configuration de la vitrine Venia](https://magento.github.io/pwa-studio/venia-pwa-concept/setup/)
 * [PWA Buildpack](https://magento.github.io/pwa-studio/pwa-buildpack/)
 * [Interface de ligne de commande buildpack](https://magento.github.io/pwa-studio/pwa-buildpack/reference/buildpack-cli/)
-* [ Outils et bibliothèques : buildpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack)
+* [&#x200B; Outils et bibliothèques : buildpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack)

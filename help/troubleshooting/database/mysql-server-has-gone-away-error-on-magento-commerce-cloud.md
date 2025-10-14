@@ -48,5 +48,5 @@ La valeur `default_socket_timeout` est définie trop basse. Cela est dû au para
 ## Lecture connexe
 
 * [Le chargement de la base de données perd la connexion à MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
-* [ Bonnes pratiques de base de données pour Adobe Commerce sur l’infrastructure cloud ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=fr)
+* [&#x200B; Bonnes pratiques de base de données pour Adobe Commerce sur l’infrastructure cloud &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=fr)
 * [Problèmes de base de données les plus courants dans Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=fr)

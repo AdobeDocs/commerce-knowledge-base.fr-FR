@@ -41,7 +41,7 @@ Adobe Commerce met à jour tout certificat lorsqu’il est à 30 jours de l’ex
 
 Lorsqu’un commerçant choisit d’utiliser son propre certificat SSL personnalisé, il doit être mis à jour plus de 30 jours avant l’expiration du certificat pour s’assurer qu’il ne sera pas remplacé par un certificat SSL Adobe Commerce interne.
 
-Si vous êtes dans une situation où votre SSL personnalisé a été remplacé par notre SSL interne et que vous souhaitez le remplacer par votre certificat SSL personnalisé mis à jour, [ envoyez une demande d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) avec l’emplacement où vous avez chargé vos nouveaux fichiers de certificat. Veuillez inclure la date de début du nouveau SSL. Une fois que nous avons ces informations, nous pouvons passer à l’installation du nouveau certificat SSL.
+Si vous êtes dans une situation où votre SSL personnalisé a été remplacé par notre SSL interne et que vous souhaitez le remplacer par votre certificat SSL personnalisé mis à jour, [&#x200B; envoyez une demande d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) avec l’emplacement où vous avez chargé vos nouveaux fichiers de certificat. Veuillez inclure la date de début du nouveau SSL. Une fois que nous avons ces informations, nous pouvons passer à l’installation du nouveau certificat SSL.
 
 ## Lecture connexe
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Calendrier des versions d’Adobe Commerce 2024
 
-En [2023, nous avons mis à jour notre stratégie de mise à jour ](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support) afin d’élargir la fenêtre de prise en charge, de fournir plus de mises à jour de sécurité et d’accélérer l’adoption de l’innovation. En 2024, nous poursuivons nos efforts pour fournir une meilleure assistance pour les besoins critiques des clients de la mission. Nous avons publié notre [ calendrier de publication ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=fr) afin de donner à nos clients le temps de planifier et de budgéter les ressources pour l’année à venir. Pour résumer les changements, nous examinons la stratégie 2023 et 2024 pour déterminer ce qui reste identique et ce qui change.
+En [2023, nous avons mis à jour notre stratégie de mise à jour &#x200B;](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support) afin d’élargir la fenêtre de prise en charge, de fournir plus de mises à jour de sécurité et d’accélérer l’adoption de l’innovation. En 2024, nous poursuivons nos efforts pour fournir une meilleure assistance pour les besoins critiques des clients de la mission. Nous avons publié notre [&#x200B; calendrier de publication &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=fr) afin de donner à nos clients le temps de planifier et de budgéter les ressources pour l’année à venir. Pour résumer les changements, nous examinons la stratégie 2023 et 2024 pour déterminer ce qui reste identique et ce qui change.
 
 ## Qu’est-ce qui reste identique ?
 

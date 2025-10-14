@@ -170,7 +170,7 @@ Procédez comme suit :
 
 1. Définissez votre [!UICONTROL Timezone Settings].
 
-   ![ Paramètres de fuseau horaire ](/help/troubleshooting/miscellaneous/assets/timezone_settings_mbi.png)
+   ![&#x200B; Paramètres de fuseau horaire &#x200B;](/help/troubleshooting/miscellaneous/assets/timezone_settings_mbi.png)
 
    *Entrées*
 
@@ -200,4 +200,4 @@ Procédez comme suit :
 
 ## Lecture connexe
 
-[ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+[&#x200B; Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

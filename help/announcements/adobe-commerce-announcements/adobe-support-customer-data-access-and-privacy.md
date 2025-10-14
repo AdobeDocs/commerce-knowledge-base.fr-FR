@@ -21,7 +21,7 @@ L’assistance technique d’Adobe peut nécessiter l’accès à vos données l
 
 Pour autoriser l’accès :
 
-1. [Connectez-vous à ](https://account.magento.com/customer/account/login) en tant que support autorisé pour l’utilisateur principal.
+1. [Connectez-vous à &#x200B;](https://account.magento.com/customer/account/login) en tant que support autorisé pour l’utilisateur principal.
 1. Sur la page **[!UICONTROL My Account]** > **[!UICONTROL Account Settings]**, vérifiez que vous avez terminé votre [profil de compte](https://account.magento.com/customer/account/edit) et cliquez sur **[!UICONTROL Save]**.
 1. Sur la page **[!UICONTROL My Account]** > **[!UICONTROL Account Settings]** > **[!UICONTROL Privacy Settings]**. Vous verrez un formulaire de consentement pour accorder au personnel du support technique d’Adobe l’accès à vos données.
 1. Après avoir consulté les informations sur les paramètres de confidentialité, choisissez de cocher la case en regard de **J’autorise l’accès à mes données pendant la durée suivante :**.

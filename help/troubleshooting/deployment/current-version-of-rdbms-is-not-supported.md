@@ -47,7 +47,7 @@ Vous devez mettre à niveau le service MariaDB vers une version compatible avant
 
 Pour la branche d’intégration sur l’architecture de plan Adobe Commerce on Cloud Infrastructure Pro (et toutes les branches dans l’architecture Starter), suivez [Configurer le service](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) dans notre documentation destinée aux développeurs.
 
-Pour l’architecture du plan d’évaluation et de production sur Adobe Commerce sur l’infrastructure cloud Pro, [ envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour demander que les services soient mis à niveau avant de déployer la mise à niveau de la version d’Adobe Commerce.
+Pour l’architecture du plan d’évaluation et de production sur Adobe Commerce sur l’infrastructure cloud Pro, [&#x200B; envoyez un ticket d’assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour demander que les services soient mis à niveau avant de déployer la mise à niveau de la version d’Adobe Commerce.
 
 
 ## Lecture connexe

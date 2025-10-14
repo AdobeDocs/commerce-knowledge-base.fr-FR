@@ -253,7 +253,7 @@ Vous pouvez ajouter des observateurs pour prendre en charge les cas soumis par d
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’ajout et la suppression des observateurs pour votre dossier, reportez-vous à la vidéo [ Ajouter et supprimer des observateurs, fermer et rouvrir des tickets ](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
+>Pour plus d’informations sur l’ajout et la suppression des observateurs pour votre dossier, reportez-vous à la vidéo [&#x200B; Ajouter et supprimer des observateurs, fermer et rouvrir des tickets &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
 
 ### Commentaires dans votre cas {#comments-in-your-case}
 

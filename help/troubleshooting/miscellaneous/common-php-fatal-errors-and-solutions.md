@@ -66,8 +66,8 @@ Vérifiez le répertoire `<root>/tmp`, car il est probablement plein. S’il est
 Dans notre documentation destinée aux développeurs :
 
 * [Erreurs de paramètres PHP](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/overview)
-* [ Paramètres PHP requis](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/php-settings)
+* [&#x200B; Paramètres PHP requis](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/php-settings)
 * [Redis vérification](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
 * [Configurer Redis](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
 * [Erreur de limite de mémoire PHP](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/overview)
-* [ Solutions aux problèmes courants - Limite de mémoire](https://developer.adobe.com/commerce/testing/guide/unit/command-line/#solutions-to-common-problems)
+* [&#x200B; Solutions aux problèmes courants - Limite de mémoire](https://developer.adobe.com/commerce/testing/guide/unit/command-line/#solutions-to-common-problems)

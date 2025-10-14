@@ -42,7 +42,7 @@ Pour plus d’informations sur les sauvegardes, voir [Sauvegarde et restauration
 Si la sauvegarde a échoué en raison d’un espace disque insuffisant, vous devez généralement libérer de l’espace disque en déplaçant certains fichiers vers un autre périphérique ou lecteur de stockage. Cependant, il peut y avoir d’autres façons de résoudre le problème. Consultez l’une des ressources suivantes pour obtenir des conseils :
 
 * [8 Conseils pour résoudre les problèmes de disque dur des systèmes Linux et Unix tels que Disque complet ou Impossible d’écrire sur le disque](https://www.cyberciti.biz/datacenter/linux-unix-bsd-osx-cannot-write-to-hard-disk)
-* [serverfaul: df indique que le disque est plein, mais qu’il ne l’est pas ](https://serverfault.com/questions/315181/df-says-disk-is-full-but-it-is-not)
+* [serverfaul: df indique que le disque est plein, mais qu’il ne l’est pas &#x200B;](https://serverfault.com/questions/315181/df-says-disk-is-full-but-it-is-not)
 * [unix.stackexchange.com: Tracking de l’emplacement de l’espace disque sous Linux ?](https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux)
 
 ## Erreur du système d’exploitation {#operating-system-error-trouble-backup-os-}

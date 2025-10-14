@@ -19,7 +19,7 @@ Pour obtenir la liste des colonnes calculées que vous pouvez créer dans le Ges
 * [Création de colonnes calculées](https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/creating-calculated-columns)
 * [Types de colonnes calculés](https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/calc-column-types)
 * [Comprendre et évaluer les relations de table](https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/table-relationships)
-* [ Création de chemins pour les colonnes calculées ](https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/create-paths-calc-columns)
+* [&#x200B; Création de chemins pour les colonnes calculées &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/create-paths-calc-columns)
 
 ## J&#39;ai encore besoin d&#39;aide !
 

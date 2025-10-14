@@ -22,7 +22,7 @@ Les problèmes de création de rapports avancés sur Adobe Commerce peuvent êtr
 Une page d’erreur 404 s’affiche lors de l’utilisation des rapports avancés. Votre site web répond-il aux [exigences de reporting avancé](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements) ?
 
 a. OUI - Passer à [étape 2](#step-2).\
-b. NON - Renseignez les exigences de création de rapports avancés pour votre site en suivant les étapes indiquées dans [ Exigences de création de rapports avancés ](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements). Passez ensuite à [Étape 2](#step-2).
+b. NON - Renseignez les exigences de création de rapports avancés pour votre site en suivant les étapes indiquées dans [&#x200B; Exigences de création de rapports avancés &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements). Passez ensuite à [Étape 2](#step-2).
 
 +++
 

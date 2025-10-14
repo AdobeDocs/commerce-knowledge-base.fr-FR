@@ -75,4 +75,4 @@ Pour savoir si votre MageID est principal, essayez les méthodes suivantes :
 
 ### Ne fait pas partie du programme de préversion
 
-Pour être inclus dans le programme d’accès anticipé, votre entreprise doit disposer d’un compte Adobe Commerce ou Partner actif en bonne et due forme. Si vous pensez que vous répondez à ces critères et ne pouvez pas accéder au code de version préliminaire, [ contactez le support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) avec votre MageID.
+Pour être inclus dans le programme d’accès anticipé, votre entreprise doit disposer d’un compte Adobe Commerce ou Partner actif en bonne et due forme. Si vous pensez que vous répondez à ces critères et ne pouvez pas accéder au code de version préliminaire, [&#x200B; contactez le support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) avec votre MageID.

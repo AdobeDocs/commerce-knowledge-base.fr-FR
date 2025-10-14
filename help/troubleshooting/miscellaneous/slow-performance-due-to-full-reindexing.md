@@ -57,6 +57,6 @@ Exécutez la réindexation uniquement lorsque cela est nécessaire. Pour connaî
 
 ## Lectures connexes
 
-* [Aperçu de l’indexation : comment effectuer une réindexation ](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) dans notre documentation destinée aux développeurs.
+* [Aperçu de l’indexation : comment effectuer une réindexation &#x200B;](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) dans notre documentation destinée aux développeurs.
 * [Le cache invalidé entraîne une dégradation du temps de réponse](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md) dans notre base de connaissances d’assistance.
 

@@ -18,7 +18,7 @@ Cet article fournit une solution pour lorsque le message &quot;*La version du pl
 ## Produits et versions concernés
 
 Adobe Commerce sur l’infrastructure cloud 2.2.x., 2.3.x<br>
-Fastly : cette erreur peut affecter toutes les versions du module Fastly, à l&#39;exception de la dernière. Pour plus d’informations sur la dernière version, voir [ Notes de mise à jour rapides ](https://github.com/fastly/fastly-magento2/releases) sur GitHub.
+Fastly : cette erreur peut affecter toutes les versions du module Fastly, à l&#39;exception de la dernière. Pour plus d’informations sur la dernière version, voir [&#x200B; Notes de mise à jour rapides &#x200B;](https://github.com/fastly/fastly-magento2/releases) sur GitHub.
 
 ## Problème
 

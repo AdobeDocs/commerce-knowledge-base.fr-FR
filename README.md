@@ -50,7 +50,7 @@ Pour plus d’informations, consultez le [Guide du contributeur de documents d�
 
 Tous les articles de ce référentiel utilisent GitHub Flavored Markdown. Si vous ne connaissez pas Markdown, voir :
 
-* [ Concepts de base de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [&#x200B; Concepts de base de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [Aide-mémoire imprimable pour le markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Étiquettes

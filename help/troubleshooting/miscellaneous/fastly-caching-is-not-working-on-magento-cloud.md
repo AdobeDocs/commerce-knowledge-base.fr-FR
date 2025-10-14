@@ -34,7 +34,7 @@ En règle générale, les configurations, les informations d’identification in
 
 ### Tester avec la commande dig
 
-Tout d’abord, recherchez les en-têtes avec une commande dig vers l’URL. Dans une application de terminal, saisissez dig `<url>` pour vérifier l’affichage des services Fastly dans les en-têtes. Pour des tests de recherche supplémentaires, voir Tests de Fastly [ avant de modifier le DNS](https://docs.fastly.com/guides/basic-configuration/testing-setup-before-changing-domains).
+Tout d’abord, recherchez les en-têtes avec une commande dig vers l’URL. Dans une application de terminal, saisissez dig `<url>` pour vérifier l’affichage des services Fastly dans les en-têtes. Pour des tests de recherche supplémentaires, voir Tests de Fastly [&#x200B; avant de modifier le DNS](https://docs.fastly.com/guides/basic-configuration/testing-setup-before-changing-domains).
 
 Par exemple :
 

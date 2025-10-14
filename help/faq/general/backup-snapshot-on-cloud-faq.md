@@ -68,7 +68,7 @@ Notez également que la prise en charge n’effectue pas la restauration de la b
 
 ## Restaurer un instantané d’environnement
 
-Pour restaurer un snapshot existant (sur l’environnement pris en charge : Intégration, Staging, Production sur le plan de démarrage ou Intégration sur le plan Pro), suivez les étapes décrites dans la section [ Gestion des sauvegardes : Restaurer une sauvegarde manuelle ](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) dans notre Guide de Commerce sur les infrastructures cloud.
+Pour restaurer un snapshot existant (sur l’environnement pris en charge : Intégration, Staging, Production sur le plan de démarrage ou Intégration sur le plan Pro), suivez les étapes décrites dans la section [&#x200B; Gestion des sauvegardes : Restaurer une sauvegarde manuelle &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) dans notre Guide de Commerce sur les infrastructures cloud.
 
 ## Sauvegarde de la base de données (BD)
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ![login_panel_s.png](assets/login_panel_s.png)
 
-Lisez les étapes de la section [ Réinitialiser votre mot de passe de l’option Connexion administrateur ](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html?lang=fr#admin-sign-in) dans notre guide d’utilisation.
+Lisez les étapes de la section [&#x200B; Réinitialiser votre mot de passe de l’option Connexion administrateur &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html?lang=fr#admin-sign-in) dans notre guide d’utilisation.
 
 Vous trouverez ci-dessous les notes d’utilisation critiques.
 
@@ -24,7 +24,7 @@ Vous trouverez ci-dessous les notes d’utilisation critiques.
 
 Avant d’utiliser le formulaire **Mot de passe oublié**, assurez-vous d’[activer les e-mails sortants](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html?lang=fr) à l’aide de la [console cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=fr). Cela s’applique uniquement aux environnements d’intégration et aux projets Sandbox.
 
-Si les e-mails sortants sont réellement désactivés sur Pro Production ou Staging (signifiant que l&#39;e-mail n&#39;a pas été récupéré par SendGrid), vous pouvez vérifier cela en cochant la case [ Activer les e-mails dans la console cloud ](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/outgoing-emails#enable-emails-in-the-cli). Si le problème persiste, vous pouvez envoyer un ticket d’assistance pour Adobe [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Si les e-mails sortants sont réellement désactivés sur Pro Production ou Staging (signifiant que l&#39;e-mail n&#39;a pas été récupéré par SendGrid), vous pouvez vérifier cela en cochant la case [&#x200B; Activer les e-mails dans la console cloud &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/project/outgoing-emails#enable-emails-in-the-cli). Si le problème persiste, vous pouvez envoyer un ticket d’assistance pour Adobe [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 ### Vérifier votre dossier Courrier indésirable
 

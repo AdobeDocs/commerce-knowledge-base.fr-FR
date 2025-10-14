@@ -60,5 +60,5 @@ La solution à ce problème est que le client peut se connecter à un magasin (l
 ## Lecture connexe
 
 * [Bonne pratique pour le nombre de produits dans le panier dans Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) dans notre base de connaissances d’assistance.
-* [Tutoriel sur le traitement des commandes : Étape 1. Ajoutez des éléments au panier ](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) dans notre documentation destinée aux développeurs.
-* [Tutoriel de passage en caisse GraphQL : Étape 1. Ajout de produits au panier ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/) dans notre documentation destinée aux développeurs
+* [Tutoriel sur le traitement des commandes : Étape 1. Ajoutez des éléments au panier &#x200B;](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) dans notre documentation destinée aux développeurs.
+* [Tutoriel de passage en caisse GraphQL : Étape 1. Ajout de produits au panier &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/) dans notre documentation destinée aux développeurs

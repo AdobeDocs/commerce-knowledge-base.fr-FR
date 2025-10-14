@@ -41,5 +41,5 @@ Vous êtes redirigé vers le formulaire de connexion, avec le message d’erreur
 
 ## Lecture connexe
 
-* [ Redirigez-vous vers le formulaire de connexion sans erreur lorsque vous essayez de vous connecter à [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin).
-* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+* [&#x200B; Redirigez-vous vers le formulaire de connexion sans erreur lorsque vous essayez de vous connecter à [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin).
+* [&#x200B; Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

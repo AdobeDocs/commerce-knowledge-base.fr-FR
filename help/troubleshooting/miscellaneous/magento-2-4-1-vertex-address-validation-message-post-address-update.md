@@ -37,7 +37,7 @@ Activez **le nettoyage des adresses de sommet**. Pour les étapes, reportez-vous
 
 <u>Premier scénario :</u>
 
-Suivez les [ étapes ci-dessus ](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth), puis :
+Suivez les [&#x200B; étapes ci-dessus &#x200B;](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth), puis :
 
 1. Saisissez une nouvelle adresse de facturation valide.
 1. Cliquez sur le bouton **Mettre à jour** . Il affiche le message/la suggestion comme suit : *L&#39;adresse n&#39;est pas valide.* Ensuite, il y aura une suggestion d’adresse du type : *Postcode : XXXXX- XXXX Street : XXX City street XXX*
@@ -56,7 +56,7 @@ Le message/suggestion de validation *&quot;Nous n&#39;avons pas trouvé d&#39;ad
 
 <u>Deuxième scénario :</u>
 
-Suivez les [ étapes ci-dessus ](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth), puis :
+Suivez les [&#x200B; étapes ci-dessus &#x200B;](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth), puis :
 
 1. Remplissez le formulaire d&#39;adresse avec une adresse valide.
 1. Cliquez sur le bouton **Mettre à jour** . Il affiche le message/la suggestion comme suit : *L&#39;adresse n&#39;est pas valide.* Ensuite, il y aura une suggestion d&#39;adresse du type : *Postcode : XXXXX-XXXX Street : XXX City street XXX*.

@@ -65,12 +65,12 @@ Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’artic
 
 <u></u> de correctif du compositeur
 
-Pour obtenir des instructions sur l’application d’un correctif compositeur[ voir ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)Application d’un correctif compositeur fourni par Adobe .
+Pour obtenir des instructions sur l’application d’un correctif compositeur[&#x200B; voir &#x200B;](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)Application d’un correctif compositeur fourni par Adobe .
 
 <u> du correctif </u>Git)
 
-* Voir [ Application de correctifs ](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans la documentation destinée aux développeurs pour obtenir des instructions sur les correctifs Git pour Adobe Commerce sur les infrastructures cloud.
-* Voir [ Application de correctifs : correctifs personnalisés ](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) dans la documentation destinée aux développeurs pour obtenir des instructions sur les correctifs Git pour Adobe Commerce.
+* Voir [&#x200B; Application de correctifs &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans la documentation destinée aux développeurs pour obtenir des instructions sur les correctifs Git pour Adobe Commerce sur les infrastructures cloud.
+* Voir [&#x200B; Application de correctifs : correctifs personnalisés &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) dans la documentation destinée aux développeurs pour obtenir des instructions sur les correctifs Git pour Adobe Commerce.
 
 ## Lecture connexe
 

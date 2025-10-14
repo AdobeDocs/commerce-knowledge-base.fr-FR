@@ -65,7 +65,7 @@ Si le taux d’accès de la page d’index est faible, vous pouvez le corriger e
 
 Pour vérifier le taux d’accès global au cache :
 
-1. [ Obtenez des informations d’identification rapides ](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration) pour votre environnement Adobe Commerce sur l’infrastructure cloud.
+1. [&#x200B; Obtenez des informations d’identification rapides &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration) pour votre environnement Adobe Commerce sur l’infrastructure cloud.
 1. Exécutez la commande cURL Linux/macOS suivante pour vérifier le taux d’accès à votre site au cours des 30 dernières minutes, en le remplaçant par les valeurs de vos informations d’identification Fastly :
 
    `curl -H "Fastly-Key: " https://api.fastly.com/stats/service//field/hit_ratio?by=minute | json_pp`

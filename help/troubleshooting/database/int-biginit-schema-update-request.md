@@ -50,7 +50,7 @@ La solution que vous utilisez dépend de ce qui a causé le problème. Reportez-
 
 Vérifiez la valeur la plus élevée de la clé primaire en exécutant la commande suivante dans le terminal : `SELECT MAX(value_id) FROM catalog_product_entity_int;`
 
-Si `max(value_id)` est inférieur à `max int(11) [ 4294967296 ]` et que `[ AUTO_INCREMENT ]` a une valeur supérieure ou égale à `max int(11) [ 4294967296 ]`, envisagez de [mettre à jour `[ AUTO_INCREMENT ]` vers la valeur suivante de la table](#update-the-auto-increment-to-the-next-value-from-the-table). Dans le cas contraire, envisagez une mise à jour de schéma [`INT` vers `BIGINT` ](#int_to_bigint_schema_update).
+Si `max(value_id)` est inférieur à `max int(11) [ 4294967296 ]` et que `[ AUTO_INCREMENT ]` a une valeur supérieure ou égale à `max int(11) [ 4294967296 ]`, envisagez de [mettre à jour `[ AUTO_INCREMENT ]` vers la valeur suivante de la table](#update-the-auto-increment-to-the-next-value-from-the-table). Dans le cas contraire, envisagez une mise à jour de schéma [`INT` vers `BIGINT` &#x200B;](#int_to_bigint_schema_update).
 
 ## Mettre à jour `AUTO_INCREMENT` vers la valeur suivante de la table {#update-the-auto-increment-to-the-next-value-from-the-table}
 
@@ -115,4 +115,4 @@ Pour ce faire :
 * [Le chargement de la base de données perd la connexion à [!DNL MySQL]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql.html?lang=fr) dans notre base de connaissances de support
 * [Bonnes pratiques de base de données pour Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html?lang=fr) dans notre base de connaissances de support
 * [Problèmes de base de données les plus courants dans Adobe Commerce sur l’infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html?lang=fr) dans notre base de connaissances de support
-* [ Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+* [&#x200B; Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce

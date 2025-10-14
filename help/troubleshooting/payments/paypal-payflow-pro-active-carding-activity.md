@@ -133,7 +133,7 @@ Veuillez contacter le support marchand PayPal pour en savoir plus sur les Servic
 
 >[!NOTE]
 >
->Pour plus d’informations, reportez-vous à la section Base de connaissances [ de PayPal qui m’a contacté au sujet de mon intégration à Payflow Pro. Que dois-je faire ?&quot;](https://www.paypal.com/us/smarthelp/article/ts2242).
+>Pour plus d’informations, reportez-vous à la section Base de connaissances [&#x200B; de PayPal qui m’a contacté au sujet de mon intégration à Payflow Pro. Que dois-je faire ?&quot;](https://www.paypal.com/us/smarthelp/article/ts2242).
 
 **Détails de l’assistance du marchand PayPal**
 

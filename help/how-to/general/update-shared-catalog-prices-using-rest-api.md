@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Mise à jour des prix du catalogue partagé à l’aide de l’API REST
 
-Pour ajouter ou mettre à jour des prix dans les catalogues partagés avec l’API, nous vous recommandons d’utiliser le service `TierPriceStorageInterface`, décrit dans la référence de l’API REST [ de gestion des prix de niveau ](https://developer.adobe.com/commerce/webapi/rest/modules/catalog/catalog-pricing/#manage-tier-prices) de notre documentation destinée aux développeurs. Pour les prix du catalogue partagé, nous utilisons les tarifs de niveau et le groupe de clients.
+Pour ajouter ou mettre à jour des prix dans les catalogues partagés avec l’API, nous vous recommandons d’utiliser le service `TierPriceStorageInterface`, décrit dans la référence de l’API REST [&#x200B; de gestion des prix de niveau &#x200B;](https://developer.adobe.com/commerce/webapi/rest/modules/catalog/catalog-pricing/#manage-tier-prices) de notre documentation destinée aux développeurs. Pour les prix du catalogue partagé, nous utilisons les tarifs de niveau et le groupe de clients.

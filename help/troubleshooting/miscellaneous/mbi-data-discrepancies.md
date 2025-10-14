@@ -32,4 +32,4 @@ Si le rapport est toujours inexact, ne vous inquiétez pas : notre équipe de su
 ## Lecture connexe
 
 * [Colonnes calculées](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
-* [ Modifications de la base de données structurelle](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html?lang=fr)
+* [&#x200B; Modifications de la base de données structurelle](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html?lang=fr)

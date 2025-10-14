@@ -40,7 +40,7 @@ Dans le cadre d&#39;un déploiement ou d&#39;une mise à niveau planifiés, la [
 <u>Le jour des modifications</u> :
 
 1. Placez le site web dans [!UICONTROL Maintenance Mode].
-Pour en savoir plus sur [ Activer ou désactiver le [!UICONTROL Maintenance Mode]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html?lang=fr), consultez notre guide de l’utilisateur et [[!UICONTROL Maintenance Mode] les options de mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html?lang=fr) consultez notre guide de mise à niveau.
+Pour en savoir plus sur [&#x200B; Activer ou désactiver le [!UICONTROL Maintenance Mode]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html?lang=fr), consultez notre guide de l’utilisateur et [[!UICONTROL Maintenance Mode] les options de mise à niveau](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html?lang=fr) consultez notre guide de mise à niveau.
 1. Désactivez les tâches cron. Pour en savoir plus sur la désactivation des tâches cron, consultez notre [guide des propriétés cron](<https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property#disable-cron-jobs>).
 1. Prenez un [[!UICONTROL Database Dump]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html?lang=fr) local.
 

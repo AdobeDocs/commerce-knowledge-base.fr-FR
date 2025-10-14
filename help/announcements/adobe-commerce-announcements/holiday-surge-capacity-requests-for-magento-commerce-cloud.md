@@ -17,7 +17,7 @@ Pendant la période de pointe des ventes des fêtes (de la mi-novembre à la mi-
 
 **Planification et estimation du trafic**
 
-Nous recommandons à tous les commerçants Adobe Commerce sur notre infrastructure cloud [ d’utiliser cet ensemble de recommandations sur la manière d’estimer le trafic de la saison de pointe ](https://business.adobe.com/blog/how-to/the-5-ps-of-peak-season-performance-a-guide-to-preparing-your-infrastructure-for-high-traffic) pour la saison de vente des fêtes de pointe chaque année.
+Nous recommandons à tous les commerçants Adobe Commerce sur notre infrastructure cloud [&#x200B; d’utiliser cet ensemble de recommandations sur la manière d’estimer le trafic de la saison de pointe &#x200B;](https://business.adobe.com/blog/how-to/the-5-ps-of-peak-season-performance-a-guide-to-preparing-your-infrastructure-for-high-traffic) pour la saison de vente des fêtes de pointe chaque année.
 
 Une fois que vous avez terminé l’estimation recommandée, si votre équipe a identifié des dates pour lesquelles vous pensez avoir besoin de capacité supplémentaire, passez à l’étape suivante pour plus d’informations sur la manière de demander une capacité de survol.
 

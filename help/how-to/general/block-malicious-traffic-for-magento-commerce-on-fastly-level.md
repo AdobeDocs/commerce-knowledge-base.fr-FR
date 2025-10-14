@@ -26,7 +26,7 @@ Dans cet article, nous supposons que vous disposez déjà des adresses IP malvei
 
 Si votre site web est surchargé par DDoS, il se peut que vous ne puissiez pas vous connecter à votre administrateur Commerce (et effectuer toutes les étapes décrites plus en détail dans cet article).
 
-Pour accéder à l’administrateur, mettez votre site web en mode de maintenance comme décrit dans la section [ Activer ou désactiver le mode de maintenance ](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) et placez votre adresse IP sur liste blanche. Désactivez le mode de maintenance une fois cette opération terminée.
+Pour accéder à l’administrateur, mettez votre site web en mode de maintenance comme décrit dans la section [&#x200B; Activer ou désactiver le mode de maintenance &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) et placez votre adresse IP sur liste blanche. Désactivez le mode de maintenance une fois cette opération terminée.
 
 ## Bloquer le trafic par adresse IP
 

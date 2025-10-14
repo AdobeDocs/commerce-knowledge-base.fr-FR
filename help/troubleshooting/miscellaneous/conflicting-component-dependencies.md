@@ -64,7 +64,7 @@ Les dépendances de composants en conflit peuvent également être causées par 
 ## Adobe Commerce {#magento-commerce-magento-commerce-cloud}
 
 1. Contactez le développeur de l’extension pour qu’il vous aide. Vous trouverez leurs coordonnées sur la page à partir de laquelle vous avez acheté l’extension sur le Commerce Marketplace. Recherchez le bouton **Contact Seller** affiché dans le panneau de droite. Tous les développeurs Commerce doivent fournir un guide d’installation et d’utilisateur lorsqu’ils publient une extension sur Marketplace. Vous trouverez les deux sur le côté droit de leur landing page.
-1. Si vous ne recevez pas de réponse du vendeur dans un délai raisonnable, [ contactez le support Marketplace ](mailto:commercemarketplacesupport@adobe.com) afin que nous puissions lui rappeler leurs engagements d’assistance clientèle.
+1. Si vous ne recevez pas de réponse du vendeur dans un délai raisonnable, [&#x200B; contactez le support Marketplace &#x200B;](mailto:commercemarketplacesupport@adobe.com) afin que nous puissions lui rappeler leurs engagements d’assistance clientèle.
 
 ## Magento Open Source {#opensource}
 

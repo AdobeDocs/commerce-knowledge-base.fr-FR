@@ -34,7 +34,7 @@ Ces exceptions résultent des paramètres des autorisations du système de fichi
 
 ### Solution
 
-[ Définissez à nouveau la propriété et les autorisations du système de fichiers ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html?lang=fr) en tant qu’utilisateur disposant de droits `root`.
+[&#x200B; Définissez à nouveau la propriété et les autorisations du système de fichiers &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html?lang=fr) en tant qu’utilisateur disposant de droits `root`.
 
 ## Symptôme (mode de production)
 

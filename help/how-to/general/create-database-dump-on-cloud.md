@@ -61,4 +61,4 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
 **Documentation connexe :**
 
 * [mysqldump - A Database Backup Program](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) dans la documentation officielle de MySQL.
-* [ Variables spécifiques au cloud ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=fr) (voir `MAGENTO_CLOUD_RELATIONSHIPS`) dans notre guide Commerce on Cloud Infrastructure.
+* [&#x200B; Variables spécifiques au cloud &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=fr) (voir `MAGENTO_CLOUD_RELATIONSHIPS`) dans notre guide Commerce on Cloud Infrastructure.

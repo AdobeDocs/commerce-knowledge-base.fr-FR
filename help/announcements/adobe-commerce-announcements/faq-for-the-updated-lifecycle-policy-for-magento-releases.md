@@ -34,7 +34,7 @@ Les mises à jour de sécurité uniquement contiennent uniquement des correctifs
 
 ## Existera-t-il toujours une version destinée uniquement à la sécurité pour la dernière ligne (à compter de la publication, version 2.4) ?
 
-Adobe continuera également à disposer de versions de sécurité uniquement pour la dernière ligne de mise à jour. La procédure à suivre est décrite dans l’article de DevBlog [ Présentation de la nouvelle version de correctif destinée uniquement à la sécurité ](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-only-Patch-Release/ba-p/141287) .
+Adobe continuera également à disposer de versions de sécurité uniquement pour la dernière ligne de mise à jour. La procédure à suivre est décrite dans l’article de DevBlog [&#x200B; Présentation de la nouvelle version de correctif destinée uniquement à la sécurité &#x200B;](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-only-Patch-Release/ba-p/141287) .
 
 ## Qu’est-ce que l’outil de correctifs de qualité ?
 

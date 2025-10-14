@@ -18,7 +18,7 @@ Le FAQ suivant a pour but d’aider les marchands, les développeurs et les part
 
 ### Où puis-je trouver les dates de prise en charge des logiciels pour toutes les versions d’Adobe Commerce ?
 
-Vous trouverez la politique de cycle de vie des logiciels Adobe Commerce et les dates de prise en charge des logiciels dans la [stratégie de cycle de vie des logiciels Adobe Commerce](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Nous publions également des dates de fin de prise en charge (EOS) sur notre [ page de documentation destinée aux développeurs ](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/versions).
+Vous trouverez la politique de cycle de vie des logiciels Adobe Commerce et les dates de prise en charge des logiciels dans la [stratégie de cycle de vie des logiciels Adobe Commerce](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Nous publions également des dates de fin de prise en charge (EOS) sur notre [&#x200B; page de documentation destinée aux développeurs &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/versions).
 
 ### Qu’est-ce que cela signifie lorsque l’Adobe met fin à la prise en charge d’une version du logiciel Adobe Commerce ?
 
