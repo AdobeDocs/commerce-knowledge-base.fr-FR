@@ -25,7 +25,7 @@ Adobe Commerce sur les infrastructures cloud, [toutes les versions prises en cha
 >Avant de poursuivre la configuration du domaine, assurez-vous des points suivants :
 >
 >Toutes les URL de base sont configurées pour utiliser HTTPS sous **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**, avec la portée de la vue correcte du site web ou de la boutique.
->> [Forcer TLS](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls#token_type=bearer&expires_in=10799996) est activé pour rediriger tout le trafic HTTP vers HTTPS sur votre site Adobe Commerce sur l’infrastructure cloud.
+>&#x200B;> [Forcer TLS](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls#token_type=bearer&expires_in=10799996) est activé pour rediriger tout le trafic HTTP vers HTTPS sur votre site Adobe Commerce sur l’infrastructure cloud.
 
 ### Étape 1 : s’agit-il de l’[!DNL Integration, Staging] ou de l’[!DNL Production environment] ?
 
