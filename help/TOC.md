@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 3f0eb749d5f704af3584178187fa0907b9c81d83
+source-git-commit: 9c17f1a10303f91ac95813171191983471d345a1
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2778'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,6 @@ ht-degree: 0%
    * Base de données {#database}
       * [Vérification des requêtes lentes et des processus MySQL](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)
       * [Le chargement de la base de données perd la connexion à MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
-      * [Goulot d’étranglement à forte charge MySQL dans Adobe Commerce sur les infrastructures cloud](/help/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.md)
       * [MySQL server a disparu&#x200B; erreur sur Adobe Commerce on cloud](/help/troubleshooting/database/mysql-server-has-gone-away-error-on-magento-commerce-cloud.md)
       * [Résolution des problèmes de stockage de la base de données sur Adobe Commerce](/help/troubleshooting/database/database-storage-troubleshooter-on-adobe-commerce.md)
       * [Erreurs de base de données liées à max_allowed_paquets sur Adobe Commerce](/help/troubleshooting/database/database-errors-related-to-max-allowed-packet-on-magento.md)
