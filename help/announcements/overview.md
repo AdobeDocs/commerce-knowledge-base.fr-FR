@@ -13,4 +13,4 @@ ht-degree: 27%
 
 # Présentation des annonces
 
-Obtenez des mises à jour importantes de la part des équipes Adobe Commerce. sur l’expérience de l’équipe d’assistance d’Adobe Commerce.
+Obtenez des mises à jour importantes de la part des équipes d’Adobe Commerce. sur l’expérience de l’équipe d’assistance d’Adobe Commerce.
