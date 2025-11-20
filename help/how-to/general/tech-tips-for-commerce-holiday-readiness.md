@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Le PDF ci-joint offre des conseils sur la préparation de votre infrastructure à un trafic élevé, la prévention des temps d’arrêt et l’optimisation des performances pendant la période des fêtes.
 
-Pour obtenir d’autres conseils intersolutions sur la préparation de votre organisation, de votre infrastructure et de vos équipes à la haute saison, consultez le [Guide de préparation aux vacances unifiées des solutions DX d’Adobe](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/unified-holiday-readiness).
+Pour obtenir d’autres conseils intersolutions sur la préparation de votre organisation, de votre infrastructure et de vos équipes à la haute saison, consultez le [Guide de préparation aux vacances unifiées des solutions DX d’Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/data-sheets/unified-holiday-readiness).
 
 ## Produits et versions concernés
 
