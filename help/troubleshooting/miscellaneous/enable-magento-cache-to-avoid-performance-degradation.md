@@ -48,7 +48,7 @@ En cas d’inquiétude et/ou de question sur la possibilité ou la nécessité d
 Documentation sur le cache d’Adobe Commerce dans notre documentation destinée aux développeurs :
 
 * [Présentation du cache Adobe Commerce](https://developer.adobe.com/commerce/frontend-core/guide/caching/)
-* [ Gérer le cache ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-cache)
+* [&#x200B; Gérer le cache &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-cache)
 
 Autres raisons possibles des problèmes de performances et solutions correspondantes :
 
