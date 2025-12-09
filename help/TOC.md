@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 9c17f1a10303f91ac95813171191983471d345a1
+source-git-commit: ed116b8fddfb6f5e22c2da2fdad5d0d0d2b4a377
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2769'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,6 @@ ht-degree: 0%
       * [Les mises à jour de l’évaluation de contenu planifiées ne s’affichent pas avec le cache Fastly obsolète](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
       * [Résolution des problèmes liés à cron](/help/troubleshooting/miscellaneous/troubleshoot-cron.md)
       * [Le fichier .csv des produits exportés n’apparaît pas](/help/troubleshooting/miscellaneous/exported-products-csv-file-does-not-appear.md)
-      * [Erreur « La classe ne peut pas être enregistrée dans le répertoire de code »](/help/troubleshooting/miscellaneous/class-cannot-be-saved-in-the-code-directory-error.md)
       * [Vérification du journal de déploiement si l’interface utilisateur de Cloud comporte une erreur « journal arrêté »](/help/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.md)
       * [Le téléchargement échoue en raison de modifications apportées au compositeur](/help/troubleshooting/miscellaneous/download-fails-because-of-changes-in-composer.md)
       * [ERREUR : échec du préchauffage sur Adobe Commerce sur l’infrastructure cloud](/help/troubleshooting/miscellaneous/error-warming-up-failed-on-magento-commerce-cloud.md)
