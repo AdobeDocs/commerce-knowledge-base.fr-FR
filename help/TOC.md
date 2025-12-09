@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 3a482f7e5ddc872ddaf9634da8ca4f41a3b46ab4
+source-git-commit: 96ec7b44bd913c5976f0a8e3ce8355f7686622ad
 workflow-type: tm+mt
-source-wordcount: '2763'
+source-wordcount: '2736'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,6 @@ ht-degree: 0%
       * [Extension Manager n’affiche aucune extension dans Adobe Commerce 2.3.x](/help/troubleshooting/miscellaneous/extension-manager-shows-no-extensions-in-magento-commerce-2-3-x.md)
       * [Redirection de connexion lors de la tentative de connexion à Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
       * [Résoudre les problèmes liés à la clé de chiffrement](/help/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.md)
-      * [Erreur « L’application de mise à jour n’est pas disponible »](/help/troubleshooting/miscellaneous/updater-application-is-not-available-error.md)
       * [PWA Studio : les requêtes Venia GraphQL à Adobe Commerce génèrent des erreurs de validation](/help/troubleshooting/miscellaneous/pwa-studio-venia-graphql-queries-to-magento-produce-validation-errors.md)
       * [Statut du stock incorrect après l’installation d’Inventory management](/help/troubleshooting/miscellaneous/stock-status-incorrect-after-magento-inventory-install.md)
       * [problème connu d’Adobe Commerce 2.3.5 : commandes de produits virtuels avec expédition multiple](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
@@ -133,7 +132,6 @@ ht-degree: 0%
       * [Dépannage de l’outil de migration de données](/help/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.md)
       * [Problèmes de vérification de la préparation des dépendances des composants](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
       * [Impossible d’accéder à l’interface utilisateur d’Adobe Commerce sur l’infrastructure cloud](/help/troubleshooting/miscellaneous/cannot-access-magento-commerce-cloud-ui.md)
-      * [Nettoyage des adresses de sommet : adresses différentes non autorisées](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md)
       * [Les modifications apportées aux catégories ne sont pas enregistrées](/help/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.md)
       * [Problème connu d’Adobe Commerce 2.4.0 - Les taux de taxe à l’exportation ne fonctionnent pas](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
       * [Erreur de traitement de Magento Order Management System (OMS) pour Adobe Commerce](/help/troubleshooting/miscellaneous/magento-order-management-messages-processing-error.md)
@@ -157,7 +155,6 @@ ht-degree: 0%
       * [le développement de l’origine d’extraction git échoue lors de la mise à jour du logiciel Adobe Commerce](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
       * [Bloqueurs lancés sur Adobe Commerce sur les infrastructures cloud](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
       * [Erreurs de paramètres PHP](/help/troubleshooting/miscellaneous/php-settings-errors.md)
-      * [Résolution du problème de délai de connexion ou de passage en caisse de l’administrateur Commerce](/help/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.md)
       * [L&#39;extension PHP mcrypt n&#39;est pas installée correctement](/help/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly.md)
       * [Adobe Commerce 2.3.6, 2.4.0-p1, 2.4.1 problème connu : dotdigital login](/help/troubleshooting/miscellaneous/magento-2-3-6-2-4-0-p1-2-4-1-known-issue-dotdigital-login.md)
       * [La tâche cron est bloquée au statut « en cours »](/help/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.md)
@@ -173,7 +170,6 @@ ht-degree: 0%
       * [L’exportation manuelle de la commande vers MOM échoue. Le bouton Exporter la commande renvoie une erreur HTTP 404](/help/troubleshooting/miscellaneous/manual-order-export-to-mom-fails-the-export-order-button-returns-http-404-error.md)
       * [PWA Studio : le navigateur n’approuve pas le certificat SSL généré](/help/troubleshooting/miscellaneous/pwa-studio-browser-not-trust-generated-ssl-certificate.md)
       * [Dépannage de l&#39;erreur 503 causée par la nécessité de modifier les paramètres par défaut du vernis](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
-      * [Accès administrateur limité provoquant des problèmes de performances](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)
       * [Les tâches cron verrouillent les tâches d&#39;autres groupes](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
       * [Erreur de niveau d’imbrication de la fonction maximale xdebug d’installation](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
       * [Impossible d’enregistrer le serveur principal Adobe Commerce de l’entité](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)
