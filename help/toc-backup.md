@@ -338,11 +338,11 @@ ht-degree: 0%
       * [Bonnes pratiques relatives à la taille du cache Realpath](/help/best-practices/configuration/realpath-cache-size-best-practice.md)
       * [Optimisation des fichiers CSS et JS dans Adobe Commerce](/help/best-practices/configuration/optimize-css-and-js-files-in-magento-commerce.md)
    * Base de données {#database}
-      * [Mise à niveau d’Adobe Commerce 2.3.5 : des tableaux compacts et dynamiques](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
+      * [Mise à niveau d’Adobe Commerce 2.3.5 : des tableaux compacts et dynamiques](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=fr)
       * [Bonne pratique pour l’utilisation des déclencheurs](/help/best-practices/database/best-practice-for-triggers-usage.md)
-      * [Problèmes de base de données les plus courants dans Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
+      * [Problèmes de base de données les plus courants dans Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=fr)
       * [Bonnes pratiques d’Adobe Commerce sur les infrastructures cloud pour la connexion esclave MySQL](/help/best-practices/database/magento-commerce-cloud-best-practice-for-slave-connection.md)
-      * [Bonnes pratiques relatives aux bases de données pour Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+      * [Bonnes pratiques relatives aux bases de données pour Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=fr)
    * Général {#general}
       * [_isScopePrivate dans les blocs de contenu privés ralentit les performances d’Adobe Commerce](/help/best-practices/general/isscopeprivate-in-private-content-blocks-slows-magento-performance.md)
       * [Bonnes pratiques de dépannage pour Adobe Commerce sur les infrastructures cloud](/help/best-practices/general/troubleshooting-best-practices-for-magento-commerce-cloud.md)
@@ -370,7 +370,7 @@ ht-degree: 0%
       * [Bonne pratique pour les images dans Adobe Commerce sur les infrastructures cloud](/help/best-practices/performance/best-practice-for-images-in-magento-commerce-cloud.md)
       * [Bonne pratique Adobe Commerce : réalisation d&#39;actions critiques dans l&#39;administration](/help/best-practices/performance/magento-best-practice-conducting-critical-actions-in-admin.md)
       * [Bonne pratique dans Adobe Commerce : désactiver les rapports s’ils n’utilisent pas](/help/best-practices/performance/magento-best-practice-disable-reports-if-not-using.md)
-      * [&#x200B; La fonction « Mise à jour selon le calendrier » des indexeurs optimise les performances d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)
+      * [&#x200B; La fonction « Mise à jour selon le calendrier » des indexeurs optimise les performances d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=fr)
       * [Bonnes pratiques relatives aux variations de produit Adobe Commerce](/help/best-practices/performance/best-practice-magento-product-variations.md)
       * [Bonnes pratiques relatives aux performances de placement des commandes dans Adobe Commerce](/help/best-practices/performance/best-practice-magento-order-placement-performance.md)
       * [bonne pratique dans Adobe Commerce : activation du traitement asynchrone des commandes](/help/best-practices/performance/magento-best-practice-enable-asynchronous-orders-processing.md)

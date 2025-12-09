@@ -30,7 +30,7 @@ Certaines désactivations de certains types de cache d’Adobe Commerce peuvent 
 
 ## Solution
 
-1. Tout d’abord, vérifiez le statut de votre cache Adobe Commerce pour voir si c’est bien le problème. Pour cela, [SSH dans votre environnement](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) et exécutez la commande suivante :
+1. Tout d’abord, vérifiez le statut de votre cache Adobe Commerce pour voir si c’est bien le problème. Pour cela, [SSH dans votre environnement](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) et exécutez la commande suivante :
 
    ```bash
    php bin/magento cache:status
@@ -48,10 +48,10 @@ En cas d’inquiétude et/ou de question sur la possibilité ou la nécessité d
 Documentation sur le cache d’Adobe Commerce dans notre documentation destinée aux développeurs :
 
 * [Présentation du cache Adobe Commerce](https://developer.adobe.com/commerce/frontend-core/guide/caching/)
-* [&#x200B; Gérer le cache &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-cache)
+* [&#x200B; Gérer le cache &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-cache)
 
 Autres raisons possibles des problèmes de performances et solutions correspondantes :
 
-* [Désactivez la sortie Adobe Commerce Banner pour améliorer les performances du site](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26909)
-* [Les tables MySQL sont trop grandes](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26945)
+* [Désactivez la sortie Adobe Commerce Banner pour améliorer les performances du site](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26909)
+* [Les tables MySQL sont trop grandes](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26945)
 * [Performances lentes, crons lents et à exécution longue](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
