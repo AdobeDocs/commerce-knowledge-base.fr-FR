@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: dff3d2101da7264fe5e6af9ac5c9a6c1c8c97bc9
+source-git-commit: 0c5164641f171a92612417dbc8586b6b6ed442b1
 workflow-type: tm+mt
-source-wordcount: '2700'
+source-wordcount: '2679'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,6 @@ ht-degree: 0%
       * [Résolution des problèmes liés aux rapports avancés pour Adobe Commerce](/help/troubleshooting/miscellaneous/magento-advanced-reporting-troubleshooter.md)
       * [Erreurs et solutions PHP fatales courantes](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md)
       * [Échec de la mise à jour du compositeur sur Adobe Commerce : type d’argument incompatible](/help/troubleshooting/miscellaneous/composer-update-fail-on-adobe-commerce-incompatible-argument-type.md)
-      * [Impossible de supprimer la source ou de modifier son code](/help/troubleshooting/miscellaneous/cannot-delete-the-source-or-change-its-code.md)
       * [Adobe Commerce 2.4.2 B2B : modèle d’e-mail ne mettant pas à jour l’e-mail](/help/troubleshooting/miscellaneous/magento-2-4-2-b2b-email-template-not-updating-email.md)
       * [L’exportation manuelle de la commande vers MOM échoue. Le bouton Exporter la commande renvoie une erreur HTTP 404](/help/troubleshooting/miscellaneous/manual-order-export-to-mom-fails-the-export-order-button-returns-http-404-error.md)
       * [PWA Studio : le navigateur n’approuve pas le certificat SSL généré](/help/troubleshooting/miscellaneous/pwa-studio-browser-not-trust-generated-ssl-certificate.md)
@@ -176,7 +175,6 @@ ht-degree: 0%
       * [Scripts côté serveur personnalisés non exécutés dans le répertoire des médias publics](/help/troubleshooting/miscellaneous/custom-server-side-scripts-not-executed-in-pub-media-directory.md)
       * [Problèmes de vérification du niveau de préparation pour les versions PHP](/help/troubleshooting/miscellaneous/php-version-readiness-check-issues.md)
       * [Site cloud lent](/help/troubleshooting/miscellaneous/cloud-site-is-slow.md)
-      * [Erreur lors de la purge du cache Fastly sur Cloud (la demande de purge n’a pas été traitée correctement)](/help/troubleshooting/miscellaneous/error-purging-fastly-cache-on-cloud-the-purge-request-was-not-processed-successfully.md)
       * [Informations d’expiration sur le certificat SSL personnalisé](/help/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.md)
       * [PWA Studio : erreurs de validation lors de l’exécution du mode Développeur](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
       * [Désactiver les e-mails Amazon horaires lors de l’utilisation d’Adobe Commerce](/help/troubleshooting/miscellaneous/turn-off-hourly-amazon-emails-when-using-magento.md)
