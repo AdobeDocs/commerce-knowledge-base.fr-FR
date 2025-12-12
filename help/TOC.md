@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 0c5164641f171a92612417dbc8586b6b6ed442b1
+source-git-commit: 898424645c2ef0435c1a75604a47b7d5713670d8
 workflow-type: tm+mt
-source-wordcount: '2679'
+source-wordcount: '2669'
 ht-degree: 0%
 
 ---
@@ -178,7 +178,6 @@ ht-degree: 0%
       * [Informations d’expiration sur le certificat SSL personnalisé](/help/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.md)
       * [PWA Studio : erreurs de validation lors de l’exécution du mode Développeur](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
       * [Désactiver les e-mails Amazon horaires lors de l’utilisation d’Adobe Commerce](/help/troubleshooting/miscellaneous/turn-off-hourly-amazon-emails-when-using-magento.md)
-      * [Le cache invalidé entraîne une dégradation du temps de réponse](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md)
       * [Problème de jeton Github et procédures clés du compositeur](/help/troubleshooting/miscellaneous/github-token-issue-and-composer-key-procedures.md)
       * [problème Adobe Commerce 2.4.1 : impossible de modifier le compte Amazon dans Chrome](/help/troubleshooting/miscellaneous/magento-2-4-1-known-issue-unable-to-change-amazon-account-in-google-chrome.md)
       * [ECE-Tools et erreurs de mise à jour des correctifs Adobe Commerce Cloud Infrastructure 2.2.x., 2.3.x](/help/troubleshooting/miscellaneous/ece-tools-and-patch-update-errors-magento-commerce-cloud-2-2-x-2-3-x.md)
@@ -202,7 +201,6 @@ ht-degree: 0%
       * [Les profils client n’apparaissent pas dans Experience Platform](/help/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported.md)
       * [PWA Studio : le navigateur ne peut pas résoudre le site .local.pwadev](/help/troubleshooting/miscellaneous/pwa-studio-browser-cannot-resolve-local-pwadev-site.md)
       * [Recommandations de produits non affichées dans Page Builder](/help/troubleshooting/miscellaneous/product-recommendations-do-not-show-in-page-builder.md)
-      * [Résolution des problèmes d’Adobe Commerce Fastly](/help/troubleshooting/miscellaneous/magento-fastly-troubleshooter.md)
       * [Les requêtes AJAX à débit élevé entraînent de faibles performances](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md)
       * [PWA Studio : le navigateur affiche l’erreur « Impossible de remplacer par »](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
       * [exécuter le problème setup:static-content:deploy_version.txt](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed-version-txt-issue.md)
