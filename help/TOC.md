@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: de5dd9b057f2dbe79f9c931ef6d3473d809aedab
+source-git-commit: 9a2dadfbb5ca0a2c04d4e86454a1145b97924f61
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2656'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,6 @@ ht-degree: 0%
       * [Dépannage de l&#39;erreur 503 causée par la nécessité de modifier les paramètres par défaut du vernis](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
       * [Les tâches cron verrouillent les tâches d&#39;autres groupes](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
       * [Erreur de niveau d’imbrication de la fonction maximale xdebug d’installation](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
-      * [Impossible d’enregistrer le serveur principal Adobe Commerce de l’entité](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)
       * [Erreur de version PHP ou erreur 404 lors de l’accès à Adobe Commerce dans le navigateur](/help/troubleshooting/miscellaneous/php-version-error-or-404-error-when-accessing-magento-in-browser.md)
       * [L’ordre des options de bundle n’est pas mis à jour par l’importation](/help/troubleshooting/miscellaneous/bundle-options-order-is-not-updated-by-import.md)
       * [Adobe Commerce 2.4.0 : « Ajouter des sélections à mon panier » ne fonctionne pas](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)
