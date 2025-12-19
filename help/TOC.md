@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: b03b34be26ed42280036ccda5a94ebc664cdaf7d
+source-git-commit: 1374f09d481ffd79014d00952c734cf83504df6b
 workflow-type: tm+mt
-source-wordcount: '2649'
+source-wordcount: '2628'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,6 @@ ht-degree: 0%
       * [Activez le cache pour éviter une dégradation des performances](/help/troubleshooting/miscellaneous/enable-magento-cache-to-avoid-performance-degradation.md)
       * [Guide de dépannage de l’outil Adobe Commerce Security Scan](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
       * [Problèmes de vérification de l’état de préparation des autorisations de fichiers](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
-      * [La mise en cache rapide ne fonctionne pas sur Adobe Commerce dans l’infrastructure cloud](/help/troubleshooting/miscellaneous/fastly-caching-is-not-working-on-magento-cloud.md)
       * [Diagnostic des écarts de chiffre d’affaires Google eCommerce](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
       * [J’ai configuré les clés API pour Sensei, mais je ne vois qu’un seul espace de données SaaS](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
       * [Le menu principal (Catégories) ne s’affiche pas sur les sous-pages avec Fastly activé](/help/troubleshooting/miscellaneous/main-menu-categories-not-displayed-on-subpages-with-fastly-enabled.md)
@@ -136,7 +135,6 @@ ht-degree: 0%
       * [Dépannage de l’accès partagé](/help/troubleshooting/miscellaneous/shared-access-troubleshooting.md)
       * [Performances lentes, crons lents et à exécution longue](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
       * [Erreur lors de la validation des informations d’identification Fastly](/help/troubleshooting/miscellaneous/error-when-validating-fastly-credentials.md)
-      * [Nouveaux clients non affichés dans la grille des clients après l’importation du fichier CSV](/help/troubleshooting/miscellaneous/new-customers-not-displayed-in-customer-grid-after-csv-import.md)
       * [Le rapport de l’outil d’analyse de sécurité est vide](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)
       * [Adobe Commerce 2.4.2-p1 : note de facturation avec une valeur incorrecte](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
       * [Impossible d’accéder à la dernière version préliminaire d’Adobe Commerce](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
