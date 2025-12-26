@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 1374f09d481ffd79014d00952c734cf83504df6b
+source-git-commit: d1fe74501ffcb908e9434a0988087ae6c9e73088
 workflow-type: tm+mt
-source-wordcount: '2628'
+source-wordcount: '2617'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,6 @@ ht-degree: 0%
       * [Problème connu d’Adobe Commerce 2.4.0 - Les taux de taxe à l’exportation ne fonctionnent pas](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
       * [Erreur de traitement de Magento Order Management System (OMS) pour Adobe Commerce](/help/troubleshooting/miscellaneous/magento-order-management-messages-processing-error.md)
       * [Les images mises en cache ne sont pas chargées après la mise à niveau 2.2.X vers 2.3.X](/help/troubleshooting/miscellaneous/cached-images-are-not-loaded-after-2-2-x-to-2-3-x-upgrade.md)
-      * [Erreur de délai d’expiration de la passerelle 504 lors de l’enregistrement d’une catégorie avec plus de 1k produits](/help/troubleshooting/miscellaneous/504-gateway-time-out-error-when-saving-a-category-with-1k-products.md)
       * [Message d’erreur affiché lors de l’ajout de sites à l’Analyse de sécurité](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md)
       * [Dépannage de l’accès partagé](/help/troubleshooting/miscellaneous/shared-access-troubleshooting.md)
       * [Performances lentes, crons lents et à exécution longue](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
