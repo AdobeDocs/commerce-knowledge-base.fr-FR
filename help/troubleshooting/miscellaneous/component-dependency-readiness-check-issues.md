@@ -1,31 +1,31 @@
 ---
-title: Problèmes de contrôle de l’état de préparation des dépendances des composants
-description: Cet article fournit des solutions aux conflits de dépendance de composants.
+title: Problèmes de vérification de la préparation des dépendances des composants
+description: Cet article fournit des solutions aux conflits de dépendance des composants.
 exl-id: e0865226-2aaf-4bdd-8c28-28f32f38ce0c
 feature: Configuration
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
 
-# Problèmes de contrôle de l’état de préparation des dépendances des composants
+# Problèmes de vérification de la préparation des dépendances des composants
 
-Cet article fournit des solutions aux conflits de dépendance de composants.
+Cet article fournit des solutions aux conflits de dépendance des composants.
 
-## Résolution des conflits de dépendance de composant {#resolve-component-dependency-conflicts}
+## Résoudre les conflits de dépendance des composants {#resolve-component-dependency-conflicts}
 
 Nous vous suggérons d’essayer les solutions suivantes dans l’ordre indiqué :
 
-1. [Dépendances conflictuelles](#trouble-depend-conflict)
-1. [Problèmes d’autorisation du système de fichiers](#trouble-depend-permission)
-1. [L’état de vérification de la dépendance des composants ne change jamais.](#trouble-depend-state)
+1. [Conflits de dépendances](#trouble-depend-conflict)
+1. [Problèmes liés aux autorisations du système de fichiers](#trouble-depend-permission)
+1. [Le statut de la vérification des dépendances des composants ne change jamais](#trouble-depend-state)
 
-### Dépendances conflictuelles {#trouble-depend-conflict}
+### Conflits de dépendances {#trouble-depend-conflict}
 
-Le message *Nous avons trouvé des dépendances de composants conflictuelles* s’affiche si le compositeur ne peut pas déterminer les composants à installer ou à mettre à jour. Pour résoudre les problèmes de dépendance de composant, vous devez être une personne technique qui comprend parfaitement le fonctionnement du compositeur.
+Le message *Nous avons trouvé des dépendances de composant en conflit* s’affiche si le compositeur ne peut pas déterminer les composants à installer ou à mettre à jour. Pour résoudre les problèmes de dépendance des composants, vous devez être une personne technique qui comprend parfaitement le fonctionnement du compositeur.
 
 Voici un exemple de message d’échec :
 
@@ -38,23 +38,21 @@ We found conflicting component dependencies.
 
 >[!NOTE]
 >
->Le message que vous voyez sera probablement différent.
+>Le message qui s’affiche sera probablement différent.
 
-Reportez-vous à la section [Dépendances de composants en conflit pour une solution](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md) dans notre base de connaissances de support.
+## Problèmes liés aux autorisations du système de fichiers {#trouble-depend-permission}
 
-## Problèmes d’autorisation du système de fichiers {#trouble-depend-permission}
-
-Si le propriétaire du système de fichiers Adobe Commerce ne dispose pas des autorisations nécessaires pour écrire dans les répertoires du système de fichiers Adobe Commerce, un message similaire à celui-ci s’affiche :
+Si le propriétaire du système de fichiers Adobe Commerce ne dispose pas des autorisations d’écriture dans les répertoires du système de fichiers Adobe Commerce, un message similaire au suivant s’affiche :
 
 ```bash
 file_put_contents(/var/www/html/magento2/var/composer_home/cache/repo/https---
 packagist.org/provider-doctrine$instantiator.json): failed to open stream: Permission denied
 ```
 
-Veillez à définir les autorisations du système de fichiers comme décrit dans l’article [Présentation de la propriété et des autorisations](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) de notre documentation destinée aux développeurs.
+Assurez-vous de définir les autorisations de système de fichiers comme décrit dans l’article [Présentation de la propriété et des autorisations](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) dans notre documentation destinée aux développeurs.
 
-## L’état de vérification de la dépendance des composants ne change jamais. {#trouble-depend-state}
+## Le statut de la vérification des dépendances des composants ne change jamais {#trouble-depend-state}
 
-Dans certains cas, l’état de la vérification de dépendance des composants ne change pas, même après avoir essayé de corriger les problèmes. Dans ce cas, vous pouvez supprimer ou renommer les fichiers nommés `<magento_root>/var/.update_cronjob_status` et `<magento_root>/var/.setup_cronjob_status` et essayer de réexécuter le Gestionnaire de composants.
+Dans certains cas, le statut de la vérification des dépendances du composant ne change pas, même après avoir tenté de corriger les problèmes. Dans ce cas, vous pouvez supprimer ou renommer les fichiers nommés `<magento_root>/var/.update_cronjob_status` et `<magento_root>/var/.setup_cronjob_status`, puis réessayer d’exécuter le Gestionnaire de composants.
 
 Le changement de nom ou la suppression de ces fichiers force le Gestionnaire de composants à exécuter à nouveau les vérifications.

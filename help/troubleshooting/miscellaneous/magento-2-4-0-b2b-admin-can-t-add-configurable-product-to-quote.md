@@ -4,9 +4,9 @@ description: Cet article aborde un problème connu dans Commerce Admin lors de l
 exl-id: 73f7231b-b496-4250-b9e2-29427c772d56
 feature: Admin Workspace, B2B, Catalog Management, Configuration, Products, Quotes
 role: Developer
-source-git-commit: 9cd9720a73b8ecde3baf6a7a5b5732ad1330feee
+source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,4 @@ Cet article aborde un problème connu dans Commerce Admin lors de la gestion d�
 ## Recommandation
 
 Actuellement, il n’existe aucune solution à ce problème avec la modification des devis B2B, mais pour la gestion des commandes et des paniers, il est possible de sélectionner des produits dans la **Liste de produits** au lieu de les ajouter par **SKU**. Un correctif pour résoudre le problème sera disponible pour Adobe Commerce 2.4.1, dont la publication est prévue pour le 4e trimestre 2020.
-
-## Lecture connexe
-
-* [Problème connu d’Adobe Commerce 2.4.0 : l’actualisation des activités du client ne fonctionne pas](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
-* [Problème connu d’Adobe Commerce 2.4.0 : les taux de taxe à l’exportation ne fonctionnent pas](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
 
