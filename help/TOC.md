@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 881fdb528850471fcf34dbdf94c7980fff0f248b
+source-git-commit: d9d2382570c53d8da835d770dfae108fe64b31cc
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2413'
 ht-degree: 0%
 
 ---
@@ -212,7 +212,6 @@ ht-degree: 0%
       * [Le déploiement échoue en raison de l’incompatibilité du module Fastly avec la version Adobe Commerce](/help/troubleshooting/deployment/deployment-fails-fastly-module-incompatible-magento-version.md)
       * [Erreur de déploiement : SQLSTATE[HY000]](/help/troubleshooting/deployment/deployment-error-sql-hy000.md)
       * [Problèmes de déploiement liés aux autorisations de compte et aux clés d’accès](/help/troubleshooting/deployment/deployment-issues-relating-to-account-permissions-and-access-keys.md)
-      * [Résolution des problèmes de déploiement d’Adobe Commerce](/help/troubleshooting/deployment/magento-deployment-troubleshooter.md)
       * [Erreur lors du déploiement lors de la mise à niveau vers la version prenant en charge PHP 8.1](/help/troubleshooting/deployment/error-during-deployment-when-upgrading-to-version-supporting-php-8-1.md)
       * [Erreur de déploiement : « erreur 7 lors du téléchargement... port 443 : connexion refusée »](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
       * [Erreurs de déploiement lors de la validation de fichiers incorrects](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
