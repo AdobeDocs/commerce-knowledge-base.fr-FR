@@ -49,7 +49,7 @@ file_put_contents(/var/www/html/magento2/var/composer_home/cache/repo/https---
 packagist.org/provider-doctrine$instantiator.json): failed to open stream: Permission denied
 ```
 
-Assurez-vous de définir les autorisations de système de fichiers comme décrit dans l’article [Présentation de la propriété et des autorisations](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) dans notre documentation destinée aux développeurs.
+Assurez-vous de définir les autorisations de système de fichiers comme décrit dans l’article [Présentation de la propriété et des autorisations](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) dans notre documentation destinée aux développeurs.
 
 ## Le statut de la vérification des dépendances des composants ne change jamais {#trouble-depend-state}
 

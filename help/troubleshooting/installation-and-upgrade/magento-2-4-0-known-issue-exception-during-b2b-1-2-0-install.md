@@ -69,8 +69,8 @@ Pour obtenir des instructions sur l’application d’un correctif compositeur[&
 
 <u> du correctif </u>Git)
 
-* Voir [&#x200B; Application de correctifs &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans la documentation destinée aux développeurs pour obtenir des instructions sur les correctifs Git pour Adobe Commerce sur les infrastructures cloud.
-* Voir [&#x200B; Application de correctifs : correctifs personnalisés &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) dans la documentation destinée aux développeurs pour obtenir des instructions sur les correctifs Git pour Adobe Commerce.
+* Voir [&#x200B; Application de correctifs &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans la documentation destinée aux développeurs pour obtenir des instructions sur les correctifs Git pour Adobe Commerce sur les infrastructures cloud.
+* Voir [&#x200B; Application de correctifs : correctifs personnalisés &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) dans la documentation destinée aux développeurs pour obtenir des instructions sur les correctifs Git pour Adobe Commerce.
 
 ## Lecture connexe
 
