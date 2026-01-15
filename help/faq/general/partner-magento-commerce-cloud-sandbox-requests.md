@@ -16,7 +16,7 @@ Cet article de FAQ contient des liens vers des ressources utiles pour Adobe Comm
 
 ## Comment actualiser mon sandbox Adobe Commerce sur les infrastructures cloud ? {#how-do-i-refresh-my-cloud-sandbox}
 
-Consultez la section [ Réinitialiser l’environnement sur le cloud ](/help/how-to/general/reset-environment-on-cloud.md) dans notre base de connaissances d’assistance.
+Consultez la section [&#x200B; Réinitialiser l’environnement sur le cloud &#x200B;](/help/how-to/general/reset-environment-on-cloud.md) dans notre base de connaissances d’assistance.
 
 ## Que faire avec un déploiement bloqué ? {#what-do-i-do-with-a-stuck-deployment}
 
@@ -24,7 +24,7 @@ Voir [Dépannage du déploiement](https://experienceleague.adobe.com/en/docs/exp
 
 ## Où/Comment puis-je obtenir de l’aide si nécessaire ? {#wherehow-do-i-get-help-when-needed}
 
-Reportez-vous à la Base de connaissances de l’assistance Adobe Commerce [](https://support.magento.com/hc/en-us).
+Reportez-vous à la Base de connaissances de l’assistance Adobe Commerce [&#128279;](https://support.magento.com/hc/en-us).
 
 ## Où/comment les partenaires de solution ou les partenaires techniques soumettent-ils une demande d’assistance ? {#wherehow-do-solution-partners-or-tech-partners-submit-a-support-request}
 
