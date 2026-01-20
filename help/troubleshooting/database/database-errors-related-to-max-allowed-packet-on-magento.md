@@ -45,7 +45,7 @@ La valeur par défaut de 16 Mo pour le paramètre [!DNL MySQL] `max_allowed_pack
 
 ## Lecture connexe
 
-* [Présentation de l’installation sur site](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) dans notre documentation destinée aux développeurs.
-* [Bonnes pratiques relatives aux bases de données pour Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) dans notre base de connaissances d’assistance.
-* [Bonnes pratiques pour résoudre les problèmes de performances de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html) dans notre base de connaissances d’assistance.
-* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+* [Présentation de l’installation sur site](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/overview) dans notre documentation destinée aux développeurs.
+* [Bonnes pratiques relatives aux bases de données pour Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=fr) dans notre base de connaissances d’assistance.
+* [Bonnes pratiques pour résoudre les problèmes de performances de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=fr) dans notre base de connaissances d’assistance.
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
