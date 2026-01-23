@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 5ca7a4400e62db2419b32a31a4f6cf04f5a82e35
+source-git-commit: 2118d569e032293f0609becaf10ba4e903ae4b5d
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2400'
 ht-degree: 0%
 
 ---
@@ -223,7 +223,6 @@ ht-degree: 0%
       * [Les index de tracking ElasticSuite provoquent des problèmes avec Elasticsearch](/help/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.md)
 * Guide du centre d’aide {#help-center-guide}
    * [Guide de l’utilisateur de l’assistance Experience League pour Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
-   * [Mise à jour de la politique de cycle de vie des tickets de l’assistance Adobe Commerce](/help/help-center-guide/help-center/magento-support-ticket-lifecycle-policy-update.md)
 * Comment {#how-to}
    * [Présentation de la procédure](/help/how-to/overview.md)
    * [Comment inclure un membre de l’équipe dans les notifications d’assistance](/help/how-to/general/how-to-include-a-team-member-in-support-notifications.md)
