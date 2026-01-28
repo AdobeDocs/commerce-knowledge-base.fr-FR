@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: ce183e2135380a360ec48399c82e104f00e64f01
+source-git-commit: 4d40c0e6c8a73fac19e03d72aa1b1cc584a0228a
 workflow-type: tm+mt
-source-wordcount: '2389'
+source-wordcount: '2378'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,6 @@ ht-degree: 0%
       * [Résolution des problèmes de performances à l’aide de New Relic sur Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md)
       * [Recherche d’une attaque DDoS à partir de l’interface de ligne de commande](/help/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.md)
       * [Erreur de page vierge ou de boucle de redirection lors de l’accès à storefront ou Commerce Admin](/help/troubleshooting/miscellaneous/blank-page-or-redirect-loop-error-when-accessing-storefront-or-magento-admin.md)
-      * [Adobe Commerce 2.4.1 Message de validation d’adresse de sommet après la mise à jour de l’adresse](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md)
       * [Extension Manager n’affiche aucune extension dans Adobe Commerce 2.3.x](/help/troubleshooting/miscellaneous/extension-manager-shows-no-extensions-in-magento-commerce-2-3-x.md)
       * [Redirection de connexion lors de la tentative de connexion à Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
       * [Résoudre les problèmes liés à la clé de chiffrement](/help/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.md)
