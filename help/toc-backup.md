@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: d9985fecdafa63882f8411b32e296cc47583c93d
+source-git-commit: 27b0836380c3040b26076b9cb81b9328cb2c9ff2
 workflow-type: tm+mt
-source-wordcount: '9207'
+source-wordcount: '9208'
 ht-degree: 0%
 
 ---
@@ -338,11 +338,11 @@ ht-degree: 0%
       * [Bonnes pratiques relatives à la taille du cache Realpath](/help/best-practices/configuration/realpath-cache-size-best-practice.md)
       * [Optimisation des fichiers CSS et JS dans Adobe Commerce](/help/best-practices/configuration/optimize-css-and-js-files-in-magento-commerce.md)
    * Base de données {#database}
-      * [Mise à niveau d’Adobe Commerce 2.3.5 : des tableaux compacts et dynamiques](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=fr)
+      * [Mise à niveau d’Adobe Commerce 2.3.5 : des tableaux compacts et dynamiques](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
       * [Bonne pratique pour l’utilisation des déclencheurs](/help/best-practices/database/best-practice-for-triggers-usage.md)
-      * [Problèmes de base de données les plus courants dans Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=fr)
+      * [Problèmes de base de données les plus courants dans Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
       * [Bonnes pratiques d’Adobe Commerce sur les infrastructures cloud pour la connexion esclave MySQL](/help/best-practices/database/magento-commerce-cloud-best-practice-for-slave-connection.md)
-      * [Bonnes pratiques relatives aux bases de données pour Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=fr)
+      * [Bonnes pratiques relatives aux bases de données pour Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
    * Général {#general}
       * [_isScopePrivate dans les blocs de contenu privés ralentit les performances d’Adobe Commerce](/help/best-practices/general/isscopeprivate-in-private-content-blocks-slows-magento-performance.md)
       * [Bonnes pratiques de dépannage pour Adobe Commerce sur les infrastructures cloud](/help/best-practices/general/troubleshooting-best-practices-for-magento-commerce-cloud.md)
@@ -370,7 +370,7 @@ ht-degree: 0%
       * [Bonne pratique pour les images dans Adobe Commerce sur les infrastructures cloud](/help/best-practices/performance/best-practice-for-images-in-magento-commerce-cloud.md)
       * [Bonne pratique Adobe Commerce : réalisation d&#39;actions critiques dans l&#39;administration](/help/best-practices/performance/magento-best-practice-conducting-critical-actions-in-admin.md)
       * [Bonne pratique dans Adobe Commerce : désactiver les rapports s’ils n’utilisent pas](/help/best-practices/performance/magento-best-practice-disable-reports-if-not-using.md)
-      * [&#x200B; La fonction « Mise à jour selon le calendrier » des indexeurs optimise les performances d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=fr)
+      * [ La fonction « Mise à jour selon le calendrier » des indexeurs optimise les performances d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)
       * [Bonnes pratiques relatives aux variations de produit Adobe Commerce](/help/best-practices/performance/best-practice-magento-product-variations.md)
       * [Bonnes pratiques relatives aux performances de placement des commandes dans Adobe Commerce](/help/best-practices/performance/best-practice-magento-order-placement-performance.md)
       * [bonne pratique dans Adobe Commerce : activation du traitement asynchrone des commandes](/help/best-practices/performance/magento-best-practice-enable-asynchronous-orders-processing.md)
@@ -471,7 +471,7 @@ ht-degree: 0%
       * [Adobe Commerce 2.4.2-p1 : note de facturation avec une valeur incorrecte](/help/troubleshooting/general/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
       * [Impossible d’accéder à la dernière version préliminaire d’Adobe Commerce](/help/troubleshooting/general/cannot-access-the-latest-magento-commerce-pre-release.md)
       * [Mots de passe d’administration enregistrés en tant que texte brut dans le journal des actions](/help/troubleshooting/general/admin-passwords-saved-as-plain-text-to-actions-log.md)
-      * [Erreur lors de l’exécution de &#x200B;](/help/troubleshooting/general/error-running-the-setup-di-compile-command-manually.md)
+      * [Erreur lors de l’exécution de ](/help/troubleshooting/general/error-running-the-setup-di-compile-command-manually.md)
       * [L&#39;index est verrouillé par un autre processus](/help/troubleshooting/general/index-is-locked-by-another-process.md)
       * [Diagnostiquer une incohérence de données](/help/troubleshooting/general/diagnosing-a-data-discrepancy.md)
       * [Erreur de déploiement : SQLSTATE[HY000]](/help/troubleshooting/general/deployment-error-sql-hy000.md)
@@ -855,7 +855,7 @@ ht-degree: 0%
    * [Problèmes de vérification de l’état de préparation des autorisations de fichiers](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
    * [La mise en cache rapide ne fonctionne pas sur Adobe Commerce dans l’infrastructure cloud](/help/troubleshooting/miscellaneous/fastly-caching-is-not-working-on-magento-cloud.md)
    * [Diagnostic des écarts de chiffre d’affaires Google eCommerce](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
-   * [J’ai configuré les clés API pour Sensei, mais je ne vois qu’un seul espace de données SaaS](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
+   * [J’ai configuré les clés API pour l’IA d’Adobe, mais je ne vois qu’un seul espace de données SaaS](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
    * [Le menu principal (Catégories) ne s’affiche pas sur les sous-pages avec Fastly activé](/help/troubleshooting/miscellaneous/main-menu-categories-not-displayed-on-subpages-with-fastly-enabled.md)
    * [Stockage de fichiers faible. Le chargement de pages spécifiques est lent.](/help/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.md)
    * [Performances lentes en raison d’une réindexation complète](/help/troubleshooting/miscellaneous/slow-performance-due-to-full-reindexing.md)
@@ -902,12 +902,12 @@ ht-degree: 0%
    * [Adobe Commerce 2.4.2-p1 : note de facturation avec une valeur incorrecte](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
    * [Impossible d’accéder à la dernière version préliminaire d’Adobe Commerce](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
    * [Mots de passe d’administration enregistrés en tant que texte brut dans le journal des actions](/help/troubleshooting/miscellaneous/admin-passwords-saved-as-plain-text-to-actions-log.md)
-   * [Erreur lors de l’exécution de &#x200B;](/help/troubleshooting/miscellaneous/error-running-the-setup-di-compile-command-manually.md)
+   * [Erreur lors de l’exécution de ](/help/troubleshooting/miscellaneous/error-running-the-setup-di-compile-command-manually.md)
    * [L&#39;index est verrouillé par un autre processus](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md)
    * [Diagnostiquer une incohérence de données](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
    * [Les notifications par e-mail de l’administrateur 2FA ne sont pas reçues](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
    * [Redirigez-vous vers le formulaire de connexion d’administrateur Commerce avec l’erreur « Votre session en cours a expiré ».](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
-   * [Redis erreur de désérialisation &#x200B;](/help/troubleshooting/miscellaneous/redis-unserialize-error-setup-static-content-deploy.md)
+   * [Redis erreur de désérialisation ](/help/troubleshooting/miscellaneous/redis-unserialize-error-setup-static-content-deploy.md)
    * [Site en mode de maintenance mais disponible pour les clients](/help/troubleshooting/miscellaneous/site-in-maintenance-mode-but-available-to-customers.md)
    * [le développement de l’origine d’extraction git échoue lors de la mise à jour du logiciel Adobe Commerce](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
    * [Bloqueurs lancés sur Adobe Commerce sur les infrastructures cloud](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
@@ -976,7 +976,7 @@ ht-degree: 0%
    * [Résolution des problèmes d’Adobe Commerce Fastly](/help/troubleshooting/miscellaneous/magento-fastly-troubleshooter.md)
    * [Les requêtes AJAX à débit élevé entraînent de faibles performances](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md)
    * [PWA Studio : le navigateur affiche l’erreur « Impossible de remplacer par »](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
-   * [courir &#x200B;](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed_version.txt-issue.md)
+   * [courir ](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed_version.txt-issue.md)
    * [Le coupon à usage unique est utilisé plusieurs fois, Adobe Commerce](/help/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.md)
    * [Redirigez-vous vers le formulaire de connexion d’administrateur Commerce avec l’erreur « Votre compte est temporairement désactivé ».](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md)
    * [Google Analytics est désactivé après déploiement](/help/troubleshooting/miscellaneous/google-analytics-gets-disabled-after-deployment.md)
@@ -992,7 +992,7 @@ ht-degree: 0%
    * [Erreur lors de la purge du cache dans Commerce Admin](/help/troubleshooting/miscellaneous/error-purging-cache-in-admin.md)
    * [E-mails non envoyés lorsque les crédits SendGrid sont dépassés sur Adobe Commerce](/help/troubleshooting/miscellaneous/emails-not-being-sent-sendgrid-credits-exceeded.md)
    * [Adobe Commerce 2.4.1 : page vide lorsque le formulaire dotdigital Page Builder est enregistré](/help/troubleshooting/miscellaneous/magento-2-4-1-empty-page-when-dotdigital-page-builder-form-saved.md)
-   * [Adobe Commerce cloud : la réindexation se termine par . &#x200B;](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
+   * [Adobe Commerce cloud : la réindexation se termine par . ](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
    * [Échec du déploiement : versions d’Elasticsearch et d’Adobe Commerce incompatibles](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
    * [Échec du déploiement : impossible d’appliquer le correctif MDVA-43395](/help/troubleshooting/deployment/deployment-failed-unable-to-apply-mdva-43395-patch.md)
    * [Erreurs de déploiement liées à l’activation du module Baler à couche alpha précoce](/help/troubleshooting/deployment/deployment-errors-from-enabling-early-alpha-baler-javascript-bundling-build.md)
