@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 27b0836380c3040b26076b9cb81b9328cb2c9ff2
+source-git-commit: ce183e2135380a360ec48399c82e104f00e64f01
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2389'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,6 @@ ht-degree: 0%
       * [Statut du stock incorrect après l’installation d’Inventory management](/help/troubleshooting/miscellaneous/stock-status-incorrect-after-magento-inventory-install.md)
       * [problème connu d’Adobe Commerce 2.3.5 : commandes de produits virtuels avec expédition multiple](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
       * [Utilisation des exportations de données pour identifier les incohérences](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
-      * [Erreur d’activation de l’optimisation des images dans Adobe Commerce](/help/troubleshooting/miscellaneous/error-enabling-image-optimization-in-magento-commerce.md)
       * [Dépannage de l’outil de migration de données](/help/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.md)
       * [Problèmes de vérification de la préparation des dépendances des composants](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
       * [Impossible d’accéder à l’interface utilisateur d’Adobe Commerce sur l’infrastructure cloud](/help/troubleshooting/miscellaneous/cannot-access-magento-commerce-cloud-ui.md)
