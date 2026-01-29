@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 12e17359c84e3a71425fce1b378cb57ed7fca86d
+source-git-commit: 7f7e26f07e921577b1dd7686f5dace396888aa60
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2340'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,6 @@ ht-degree: 0%
       * [PWA Studio : le webpack se bloque avant de commencer la compilation](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
       * [Résoudre une erreur de décalage non autorisée](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
       * [Statut de produit incorrect lors de la création par programmation](/help/troubleshooting/miscellaneous/product-status-incorrect-when-created-programmatically.md)
-      * [Le problème d’autorisation du dossier var/export Adobe Commerce sur le cloud](/help/troubleshooting/miscellaneous/issue-in-the0email-folder-adobe-commerce.md)
       * [Les mises à jour de l’évaluation de contenu planifiées ne s’affichent pas avec le cache Fastly obsolète](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
       * [Résolution des problèmes liés à cron](/help/troubleshooting/miscellaneous/troubleshoot-cron.md)
       * [Le fichier .csv des produits exportés n’apparaît pas](/help/troubleshooting/miscellaneous/exported-products-csv-file-does-not-appear.md)
@@ -302,7 +301,6 @@ ht-degree: 0%
    * [Lier les connexions aux comptes Magento.com et accounts.magento.cloud](/help/faq/general/linking-magento-com-and-accounts-magento-cloud-account-logins.md)
    * [FAQ sur l’activation du masquage d’origine Fastly](/help/faq/general/fastly-origin-cloaking-enablement-faq.md)
    * [Variable d’incrémentation auto_increment de la base de données définie sur « 3 » Adobe Commerce sur notre architecture cloud pro](/help/faq/general/database-auto-increment-increment-variable-set-to-3-magento-cloud-pro.md)
-   * [Fiche d’information sur la surveillance de l’infrastructure cloud pro d’Adobe Commerce](/help/faq/general/monitoring-whitepaper.md)
    * [Accès aux services New Relic](/help/faq/general/access-new-relic-services.md)
    * [Accessibilité du contenu web pour Adobe Commerce](/help/faq/general/accessibility.md)
    * [Combien de coupons un client peut-il utiliser dans Adobe Commerce ?](/help/faq/general/how-many-coupons-can-a-customer-use-in-magento-2.md)
@@ -315,5 +313,4 @@ ht-degree: 0%
    * [Sauvegarde (instantané) sur le cloud : FAQ](/help/faq/general/backup-snapshot-on-cloud-faq.md)
    * [FAQ sur la stratégie des versions 2024 et 2023 d’Adobe Commerce et la politique de cycle de vie](/help/faq/general/adobe-commerce-release-strategy-lifecycle-policy.md)
    * [Puis-je planifier des mises à jour d’évaluation de contenu pour les prix dans un catalogue partagé ?](/help/faq/general/can-i-schedule-content-staging-updates-for-prices-in-a-shared-catalog.md)
-   * [FAQ sur l’abandon de la prise en charge du logiciel Adobe Commerce](/help/faq/general/adobe-commerce-eos-policy-faq.md)
    * [Ai-je besoin de Fastly pour un site Adobe Commerce découplé ?](/help/faq/general/do-i-need-fastly-for-a-headless-magento-site.md)
