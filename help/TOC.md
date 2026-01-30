@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 85d91886a6656b28da91fb3aa40016a800ecd53f
+source-git-commit: 3786fde60a4161a155da798a9deda0184e6d1e6a
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2317'
 ht-degree: 0%
 
 ---
@@ -140,7 +140,6 @@ ht-degree: 0%
       * [L&#39;extension PHP mcrypt n&#39;est pas installée correctement](/help/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly.md)
       * [La tâche cron est bloquée au statut « en cours »](/help/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.md)
       * [Décharger les redirections non regex vers Fastly au lieu de Nginx (itinéraires)](/help/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.md)
-      * [Résolution des problèmes liés aux rapports avancés pour Adobe Commerce](/help/troubleshooting/miscellaneous/magento-advanced-reporting-troubleshooter.md)
       * [Erreurs et solutions PHP fatales courantes](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md)
       * [Adobe Commerce 2.4.2 B2B : modèle d’e-mail ne mettant pas à jour l’e-mail](/help/troubleshooting/miscellaneous/magento-2-4-2-b2b-email-template-not-updating-email.md)
       * [PWA Studio : le navigateur n’approuve pas le certificat SSL généré](/help/troubleshooting/miscellaneous/pwa-studio-browser-not-trust-generated-ssl-certificate.md)
