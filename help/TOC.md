@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 3786fde60a4161a155da798a9deda0184e6d1e6a
+source-git-commit: 87955322d02a499cf97d297761c9c1f7ebbca3c3
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2308'
 ht-degree: 0%
 
 ---
@@ -225,7 +225,6 @@ ht-degree: 0%
    * [Restaurer un instantané de base de données à partir de l’évaluation ou de la production](/help/how-to/general/restore-a-db-snapshot-from-staging-or-production.md)
    * [Adobe Commerce Intelligence Essentials : mettre à jour le mode de paiement ou annuler l’abonnement](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
    * [Vidéo de formation à l’intelligence d’Adobe commerce : SQL Report Builder](/help/how-to/general/mbi-training-video-sql-report-builder.md)
-   * [Définir la durée de vie du cache pour les images et tout autre contenu statique](/help/how-to/general/set-cache-ttl-for-images-and-other-static-content.md)
    * [Offrir une remise pour le premier achat uniquement (pas de coupons)](/help/how-to/general/provide-discount-for-first-purchase-only-no-coupons.md)
    * [Restauration de l’environnement sans instantané du cloud](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
    * [Emplacements des journaux (répertoires) pour le plan de démarrage](/help/how-to/general/log-locations-directories-for-starter-plan.md)
