@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 87955322d02a499cf97d297761c9c1f7ebbca3c3
+source-git-commit: 981d62e0bd2c61ae516777579757eaff505b8719
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2298'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,6 @@ ht-degree: 0%
       * [Politiques de service Adobe Commerce Intelligence](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
       * [Nouveaux environnements placés en production lorsqu’ils sont transférés depuis Git](/help/troubleshooting/miscellaneous/when-pushed-from-git-environments-placed-under-production-on-magento-cloud.md)
       * [Erreur après la connexion à l’administrateur Commerce](/help/troubleshooting/miscellaneous/error-after-logging-in-to-the-magento-admin.md)
-      * [Magento Order Management System (OMS) pour Adobe Commerce expire](/help/troubleshooting/miscellaneous/mom-times-out-when-trying-to-connect-to-a-local-environment.md)
       * [Adobe Commerce 2.4.1 : page vide lorsque le formulaire dotdigital Page Builder est enregistré](/help/troubleshooting/miscellaneous/magento-2-4-1-empty-page-when-dotdigital-page-builder-form-saved.md)
       * [Adobe Commerce cloud : la réindexation s’arrête avec le message « Tué »](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
       * [Colonne de statut Adobe Commerce manquante dans le fichier CSV des produits exportés](/help/troubleshooting/miscellaneous/adobe-commerce-status-column-missing-exported-products-csv-file.md)
