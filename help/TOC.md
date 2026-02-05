@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: db498cd9d256e542c7b2db7ee383c296f782800b
+source-git-commit: 538514ebb9a262af74aa1304ea7d70aefcf08dbe
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2269'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,6 @@ ht-degree: 0%
       * [Diagnostiquer une incohérence de données](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
       * [Les notifications par e-mail de l’administrateur 2FA ne sont pas reçues](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
       * [Redirigez-vous vers le formulaire de connexion d’administrateur Commerce avec l’erreur « Votre session en cours a expiré ».](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
-      * [Redis unserialize error setup:static-content:deploy](/help/troubleshooting/miscellaneous/redis-unserialize-error-setup-static-content-deploy.md)
       * [Site en mode de maintenance mais disponible pour les clients](/help/troubleshooting/miscellaneous/site-in-maintenance-mode-but-available-to-customers.md)
       * [le développement de l’origine d’extraction git échoue lors de la mise à jour du logiciel Adobe Commerce](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
       * [Bloqueurs lancés sur Adobe Commerce sur les infrastructures cloud](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
@@ -156,7 +155,6 @@ ht-degree: 0%
       * [Résoudre une erreur de décalage non autorisée](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
       * [Statut de produit incorrect lors de la création par programmation](/help/troubleshooting/miscellaneous/product-status-incorrect-when-created-programmatically.md)
       * [Les mises à jour de l’évaluation de contenu planifiées ne s’affichent pas avec le cache Fastly obsolète](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
-      * [Résolution des problèmes liés à cron](/help/troubleshooting/miscellaneous/troubleshoot-cron.md)
       * [Le fichier .csv des produits exportés n’apparaît pas](/help/troubleshooting/miscellaneous/exported-products-csv-file-does-not-appear.md)
       * [Vérification du journal de déploiement si l’interface utilisateur de Cloud comporte une erreur « journal arrêté »](/help/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.md)
       * [Le téléchargement échoue en raison de modifications apportées au compositeur](/help/troubleshooting/miscellaneous/download-fails-because-of-changes-in-composer.md)
