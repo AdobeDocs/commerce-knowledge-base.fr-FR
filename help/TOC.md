@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: a1ce42bcd018d2c9b9b40060c225a22112d878fc
+source-git-commit: 943a85cb94073190654ae8abd7315f3014c40170
 workflow-type: tm+mt
-source-wordcount: '2257'
+source-wordcount: '2249'
 ht-degree: 0%
 
 ---
@@ -294,7 +294,6 @@ ht-degree: 0%
    * [Accès aux services New Relic](/help/faq/general/access-new-relic-services.md)
    * [Accessibilité du contenu web pour Adobe Commerce](/help/faq/general/accessibility.md)
    * [Combien de coupons un client peut-il utiliser dans Adobe Commerce ?](/help/faq/general/how-many-coupons-can-a-customer-use-in-magento-2.md)
-   * [Adobe Commerce partenaire sur les demandes de sandbox d’infrastructure cloud](/help/faq/general/partner-magento-commerce-cloud-sandbox-requests.md)
    * [Ressources relatives au RGPD d’Adobe Commerce](/help/faq/general/magento-gdpr-resources.md)
    * [Incidence de la modification du prix de base sur le prix catalogue partagé](/help/faq/general/base-price-change-affect-on-shared-catalog-price.md)
    * [FAQ sur l’authentification à deux facteurs dans le panneau d’administration d’Adobe Commerce](/help/faq/general/two-factor-authentication-in-admin-panel-on-magento-faq.md)
