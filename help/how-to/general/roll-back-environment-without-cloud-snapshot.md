@@ -1,29 +1,29 @@
 ---
 title: Restauration de l’environnement sans instantané du cloud
-description: Cet article présente deux solutions pour restaurer un environnement sans avoir un instantané de votre environnement sur Adobe Commerce sur l’infrastructure cloud.
+description: Cet article présente deux solutions pour restaurer un environnement sans avoir d’instantané de votre environnement sur Adobe Commerce sur l’infrastructure cloud.
 exl-id: 834d13a7-3b1a-460c-9ed0-9d560105f436
 feature: Build, Cloud, Console
-source-git-commit: 5347e8714ef1374440f5d246100a0221e4b189fc
+source-git-commit: d7c714cf5b2f9db139440d814af26c12001bb4d9
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '784'
 ht-degree: 0%
 
 ---
 
 # Restauration de l’environnement sans instantané du cloud
 
-Cet article présente deux solutions pour restaurer un environnement sans avoir un instantané de votre environnement sur Adobe Commerce sur l’infrastructure cloud.
+Cet article présente deux solutions pour restaurer un environnement sans avoir d’instantané de votre environnement sur Adobe Commerce sur l’infrastructure cloud.
 
 ## Produits et versions concernés
 
-* Adobe Commerce sur l’infrastructure cloud, [toutes les versions prises en charge](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce sur les infrastructures cloud, [toutes les versions prises en charge](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
-Choisissez la méthode la plus adaptée à votre cas :
+Choisissez la solution la plus adaptée à votre cas :
 
-* Si vous disposez d’une version stable, mais pas d’instantané valide - [Scénario 1 : aucun instantané, une version stable (connexion SSH disponible)](#scen2).
-* Si la version est endommagée et que vous n’avez pas d’instantané valide - [Scénario 2 : aucun instantané ; création interrompue (aucune connexion SSH)](#scen3).
+* Si vous avez une version stable, mais pas d’instantané valide - [Scénario 1 : pas d’instantané, build stable (connexion SSH disponible)](#scen2).
+* Si la version est rompue et que vous ne disposez pas d’un instantané valide - [Scénario 2 : aucun instantané ; version rompue (aucune connexion SSH)](#scen3).
 
-## Scénario 1 : aucun instantané, version stable (connexion SSH disponible) {#scen2}
+## Scénario 1 : aucun instantané, build stable (connexion SSH disponible) {#scen2}
 
 Cette section explique comment restaurer un environnement lorsque vous n’avez pas créé d’instantané, mais que vous pouvez accéder à l’environnement via SSH.
 
@@ -31,24 +31,24 @@ Les étapes sont les suivantes :
 
 1. Désactivez la gestion de la configuration.
 1. Désinstallez le logiciel Adobe Commerce.
-1. Réinitialisez la branche git.
+1. Réinitialisez la branche Git.
 
 Après avoir effectué les étapes suivantes :
 
-* votre installation Adobe Commerce retourne à son état Vanilla (base de données restaurée ; configuration de déploiement supprimée ; répertoires supprimés sous `var` effacés)
-* votre branche git est réinitialisée à l’état souhaité dans le passé.
+* votre installation Adobe Commerce revient à son état Vanilla (base de données restaurée ; configuration de déploiement supprimée ; répertoires sous `var` effacés)
+* votre branche git est réinitialisée à l’état souhaité dans le passé
 
 Lisez les étapes détaillées ci-dessous :
 
-### Étape 0 (condition préalable requise) : supprimez config.php pour désactiver Configuration Management {#disable_config_management}
+### Étape 0 (Prérequis) : Supprimer config.php pour désactiver Configuration Management {#disable_config_management}
 
-Nous devons désactiver Configuration Management afin qu’elle n’applique pas automatiquement les paramètres de configuration précédents lors du déploiement.
+Nous devons désactiver la gestion de la configuration afin qu’elle n’applique pas automatiquement les paramètres de configuration précédents lors du déploiement.
 
-Pour désactiver Configuration Management, assurez-vous que votre répertoire `/app/etc/` ne contient pas les fichiers `config.php` (pour Adobe Commerce 2.4.x) ou `config.local.php` (pour Adobe Commerce 2.1.x).
+Pour désactiver la gestion de la configuration, assurez-vous que votre répertoire `/app/etc/` ne contient pas les fichiers `config.php` (pour Adobe Commerce 2.4.x) ou `config.local.php` (pour Adobe Commerce 2.1.x).
 
 Pour supprimer le fichier de configuration, procédez comme suit :
 
-1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
+1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Supprimez le fichier de configuration :
    * Pour Adobe Commerce 2.4 :
 
@@ -62,22 +62,19 @@ Pour supprimer le fichier de configuration, procédez comme suit :
      rm app/etc/config.local.php
    ```
 
-Pour en savoir plus sur Configuration Management, consultez les sections suivantes :
+Pour en savoir plus sur la gestion de la configuration, consultez [Gestion de la configuration pour les paramètres du magasin](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) dans notre documentation destinée aux développeurs.
 
-* [Réduisez le temps d’arrêt du déploiement sur Adobe Commerce sur l’infrastructure cloud](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) dans notre base de connaissances d’assistance.
-* [Gestion des configurations des paramètres de magasin](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=fr) dans notre documentation destinée aux développeurs.
-
-### Étape 1 : désinstallation du logiciel Adobe Commerce avec la commande setup:uninstall {#setup-uninstall}
+### Étape 1 : désinstaller le logiciel Adobe Commerce avec la commande setup:uninstall {#setup-uninstall}
 
 
-La désinstallation du logiciel Adobe Commerce supprime et restaure la base de données, supprime la configuration de déploiement et efface les répertoires sous `var`.
+La désinstallation du logiciel Adobe Commerce interrompt et restaure la base de données, supprime la configuration de déploiement et efface les répertoires situés sous `var`.
 
-Consultez la section [Désinstallation du logiciel Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html?lang=fr) dans notre documentation destinée aux développeurs.
+Consultez [Désinstaller le logiciel Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html) dans notre documentation destinée aux développeurs.
 
 Pour désinstaller le logiciel Adobe Commerce, procédez comme suit :
 
-1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
-1. Exécutez `setup:uninstall` :
+1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. Exécuter `setup:uninstall` :
 
    ```php
      php bin/magento setup:uninstall
@@ -85,55 +82,55 @@ Pour désinstaller le logiciel Adobe Commerce, procédez comme suit :
 
 1. Confirmez la désinstallation.
 
-Le message suivant s’affiche pour confirmer la désinstallation :
+Le message suivant s’affiche pour confirmer la réussite de la désinstallation :
 
 ```php
 [SUCCESS]: Magento uninstallation complete.
 ```
 
-Cela signifie que nous avons rétabli notre installation Adobe Commerce (y compris DB) sur son état authentique (Vanilla).
+Cela signifie que nous avons rétabli notre installation d’Adobe Commerce (y compris DB) à son état authentique (Vanilla).
 
-### Étape 2 : réinitialisation de la branche git {#reset-git-branch}
+### Étape 2 : réinitialiser la branche Git {#reset-git-branch}
 
-Avec la réinitialisation de git, nous avons rétabli le code à l’état souhaité dans le passé.
+Avec la réinitialisation Git, nous rétablissons l’état souhaité du code dans le passé.
 
-1. Cloner l’environnement vers votre environnement de développement local. Vous pouvez copier la commande dans la console cloud :    ![copy_git_clone.png](assets/copy_git_clone.png)
-1. Accédez à l’historique des validations. Utilisez `--reverse` pour afficher l’historique dans l’ordre inverse afin de plus de commodité :
+1. Clonez l’environnement vers votre environnement de développement local. Vous pouvez copier la commande dans la console Cloud :    ![copy_git_clone.png](assets/copy_git_clone.png)
+1. Accéder à l’historique des validations. Utilisez `--reverse` pour afficher l’historique dans l’ordre inverse pour plus de commodité :
 
    ```git
      git log --reverse
    ```
 
-1. Sélectionnez le hachage de validation sur lequel vous avez été bon. Pour réinitialiser le code à son état authentique (Vanilla), recherchez la toute première validation qui a créé votre branche (environnement).    ![Sélectionner un hachage de validation dans la console Git](assets/select_commit_hash.png)
-1. Appliquez la réinitialisation git stricte :
+1. Sélectionnez le hachage de validation pour lequel vous êtes satisfait. Pour réinitialiser le code à son état d’authenticité (Vanilla), recherchez la toute première validation qui a créé votre branche (environnement).    ![Sélection d’un hachage de validation dans la console Git](assets/select_commit_hash.png)
+1. Appliquer la réinitialisation Hard Git :
 
    ```git
      git reset --h <commit_hash>
    ```
 
-1. Push changes to server :
+1. Envoyez les modifications au serveur :
 
    ```git
      git push --force <origin> <branch>
    ```
 
-Une fois ces étapes effectuées, notre branche git est réinitialisée et l’ensemble du changement git est clair. La dernière notification push git déclenche le redéploiement pour appliquer toutes les modifications et réinstaller Adobe Commerce.
+Après avoir effectué ces étapes, notre branche Git est réinitialisée et l’ensemble du journal des modifications Git est effacé. La dernière notification push Git déclenche le redéploiement pour appliquer toutes les modifications et réinstaller Adobe Commerce.
 
 ## Scénario 2 : aucun instantané ; version rompue (aucune connexion SSH) {#scen3}
 
-Cette section explique comment restaurer un environnement lorsqu&#39;il se trouve dans un état critique : la procédure de déploiement ne peut pas réussir à créer une application opérationnelle, rendant ainsi la connexion SSH indisponible.
+Cette section explique comment restaurer un environnement lorsqu’il est dans un état critique : la procédure de déploiement ne peut pas réussir à créer une application en cours d’exécution, ce qui rend la connexion SSH indisponible.
 
-Dans ce scénario, vous devez d’abord restaurer l’état de fonctionnement de votre application Adobe Commerce à l’aide de la réinitialisation de git, puis désinstaller le logiciel Adobe Commerce (pour déposer et restaurer la base de données, supprimer la configuration de déploiement, etc.). Le scénario comprend les mêmes étapes que dans le scénario 1, mais l’ordre des étapes est différent et il existe une autre étape : forcer le redéploiement. Les étapes sont les suivantes :
+Dans ce scénario, vous devez d’abord restaurer l’état de fonctionnement de votre application Adobe Commerce à l’aide de la réinitialisation Git, puis désinstaller le logiciel Adobe Commerce (pour supprimer et restaurer la base de données, supprimer la configuration de déploiement, etc.). Le scénario implique les mêmes étapes que dans le scénario 1, mais l’ordre des étapes est différent et il existe une étape supplémentaire : forcer le redéploiement. Les étapes sont les suivantes :
 
-[1. Réinitialisez la branche git.](/help/how-to/general/reset-environment-on-cloud.md#reset-git-branch)
+[&#x200B;1. Réinitialisez la branche Git.](/help/how-to/general/reset-environment-on-cloud.md#reset-git-branch)
 
-[2. Désactiver la gestion de la configuration.](/help/how-to/general/reset-environment-on-cloud.md#disable_config_management)
+[2. Désactivez la gestion de la configuration.](/help/how-to/general/reset-environment-on-cloud.md#disable_config_management)
 
-[3. Désinstallez le logiciel Adobe Commerce.](/help/how-to/general/reset-environment-on-cloud.md#setup-uninstall)
+[&#x200B;3. Désinstallez le logiciel Adobe Commerce.](/help/how-to/general/reset-environment-on-cloud.md#setup-uninstall)
 
-4&point; redéploiement de la force.
+4&amp;période; Forcer le redéploiement.
 
-Une fois ces étapes effectuées, vous obtiendrez les mêmes résultats que dans le scénario 1.
+Après avoir effectué ces étapes, vous obtiendrez les mêmes résultats que dans le scénario 1.
 
 ### Étape 4 : forcer le redéploiement
 
@@ -143,11 +140,11 @@ Effectuez une validation (il peut s’agir d’une validation vide, bien que nou
 git commit --allow-empty -m "<message>" && git push <origin> <branch>
 ```
 
-## En cas d’échec de l’installation:désinstallation, réinitialisez manuellement la base de données
+## Si la configuration échoue:uninstall réinitialisez manuellement la base de données
 
-Si l’exécution de la commande `setup:uninstall` échoue avec une erreur et ne peut pas être terminée, nous pouvons effacer manuellement la base de données en procédant comme suit :
+Si l&#39;exécution de la commande `setup:uninstall` échoue avec une erreur et ne peut pas être exécutée, nous pouvons effacer manuellement la base de données en procédant comme suit :
 
-1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
+1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Connectez-vous à la base de données MySQL :
 
    ```sql
@@ -166,17 +163,17 @@ Si l’exécution de la commande `setup:uninstall` échoue avec une erreur et ne
    create database main;
    ```
 
-1. Supprimer les fichiers de configuration suivants : `config.php`, `config.php` `.bak`, `env.php` et `env.php.bak`.
+1. Supprimez les fichiers de configuration suivants : `config.php`, `config.php` `.bak`, `env.php` et `env.php.bak`.
 
-Après avoir réinitialisé la base de données, [&#x200B; effectuez une notification push git vers l’environnement pour déclencher le redéploiement &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=fr#git-commands) et installez Adobe Commerce sur une nouvelle base de données. Ou [exécutez la commande de redéploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=fr#environment-commands).
+Après la réinitialisation de la base de données, [effectuez une notification push Git vers l’environnement pour déclencher le redéploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#git-commands) et installez Adobe Commerce sur une base de données nouvellement créée. Ou [exécutez la commande redeploy](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands).
 
 ## Lecture connexe
 
 Dans notre documentation destinée aux développeurs :
 
-* [Restaurer un instantané sur Cloud](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup)
-* [Créer un instantané](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-a-manual-backup)
-* [Gestion des instantanés et des sauvegardes](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Gérer les branches avec la console Cloud - Afficher les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=fr#view-logs)
-* [Échec du déploiement des composants](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment.html?lang=fr)
-* [Gérer votre projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=fr#configure-the-project)
+* [Restaurer un instantané sur le cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup)
+* [Créer un instantané](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-a-manual-backup)
+* [Snapshots et gestion des sauvegardes](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Gérer les branches avec la console cloud - Afficher les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=en#view-logs)
+* [Échec du déploiement des composants](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment.html)
+* [Gérer le projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)
