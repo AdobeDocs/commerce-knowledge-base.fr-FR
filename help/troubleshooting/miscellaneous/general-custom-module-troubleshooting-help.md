@@ -21,7 +21,7 @@ Si vous constatez qu’il existe un problème avec les fonctionnalités de votre
 
 ## Solution
 
-Vérifiez les journaux pour voir s’il y a des entrées avec le nom du module personnalisé dans l’erreur.  Selon les erreurs rencontrées, la solution peut se présenter ou vous devrez peut-être inclure vos informations utiles dans le journal Adobe Commerce si vous souhaitez ouvrir un ticket d’assistance [](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Consultez les paragraphes suivants pour plus d’informations sur l’emplacement des journaux et les solutions possibles.
+Vérifiez les journaux pour voir s’il y a des entrées avec le nom du module personnalisé dans l’erreur.  Selon les erreurs rencontrées, la solution peut se présenter ou vous devrez peut-être inclure vos informations utiles dans le journal Adobe Commerce si vous souhaitez ouvrir un ticket d’assistance [&#128279;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Consultez les paragraphes suivants pour plus d’informations sur l’emplacement des journaux et les solutions possibles.
 
 ### Adobe Commerce (toutes les méthodes de déploiement), Magento Open Source, toutes les versions 2.X
 
