@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 41585ba5bc50e9a65d5d28963f43054f5f98b918
+source-git-commit: c6d036ff57ede5dbdb031f00f099e00c811d7b0a
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2207'
 ht-degree: 0%
 
 ---
@@ -216,7 +216,6 @@ ht-degree: 0%
    * [Liste de contrôle pour la configuration d’un nouveau  [!DNL domain]](/help/how-to/general/checklist-for-setting-up-a-new-domain.md)
    * [Restaurer un instantané de base de données à partir de l’évaluation ou de la production](/help/how-to/general/restore-a-db-snapshot-from-staging-or-production.md)
    * [Adobe Commerce Intelligence Essentials : mettre à jour le mode de paiement ou annuler l’abonnement](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
-   * [Offrir une remise pour le premier achat uniquement (pas de coupons)](/help/how-to/general/provide-discount-for-first-purchase-only-no-coupons.md)
    * [Restauration de l’environnement sans instantané du cloud](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
    * [Comment ajouter un nouveau pays à Adobe Commerce](/help/how-to/general/how-to-add-a-new-country-to-magento-2.md)
    * [Personnaliser la configuration de la conception dans l’administration Commerce](/help/how-to/general/customize-design-configuration-in-magento-admin.md)
