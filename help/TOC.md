@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 950cbe6a4886f1f4f9f38250a46eb7f82bda73d4
+source-git-commit: 0e5465d2d3ef177f8d42f791f4652fc9139695fb
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2192'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ ht-degree: 0%
       * [Guide de dépannage de l’outil Adobe Commerce Security Scan](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
       * [Problèmes de vérification de l’état de préparation des autorisations de fichiers](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
       * [Diagnostic des écarts de chiffre d’affaires Google eCommerce](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
-      * [J’ai configuré les clés API pour l’IA d’Adobe, mais je ne vois qu’un seul espace de données SaaS](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
+      * [J’ai configuré les clés API pour Adobe AI, mais je ne vois qu’un seul espace de données SaaS](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
       * [Le menu principal (Catégories) ne s’affiche pas sur les sous-pages avec Fastly activé](/help/troubleshooting/miscellaneous/main-menu-categories-not-displayed-on-subpages-with-fastly-enabled.md)
       * [Stockage de fichiers faible. Le chargement de pages spécifiques est lent.](/help/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.md)
       * [Performances lentes en raison d’une réindexation complète](/help/troubleshooting/miscellaneous/slow-performance-due-to-full-reindexing.md)
@@ -230,7 +230,6 @@ ht-degree: 0%
    * [Identifier et mesurer les pannes d’Adobe Commerce sur les infrastructures cloud](/help/how-to/general/how-to-identify-outages.md)
    * [Modification du propriétaire de compte pour New Relic sur Cloud](/help/how-to/general/change-account-owner-for-new-relic-on-cloud.md)
    * [Modifier l’URL d’administrateur sur Adobe Commerce sur l’infrastructure cloud](/help/how-to/general/change-magento-admin-url-on-cloud.md)
-   * [Activation d’Elasticsearch sur le cloud](/help/how-to/general/enable-elasticsearch-on-cloud.md)
    * [Configurez NPM pour pouvoir utiliser PWA Studio](/help/how-to/general/configure-npm-to-be-able-to-use-pwa-studio.md)
    * [Réorganiser les branches cloud sur Adobe Commerce](/help/how-to/general/rearrange-cloud-branches-adobe-commerce.md)
    * [Comment trouver la documentation d’Adobe Commerce](/help/how-to/general/how-to-find-magento-product-documentation.md)
