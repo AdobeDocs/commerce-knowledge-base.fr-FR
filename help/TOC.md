@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: c6d036ff57ede5dbdb031f00f099e00c811d7b0a
+source-git-commit: 950cbe6a4886f1f4f9f38250a46eb7f82bda73d4
 workflow-type: tm+mt
-source-wordcount: '2207'
+source-wordcount: '2196'
 ht-degree: 0%
 
 ---
@@ -223,7 +223,6 @@ ht-degree: 0%
    * [Adobe Commerce sur les infrastructures cloud : calcul de l&#39;allocation CPU](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
    * [Mettre à jour les prix du catalogue partagé à l’aide de l’API REST](/help/how-to/general/update-shared-catalog-prices-using-rest-api.md)
    * [Recherche de tables MySQL volumineuses](/help/how-to/general/find-large-mysql-tables.md)
-   * [Synchroniser les données et les fichiers Production vers Staging ou Staging vers Intégration](/help/how-to/general/sync-data-and-files-from-production-to-staging-or-staging-to-integration.md)
    * [Vérification de l’espace disque à l’aide de l’interface de ligne de commande dans Adobe Commerce sur un environnement d’infrastructure cloud](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md)
    * [Adobe Commerce Réinitialiser manuellement les tâches cron bloquées sur l’infrastructure cloud](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [Test rapide en exploitation si un site actif utilise le même domaine](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
