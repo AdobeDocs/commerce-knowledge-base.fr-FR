@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 6ad8716b066a89fd60d5c9300607889f891e5e3f
+source-git-commit: 9d80bfb801d55c25627e92e9777699c14056e2dd
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2140'
 ht-degree: 0%
 
 ---
@@ -211,7 +211,6 @@ ht-degree: 0%
    * [Guide de l’utilisateur de l’assistance Experience League pour Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
 * Comment {#how-to}
    * [Présentation de la procédure](/help/how-to/overview.md)
-   * [Comment inclure un membre de l’équipe dans les notifications d’assistance](/help/how-to/general/how-to-include-a-team-member-in-support-notifications.md)
    * [Obtention et application de correctifs de sécurité](/help/how-to/general/how-to-obtain-and-apply-security-patches.md)
    * [Liste de contrôle pour la configuration d’un nouveau  [!DNL domain]](/help/how-to/general/checklist-for-setting-up-a-new-domain.md)
    * [Restaurer un instantané de base de données à partir de l’évaluation ou de la production](/help/how-to/general/restore-a-db-snapshot-from-staging-or-production.md)
@@ -219,7 +218,6 @@ ht-degree: 0%
    * [Restauration de l’environnement sans instantané du cloud](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
    * [Adobe Commerce sur les infrastructures cloud : calcul de l&#39;allocation CPU](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
    * [Recherche de tables MySQL volumineuses](/help/how-to/general/find-large-mysql-tables.md)
-   * [Vérification de l’espace disque à l’aide de l’interface de ligne de commande dans Adobe Commerce sur un environnement d’infrastructure cloud](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md)
    * [Adobe Commerce Réinitialiser manuellement les tâches cron bloquées sur l’infrastructure cloud](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [Test rapide en exploitation si un site actif utilise le même domaine](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
    * [Options de déploiement de contenu statique pour réduire les temps d’arrêt du déploiement sur le cloud](/help/how-to/general/static-content-deployment-options-to-reduce-deployment-downtime-on-cloud.md)
