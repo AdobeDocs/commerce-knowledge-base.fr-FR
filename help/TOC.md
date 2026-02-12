@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 888089e960017477364b3b3dae7e9cc5c69892ba
+source-git-commit: 87c6be20e766e88978f7a02960457cf715cf6911
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2177'
 ht-degree: 0%
 
 ---
@@ -220,7 +220,6 @@ ht-degree: 0%
    * [Comment ajouter un nouveau pays à Adobe Commerce](/help/how-to/general/how-to-add-a-new-country-to-magento-2.md)
    * [Personnaliser la configuration de la conception dans l’administration Commerce](/help/how-to/general/customize-design-configuration-in-magento-admin.md)
    * [Adobe Commerce sur les infrastructures cloud : calcul de l&#39;allocation CPU](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
-   * [Mettre à jour les prix du catalogue partagé à l’aide de l’API REST](/help/how-to/general/update-shared-catalog-prices-using-rest-api.md)
    * [Recherche de tables MySQL volumineuses](/help/how-to/general/find-large-mysql-tables.md)
    * [Vérification de l’espace disque à l’aide de l’interface de ligne de commande dans Adobe Commerce sur un environnement d’infrastructure cloud](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md)
    * [Adobe Commerce Réinitialiser manuellement les tâches cron bloquées sur l’infrastructure cloud](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
