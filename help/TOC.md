@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 87c6be20e766e88978f7a02960457cf715cf6911
+source-git-commit: 4c8bb0d63cd7826b24c2f6c85fbb9bb5982b2a35
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -218,7 +218,6 @@ ht-degree: 0%
    * [Adobe Commerce Intelligence Essentials : mettre à jour le mode de paiement ou annuler l’abonnement](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
    * [Restauration de l’environnement sans instantané du cloud](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
    * [Comment ajouter un nouveau pays à Adobe Commerce](/help/how-to/general/how-to-add-a-new-country-to-magento-2.md)
-   * [Personnaliser la configuration de la conception dans l’administration Commerce](/help/how-to/general/customize-design-configuration-in-magento-admin.md)
    * [Adobe Commerce sur les infrastructures cloud : calcul de l&#39;allocation CPU](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
    * [Recherche de tables MySQL volumineuses](/help/how-to/general/find-large-mysql-tables.md)
    * [Vérification de l’espace disque à l’aide de l’interface de ligne de commande dans Adobe Commerce sur un environnement d’infrastructure cloud](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md)
