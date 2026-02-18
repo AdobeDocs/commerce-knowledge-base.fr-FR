@@ -36,7 +36,7 @@ Pour effectuer la mise à niveau de MariaDB 10.0 vers 10.2, 10.2 vers 10.3 ou ve
    1. Créez une sauvegarde [DB à l&#39;aide des commandes de sauvegarde ECE-Tools DB](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots).
    1. Informez l’assistance que vous avez terminé la sauvegarde. Faites-le via votre ticket d’assistance. Pour connaître les étapes d’affichage et de suivi de vos tickets, reportez-vous au [Guide d’utilisation du centre d’aide Adobe Commerce : suivi de vos tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-tickets) dans notre base de connaissances du support.
    1. L’équipe d’assistance Adobe Commerce lancera le processus de mise à niveau de MariaDB. Si toutes les étapes ci-dessus ont été effectuées et que la base de données est de taille moyenne, cela peut être fait en une heure environ. Les bases de données plus volumineuses prendront plus de temps. Vous serez informé via votre ticket une fois la mise à niveau terminée.
-1. Désactivez le mode de maintenance. Consultez la section [ Activer ou désactiver le mode de maintenance ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) dans la documentation destinée aux développeurs.
+1. Désactivez le mode de maintenance. Consultez la section [&#x200B; Activer ou désactiver le mode de maintenance &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) dans la documentation destinée aux développeurs.
 
 ## Lectures connexes
 

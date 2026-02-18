@@ -35,7 +35,7 @@ Si vous ne savez pas comment répondre à l&#39;une de ces questions, ne vous in
 
 ## Lecture connexe
 
-* [ Guide de l’utilisateur MBI ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/guide-overview)
+* [&#x200B; Guide de l’utilisateur MBI &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/guide-overview)
 * [MBI : incohérences des données](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md)
 * [MBI : analyste de données](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/data-analyst)
 * [MBI : Aide pour Magento BI](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/start/sign-in)

@@ -46,4 +46,4 @@ Selon l’alerte, les correctifs recommandés pour cette vulnérabilité incluen
 * PHP 7.2 : [https://www.php.net/ChangeLog-7.php\#7.2.22](https://www.php.net/ChangeLog-7.php#7.2.22)
 * PHP 7.3 : [https://www.php.net/ChangeLog-7.php\#7.3.9](https://www.php.net/ChangeLog-7.php#7.3.9)
 
-Si vous souhaitez plus d&#39;informations sur PHP et les versions récentes, vous pouvez visiter le site de [PHP](https://www.php.net/). Si vous avez des questions ou souhaitez obtenir plus d’informations sur les bonnes pratiques en matière de sécurité, consultez notre [ Guide des bonnes pratiques de sécurité ](https://www.adobe.com/content/dam/cc/en/security/pdfs/Adobe-Magento-Commerce-Best-Practices-Guide.pdf).
+Si vous souhaitez plus d&#39;informations sur PHP et les versions récentes, vous pouvez visiter le site de [PHP](https://www.php.net/). Si vous avez des questions ou souhaitez obtenir plus d’informations sur les bonnes pratiques en matière de sécurité, consultez notre [&#x200B; Guide des bonnes pratiques de sécurité &#x200B;](https://www.adobe.com/content/dam/cc/en/security/pdfs/Adobe-Magento-Commerce-Best-Practices-Guide.pdf).

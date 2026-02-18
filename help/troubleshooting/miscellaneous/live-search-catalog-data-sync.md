@@ -157,6 +157,6 @@ bin/magento saas:resync --feed categoryPermissions --cleanup-feed
 
 ## Lecture connexe
 
-* [ Intégration de la recherche en direct ](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) dans notre documentation utilisateur
+* [&#x200B; Intégration de la recherche en direct &#x200B;](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) dans notre documentation utilisateur
 * [Consultez les journaux et résolvez les problèmes d’exportation et de synchronisation des données SaaS Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) dans le Guide d’exportation des données SaaS Adobe Commerce
 * [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
