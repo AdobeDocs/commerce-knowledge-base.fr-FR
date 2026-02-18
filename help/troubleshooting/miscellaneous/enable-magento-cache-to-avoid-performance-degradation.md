@@ -4,9 +4,9 @@ description: Cet article explique comment résoudre un problème de site lent ca
 exl-id: e4e5a753-efa3-4552-aaf6-28e44efcfa5b
 feature: Cache, Observability
 role: Developer
-source-git-commit: d9985fecdafa63882f8411b32e296cc47583c93d
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Certaines désactivations de certains types de cache d’Adobe Commerce peuvent 
 
 ## Solution
 
-1. Tout d’abord, vérifiez le statut de votre cache Adobe Commerce pour voir si c’est bien le problème. Pour cela, [SSH dans votre environnement](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) et exécutez la commande suivante :
+1. Tout d’abord, vérifiez le statut de votre cache Adobe Commerce pour voir si c’est bien le problème. Pour cela, [SSH dans votre environnement](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) et exécutez la commande suivante :
 
    ```bash
    php bin/magento cache:status
@@ -41,17 +41,17 @@ Certaines désactivations de certains types de cache d’Adobe Commerce peuvent 
 1. Examinez les types de cache désactivés. Tous les types de cache d’Adobe Commerce doivent être activés, sauf si vous avez reçu d’autres conseils d’Adobe. Les extensions tierces ne doivent pas nécessiter la désactivation du cache d’Adobe Commerce.
 1. Si l’enquête confirme que certains types de cache sont désactivés par erreur, activez-les en exécutant la commande suivante pour chaque type de cache : `php bin/magento cache:enable <your_disabled_cache_type>`
 
-En cas d’inquiétude et/ou de question sur la possibilité ou la nécessité de désactiver un certain type de cache Adobe Commerce, [contactez l’assistance Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour obtenir des recommandations.
+En cas d’inquiétude et/ou de question sur la possibilité ou la nécessité de désactiver un certain type de cache Adobe Commerce, [contactez l’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) pour obtenir des recommandations.
 
 ## Lecture connexe
 
 Documentation sur le cache d’Adobe Commerce dans notre documentation destinée aux développeurs :
 
 * [Présentation du cache Adobe Commerce](https://developer.adobe.com/commerce/frontend-core/guide/caching/)
-* [&#x200B; Gérer le cache &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-cache)
+* [ Gérer le cache ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-cache)
 
 Autres raisons possibles des problèmes de performances et solutions correspondantes :
 
-* [Désactivez la sortie Adobe Commerce Banner pour améliorer les performances du site](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26909)
-* [Les tables MySQL sont trop grandes](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26945)
+* [Désactivez la sortie Adobe Commerce Banner pour améliorer les performances du site](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26909)
+* [Les tables MySQL sont trop grandes](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26945)
 * [Performances lentes, crons lents et à exécution longue](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)

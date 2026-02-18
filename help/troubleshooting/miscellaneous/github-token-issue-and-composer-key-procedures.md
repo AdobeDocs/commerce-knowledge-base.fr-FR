@@ -1,10 +1,10 @@
 ---
 title: Problème de jeton Github et procédures clés du compositeur
-description: Cet article fournit des solutions pour le problème des déploiements échoués liés aux échecs de jeton Github causés par des clés de compositeur obsolètes.
+description: Cet article fournit des solutions au problème des échecs de déploiement liés aux échecs des jetons Github causés par des clés de compositeur obsolètes.
 exl-id: 202cb936-f9ba-49ea-bf0a-6e6994d2337a
 feature: Identity Management
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -13,38 +13,38 @@ ht-degree: 0%
 
 # Problème de jeton Github et procédures clés du compositeur
 
-Cet article fournit des solutions pour le problème des déploiements échoués liés aux échecs de jeton Github causés par des clés de compositeur obsolètes.
+Cet article fournit des solutions au problème des échecs de déploiement liés aux échecs des jetons Github causés par des clés de compositeur obsolètes.
 
 ## Produits et versions concernés
 
-* Adobe Commerce sur l’infrastructure cloud, [toutes les versions prises en charge](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce sur les infrastructures cloud, [toutes les versions prises en charge](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 * Compositeur versions 1.10.20 et antérieures
 
 >[!NOTE]
 >
->Les marchands sur site Adobe Commerce doivent vérifier auprès de leur fournisseur d’hôtes s’ils utilisent la version 1.10.21 ou ultérieure du compositeur en raison des modifications de format de jeton introduites par Git.
+>Les commerçants sur site Adobe Commerce doivent vérifier auprès de leur fournisseur hôte qu’ils utilisent le compositeur version 1.10.21 ou ultérieure en raison des modifications du format de jeton introduites par Git.
 
 ## Problème
 
-Les déploiements échouent et les journaux de déploiement contiennent des informations similaires aux suivantes :
+Les déploiements échouent et les journaux de déploiement contiennent des informations similaires à ce qui suit :
 
-*Erreur fatale : Uncaught Uncaught UncaughtValueException : Your github oauth token for github.com contient des caractères non valides : &quot;ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot; dans /app/vendor/composer/composer/src/Composer/IO/BaseIO.php:129*
+*Erreur fatale : Uncaught UnexpectedValueException : votre jeton oauth github pour github.com contient des caractères non valides : « ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx » dans /app/vendor/composer/composer/src/Composer/IO/BaseIO.php:129*
 
 ## Cause
 
-Les clés du compositeur obsolètes provoquent des échecs de jeton Github qui entraînent l’échec des déploiements.
+Les clés de compositeur obsolètes entraînent des échecs de jeton Github, ce qui entraîne des échecs de déploiement.
 
 ## Solution
 
-Pour résoudre ce problème, mettez à jour votre version du compositeur vers la version 1.10.22 :
+Pour résoudre le problème, veuillez mettre à jour votre compositeur vers la version 1.10.22 :
 
 1. Sur votre environnement local, exécutez `composer require “composer/composer”:”>1.10.21`.
-1. Cela ajoute la configuration requise pour cette version de module du compositeur. Vérifiez le fichier de verrouillage : la version `composer/composer` doit être 1.0.22 ou supérieure.
-1. Validez `composer.json` et `composer.lock` et poussez un déploiement.
+1. Cela ajoute l’exigence de cette version du package du compositeur. Vérifiez le fichier de verrouillage. `composer/composer` version doit être 1.0.22 ou une version ultérieure.
+1. Validez le `composer.json` et le `composer.lock`, puis envoyez un déploiement .
 
-Si cette méthode ne fonctionne pas, [soumettez un ticket d&#39;assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Si cette méthode ne fonctionne pas, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Lecture connexe
 
-* [Blog Github : Derrière les nouveaux formats de jeton d’authentification de GitHub](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/)
-* [InfoQ.com article d’actualité : GitHub change le format de jeton pour améliorer l’identification, le numérisation secrète et l’entropie](https://www.infoq.com/news/2021/04/github-new-token-format/)
+* [Blog Github : derrière les nouveaux formats de jeton d’authentification de GitHub](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/)
+* [InfoQ.com : GitHub modifie le format de jeton pour améliorer l’identifiabilité, l’analyse secrète et l’entropie](https://www.infoq.com/news/2021/04/github-new-token-format/)

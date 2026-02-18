@@ -1,40 +1,40 @@
 ---
 title: Problèmes de déploiement liés aux autorisations de compte et aux clés d’accès
-description: Cet article fournit une solution aux problèmes liés au déploiement d’Adobe Commerce sur l’infrastructure cloud causés par un conflit de propriété de clé d’accès.
+description: Cet article fournit une solution aux problèmes de déploiement d’Adobe Commerce sur l’infrastructure cloud causés par un conflit de propriété de la clé d’accès.
 exl-id: e8d72ebe-453f-4d18-a25e-c76e685aa667
 feature: Deploy, Roles/Permissions
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
 # Problèmes de déploiement liés aux autorisations de compte et aux clés d’accès
 
-Cet article fournit une solution aux problèmes liés au déploiement d’Adobe Commerce sur l’infrastructure cloud causés par un conflit de propriété de clé d’accès.
+Cet article fournit une solution aux problèmes de déploiement d’Adobe Commerce sur l’infrastructure cloud causés par un conflit de propriété de la clé d’accès.
 
 ## Produits et versions concernés
 
-* Adobe Commerce sur l’infrastructure cloud, toutes les versions prises en charge
+* Adobe Commerce sur les infrastructures cloud, toutes les versions prises en charge
 
 ## Problème
 
 <u>Conditions préalables</u> :
 
-La licence Cloud est associée au contact A (adresse email : *<u>first@e.mail</u>*)
+La licence Cloud est associée au contact A (adresse e-mail : *<u>first@e.mail</u>*)
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
-1. Contactez les clés d’accès Adobe Commerce créées sur leur compte (clé X) et installées sur le cloud.
-1. Le contact B (adresse email : *<u>second@e.mail</u>*) a acheté une extension à l’aide de son compte et a créé les clés d’accès pour installer l’extension (clé Y).
-1. Contact A a ensuite quitté la société, et la licence (propriété) a été transférée au contact B.
-1. L’intégrateur système tente d’installer l’extension sur l’environnement cloud à l’aide de la clé X.
+1. Contact A créé les clés d&#39;accès Adobe Commerce sur son compte (Clé X) et les a installées sur le Cloud.
+1. Le contact B (adresse e-mail : *<u>second@e.mail</u>*) a acheté une extension à l’aide de son compte et a créé les clés d’accès pour installer l’extension (clé Y).
+1. Le contact A a ensuite quitté l&#39;entreprise, et la licence (propriété) a ensuite été transférée au contact B.
+1. L’intégrateur système tente d’installer l’extension dans l’environnement cloud à l’aide de la clé X.
 
-<u>Résultat attendu</u> :
+<u>Résultat attendu </u> :
 
-L’extension a été installée avec succès.
+Extension installée avec succès.
 
 <u>Résultat réel</u> :
 
@@ -42,21 +42,21 @@ L’extension n’est pas installée, car le déploiement échoue.
 
 ## Cause
 
-Les deux clés sont affectées au rôle de contact, ce qui provoque un conflit.
+Les deux clés sont affectées au rôle de contact, ce qui entraîne un conflit.
 
 ## Solution
 
-Si un déploiement a échoué après qu’une modification a été apportée au contact de Principal sur le compte (avec le compte d’origine et le nouveau compte ayant chacun leur propre clé d’accès), et que les clés ont été transférées du compte d’origine au nouveau compte, vous devez désactiver les clés du compte d’origine. Dans l’exemple ci-dessus, la clé X doit être désactivée.
+Si un déploiement a échoué après une modification apportée au contact de Principal sur le compte (le compte d’origine et le nouveau compte disposant chacun de leurs propres clés d’accès) et si les clés ont été transférées du compte d’origine vers le nouveau compte, vous devez désactiver les clés du compte d’origine. Dans l’exemple ci-dessus, la clé X doit être désactivée.
 
 ### Comment désactiver la clé d’accès
 
-Si vous n&#39;avez pas accès au compte [Commerce Marketplace](https://marketplace.magento.com/) associé à l&#39;ancienne clé, [contactez le support Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pour que la clé soit désactivée.
+Si vous n&#39;avez pas accès au compte [Commerce Marketplace](https://marketplace.magento.com/) associé à l&#39;ancienne clé, [contactez l&#39;assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour que la clé soit désactivée.
 
-Si vous avez accès au compte Marketplace associé à l’ancienne clé, procédez comme suit pour la désactiver :
+Si vous avez accès au compte Marketplace associé à l’ancienne clé, procédez comme suit pour désactiver la clé :
 
-1. Connectez-vous au [Commerce Marketplace](https://marketplace.magento.com/) à l’aide des informations d’identification de l’ancien compte.
-1. Cliquez sur le nom du compte en haut à droite de la page et sélectionnez **Mon profil**.
-1. Cliquez sur **Accéder aux clés** dans l’onglet Marketplace.
+1. Connectez-vous à [Commerce Marketplace](https://marketplace.magento.com/) à l&#39;aide des informations d&#39;identification de l&#39;ancien compte.
+1. Cliquez sur le nom du compte dans le coin supérieur droit de la page et sélectionnez **Mon profil**.
+1. Cliquez sur **Clés d’accès** dans l’onglet Marketplace.
 
    ![magento_products_access_keys_2.4.1.png](/help/troubleshooting/miscellaneous/assets/magento_products_access_keys_2.4.1.png)
 
@@ -64,4 +64,4 @@ Si vous avez accès au compte Marketplace associé à l’ancienne clé, procéd
 
 ## Lecture connexe
 
-* [Obtenez vos clés d’authentification](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) dans notre documentation destinée aux développeurs.
+* [Obtenez vos clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) dans notre documentation destinée aux développeurs.

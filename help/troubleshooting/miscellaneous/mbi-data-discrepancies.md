@@ -1,35 +1,35 @@
 ---
-title: 'MBI : incohérences de données'
-description: "Les chiffres d'un rapport donné semblent-ils inexacts ? Des valeurs NULL inattendues s’affichent-elles ? Si vous constatez quelque chose qui ne semble pas tout à fait correct, nous vous recommandons d’utiliser ces ressources pour vous aider à résoudre les problèmes suivants :"
+title: 'MBI : incohérences des données'
+description: 'Les chiffres d’un rapport donné semblent-ils inexacts ? Voyez-vous des valeurs NULL inattendues ? Si vous constatez que quelque chose ne semble pas correct, nous vous recommandons d’utiliser ces ressources pour vous aider à résoudre les problèmes suivants :'
 exl-id: 2ecea990-7292-46c1-b6eb-75f0404aaf0b
 feature: Commerce Intelligence
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
 
-# MBI : incohérences entre les données
+# MBI : incohérences des données
 
-Les chiffres d&#39;un rapport donné semblent-ils inexacts ? Des valeurs NULL inattendues s’affichent-elles ? Si vous constatez quelque chose qui ne semble pas tout à fait correct, il est recommandé d’utiliser ces ressources pour résoudre les problèmes suivants :
+Les chiffres d’un rapport donné semblent-ils inexacts ? Voyez-vous des valeurs NULL inattendues ? Si vous constatez que quelque chose ne semble pas correct, nous vous recommandons d’utiliser ces ressources pour vous aider à résoudre les problèmes suivants :
 
-* [Liste de contrôle de diagnostic des incohérences de données](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
-* [Utilisation d’exportations pour identifier les incohérences de données](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
+* [Liste de contrôle pour le diagnostic des incohérences de données](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
+* [Utilisation des exportations pour identifier les incohérences de données](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-Nous vous recommandons également de vous assurer que les [méthodes de réplication](https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) et [rechecks](https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) corrects ont été définis pour les tables et les colonnes impliquées dans l’incohérence. Notez que vous avez besoin d’autorisations d’administrateur pour accéder à la méthode de réplication et vérifier les informations.
+Nous vous recommandons également de vous assurer que les [méthodes de réplication](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) et [revérifications](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) correctes ont été définies pour les tables et les colonnes impliquées dans l’incohérence. Notez que vous avez besoin d’autorisations d’administrateur pour accéder à la méthode de réplication et revérifier les informations.
 
 ## J&#39;ai encore besoin d&#39;aide !
 
-Si le rapport est toujours inexact, ne vous inquiétez pas : notre équipe de support est heureuse de vous aider ! [Contactez-nous](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) avec les informations suivantes :
+Si le rapport est toujours inexact, ne vous inquiétez pas : notre équipe d’assistance sera ravie de vous aider ! [Contactez-nous](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) avec les informations suivantes :
 
-* Quel est le nom du rapport où vous constatez une incohérence ?
+* Quel est le nom du rapport où vous constatez l&#39;écart?
 * Quelles valeurs du rapport sont incorrectes ?
-* Quelles valeurs attendez-vous ?
-* Toute requête SQL ou toute autre logique que vous pouvez utiliser
+* Quelles valeurs attendez-vous de voir ?
+* Toute requête SQL ou autre logique que vous pouvez utiliser
 
 ## Lecture connexe
 
 * [Colonnes calculées](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
-* [&#x200B; Modifications de la base de données structurelle](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html?lang=fr)
+* [Modifications structurelles de la base de données](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html)

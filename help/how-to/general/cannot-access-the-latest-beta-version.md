@@ -1,63 +1,63 @@
 ---
 title: Impossible d’accéder à la dernière version de Beta
-description: Cet article fournit des solutions aux problèmes liés à l’utilisation des dernières versions de code Beta pour Adobe Commerce. Le code Beta n’est disponible que pour les partenaires d’Adobe officiels qui ont suivi le processus décrit dans [Programme Adobe Commerce Beta](https://github.com/magento/magento2/wiki/Magento-Beta-Program).
+description: Cet article fournit des solutions aux problèmes rencontrés lors de l’utilisation des dernières versions Beta du code pour Adobe Commerce. Le code Beta est uniquement disponible pour les partenaires Adobe officiels qui ont suivi le processus décrit dans [Programme Adobe Commerce Beta](https://github.com/magento/magento2/wiki/Magento-Beta-Program).
 exl-id: a53c854e-38a8-4c8c-8586-9d99c576c835
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
 
 # Impossible d’accéder à la dernière version de Beta
 
-Cet article fournit des solutions aux problèmes liés à l’utilisation des dernières versions de code Beta pour Adobe Commerce. Le code Beta n’est disponible que pour les partenaires d’Adobe officiels qui ont suivi le processus décrit dans [Programme Adobe Commerce Beta](https://github.com/magento/magento2/wiki/Magento-Beta-Program).
+Cet article fournit des solutions aux problèmes rencontrés lors de l’utilisation des dernières versions Beta du code pour Adobe Commerce. Le code Beta n’est disponible que pour les partenaires Adobe officiels qui ont suivi le processus décrit dans [Programme Adobe Commerce Beta](https://github.com/magento/magento2/wiki/Magento-Beta-Program).
 
 ## Problème
 
-Cet article traite des problèmes suivants liés à l’accès au code d’accès anticipé :
+Cet article couvre les problèmes suivants liés à l’accès au code d’accès anticipé :
 
-* La version Beta d’Adobe Commerce n’est pas disponible au téléchargement sous **Mon compte** > **Téléchargements** sur [magento.com](https://account.magento.com/customer/account/login).
-* Échec du téléchargement de la version Adobe Commerce d’accès anticipé à partir de [magento.com](https://account.magento.com/customer/account/login) à l’aide du compositeur.
+* La version d’Adobe Commerce Beta ne peut pas être téléchargée sous **Mon compte** > **Téléchargements** sur [magento.com](https://account.magento.com/customer/account/login).
+* Échec du téléchargement de la version d’Adobe Commerce à accès anticipé à partir de [magento.com](https://account.magento.com/customer/account/login) à l’aide du compositeur.
 
 ## Cause
 
-Voici les causes les plus courantes des problèmes :
+Il s’agit des causes les plus courantes de problèmes :
 
 * Vous recherchez le code d’accès anticipé au mauvais emplacement.
-* Vous utilisez le MageID incorrect.
-* Le développeur a besoin des clés d’accès à partir du MageID correct.
+* Vous n’utilisez pas le bon MageID.
+* Le développeur a besoin de clés d’accès provenant de l’ID d’image correct.
 * Votre compte ne fait pas partie du programme Beta.
 
 ## Solution
 
 ### Emplacement du code d’accès anticipé
 
-Pendant les périodes d’accès bêta, les modules de version ne sont disponibles que via le compositeur sur [repo.magento.com](https://repo.magento.com/). Les packages de version ne sont pas disponibles sur les portails GitHub et Adobe Commerce au cours de cette période, et nous les publierons à ces emplacements à la date de disponibilité générale. Pour plus d’informations sur l’utilisation du compositeur, cliquez [ici](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/composer).
+Pendant les périodes d’accès à la version bêta, les packages de version ne sont disponibles que via le compositeur sur [repo.magento.com](https://repo.magento.com/). Les packages de version ne sont pas disponibles sur les portails GitHub et Adobe Commerce pendant cette période. Nous les publierons sur ces emplacements à la date de disponibilité générale. Pour plus d&#39;informations sur l&#39;utilisation du compositeur, cliquez [ici](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer).
 
-### MageID que vous devez utiliser
+### MageID à utiliser
 
-Vous devez utiliser le MageID principal associé à votre compte Partner . Le programme Beta n&#39;est lié à aucun contact disposant d&#39;un accès partagé. L&#39;accès anticipé est uniquement accessible via le compositeur ou [repo.magento.com](https://repo.magento.com/) par le MageID associé à votre licence Partner.
+Vous devez utiliser l’ID d’image principal associé à votre compte partenaire. Le programme Beta n&#39;est lié à aucun contact ayant un accès partagé. Un accès anticipé n&#39;est accessible que via Composer ou [repo.magento.com](https://repo.magento.com/) par le MageID associé à votre licence partenaire.
 
 #### Comment puis-je savoir si mon MageID est le principal ?
 
-Pour savoir si votre MageID est principal, essayez les méthodes suivantes :
+Pour déterminer si votre MageID est principal, essayez les méthodes suivantes :
 
-1. Connectez-vous à [magento.com](https://account.magento.com/customer/account/login) et accédez à l’onglet **My Product and Services** (Mon produit et services). Dans la sous-section Partenaires , vérifiez si les informations de licence du partenaire actif s’affichent :
-   * Si les informations de licence de partenaire actif s’affichent, votre MageID est principal. La licence Partner est active si la valeur DATE DE FIN est une date ultérieure.
-   * Si vous ne voyez pas les informations de licence de partenaire actif, alors votre MageID dispose uniquement d’un accès partagé. Pour savoir qui est le détenteur de l’ID principal, accédez à **Partagé avec moi** Notez le SHARENAME spécifié ici. Cliquez sur **Changer de compte** et sélectionnez la valeur que vous avez notée dans SHARENAME. Sur la page d’accueil, l’adresse électronique du détenteur de l’ID principal s’affiche.
-1. Si, pour une raison quelconque, vous ne trouvez pas ces informations sur [magento.com](https://account.magento.com/customer/account/login), contactez votre Partner Manager.
-1. Si aucun des éléments ci-dessus ne fonctionne, [contactez l&#39;assistance](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed).
+1. Connectez-vous à [magento.com](https://account.magento.com/customer/account/login) et accédez à l’onglet **Mes produits et services**. Dans la sous-section Partenaires , vérifiez si les informations de licence du partenaire actif s’affichent :
+   * Si les informations de licence du partenaire actif s’affichent, votre ID d’image est principal. La licence Partenaire est active si la valeur END DATE correspond à une date ultérieure.
+   * Si vous ne voyez pas les informations de licence du partenaire actif, votre MageID dispose uniquement d’un accès partagé. Pour savoir qui est le titulaire de l’ID principal, accédez au **Partagé avec moi** Notez le NOM DE PARTAGE qui y est spécifié. Cliquez sur **Changer de compte** et sélectionnez la valeur que vous avez notée dans SHARENAME. Sur la page de bienvenue, vous verrez l’e-mail du titulaire de l’ID principal.
+1. Si, pour une raison quelconque, vous ne trouvez pas ces informations sur [magento.com](https://account.magento.com/customer/account/login), veuillez contacter votre responsable partenaire.
+1. Si aucun des problèmes ci-dessus ne fonctionne, [contactez l’assistance technique](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 #### Le développeur ne dispose pas d’un accès correct aux clés
 
 Si vous êtes le propriétaire principal de MageID et que vous devez donner accès à un développeur de votre équipe, procédez comme suit :
 
-1. Connectez-vous au propriétaire MageID principal en [account.magento.com](https://account.magento.com/customer/account/login).
-1. Sélectionnez l’onglet **Marketplace** , puis cliquez sur **Accéder aux clés**.
+1. Demandez au propriétaire principal de MageID de se connecter à [account.magento.com](https://account.magento.com/customer/account/login).
+1. Sélectionnez l’onglet **Marketplace**, puis cliquez sur **Clés d’accès**.
 1. Sélectionnez **Créer une clé d’accès** et nommez-la.
 1. Envoyez les clés à votre développeur.
 
 ### Ne fait pas partie du programme d&#39;accès anticipé
 
-Notre programme d’accès Beta est disponible uniquement pour nos partenaires techniques et solutions afin qu’ils puissent évaluer notre code de pré-production. Pour être inclus dans le programme d’accès Beta, votre organisation doit disposer d’un compte partenaire Adobe actif en bonne état de fonctionnement et avoir signé le NDA Beta [ici](https://github.com/magento/magento2/wiki/Magento-Beta-Program). Si vous pensez que vous remplissez ces critères et ne pouvez pas accéder au code bêta, contactez [commercebeta@adobe.com](mailto:commercebeta@adobe.com).
+Notre programme d’accès à Beta n’est disponible que pour nos partenaires solutions et techniques afin qu’ils puissent évaluer notre code de préproduction. Pour être incluse dans le programme d’accès à Beta, votre entreprise doit disposer d’un compte de partenaire Adobe actif et en règle qui a signé l’accord de confidentialité Beta [ici](https://github.com/magento/magento2/wiki/Magento-Beta-Program). Si vous pensez répondre à ces critères et ne pas pouvoir accéder au code bêta, contactez [commercebeta@adobe.com](mailto:commercebeta@adobe.com).
