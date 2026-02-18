@@ -41,14 +41,14 @@ Si votre mode de paiement PayPal implique une API avec des accords de facturatio
 
 Consultez les articles suivants :
 
-* [Demande rejetée par la passerelle PayPal - problème de facture en double](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) dans notre base de connaissances d&#39;assistance.
+* [Demande rejetée par la passerelle PayPal - problème de facture en double](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26838) dans notre base de connaissances d&#39;assistance.
 * [Modifier l’ID d’incrément pour la nouvelle entité de magasin](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) dans notre base de connaissances d’assistance.
 
 ## Contactez l’assistance pour collecter les journaux de paiement avancés
 
 Pour résoudre les problèmes de paiement complexes, l’équipe d’assistance Adobe Commerce peut vous demander d’appliquer un correctif dédié pour activer la journalisation avancée des paiements. Dans ce cas, les étapes doivent être les suivantes :
 
-[Envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) avec les détails suivants :
+[Envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) avec les détails suivants :
 
 * Spécifiez votre problème avec autant de détails que possible.
 * Répertoriez les étapes que vous avez tentées à partir de cet article, de la base de connaissances et d’autres ressources. Inclure tous les résultats.
@@ -57,5 +57,5 @@ Pour résoudre les problèmes de paiement complexes, l’équipe d’assistance 
 Si vous recevez le correctif de consignation des paiements avancés :
 
 * Appliquez le correctif.
-* Collectez les journaux et joignez-les à votre [ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+* Collectez les journaux et joignez-les à votre [ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 * Attendez les recommandations supplémentaires de l’équipe d’assistance d’Adobe Commerce.

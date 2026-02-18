@@ -18,11 +18,11 @@ Les chiffres d’un rapport donné semblent-ils inexacts ? Voyez-vous des valeur
 * [Liste de contrôle pour le diagnostic des incohérences de données](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
 * [Utilisation des exportations pour identifier les incohérences de données](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-Nous vous recommandons également de vous assurer que les [méthodes de réplication](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) et [revérifications](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) correctes ont été définies pour les tables et les colonnes impliquées dans l’incohérence. Notez que vous avez besoin d’autorisations d’administrateur pour accéder à la méthode de réplication et revérifier les informations.
+Nous vous recommandons également de vous assurer que les [méthodes de réplication](https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) et [revérifications](https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) correctes ont été définies pour les tables et les colonnes impliquées dans l’incohérence. Notez que vous avez besoin d’autorisations d’administrateur pour accéder à la méthode de réplication et revérifier les informations.
 
 ## J&#39;ai encore besoin d&#39;aide !
 
-Si le rapport est toujours inexact, ne vous inquiétez pas : notre équipe d’assistance sera ravie de vous aider ! [Contactez-nous](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) avec les informations suivantes :
+Si le rapport est toujours inexact, ne vous inquiétez pas : notre équipe d’assistance sera ravie de vous aider ! [Contactez-nous](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) avec les informations suivantes :
 
 * Quel est le nom du rapport où vous constatez l&#39;écart?
 * Quelles valeurs du rapport sont incorrectes ?
@@ -32,4 +32,4 @@ Si le rapport est toujours inexact, ne vous inquiétez pas : notre équipe d’a
 ## Lecture connexe
 
 * [Colonnes calculées](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
-* [Modifications structurelles de la base de données](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html)
+* [Modifications structurelles de la base de données](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html?lang=fr)

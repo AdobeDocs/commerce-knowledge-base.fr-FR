@@ -41,11 +41,11 @@ Adobe Commerce met à jour tout certificat dans les 30 jours suivant son expirat
 
 Lorsqu’un commerçant choisit d’utiliser son propre certificat SSL personnalisé, celui-ci doit être mis à jour plus de 30 jours avant l’expiration du certificat pour s’assurer qu’il ne sera pas remplacé par un certificat SSL Adobe Commerce interne.
 
-Si vous vous trouvez dans une situation où votre SSL personnalisé a été remplacé par notre SSL interne et que vous souhaitez le remplacer par votre certificat SSL personnalisé mis à jour, veuillez [soumettre une demande d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) avec l’emplacement où vous avez chargé vos nouveaux fichiers de certificat. Veuillez inclure la date de début du nouveau SSL. Une fois que nous disposons de ces informations, nous pouvons procéder à l’installation du nouveau certificat SSL.
+Si vous vous trouvez dans une situation où votre SSL personnalisé a été remplacé par notre SSL interne et que vous souhaitez le remplacer par votre certificat SSL personnalisé mis à jour, veuillez [soumettre une demande d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) avec l’emplacement où vous avez chargé vos nouveaux fichiers de certificat. Veuillez inclure la date de début du nouveau SSL. Une fois que nous disposons de ces informations, nous pouvons procéder à l’installation du nouveau certificat SSL.
 
 ## Lecture connexe
 
 * Certificats [SSL (TLS) pour Magento Commerce Cloud : FAQ](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) dans notre base de connaissances d’assistance.
-* [Référence des outils de ligne de commande : certificat magento-cloud:add](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) dans notre documentation destinée aux développeurs.
-* [Lancer la liste de contrôle](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist)dans notre documentation destinée aux développeurs.
-* [Accédez à l’outil d’analyse à l’échelle du site](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) dans notre guide de l’utilisateur.
+* [Référence des outils de ligne de commande : certificat magento-cloud:add](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) dans notre documentation destinée aux développeurs.
+* [Lancer la liste de contrôle](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/launch/checklist)dans notre documentation destinée aux développeurs.
+* [Accédez à l’outil d’analyse à l’échelle du site](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) dans notre guide de l’utilisateur.

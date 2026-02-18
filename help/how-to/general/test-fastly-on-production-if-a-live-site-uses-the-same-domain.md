@@ -34,13 +34,13 @@ Lors de la planification de votre projet Adobe Commerce sur l’infrastructure c
 
 Pour traiter le sous-domaine dans votre projet d’infrastructure cloud Adobe Commerce, procédez comme suit :
 
-* [Envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) en demandant d’ajouter le sous-domaine à la configuration du service Fastly/Nginx (pour l’architecture de plan Pro de l’infrastructure cloud d’Adobe Commerce).
+* [Envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) en demandant d’ajouter le sous-domaine à la configuration du service Fastly/Nginx (pour l’architecture de plan Pro de l’infrastructure cloud d’Adobe Commerce).
 * Configurez les paramètres DNS correspondants de votre côté.
 
 Après avoir suivi les étapes de configuration du sous-domaine, vous devez également suivre les étapes suivantes pour valider votre domaine de production pour le certificat SSL :
 
 * Chargez l’enregistrement TXT du DNS pour la validation SSL de votre domaine de production.
-* [Envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) demandant de valider le domaine de production pour le certificat SSL.
+* [Envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) demandant de valider le domaine de production pour le certificat SSL.
 
 L’utilisation du sous-domaine vous permet d’effectuer un « lancement logiciel » de votre magasin à l’avenir, car ce lancement nécessite uniquement la mise à jour des paramètres DNS correspondants.
 
@@ -48,11 +48,11 @@ L’utilisation du sous-domaine vous permet d’effectuer un « lancement logici
 
 Dans notre base de connaissances du support :
 
-* [Configurer les paramètres DNS Fastly sur les environnements d’évaluation et de production](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html)
-* [Configuration du plan Fastly for Starter sur le cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html)
-* [Bloqueurs potentiels à lancer sur Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html)
+* [Configurer les paramètres DNS Fastly sur les environnements d’évaluation et de production](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html?lang=fr)
+* [Configuration du plan Fastly for Starter sur le cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html?lang=fr)
+* [Bloqueurs potentiels à lancer sur Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html?lang=fr)
 
 Dans notre documentation destinée aux développeurs :
 
-* [Aperçu rapide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [Liste de contrôle de mise en production : configurations DNS pour Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)
+* [Aperçu rapide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=fr)
+* [Liste de contrôle de mise en production : configurations DNS pour Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=fr)

@@ -50,7 +50,7 @@ Si un déploiement a échoué après une modification apportée au contact de Pr
 
 ### Comment désactiver la clé d’accès
 
-Si vous n&#39;avez pas accès au compte [Commerce Marketplace](https://marketplace.magento.com/) associé à l&#39;ancienne clé, [contactez l&#39;assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour que la clé soit désactivée.
+Si vous n&#39;avez pas accès au compte [Commerce Marketplace](https://marketplace.magento.com/) associé à l&#39;ancienne clé, [contactez l&#39;assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour que la clé soit désactivée.
 
 Si vous avez accès au compte Marketplace associé à l’ancienne clé, procédez comme suit pour désactiver la clé :
 
@@ -64,4 +64,4 @@ Si vous avez accès au compte Marketplace associé à l’ancienne clé, procéd
 
 ## Lecture connexe
 
-* [Obtenez vos clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) dans notre documentation destinée aux développeurs.
+* [Obtenez vos clés d’authentification](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) dans notre documentation destinée aux développeurs.

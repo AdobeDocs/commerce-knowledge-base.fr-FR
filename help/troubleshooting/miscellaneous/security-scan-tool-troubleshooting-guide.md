@@ -59,7 +59,7 @@ Les statuts suivants peuvent apparaître à partir des contrôles :
 1. **Inconnu** : l’outil Analyse de sécurité ne dispose pas encore de données sur votre domaine ; attendez le prochain cycle de synchronisation.
 1. **Échec** : si le statut indique un échec, vous devrez résoudre le problème (activer 2FA, modifier l’URL d’administration, etc.) et attendre le prochain cycle de synchronisation.
 
-Si 24 heures se sont écoulées depuis que les modifications ont été apportées à l’instance et qu’elles ne sont pas reflétées dans le rapport d’analyse de sécurité, vous pouvez [soumettre un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Indiquez l’URL du magasin lors de l’envoi du ticket.
+Si 24 heures se sont écoulées depuis que les modifications ont été apportées à l’instance et qu’elles ne sont pas reflétées dans le rapport d’analyse de sécurité, vous pouvez [soumettre un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Indiquez l’URL du magasin lors de l’envoi du ticket.
 
 ## Échec suspect de BotNet
 
@@ -77,7 +77,7 @@ Vous recevez une notification concernant l’échec de « BotNet Suspect ».
 1. Recherchez les comptes SSH nouvellement créés, les modifications apportées au système de fichiers, etc.
 1. Effectuez une vérification de la sécurité.
 1. Vérifiez la version d’Adobe Commerce et la mise à niveau, en particulier si elle exécute toujours Magento 1, qui n’est plus pris en charge.
-1. Si le problème persiste, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) et indiquez l’URL du magasin.
+1. Si le problème persiste, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) et indiquez l’URL du magasin.
 
 ## Problème : échec de l’injection de compromis
 
@@ -90,7 +90,7 @@ Vous recevez une erreur concernant un échec d’« injection de compromis ».
 1. Passez en revue les modifications apportées à la configuration du système, en particulier les `HTML head` et `Miscellaneous HTML` personnalisés dans les valeurs de section `footer`.
 1. Effectuez une révision du code et de la base de données pour détecter les modifications et signes inhabituels de programmes malveillants injectés.
 
-Si rien de ce qui précède ne vous aide, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) et indiquez l’URL du magasin et le message d’erreur à partir du rapport.
+Si rien de ce qui précède ne vous aide, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) et indiquez l’URL du magasin et le message d’erreur à partir du rapport.
 
 ## Questions fréquentes
 
@@ -104,7 +104,7 @@ Vous pouvez générer les 10 rapports précédents de votre côté. Si des rappo
 
 ### Quelles informations sont nécessaires lors de l’envoi d’un ticket d’assistance ?
 
-Indiquez le nom de domaine tel qu’il est envoyé pour l’[analyse de sécurité](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID et Cloud Project_ID. Notez que l’ID de projet cloud n’est pas obligatoire pour Adobe Commerce On-premise.
+Indiquez le nom de domaine tel qu’il est envoyé pour l’[analyse de sécurité](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID et Cloud Project_ID. Notez que l’ID de projet cloud n’est pas obligatoire pour Adobe Commerce On-premise.
 
 ### Que se passe-t-il si je supprime mon magasin de l’analyse des outils de numérisation ?
 

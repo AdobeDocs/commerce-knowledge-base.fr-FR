@@ -29,7 +29,7 @@ Pour l’architecture du plan de démarrage et les environnements d’intégrati
 Pour ajouter le domaine au service dans [!DNL Fastly] :
 
 1. Pointez votre domaine dans DNS sur prod.magentocloud.map.fastly.net et patientez jusqu’à 6 heures.
-1. [Envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) en demandant l’ajout de ce domaine dans la configuration Nginx (si vous ne l’avez pas déjà fait).
+1. [Envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) en demandant l’ajout de ce domaine dans la configuration Nginx (si vous ne l’avez pas déjà fait).
 
 ## Comment demander un certificat ?
 
@@ -47,10 +47,10 @@ Vous pouvez fournir votre propre certificat SSL/TLS au lieu d’utiliser le cert
 
 Toutefois, ce processus nécessite un travail supplémentaire pour sa configuration et sa maintenance. Vous devrez d’abord générer une demande de signature de certificat (CSR) pour le nom de domaine (ou nom commun) du site web et la fournir à votre fournisseur SSL pour fournir un certificat SSL.
 
-Une fois que vous disposez du certificat SSL, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) ou utilisez votre CTA pour ajouter des certificats hébergés personnalisés à vos environnements cloud.
+Une fois que vous disposez du certificat SSL, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) ou utilisez votre CTA pour ajouter des certificats hébergés personnalisés à vos environnements cloud.
 
 * Si les domaines ne sont plus utilisés, ils seront automatiquement purgés de notre système et aucune autre action n’est requise.
-* Si vous possédez déjà un certificat, chargez-le à l’aide d’un client SFTP (SSH File Transfer Protocol) vers un emplacement de fichier inaccessible sur votre serveur et [envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) en lui indiquant le chemin d’accès au fichier.
+* Si vous possédez déjà un certificat, chargez-le à l’aide d’un client SFTP (SSH File Transfer Protocol) vers un emplacement de fichier inaccessible sur votre serveur et [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) en lui indiquant le chemin d’accès au fichier.
 
 >[!WARNING]
 >
@@ -67,7 +67,7 @@ Le domaine affiché sur le certificat n’est que le premier domaine ajouté au 
 
 ## Puis-je utiliser des certificats TLS génériques ?
 
-Les certificats TLS génériques ne peuvent être utilisés qu’avec votre certificat personnalisé et non avec les certificats Let’s Encrypt d’Adobe Commerce. Dans le cadre de notre optimisation du protocole TLS, Adobe met fin à la prise en charge des certificats TLS génériques. Nous identifions et contactons des commerçants qui utilisent un certificat générique avec des certificats Let’s Encrypt d’Adobe et qui sont configurés dans la console [!DNL Fastly] pour Adobe Commerce. Nous demandons que ces certificats génériques soient remplacés par des domaines exacts pour assurer la couverture TLS. Pour remplacer un certificat TLS par un caractère générique, consultez la section [domaine](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) du plug-in [!DNL Fastly]. À partir de là, vous pouvez ajouter les domaines exacts et supprimer le caractère générique. Notez que le DNS doit pointer vers [!DNL Fastly] pour que ces nouveaux domaines soient acheminés via le réseau CDN. Une fois les domaines ajoutés et le DNS mis à jour, un certificat [Chiffrons](https://letsencrypt.org/) correspondant sera fourni. Si vous ne supprimez pas un domaine pointant vers [!DNL Fastly] à l’aide d’un caractère générique, Adobe supprimera le certificat partagé. Cela peut entraîner une panne du site si le nom de domaine complet de l’URL n’est pas configuré et que le même nom de domaine complet d’URL est configuré dans votre DNS. Vous devez donc confirmer que les URL configurées ont également une correspondance un-à-un dans leur DNS pointant vers [!DNL Fastly].
+Les certificats TLS génériques ne peuvent être utilisés qu’avec votre certificat personnalisé et non avec les certificats Let’s Encrypt d’Adobe Commerce. Dans le cadre de notre optimisation du protocole TLS, Adobe met fin à la prise en charge des certificats TLS génériques. Nous identifions et contactons des commerçants qui utilisent un certificat générique avec des certificats Let’s Encrypt d’Adobe et qui sont configurés dans la console [!DNL Fastly] pour Adobe Commerce. Nous demandons que ces certificats génériques soient remplacés par des domaines exacts pour assurer la couverture TLS. Pour remplacer un certificat TLS par un caractère générique, consultez la section [domaine](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) du plug-in [!DNL Fastly]. À partir de là, vous pouvez ajouter les domaines exacts et supprimer le caractère générique. Notez que le DNS doit pointer vers [!DNL Fastly] pour que ces nouveaux domaines soient acheminés via le réseau CDN. Une fois les domaines ajoutés et le DNS mis à jour, un certificat [Chiffrons](https://letsencrypt.org/) correspondant sera fourni. Si vous ne supprimez pas un domaine pointant vers [!DNL Fastly] à l’aide d’un caractère générique, Adobe supprimera le certificat partagé. Cela peut entraîner une panne du site si le nom de domaine complet de l’URL n’est pas configuré et que le même nom de domaine complet d’URL est configuré dans votre DNS. Vous devez donc confirmer que les URL configurées ont également une correspondance un-à-un dans leur DNS pointant vers [!DNL Fastly].
 
 ## Que dois-je faire si mon domaine ne pointe plus vers Adobe Commerce ?
 
@@ -75,4 +75,4 @@ Si votre domaine ne pointe plus vers Adobe Commerce, supprimez-le du système [!
 
 ## Lecture connexe
 
-[Fournir des certificats SSL/TLS](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates) dans notre documentation destinée aux développeurs
+[Fournir des certificats SSL/TLS](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates) dans notre documentation destinée aux développeurs

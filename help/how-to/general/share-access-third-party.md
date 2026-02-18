@@ -28,10 +28,10 @@ En fonction de vos normes de sécurité internes, vous pouvez choisir de faire a
 * Fournissez à votre fournisseur tiers un accès à l’environnement cloud. Articles connexes :
 
    * [Guide de l&#39;utilisateur du Centre d&#39;aide Adobe Commerce > ACCÈS PARTAGÉ : ACCORDEZ DES PRIVILÈGES À D&#39;AUTRES UTILISATEURS POUR ACCÉDER À VOTRE COMPTE](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guidee#shared-access) dans notre base de connaissances du support.
-   * [Partage de votre compte Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) dans notre guide de l’utilisateur.
+   * [Partage de votre compte Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/commerce-account/commerce-account-share) dans notre guide de l’utilisateur.
 
 * Créez une image mémoire de la base de données (ou accordez au fournisseur tiers l’accès nécessaire). Vous pouvez le faire à l’aide de l’interface de ligne de commande ou dans Commerce Admin. Cette image mémoire de la base de données obscurcit les données client. Par conséquent, tout ce qu’ils obtiennent est du code, des SKU de produit, etc., aucune donnée propriétaire/client. À titre de référence, utilisez [Partage de votre compte Commerce] (/help/how-to/general/create-database-dump-on-cloud.md) dans notre base de connaissances d’assistance.
-* Une fois le test terminé, veillez à révoquer l’accès partagé à votre environnement cloud, comme décrit dans [Guide d’utilisation du centre d’aide Adobe Commerce > Révoquer (supprimer l’accès partagé)](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#revoke-shared-access) dans notre base de connaissances de l’assistance.
+* Une fois le test terminé, veillez à révoquer l’accès partagé à votre environnement cloud, comme décrit dans [Guide d’utilisation du centre d’aide Adobe Commerce > Révoquer (supprimer l’accès partagé)](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#revoke-shared-access) dans notre base de connaissances de l’assistance.
 
 ## Bonnes pratiques en matière de test
 

@@ -40,7 +40,7 @@ Il s’agit des causes les plus courantes de problèmes :
 
 Au cours de la version préliminaire, les packages de version sont disponibles à deux emplacements :
 
-1. Via Composer sur [magento.com](https://repo.magento.com/) en utilisant l’ID d’image principal pour le compte. Pour plus d’informations sur l’utilisation du compositeur, reportez-vous à la section [Installation d’Adobe Commerce à l’aide du compositeur](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) de notre documentation destinée aux développeurs.
+1. Via Composer sur [magento.com](https://repo.magento.com/) en utilisant l’ID d’image principal pour le compte. Pour plus d’informations sur l’utilisation du compositeur, reportez-vous à la section [Installation d’Adobe Commerce à l’aide du compositeur](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/composer) de notre documentation destinée aux développeurs.
 1. **Mon compte** > **Téléchargements** sur [account.magento.com](https://account.magento.com/customer/account/login).
 
 >[!NOTE]
@@ -61,7 +61,7 @@ Pour déterminer si votre MageID est principal, essayez les méthodes suivantes 
    * Si les informations de licence Adobe Commerce s’affichent, votre MageID est principal.
    * Si vous ne voyez pas les informations de licence Adobe Commerce, votre MageID dispose uniquement d’un accès partagé. Pour savoir qui est le titulaire de l’ID principal, accédez au **Partagé avec moi** Notez le NOM DE PARTAGE qui y est spécifié. Cliquez sur **Changer de compte** et sélectionnez la valeur que vous avez notée dans SHARENAME. Sur la page de bienvenue, vous verrez l’e-mail du titulaire de l’ID principal.
 1. Si, pour une raison quelconque, vous ne trouvez pas ces informations sur [magento.com](https://account.magento.com/customer/account/login), contactez l’équipe chargée de votre compte Adobe.
-1. Si aucun des problèmes ci-dessus ne fonctionne, [contactez l’assistance technique](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+1. Si aucun des problèmes ci-dessus ne fonctionne, [contactez l’assistance technique](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 **Pour les partenaires**
 
@@ -71,8 +71,8 @@ Pour déterminer si votre MageID est principal, essayez les méthodes suivantes 
    * Si les informations de licence du partenaire actif s’affichent, votre ID d’image est principal. La licence Partenaire est active si la valeur END DATE correspond à une date ultérieure.
    * Si vous ne voyez pas les informations de licence du partenaire actif, votre MageID dispose uniquement d’un accès partagé. Pour savoir qui est le titulaire de l’ID principal, accédez au **Partagé avec moi** Notez le NOM DE PARTAGE qui y est spécifié. Cliquez sur **Changer de compte** et sélectionnez la valeur que vous avez notée dans SHARENAME. Sur la page de bienvenue, vous verrez l’e-mail du titulaire de l’ID principal.
 1. Si, pour une raison quelconque, vous ne trouvez pas ces informations sur [magento.com](https://account.magento.com/customer/account/login), veuillez contacter votre responsable partenaire.
-1. [&#x200B; Si aucun des problèmes ciсdessus ne fonctionne, contactez l’assistance &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+1. [&#x200B; Si aucun des problèmes ciсdessus ne fonctionne, contactez l’assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ### Ne fait pas partie du programme de version préliminaire
 
-Pour être incluse dans le programme d’accès en version préliminaire, votre entreprise doit disposer d’un compte Adobe Commerce ou Partner actif et en règle. Si vous pensez répondre à ces critères et ne pas pouvoir accéder au code de version préliminaire, contactez [l’assistance technique](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) avec votre MageID.
+Pour être incluse dans le programme d’accès en version préliminaire, votre entreprise doit disposer d’un compte Adobe Commerce ou Partner actif et en règle. Si vous pensez répondre à ces critères et ne pas pouvoir accéder au code de version préliminaire, contactez [l’assistance technique](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) avec votre MageID.

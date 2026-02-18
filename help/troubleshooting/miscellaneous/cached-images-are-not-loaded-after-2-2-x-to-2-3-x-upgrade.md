@@ -43,8 +43,8 @@ Le problème est dû à une configuration Nginx incorrecte définie dans `.magen
    * Plan de démarrage : corrigez le fichier vous-même et poussez les modifications.
    * Plan pro :
    * Intégration : corrigez le fichier vous-même et poussez les modifications.
-   * Évaluation et production : corrigez vous-même le fichier, apportez les modifications et créez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) pour l’appliquer.
+   * Évaluation et production : corrigez vous-même le fichier, apportez les modifications et créez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) pour l’appliquer.
 
-1. Activez l’optimisation des images Fastly dans l’administration Commerce (Fastly doit être configuré au préalable), comme décrit dans la section <https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization>.
+1. Activez l’optimisation des images Fastly dans l’administration Commerce (Fastly doit être configuré au préalable), comme décrit dans la section <https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization>.
 
-Si la configuration est correcte, mais que vous rencontrez toujours le problème, poursuivez l’enquête ou contactez [l’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Si la configuration est correcte, mais que vous rencontrez toujours le problème, poursuivez l’enquête ou contactez [l’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

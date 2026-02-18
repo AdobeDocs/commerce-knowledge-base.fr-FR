@@ -42,7 +42,7 @@ Pour résoudre le problème, veuillez mettre à jour votre compositeur vers la v
 1. Cela ajoute l’exigence de cette version du package du compositeur. Vérifiez le fichier de verrouillage. `composer/composer` version doit être 1.0.22 ou une version ultérieure.
 1. Validez le `composer.json` et le `composer.lock`, puis envoyez un déploiement .
 
-Si cette méthode ne fonctionne pas, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+Si cette méthode ne fonctionne pas, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Lecture connexe
 

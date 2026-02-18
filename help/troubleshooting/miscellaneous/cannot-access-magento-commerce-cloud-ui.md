@@ -23,12 +23,12 @@ Lors de la première tentative de connexion à l’interface utilisateur de votr
 
 Si vous obtenez une erreur 403 lors de l’accès initial à l’URL, assurez-vous de disposer d’un rôle dans la branche principale.
 
-1. Contactez le propriétaire de la licence ou un super utilisateur du projet et assurez-vous qu’il vous a fourni l’accès en tant qu’**utilisateur au niveau de l’environnement**, également décrit dans [Projets cloud > Gérer les utilisateurs à partir de la console cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-from-the-cloud-console) dans notre documentation destinée aux développeurs.
+1. Contactez le propriétaire de la licence ou un super utilisateur du projet et assurez-vous qu’il vous a fourni l’accès en tant qu’**utilisateur au niveau de l’environnement**, également décrit dans [Projets cloud > Gérer les utilisateurs à partir de la console cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=fr#manage-users-from-the-cloud-console) dans notre documentation destinée aux développeurs.
 
    Si vous disposez uniquement d’un rôle applicable dans une branche spécifique, vous devez accéder à l’URL de cette branche, par exemple, .
    `https://console.adobecommerce.com/<owner-name>/<project-id>/<branch-name>`
 
    La prochaine fois que vous accéderez à l’URL principale, elle apparaîtra par défaut sur le dernier environnement que vous avez visité.
 
-1. Si vous ne parvenez toujours pas à vous connecter, сcontactez le propriétaire de la licence ou un super utilisateur pour le projet et assurez-vous qu’il vous a fourni l’accès en tant qu’**utilisateur au niveau du projet**, comme décrit dans [Projets cloud > Ajouter un utilisateur au projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#add-a-user-to-the-project) dans notre documentation destinée aux développeurs.
-1. Si l’erreur persiste, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+1. Si vous ne parvenez toujours pas à vous connecter, сcontactez le propriétaire de la licence ou un super utilisateur pour le projet et assurez-vous qu’il vous a fourni l’accès en tant qu’**utilisateur au niveau du projet**, comme décrit dans [Projets cloud > Ajouter un utilisateur au projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=fr#add-a-user-to-the-project) dans notre documentation destinée aux développeurs.
+1. Si l’erreur persiste, [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).

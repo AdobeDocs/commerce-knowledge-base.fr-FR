@@ -17,7 +17,7 @@ Le 3 septembre, le Multi-State Information Sharing and Analysis Center (MS-ISAC)
 
 >[!WARNING]
 >
->Concernant Adobe Commerce sur les infrastructures cloud, veuillez noter que les mises à niveau de service ne peuvent pas être envoyées à l’environnement de production sans préavis de 48 heures ouvrables à notre équipe en charge de l’infrastructure. Cela est nécessaire car nous devons nous assurer qu’un ingénieur du support à l’infrastructure est disponible pour mettre à jour votre configuration dans le délai souhaité avec un temps d’arrêt minimal pour votre environnement de production. Ainsi, 48 heures avant le moment où vos modifications doivent être mises en production [soumettez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) détaillant la mise à niveau de service requise et indiquant l’heure à laquelle vous souhaitez que le processus de mise à niveau démarre.
+>Concernant Adobe Commerce sur les infrastructures cloud, veuillez noter que les mises à niveau de service ne peuvent pas être envoyées à l’environnement de production sans préavis de 48 heures ouvrables à notre équipe en charge de l’infrastructure. Cela est nécessaire car nous devons nous assurer qu’un ingénieur du support à l’infrastructure est disponible pour mettre à jour votre configuration dans le délai souhaité avec un temps d’arrêt minimal pour votre environnement de production. Ainsi, 48 heures avant le moment où vos modifications doivent être mises en production [soumettez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) détaillant la mise à niveau de service requise et indiquant l’heure à laquelle vous souhaitez que le processus de mise à niveau démarre.
 
 Lisez la suite pour connaître les impacts et les étapes pour les sites Adobe Commerce :
 
@@ -28,7 +28,7 @@ Si vous utilisez Adobe Commerce sur une infrastructure cloud, travaillez avec vo
 Notes supplémentaires sur le redéploiement de votre site cloud pour cette mise à jour :
 
 * Si votre site utilise toujours PHP version 7.0, vous devrez d&#39;abord effectuer une mise à niveau vers une version PHP prise en charge avant de redéployer afin de profiter de ces mises à jour de sécurité.
-* Pour 2.1.x/2.2.x, plus d&#39;informations sur la mise à niveau de PHP peuvent être trouvées [ici](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html).
+* Pour 2.1.x/2.2.x, plus d&#39;informations sur la mise à niveau de PHP peuvent être trouvées [ici](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=fr).
 
 \* *Les versions précédentes de cet article et de notre message indiquaient le 19 septembre, mais nos équipes ont terminé leur travail plus tôt que prévu.*
 
