@@ -59,6 +59,6 @@ Pour vérifier qui est un super utilisateur dans le projet, reportez-vous à la 
 
 ## Lecture recommandée
 
-* [Résolution des problèmes de déploiement d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640).
+* [Résolution des problèmes de déploiement d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-29640).
 * [Impossible d&#39;accéder au référentiel Adobe Commerce sur le cloud : erreur 403 Interdit ou 404 Introuvable lors du déploiement](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
 * [Échec du déploiement avec « Erreur lors de la création du projet : le hook de build a échoué avec le code d’état 1 »](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).
