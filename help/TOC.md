@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: d1169e70188408f48207d9ca9b5a9ec3aaabeea0
+source-git-commit: 37d987f5eab3d229f0f3230c7da5a7a79c910dc4
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2036'
 ht-degree: 1%
 
 ---
@@ -162,7 +162,6 @@ ht-degree: 1%
       * [Les profils client n’apparaissent pas dans Experience Platform](/help/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported.md)
       * [PWA Studio : le navigateur ne peut pas résoudre le site .local.pwadev](/help/troubleshooting/miscellaneous/pwa-studio-browser-cannot-resolve-local-pwadev-site.md)
       * [Recommandations de produits non affichées dans Page Builder](/help/troubleshooting/miscellaneous/product-recommendations-do-not-show-in-page-builder.md)
-      * [Les requêtes AJAX à débit élevé entraînent de faibles performances](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md)
       * [PWA Studio : le navigateur affiche l’erreur « Impossible de remplacer par »](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
       * [exécuter le problème setup:static-content:deploy_version.txt](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed-version-txt-issue.md)
       * [Redirigez-vous vers le formulaire de connexion d’administrateur Commerce avec l’erreur « Votre compte est temporairement désactivé ».](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md)
