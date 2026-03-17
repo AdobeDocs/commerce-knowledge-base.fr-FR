@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 90da89b659179c2789a9ac60b4834411300f332b
+source-git-commit: 9ca39100b19808db467383433d5f6b58da3fc000
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '1984'
 ht-degree: 1%
 
 ---
@@ -217,7 +217,6 @@ ht-degree: 1%
    * [Rediriger le HTTP vers HTTPS pour toutes les pages d’Adobe Commerce sur l’infrastructure cloud (Forcer TLS)](/help/how-to/general/redirect-http-to-https-for-all-pages-on-cloud-force-tls.md)
    * [Allouer plus d’espace pour MySQL dans Adobe Commerce sur le cloud](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
    * [Modifier l&#39;ID incrément d&#39;une entité de base de données (commande, facture, avoir, etc.) dans un magasin particulier](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
-   * [Configuration d’un plan Fastly for Starter sur le cloud](/help/how-to/general/set-up-fastly-for-starter-plan-on-cloud.md)
    * [Réinitialisation de l’environnement sur Adobe Commerce sur l’infrastructure cloud](/help/how-to/general/reset-environment-on-cloud.md)
    * [MBI : ré-authentification des intégrations](/help/how-to/general/mbi-reauthenticating-integrations.md)
    * [Emplacements des journaux (répertoires) pour Pro plan : Intégration, Évaluation, Production](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
