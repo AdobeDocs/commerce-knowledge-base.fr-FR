@@ -39,7 +39,7 @@ Adoptez les nouveaux correctifs de sécurité uniquement (2.4.4-p9 ou 2.4.5-p8) 
    1. Créez une sauvegarde [DB à l&#39;aide des commandes de sauvegarde ECE-Tools DB](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots).
    1. Informez l’assistance que vous avez terminé la sauvegarde via votre ticket d’assistance. Pour connaître les étapes d’affichage et de suivi de vos tickets, reportez-vous au [Guide d’utilisation du centre d’aide Adobe Commerce : suivi de vos tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-tickets) dans notre base de connaissances du support.
    1. L’équipe d’assistance d’Adobe Commerce commence ensuite le processus de mise à niveau de MariaDB. Si toutes les étapes ci-dessus ont été effectuées et que la base de données est de taille moyenne, le processus prend environ une heure. Les bases de données plus volumineuses prennent plus de temps. Une fois la mise à niveau terminée, vous en êtes informé via votre ticket.
-1. Désactivez le mode de maintenance. Consultez la section [ Activer ou désactiver le mode de maintenance ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) dans la documentation destinée aux développeurs.
+1. Désactivez le mode de maintenance. Consultez la section [&#x200B; Activer ou désactiver le mode de maintenance &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) dans la documentation destinée aux développeurs.
 
 >[!NOTE]
 >

@@ -27,7 +27,7 @@ Par exemple :
 
 `max_execution_time = 120`
 
-Consultez l&#39;article [ Personnaliser les paramètres php.ini ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
+Consultez l&#39;article [&#x200B; Personnaliser les paramètres php.ini &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
 
 ## Exemple
 

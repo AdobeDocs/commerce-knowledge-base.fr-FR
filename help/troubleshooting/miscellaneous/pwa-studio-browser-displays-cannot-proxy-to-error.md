@@ -56,4 +56,4 @@ NodeJS ne peut pas résoudre le nom d’hôte de votre magasin Adobe Commerce.
 ## Lecture connexe
 
 * [Documentation PWA Studio for Adobe Commerce](https://developer.adobe.com/commerce/pwa-studio/)
-* [ Outils et bibliothèques ](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/)
+* [&#x200B; Outils et bibliothèques &#x200B;](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/)
