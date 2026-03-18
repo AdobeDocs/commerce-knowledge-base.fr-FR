@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 9ca39100b19808db467383433d5f6b58da3fc000
+source-git-commit: 8be0c125bb0417e34e016656337506da88796630
 workflow-type: tm+mt
-source-wordcount: '1984'
+source-wordcount: '1978'
 ht-degree: 1%
 
 ---
@@ -130,7 +130,6 @@ ht-degree: 1%
       * [le développement de l’origine d’extraction git échoue lors de la mise à jour du logiciel Adobe Commerce](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
       * [Bloqueurs lancés sur Adobe Commerce sur les infrastructures cloud](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
       * [Erreurs de paramètres PHP](/help/troubleshooting/miscellaneous/php-settings-errors.md)
-      * [L&#39;extension PHP mcrypt n&#39;est pas installée correctement](/help/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly.md)
       * [La tâche cron est bloquée au statut « en cours »](/help/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.md)
       * [Décharger les redirections non regex vers Fastly au lieu de Nginx (itinéraires)](/help/troubleshooting/miscellaneous/offload-non-regex-redirects-to-fastly-instead-of-nginx-routes.md)
       * [Erreurs et solutions PHP fatales courantes](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md)
