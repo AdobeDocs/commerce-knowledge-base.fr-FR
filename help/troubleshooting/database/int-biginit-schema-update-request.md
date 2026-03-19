@@ -4,7 +4,7 @@ description: Cet article fournit des solutions pour les cas où vous ne pouvez p
 exl-id: e2a00371-9032-4e81-b60e-5456ba35be94
 feature: Services
 role: Developer
-source-git-commit: 5ca7a4400e62db2419b32a31a4f6cf04f5a82e35
+source-git-commit: 2fa4ab1fcba962033a6dd6a448a6cec49b5e8bf2
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 0%
@@ -16,17 +16,17 @@ ht-degree: 0%
 >[!WARNING]
 >
 >Avant de mettre en œuvre la solution décrite dans cet article (`INT` à `BIGINT` mise à jour du schéma), les commerçants doivent toujours vérifier que le champ qu’ils vont modifier NE possède AUCUNE relation de clé étrangère avec une autre table. Si le champ possède des relations de clé étrangère avec une autre table, des problèmes se produiront car le champ associé est toujours `INT`. Il peut utiliser la requête suivante pour vérifier cela. Cette requête répertorie les relations de clé étrangère disponibles dans la base de données pour le champ de table donné :
->
->```mysql
->SELECT 
->     TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME,REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME
->FROM
->   INFORMATION_SCHEMA.KEY_COLUMN_USAGE
->WHERE
->     REFERENCED_TABLE_SCHEMA = '<database_name>' AND
->     REFERENCED_TABLE_NAME = '<table_name>' AND
->     REFERENCED_COLUMN_NAME = '<table_field>';
->```
+
+```mysql
+SELECT 
+   TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME,REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME
+FROM
+  INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE
+   REFERENCED_TABLE_SCHEMA = '<database_name>' AND
+   REFERENCED_TABLE_NAME = '<table_name>' AND
+   REFERENCED_COLUMN_NAME = '<table_field>';
+```
 
 ## Produits et versions concernés
 
@@ -40,6 +40,7 @@ SQLSTATE[22003]: Numeric value out of range: 167 Out of range value for column '
 ```
 
 Les solutions décrites dans l’article sont les suivantes :
+
 * Mettez à jour la `[ AUTO_INCREMENT ]` à la valeur suivante dans le tableau ou
 * `INT` à `BIGINT` mise à jour du schéma
 
@@ -56,7 +57,7 @@ Si la `max(value_id)` est inférieure à la `max int(11) [ 4294967296 ]` et que 
 
 >[!WARNING]
 >
->Effectuez une sauvegarde de la base de données avant de modifier les tables. Mettez également le site en [mode de maintenance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=fr#maintenance-mode). En outre, il est également recommandé d’exécuter la commande [!DNL MySQL] optimizer sur les tables de la base de données (uniquement sur les tables où des modifications ont été apportées) après avoir effectué les modifications.
+>Effectuez une sauvegarde de la base de données avant de modifier les tables. Mettez également le site en [mode de maintenance](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode). En outre, il est également recommandé d’exécuter la commande [!DNL MySQL] optimizer sur les tables de la base de données (uniquement sur les tables où des modifications ont été apportées) après avoir effectué les modifications.
 
 >[!NOTE]
 >
@@ -111,7 +112,7 @@ Pour ce faire :
 
 ## Lecture connexe
 
-* [Instructions générales [!DNL MySQL] &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html?lang=fr) dans le Guide d’installation de Commerce
-* [&#x200B; Bonnes pratiques relatives aux bases de données pour Adobe Commerce sur les infrastructures cloud &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html?lang=fr) dans notre base de connaissances d’assistance
-* [Problèmes de base de données les plus courants dans Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html?lang=fr) dans notre base de connaissances d’assistance
-* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+* [Instructions générales [!DNL MySQL] ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html) dans le Guide d’installation de Commerce
+* [ Bonnes pratiques relatives aux bases de données pour Adobe Commerce sur les infrastructures cloud ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html) dans notre base de connaissances d’assistance
+* [Problèmes de base de données les plus courants dans Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) dans notre base de connaissances d’assistance
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook

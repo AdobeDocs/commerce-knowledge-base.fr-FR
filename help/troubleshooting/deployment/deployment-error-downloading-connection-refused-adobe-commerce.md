@@ -4,9 +4,9 @@ description: 'Cet article fournit une solution à l’erreur de déploiement : *
 exl-id: 520cf50f-3682-441d-87a7-8e05301a2b0c
 feature: Cache, Deploy
 role: Developer
-source-git-commit: c005409900021a72d73c10a2df5f23be3f2bc2cf
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -55,10 +55,10 @@ Demandez à un super utilisateur du projet d’exécuter cette commande :
 magento-cloud project:clear-build-cache -p <project ID>
 ```
 
-Pour vérifier qui est un super utilisateur dans le projet, reportez-vous à la section [Afficher le rôle d’un utilisateur dans le projet](/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user’s-project-role) dans le guide Commerce sur les infrastructures cloud.
+Pour vérifier qui est un super utilisateur dans le projet, reportez-vous à la section [Afficher le rôle d’un utilisateur dans le projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user’s-project-role) dans le guide Commerce sur les infrastructures cloud.
 
 ## Lecture recommandée
 
-* [Résolution des problèmes de déploiement d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-29640).
-* [Impossible d&#39;accéder au référentiel Adobe Commerce sur le cloud : erreur 403 Interdit ou 404 Introuvable lors du déploiement](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
-* [Échec du déploiement avec « Erreur lors de la création du projet : le hook de build a échoué avec le code d’état 1 »](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).
+* [Résolution des problèmes de déploiement d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640).
+* [Impossible d&#39;accéder au référentiel Adobe Commerce sur le cloud : erreur 403 Interdit ou 404 Introuvable lors du déploiement](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
+* [Échec du déploiement avec « Erreur lors de la création du projet : le hook de build a échoué avec le code d’état 1 »](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).

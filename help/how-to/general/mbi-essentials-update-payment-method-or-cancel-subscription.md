@@ -3,9 +3,9 @@ title: 'Adobe Commerce Intelligence Essentials : mettre à jour le mode de paiem
 description: Comment les clients Commerce Intelligence Essentials éligibles (autonomes, mois par mois, facturation via account.magento.com) peuvent-ils mettre à jour le mode de paiement ou annuler ? Ne s’applique pas aux abonnements Pro, Cloud, basés sur un contrat ou facturés.
 exl-id: 45e95451-6d17-44c7-81d3-87f5876b5758
 feature: Commerce Intelligence
-source-git-commit: 7d304a492471168f456071a9a38134f465dbc88f
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -41,4 +41,4 @@ Pour que les clients Commerce Intelligence Essentials puissent annuler leurs abo
 
 ## Lecture connexe
 
-* [Guide de l’utilisateur de Commerce Intelligence](/docs/commerce-business-intelligence/mbi/guide-overview.html)
+* [Guide de l’utilisateur de Commerce Intelligence](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html)

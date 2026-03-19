@@ -1,21 +1,21 @@
 ---
-title: Erreurs de déploiement où des correctifs sont introuvables
-description: '"Cet article fournit une solution au problème où une erreur s’affiche *Les correctifs suivants n’ont pas été trouvés : MDVA-XXXXX, ACSD-XXXXX. Veuillez vérifier avec la commande "status" la disponibilité de ces correctifs pour la version actuelle du Magento*."'
+title: Erreurs de déploiement pour lesquelles les correctifs sont introuvables
+description: 'Cet article fournit une solution au problème d''erreur *Les correctifs suivants n''ont pas été trouvés : MDVA-XXXXX, ACSD-XXXXX. Vérifiez la disponibilité de la commande « status » de ces correctifs pour la version de Magento en cours*.'
 exl-id: 5a2fd35a-892a-48af-a41f-f275297b3e2e
-source-git-commit: c903360ffb22f9cd4648f6fdb4a812cb61cd90c5
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
 
-# Erreurs de déploiement où des correctifs sont introuvables
+# Erreurs de déploiement pour lesquelles les correctifs sont introuvables
 
-Cet article fournit une solution au problème lors de la mise à niveau de votre instance. Le déploiement échoue et une erreur s’affiche dans les journaux de déploiement : *Les correctifs suivants sont introuvables : MDVA-XXXXX, ACSD-XXXXX. Veuillez vérifier avec la disponibilité de la commande &quot;status&quot; de ces correctifs pour la version actuelle du Magento*.
+Cet article fournit une solution au problème lors de la mise à niveau de votre instance. Le déploiement échoue et une erreur s’affiche dans les journaux de déploiement : *Les correctifs suivants n’ont pas été trouvés : MDVA-XXXXX, ACSD-XXXXX. Vérifiez la disponibilité de la commande « status » de ces correctifs pour la version Magento actuelle*.
 
 ## Produits et versions concernés
 
-* Adobe Commerce sur l’infrastructure cloud, [toutes les versions prises en charge](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+* Adobe Commerce sur les infrastructures cloud, [toutes les versions prises en charge](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 
 ## Problème
@@ -28,7 +28,7 @@ Les correctifs précédemment appliqués pour vos anciennes versions ne sont pas
 
 ## Solution
 
-1. Vérifiez votre fichier `.magento.env.yaml` sous la section QUALITY_PATCH , par exemple :
+1. Vérifiez votre fichier `.magento.env.yaml` sous la section QUALITY_PATCHES, par ex.,
 
    ```yaml
    QUALITY_PATCHES:
@@ -36,10 +36,10 @@ Les correctifs précédemment appliqués pour vos anciennes versions ne sont pas
     - ACSD-XXXXX
    ```
 
-1. Recherchez les ID de correctif dans les [Notes de mise à jour des correctifs de qualité](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) pour vérifier si chacun d’eux peut être appliqué à la nouvelle version d’Adobe Commerce vers laquelle vous effectuez une mise à niveau.
+1. Recherchez les ID de correctif dans les [ Notes de mise à jour des correctifs de qualité ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) pour vérifier si chacun d’eux peut être appliqué à la nouvelle version d’Adobe Commerce vers laquelle vous effectuez la mise à niveau.
 1. Si le correctif ne s’applique pas à la nouvelle version d’Adobe Commerce vers laquelle vous souhaitez effectuer la mise à niveau, supprimez l’ID de correctif du fichier `.magento.env.yaml`.
-1. Une fois que vous avez examiné tous les ID de correctif indiqués par l’erreur, redéployez les modifications et redéployez.
+1. Une fois que vous avez révisé tous les identifiants de correctif indiqués par l’erreur, poussez les modifications et redéployez.
 
 ## Lecture connexe
 
-* [Appliquez les correctifs](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=en#apply-a-patch-in-a-local-environment) dans le guide Commerce on Cloud Infrastructure.
+* Guide [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=en#apply-a-patch-in-a-local-environment) dans Commerce sur les infrastructures cloud.
