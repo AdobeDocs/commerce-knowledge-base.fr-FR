@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 8be0c125bb0417e34e016656337506da88796630
+source-git-commit: e669e0f092b009a124f728390f6fff24aadece15
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1955'
 ht-degree: 1%
 
 ---
@@ -222,9 +222,7 @@ ht-degree: 1%
    * [Adobe Commerce sur le cloud : vérifier si une mise à niveau des instances de l’hôte est nécessaire](/help/how-to/general/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.md)
    * [Bootstrap Adobe Commerce 2 dans un script sandbox](/help/how-to/general/bootstrap-magento-2-in-a-sandbox-script.md)
    * [Vidéo de formation sur Adobe Commerce Intelligence : ensembles de filtres](/help/how-to/general/mbi-training-video-filter-sets.md)
-   * [Comment profiler des requêtes de base de données dans Adobe Commerce sur une infrastructure cloud](/help/how-to/general/how-to-profile-database-queries-on-cloud.md)
    * [Bloquer le trafic malveillant pour Adobe Commerce au niveau Fastly](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md)
-   * [Créez un correctif pour l’installation du compositeur Adobe Commerce à partir d’une validation GitHub](/help/how-to/general/create-a-patch-for-a-magento-2-composer-installation-from-a-github-commit.md)
    * [Modifier le mot de passe administrateur sur Adobe Commerce sur l’infrastructure cloud](/help/how-to/general/change-magento-admin-password-on-cloud.md)
    * [Affichage du niveau de processeur virtuel de l’environnement dans votre cluster sur Adobe Commerce](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md)
    * [Adobe Commerce sur l’infrastructure cloud : vérifiez la configuration CPU de l’hôte.](/help/how-to/general/magento-commerce-cloud-check-hosts-cpu-configuration.md)
