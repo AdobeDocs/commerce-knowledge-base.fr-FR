@@ -25,7 +25,7 @@ La couronne a cessé de fonctionner.
 
 ## Cause
 
-Le module [!DNL OpCache] a été mis à jour vers une version plus récente qui a introduit un plug-in [!DNL GraphQL] qui réécrit les `env.php` au moment de l’exécution et qui peut remplacer le paramètre cron, ce qui a pu causer le problème. La configuration [!DNL OpCache] doit être mise à jour afin d’éviter tout problème lié au `env.php file`. Ce problème a été résolu dans la [version 2002.1.13](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13) du package [!DNL ECE Tools].
+Le module [!DNL OpCache] a été mis à jour vers une version plus récente qui a introduit un plug-in [!DNL GraphQL] qui réécrit les `env.php` au moment de l’exécution et qui peut remplacer le paramètre cron, ce qui a pu causer le problème. La configuration [!DNL OpCache] doit être mise à jour afin d’éviter tout problème lié au `env.php file`. Ce problème a été résolu dans la [version 2002.1.13](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=fr#v2002.1.13) du package [!DNL ECE Tools].
 
 ## Solution
 
@@ -56,6 +56,6 @@ Si ce fichier n’est pas présent, ajoutez https://github.com/magento/magento-c
 
 ## Lecture connexe
 
-* [Problèmes de vérification de l’état de préparation de Cron](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues.html)
-* [Propriété Crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html)
-* [La tâche cron est bloquée au statut « en cours d’exécution »](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)
+* [Problèmes de vérification de l’état de préparation de Cron](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues.html?lang=fr)
+* [Propriété Crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=fr)
+* [La tâche cron est bloquée au statut « en cours d’exécution »](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=fr)

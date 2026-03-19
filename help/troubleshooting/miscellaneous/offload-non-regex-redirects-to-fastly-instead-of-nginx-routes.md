@@ -39,7 +39,7 @@ Les étapes suivantes expliquent comment placer des redirections sur [!DNL Fastl
 
 1. Créez un dictionnaire Edge.
 
-   Tout d’abord, vous pouvez utiliser des [[!DNL VCL] fragments de code dans Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) pour définir un dictionnaire de périphérie. Il contiendra les redirections.
+   Tout d’abord, vous pouvez utiliser des [[!DNL VCL] fragments de code dans Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=fr) pour définir un dictionnaire de périphérie. Il contiendra les redirections.
 
    Quelques mises en garde à ce sujet :
 
@@ -100,7 +100,7 @@ Si vous ne souhaitez pas exécuter un environnement d’évaluation Adobe Commer
 ## Lecture connexe
 
 * [[!DNL Fastly VCL] référence](https://docs.fastly.com/vcl/)
-* [Configurer les itinéraires](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) dans notre documentation destinée aux développeurs
-* [Configuration [!DNL Fastly]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) dans notre documentation destinée aux développeurs
+* [Configurer les itinéraires](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html?lang=fr) dans notre documentation destinée aux développeurs
+* [Configuration [!DNL Fastly]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=fr) dans notre documentation destinée aux développeurs
 * [[!DNL VCL]  aide-mémoire pour l’expression régulière &#x200B;](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) dans notre documentation destinée aux développeurs
-* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook

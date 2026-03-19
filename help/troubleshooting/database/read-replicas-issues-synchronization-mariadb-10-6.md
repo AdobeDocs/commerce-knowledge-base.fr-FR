@@ -30,7 +30,7 @@ La configuration `slave_parallel_mode` de la base de données a été modifiée 
 
 ## Solution
 
-1. Vérifiez que le paramètre `slave_parallel_mode` est défini sur *conservateur* (vous devrez [créer un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) si la valeur ne s’affiche pas comme *conservateur*). Pour vérifier, exécutez la commande suivante :
+1. Vérifiez que le paramètre `slave_parallel_mode` est défini sur *conservateur* (vous devrez [créer un ticket d’assistance](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=fr#submit-ticket) si la valeur ne s’affiche pas comme *conservateur*). Pour vérifier, exécutez la commande suivante :
 
    ```
     MariaDB [main]> show variables like 'slave_parallel_mode';
@@ -54,10 +54,10 @@ La configuration `slave_parallel_mode` de la base de données a été modifiée 
 
 
 
-Pour connaître la procédure de mise à jour de la configuration de la base de données, reportez-vous à la section [DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#database_configuration) de la rubrique Déploiement des variables du guide Commerce sur les infrastructures cloud.
+Pour connaître la procédure de mise à jour de la configuration de la base de données, reportez-vous à la section [DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=fr#database_configuration) de la rubrique Déploiement des variables du guide Commerce sur les infrastructures cloud.
 
 
 ## Lecture connexe
 
-* [Configurez les variables d’environnement pour le déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) dans le guide Commerce sur les infrastructures cloud.
-* [Bonnes pratiques relatives à la configuration de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) dans le guide d’implémentation.
+* [Configurez les variables d’environnement pour le déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=fr) dans le guide Commerce sur les infrastructures cloud.
+* [Bonnes pratiques relatives à la configuration de la base de données](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=fr) dans le guide d’implémentation.

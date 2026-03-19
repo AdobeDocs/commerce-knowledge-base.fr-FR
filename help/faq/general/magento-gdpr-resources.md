@@ -16,17 +16,17 @@ Cet article répertorie les ressources de documentation officielles qui explique
 
 ## Adobe Commerce est prêt pour le RGPD
 
-La [page d’accueil officielle](https://business.adobe.com/privacy/general-data-protection-regulation.html) pour toutes les ressources RGPD d’Adobe Commerce.
+La [page d’accueil officielle](https://business.adobe.com/fr/privacy/general-data-protection-regulation.html) pour toutes les ressources RGPD d’Adobe Commerce.
 
 ## Relevés officiels d’Adobe Commerce
 
-* [Règlement général sur la protection des données - RGPD](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/privacy/gdpr.html)
-* [Conformité au RGPD](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
+* [Règlement général sur la protection des données - RGPD](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/privacy/gdpr.html?lang=fr)
+* [Conformité au RGPD](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html?lang=fr)
 
 ## La conformité au RGPD dans notre documentation destinée aux développeurs : Adobe Commerce 2.X et 1.X
 
-* [Référence des informations personnelles du client (version 2.x)](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m2.html)
-* [Référence des informations personnelles du client (version 1.x)](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m1.html)
+* [Référence des informations personnelles du client (version 2.x)](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m2.html?lang=fr)
+* [Référence des informations personnelles du client (version 1.x)](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m1.html?lang=fr)
 
 Ces rubriques de la documentation pour les développeurs d’Adobe Commerce fournissent des diagrammes de flux de données et des informations de base de données qui aident les commerçants et les intégrateurs système à résoudre des cas d’utilisation similaires à ce qui suit :
 

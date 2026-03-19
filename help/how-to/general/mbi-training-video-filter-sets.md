@@ -21,6 +21,6 @@ Dans cette vidéo, vous apprendrez :
 * Application d’un jeu de filtres à une mesure
 * Application d’un jeu de filtres à une dimension de données calculée
 
-Pour regarder la vidéo, accédez à [Commerce Intelligence - Ensembles de filtres](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/business-intelligence/filter-sets.html) dans Adobe Experience League.
+Pour regarder la vidéo, accédez à [Commerce Intelligence - Ensembles de filtres](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/business-intelligence/filter-sets.html?lang=fr) dans Adobe Experience League.
 
-**Vous voulez suivre ?** Pour obtenir des instructions écrites, consultez notre tutoriel [Création de jeux de filtres pour les mesures](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html) .
+**Vous voulez suivre ?** Pour obtenir des instructions écrites, consultez notre tutoriel [Création de jeux de filtres pour les mesures](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html?lang=fr) .

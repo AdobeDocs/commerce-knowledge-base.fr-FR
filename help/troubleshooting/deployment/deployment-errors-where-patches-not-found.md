@@ -36,10 +36,10 @@ Les correctifs précédemment appliqués pour vos anciennes versions ne sont pas
     - ACSD-XXXXX
    ```
 
-1. Recherchez les ID de correctif dans les [&#x200B; Notes de mise à jour des correctifs de qualité &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) pour vérifier si chacun d’eux peut être appliqué à la nouvelle version d’Adobe Commerce vers laquelle vous effectuez la mise à niveau.
+1. Recherchez les ID de correctif dans les [&#x200B; Notes de mise à jour des correctifs de qualité &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=fr) pour vérifier si chacun d’eux peut être appliqué à la nouvelle version d’Adobe Commerce vers laquelle vous effectuez la mise à niveau.
 1. Si le correctif ne s’applique pas à la nouvelle version d’Adobe Commerce vers laquelle vous souhaitez effectuer la mise à niveau, supprimez l’ID de correctif du fichier `.magento.env.yaml`.
 1. Une fois que vous avez révisé tous les identifiants de correctif indiqués par l’erreur, poussez les modifications et redéployez.
 
 ## Lecture connexe
 
-* Guide [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=en#apply-a-patch-in-a-local-environment) dans Commerce sur les infrastructures cloud.
+* Guide [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr#apply-a-patch-in-a-local-environment) dans Commerce sur les infrastructures cloud.

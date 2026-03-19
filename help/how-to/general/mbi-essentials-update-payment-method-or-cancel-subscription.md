@@ -41,4 +41,4 @@ Pour que les clients Commerce Intelligence Essentials puissent annuler leurs abo
 
 ## Lecture connexe
 
-* [Guide de l’utilisateur de Commerce Intelligence](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html)
+* [Guide de l’utilisateur de Commerce Intelligence](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html?lang=fr)

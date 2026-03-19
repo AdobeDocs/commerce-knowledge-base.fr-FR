@@ -55,10 +55,10 @@ Demandez à un super utilisateur du projet d’exécuter cette commande :
 magento-cloud project:clear-build-cache -p <project ID>
 ```
 
-Pour vérifier qui est un super utilisateur dans le projet, reportez-vous à la section [Afficher le rôle d’un utilisateur dans le projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user’s-project-role) dans le guide Commerce sur les infrastructures cloud.
+Pour vérifier qui est un super utilisateur dans le projet, reportez-vous à la section [Afficher le rôle d’un utilisateur dans le projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=fr#view-a-user’s-project-role) dans le guide Commerce sur les infrastructures cloud.
 
 ## Lecture recommandée
 
-* [Résolution des problèmes de déploiement d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640).
-* [Impossible d&#39;accéder au référentiel Adobe Commerce sur le cloud : erreur 403 Interdit ou 404 Introuvable lors du déploiement](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
-* [Échec du déploiement avec « Erreur lors de la création du projet : le hook de build a échoué avec le code d’état 1 »](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).
+* [Résolution des problèmes de déploiement d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-29640).
+* [Impossible d&#39;accéder au référentiel Adobe Commerce sur le cloud : erreur 403 Interdit ou 404 Introuvable lors du déploiement](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=fr).
+* [Échec du déploiement avec « Erreur lors de la création du projet : le hook de build a échoué avec le code d’état 1 »](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html?lang=fr).
