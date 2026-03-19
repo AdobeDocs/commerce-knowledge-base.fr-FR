@@ -102,5 +102,5 @@ Si vous ne souhaitez pas exécuter un environnement d’évaluation Adobe Commer
 * [[!DNL Fastly VCL] référence](https://docs.fastly.com/vcl/)
 * [Configurer les itinéraires](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) dans notre documentation destinée aux développeurs
 * [Configuration [!DNL Fastly]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) dans notre documentation destinée aux développeurs
-* [[!DNL VCL]  aide-mémoire pour l’expression régulière ](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) dans notre documentation destinée aux développeurs
+* [[!DNL VCL]  aide-mémoire pour l’expression régulière &#x200B;](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) dans notre documentation destinée aux développeurs
 * [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
