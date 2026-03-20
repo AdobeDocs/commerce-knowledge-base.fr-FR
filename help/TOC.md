@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 03cb143909535a2e615b87ac4bdff425fb667c97
+source-git-commit: 8f1f6cbdc5aabb0c05a51287d463f051f4233b16
 workflow-type: tm+mt
-source-wordcount: '1945'
+source-wordcount: '1941'
 ht-degree: 1%
 
 ---
@@ -229,7 +229,6 @@ ht-degree: 1%
    * [Comment créer un vidage nettoyé lorsque l’agent de support le demande](/help/how-to/general/create-dump-for-support.md)
    * [Certificats SSL (TLS) pour Adobe Commerce sur les infrastructures cloud](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
    * [Impossible d’accéder à la dernière version de Beta](/help/how-to/general/cannot-access-the-latest-beta-version.md)
-   * [Basculer en mode Application](/help/how-to/general/switch-the-magento-mode.md)
    * [Comment se connecter au compte Fastly fourni avec Adobe Commerce sur l’infrastructure cloud](/help/how-to/general/accessing-the-fastly-account-provided-with-adobe-commerce-for-cloud.md)
    * [Afficher le numéro de rapport d’erreur Adobe Commerce au lieu de l’erreur Fastly 503](/help/how-to/general/display-magento-error-report-number-instead-of-fastly-503-error-on-cloud.md)
    * [Réinitialiser un thème aux valeurs par défaut](/help/how-to/general/reset-a-theme-to-defaults.md)
