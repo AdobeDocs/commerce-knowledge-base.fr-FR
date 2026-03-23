@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 8f1f6cbdc5aabb0c05a51287d463f051f4233b16
+source-git-commit: fb8a1b5815663b62c5416829b5471adb9c0980c5
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1928'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,6 @@ ht-degree: 1%
       * [Adobe Commerce 2.4.0 : passage en caisse de Braintree absent de plusieurs adresses](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
       * [2.3.4 Correctif de problème PayPal](/help/troubleshooting/payments/2-3-4-paypal-issue-hotfix.md)
       * [Adobe Commerce 2.4.1 : message incorrect lors du passage en caisse des invités PayPal-Braintree](/help/troubleshooting/payments/magento-2-4-1-wrong-message-on-paypal-via-braintree-guest-checkout.md)
-      * [Erreur lors de la commande avec le compte Sandbox Authorize.net (Une erreur s&#39;est produite sur le serveur)](/help/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server.md)
       * [Le paiement est bloqué lorsque le mode de paiement Authorize.net est utilisé](/help/troubleshooting/payments/checkout-is-stuck-when-authorize-net-payment-method-is-used.md)
       * [Problème connu dans Adobe Commerce 2.4.1 : une erreur s’affiche lors de la passage en caisse avec PayPal Braintree](/help/troubleshooting/payments/magento-2-4-1-known-issue-error-popping-up-on-checkout-with-paypal-braintree.md)
       * [Page du terminal virtuel Braintree Adobe Commerce 2.4.0 corrompue](/help/troubleshooting/payments/magento-2-4-0-known-issue-braintree-virtual-terminal-page-is-corrupted.md)
@@ -208,7 +207,7 @@ ht-degree: 1%
    * [Restaurer un instantané de base de données à partir de l’évaluation ou de la production](/help/how-to/general/restore-a-db-snapshot-from-staging-or-production.md)
    * [Restauration de l’environnement sans instantané du cloud](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
    * [Adobe Commerce sur les infrastructures cloud : calcul de l&#39;allocation CPU](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
-   * [Adobe Commerce Réinitialiser manuellement les tâches cron bloquées sur l’infrastructure cloud](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
+   * [Réinitialiser manuellement les tâches cron bloquées sur l’infrastructure cloud](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [Test rapide en exploitation si un site actif utilise le même domaine](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
    * [Identifier et mesurer les pannes d’Adobe Commerce sur les infrastructures cloud](/help/how-to/general/how-to-identify-outages.md)
    * [Réorganiser les branches cloud sur Adobe Commerce](/help/how-to/general/rearrange-cloud-branches-adobe-commerce.md)
