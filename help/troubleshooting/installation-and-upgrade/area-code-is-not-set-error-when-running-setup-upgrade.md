@@ -51,6 +51,6 @@ Le correctif est également compatible (mais peut ne pas résoudre le problème)
 
 ## Application du correctif
 
-Pour obtenir des instructions, consultez [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) dans notre base de connaissances d’assistance.
+Pour obtenir des instructions, consultez [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) dans notre base de connaissances d’assistance.
 
 ## Fichiers attachés

@@ -69,6 +69,6 @@ Le correctif a été créé pour :
 
 ## Application du correctif
 
-Pour obtenir des instructions, consultez [Application d’un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) .
+Pour obtenir des instructions, consultez [Application d’un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) .
 
 ## Fichiers attachés

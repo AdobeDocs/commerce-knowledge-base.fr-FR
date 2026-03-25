@@ -49,11 +49,11 @@ Error 500: NOTICE: PHP message: PHP Fatal error: Uncaught Error: Call to a membe
 
 Pour les commerçants sur site Adobe Commerce : appliquez le correctif [hotfix](https://magento.com/tech-resources/download#download2353) disponible à partir de la section Téléchargements du portail [magento.com](https://magento.com) dans Mon compte.
 
-Pour Adobe Commerce sur les commerçants d’infrastructure cloud : Adobe a inclus le correctif dans les correctifs cloud pour Commerce v1.0.2. Reportez-vous aux notes de mise à jour [Correctifs cloud pour Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&itm_medium=quick_search&itm_campaign=federated_search&itm_term=cloud%20patche) de notre documentation destinée aux développeurs pour obtenir des instructions sur l’application du dernier package.
+Pour Adobe Commerce sur les commerçants d’infrastructure cloud : Adobe a inclus le correctif dans les correctifs cloud pour Commerce v1.0.2. Reportez-vous aux notes de mise à jour [Correctifs cloud pour Commerce](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&itm_medium=quick_search&itm_campaign=federated_search&itm_term=cloud%20patche) de notre documentation destinée aux développeurs pour obtenir des instructions sur l’application du dernier package.
 
 ## Application du correctif
 
-Pour obtenir des instructions, consultez [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) dans notre base de connaissances d’assistance.
+Pour obtenir des instructions, consultez [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) dans notre base de connaissances d’assistance.
 
 ## Lectures connexes
 
