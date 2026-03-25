@@ -26,7 +26,7 @@ Cet article fournit un correctif pour le problème Adobe Commerce 2.4.0 connu, o
 
 <u>Procédure à suivre :</u>
 
-Dans Commerce Admin, accédez à **Ventes** > **Terminal virtuel Braintree** . ** **
+Dans Commerce Admin, accédez à **Ventes** > **Terminal virtuel Braintree** . **&#x200B; **
 
 <u>Résultat attendu : </u>
 
@@ -34,13 +34,13 @@ La page **Braintree Virtual Terminal** se charge avec l’interface utilisateur 
 
 <u>Résultat réel :</u>
 
-L&#39;interface utilisateur de la page du terminal virtuel **** est endommagée.
+L&#39;interface utilisateur de la page du terminal virtuel **&#x200B;**&#x200B;est endommagée.
 
 ### Scénario 2 : mode de paiement Braintree configuré
 
 <u>Procédure à suivre :</u>
 
-Dans Commerce Admin, accédez à **Ventes** > **Terminal virtuel Braintree** . ** **
+Dans Commerce Admin, accédez à **Ventes** > **Terminal virtuel Braintree** . **&#x200B; **
 
 <u>Résultat attendu : </u>
 
@@ -48,7 +48,7 @@ La page **Braintree Virtual Terminal** s’affiche dans l’interface utilisateu
 
 <u>Résultat réel :</u>
 
-L&#39;interface utilisateur de la page du terminal virtuel **** est endommagée et aucun avertissement ne s&#39;affiche.
+L&#39;interface utilisateur de la page du terminal virtuel **&#x200B;**&#x200B;est endommagée et aucun avertissement ne s&#39;affiche.
 
 ## Solution
 

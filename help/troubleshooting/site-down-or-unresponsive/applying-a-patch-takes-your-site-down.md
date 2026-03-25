@@ -65,4 +65,4 @@ Pour Adobe Commerce sur les infrastructures cloud, toutes les versions,
 
 ## Lecture connexe
 
-* [Comment appliquer un correctif de compositeur fourni par Adobe ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) dans notre base de connaissances d’assistance.
+* [Comment appliquer un correctif de compositeur fourni par Adobe &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) dans notre base de connaissances d’assistance.
