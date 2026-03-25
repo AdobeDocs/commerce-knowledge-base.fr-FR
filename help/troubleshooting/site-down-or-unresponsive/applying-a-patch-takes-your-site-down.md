@@ -1,19 +1,19 @@
 ---
-title: L’application d’un correctif réduit votre site.
-description: Cet article traite du problème où un correctif que vous venez d’appliquer entraîne la fermeture de votre site. Pour le résoudre, vous pouvez supprimer le correctif.
+title: L’application d’un correctif arrête votre site
+description: Cet article aborde le problème d’un correctif que vous venez d’appliquer qui entraîne l’arrêt de votre site. Pour résoudre ce problème, vous pouvez supprimer le correctif.
 exl-id: dc765bcd-0761-4efd-a345-46a908d61272
 feature: Cache
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
 
-# L’application d’un correctif réduit votre site.
+# L’application d’un correctif arrête votre site
 
-Cet article traite du problème où un correctif que vous venez d’appliquer entraîne la fermeture de votre site. Pour le résoudre, vous pouvez supprimer le correctif.
+Cet article aborde le problème d’un correctif que vous venez d’appliquer qui entraîne l’arrêt de votre site. Pour résoudre ce problème, vous pouvez supprimer le correctif.
 
 ## Produits et versions concernés
 
@@ -22,25 +22,25 @@ Cet article traite du problème où un correctif que vous venez d’appliquer en
 
 ## Problème
 
-Une fois que vous avez appliqué un correctif, votre site tombe en panne.
+Après avoir appliqué un correctif, votre site tombe en panne.
 
 ## Cause
 
-Ce problème peut apparaître en raison d’une incompatibilité de version entre le correctif que vous venez d’appliquer à votre site web, vos personnalisations, d’autres correctifs que vous avez appliqués dans le passé ou d’une autre erreur.
+Ce problème peut se produire en raison d’une incompatibilité de version entre le correctif que vous venez d’appliquer à votre site web, vos personnalisations, d’autres correctifs que vous avez appliqués par le passé ou d’une autre erreur.
 
 ## Solution
 
-Supprimez le correctif. La méthode de suppression des correctifs diffère pour Adobe Commerce sur l’infrastructure cloud par rapport à Adobe Commerce sur site et Magento Open Source.
+Retirez le correctif. La méthode de suppression des correctifs est différente pour Adobe Commerce sur les infrastructures cloud et pour Adobe Commerce On-premise et Magento Open Source.
 
 ### Magento Open Source, toutes les versions 1.X
 
-Pour les versions de Magento Open Source 1.X,
+Pour les versions Magento Open Source 1.X,
 
 * Exécutez la commande SSH suivante : `h SUPEE_patch --revert `
 
-### Adobe Commerce sur site, Magento Open Source, toutes les versions 2.x
+### Adobe Commerce On-premise, Magento Open Source, toutes les versions 2.x
 
-Pour les versions Adobe Commerce On-Premise et Magento Open Source 2.x,
+Pour les versions Adobe Commerce on-premise et Magento Open Source 2.x,
 
 1. Exécutez la commande SSH suivante :
 
@@ -52,9 +52,9 @@ Pour les versions Adobe Commerce On-Premise et Magento Open Source 2.x,
 
 1. Pour que les modifications soient prises en compte, actualisez le cache dans l’Admin sous **Système** > **Gestion du cache**.
 
-### Adobe Commerce sur l’infrastructure cloud, toutes les versions
+### Adobe Commerce sur les infrastructures cloud, toutes versions confondues
 
-Pour Adobe Commerce sur l’infrastructure cloud, toutes les versions,
+Pour Adobe Commerce sur les infrastructures cloud, toutes les versions,
 
 1. Supprimez le ou les fichiers `%patch_name%.composer.patch` du répertoire `m2-hotfixes`.
 1. Validez et envoyez vos modifications de code :
@@ -65,4 +65,4 @@ Pour Adobe Commerce sur l’infrastructure cloud, toutes les versions,
 
 ## Lecture connexe
 
-* [Comment appliquer un correctif de compositeur fourni par Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) dans notre base de connaissances de support.
+* [Comment appliquer un correctif de compositeur fourni par Adobe ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) dans notre base de connaissances d’assistance.

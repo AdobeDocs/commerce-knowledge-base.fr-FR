@@ -4,9 +4,9 @@ description: Cet article fournit un correctif pour un problème connu d’Adobe 
 exl-id: 2c1dadd9-7754-4b4c-8d37-b75c13beae5c
 feature: B2B, Install, Upgrade
 role: Developer
-source-git-commit: 7705b6030d2f0877c228dae1707916ad38c9d587
+source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -63,14 +63,14 @@ Pour le télécharger, faites défiler l’écran jusqu’à la fin de l’artic
 
 ## Application d’un correctif
 
-<u></u> de correctif du compositeur
+<u> de correctif du compositeur</u>
 
-Pour obtenir des instructions sur l’application d’un correctif compositeur[&#x200B; voir &#x200B;](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)Application d’un correctif compositeur fourni par Adobe .
+Pour obtenir des instructions sur l’application d’un correctif compositeur[ voir ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)Application d’un correctif compositeur fourni par Adobe .
 
 <u> du correctif </u>Git)
 
-* Voir [&#x200B; Application de correctifs &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans la documentation destinée aux développeurs pour obtenir des instructions sur les correctifs Git pour Adobe Commerce sur les infrastructures cloud.
-* Voir [&#x200B; Application de correctifs : correctifs personnalisés &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) dans la documentation destinée aux développeurs pour obtenir des instructions sur les correctifs Git pour Adobe Commerce.
+* Voir [ Application de correctifs ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) dans la documentation destinée aux développeurs pour obtenir des instructions sur les correctifs Git pour Adobe Commerce sur les infrastructures cloud.
+* Voir [ Application de correctifs : correctifs personnalisés ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) dans la documentation destinée aux développeurs pour obtenir des instructions sur les correctifs Git pour Adobe Commerce.
 
 ## Lecture connexe
 
