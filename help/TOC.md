@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 651620add857a2cf33c59fd0cd7972cb7c1e0cc3
+source-git-commit: 1502ee72f4421f8fdec5c0e780f1f56423a2cce8
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1880'
 ht-degree: 1%
 
 ---
@@ -215,10 +215,8 @@ ht-degree: 1%
    * [Modifier l&#39;ID incrément d&#39;une entité de base de données (commande, facture, avoir, etc.) dans un magasin particulier](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
    * [Réinitialisation de l’environnement sur Adobe Commerce sur l’infrastructure cloud](/help/how-to/general/reset-environment-on-cloud.md)
    * [MBI : ré-authentification des intégrations](/help/how-to/general/mbi-reauthenticating-integrations.md)
-   * [Emplacements des journaux (répertoires) pour Pro plan : Intégration, Évaluation, Production](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
    * [Adobe Commerce sur le cloud : vérifier si une mise à niveau des instances de l’hôte est nécessaire](/help/how-to/general/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.md)
    * [Bootstrap Adobe Commerce 2 dans un script sandbox](/help/how-to/general/bootstrap-magento-2-in-a-sandbox-script.md)
-   * [Vidéo de formation sur Adobe Commerce Intelligence : ensembles de filtres](/help/how-to/general/mbi-training-video-filter-sets.md)
    * [Bloquer le trafic malveillant pour Adobe Commerce au niveau Fastly](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md)
    * [Modifier le mot de passe administrateur sur Adobe Commerce sur l’infrastructure cloud](/help/how-to/general/change-magento-admin-password-on-cloud.md)
    * [Affichage du niveau de processeur virtuel de l’environnement dans votre cluster sur Adobe Commerce](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md)

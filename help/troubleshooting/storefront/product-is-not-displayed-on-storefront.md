@@ -4,9 +4,9 @@ description: Cet article fournit des solutions pour les cas où les produits ne 
 exl-id: 454eca5b-4722-46e0-8e5d-3daf8e3e675a
 feature: Cache, Categories, Console, Products, Storefront
 role: Admin
-source-git-commit: d7c714cf5b2f9db139440d814af26c12001bb4d9
+source-git-commit: ae2a4508daeaf2d29a5f615918fcc46626b2e196
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,5 @@ Chacun des points suivants peut résoudre le problème.
 * Effectuez la réindexation complète en exécutant `bin/magento indexer:reindex` à partir de la console et videz tout le cache dans Admin, sous **Système** > **Outils** > **Gestion du cache**, ou à partir de la console en exécutant `bin/magento cache:clean`.
 * Si ce qui précède ne vous aide pas, vous pouvez lancer une enquête plus approfondie en consultant les journaux dans le répertoire `var/log`.
 
-## Lectures connexes dans notre base de connaissances de support
 
-[Emplacements des journaux (répertoires) pour l&#39;architecture Pro](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
 
