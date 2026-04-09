@@ -28,7 +28,7 @@ Si vous n’avez pas accès à l’adresse e-mail actuelle, configurez le transf
 
 Pour modifier l’adresse e-mail, procédez comme suit :
 
-1. Réinitialisez le mot de passe utilisé avec l’ancienne adresse e-mail. Suivez les instructions fournies dans [Réinitialiser le mot de passe oublié](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) dans l’aide d’Adobe.
+1. Réinitialisez le mot de passe utilisé avec l’ancienne adresse e-mail. Suivez les instructions fournies dans [Réinitialiser le mot de passe oublié](https://helpx.adobe.com/fr/manage-account/using/change-or-reset-password.html) dans l’aide d’Adobe.
 1. Le lien de réinitialisation du mot de passe est envoyé à la boîte aux lettres du propriétaire actuel avec des instructions.
 1. Accédez à la page [Compte &#x200B;](https://account.adobe.com) pour vous connecter avec le nouvel e-mail et configurer le mot de passe.
 
@@ -50,9 +50,9 @@ Après avoir modifié l’adresse e-mail de votre ID MAGE, vous devez également
 ### Vérifier l’adresse e-mail Commerce Marketplace
 
 1. Connectez-vous à votre compte Commerce Marketplace et vérifiez que l’adresse e-mail associée à votre compte a été mise à jour vers la nouvelle adresse.
-1. Si l’e-mail n’a pas été mis à jour, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/en/support#home) pour demander que l’e-mail du compte Commerce Marketplace soit corrigé.
+1. Si l’e-mail n’a pas été mis à jour, envoyez un [ticket d’assistance](https://experienceleague.adobe.com/fr/support#home) pour demander que l’e-mail du compte Commerce Marketplace soit corrigé.
 
 ### Demander à l’assistance technique de finaliser les mises à jour des comptes internes
 
-1. Envoyez un [ticket d’assistance](https://experienceleague.adobe.com/en/support#home) nous demandant d’effectuer toutes les mises à jour internes requises (par exemple, la mise à jour du lien entre vos anciens et nouveaux Adobe ID et votre MAGE ID).
+1. Envoyez un [ticket d’assistance](https://experienceleague.adobe.com/fr/support#home) nous demandant d’effectuer toutes les mises à jour internes requises (par exemple, la mise à jour du lien entre vos anciens et nouveaux Adobe ID et votre MAGE ID).
 1. Si vous avez déjà ouvert un ticket d’assistance parce que l’e-mail Commerce Marketplace n’a pas été mis à jour dans la section précédente, vous pouvez utiliser le même ticket pour demander ces mises à jour internes supplémentaires.
