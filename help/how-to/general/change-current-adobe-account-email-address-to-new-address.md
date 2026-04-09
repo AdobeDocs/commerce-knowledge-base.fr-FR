@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Modifier l’adresse e-mail du compte Adobe actuel
 
-Cet article explique comment modifier l’adresse e-mail actuelle enregistrée dans le compte [](https://account.adobe.com/) en une nouvelle adresse qui n’est actuellement pas enregistrée dans le compte [Adobe](https://account.adobe.com/) ou le compte [Magento](https://account.magento.com/).
+Cet article explique comment modifier l’adresse e-mail actuelle enregistrée dans le compte [&#128279;](https://account.adobe.com/) en une nouvelle adresse qui n’est actuellement pas enregistrée dans le compte [Adobe](https://account.adobe.com/) ou le compte [Magento](https://account.magento.com/).
 
 ## Produits et versions concernés
 
@@ -30,7 +30,7 @@ Pour modifier l’adresse e-mail, procédez comme suit :
 
 1. Réinitialisez le mot de passe utilisé avec l’ancienne adresse e-mail. Suivez les instructions fournies dans [Réinitialiser le mot de passe oublié](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) dans l’aide d’Adobe.
 1. Le lien de réinitialisation du mot de passe est envoyé à la boîte aux lettres du propriétaire actuel avec des instructions.
-1. Accédez à la page [Compte ](https://account.adobe.com) pour vous connecter avec le nouvel e-mail et configurer le mot de passe.
+1. Accédez à la page [Compte &#x200B;](https://account.adobe.com) pour vous connecter avec le nouvel e-mail et configurer le mot de passe.
 
 ## Important : le nom d’utilisateur du compte cloud n’est pas mis à jour automatiquement
 
@@ -38,7 +38,7 @@ Si vous utilisez Adobe Commerce sur des infrastructures cloud, la modification d
 
 Après avoir suivi les étapes décrites dans cet article pour modifier l’adresse e-mail de votre compte Adobe :
 
-1. Connectez-vous à votre compte Cloud à l’adresse [](https://accounts.magento.cloud).
+1. Connectez-vous à votre compte Cloud à l’adresse [&#128279;](https://accounts.magento.cloud).
 1. Mettez à jour manuellement le profil de compte cloud (nom d’utilisateur) en suivant les étapes de la section [Comment mettre à jour le profil de compte cloud](/help/how-to/general/how-to-update-the-cloud-account-profile.md) de notre base de connaissances d’assistance.
 
 Cela garantit que le nom d’utilisateur de votre compte Cloud reste aligné sur l’e-mail Adobe ou MAGE ID mis à jour et évite toute confusion lors de l’accès aux projets Cloud ou de la réception de notifications système.
