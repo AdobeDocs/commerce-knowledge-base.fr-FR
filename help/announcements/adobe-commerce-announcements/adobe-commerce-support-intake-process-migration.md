@@ -1,18 +1,18 @@
 ---
-title: Migration du processus de prise en charge d’Adobe Commerce vers Experience League
-description: Adobe Commerce va migrer le 15 juillet 2024 le processus d’appel à l’assistance d’Adobe Commerce Help Center vers Adobe Experience League. Experience League deviendra votre principale ressource pour tous les besoins en matière d’assistance, depuis le libre-service jusqu’à la communication pilotée par les agents.
+title: Adobe Commerce prend en charge la migration des processus d’admission vers Experience League
+description: Adobe Commerce effectuera la migration du processus de prise en charge depuis le Centre d’aide Adobe Commerce vers Adobe Experience League le 15 juillet 2024. Experience League deviendra votre ressource principale pour tous les besoins d’assistance, du libre-service à la communication pilotée par l’agent.
 feature: Support
 role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 30b62c0e-4341-46c4-8e9c-2cc0fd8e33f9
-source-git-commit: 52c7092df0e052839aefee4783a44f6a0193d755
+source-git-commit: 7beb50c1bdb07003643bc2ce2e4a956e8ba71ac2
 workflow-type: tm+mt
 source-wordcount: '140'
 ht-degree: 0%
 
 ---
 
-# Migration du processus de prise en charge d’Adobe Commerce vers Experience League
+# Adobe Commerce prend en charge la migration des processus d’admission vers Experience League
 
-Nous sommes ravis d’annoncer que dans notre parcours d’être mieux connecté à la famille de solutions de l’Adobe, Adobe Commerce va migrer notre processus d’admission de l’assistance d’Adobe Commerce Help Center vers Adobe Experience League le 15 juillet 2024. Experience League héberge actuellement la documentation d’aide autonome, des guides de l’utilisateur et des bonnes pratiques d’Adobe Commerce. Il deviendra votre principale ressource pour tous les besoins d’assistance, depuis le libre-service jusqu’à la communication pilotée par l’agent. Nous apprécions votre compréhension et votre soutien pour cette transition importante.
+Nous sommes ravis d’annoncer que dans notre parcours pour être mieux connecté à la famille de solutions Adobe, Adobe Commerce effectuera la migration de notre processus de prise en charge du Centre d’aide Adobe Commerce vers Adobe Experience League le 15 juillet 2024. Experience League héberge actuellement la documentation d’aide autonome, les guides de l’utilisateur et les bonnes pratiques d’Adobe Commerce. Il deviendra votre principale ressource pour tous les besoins d’assistance, du libre-service à la communication pilotée par l’agent. Nous apprécions votre compréhension et votre soutien alors que nous effectuons cette importante transition.
