@@ -33,7 +33,7 @@ Lors de la modification d’un profil sur le compte cloud, les champs suivants p
 
 Pour modifier ces champs, procédez comme suit :
 
-1. Accédez à votre compte à l’adresse [connexion au compte ](https://accounts.magento.cloud).
+1. Accédez à votre compte à l’adresse [connexion au compte &#x200B;](https://accounts.magento.cloud).
 1. Cliquez sur l’onglet **[!UICONTROL Account Settings]** .
 1. Cochez la case *Créer un nouveau mot de passe*.
 1. Effectuez les modifications nécessaires et cliquez sur *enregistrer*.
@@ -45,11 +45,11 @@ Pour modifier ces champs, procédez comme suit :
 ## Que peut-on modifier ?
 
 1. **[!UICONTROL Password]** :
-Pour modifier votre mot de passe, consultez la page [Réinitialisation du mot de passe ](https://account.adobe.com/), car ce profil est lié à votre compte ou adresse e-mail.
+Pour modifier votre mot de passe, consultez la page [Réinitialisation du mot de passe &#x200B;](https://account.adobe.com/), car ce profil est lié à votre compte ou adresse e-mail.
 
 1. **[!UICONTROL Email Address]** :
 La modification de ce champ dépend de votre situation individuelle.
 
 Si vous devez transférer la propriété de votre compte actuel à un nouveau propriétaire ou à une autre adresse e-mail, vous devez mettre à jour l’adresse e-mail de l’utilisateur principal associée au compte.
 
-Voir : [](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en)
+Voir : [&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en)
