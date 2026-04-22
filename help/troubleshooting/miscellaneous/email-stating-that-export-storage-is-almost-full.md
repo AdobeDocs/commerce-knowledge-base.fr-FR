@@ -79,4 +79,4 @@ Suivez ces étapes pour examiner, nettoyer et valider l’utilisation du stockag
 
 ## Lectures connexes
 
-[Consultez les clusters dédiés](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dans notre base de connaissances sur le support.
+[Consultez les clusters dédiés](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dans notre base de connaissances sur le support.
