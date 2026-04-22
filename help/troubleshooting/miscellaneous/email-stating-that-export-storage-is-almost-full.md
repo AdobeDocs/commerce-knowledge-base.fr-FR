@@ -1,48 +1,82 @@
 ---
-title: Courrier électronique indiquant que le stockage des exportations est presque complet
-description: Cet article fournit une solution au problème où vous recevez un courrier électronique indiquant que le stockage des exportations est presque saturé.
+title: E-mail indiquant que le stockage des exportations est presque plein
+description: Cet article fournit une solution au problème de réception d’un e-mail indiquant que le stockage des exportations est presque plein.
 feature: Cloud, Storage, Media
 role: Developer
 exl-id: 7dae295c-919c-46c5-bf63-7d3467c2e07f
-source-git-commit: 89f985b832545f1fbccf94aac1d60f1e767b5bc4
+source-git-commit: 11cf981c7ebe813219a0cd311632eafce086bbf6
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
 
-# Courriel indiquant que le stockage des exportations est presque saturé
+# E-mail indiquant que le stockage des exportations est presque plein
 
-Cet article fournit une solution au problème où vous recevez un courrier électronique indiquant que le stockage des exportations est presque saturé.
+Cet article fournit une solution au problème de réception d’un e-mail indiquant que le stockage des exportations est presque plein.
 
 ## Produits et versions concernés
 
-Adobe Commerce sur l’infrastructure cloud (toutes versions)
+Adobe Commerce sur les infrastructures cloud (toutes versions)
 
 ## Problème
 
-Vous recevez un courrier électronique avec le contenu suivant, mais vous ne parvenez pas à localiser le dossier *exports* :
+Vous recevez un e-mail avec le contenu suivant, mais vous ne parvenez pas à localiser le dossier *exports* :
 
-*Notre surveillance a détecté que le stockage &quot;exports&quot; de votre cluster XXX est environ &#39;85 %&#39; rempli.*
-*Si nécessaire, passez en revue l’utilisation, effectuez un nettoyage ou demandez une modification de la taille.*
-*Notez également que nous allons tenter une mise à niveau automatique lorsque le stockage atteint le niveau de seuil critique.*
+*Notre surveillance a détecté que le stockage « export » sur votre cluster XXX est saturé à environ 85 %.*
+*Si nécessaire, veuillez consulter l’utilisation, effectuer un nettoyage ou demander une mise à niveau.*
+*Notez également que nous tenterons une mise à niveau automatiquement lorsque le stockage atteindra le niveau de seuil critique.*
 
 ## Cause
 
-L&#39;email fait référence au stockage **exports**, qui correspond à la quantité de disque allouée aux fichiers/médias, et non à un dossier spécifique nommé *exports*.
+L’alerte fait référence au système de fichiers de stockage de l’exportation, qui est le volume du disque sur lequel les médias et d’autres données de fichier sont stockés. Ce système de fichiers est généralement monté à l’adresse `/data/exports`. L’alerte n’indique pas la présence d’un seul répertoire littéralement nommé exports.
+
+Pour confirmer à quoi l’alerte fait référence, vérifiez l’utilisation de l’espace de stockage des exportations :
+
+* Exécutez `df -h | grep exports` et l’exemple de sortie suivant s’affiche :
+
+  ```
+  /dev/nvme1n1 50G 38G 12G 77% /data/exports
+  tmpfs         7.7G 4.0K 7.7G  1% /data/exports/shared
+  ```
+
+* Dans cet exemple, `/data/exports` est le système de fichiers d’exportation principal :
+
+   * 50 Go au total
+   * 38 Go utilisés
+   * 12 Go disponibles (taux d’utilisation de 77 %)
+
+* `/data/exports/shared` est un montage `tmpfs` (en mémoire) utilisé pour les données partagées et ne contribue pas de manière significative à la pression du disque.
+
+Cela confirme que l’alerte est déclenchée par l’utilisation globale du disque de `/data/exports`, et non par un seul dossier nommé exports.
+
+Si `/data/exports` affiche une utilisation élevée, les répertoires volumineux sous ce système de fichiers, tels que pub/media ou d’autres emplacements de fichiers personnalisés, sont généralement responsables de l’augmentation de l’utilisation.
 
 ## Solution
 
-Vous devez examiner l’utilisation des fichiers dans l’environnement. Exécutez cette commande pour obtenir l’utilisation existante :
+Suivez ces étapes pour examiner, nettoyer et valider l’utilisation du stockage des exportations.
 
-`df -h |grep data`
+1. Exécutez la `df -h | grep exports` de commande pour vérifier l’utilisation actuelle du système de fichiers de stockage d’export. Consultez la colonne **Utiliser%** pour `/data/exports` :
 
-Les emplacements où le stockage des fichiers est susceptible d&#39;être rempli sont les dossiers *pub/media/catalog/product/cache* ou *var/log*. Pour déterminer l’espace disque utilisé par les fichiers, exécutez cette commande avec le chemin d’accès approprié */path/to/folder* :
+   * Si l’utilisation est comprise entre 70 et 85 %, commencez à planifier le nettoyage.
+   * Si l’utilisation est supérieure à 90 %, prenez immédiatement des mesures pour éviter les échecs d’écriture ou l’impact sur le service.
 
-`du -shc` */path/to/folder*
+1. Identifiez les répertoires consommant de l’espace disque important sous `/data/exports` en exécutant :
 
-Si l’utilisation du disque multimédia représente une grande partie de l’espace disque total, vous pouvez envisager d’activer [l’optimisation d’image détaillée rapide](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization), puis de supprimer manuellement les fichiers du dossier *pub/media/catalog/product/cache* sur le serveur.
+   ```bash
+   du -sh /data/exports/* 2>/dev/null
+   ```
 
-## Lecture connexe
+   Les emplacements standard où le stockage de fichiers est susceptible d’être plein sont les dossiers `pub/media/catalog/product/cache` ou `var/log`.
 
-[Vérifiez les clusters dédiés](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dans notre base de connaissances d&#39;assistance.
+1. Nettoyez les fichiers en fonction de l’environnement :
+
+   * Supprimez d’abord les fichiers d’exportation, les journaux ou les données temporaires anciens ou inutilisés.
+   * Dans les environnements hors production, vous pouvez généralement supprimer plus agressivement les médias de test ou les anciens artefacts.
+   * Dans les environnements de production, assurez-vous de consulter votre équipe avant de supprimer des médias ou des fichiers critiques.
+
+1. Après le nettoyage, exécutez la `df -h | grep exports` de commande suivante pour confirmer que la valeur **Use%** pour `/data/exports` a chuté à un niveau de fonctionnement sûr.
+
+## Lectures connexes
+
+[Consultez les clusters dédiés](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dans notre base de connaissances sur le support.
