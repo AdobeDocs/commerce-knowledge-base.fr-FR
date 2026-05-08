@@ -3,9 +3,9 @@ title: Bloquer le trafic malveillant pour Adobe Commerce au niveau Fastly
 description: Cet article décrit les mesures que vous pouvez prendre pour bloquer le trafic malveillant lorsque vous suspectez que votre Adobe Commerce sur le magasin d’infrastructure cloud subit une attaque DDoS.
 exl-id: 1a834a0a-753b-432e-9c3b-ef8dd034d294
 feature: Cache, Marketing Tools
-source-git-commit: 2555fbdb8a7a53d41c746df6414a7b0bad2de5d9
+source-git-commit: 8bde15deccc24c548c20cf5955cbebc45ac1d9a1
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
@@ -49,27 +49,27 @@ Pour établir un blocage basé sur l’agent utilisateur, vous devez ajouter un 
 
 1. Dans Commerce Admin, accédez à **Magasins** > **Configuration** > **Avancé** > **Système** > **Cache de page complet**.
 1. Puis **Configuration rapide** > **Fragments de code VCL personnalisés**.
-1. Créez le nouveau fragment de code personnalisé comme décrit dans le guide [Fragments de code VCL personnalisés](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md) pour le module Fastly_Cdn. Vous pouvez utiliser l’exemple de code suivant comme exemple. Cet exemple montre comment interdire le trafic pour les agents utilisateurs `AhrefsBot` et `SemrushBot`.
+1. Créez le nouveau fragment de code personnalisé comme décrit dans le guide [Fragments de code VCL personnalisés](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md) pour le module Fastly_Cdn. Vous pouvez utiliser l’exemple de code suivant comme exemple. Cet exemple montre comment interdire le trafic pour l’agent utilisateur `AhrefsBot`.
 
 ```php
 name: block_bad_useragents
   type: recv
   priority: 5
   VCL:
-  if ( req.http.User-Agent ~ "(AhrefsBot|SemrushBot)" ) {
+  if ( req.http.User-Agent ~ "(AhrefsBot)" ) {
       error 405 "Not allowed";
   }
 ```
 
 ## Limitation de débit (fonctionnalité expérimentale Fastly)
 
-Il existe une fonctionnalité Fastly expérimentale pour Adobe Commerce sur les infrastructures cloud qui vous permet de spécifier la limite de débit pour des chemins et des robots d’exploration spécifiques. Veuillez consulter la [documentation du module Fastly](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) pour plus d’informations.
+Il existe une fonctionnalité Fastly expérimentale pour Adobe Commerce sur les infrastructures cloud qui vous permet de spécifier la limite de débit pour des chemins et des robots d&#39;exploration spécifiques. Veuillez consulter la [documentation du module Fastly](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) pour plus d’informations.
 
 Cette fonctionnalité doit être testée de manière approfondie lors de l’évaluation, avant d’être utilisée en production, car elle peut bloquer le trafic légitime.
 
 ## Recommandé : envisagez de mettre à jour robots.txt
 
-La mise à jour de votre fichier `robots.txt` peut aider à empêcher certains moteurs de recherche, robots et robots d’analyser certaines pages. Parmi les exemples de pages qui ne doivent pas être explorées, citons les pages de résultats de recherche, le passage en caisse, les informations client, etc. Empêcher les robots d&#39;analyser ces pages pourrait aider à réduire le nombre de requêtes générées par ces robots.
+La mise à jour de votre fichier `robots.txt` peut aider à empêcher certains moteurs de recherche, robots d&#39;exploration et robots d’explorer à certaines pages. Parmi les exemples de pages qui ne doivent pas être explorées figurent les pages de résultats de recherche, le passage en caisse, les informations client, etc. Empêcher les robots d&#39;explorer à ces pages pourrait contribuer à réduire le nombre de requêtes générées par ces robots.
 
 Deux points importants doivent être pris en compte lors de l’utilisation de `robots.txt` :
 
