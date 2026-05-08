@@ -3,9 +3,9 @@ title: Bloquer le trafic malveillant pour Adobe Commerce au niveau Fastly
 description: Cet article décrit les mesures que vous pouvez prendre pour bloquer le trafic malveillant lorsque vous suspectez que votre Adobe Commerce sur le magasin d’infrastructure cloud subit une attaque DDoS.
 exl-id: 1a834a0a-753b-432e-9c3b-ef8dd034d294
 feature: Cache, Marketing Tools
-source-git-commit: 2555fbdb8a7a53d41c746df6414a7b0bad2de5d9
+source-git-commit: 8bde15deccc24c548c20cf5955cbebc45ac1d9a1
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Dans cet article, nous supposons que vous disposez déjà des adresses IP malvei
 
 Si votre site web est surchargé par DDoS, il se peut que vous ne puissiez pas vous connecter à votre administrateur Commerce (et effectuer toutes les étapes décrites plus en détail dans cet article).
 
-Pour accéder à l’administrateur, mettez votre site web en mode de maintenance comme décrit dans la section [&#x200B; Activer ou désactiver le mode de maintenance &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) et placez votre adresse IP sur liste blanche. Désactivez le mode de maintenance une fois cette opération terminée.
+Pour accéder à l’administrateur, mettez votre site web en mode de maintenance comme décrit dans la section [ Activer ou désactiver le mode de maintenance ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) et placez votre adresse IP sur liste blanche. Désactivez le mode de maintenance une fois cette opération terminée.
 
 ## Bloquer le trafic par adresse IP
 
@@ -49,34 +49,34 @@ Pour établir un blocage basé sur l’agent utilisateur, vous devez ajouter un 
 
 1. Dans Commerce Admin, accédez à **Magasins** > **Configuration** > **Avancé** > **Système** > **Cache de page complet**.
 1. Puis **Configuration rapide** > **Fragments de code VCL personnalisés**.
-1. Créez le nouveau fragment de code personnalisé comme décrit dans le guide [Fragments de code VCL personnalisés](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md) pour le module Fastly_Cdn. Vous pouvez utiliser l’exemple de code suivant comme exemple. Cet exemple montre comment interdire le trafic pour les agents utilisateurs `AhrefsBot` et `SemrushBot`.
+1. Créez le nouveau fragment de code personnalisé comme décrit dans le guide [Fragments de code VCL personnalisés](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md) pour le module Fastly_Cdn. Vous pouvez utiliser l’exemple de code suivant comme exemple. Cet exemple montre comment interdire le trafic pour l’agent utilisateur `AhrefsBot`.
 
 ```php
 name: block_bad_useragents
   type: recv
   priority: 5
   VCL:
-  if ( req.http.User-Agent ~ "(AhrefsBot|SemrushBot)" ) {
+  if ( req.http.User-Agent ~ "(AhrefsBot)" ) {
       error 405 "Not allowed";
   }
 ```
 
 ## Limitation de débit (fonctionnalité expérimentale Fastly)
 
-Il existe une fonctionnalité Fastly expérimentale pour Adobe Commerce sur les infrastructures cloud qui vous permet de spécifier la limite de débit pour des chemins et des robots d’exploration spécifiques. Veuillez consulter la [documentation du module Fastly](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) pour plus d’informations.
+Il existe une fonctionnalité Fastly expérimentale pour Adobe Commerce sur les infrastructures cloud qui vous permet de spécifier la limite de débit pour des chemins et des robots d&#39;exploration spécifiques. Veuillez consulter la [documentation du module Fastly](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) pour plus d’informations.
 
 Cette fonctionnalité doit être testée de manière approfondie lors de l’évaluation, avant d’être utilisée en production, car elle peut bloquer le trafic légitime.
 
 ## Recommandé : envisagez de mettre à jour robots.txt
 
-La mise à jour de votre fichier `robots.txt` peut aider à empêcher certains moteurs de recherche, robots et robots d’analyser certaines pages. Parmi les exemples de pages qui ne doivent pas être explorées, citons les pages de résultats de recherche, le passage en caisse, les informations client, etc. Empêcher les robots d&#39;analyser ces pages pourrait aider à réduire le nombre de requêtes générées par ces robots.
+La mise à jour de votre fichier `robots.txt` peut aider à empêcher certains moteurs de recherche, robots d&#39;exploration et robots d’explorer à certaines pages. Parmi les exemples de pages qui ne doivent pas être explorées figurent les pages de résultats de recherche, le passage en caisse, les informations client, etc. Empêcher les robots d&#39;explorer à ces pages pourrait contribuer à réduire le nombre de requêtes générées par ces robots.
 
 Deux points importants doivent être pris en compte lors de l’utilisation de `robots.txt` :
 
 * Les robots peuvent ignorer vos `robots.txt`. Surtout les robots malveillants, qui analysent le Web à la recherche de failles de sécurité, et les collecteurs d&#39;adresses électroniques utilisés par les spammeurs ne prêteront aucune attention.
 * Le fichier `robots.txt` est un fichier accessible au public. Tout le monde peut voir les sections de votre serveur que vous ne voulez pas que les robots utilisent.
 
-Vous trouverez les informations de base et la configuration par défaut du `robots.txt` Adobe Commerce dans l’article [Robots de moteurs de recherche](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) de notre documentation destinée aux développeurs et développeuses.
+Vous trouverez les informations de base et la configuration par défaut du `robots.txt` Adobe Commerce dans l’article [Robots de moteurs de recherche](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) de notre documentation destinée aux développeurs et développeuses.
 
 Pour obtenir des informations générales et des recommandations sur les `robots.txt`, voir :
 
@@ -88,4 +88,4 @@ Contactez votre développeur et/ou un expert en SEO pour déterminer les agents 
 ## Lecture connexe
 
 * [Termes de licence spécifiques au produit pour Adobe Commerce on Cloud](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
-* [VCL personnalisé pour le blocage des requêtes](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) dans le guide Commerce sur le cloud
+* [VCL personnalisé pour le blocage des requêtes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) dans le guide Commerce sur le cloud
