@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Le guide de la base de connaissances de l’assistance Adobe Commerce est en cours de restructuration et son contenu est déplacé vers d’autres emplacements au sein d’Adobe Experience League. Utilisez la page de recherche et les filtres d’Experience League [](https://experienceleague.adobe.com/en/search#) pour trouver les derniers dépannages d’Adobe Commerce et le contenu associé à l’assistance.
+>Le guide de la base de connaissances de l’assistance Adobe Commerce est en cours de restructuration et son contenu est déplacé vers d’autres emplacements au sein d’Adobe Experience League. Utilisez la page de recherche et les filtres d’Experience League [&#128279;](https://experienceleague.adobe.com/en/search#) pour trouver les derniers dépannages d’Adobe Commerce et le contenu associé à l’assistance.
 
 ![Page d’accueil de la base de connaissances](../help/assets/knowledge-base-home-page-cover.jpg){width="100%"}
 
