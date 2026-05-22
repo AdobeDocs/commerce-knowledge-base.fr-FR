@@ -4,9 +4,9 @@ description: Cet article fournit des solutions au problème d’Adobe Commerce e
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+source-git-commit: beca5aa3fa796e4b12afc4882024db718b65ac0c
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -158,5 +158,5 @@ bin/magento saas:resync --feed categoryPermissions --cleanup-feed
 ## Lecture connexe
 
 * [&#x200B; Intégration de la recherche en direct &#x200B;](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html?lang=fr) dans notre documentation utilisateur
-* [Consultez les journaux et résolvez les problèmes d’exportation et de synchronisation des données SaaS Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) dans le Guide d’exportation des données SaaS Adobe Commerce
+* [Consultez les journaux et résolvez les problèmes d’exportation et de synchronisation des données SaaS Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging) dans le Guide d’exportation des données SaaS Adobe Commerce
 * [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
