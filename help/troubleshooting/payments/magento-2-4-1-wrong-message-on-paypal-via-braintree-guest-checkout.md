@@ -27,7 +27,7 @@ Une erreur non spécifique s’affiche lorsque la commande invité est désactiv
 <u>Conditions préalables</u> :
 
 1. Dans l’administration Commerce, sous **Magasins** > **Configuration** > **Ventes** > **Passage en caisse**, définissez **Autoriser le passage en caisse des invités** = *No*.
-1. Activez PayPal via Braintree comme décrit dans la section [Braintree](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/braintree ?) de notre guide de l&#39;utilisateur.
+1. Activez PayPal via Braintree comme décrit dans la section [Braintree](https://experienceleague.adobe.com/fr/docs/commerce-admin/stores-sales/payments/braintree ?) de notre guide de l&#39;utilisateur.
 
 <u>Procédure à suivre </u> :
 

@@ -60,7 +60,7 @@ Si l’e-mail s’est affiché dans votre dossier Spam, l’authentification d�
 
 Si vous utilisez le service SendGrid géré par Adobe :
 
-[Envoyez un ticket d’assistance](https://experienceleague.adobe.com/home?support-tab=home#support) demandant que votre domaine d’envoi soit authentifié (parfois appelé *marque blanche*) avec SendGrid.
+[Envoyez un ticket d’assistance](https://experienceleague.adobe.com/home?lang=fr&support-tab=home#support) demandant que votre domaine d’envoi soit authentifié (parfois appelé *marque blanche*) avec SendGrid.
 Ce processus implique l’ajout d’enregistrements DNS (DKIM et SPF) pour autoriser SendGrid à envoyer des e-mails au nom de votre domaine, ce qui augmente la probabilité que vos e-mails soient envoyés à la boîte de réception plutôt qu’au dossier Spam.
 
 Si vous utilisez votre propre compte SendGrid :
@@ -74,4 +74,4 @@ Vous êtes responsable de la gestion des paramètres d’authentification de vot
 
 ## Lecture connexe
 
-* [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/sendgrid) dans notre documentation destinée aux développeurs.
+* [SendGrid](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/project/sendgrid) dans notre documentation destinée aux développeurs.

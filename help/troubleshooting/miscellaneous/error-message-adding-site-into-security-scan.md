@@ -53,4 +53,4 @@ Si vous ne pouvez toujours pas ajouter de sites, procédez comme suit :
 
 ## Lecture connexe
 
-* [Security Scan](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) dans notre guide de l’utilisateur.
+* [Security Scan](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-scan) dans notre guide de l’utilisateur.

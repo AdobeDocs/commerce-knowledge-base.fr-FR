@@ -34,7 +34,7 @@ Modification de l’adresse e-mail d’un utilisateur disposant de son propre co
 
 <u>Solution</u>
 
-1. [Envoyez une demande d’assistance](https://experienceleague.adobe.com/home#support) à l’adresse https://experienceleague.adobe.com/home#support en indiquant ce qui suit :
+1. [Envoyez une demande d’assistance](https://experienceleague.adobe.com/home?lang=fr#support) à l’adresse https://experienceleague.adobe.com/home?lang=fr#support en indiquant ce qui suit :
 
    * Adresse e-mail existante à mettre à jour
    * Nouvelle adresse e-mail
@@ -48,7 +48,7 @@ Modification de l’adresse e-mail d’un utilisateur qui ne dispose pas actuell
 
 <u>Solution</u>
 
-Si vous avez accès à la boîte aux lettres de l’e-mail [propriétaire actuel], réinitialisez le mot de passe de l’e-mail du propriétaire actuel en suivant le guide [Réinitialiser ou modifier votre mot de passe Adobe](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) dans le Guide de l’utilisateur de Creative Cloud.
+Si vous avez accès à la boîte aux lettres de l’e-mail [propriétaire actuel], réinitialisez le mot de passe de l’e-mail du propriétaire actuel en suivant le guide [Réinitialiser ou modifier votre mot de passe Adobe](https://helpx.adobe.com/fr/manage-account/using/change-or-reset-password.html) dans le Guide de l’utilisateur de Creative Cloud.
 
 1. Recherchez le lien de réinitialisation du mot de passe envoyé à la boîte aux lettres du propriétaire actuel avec des instructions.
 1. Définissez un nouveau mot de passe, puis remplacez l’e-mail par [e-mail du nouveau propriétaire].
@@ -62,5 +62,5 @@ Cependant, si vous n’avez pas accès aux e-mails envoyés à l’adresse e-mai
 
 ## Lecture connexe
 
-[Réinitialiser le mot de passe oublié](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) dans le Guide de l’utilisateur de Creative Cloud.
-[Mettez à jour votre profil de compte](https://helpx.adobe.com/manage-account/using/edit-adobe-account-personal-profile.html) dans le Guide de l’utilisateur de Creative Cloud.
+[Réinitialiser le mot de passe oublié](https://helpx.adobe.com/fr/manage-account/using/change-or-reset-password.html) dans le Guide de l’utilisateur de Creative Cloud.
+[Mettez à jour votre profil de compte](https://helpx.adobe.com/fr/manage-account/using/edit-adobe-account-personal-profile.html) dans le Guide de l’utilisateur de Creative Cloud.
