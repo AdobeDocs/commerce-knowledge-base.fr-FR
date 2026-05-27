@@ -1,19 +1,19 @@
 ---
 title: Le menu principal (Catégories) ne s’affiche pas sur les sous-pages avec Fastly activé
-description: Cet article fournit un correctif pour les cas où le menu principal (ou le [menu de navigation dans la partie supérieure de la catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html?lang=fr) de notre guide d’utilisation) n’est pas affiché sur storefront pour les sous-pages (par exemple, *blog/page*) lorsque Fastly ou Varnish est activé.
+description: Cet article fournit un correctif pour les cas où le menu principal (ou le [menu de navigation dans la partie supérieure de la catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) de notre guide d’utilisation) n’est pas affiché sur storefront pour les sous-pages (par exemple, *blog/page*) lorsque Fastly ou Varnish est activé.
 exl-id: 7c54791d-8aa6-4f01-a28b-a7aecdb8ff74
 feature: Categories, Marketing Tools
 role: Developer
 source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
 
 # Le menu principal (Catégories) ne s’affiche pas sur les sous-pages avec Fastly activé
 
-Cet article fournit un correctif pour les cas où le menu principal (ou le [menu de navigation supérieur des catégories](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html?lang=fr) de notre guide d’utilisation) n’est pas affiché sur storefront pour les sous-pages (par exemple, *blog/page*) lorsque Fastly ou Varnish est activé.
+Cet article fournit un correctif pour les cas où le menu principal (ou le [menu de navigation supérieur des catégories](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) de notre guide d’utilisation) n’est pas affiché sur storefront pour les sous-pages (par exemple, *blog/page*) lorsque Fastly ou Varnish est activé.
 
 **Cause :** caractère `/` non autorisé (barre oblique) dans le paramètre *Clé URL* de la page (paramètres d’optimisation du moteur de recherche). Le caractère est généralement ajouté lorsque *Chemin d’URL* (avec l’emplacement de page entier) est spécifié par erreur au lieu de *Clé d’URL* : par exemple, *blog/page\_name* au lieu de simplement *page\_name*.
 
@@ -27,7 +27,7 @@ Cet article fournit un correctif pour les cas où le menu principal (ou le [menu
 
 ## Problème
 
-Le menu principal (également appelé [menu de navigation supérieur de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html?lang=fr) dans notre guide d’utilisation) n’est pas affiché sur storefront pour les sous-pages lorsque Fastly ou d’autres services basés sur un vernis sont activés.
+Le menu principal (également appelé [menu de navigation supérieur de catégorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) dans notre guide d’utilisation) n’est pas affiché sur storefront pour les sous-pages lorsque Fastly ou d’autres services basés sur un vernis sont activés.
 
 ## Cause
 
@@ -47,7 +47,7 @@ En d’autres termes, utilisez *Clé d’URL* au lieu de *Chemin d’URL* : ne m
 
 Pour définir la hiérarchie de la page, accédez à la section **Hiérarchie** du menu Modifier la page .
 
-![&#x200B; Paramètres de hiérarchie &#x200B;](assets/hierarchy_hr.png)
+![ Paramètres de hiérarchie ](assets/hierarchy_hr.png)
 
 Vous pouvez également utiliser le menu **Contenu** > **Éléments** > **Hiérarchie** pour des solutions de hiérarchie plus complexes.
 
@@ -57,10 +57,10 @@ Pour des raisons d’optimisation du moteur de recherche (SEO) sur les pages de 
 
 Le paramètre *URL Key* pour l’optimisation du moteur de recherche :
 
-* [Optimisation du moteur de recherche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-search-engine-optimization.html?lang=fr)
-* [Ajout d’une nouvelle page](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-add.html?lang=fr)
+* [Optimisation du moteur de recherche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-search-engine-optimization.html)
+* [Ajout d’une page](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-add.html)
 
 Hiérarchie de page :
 
-* [Aperçu](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html?lang=fr)
-* [Ajout d’un nœud &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html?lang=fr#add-a-hierarchy-node)
+* [Vue d’ensemble](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html)
+* [Ajout d’un nœud](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html#add-a-hierarchy-node)
