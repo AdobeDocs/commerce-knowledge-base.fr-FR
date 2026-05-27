@@ -4,7 +4,7 @@ description: Cet article fournit des solutions aux problèmes rencontrés lors d
 exl-id: a53c854e-38a8-4c8c-8586-9d99c576c835
 source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Il s’agit des causes les plus courantes de problèmes :
 
 ### Emplacement du code d’accès anticipé
 
-Pendant les périodes d’accès à la version bêta, les packages de version ne sont disponibles que via le compositeur sur [repo.magento.com](https://repo.magento.com/). Les packages de version ne sont pas disponibles sur les portails GitHub et Adobe Commerce pendant cette période. Nous les publierons sur ces emplacements à la date de disponibilité générale. Pour plus d&#39;informations sur l&#39;utilisation du compositeur, cliquez [ici](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/composer).
+Pendant les périodes d’accès à la version bêta, les packages de version ne sont disponibles que via le compositeur sur [repo.magento.com](https://repo.magento.com/). Les packages de version ne sont pas disponibles sur les portails GitHub et Adobe Commerce pendant cette période. Nous les publierons sur ces emplacements à la date de disponibilité générale. Pour plus d&#39;informations sur l&#39;utilisation du compositeur, cliquez [ici](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer).
 
 ### MageID à utiliser
 
@@ -47,7 +47,7 @@ Pour déterminer si votre MageID est principal, essayez les méthodes suivantes 
    * Si les informations de licence du partenaire actif s’affichent, votre ID d’image est principal. La licence Partenaire est active si la valeur END DATE correspond à une date ultérieure.
    * Si vous ne voyez pas les informations de licence du partenaire actif, votre MageID dispose uniquement d’un accès partagé. Pour savoir qui est le titulaire de l’ID principal, accédez au **Partagé avec moi** Notez le NOM DE PARTAGE qui y est spécifié. Cliquez sur **Changer de compte** et sélectionnez la valeur que vous avez notée dans SHARENAME. Sur la page de bienvenue, vous verrez l’e-mail du titulaire de l’ID principal.
 1. Si, pour une raison quelconque, vous ne trouvez pas ces informations sur [magento.com](https://account.magento.com/customer/account/login), veuillez contacter votre responsable partenaire.
-1. Si aucun des problèmes ci-dessus ne fonctionne, [contactez l’assistance technique](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+1. Si aucun des problèmes ci-dessus ne fonctionne, [contactez l’assistance technique](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 #### Le développeur ne dispose pas d’un accès correct aux clés
 
@@ -60,4 +60,4 @@ Si vous êtes le propriétaire principal de MageID et que vous devez donner acc�
 
 ### Ne fait pas partie du programme d&#39;accès anticipé
 
-Notre programme d’accès à Beta n’est disponible que pour nos partenaires solutions et techniques afin qu’ils puissent évaluer notre code de préproduction. Pour être incluse dans le programme d’accès à Beta, votre entreprise doit disposer d’un compte de partenaire Adobe actif et en règle qui a signé l’accord de confidentialité Beta [ici](https://github.com/magento/magento2/wiki/Magento-Beta-Program). Si vous pensez répondre à ces critères et ne pas pouvoir accéder au code bêta, contactez [commercebeta@adobe.com](mailto:commercebeta@adobe.com).
+Notre programme d’accès à Beta n’est disponible que pour nos partenaires solutions et techniques afin qu’ils puissent évaluer notre code de préproduction. Pour être incluse dans le programme d’accès à Beta, votre entreprise doit disposer d’un compte de partenaire Adobe actif et en règle qui a signé l’accord de confidentialité Beta [ici](https://github.com/magento/magento2/wiki/Magento-Beta-Program). Si vous pensez répondre à ces critères et ne pas pouvoir accéder au code bêta, contactez [](mailto:commercebeta@adobe.com).

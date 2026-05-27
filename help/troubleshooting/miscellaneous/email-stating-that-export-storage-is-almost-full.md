@@ -6,7 +6,7 @@ role: Developer
 exl-id: 7dae295c-919c-46c5-bf63-7d3467c2e07f
 source-git-commit: 11cf981c7ebe813219a0cd311632eafce086bbf6
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -79,4 +79,4 @@ Suivez ces étapes pour examiner, nettoyer et valider l’utilisation du stockag
 
 ## Lectures connexes
 
-[Consultez les clusters dédiés](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dans notre base de connaissances sur le support.
+[Consultez les clusters dédiés](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dans notre base de connaissances sur le support.
