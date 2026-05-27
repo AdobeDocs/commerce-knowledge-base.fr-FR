@@ -35,8 +35,8 @@ Encore une fois, il est important de noter que l&#39;utilisation de logiciels sp
 ## Étapes de la solution
 
 1. Vérifiez vos journaux Adobe Commerce pour voir si autre chose qu’une attaque DDoS se produit. Pour plus d’informations, reportez-vous aux articles suivants de notre documentation destinée aux développeurs :
-   * [Emplacements des journaux Adobe Commerce et Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/enable-logging)
-   * [Emplacements des journaux d’Adobe Commerce sur le cloud infrastructure](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations)
+   * [Emplacements des journaux Adobe Commerce et Magento Open Source](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/enable-logging)
+   * [Emplacements des journaux d’Adobe Commerce sur le cloud infrastructure](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/test/log-locations)
 1. Commencez à utiliser l’interface de ligne de commande pour vérifier toutes vos connexions Internet actuelles à l’aide de la commande `netstat` : `netstat -na`. Toutes les connexions actives établies au serveur s’affichent. Vous remarquerez peut-être qu’il y a trop de connexions provenant de la même adresse IP.
 1. Pour limiter davantage les résultats de vos connexions établies à ceux qui se connectent uniquement sur le port 80 (le port http de votre site web), afin que vous puissiez trier et reconnaître un trop grand nombre de connexions à partir d’une adresse IP ou d’un groupe d’adresses IP, utilisez la commande suivante : `netstat -an | grep :80 | sort`. Vous pouvez répéter la même commande pour https sur le port 443 : `netstat -an | grep :443 | sort`. Une autre option consiste à étendre la commande d&#39;origine aux deux ports 80 et 443: `netstat -an | egrep ":80|:443" | sort`.
 1. Pour voir si plusieurs `SYNC_REC` actives se produisent sur le serveur, utilisez la commande : `netstat -n -p|grep SYN_REC | wc -l` Ce nombre est généralement inférieur à 5, mais il peut être beaucoup plus élevé pour une attaque DDoS, bien que pour certains serveurs, un nombre plus élevé puisse être une condition normale.
@@ -53,6 +53,6 @@ Si vous constatez que vous faites l&#39;objet d&#39;une attaque DDoS, les mesure
 
 ## Informations connexes dans notre documentation destinée aux développeurs :
 
-* [Protection DDoS](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#ddos-protection)
-* [Utilisation des commandes de l’interface de ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli)
-* [Cloud CLI pour Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview)
+* [Protection DDoS](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly#ddos-protection)
+* [Utilisation des commandes de l’interface de ligne de commande](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli)
+* [Cloud CLI pour Commerce](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview)

@@ -31,5 +31,5 @@ Par exemple, si la principale sélectionnée est le nœud 1 où `auto_increment_
 
 Voir dans notre documentation destinée aux développeurs :
 
-* [Cloud for Adobe Commerce > Architecture Pro > Sauvegarde et reprise après sinistre](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
-* [Cloud for Adobe Commerce > Conditions préalables à l’installation : base de données](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview)
+* [Cloud for Adobe Commerce > Architecture Pro > Sauvegarde et reprise après sinistre](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Cloud for Adobe Commerce > Conditions préalables à l’installation : base de données](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/overview)
