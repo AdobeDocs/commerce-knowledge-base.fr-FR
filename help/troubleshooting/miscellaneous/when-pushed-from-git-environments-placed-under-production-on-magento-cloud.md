@@ -47,7 +47,7 @@ Ce n’est pas un bug. Pour définir une branche parent pour une autre branche, 
 
 ## Solution
 
-Une branche parent ne peut être définie qu’une fois que le commerçant a envoyé une branche nouvellement créée et l’a activée. Consultez [Adobe Commerce sur l’infrastructure cloud > Intégration de Bitbucket](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/integrations/bitbucket#create-a-cloud-branch) dans notre documentation destinée aux développeurs.
+Une branche parent ne peut être définie qu’une fois que le commerçant a envoyé une branche nouvellement créée et l’a activée. Consultez [Adobe Commerce sur l’infrastructure cloud > Intégration de Bitbucket](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/dev-tools/integrations/bitbucket#create-a-cloud-branch) dans notre documentation destinée aux développeurs.
 
 Pour mettre à jour un parent pour la branche existante sur le serveur, utilisez la commande `magento-cloud environment:info` dans l’interface de ligne de commande magento-cloud.
 
@@ -59,4 +59,4 @@ Cette action définit la branche parent sur « Évaluation » pour la branche ac
 
 ## Lecture connexe
 
-* [Adobe Commerce sur l’infrastructure cloud > Magento-cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) dans notre documentation destinée aux développeurs.
+* [Adobe Commerce sur l’infrastructure cloud > Magento-cloud CLI](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) dans notre documentation destinée aux développeurs.

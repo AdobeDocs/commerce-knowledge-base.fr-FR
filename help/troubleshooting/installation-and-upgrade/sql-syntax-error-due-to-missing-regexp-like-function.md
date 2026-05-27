@@ -38,7 +38,7 @@ La mise à niveau vers la version 1.5.2 de B2B échoue avec une erreur de syntax
 
 <u>Procédure à suivre </u> :
 
-1. Affectez une société à une société parent pour établir une hiérarchie de société. Pour plus d’informations, voir [Gérer la hiérarchie de l’entreprise](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) dans le guide B2B d’Adobe Commerce.
+1. Affectez une société à une société parent pour établir une hiérarchie de société. Pour plus d’informations, voir [Gérer la hiérarchie de l’entreprise](https://experienceleague.adobe.com/fr/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) dans le guide B2B d’Adobe Commerce.
 1. Mettez à niveau B2B vers la version 1.5.2.
 
 <u>Résultats attendus</u> :
@@ -64,7 +64,7 @@ Pour résoudre ce problème, procédez comme suit :
    composer update magento/module-b2b
    ```
 
-1. Appliquez le correctif [ACSD-65540_B2B_1.5.2.zip](assets/ACSD-65540_B2B_1.5.2.zip) joint. Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) dans notre base de connaissances d’assistance.
+1. Appliquez le correctif [ACSD-65540_B2B_1.5.2.zip](assets/ACSD-65540_B2B_1.5.2.zip) joint. Pour obtenir des instructions, voir [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) dans notre base de connaissances d’assistance.
 1. Exécutez `bin/magento setup:upgrade`.
 
 ### Application d’un correctif à l’aide de correctifs cloud
@@ -78,4 +78,4 @@ Pour Adobe Commerce sur les infrastructures cloud, procédez comme suit :
    composer update magento/magento-cloud-patches
    ```
 
-1. Validez et envoyez les modifications pour lancer le redéploiement. Pour obtenir des instructions, reportez-vous à la section [Application de correctifs](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) de notre guide Adobe Commerce sur Cloud .
+1. Validez et envoyez les modifications pour lancer le redéploiement. Pour obtenir des instructions, reportez-vous à la section [Application de correctifs](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) de notre guide Adobe Commerce sur Cloud .
