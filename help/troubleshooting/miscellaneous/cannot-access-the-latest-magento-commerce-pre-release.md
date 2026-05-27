@@ -71,7 +71,7 @@ Pour déterminer si votre MageID est principal, essayez les méthodes suivantes 
    * Si les informations de licence du partenaire actif s’affichent, votre ID d’image est principal. La licence Partenaire est active si la valeur END DATE correspond à une date ultérieure.
    * Si vous ne voyez pas les informations de licence du partenaire actif, votre MageID dispose uniquement d’un accès partagé. Pour savoir qui est le titulaire de l’ID principal, accédez au **Partagé avec moi** Notez le NOM DE PARTAGE qui y est spécifié. Cliquez sur **Changer de compte** et sélectionnez la valeur que vous avez notée dans SHARENAME. Sur la page de bienvenue, vous verrez l’e-mail du titulaire de l’ID principal.
 1. Si, pour une raison quelconque, vous ne trouvez pas ces informations sur [magento.com](https://account.magento.com/customer/account/login), veuillez contacter votre responsable partenaire.
-1. [ Si aucun des problèmes ciсdessus ne fonctionne, contactez l’assistance ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+1. [&#x200B; Si aucun des problèmes ciсdessus ne fonctionne, contactez l’assistance &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ### Ne fait pas partie du programme de version préliminaire
 

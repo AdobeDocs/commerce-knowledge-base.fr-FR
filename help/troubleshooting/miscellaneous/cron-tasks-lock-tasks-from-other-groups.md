@@ -36,7 +36,7 @@ Auparavant, dans notre environnement cloud, le serveur Jenkins était utilisé p
 
 ## Solution
 
-1. Contactez l’[assistance ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour activer les [!DNL crons] autogérés.
+1. Contactez l’[assistance &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour activer les [!DNL crons] autogérés.
 1. Modifiez le fichier `.magento.app.yaml` dans le répertoire racine du code pour Adobe Commerce dans la branche [!DNL Git]. Ajoutez le code suivant :
 
    ```yaml

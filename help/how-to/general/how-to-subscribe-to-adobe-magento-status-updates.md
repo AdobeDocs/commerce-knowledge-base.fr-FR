@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Comment s’abonner aux mises à jour de statut d’Adobe Magento
 
-1. Accédez au statut [](https://status.adobe.com).
+1. Accédez au statut [&#128279;](https://status.adobe.com).
 1. Cliquez sur **Se connecter**.
 1. Connectez-vous à l’aide de vos informations d’identification Adobe.
 1. Sélectionnez **Compte d’entreprise ou d’école** si cette option est présentée.

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Message d’erreur affiché lors de l’ajout de sites à l’Analyse de sécurité
 
-Cet article fournit des solutions possibles au problème lorsqu&#39;un utilisateur ne peut pas ajouter de sites à l&#39;analyse de sécurité Commerce [](https://account.magento.com/scanner/dashboard/).
+Cet article fournit des solutions possibles au problème lorsqu&#39;un utilisateur ne peut pas ajouter de sites à l&#39;analyse de sécurité Commerce [&#128279;](https://account.magento.com/scanner/dashboard/).
 
 ## Produits et versions concernés
 
@@ -22,7 +22,7 @@ Cet article fournit des solutions possibles au problème lorsqu&#39;un utilisate
 
 ## Problème
 
-L&#39;utilisateur ne peut pas ajouter de sites à l&#39;analyse de sécurité Commerce [](https://account.magento.com/scanner/dashboard/). Le message d’erreur suivant s’affiche lors de la tentative d’ajout d’un site : *Impossible d’envoyer le site pour analyse.*
+L&#39;utilisateur ne peut pas ajouter de sites à l&#39;analyse de sécurité Commerce [&#128279;](https://account.magento.com/scanner/dashboard/). Le message d’erreur suivant s’affiche lors de la tentative d’ajout d’un site : *Impossible d’envoyer le site pour analyse.*
 
 ## Solution
 

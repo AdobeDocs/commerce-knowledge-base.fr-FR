@@ -21,7 +21,7 @@ Adobe Commerce (toutes les méthodes de déploiement) toutes les [versions prise
 
 ## Problème
 
-Lorsque vous accédez à [](https://account.magento.com/customer/account/login/) ou [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) vous remarquerez peut-être qu&#39;il existe désormais un formulaire de connexion unifié et que vous ne pouvez plus saisir vos informations d&#39;identification comme vous l&#39;avez fait précédemment.
+Lorsque vous accédez à [&#128279;](https://account.magento.com/customer/account/login/) ou [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) vous remarquerez peut-être qu&#39;il existe désormais un formulaire de connexion unifié et que vous ne pouvez plus saisir vos informations d&#39;identification comme vous l&#39;avez fait précédemment.
 
 <u>Procédure à suivre </u> :
 
