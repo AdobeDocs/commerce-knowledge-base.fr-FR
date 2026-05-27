@@ -1,19 +1,19 @@
 ---
 title: Dépannage de l’outil de migration de données
-description: Cet article fournit des solutions aux erreurs qui peuvent se produire lors de l’exécution de l’outil de migration des données.
+description: Cet article fournit des solutions pour les erreurs qui peuvent se produire lorsque vous exécutez l’outil de migration des données.
 exl-id: 9beb31ae-ed3c-42e1-b0bf-33fb1c91e0ea
 feature: Data Import/Export
 role: Developer
 source-git-commit: 958067830d32b1f10ffa669307ec76d1e14b82a4
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
 
 # Dépannage de l’outil de migration de données
 
-Cet article fournit des solutions aux erreurs qui peuvent se produire lors de l’exécution de l’outil de migration des données.
+Cet article fournit des solutions pour les erreurs qui peuvent se produire lorsque vous exécutez l’outil de migration des données.
 
 ## Documents/champs Source non mappés {#source-documents-fields-not-mapped}
 
@@ -34,21 +34,21 @@ ou
 Destination fields
 ```
 
-plutôt que les sources.
+au lieu des sources.
 
 ### Cause
 
-Certaines entités d’Adobe Commerce version 1 (provenant dans la plupart des cas d’extensions) n’existent pas dans la base de données d’Adobe Commerce version 2.
+Certaines entités Adobe Commerce version 1 (provenant le plus souvent d’extensions) n’existent pas dans la base de données Adobe Commerce version 2.
 
-Ce message s’affiche car l’outil de migration de données exécute des tests internes pour vérifier que les tables et les champs sont cohérents entre les bases de données *source* (Adobe Commerce 1) et *destination* (Adobe Commerce 2).
+Ce message s’affiche, car l’outil de migration des données exécute des tests internes pour vérifier que les tables et les champs sont cohérents entre les bases de données *source* (Adobe Commerce 1) et *destination* (Adobe Commerce 2).
 
 ### Solutions possibles
 
-* Installez les extensions Adobe Commerce 2 correspondantes depuis [Commerce Marketplace](https://marketplace.magento.com/).     Si les données en conflit proviennent d’une extension qui ajoute ses propres éléments de structure de base de données, la version Adobe Commerce 2 de la même extension peut ajouter de tels éléments à la base de données de destination (Adobe Commerce 2), ce qui corrige le problème.
+* Installez les extensions Adobe Commerce 2 correspondantes depuis [Commerce Marketplace](https://marketplace.magento.com/).     Si les données en conflit proviennent d’une extension qui ajoute ses propres éléments de structure de base de données, la version Adobe Commerce 2 de la même extension peut ajouter ces éléments à la base de données de destination (Adobe Commerce 2), ce qui résout le problème.
 * Utilisez l’argument `-a` lors de l’exécution de l’outil pour résoudre automatiquement les erreurs et empêcher l’arrêt de la migration.
 * Configurez l’outil pour ignorer les données problématiques.
 
-Pour ignorer les entités de base de données, ajoutez la balise `<ignore>` à une entité dans le fichier `map.xml`, comme ceci :
+Pour ignorer les entités de la base de données, ajoutez la balise `<ignore>` à une entité dans le fichier `map.xml`, comme suit :
 
 ```xml
 ...
@@ -71,9 +71,9 @@ Pour ignorer les entités de base de données, ajoutez la balise `<ignore>` à u
 
 >[!WARNING]
 >
->Avant d’ignorer les entités par fichier de mappage ou d’utiliser l’option `-a`, assurez-vous que vous n’avez pas besoin des données concernées dans votre magasin Adobe Commerce 2.
+>Avant d’ignorer des entités par mappage de fichier ou d’utiliser l’option `-a` , assurez-vous de ne pas avoir besoin des données concernées dans votre boutique Adobe Commerce 2.
 
-## Classe non mappée dans l’enregistrement {#class-does-not-exist-but-mentioned}
+## La classe n’est pas mappée dans l’enregistrement {#class-does-not-exist-but-mentioned}
 
 ### Message d’erreur
 
@@ -83,12 +83,12 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### Cause
 
-Une classe du code base Adobe Commerce 1 est introuvable dans le code base d’Adobe Commerce 2 pendant l’ [étape de migration d’EAV](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/data-migration/basics/technical-specification) de notre documentation destinée aux développeurs. Dans la plupart des cas, la classe manquante appartient à une [extension](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/glossary#extension).
+Une classe de la base de code Adobe Commerce 1 est introuvable dans la base de code Adobe Commerce 2 lors de l’étape [migration EAV](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/basics/technical-specification) dans notre documentation destinée aux développeurs. Dans la plupart des cas, la classe manquante appartient à une [ extension ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#extension).
 
 ### Solutions possibles
 
 * Installez l’extension Adobe Commerce 2 correspondante.
-* Ignorez l’attribut qui génère le problème.    Pour ce faire, ajoutez l’attribut au groupe `ignore` dans le fichier `eav-attribute-groups.xml.dist` .
+* Ignorez l’attribut qui cause le problème.    Pour ce faire, ajoutez l’attribut au groupe de `ignore` dans le fichier `eav-attribute-groups.xml.dist` .
 * Ajoutez un mappage de classe à l’aide du fichier `class-map.xml.dist`.
 
 ## Échec de la contrainte de clé étrangère
@@ -101,13 +101,13 @@ Foreign key <KEY_NAME> constraint fails on source database. Orphan records id: <
 
 ### Cause
 
-Il manque des enregistrements de base de données dans le `parent_table` vers lequel pointe le `field_id` de `child_table`.
+Il manque des enregistrements de base de données dans le `parent_table` vers lequel pointe le `field_id` du `child_table`.
 
 ### Solution possible
 
 Supprimez les enregistrements du `child_table` , si vous n’en avez pas besoin.
 
-Pour conserver les enregistrements, désactivez l’ `Data Integrity Step` en modifiant les `config.xml` de l’outil de migration de données .
+Pour conserver les enregistrements, désactivez la `Data Integrity Step` en modifiant la `config.xml` de l’outil de migration de données.
 
 ## Doublons dans les réécritures d’URL
 
@@ -119,7 +119,7 @@ Request path: towel.html Store ID: 2 Target path: catalog/product/view/id/12
 
 ### Cause
 
-L’ `Target path` d’une réécriture d’URL doit être spécifié par une paire unique `Request path` + `Store ID` . Cette erreur signale deux entrées qui utilisent la même paire `Request path` + `Store ID` avec deux valeurs `Target path` différentes.
+La `Target path` d’une réécriture d’URL doit être spécifiée par une paire unique `Request path` + `Store ID` . Cette erreur signale deux entrées qui utilisent la même paire `Request path` + `Store ID` avec deux valeurs de `Target path` différentes.
 
 ### Solution possible
 
@@ -137,15 +137,15 @@ Mismatch of entities in the document: <DOCUMENT> Source: <COUNT_ITEMS_IN_SOURCE_
 
 ### Cause
 
-L’erreur se produit lors de l’étape Vérification du volume . Cela signifie que le nombre d’enregistrements de la base de données Adobe Commerce 2 du document n’est pas le même que dans Adobe Commerce 1.
+L’erreur se produit lors de l’étape de vérification du volume. Cela signifie que le nombre d’enregistrements de la base de données Adobe Commerce 2 du document n’est pas le même que dans Adobe Commerce 1.
 
-Des enregistrements manquants se produisent lorsqu’un client passe une commande lors de la migration.
+Des enregistrements manquants se produisent lorsqu’un client passe une commande pendant la migration.
 
 ### Solution possible
 
 Exécutez l’outil de migration de données en mode `Delta` pour transférer les modifications incrémentielles.
 
-## Deltalog n’est pas installé {#deltalog-is-not-installed}
+## Deltalog n&#39;est pas installé {#deltalog-is-not-installed}
 
 ### Message d’erreur
 
@@ -155,15 +155,15 @@ Deltalog for <TABLE_NAME> is not installed
 
 ### Cause
 
-Cette erreur se produit lors de la [migration incrémentielle](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/data-migration/migrate-data/delta) (dans notre documentation destinée aux développeurs) des modifications apportées aux données. Cela signifie que les tables de suppression (avec le préfixe `m2_cl_*`) n’ont pas été trouvées dans la base de données Adobe Commerce 1. L’outil installe ces tables pendant la [migration de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/data-migration/migrate-data/data) (dans notre documentation destinée aux développeurs) ainsi que les déclencheurs de base de données qui effectuent le suivi des modifications et remplissent les tables de suppression.
+Cette erreur se produit lors de la [migration incrémentielle](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/delta) (dans notre documentation destinée aux développeurs) des modifications apportées aux données. Cela signifie que les tables deltalog (avec le préfixe `m2_cl_*`) sont introuvables dans la base de données Adobe Commerce 1. Cet outil installe ces tables lors de la [migration des données](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/data) (dans notre documentation destinée aux développeurs) ainsi que des déclencheurs de base de données qui effectuent le suivi des modifications et renseignent les tables du deltalog.
 
-L’erreur peut être due au fait que vous essayez de migrer à partir d’une *copie* de votre boutique Adobe Commerce 1 active, et non à partir du magasin en ligne lui-même. Lorsque vous effectuez une copie à partir d’un magasin Adobe Commerce 1 actif qui n’a jamais été migré, la copie ne contient pas les déclencheurs et les tables de suppression supplémentaires nécessaires pour terminer une migration delta, de sorte que la migration échoue. L’outil de migration de données ne fait PAS de comparaisons entre la base de données d’AC1 et d’AC2 pour migrer les différences. Au lieu de cela, l’outil utilise les déclencheurs et les tables de suppression installés lors de la première migration pour effectuer les migrations delta suivantes. Dans ce cas, votre copie de la base de données Adobe Commerce 1 active ne contient pas les déclencheurs et les tables de déverrouillage utilisés par l’outil de migration des données pour effectuer une migration.
+L’une des raisons de l’erreur peut être que vous tentez d’effectuer une migration à partir d’une *copie* de votre boutique Adobe Commerce 1 active, et non à partir de la boutique en ligne elle-même. Lorsque vous effectuez une copie à partir d’un magasin Adobe Commerce 1 actif qui n’a jamais été migré, la copie ne contient pas les déclencheurs et les tables deltalog supplémentaires nécessaires pour terminer une migration delta. La migration échoue donc. L’outil de migration des données n’effectue PAS de comparaisons entre la base de données d’AC1 et d’AC2 pour migrer les différences. Au lieu de cela, l’outil utilise les déclencheurs et les tables de delta installées lors de la première migration afin d’effectuer les migrations delta suivantes. Dans ce cas, votre copie de la base de données Adobe Commerce 1 active ne contiendra pas les déclencheurs et les tables de deltalog que l’outil de migration de données utilise pour effectuer une migration.
 
 ### Solution possible
 
-Nous vous recommandons de tester le processus de migration à partir d’une copie de votre base de données Adobe Commerce 1 afin de résoudre vos problèmes de migration. Après avoir corrigé les problèmes de la copie, relancez le processus de migration à partir de votre base de données Adobe Commerce 1 active. Cela permettra d’assurer un processus de migration fluide.
+Nous vous avons recommandé de tester le processus de migration à partir d’une copie de votre base de données Adobe Commerce 1 pour résoudre vos problèmes de migration. Après avoir résolu les problèmes sur la copie, relancez le processus de migration à partir de votre base de données Adobe Commerce 1 active. Cela permettra d’assurer un processus de migration fluide.
 
 ## Lecture connexe
 
-[&#x200B; Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+[Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
 
