@@ -47,7 +47,7 @@ En d’autres termes, utilisez *Clé d’URL* au lieu de *Chemin d’URL* : ne m
 
 Pour définir la hiérarchie de la page, accédez à la section **Hiérarchie** du menu Modifier la page .
 
-![ Paramètres de hiérarchie ](assets/hierarchy_hr.png)
+![&#x200B; Paramètres de hiérarchie &#x200B;](assets/hierarchy_hr.png)
 
 Vous pouvez également utiliser le menu **Contenu** > **Éléments** > **Hiérarchie** pour des solutions de hiérarchie plus complexes.
 
