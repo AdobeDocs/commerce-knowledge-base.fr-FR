@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 3bec25fb1d0ade6c36c41135075edc4ba3610d30
+source-git-commit: 1f8558e14c82e9f5ca3c050b15394c1361bdd179
 workflow-type: tm+mt
-source-wordcount: '1801'
+source-wordcount: '1796'
 ht-degree: 1%
 
 ---
@@ -12,8 +12,6 @@ ht-degree: 1%
 # Base de connaissances Adobe Commerce {#kb}
 
 * [Base de connaissances de l’assistance Adobe Commerce](/help/overview.md)
-* Outils d’assistance {#support-tools}
-   * [Présentation des outils d’assistance](/help/support-tools/overview.md)
 * Annonces {#announcements}
    * [Présentation des annonces](/help/announcements/overview.md)
    * Annonces Adobe Commerce {#commerce-announcements}
