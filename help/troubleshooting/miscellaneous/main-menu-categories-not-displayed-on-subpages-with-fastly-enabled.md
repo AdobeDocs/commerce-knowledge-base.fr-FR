@@ -6,7 +6,7 @@ feature: Categories, Marketing Tools
 role: Developer
 source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,9 @@ Pour des raisons d’optimisation du moteur de recherche (SEO) sur les pages de 
 Le paramètre *URL Key* pour l’optimisation du moteur de recherche :
 
 * [Optimisation du moteur de recherche](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-search-engine-optimization.html?lang=fr)
-* [Ajout d’une nouvelle page](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-add.html?lang=fr)
+* [Ajout d’une page](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-add.html?lang=fr)
 
 Hiérarchie de page :
 
-* [Aperçu](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html?lang=fr)
-* [Ajout d’un nœud &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html?lang=fr#add-a-hierarchy-node)
+* [Vue d’ensemble](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html?lang=fr)
+* [Ajout d’un nœud](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html?lang=fr#add-a-hierarchy-node)

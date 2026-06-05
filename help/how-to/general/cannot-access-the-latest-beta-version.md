@@ -4,7 +4,7 @@ description: Cet article fournit des solutions aux problèmes rencontrés lors d
 exl-id: a53c854e-38a8-4c8c-8586-9d99c576c835
 source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -60,4 +60,4 @@ Si vous êtes le propriétaire principal de MageID et que vous devez donner acc�
 
 ### Ne fait pas partie du programme d&#39;accès anticipé
 
-Notre programme d’accès à Beta n’est disponible que pour nos partenaires solutions et techniques afin qu’ils puissent évaluer notre code de préproduction. Pour être incluse dans le programme d’accès à Beta, votre entreprise doit disposer d’un compte de partenaire Adobe actif et en règle qui a signé l’accord de confidentialité Beta [ici](https://github.com/magento/magento2/wiki/Magento-Beta-Program). Si vous pensez répondre à ces critères et ne pas pouvoir accéder au code bêta, contactez [commercebeta@adobe.com](mailto:commercebeta@adobe.com).
+Notre programme d’accès à Beta n’est disponible que pour nos partenaires solutions et techniques afin qu’ils puissent évaluer notre code de préproduction. Pour être incluse dans le programme d’accès à Beta, votre entreprise doit disposer d’un compte de partenaire Adobe actif et en règle qui a signé l’accord de confidentialité Beta [ici](https://github.com/magento/magento2/wiki/Magento-Beta-Program). Si vous pensez répondre à ces critères et ne pas pouvoir accéder au code bêta, contactez [&#128279;](mailto:commercebeta@adobe.com).

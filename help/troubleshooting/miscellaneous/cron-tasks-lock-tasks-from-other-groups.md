@@ -6,7 +6,7 @@ feature: Configuration
 role: Developer
 source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Auparavant, dans notre environnement cloud, le serveur Jenkins était utilisé p
 
 ## Solution
 
-1. Contactez l’[assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour activer les [!DNL crons] autogérés.
+1. Contactez l’[assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour activer les [!DNL crons] autogérés.
 1. Modifiez le fichier `.magento.app.yaml` dans le répertoire racine du code pour Adobe Commerce dans la branche [!DNL Git]. Ajoutez le code suivant :
 
    ```yaml

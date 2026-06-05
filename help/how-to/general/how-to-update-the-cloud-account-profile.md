@@ -6,7 +6,7 @@ role: Admin, Developer
 exl-id: b0c9dbcf-9745-494d-a662-80c5c6378068
 source-git-commit: bc8dbb1b43c3f2ad8f2ac214fd303f6a4d3e3412
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -44,10 +44,10 @@ Pour modifier ces champs, procédez comme suit :
 
 ## Que peut-on modifier ?
 
-1. **[!UICONTROL Password]** :
+1. **[!UICONTROL Password]**:
 Pour modifier votre mot de passe, consultez la page [Réinitialisation du mot de passe &#x200B;](https://account.adobe.com/), car ce profil est lié à votre compte ou adresse e-mail.
 
-1. **[!UICONTROL Email Address]** :
+1. **[!UICONTROL Email Address]**:
 La modification de ce champ dépend de votre situation individuelle.
 
 Si vous devez transférer la propriété de votre compte actuel à un nouveau propriétaire ou à une autre adresse e-mail, vous devez mettre à jour l’adresse e-mail de l’utilisateur principal associée au compte.

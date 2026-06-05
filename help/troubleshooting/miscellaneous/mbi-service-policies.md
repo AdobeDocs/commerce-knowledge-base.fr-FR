@@ -6,7 +6,7 @@ feature: Commerce Intelligence, User Account
 role: Developer
 source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Comme nous voulons nous assurer que seules les personnes autorisées peuvent acc
 
 Bien que nous ne puissions pas effectuer ces actions en votre nom, nous sommes tout à fait disposés à vous guider :
 
-* [Création et modification des informations de compte utilisateur](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html?lang=fr)
+* [Créer et modifier des informations de compte d’utilisateur](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html?lang=fr)
 * Saisir ou modifier des informations de facturation
 * [Partage de tableaux de bord avec d’autres utilisateurs](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/dashboards/share-dashboard-with-users.html?lang=fr)
 * Discussion, création ou modification des connexions de données et des détails du serveur

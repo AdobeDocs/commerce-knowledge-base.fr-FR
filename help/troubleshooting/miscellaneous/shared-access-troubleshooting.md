@@ -6,7 +6,7 @@ feature: Cache
 role: Developer
 source-git-commit: c9ad6040ddb65dbb3be6591f2c0e00405dfbebd5
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -93,5 +93,5 @@ Si vous continuez à rencontrer des problèmes, contactez votre équipe de compt
 ## Lecture connexe
 
 * [Impossible de se connecter au support Adobe Commerce ou au compte cloud](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project)
-* [Le propriétaire du compte MageID ne peut pas se connecter ni envoyer de ticket d’assistance](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-25231)
-* [Partager un compte Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/commerce-account/commerce-account-share)
+* [Le propriétaire du compte MageID ne peut pas se connecter ni soumettre de ticket d’assistance](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-25231)
+* [Partage d’un compte Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/start/commerce-account/commerce-account-share)

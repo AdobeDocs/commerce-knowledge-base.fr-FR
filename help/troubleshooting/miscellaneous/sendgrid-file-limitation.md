@@ -1,37 +1,37 @@
 ---
-title: '[!DNL SendGrid] limitation de fichier pour Adobe Commerce Cloud'
-description: Cet article fournit une solution de contournement à la limitation  [!DNL SendGrid] d’Adobe Commerce sur l’infrastructure cloud.
+title: Limitation des fichiers [!DNL SendGrid] pour Adobe Commerce Cloud
+description: Cet article fournit une solution de contournement de la limitation  [!DNL SendGrid]  d’Adobe Commerce sur les infrastructures cloud.
 feature: Deploy, Marketing Tools
 role: Developer, Admin
 exl-id: 48629f48-8100-4128-9211-53d947aecd49
 source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
 
-# [!DNL SendGrid] limite pour Adobe Commerce Cloud
+# Limitation de [!DNL SendGrid] pour Adobe Commerce Cloud
 
-Cet article fournit quelques solutions à la limitation de [!DNL SendGrid] pour Adobe Commerce sur l’infrastructure cloud.
+Cet article fournit quelques solutions de contournement à la limite de [!DNL SendGrid] d’Adobe Commerce sur les infrastructures cloud.
 
 ## Produits et versions concernés
 
-* Adobe Commerce sur l’infrastructure cloud, [toutes les versions prises en charge](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce sur les infrastructures cloud, [toutes les versions prises en charge](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 
 ## Problème
 
-Vous tentez d’envoyer des pièces jointes volumineuses dans les emails et les erreurs de journal suivantes s’affichent :
+Vous tentez d’envoyer des pièces jointes volumineuses dans les e-mails et vous voyez ces erreurs de journal :
 
-Dans `/var/log/mail.log`
+En `/var/log/mail.log`
 
 ```shell
 Month Date Time i-xxxxxxxxxxxxxxxxx postfix/sendmail[21408]: fatal: no-reply@xxxxxxxx.com(8080): message file too big
 Month Date Time i-xxxxxxxxxxxxxxxxx postfix/sendmail[26434]: fatal: no-reply@xxxxxxxxx.com(8080): message file too big
 ```
 
-Dans `/var/log/exception.log`
+En `/var/log/exception.log`
 
 Production :
 
@@ -47,14 +47,14 @@ Staging2 :
 
 ## Cause
 
-[!DNL SendGrid] a une limite système de taille de 30 Mo pour les emails. Il est recommandé de ne pas utiliser de pièces jointes dont la taille dépasse 10 Mo. Pour plus d’informations, voir [Envoi de pièces jointes](https://docs.sendgrid.com/ui/sending-email/attachments-with-digioh) dans la documentation SendGrid.
+[!DNL SendGrid] présente une limitation du système de 30 Mo pour la taille des e-mails. Il est recommandé de ne pas utiliser de pièces jointes de plus de 10 Mo. Voir [Envoi de pièces jointes](https://docs.sendgrid.com/ui/sending-email/attachments-with-digioh) dans la documentation SendGrid pour plus d’informations.
 
 ## Solution
 
-* N’utilisez pas de pièces jointes supérieures à 6 Mo ou 10 Mo.
-* Envisagez d’utiliser un serveur SMTP distant sur votre instance Adobe Commerce. Pour les étapes, reportez-vous à la section [Configuration des communications par e-mail](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html?lang=fr) de notre guide des systèmes d’administration.
-* Reconfigurez votre serveur afin que les fichiers puissent être enregistrés dans votre module, puis joignez le lien aux fichiers des emails.
+* N’utilisez pas de pièces jointes de plus de 6 Mo ou 10 Mo.
+* Envisagez l’utilisation d’un serveur SMTP distant sur votre instance Adobe Commerce. Pour connaître les étapes, reportez-vous à [Configurer les communications par e-mail](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html?lang=fr) dans notre Guide des systèmes d’administration.
+* Reconfigurez votre serveur afin que les fichiers puissent être enregistrés dans votre module, puis joignez le lien vers les fichiers dans les e-mails.
 
 ## Lecture connexe
 
-* [[!DNL SendGrid] service de messagerie](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html?lang=fr) dans notre guide Commerce on Cloud Infrastructure.
+* [[!DNL SendGrid] service de messagerie électronique](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html?lang=fr) dans notre Guide de Commerce sur les infrastructures cloud.
