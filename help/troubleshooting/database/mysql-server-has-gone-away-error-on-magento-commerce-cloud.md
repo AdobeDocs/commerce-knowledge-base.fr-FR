@@ -4,9 +4,9 @@ description: Cet article présente la solution au problème de réception d’un
 exl-id: 14cb9a6d-6d25-4044-8f52-d65648c03431
 feature: Cloud, Paas, Services, Variables
 role: Developer
-source-git-commit: 5ca7a4400e62db2419b32a31a4f6cf04f5a82e35
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Déploiement réussi.
 
 <u>Résultat réel</u>
 
-Message d’erreur dans `cron.log` : » *SQLSTATE\[HY000\] \[2006\] MySQL Server a disparu at/app/AAAAAAAAA/vendor/magento/zendframework1/library/Zend/Db/Adapter/Pdo/Abstract.php:144 »*
+Message d’erreur dans `cron.log` : » *SQLSTATE\[HY000\] \[2006\] MySQL Server a disparu at/app/AAAAAAAAA/vendor/magento/zendframework1/library/Zend/Db/Adapter/Pdo/Abstract.php:144«*
 
 ## Cause
 
@@ -41,11 +41,11 @@ La valeur `default_socket_timeout` est trop basse. Cela est dû au paramètre `d
 
 ## Solution
 
-1. Vérifiez le délai d’expiration actuel pour `default_socket_timeout` en exécutant dans l’interface de ligne de commande :    ```    php -i |grep default_socket_timeout    ```
+1. Vérifiez le délai d’expiration actuel pour `default_socket_timeout` en exécutant dans l’interface de ligne de commande : `php -i |grep default_socket_timeout`
 1. En fonction de l’augmentation du paramètre de délai d’expiration, la variable `default_socket_timeout` prend la durée d’exécution la plus longue possible attendue dans le fichier `/etc/platform/<project_name>/php.ini`. Il est suggéré de définir entre 10 et 15 minutes.
 1. Validez-le dans Git et redéployez-le.
 
 ## Lecture connexe
 
-* [Bonnes pratiques relatives aux bases de données pour Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=fr)
-* [Problèmes de base de données les plus courants dans Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=fr)
+* [Bonnes pratiques relatives aux bases de données pour Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+* [Problèmes de base de données les plus courants dans Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)

@@ -4,9 +4,9 @@ description: Cet article fournit un correctif pour le problème où vous tentez 
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Voir les détails des deux options dans les paragraphes suivants.
 1. Dans Admin, accédez à **Magasins** > **Configuration** > **Avancé** > **Admin** > **Sécurité**.
 1. Définissez l’option **Ajouter la clé secrète aux URL** sur *Non.*
 1. Cliquez sur **Enregistrer la configuration**.
-1. Nettoyez le cache sous **Système** > **Outils** > **Gestion du cache** ou en exécutant    ```bash    bin/magento cache:clean``` ou dans Admin.
+1. Nettoyez le cache sous **Système** > **Outils** > **Gestion du cache** ou en exécutant `bin/magento cache:clean` ou dans Admin.
 
 ### Exécutez manuellement la commande d’exportation et ajoutez-la éventuellement en tant que tâche cron
 
@@ -73,8 +73,8 @@ Pour ajouter éventuellement le processus en tant que tâche cron, vous devez aj
 
 #### Ajouter un processus en tant que tâche cron (facultatif)
 
-1. Assurez-vous que le cron est configuré. Pour plus d’informations, consultez [Configuration de tâches cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=fr).
-1. Exécutez la commande suivante pour renvoyer une liste de consommateurs de file d’attente de messages :     `./bin/magento queue:consumers:list`
+1. Assurez-vous que le cron est configuré. Pour plus d’informations, consultez [Configuration de tâches cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html).
+1. Exécutez la commande suivante pour renvoyer une liste de consommateurs de file d’attente de messages : `./bin/magento queue:consumers:list`
 1. Ajoutez les éléments suivants à votre fichier `.magento.env.yaml` dans le répertoire racine de l’application et incluez les consommateurs que vous souhaitez ajouter. Par exemple, voici le client requis pour le traitement des exportations :
 
    ```yaml
@@ -87,16 +87,16 @@ Pour ajouter éventuellement le processus en tant que tâche cron, vous devez aj
                    - exportProcessor
    ```
 
-   Envoyez ensuite ce fichier mis à jour et redéployez votre environnement. Consultez également la section [Ajouter des tâches cron personnalisées à votre projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=fr#add-custom-cron-jobs-to-your-project) dans notre documentation destinée aux développeurs.
+   Envoyez ensuite ce fichier mis à jour et redéployez votre environnement. Consultez également la section [Ajouter des tâches cron personnalisées à votre projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#add-custom-cron-jobs-to-your-project) dans notre documentation destinée aux développeurs.
 
 >[!NOTE]
 >
->Si vous ne trouvez pas le fichier `.magento.env.yaml` pour votre environnement et que vous pensez qu’il a été supprimé, vous devez créer un nouveau `.magento.env.yaml`. Il peut être vide au départ, vous pouvez y ajouter des informations selon vos besoins. Référencez les articles suivants : [Configurer des variables d’environnement pour le déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=fr) et [Variables d’environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=fr) dans notre documentation destinée aux développeurs.
+>Si vous ne trouvez pas le fichier `.magento.env.yaml` pour votre environnement et que vous pensez qu’il a été supprimé, vous devez créer un nouveau `.magento.env.yaml`. Il peut être vide au départ, vous pouvez y ajouter des informations selon vos besoins. Référencez les articles suivants : [Configurer des variables d’environnement pour le déploiement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) et [Variables d’environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) dans notre documentation destinée aux développeurs.
 
 >[!TIP]
 >
->Les [fichiers YAML](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=fr) sont sensibles à la casse et n’autorisent pas les onglets. Veillez à utiliser une mise en retrait cohérente dans l’ensemble du fichier .magento.env.yaml, sans quoi votre configuration risque de ne pas fonctionner comme prévu. Les exemples de la documentation et de l’exemple de fichier utilisent la mise en retrait à deux espaces. Utilisez la commande de validation ece-tools pour vérifier votre configuration.
+>Les [fichiers YAML](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) sont sensibles à la casse et n’autorisent pas les onglets. Veillez à utiliser une mise en retrait cohérente dans l’ensemble du fichier .magento.env.yaml, sans quoi votre configuration risque de ne pas fonctionner comme prévu. Les exemples de la documentation et de l’exemple de fichier utilisent la mise en retrait à deux espaces. Utilisez la commande de validation ece-tools pour vérifier votre configuration.
 
 >[!NOTE]
 >
->Dans les projets Pro d’Adobe Commerce sur les infrastructures cloud, la fonctionnalité [auto-crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=fr#crontab) doit être activée sur votre Adobe Commerce sur les infrastructures cloud avant que vous puissiez ajouter des tâches cron personnalisées aux environnements d’évaluation et de production à l’aide de `.magento.app.yaml`. Si cette fonctionnalité n’est pas activée, [créez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour que la tâche soit ajoutée pour vous.
+>Dans les projets Pro d’Adobe Commerce sur les infrastructures cloud, la fonctionnalité [auto-crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=en#crontab) doit être activée sur votre Adobe Commerce sur les infrastructures cloud avant que vous puissiez ajouter des tâches cron personnalisées aux environnements d’évaluation et de production à l’aide de `.magento.app.yaml`. Si cette fonctionnalité n’est pas activée, [créez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour que la tâche soit ajoutée pour vous.

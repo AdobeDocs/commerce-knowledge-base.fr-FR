@@ -1,41 +1,41 @@
 ---
-title: Dépannage de l’erreur 503 provoquée par la nécessité de modifier les paramètres de vernis par défaut
-description: Cet article fournit des solutions pour le dépannage de l’erreur 503 provoquée par certaines valeurs par défaut du cache de vernis qui ne sont pas suffisantes pour votre magasin.
+title: Dépannage de l'erreur 503 causée par la nécessité de modifier les paramètres par défaut du vernis
+description: Cet article fournit des solutions pour résoudre l’erreur 503 due au fait que certaines valeurs par défaut du cache de vernis ne suffisent pas pour votre magasin.
 exl-id: 3f001cc9-b19a-4dee-bff0-fc8ba89e2646
 feature: Cache, Categories
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
 
-# Dépannage de l’erreur 503 provoquée par la nécessité de modifier les paramètres de vernis par défaut
+# Dépannage de l&#39;erreur 503 causée par la nécessité de modifier les paramètres par défaut du vernis
 
-Cet article fournit des solutions pour le dépannage de l’erreur 503 provoquée par certaines valeurs par défaut du cache de vernis qui ne sont pas suffisantes pour votre magasin.
+Cet article fournit des solutions pour résoudre l’erreur 503 due au fait que certaines valeurs par défaut du cache de vernis ne suffisent pas pour votre magasin.
 
 ## Problème
 
-Si la longueur des balises de cache utilisées par Adobe Commerce dépasse la valeur par défaut de 8 192 octets de Varnish, vous pouvez voir des erreurs HTTP 503 (Échec de la récupération du serveur principal) dans le navigateur. Les erreurs peuvent se présenter comme suit : *&quot;Erreur 503 - Échec de la récupération du serveur principal. Échec de la récupération du serveur principal&quot;*
+Si la longueur des balises de cache utilisées par Adobe Commerce dépasse la valeur par défaut de 8 192 octets de Varnish, vous pouvez voir les erreurs HTTP 503 (Backend Fetch Failed) dans le navigateur. Les erreurs peuvent se présenter comme suit : *« Erreur 503 Échec de la récupération du serveur principal. Échec de la récupération du serveur principal »*
 
 ## Solution
 
-Pour résoudre ce problème, augmentez la valeur par défaut du paramètre `http_resp_hdr_len` dans votre fichier de configuration de vernis. Le paramètre `http_resp_hdr_len` spécifie la longueur maximale de l’en-tête *dans* la taille totale de réponse par défaut de 3 2768 octets.
+Pour résoudre ce problème, augmentez la valeur par défaut du paramètre `http_resp_hdr_len` dans votre fichier de configuration de vernis. Le paramètre `http_resp_hdr_len` spécifie la longueur maximale de l’en-tête *dans* la taille de réponse totale par défaut de 32768 octets.
 
 >[!NOTE]
 >
->Si la valeur `http_resp_hdr_len` dépasse 32 Ko, vous devez également augmenter la taille de réponse par défaut à l’aide du paramètre `http_resp_size` .
+>Si la valeur `http_resp_hdr_len` dépasse 32 000, vous devez également augmenter la taille de réponse par défaut à l’aide du paramètre `http_resp_size` .
 
-1. En tant qu’utilisateur disposant des privilèges `root`, ouvrez votre fichier de configuration de l’annulation dans un éditeur de texte :
+1. En tant qu’utilisateur disposant de droits d’`root`, ouvrez votre fichier de configuration Vanish dans un éditeur de texte :
    * CentOS 6 : `/etc/sysconfig/varnish`
    * CentOS 7 : `/etc/varnish/varnish.params`
    * Debian : `/etc/default/varnish`
    * Ubuntu : `/etc/default/varnish`
 1. Recherchez le paramètre `http_resp_hdr_len` .
 1. Si le paramètre n’existe pas, ajoutez-le après `thread_pool_max` .
-1. Définissez `http_resp_hdr_len` sur une valeur égale au nombre de produits de votre catégorie la plus grande multipliée par 21. (Chaque balise de produit comporte environ 21 caractères.)    Par exemple, la définition de la valeur sur 6 536 octets doit fonctionner si votre catégorie la plus grande comporte 3 000 produits.    Par exemple :    ```conf    -p http_resp_hdr_len=65536 \    ```
-1. Définissez `http_resp_size` sur une valeur qui prend en charge la longueur d’en-tête de réponse accrue.    Par exemple, l’utilisation de la somme de la longueur d’en-tête augmentée et de la taille de réponse par défaut est un bon point de départ (par exemple, 65536 + 32768 = 98304) : `-p http_resp_size=98304`. Voici un extrait de code :
+1. Définissez `http_resp_hdr_len` sur une valeur égale au nombre de produits de la catégorie la plus volumineuse multiplié par 21. (Chaque balise de produit comporte environ 21 caractères.) Par exemple, la définition de la valeur sur 65536 octets doit fonctionner si votre catégorie la plus volumineuse comporte 3 000 produits. Par exemple : `-p http_resp_hdr_len=65536 \`
+1. Définissez la `http_resp_size` sur une valeur qui prend en charge la longueur accrue de l’en-tête de réponse.    Par exemple, utiliser la somme de la longueur accrue de l’en-tête et de la taille de réponse par défaut est un bon point de départ (par exemple, 65536 + 32768 = 98304) : `-p http_resp_size=98304`. Voici un extrait de code :
 
    ```
    # DAEMON_OPTS is used by the init script.
@@ -51,16 +51,16 @@ Pour résoudre ce problème, augmentez la valeur par défaut du paramètre `http
        -s ${VARNISH_STORAGE}" \
    ```
 
-## Délais d’expiration des contrôles de l’intégrité {#health-check-timeouts}
+## Délais d’expiration du contrôle d’intégrité {#health-check-timeouts}
 
-Si vous désactivez le cache alors que Varnish est configuré comme application de mise en cache et qu’Adobe Commerce est en mode développeur, il peut devenir impossible de se connecter à l’administrateur.
+Si vous désactivez le cache alors que Varnish est configuré comme application de mise en cache et qu’Adobe Commerce est en mode Développeur, il peut s’avérer impossible de se connecter à l’administrateur.
 
-Cette situation peut se produire, car le contrôle de l’intégrité par défaut a une valeur `timeout` de 2 secondes. Cela peut prendre plus de 2 secondes pour que le contrôle de l’intégrité collecte et fusionne les informations sur chaque demande de contrôle de l’intégrité. Si cela se produit dans 6 contrôles de l’intégrité sur 10, le serveur Adobe Commerce est considéré comme non sain. Le vernis diffuse du contenu obsolète lorsque le serveur n’est pas sain.
+Cette situation peut se produire, car le contrôle d’intégrité par défaut a une valeur de `timeout` de 2 secondes. La collecte et la fusion des informations de chaque requête de contrôle d’intégrité peuvent prendre plus de 2 secondes pour le contrôle d’intégrité. Si cela se produit dans 6 contrôles d’intégrité sur 10, le serveur Adobe Commerce est considéré comme défectueux. Le vernis diffuse du contenu obsolète lorsque le serveur n’est pas intègre.
 
-Comme l’accès à l’administrateur s’effectue par le biais du vernis, vous ne pouvez pas vous connecter à l’administrateur pour activer la mise en cache (sauf si Adobe Commerce est à nouveau en bonne santé). Cependant, vous pouvez utiliser la commande suivante pour activer le cache :
+Comme l’accès à Admin s’effectue via Vernis, vous ne pouvez pas vous connecter à Admin pour activer la mise en cache (à moins qu’Adobe Commerce ne redevienne intègre). Vous pouvez toutefois utiliser la commande suivante pour activer le cache :
 
 ```bash
 $ bin/magento cache:enable
 ```
 
-Pour plus d&#39;informations sur l&#39;utilisation de la ligne de commande, voir [Prise en main de la configuration de ligne de commande](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/config-cli).
+Pour plus d’informations sur l’utilisation de la ligne de commande, voir [Prise en main de la configuration de ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli).
