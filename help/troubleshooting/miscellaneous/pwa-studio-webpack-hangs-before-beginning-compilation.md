@@ -4,9 +4,9 @@ description: Cet article parle d’une solution suggérée pour le moment où un
 exl-id: 692eeafa-9289-4d66-9f2f-1e0fe36e681d
 feature: Configuration
 role: Developer
-source-git-commit: 032fe4d32921c63570672b9c68e8c03e00bd1077
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,8 @@ commande.
 
 <u>Résultat attendu </u> :
 
-* Si vous utilisez le    ```yaml    build    ```    génère normalement les artefacts de build pour Venia.
-* Si vous utilisez le    ```yaml    watch    ```    , démarre normalement le storefront Venia.
+* Si vous utilisez la commande `build`, elle génère normalement les artefacts de build pour Venia.
+* Si vous utilisez la commande `watch`, le storefront Venia démarre normalement.
 
 <u>Résultat réel</u> :
 

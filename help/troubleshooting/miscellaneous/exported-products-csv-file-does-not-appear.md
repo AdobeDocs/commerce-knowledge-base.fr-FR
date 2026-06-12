@@ -4,9 +4,9 @@ description: Cet article fournit un correctif pour le problème où vous tentez 
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Voir les détails des deux options dans les paragraphes suivants.
 1. Dans Admin, accédez à **Magasins** > **Configuration** > **Avancé** > **Admin** > **Sécurité**.
 1. Définissez l’option **Ajouter la clé secrète aux URL** sur *Non.*
 1. Cliquez sur **Enregistrer la configuration**.
-1. Nettoyez le cache sous **Système** > **Outils** > **Gestion du cache** ou en exécutant    ```bash    bin/magento cache:clean``` ou dans Admin.
+1. Nettoyez le cache sous **Système** > **Outils** > **Gestion du cache** ou en exécutant `bin/magento cache:clean` ou dans Admin.
 
 ### Exécutez manuellement la commande d’exportation et ajoutez-la éventuellement en tant que tâche cron
 
@@ -74,7 +74,7 @@ Pour ajouter éventuellement le processus en tant que tâche cron, vous devez aj
 #### Ajouter un processus en tant que tâche cron (facultatif)
 
 1. Assurez-vous que le cron est configuré. Pour plus d’informations, consultez [Configuration de tâches cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=fr).
-1. Exécutez la commande suivante pour renvoyer une liste de consommateurs de file d’attente de messages :     `./bin/magento queue:consumers:list`
+1. Exécutez la commande suivante pour renvoyer une liste de consommateurs de file d’attente de messages : `./bin/magento queue:consumers:list`
 1. Ajoutez les éléments suivants à votre fichier `.magento.env.yaml` dans le répertoire racine de l’application et incluez les consommateurs que vous souhaitez ajouter. Par exemple, voici le client requis pour le traitement des exportations :
 
    ```yaml
