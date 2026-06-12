@@ -17,7 +17,7 @@ Cet article fournit une solution pour résoudre les problèmes de synchronisatio
 
 ## Produits et versions concernés
 
-Instances Adobe Commerce sur lesquelles un code personnalisé a été appliqué à la fonctionnalité d’exportation de données (`commerce-data-exporter` ou `saas-exporter`). L’erreur se produit si la version [[!DNL SaaS] Exportation de données) installée est 103.3.0](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes#release-6) ou ultérieure et que le code fait directement référence à l’index `catalog_data_exporter_products`.
+Instances Adobe Commerce sur lesquelles un code personnalisé a été appliqué à la fonctionnalité d’exportation de données (`commerce-data-exporter` ou `saas-exporter`). L’erreur se produit si la version [[!DNL SaaS] Exportation de données) installée est 103.3.0](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/saas-data-export/release-notes#release-6) ou ultérieure et que le code fait directement référence à l’index `catalog_data_exporter_products`.
 
 ## Problème
 
@@ -29,7 +29,7 @@ Les commerçants peuvent constater que les mises à jour de données sont absent
 
 ## Cause
 
-En raison des changements de nom dans les tables de flux, les index et les tables de logs des modifications dans la version [!DNL Commerce Data Export] [version 103.3.0](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes#release-9), les abonnements [!DNL Mview] dans les extensions personnalisées qui utilisent les extensions [!DNL Commerce Data Export] peuvent ne pas fonctionner correctement.
+En raison des changements de nom dans les tables de flux, les index et les tables de logs des modifications dans la version [!DNL Commerce Data Export] [version 103.3.0](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/saas-data-export/release-notes#release-9), les abonnements [!DNL Mview] dans les extensions personnalisées qui utilisent les extensions [!DNL Commerce Data Export] peuvent ne pas fonctionner correctement.
 
 Dans ce cas, l&#39;erreur *table n&#39;existe pas* se produit car le nom de la table `catalog_data_exporter` a été modifié en `cde_products_feed` et vous disposez d&#39;un code personnalisé qui fait référence à l&#39;ancien nom dans l&#39;abonnement [!DNL Data Exporter Mview].
 
@@ -49,5 +49,5 @@ L’exemple suivant illustre le code qui spécifie les tables suivies par l’ab
 
 ## Lecture connexe
 
-* [[!DNL SaaS] Notes de mise à jour de l’extension Data Export](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes) dans le Guide d’exportation de données Adobe Commerce pour [!DNL SaaS] Services
-* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+* [[!DNL SaaS] Notes de mise à jour de l’extension Data Export](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/saas-data-export/release-notes) dans le Guide d’exportation de données Adobe Commerce pour [!DNL SaaS] Services
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook

@@ -94,12 +94,12 @@ Dans notre base de connaissances du support :
 
 Dans notre guide de l&#39;utilisateur :
 
-* [Gestion des index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management?itm_source=merchdocs&itm_medium=search_page&itm_campaign=federated_search&itm_term=reindexing)
+* [Gestion des index](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/index-management?itm_source=merchdocs&itm_medium=search_page&itm_campaign=federated_search&itm_term=reindexing)
 
 Dans notre documentation destinée aux développeurs :
 
 * [Présentation de l’indexation](https://developer.adobe.com/commerce/php/development/components/indexing/)
-* [Bonnes pratiques relatives aux indexeurs](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration)
-* [Configuration Et Exécution De Cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)
-* [Gestion Des Indexeurs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)
+* [Bonnes pratiques relatives aux indexeurs](https://experienceleague.adobe.com/fr/docs/commerce-operations/performance-best-practices/configuration)
+* [Configuration Et Exécution De Cron](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)
+* [Gestion Des Indexeurs](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-indexers)
 * [Optimisation de l’indexeur](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/)
