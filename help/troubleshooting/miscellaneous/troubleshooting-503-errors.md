@@ -63,5 +63,5 @@ Comme l’accès à Admin s’effectue via Vernis, vous ne pouvez pas vous conne
 $ bin/magento cache:enable
 ```
 
-Pour plus d’informations sur l’utilisation de la ligne de commande, voir [Prise en main de la configuration de ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli).
+Pour plus d’informations sur l’utilisation de la ligne de commande, voir [Prise en main de la configuration de ligne de commande](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/config-cli).
 
