@@ -4,7 +4,7 @@ description: Cet article parle d’une solution suggérée pour le moment où un
 exl-id: 692eeafa-9289-4d66-9f2f-1e0fe36e681d
 feature: Configuration
 role: Developer
-source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -97,3 +97,4 @@ Vous pouvez installer des versions supérieures d’OpenSSL avec [Homebrew](http
 * [PWA Buildpack](https://developer.adobe.com/commerce/pwa-studio/guides/packages/buildpack/)
 * [Interface de ligne de commande buildpack](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/)
 * [Outils et bibliothèques : buildpack](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack)
+

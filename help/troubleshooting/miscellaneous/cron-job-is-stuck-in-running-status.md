@@ -4,7 +4,7 @@ description: Cet article fournit des solutions pour les cas où l’exécution d
 exl-id: 11e01a2b-2fcf-48c2-871c-08f29cd76250
 feature: Configuration
 role: Developer
-source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Les symptômes des tâches [!DNL cron] qui doivent être réinitialisées inclue
 
 Pour résoudre ce problème, vous devez réinitialiser la ou les tâches [!DNL cron] à l’aide de la commande `cron:unlock` . Cette commande modifie le statut de la tâche [!DNL cron] dans la base de données, mettant fin à la tâche de force pour permettre à d’autres tâches planifiées de continuer.
 
-1. Ouvrez un terminal et utilisez vos [clés SSH](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour vous connecter à l’environnement affecté.
+1. Ouvrez un terminal et utilisez vos [clés SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour vous connecter à l’environnement affecté.
 1. Obtenez les informations d’identification de la base de données MySQL : `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp`
 1. Connectez-vous à la base de données à l’aide de `mysql` : `mysql -hdatabase.internal -uuser -ppassword main`
 1. Sélectionnez la base de données `main` : `use main`
@@ -47,7 +47,7 @@ Pour résoudre ce problème, vous devez réinitialiser la ou les tâches [!DNL c
 
 ### Solution pour arrêter une seule [!DNL cron] {#solution-stop-a-single-cron}
 
-1. Ouvrez un terminal et utilisez vos [clés SSH](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour vous connecter à l’environnement affecté.
+1. Ouvrez un terminal et utilisez vos [clés SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour vous connecter à l’environnement affecté.
 1. Vérifiez les tâches à long terme à l’aide de la commande suivante :
 
    `date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'`
@@ -78,3 +78,4 @@ La commande **kill process** est la suivante :
    `kill -9 <PID>`
 
 1. Vous pouvez ensuite effectuer un nouveau déploiement, si vous tentez d’effectuer un nouveau déploiement.
+

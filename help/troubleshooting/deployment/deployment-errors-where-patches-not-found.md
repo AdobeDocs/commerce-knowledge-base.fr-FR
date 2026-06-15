@@ -2,7 +2,7 @@
 title: Correctif introuvable erreurs lors du déploiement ou de l’application manuelle
 description: 'Cet article fournit une solution au problème d''erreur *Les correctifs suivants n''ont pas été trouvés : MDVA-XXXXX, ACSD-XXXXX. Vérifiez la disponibilité de ces correctifs pour la version Magento actuelle à l’aide de la commande « status »*.'
 exl-id: 5a2fd35a-892a-48af-a41f-f275297b3e2e
-source-git-commit: 180f0e00ec1a2c6c3bd2ebca4dafe387c7bb3852
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -72,10 +72,11 @@ Dans ce cas, le correctif n’est pas disponible pour la version d’Adobe Comme
     * ACSD-XXXXX
    ```
 
-1. Recherchez les ID de correctif dans les [&#x200B; Notes de mise à jour des correctifs de qualité &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=fr) pour vérifier si chacun d’eux peut être appliqué à la nouvelle version d’Adobe Commerce vers laquelle vous effectuez la mise à niveau.
+1. Recherchez les ID de correctif dans les [ Notes de mise à jour des correctifs de qualité ](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) pour vérifier si chacun d’eux peut être appliqué à la nouvelle version d’Adobe Commerce vers laquelle vous effectuez la mise à niveau.
 1. Si le correctif ne s’applique pas à la nouvelle version d’Adobe Commerce vers laquelle vous souhaitez effectuer la mise à niveau, supprimez l’ID de correctif du fichier `.magento.env.yaml`.
 1. Une fois que vous avez révisé tous les identifiants de correctif indiqués par l’erreur, poussez les modifications et redéployez.
 
 ## Lecture connexe
 
-* Guide [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr#apply-a-patch-in-a-local-environment) dans Commerce sur les infrastructures cloud.
+* Guide [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=en#apply-a-patch-in-a-local-environment) dans Commerce sur les infrastructures cloud.
+

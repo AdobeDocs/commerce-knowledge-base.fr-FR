@@ -4,7 +4,7 @@ description: Cet article fournit des solutions pour les erreurs qui peuvent se p
 exl-id: 9beb31ae-ed3c-42e1-b0bf-33fb1c91e0ea
 feature: Data Import/Export
 role: Developer
-source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### Cause
 
-Une classe de la base de code Adobe Commerce 1 est introuvable dans la base de code Adobe Commerce 2 lors de l’étape [migration EAV](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/data-migration/basics/technical-specification) dans notre documentation destinée aux développeurs. Dans la plupart des cas, la classe manquante appartient à une [&#x200B; extension &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/glossary#extension).
+Une classe de la base de code Adobe Commerce 1 est introuvable dans la base de code Adobe Commerce 2 lors de l’étape [migration EAV](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/basics/technical-specification) dans notre documentation destinée aux développeurs. Dans la plupart des cas, la classe manquante appartient à une [ extension ](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#extension).
 
 ### Solutions possibles
 
@@ -155,7 +155,7 @@ Deltalog for <TABLE_NAME> is not installed
 
 ### Cause
 
-Cette erreur se produit lors de la [migration incrémentielle](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/data-migration/migrate-data/delta) (dans notre documentation destinée aux développeurs) des modifications apportées aux données. Cela signifie que les tables deltalog (avec le préfixe `m2_cl_*`) sont introuvables dans la base de données Adobe Commerce 1. Cet outil installe ces tables lors de la [migration des données](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/data-migration/migrate-data/data) (dans notre documentation destinée aux développeurs) ainsi que des déclencheurs de base de données qui effectuent le suivi des modifications et renseignent les tables du deltalog.
+Cette erreur se produit lors de la [migration incrémentielle](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/delta) (dans notre documentation destinée aux développeurs) des modifications apportées aux données. Cela signifie que les tables deltalog (avec le préfixe `m2_cl_*`) sont introuvables dans la base de données Adobe Commerce 1. Cet outil installe ces tables lors de la [migration des données](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/data) (dans notre documentation destinée aux développeurs) ainsi que des déclencheurs de base de données qui effectuent le suivi des modifications et renseignent les tables du deltalog.
 
 L’une des raisons de l’erreur peut être que vous tentez d’effectuer une migration à partir d’une *copie* de votre boutique Adobe Commerce 1 active, et non à partir de la boutique en ligne elle-même. Lorsque vous effectuez une copie à partir d’un magasin Adobe Commerce 1 actif qui n’a jamais été migré, la copie ne contient pas les déclencheurs et les tables deltalog supplémentaires nécessaires pour terminer une migration delta. La migration échoue donc. L’outil de migration des données n’effectue PAS de comparaisons entre la base de données d’AC1 et d’AC2 pour migrer les différences. Au lieu de cela, l’outil utilise les déclencheurs et les tables de delta installées lors de la première migration afin d’effectuer les migrations delta suivantes. Dans ce cas, votre copie de la base de données Adobe Commerce 1 active ne contiendra pas les déclencheurs et les tables de deltalog que l’outil de migration de données utilise pour effectuer une migration.
 
@@ -165,4 +165,5 @@ Nous vous avons recommandé de tester le processus de migration à partir d’un
 
 ## Lecture connexe
 
-[Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+[Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+
