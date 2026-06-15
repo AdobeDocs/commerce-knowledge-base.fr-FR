@@ -4,7 +4,7 @@ description: Cet article fournit des solutions pour résoudre l’erreur 503 due
 exl-id: 3f001cc9-b19a-4dee-bff0-fc8ba89e2646
 feature: Cache, Categories
 role: Admin
-source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
@@ -64,3 +64,4 @@ $ bin/magento cache:enable
 ```
 
 Pour plus d’informations sur l’utilisation de la ligne de commande, voir [Prise en main de la configuration de ligne de commande](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/config-cli).
+

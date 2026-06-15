@@ -2,7 +2,7 @@
 title: Correctif introuvable erreurs lors du déploiement ou de l’application manuelle
 description: 'Cet article fournit une solution au problème d''erreur *Les correctifs suivants n''ont pas été trouvés : MDVA-XXXXX, ACSD-XXXXX. Vérifiez la disponibilité de ces correctifs pour la version Magento actuelle à l’aide de la commande « status »*.'
 exl-id: 5a2fd35a-892a-48af-a41f-f275297b3e2e
-source-git-commit: 180f0e00ec1a2c6c3bd2ebca4dafe387c7bb3852
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -79,3 +79,4 @@ Dans ce cas, le correctif n’est pas disponible pour la version d’Adobe Comme
 ## Lecture connexe
 
 * Guide [Application de correctifs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=fr#apply-a-patch-in-a-local-environment) dans Commerce sur les infrastructures cloud.
+

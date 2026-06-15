@@ -4,7 +4,7 @@ description: Cet article fournit des solutions pour les erreurs qui peuvent se p
 exl-id: 9beb31ae-ed3c-42e1-b0bf-33fb1c91e0ea
 feature: Data Import/Export
 role: Developer
-source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
@@ -166,3 +166,4 @@ Nous vous avons recommandé de tester le processus de migration à partir d’un
 ## Lecture connexe
 
 [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+

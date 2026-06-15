@@ -4,7 +4,7 @@ description: Cet article contient des suggestions de dépannage pour le module [
 exl-id: 431ee31e-eb5b-400c-9c99-cc86613453d7
 feature: Cache, Compliance, Extensions, Marketing Tools, Personalization, Products, Recommendations
 role: Developer
-source-git-commit: 48b929f6fdf0bf8745ec03c8faa8b07bf5b3e5c3
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
@@ -90,3 +90,4 @@ saas-export
 * [Consulter les journaux et résoudre les problèmes](https://experienceleague.adobe.com/fr/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging) dans le Guide d’exportation des données [!DNL SaaS]
 * [[!DNL SaaS] Notes de mise à jour de l’extension Data Export](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/saas-data-export/release-notes) dans le Guide d’exportation de données Adobe Commerce pour [!DNL SaaS] Services
 * [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+
