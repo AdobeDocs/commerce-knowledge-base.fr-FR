@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 5cb7550f95d48b89fc0d68c5e282bc3efe817f17
+source-git-commit: dd7e3fe0f0d7e65fefc20c46db52581b14986f64
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1772'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,6 @@ ht-degree: 1%
       * [Erreur lors du déploiement lors de la mise à niveau vers la version prenant en charge PHP 8.1](/help/troubleshooting/deployment/error-during-deployment-when-upgrading-to-version-supporting-php-8-1.md)
       * [Erreur de déploiement : « erreur 7 lors du téléchargement... port 443 : connexion refusée »](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
       * [Erreurs de déploiement lors de la validation de fichiers incorrects](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
-      * [Correctif introuvable erreurs lors du déploiement ou de l’application manuelle](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
       * [Échec du déploiement lors du vidage du cache : erreur « Aucune commande n’est définie dans l’espace de noms du cache »](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
    * Problèmes connus {#known-issues-patches-attached}
       * [Conseils sur la sécurisation de votre magasin et la rotation des clés de chiffrement : [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
