@@ -40,5 +40,5 @@ En raison de la nature inhérente des requêtes GraphQL, il peut y avoir de nomb
 
 ## Lecture connexe
 
-* Guide [Web Application Firewall (WAF)](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service) dans Commerce on Cloud Infrastructure.
-* [Guide de prise en main d’un VCL personnalisé](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) dans Commerce sur les infrastructures cloud .
+* Guide [Web Application Firewall (WAF)](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service) dans Commerce on Cloud Infrastructure.
+* [Guide de prise en main d’un VCL personnalisé](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) dans Commerce sur les infrastructures cloud .
