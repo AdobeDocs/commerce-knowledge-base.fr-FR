@@ -69,7 +69,7 @@ Accédez à la page Connexions et jetez un coup d’œil au statut de la source 
 
 ## La base de données source contient MOINS de lignes que Magento BI {#lessrows}
 
-Si la base de données source comporte moins de lignes que Magento BI, il est possible que des lignes soient supprimées de la base de données source et que Magento BI ne récupère pas ces suppressions. ** [la suppression de données](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) peut entraîner des incohérences, des temps de mise à jour plus longs et un grand nombre de problèmes logistiques** . Nous vous recommandons donc vivement de ne jamais supprimer de données, sauf si elles sont vraiment nécessaires.
+Si la base de données source comporte moins de lignes que Magento BI, il est possible que des lignes soient supprimées de la base de données source et que Magento BI ne récupère pas ces suppressions. **&#x200B; [la suppression de données](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) peut entraîner des incohérences, des temps de mise à jour plus longs et un grand nombre de problèmes logistiques** . Nous vous recommandons donc vivement de ne jamais supprimer de données, sauf si elles sont vraiment nécessaires.
 
 Toutefois, si des lignes sont supprimées du tableau, examinez la fréquence de vérification à nouveau sur la clé primaire. La revérification de la clé primaire signifie que la table sera vérifiée pour les lignes supprimées.
 
