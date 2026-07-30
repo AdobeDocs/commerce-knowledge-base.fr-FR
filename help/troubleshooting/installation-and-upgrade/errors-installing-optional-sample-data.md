@@ -48,7 +48,7 @@ PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Cons
 
 N’installez pas de données d’exemple en mode de production. Passez en mode Développeur, effacez certains répertoires `var` et réessayez.
 
-Saisissez les commandes suivantes dans l’ordre indiqué en tant que propriétaire du système de fichiers [Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html) :
+Saisissez les commandes suivantes dans l’ordre indiqué en tant que propriétaire du système de fichiers [Adobe Commerce &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html) :
 
 ```php
 cd <magento_root>

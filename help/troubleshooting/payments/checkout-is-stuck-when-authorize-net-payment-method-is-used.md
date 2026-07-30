@@ -21,7 +21,7 @@ Cet article fournit une explication et un correctif pour le problème d’Adobe 
 
 >[!NOTE]
 >
->L’intégration de paiement principale Autoriser.Net d’Adobe Commerce est obsolète depuis la version 2.3.4 et a été complètement supprimée dans la version 2.4.0. Utilisez plutôt une extension d’Adobe Commerce [ [!DNL Marketplace]](https://commercemarketplace.adobe.com/) qui répond à vos besoins.
+>L’intégration de paiement principale Autoriser.Net d’Adobe Commerce est obsolète depuis la version 2.3.4 et a été complètement supprimée dans la version 2.4.0. Utilisez plutôt une extension d’Adobe Commerce [&#x200B; [!DNL Marketplace]](https://commercemarketplace.adobe.com/) qui répond à vos besoins.
 
 ## Problème
 
