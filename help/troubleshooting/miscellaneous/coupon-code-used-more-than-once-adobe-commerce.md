@@ -62,8 +62,8 @@ Ajoutez le client `sales.rule.update.coupon.usage` au fichier `app/etc/env.php`.
 ...
 ```
 
-Pour obtenir des instructions détaillées, consultez [Gestion des files d’attente des messages > Configuration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues#configuration) dans la documentation destinée aux développeurs.
+Pour obtenir des instructions détaillées, consultez [Gestion des files d’attente des messages > Configuration](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues#configuration) dans la documentation destinée aux développeurs.
 
 ## Lecture connexe
 
-[Présentation des files d’attente des messages](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework) dans notre documentation destinée aux développeurs.
+[Présentation des files d’attente des messages](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework) dans notre documentation destinée aux développeurs.
