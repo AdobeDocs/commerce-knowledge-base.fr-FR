@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 29d98726945266e08a49af010690728c3b4c81c1
+source-git-commit: 804fdcd482abed2b61fb31e805ee9a24491ff58f
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1757'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,6 @@ ht-degree: 1%
     * [Correctifs révisés pour la perte d’accès aux cartes Google sur toutes les versions d’Adobe Commerce](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
   * Divers {#miscellaneous}
     * [E-mail indiquant que le stockage de l’exportation est presque plein](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
-    * [Fichier de configuration manquant ou modifié](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
     * [Erreur cURL 60 : certificat SSL expiré](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
     * [Résolution des problèmes liés au module de recommandations de produits dans Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
     * [Module inconnu Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
