@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 694ab6fe606195c40b15d2752c09dd380d3dcedb
+source-git-commit: 4787dec7aefd10f0b8db97ee5e76b09abe78af6c
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1753'
 ht-degree: 1%
 
 ---
@@ -73,13 +73,10 @@ ht-degree: 1%
     * [Correctifs révisés pour la perte d’accès aux cartes Google sur toutes les versions d’Adobe Commerce](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
   * Divers {#miscellaneous}
     * [E-mail indiquant que le stockage de l’exportation est presque plein](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
-    * [Fichier de configuration manquant ou modifié](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
     * [Erreur cURL 60 : certificat SSL expiré](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
     * [Résolution des problèmes liés au module de recommandations de produits dans Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
     * [Module inconnu Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
-    * [Problèmes de vérification de l’état de préparation de la couronne](/help/troubleshooting/miscellaneous/cron-readiness-check-issues.md)
     * [Requêtes SQL : EXPLIQUER les erreurs de coût](/help/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.md)
-    * [Dépannage de New Relic sur Adobe Commerce sur les infrastructures cloud](/help/troubleshooting/miscellaneous/troubleshooting-new-relic-on-magento-commerce-cloud.md)
     * [Guide de dépannage de l’outil Adobe Commerce Security Scan](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [Problèmes de vérification de l’état de préparation des autorisations de fichiers](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
     * [Diagnostic des écarts de chiffre d’affaires Google eCommerce](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
