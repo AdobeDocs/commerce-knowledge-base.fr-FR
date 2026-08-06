@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 6552f703710a3ea916d6cc72eadd2a5013b99b40
+source-git-commit: a19c0de6f442d5dba44839be565b1e0d5629e753
 workflow-type: tm+mt
-source-wordcount: '1742'
+source-wordcount: '1737'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,6 @@ ht-degree: 1%
     * [E-mail indiquant que le stockage de l’exportation est presque plein](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
     * [Résolution des problèmes liés au module de recommandations de produits dans Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
     * [Module inconnu Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
-    * [Requêtes SQL : EXPLIQUER les erreurs de coût](/help/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.md)
     * [Guide de dépannage de l’outil Adobe Commerce Security Scan](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [Diagnostic des écarts de chiffre d’affaires Google eCommerce](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
     * [J’ai configuré les clés API pour Adobe AI, mais je ne vois qu’un seul espace de données SaaS](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
