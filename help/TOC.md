@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 9216789f967ee842ee41d669779d8037fd47897f
+source-git-commit: de7df03b7d60e417b0b419117dd1e658f02d1de5
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1716'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,6 @@ ht-degree: 1%
     * [Aide générale à la résolution des problèmes liés aux modules personnalisés](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
     * [Préchauffage du cache et site indisponible sur Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
     * [Résolution des erreurs UTF-8 pour les chargements de fichiers CSV](/help/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.md)
-    * [Résolution des problèmes de performances à l’aide de New Relic sur Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md)
     * [Recherche d’une attaque DDoS à partir de l’interface de ligne de commande](/help/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.md)
     * [Erreur de page vierge ou de boucle de redirection lors de l’accès à storefront ou Commerce Admin](/help/troubleshooting/miscellaneous/blank-page-or-redirect-loop-error-when-accessing-storefront-or-magento-admin.md)
     * [Redirection de connexion lors de la tentative de connexion à Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
