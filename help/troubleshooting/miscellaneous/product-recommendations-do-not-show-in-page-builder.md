@@ -32,10 +32,10 @@ Il n’existe aucune option dans Page Builder pour ajouter des recommandations d
 1. Vérifiez si vous avez installé le module séparément en exécutant la commande : `composer show magento/module-page-builder-product-recommendations`
 1. S’il renvoie le message suivant : *Package magento/module-page-builder-product-recommendations introuvable*, vous devrez l’installer en exécutant la commande : `composer require magento/module-page-builder-product-recommendations`
 
-En activant les recommandations de produits dans Page Builder, vous pourrez [ajouter une unité de recommandation](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) à tout contenu créé dans Page Builder.
+En activant les recommandations de produits dans Page Builder, vous pourrez [ajouter une unité de recommandation](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=fr) à tout contenu créé dans Page Builder.
 
 ## Lecture connexe
 
-* [Ajouter du contenu - Recommandations de produits](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) dans notre guide de l’utilisateur.
-* [Installez et configurez les recommandations de produits](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) dans notre documentation destinée aux développeurs.
-* [Guide de l’utilisateur d’Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)
+* [Ajouter du contenu - Recommandations de produits](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=fr) dans notre guide de l’utilisateur.
+* [Installez et configurez les recommandations de produits](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) dans notre documentation destinée aux développeurs.
+* [Guide de l’utilisateur d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/user-guides/home)
