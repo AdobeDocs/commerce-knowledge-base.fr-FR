@@ -131,7 +131,7 @@ Après avoir identifié les adresses IP qui provoquent une charge importante du 
 
 Si vous ne pouvez pas accéder à votre administrateur en raison d’une charge importante, vous pouvez utiliser l’API Fastly pour configurer les règles de blocage :
 
-1. Créez la liste de contrôle d’accès comme décrit dans le document Fastly [ Utilisation des listes de contrôle d’accès à l’aide de l’API ](https://docs.fastly.com/guides/access-control-lists/working-with-acls-using-the-api) .
+1. Créez la liste de contrôle d’accès comme décrit dans le document Fastly [&#x200B; Utilisation des listes de contrôle d’accès à l’aide de l’API &#x200B;](https://docs.fastly.com/guides/access-control-lists/working-with-acls-using-the-api) .
 1. Dans la section `recv`, créez un fragment de code VCL avec le contenu suivant, après avoir remplacé ACL\_NAME\_GOES\_HERE par le nom de la liste de contrôle d’accès créée à l’étape précédente :
 
    ```
