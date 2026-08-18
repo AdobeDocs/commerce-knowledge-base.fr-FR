@@ -1,60 +1,60 @@
 ---
 source-git-commit: c992521cae8c847adc0cc23d2323300e0ba69cdc
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
-# Prise en charge du guide de style de la base de connaissances
+# Guide de style de la Base de connaissances d’assistance
 
-Veuillez suivre ces recommandations de style et de mise en forme lorsque vous contribuez au centre d’aide d’Adobe Commerce.
+Lorsque vous contribuez au Centre d’aide Adobe Commerce, suivez ces recommandations de style et de mise en forme.
 
-## Titles
+## Titres
 
-* Les titres sont en majuscules.
-* Plural pour les titres ; singulier pour les titres de procédure. Exemple : Titre - Ecriture de livres. En-tête - Écrivez un livre.
-* Gardez les titres courts, avec des mots importants au début. Pour des raisons d’optimisation du moteur de recherche, il est vivement recommandé de ne pas dépasser 70 caractères (il existe une exception lorsqu’une réduction de titre empêche la communication de la véritable signification). 
+* Les titres sont en majuscules comme des phrases.
+* Plural pour les titres ; singulier pour les en-têtes de procédure. Exemple : Titre - Écriture de livres. En-tête - Écrire un livre.
+* Conservez des titres courts, avec des mots importants au début. Pour des raisons d’optimisation du moteur de recherche (SEO), il est vivement recommandé que les titres ne dépassent pas 70 caractères (il existe une exception pour les cas où une réduction de titre empêche la communication de la véritable signification). 
 
 ## En-têtes
 
-* L’en-tête de niveau supérieur est H2. (H1 est le titre par défaut de l’article, même si le titre n’est pas visiblement formaté avec H1).
-* Utilisez des verbes infinitifs pour les en-têtes de tâche. Par exemple, &quot;Comment identifier les événements à trafic élevé&quot;.
-* Utilisez le formulaire unique pour les en-têtes de tâche. Par exemple, &quot;Structure du module&quot;.
+* L’en-tête de niveau supérieur est H2. (H1 est par défaut le titre de l’article, même si le titre n’est pas formaté de manière visible avec H1).
+* Utilisez des verbes infinitifs pour les en-têtes de tâche. Par exemple, « Comment identifier les événements à trafic élevé ».
+* Utilisez le formulaire au singulier pour les en-têtes de tâche. Par exemple, « Structure de module ».
 * Évitez les en-têtes doubles (il doit y avoir au moins une phrase entre les en-têtes).
-* Mise en majuscules de style phrase pour tous les en-têtes.
-* Les titres des tâches sont impératifs (&quot;Créer x&quot;, pas &quot;Créer x&quot; ou &quot;Pour créer x&quot;).
+* Majuscules de style phrase pour tous les titres.
+* Les titres des tâches sont impératifs (« Créer x », et non « Créer x » ou « Créer x »).
 
 ## Listes
 
-* Etapes dans une tâche : maximum 9
+* Étapes d’une tâche : maximum 9
 
-* Les listes à puces facilitent la numérisation.
+* Les listes à puces facilitent l’analyse.
 
-   * Utilisez des listes à puces pour les méthodes, les approches, les options et les étapes de tâche non consécutives.
-   * Gardez le texte sous forme de puces, de préférence pas plus de deux phrases.
-   * Réduisez le nombre de balles ; sept ou moins est idéal.
-   * Évitez de placer une pointe ou une note entre des éléments à puces.
-   * Utilisez une structure grammaire parallèle dans les listes, mais rompez cette règle si elle entraîne un excès de verbiage ou une langue grise.
-   * Capitalisez le premier mot de chaque élément dans une liste à puces, même s’il s’agit d’un fragment.
+  * Utilisez des listes à puces pour les méthodes, les approches, les options et les étapes de tâche non consécutives.
+  * Veillez à ce que le texte des puces soit court, de préférence pas plus de deux phrases.
+  * Réduisez le nombre de balles ; sept balles ou moins, c’est l’idéal.
+  * Évitez de placer un conseil ou une note entre des éléments à puces.
+  * Utilisez la structure de grammaire parallèle dans les listes, mais enfreignez cette règle si elle entraîne un excès de verbiage ou de langage inadapté.
+  * Mettez en majuscule le premier mot de chaque élément d’une liste à puces, même s’il s’agit d’un fragment.
 
-* Faites en sorte que vos listes soient parallèles. Par exemple, chaque élément doit être un nom ou une expression commençant par un verbe.
+* Placez vos listes en parallèle. Par exemple, chaque élément doit être un substantif ou une expression commençant par un verbe.
 
-## Remarques et conseils
+## Notes et conseils
 
-Conservez les notes et les conseils à un seul paragraphe. La nécessité de plusieurs paragraphes indique la nécessité de restructurer le contenu et de l’inclure dans le corps de l’article.
+Conservez les notes et les conseils dans un seul paragraphe. La nécessité de plusieurs paragraphes signale la nécessité de restructurer le contenu et de l’inclure dans le corps de l’article.
 
-## Capitalisation
+## Majuscules
 
-En cas de doute, ne capitalisez pas. Dans les titres, utilisez une majuscule de type phrase. Capitalisez les noms appropriés et le premier mot après deux points.
+En cas de doute, n’utilisez pas les majuscules. Dans les en-têtes, mettez une majuscule en début de phrase. Mettez les noms propres en majuscules et le premier mot après deux points.
 
 ## Éléments de l’interface utilisateur
 
-* Tous les éléments sur lesquels l’utilisateur clique sont placés dans **bold**. Par exemple, &quot;Cliquez sur **Continuer**&quot;. Les valeurs des options et les messages d’erreur sont formatés avec _italics_.
-* Dans la mesure du possible, évitez de mentionner le type d’élément d’interface utilisateur dans les instructions. (Cliquez sur **Suivant**. et cliquez sur le bouton **Suivant** .)
-* Utilisez &quot;Choose&quot; et &quot;>&quot; dans des séquences de commandes. (Sélectionnez **Modifier** > **Préférences**. vs Click Modifier | Préférences.)
-* Préposition : &quot;dans&quot; pour la boîte de dialogue, la fenêtre, sont un, un panneau, une vue, un assistant, une liste, un dossier, un noeud.
-* Préposition : &quot;on&quot; pour l’écran, la page, la barre d’outils, la barre de menus, l’onglet, le volet, le ruban.
-* Préposition : cliquez sur (cliquez sur **Suivant** et cliquez sur **Suivant**).
+* Tout ce sur quoi l’utilisateur clique est **en gras**. Par exemple, « Cliquez sur **Continuer** ». Les valeurs des options et les messages d’erreur sont formatés en _italique_.
+* Dans la mesure du possible, évitez de mentionner le type d’élément d’IU dans les instructions. (Cliquez sur **Suivant**. ou cliquez sur le bouton **Suivant**.)
+* Utilisez « Choose » et « > » dans les séquences de commandes. (Choisissez **Modifier** > **Préférences**. ou cliquez sur Modifier | Préférences.)
+* Préposition : « dans » pour la boîte de dialogue, la fenêtre, la zone, le panneau, la vue, l’assistant, la liste, le dossier, le nœud.
+* Préposition : « activé » pour l’écran, la page, la barre d’outils, la barre de menus, l’onglet, le volet et le ruban.
+* Préposition : cliquez sur (cliquez sur **Suivant** ou sur **Suivant**).
 
 ## Noms de fichiers
 
@@ -63,22 +63,22 @@ Les noms de fichier et les dossiers sont formatés sous forme de code. Exemple 
 
 ## Nombres
 
-Avant tout, les règles de cohérence lors de l’approche du problème des nombres écrits par rapport aux nombres.
+Surtout, des règles de cohérence lors de l&#39;approche de la question des nombres écrits par rapport aux chiffres.
 
-Écrivez un nombre, par exemple &quot;cinq&quot; ou &quot;neuf&quot; lorsque le nombre est inférieur à 10 (les nombres un à neuf).
+Écrivez un nombre, comme « cinq » ou « neuf » lorsque le nombre est inférieur à 10 (nombres un à neuf).
 
-Ecrivez un nombre sous la forme d’un nombre, par exemple &quot;42&quot; ou &quot;11&quot; lorsque :
+Écrivez un nombre sous forme de chiffre, comme « 42 » ou « 11 » lorsque :
 
-* Le nombre est supérieur à 9 (chiffres dix et plus).
+* Le nombre est supérieur à 9 (nombres dix et supérieurs).
 * Vous spécifiez le nombre :
-   * Dans une ligne de code ou un extrait de code.
-   * Dans un chemin d’accès au fichier ou un nom de répertoire.
-   * Lors de la communication d’une plage, par exemple &quot;entre 5 et 25&quot; ou &quot;passez en revue les chiffres 8 à 21&quot;.
-   * Les chiffres ont été mesurés ou calculés comme &quot;62 picas&quot; ou &quot;830 MHz&quot;.
+  * Dans une ligne de code ou un fragment de code.
+  * Dans un chemin de fichier ou un nom de répertoire.
+  * Lors de la communication d’une plage, comme « entre 5 et 25 » ou « passer en revue les numéros 8 à 21 ».
+  * Les nombres ont été mesurés ou calculés comme « 62 picas » ou « 830 MHz ».
 
-Utilisez un mélange de nombres et de nombres lorsque vous notez une quantité de choses numérotées, comme &quot;une collection de 1500 exécutions d’essai&quot;.
+Utilisez un mélange de chiffres et de chiffres lorsque vous notez une quantité de choses numérotées, comme « une collection de quinze mille essais ».
 
-Ecrivez les deux nombres en mots ou les deux en nombres, si vous avez deux nombres dans une phrase, un sous 10 (comme 4) et un sur 10 (comme 14). Par exemple, vous restez ici avec les chiffres : &quot;14 minutes pour 4 litres de fluide&quot;.
+Écrivez les deux nombres en mots ou les deux en chiffres, si vous avez deux nombres dans une phrase, un de moins de 10 (comme 4) et un de plus de 10 (comme 14). Par exemple, vous devez vous en tenir aux chiffres : « 14 minutes pour 4 litres de liquide ».
 
 
 ## Cas particuliers de formulation
@@ -100,7 +100,7 @@ Ecrivez les deux nombres en mots ou les deux en nombres, si vous avez deux nombr
 
 <tr>
 
-<td>Connectez-vous à la page Compte Magento.com </td>
+<td>Connectez-vous à la page Compte Magento.com . </td>
 
 <td>Connectez-vous à votre compte Adobe Commerce</td>
 
@@ -124,7 +124,7 @@ Ecrivez les deux nombres en mots ou les deux en nombres, si vous avez deux nombr
 
 <td>Fragments de code SQL</td>
 
-<td>Les instructions sont en majuscules (SELECT ou select)</td>
+<td>Les instructions sont en majuscules (SELECT ou select).</td>
 
 <td colspan="1">Meilleure lisibilité</td>
 
@@ -134,18 +134,18 @@ Ecrivez les deux nombres en mots ou les deux en nombres, si vous avez deux nombr
 
 <td colspan="1">
 
-Références aux autres ressources.
+Références à d’autres ressources.
 
-Exemple : voir xyz sur notre documentation destinée aux développeurs
+Exemple : consultez xyz dans la documentation destinée aux développeurs
 
 
 </td>
 
-<td colspan="1">Voir xyz dans notre documentation destinée aux développeurs</td>
+<td colspan="1">Consultez xyz dans notre documentation destinée aux développeurs</td>
 
 <td colspan="1">
 
-Condition d’accessibilité : tous les liens décrivent la destination du lien.
+Exigence d’accessibilité : tous les liens décrivent la destination du lien.
 
 
 </td>
@@ -164,7 +164,7 @@ Adobe Commerce version 2.4.0
 
 </td>
 
-<td colspan="1">Adobe Commerce 2.4.0 (pas de version ni de version)</td>
+<td colspan="1">Adobe Commerce 2.4.0 (pas de version ou version)</td>
 
 <td colspan="1"></td>
 
@@ -190,7 +190,7 @@ Adobe Commerce version 2.4.0
 
 <td colspan="1">
 
-Pas de raison de majuscules.
+Aucune raison de mettre les majuscules.
 
 </td>
 
@@ -200,13 +200,13 @@ Pas de raison de majuscules.
 
 <td colspan="1">
 
-Message d’erreur : _&quot;Quelque chose s’est mal passé.&quot;_
+Message d’erreur : _« Un problème est survenu. »_
 
-Message d’erreur : __un problème s’est produit.__
+Message d’erreur : __Un problème est survenu.__
 
 </td>
 
-<td colspan="1"> Message d’erreur : <i> un problème s’est produit.</i> </td>
+<td colspan="1"> Message d’erreur : <i>Un problème est survenu.</i> </td>
 
 <td colspan="1">
 </td>
@@ -219,7 +219,7 @@ Message d’erreur : __un problème s’est produit.__
 
 ## Accessibilité
 
-* Tous les éléments non textuels ou graphiques ont des équivalents textuels ou du texte de remplacement. Exemple : ![exemple_image](/url "alt_text_for_this_image").
+* Tous les éléments non textuels ou graphiques comportent des équivalents textuels ou du Texte de remplacement. Exemple : ![example_image](/url "alt_text_for_this_image").
 
 * Tous les liens décrivent la destination du lien. Exemple [link](/uri "destination_of_the_link").
 
@@ -238,42 +238,42 @@ Use tables for information that is best presented along two axes (rows and colum
 
 ## Langage abusif
 
-* Évitez les langues abusives. 
-* Évitez le langage raciste ou &quot;qui pourrait ressembler à du raciste&quot;.
-* Évitez un langage avec de fortes connotations négatives ou une forte coloration émotionnelle, comme &quot;tuer&quot;, &quot;terminer&quot;.
+* Évitez les propos abusifs. 
+* Évitez les propos racistes ou « qui pourraient sembler racistes ».
+* Évitez le langage à forte connotation négative ou à forte coloration émotionnelle, comme « tuer », « terminer ».
 
 
 ## Liens 
 
-La plupart des liens apparaissent dans les listes de liens de l’article. Évitez les liens insérés inutiles.
+La plupart des liens apparaissent dans les listes de liens de l’article. Évitez les liens intégrés inutiles.
 
-La bonne pratique consiste à isoler les liens intégrés dans une liste de liens avec un titre configurable.
+Il est recommandé d’isoler les liens intégrés dans une liste de liens dotée d’un titre configurable.
 
-Une liste de liens spécialisés, appelée liste de valeurs &quot;voir aussi&quot;, s’affiche uniquement à la fin d’un article.    Utiliser les listes de liens stratégiquement, pas plus que nécessaire. En règle générale, pas plus de six liens dans une liste de liens.
+Une liste de liens spécialisée, appelée liste voir aussi, s’affiche à la fin d’un article uniquement.    Utilisez les listes de liens de manière stratégique, au maximum. En règle générale, une liste de liens ne contient pas plus de six liens.
 
 ### Liens vers des sites web externes
 
-Utilisez des URL ordinaires plutôt que des goURL pour créer des liens vers des pages en dehors de [Adobe.com](http://Adobe.com).
+Utilisez des URL ordinaires plutôt que des goURL pour créer des liens vers des pages en dehors d’[Adobe.com](http://Adobe.com).
 
 
 ## Virgules
 
-En général, suivez les recommandations du Chicago Manual of Style pour la ponctuation de style ouvert, en ponctuant uniquement lorsque cela est nécessaire pour éviter toute erreur de lecture. Par exemple, vous pouvez omettre la virgule avant une conjonction dans une phrase composite s’il y a peu ou aucun risque de mauvaise lecture. Utilisez la virgule lorsque cela s’avère nécessaire pour clarifier les choses.
+En général, suivez les recommandations du Chicago Manual of Style pour la ponctuation de style ouverte, en ne ponctuant que lorsque cela est nécessaire pour éviter les erreurs de lecture. Par exemple, vous pouvez omettre la virgule avant une conjonction dans une phrase composée s’il y a peu ou pas de risque de mauvaise lecture. Utilisez la virgule si nécessaire pour apporter des éclaircissements.
 
-* Utilisez toujours la virgule de série (une virgule précédant _et_ ou _ou_ dans une liste de trois éléments ou plus) : x, y et z
+* Utilisez toujours la virgule série (une virgule précédant _et_ ou _ou_ dans une liste de trois éléments ou plus) : x, y et z
 
-* Placez une virgule avant une conjonction introduisant une clause indépendante : &quot;Spécifiez un emplacement et saisissez un nom pour la liste de fichiers.&quot;
+* Placez une virgule avant une conjonction introduisant une clause indépendante : « Spécifiez un emplacement et saisissez un nom pour la liste de fichiers. »
 
-* Ne séparez pas les différences de plate-forme par une virgule : &quot;... Ctrl (Windows) ou Commande (Mac OS)&quot;
+* Ne séparez pas les différences de plateforme par une virgule : «... Ctrl (Windows) ou Commande (Mac OS) »
 
-* Utilisez toujours une virgule après une expression ou une clause d’introduction : &quot;Dans Photoshop, importez le fichier Illustrator&quot;.
+* Utilisez toujours une virgule après une phrase ou une clause d’introduction : « Dans Photoshop, importez le fichier Illustrator ».
 
 ## Versions
 
-* Nous utilisons la &quot;version&quot; pour toutes les versions (majeures/mineures/correctif). Par exemple &quot;Versions prises en charge : Adobe Commerce 2.3.x&quot;
+* Nous utilisons « version » pour toutes les versions (majeure/mineure/correctif). Par exemple, « Versions prises en charge : Adobe Commerce 2.3.x »
 
-* Nous utilisons la minuscule &quot;x&quot; lors de l’écriture sur toutes les versions de correctif dans une version mineure et toutes les versions mineures. Par exemple, Adobe Commerce 2.x.x.
+* Nous utilisons la minuscule « x » lorsque nous écrivons sur toutes les versions de correctif dans les versions mineures, et toutes les versions mineures avec majeure. Par exemple, Adobe Commerce 2.x.x.
 
-## Marques
+## Image de marque
 
-* Magento Commerce est désormais Adobe Commerce. Pour plus d’informations sur l’utilisation d’un langage de branding à jour, reportez-vous au wiki [&#x200B; Rebrand terms](https://github.com/magento/knowledge-base/wiki) .
+* Magento Commerce est désormais Adobe Commerce. Reportez-vous au wiki [termes de changement de marque](https://github.com/magento/knowledge-base/wiki) pour plus d’informations sur l’utilisation d’un langage de marque à jour.
