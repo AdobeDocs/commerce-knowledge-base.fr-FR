@@ -5,7 +5,7 @@ exl-id: f2bfd79c-9766-4a82-a65c-bf66b80bd34a
 feature: Compliance
 source-git-commit: 68587ca3e861ef326e006a7ab086d197f37ae9b3
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1292'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,7 @@ Cette période d’assistance plus longue reconnaît la complexité à laquelle 
 
 ### Où les clients peuvent-ils trouver notre politique actuelle en matière de cycle de vie ?
 
-La politique relative au cycle de vie des logiciels [Adobe Commerce](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) est disponible en ligne.
+La politique relative au cycle de vie des logiciels [&#128279;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) est disponible en ligne.
 
 ### Quand les clients utilisant les versions 2.4.4, 2.4.5, 2.4.6 et 2.4.7 arriveront-ils à la fin de la prise en charge dans le cadre de cette nouvelle politique ?
 
@@ -51,7 +51,7 @@ En 2023, les clients pourront accéder aux versions des correctifs d’Adobe Com
 
 ### Où le planning des versions d’Adobe Commerce est-il publié ?
 
-Consultez le [planning des versions d’Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=fr) sur [!DNL Experience League] pour plus d’informations.
+Consultez le [planning des versions d’](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=fr) sur [!DNL Experience League] pour plus d’informations.
 
 ### Quels sont les différents types de rejets inclus dans le planning ?
 
@@ -66,7 +66,7 @@ Les correctifs de qualité permettent de distribuer des correctifs pour les prob
 
 ### Quelles ressources sont disponibles pour faciliter la planification, la budgétisation et les mises à niveau en général ?
 
-Les ressources disponibles comprennent un guide de mise à niveau vers la version 2.4, un enregistrement d’atelier de mise à niveau technique et le [!DNL Upgrade Compatibility Tool]. Vous trouverez une liste complète des ressources sur [Experience League](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-reading.html?lang=fr).
+Les ressources disponibles comprennent un guide de mise à niveau vers la version 2.4, un enregistrement d’atelier de mise à niveau technique et le [!DNL Upgrade Compatibility Tool]. Vous trouverez une liste complète des ressources sur [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-reading.html?lang=fr).
 
 ### En tant que client Managed Services, comment l’ingénierie client peut-elle m’aider à effectuer la mise à niveau vers la version 2.4.4 +?
 
@@ -191,7 +191,7 @@ Ces plans comprennent des correctifs de qualité et de sécurité pour l’appli
 
 Grâce à l’assistance étendue, notre équipe d’ingénierie client continuera à fournir les mêmes correctifs de qualité et de sécurité que d’habitude, sans dégradation de la portée. Toutefois, les clients devront prendre des mesures supplémentaires pour rester en conformité avec la [!DNL PCI] si les technologies tierces sous-jacentes, telles que [!DNL MariaDB], arrivent en fin de prise en charge.
 
-Adobe ne prend pas en charge les technologies tierces qui ont atteint la fin de la prise en charge. Adobe recommande aux clients de travailler avec leur [[!DNL PCI] évaluateur](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors/) pour assurer la conformité. Consultez [Configuration requise pour Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements) pour obtenir la liste complète des technologies tierces testées et prises en charge.
+Adobe ne prend pas en charge les technologies tierces qui ont atteint la fin de la prise en charge. Adobe recommande aux clients de travailler avec leur [[!DNL PCI] évaluateur](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors/) pour assurer la conformité. Consultez [Configuration requise pour &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/system-requirements) pour obtenir la liste complète des technologies tierces testées et prises en charge.
 
 <table style="height: 444px; width: 632.2px;">
 <tbody>

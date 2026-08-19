@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 9216789f967ee842ee41d669779d8037fd47897f
+source-git-commit: a57fca068b8154dfa451b2ba76e297f57e7229eb
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1688'
 ht-degree: 1%
 
 ---
@@ -73,19 +73,14 @@ ht-degree: 1%
     * [Correctifs révisés pour la perte d’accès aux cartes Google sur toutes les versions d’Adobe Commerce](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
   * Divers {#miscellaneous}
     * [E-mail indiquant que le stockage de l’exportation est presque plein](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
-    * [Résolution des problèmes liés au module de recommandations de produits dans Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
-    * [Module inconnu Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
     * [Guide de dépannage de l’outil Adobe Commerce Security Scan](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [Diagnostic des écarts de chiffre d’affaires Google eCommerce](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
     * [J’ai configuré les clés API pour Adobe AI, mais je ne vois qu’un seul espace de données SaaS](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
     * [Stockage de fichiers faible. Le chargement de pages spécifiques est lent.](/help/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.md)
-    * [Performances lentes en raison d’une réindexation complète](/help/troubleshooting/miscellaneous/slow-performance-due-to-full-reindexing.md)
     * [Aide générale à la résolution des problèmes liés aux modules personnalisés](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
     * [Préchauffage du cache et site indisponible sur Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
     * [Résolution des erreurs UTF-8 pour les chargements de fichiers CSV](/help/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.md)
-    * [Résolution des problèmes de performances à l’aide de New Relic sur Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md)
     * [Recherche d’une attaque DDoS à partir de l’interface de ligne de commande](/help/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.md)
-    * [Erreur de page vierge ou de boucle de redirection lors de l’accès à storefront ou Commerce Admin](/help/troubleshooting/miscellaneous/blank-page-or-redirect-loop-error-when-accessing-storefront-or-magento-admin.md)
     * [Redirection de connexion lors de la tentative de connexion à Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
     * [Résoudre les problèmes liés à la clé de chiffrement](/help/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.md)
     * [Utilisation des exportations de données pour identifier les incohérences](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)

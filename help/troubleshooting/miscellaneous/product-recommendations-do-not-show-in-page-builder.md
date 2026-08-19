@@ -1,19 +1,19 @@
 ---
-title: Recommendations de produit ne s’affiche pas dans le créateur de pages
-description: Cet article fournit une solution au problème où l’option Recommendations de produit n’est pas affichée dans le créateur de pages.
+title: Recommandations de produits non affichées dans Page Builder
+description: Cet article fournit une solution au problème d’affichage de l’option Recommandations de produits dans Page Builder.
 exl-id: e96a446b-2e64-47a6-ac1b-e73183da9fb8
 feature: Page Builder, Configuration, Personalization, Products, Recommendations
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
 
-# Recommendations de produit ne s’affiche pas dans le créateur de pages
+# Recommandations de produits non affichées dans Page Builder
 
-Cet article fournit une solution au problème où l’option Recommendations de produit n’est pas affichée dans le créateur de pages.
+Cet article fournit une solution au problème d’affichage de l’option Recommandations de produits dans Page Builder.
 
 ## Produits et versions concernés
 
@@ -21,21 +21,21 @@ Cet article fournit une solution au problème où l’option Recommendations de 
 
 ## Problème
 
-Option Recommendations du produit ne s’affichant pas dans le Créateur de pages.
+L’option Recommandations de produits ne s’affiche pas dans Page Builder.
 
 ## Cause
 
-Il n’existe pas d’option dans le Créateur de pages pour ajouter le Recommendations de produit. Le Recommendations de produit pour Page Builder est un module facultatif qui est installé séparément.
+Il n’existe aucune option dans Page Builder pour ajouter des recommandations de produits. Les recommandations de produits pour Page Builder sont un module facultatif qui est installé séparément.
 
 ## Solution
 
 1. Vérifiez si vous avez installé le module séparément en exécutant la commande : `composer show magento/module-page-builder-product-recommendations`
-1. S&#39;il renvoie le message suivant : *Magento/module-page-builder-product-recommendations introuvable*, vous devrez l&#39;installer en exécutant la commande : `composer require magento/module-page-builder-product-recommendations`
+1. S’il renvoie le message suivant : *Package magento/module-page-builder-product-recommendations introuvable*, vous devrez l’installer en exécutant la commande : `composer require magento/module-page-builder-product-recommendations`
 
-En activant le Recommendations de produit dans le créateur de pages, vous pourrez [ajouter une unité de recommandation](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=fr) à tout contenu créé dans le créateur de pages.
+En activant les recommandations de produits dans Page Builder, vous pourrez [ajouter une unité de recommandation](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=fr) à tout contenu créé dans Page Builder.
 
 ## Lecture connexe
 
-* [Ajouter du contenu - Recommendations produit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=fr) dans notre guide d’utilisation.
-* [Installez et configurez le produit Recommendations](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) dans notre documentation destinée aux développeurs.
-* [Guide de l’utilisateur Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/user-guides/home)
+* [Ajouter du contenu - Recommandations de produits](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=fr) dans notre guide de l’utilisateur.
+* [Installez et configurez les recommandations de produits](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) dans notre documentation destinée aux développeurs.
+* [Guide de l’utilisateur d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-admin/user-guides/home)

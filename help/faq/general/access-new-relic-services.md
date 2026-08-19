@@ -2,9 +2,9 @@
 title: Accès aux services New Relic
 description: 'Cet article explique comment les clients disposant d’une licence/d’une autorisation d’abonnement suffisante peuvent accéder à certains services New Relic :'
 exl-id: c01af85e-0590-49e8-a1a0-b901f23c4431
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 09777d70272bdb78a0bcf7566cc398a53c474f4c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ Les clients utilisant l’architecture de démarrage ne reçoivent pas le servic
 
 ## Lectures connexes
 
-Pour en savoir plus sur les services New Relic, voir [Examiner les performances](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) dans notre documentation destinée aux développeurs. Vous pouvez également consulter la section [Dépannage des performances à l’aide de New Relic sur Adobe Commerce sur les infrastructures cloud](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md) dans notre base de connaissances d’assistance.
+Pour en savoir plus sur les services New Relic, voir [Examiner les performances](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) dans notre documentation destinée aux développeurs. Vous pouvez également consulter la section [Dépannage des performances à l’aide de New Relic sur Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-40830) dans notre base de connaissances d’assistance.
