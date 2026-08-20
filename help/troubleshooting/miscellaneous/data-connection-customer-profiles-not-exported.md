@@ -21,7 +21,7 @@ Cet article fournit des étapes de dépannage si les données de votre profil cl
 
 ## Problème
 
-Vous avez installé et configuré l’extension [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) et vous avez activé l’envoi des données de profil client à Experience Platform, mais ces données de profil n’apparaissent pas dans Experience Platform.
+Vous avez installé et configuré l’extension [[!DNL Data Connection]](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/data-connection/overview) et vous avez activé l’envoi des données de profil client à Experience Platform, mais ces données de profil n’apparaissent pas dans Experience Platform.
 
 ## Solution
 
@@ -31,7 +31,7 @@ Si les informations de profil client n’apparaissent pas dans Experience Platfo
 
 Assurez-vous d’avoir installé la dernière version de l’extension `experience-platform-connector`.
 
-Voir les [[!DNL Data Connection] notes de mise à jour de l’extension](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/release-notes) pour plus d’informations sur la dernière version.
+Voir les [[!DNL Data Connection] notes de mise à jour de l’extension](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/data-connection/release-notes) pour plus d’informations sur la dernière version.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Vérifiez que le module `customers-connector` est configuré en fonction de votr
 
 #### Adobe Commerce sur les infrastructures cloud
 
-1. Activez la variable globale `ENABLE_EVENTING` dans `.magento.env.yaml`. [En savoir plus](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global).
+1. Activez la variable globale `ENABLE_EVENTING` dans `.magento.env.yaml`. [En savoir plus](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global).
 
    ```bash
        stage:
@@ -116,14 +116,14 @@ select * from event_data_saas;
    "error_code": "403003" } } }
    ```
 
-1. Accédez à la page *[!UICONTROL Commerce Services Connector]* de l’Administration et vérifiez que les clés [!UICONTROL sandbox/production] spécifiées sont correctement configurées. Vérifiez également que les paramètres de [!UICONTROL sandbox/production] du compte Commerce correspondent à ceux affichés dans le [!UICONTROL Commerce Services Connector]. En savoir [plus](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#apikey).
+1. Accédez à la page *[!UICONTROL Commerce Services Connector]* de l’Administration et vérifiez que les clés [!UICONTROL sandbox/production] spécifiées sont correctement configurées. Vérifiez également que les paramètres de [!UICONTROL sandbox/production] du compte Commerce correspondent à ceux affichés dans le [!UICONTROL Commerce Services Connector]. En savoir [plus](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/user-guides/integration-services/saas#apikey).
 
 ### Vérifiez si l’ID de service se trouve dans la liste autorisée et confirmez-le auprès de l’assistance Adobe Commerce
 
 1. Vérifiez que le `serviceId` de [!UICONTROL Commerce Services Connector] apparaît dans la liste autorisée dans Adobe Commerce.
-1. Contactez l’assistance technique d’Adobe Commerce [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) pour confirmer le statut de la liste autorisée.
+1. Contactez l’assistance technique d’Adobe Commerce [&#128279;](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) pour confirmer le statut de la liste autorisée.
 
 ## Lecture connexe
 
-* Extension [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) dans le guide d’utilisation des services Commerce
-* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+* Extension [[!DNL Data Connection]](https://experienceleague.adobe.com/fr/docs/commerce-merchant-services/data-connection/overview) dans le guide d’utilisation des services Commerce
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
