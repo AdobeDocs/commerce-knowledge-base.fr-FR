@@ -121,7 +121,7 @@ select * from event_data_saas;
 ### Vérifiez si l’ID de service se trouve dans la liste autorisée et confirmez-le auprès de l’assistance Adobe Commerce
 
 1. Vérifiez que le `serviceId` de [!UICONTROL Commerce Services Connector] apparaît dans la liste autorisée dans Adobe Commerce.
-1. Contactez l’assistance technique d’Adobe Commerce [](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) pour confirmer le statut de la liste autorisée.
+1. Contactez l’assistance technique d’Adobe Commerce [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) pour confirmer le statut de la liste autorisée.
 
 ## Lecture connexe
 
