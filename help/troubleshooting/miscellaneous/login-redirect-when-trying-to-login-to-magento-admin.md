@@ -52,7 +52,7 @@ Essayez d’utiliser un autre navigateur et augmentez la durée de vie de la ses
 Pour augmenter la durée de vie de la session d’administration, procédez comme suit :
 
 1. Créez une sauvegarde de base de données.
-1. Utilisez un outil de base de données tel que [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande pour exécuter la requête SQL suivante :
+1. Utilisez un outil de base de données tel que [phpMyAdmin](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande pour exécuter la requête SQL suivante :
 
    ```sql
    UPDATE core_config_data SET value = 7200 WHERE path = 'admin/security/session_lifetime';
@@ -69,7 +69,7 @@ Pour augmenter la durée de vie de la session d’administration, procédez comm
 Pour vérifier les valeurs des paramètres des cookies et les effacer, procédez comme suit :
 
 1. Créez une sauvegarde de base de données.
-1. Utilisez un outil de base de données tel que [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande pour exécuter la requête SQL suivante :
+1. Utilisez un outil de base de données tel que [phpMyAdmin](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande pour exécuter la requête SQL suivante :
 
    ```sql
    SELECT * FROM core_config_data WHERE (path = "web/cookie/cookie_domain" OR path = "web/cookie/cookie_path");
