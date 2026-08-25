@@ -51,7 +51,7 @@ Maintenant que toutes les données se trouvent au même endroit, nous pouvons ch
 
 Si les deux systèmes ont le même nombre de lignes et que la mesure **Chiffre d’affaires** ne correspond pas aux données source, la valeur de la **commande\_total** doit être désactivée quelque part. Il est possible que le champ **order\_total** ait été mis à jour dans votre base de données source et que Magento BI ne récupère pas ces modifications.
 
-Pour le confirmer, vérifiez si la colonne **order\_total** est en cours de nouvelle vérification ou non. Accédez au gestionnaire Data Warehouse et cliquez sur le tableau **`orders`** . La [fréquence de revérification](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html) répertoriée dans la colonne « Modifications » s’affiche. Le champ **order\_total** doit être défini pour une nouvelle vérification aussi souvent que prévu ; si ce n’est pas le cas, continuez et définissez-le à la fréquence de nouvelle vérification de votre choix.
+Pour le confirmer, vérifiez si la colonne **order\_total** est en cours de nouvelle vérification ou non. Accédez au gestionnaire Data Warehouse et cliquez sur le tableau **`orders`** . La [fréquence de revérification](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html?lang=fr) répertoriée dans la colonne « Modifications » s’affiche. Le champ **order\_total** doit être défini pour une nouvelle vérification aussi souvent que prévu ; si ce n’est pas le cas, continuez et définissez-le à la fréquence de nouvelle vérification de votre choix.
 
 ### ![](assets/Export_Discrepancies_4.gif)
 
@@ -69,7 +69,7 @@ Accédez à la page Connexions et jetez un coup d’œil au statut de la source 
 
 ## La base de données source contient MOINS de lignes que Magento BI {#lessrows}
 
-Si la base de données source comporte moins de lignes que Magento BI, il est possible que des lignes soient supprimées de la base de données source et que Magento BI ne récupère pas ces suppressions. **&#x200B; [la suppression de données](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) peut entraîner des incohérences, des temps de mise à jour plus longs et un grand nombre de problèmes logistiques** . Nous vous recommandons donc vivement de ne jamais supprimer de données, sauf si elles sont vraiment nécessaires.
+Si la base de données source comporte moins de lignes que Magento BI, il est possible que des lignes soient supprimées de la base de données source et que Magento BI ne récupère pas ces suppressions. **&#x200B; [la suppression de données](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html?lang=fr) peut entraîner des incohérences, des temps de mise à jour plus longs et un grand nombre de problèmes logistiques** . Nous vous recommandons donc vivement de ne jamais supprimer de données, sauf si elles sont vraiment nécessaires.
 
 Toutefois, si des lignes sont supprimées du tableau, examinez la fréquence de vérification à nouveau sur la clé primaire. La revérification de la clé primaire signifie que la table sera vérifiée pour les lignes supprimées.
 
@@ -90,6 +90,6 @@ Si vous ne parvenez pas à localiser la source du problème, vous devrez effectu
 ## Lecture connexe
 
 * [Liste de contrôle pour le diagnostic des incohérences de données](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)
-* [Politiques de service Adobe Commerce Intelligence](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
-* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+* [Politiques de service Adobe Commerce Intelligence](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
 
