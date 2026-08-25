@@ -1,19 +1,19 @@
 ---
 title: Utilisation des exportations de données pour identifier les incohérences
-description: Cet article fournit des solutions pour résoudre les problèmes d’incohérence dans vos données Magento BI. Les exportations de données sont un outil utile pour comparer vos données Magento BI à vos données sources afin d’identifier les incohérences de données dans vos rapports, en particulier si la [liste de contrôle pour le diagnostic des incohérences de données](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) ne vous a pas aidé à identifier le problème. Cet article vous présente un exemple réel de la manière dont les écarts de données peuvent être identifiés à l’aide des exportations de données.
+description: Cet article fournit des solutions pour résoudre les problèmes d’incohérence dans vos données Magento BI. Les exportations de données sont un outil utile pour comparer vos données Magento BI à vos données sources afin d’identifier les incohérences de données dans vos rapports, en particulier si la [liste de contrôle pour le diagnostic des incohérences de données](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479) ne vous a pas aidé à identifier le problème. Cet article vous présente un exemple réel de la manière dont les écarts de données peuvent être identifiés à l’aide des exportations de données.
 exl-id: b42d585c-ad8c-4685-9ad4-a13686566f18
 feature: Commerce Intelligence, Data Import/Export
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 3d73611b812833820eda5b906eb700c89f50cbbe
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1389'
 ht-degree: 0%
 
 ---
 
 # Utilisation des exportations de données pour identifier les incohérences
 
-Cet article fournit des solutions pour résoudre les problèmes d’incohérence dans vos données Magento BI. Les exportations de données sont un outil utile pour comparer vos données Magento BI à vos données sources afin d’identifier les incohérences de données dans vos rapports, en particulier si la [liste de contrôle pour le diagnostic des incohérences de données](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) ne vous a pas aidé à identifier le problème. Cet article vous présente un exemple réel de la manière dont les écarts de données peuvent être identifiés à l’aide des exportations de données.
+Cet article fournit des solutions pour résoudre les problèmes d’incohérence dans vos données Magento BI. Les exportations de données sont un outil utile pour comparer vos données Magento BI à vos données sources afin d’identifier les incohérences de données dans vos rapports, en particulier si la [liste de contrôle pour le diagnostic des incohérences de données](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479) ne vous a pas aidé à identifier le problème. Cet article vous présente un exemple réel de la manière dont les écarts de données peuvent être identifiés à l’aide des exportations de données.
 
 Prenons cette analyse, par exemple :
 
@@ -89,7 +89,7 @@ Si vous ne parvenez pas à localiser la source du problème, vous devrez effectu
 
 ## Lecture connexe
 
-* [Liste de contrôle pour le diagnostic des incohérences de données](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy)
+* [Liste de contrôle pour le diagnostic des incohérences de données](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)
 * [Politiques de service Adobe Commerce Intelligence](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
 * [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
 
