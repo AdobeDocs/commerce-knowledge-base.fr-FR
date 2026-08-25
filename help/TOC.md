@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: ec2111316458420c51a6b6f3b3881bd3f9d10c06
+source-git-commit: 85213549e150c6f00e03201750694c0d51b8309d
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1653'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,6 @@ ht-degree: 1%
     * [Adobe Commerce 2.4.2-p1 : note de facturation avec une valeur incorrecte](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
     * [Impossible d’accéder à la dernière version préliminaire d’Adobe Commerce](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
     * [L&#39;index est verrouillé par un autre processus](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md)
-    * [Diagnostiquer une incohérence de données](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
     * [Les notifications par e-mail de l’administrateur 2FA ne sont pas reçues](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
     * [Site en mode de maintenance mais disponible pour les clients](/help/troubleshooting/miscellaneous/site-in-maintenance-mode-but-available-to-customers.md)
     * [le développement de l’origine d’extraction git échoue lors de la mise à jour du logiciel Adobe Commerce](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
