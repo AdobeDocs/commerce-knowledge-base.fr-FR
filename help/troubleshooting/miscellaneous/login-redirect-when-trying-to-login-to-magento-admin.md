@@ -90,4 +90,4 @@ Pour vérifier les valeurs des paramètres des cookies et les effacer, procédez
 ## Articles connexes
 
 * [Redirigez-vous vers le formulaire de connexion d’administrateur avec l’erreur « Votre compte est temporairement désactivé »](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) dans notre base de connaissances de l’assistance.
-* [Redirigez-vous vers le formulaire de connexion d’administrateur avec l’erreur « Votre session en cours a expiré »](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41686) dans notre base de connaissances d’assistance.
+* [Redirigez-vous vers le formulaire de connexion d’administrateur avec l’erreur « Votre session en cours a expiré »](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-41686) dans notre base de connaissances d’assistance.
