@@ -37,8 +37,8 @@ Vous êtes redirigé vers le formulaire de connexion, avec le message d’erreur
 ## Solution
 
 1. Créez une sauvegarde de base de données.
-1. Utilisez un outil de base de données tel que [[!DNL phpMyAdmin]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande. Dans le tableau de la base de données `admin_user`, pour l’enregistrement de votre utilisateur administrateur, vérifiez si `is_active` est défini sur « `1` » et `lock_expires` est `NULL`. Réinitialisez ces valeurs, si nécessaire.
+1. Utilisez un outil de base de données tel que [[!DNL phpMyAdmin]](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) ou accédez manuellement à la base de données à partir de la ligne de commande. Dans le tableau de la base de données `admin_user`, pour l’enregistrement de votre utilisateur administrateur, vérifiez si `is_active` est défini sur « `1` » et `lock_expires` est `NULL`. Réinitialisez ces valeurs, si nécessaire.
 
 ## Lecture connexe
 
-* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
