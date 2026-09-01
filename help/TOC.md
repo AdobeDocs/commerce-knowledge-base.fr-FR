@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: 7b0cda2bfa026f53901b28c376a343a33ddb15eb
+source-git-commit: 9f4777deac8e9d367643158cf6947f4cb61e8fdd
 workflow-type: tm+mt
-source-wordcount: '1637'
+source-wordcount: '1621'
 ht-degree: 1%
 
 ---
@@ -73,12 +73,10 @@ ht-degree: 1%
     * [Correctifs révisés pour la perte d’accès aux cartes Google sur toutes les versions d’Adobe Commerce](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
   * Divers {#miscellaneous}
     * [E-mail indiquant que le stockage de l’exportation est presque plein](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
-    * [Guide de dépannage de l’outil Adobe Commerce Security Scan](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [Diagnostic des écarts de chiffre d’affaires Google eCommerce](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
     * [J’ai configuré les clés API pour Adobe AI, mais je ne vois qu’un seul espace de données SaaS](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
     * [Aide générale à la résolution des problèmes liés aux modules personnalisés](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
     * [Préchauffage du cache et site indisponible sur Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
-    * [Redirection de connexion lors de la tentative de connexion à Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
     * [Utilisation des exportations de données pour identifier les incohérences](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
     * [Problèmes de vérification de la préparation des dépendances des composants](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
     * [Impossible d’accéder à l’interface utilisateur d’Adobe Commerce sur l’infrastructure cloud](/help/troubleshooting/miscellaneous/cannot-access-magento-commerce-cloud-ui.md)
