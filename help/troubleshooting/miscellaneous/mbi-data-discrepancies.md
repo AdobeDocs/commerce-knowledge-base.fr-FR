@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Les chiffres d’un rapport donné semblent-ils inexacts ? Voyez-vous des valeurs NULL inattendues ? Si vous constatez que quelque chose ne semble pas correct, nous vous recommandons d’utiliser ces ressources pour vous aider à résoudre les problèmes suivants :
 
-* [Liste de contrôle pour le diagnostic des incohérences de données](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)
+* [Liste de contrôle pour le diagnostic des incohérences de données](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-41479)
 * [Utilisation des exportations pour identifier les incohérences de données](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
 Nous vous recommandons également de vous assurer que les [méthodes de réplication](https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) et [revérifications](https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) correctes ont été définies pour les tables et les colonnes impliquées dans l’incohérence. Notez que vous avez besoin d’autorisations d’administrateur pour accéder à la méthode de réplication et revérifier les informations.
