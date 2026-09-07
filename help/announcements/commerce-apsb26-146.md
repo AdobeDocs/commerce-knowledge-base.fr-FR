@@ -101,7 +101,7 @@ Appliquez le correctif suivant à la version du produit affectée :
 
 ### Application du correctif
 
-Décompressez le fichier et consultez [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) dans notre base de connaissances d’assistance pour obtenir des instructions.
+Décompressez le fichier et consultez [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) dans notre base de connaissances d’assistance pour obtenir des instructions.
 
 ### Vérifiez que le correctif est appliqué (Adobe Commerce sur les commerçants cloud uniquement).
 
@@ -109,7 +109,7 @@ Décompressez le fichier et consultez [Comment appliquer un correctif de composi
 
 Pour ce faire, procédez comme suit, en prenant l’`VULN-39341_Hotfix_COMPOSER.patch` de fichier comme exemple :
 
-1. [Installation de l’outil de correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage).
+1. [Installation de l’outil de correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/usage).
 1. Exécutez la commande :
 
 `vendor/bin/magento-patches -n status | grep "39341\|Status"`
@@ -133,7 +133,7 @@ Pour faire pivoter les informations d’identification, procédez comme suit :
 1. Appliquez le correctif.
 1. Activez le mode de maintenance.
 1. Désactivez l’exécution cron (commande Commerce on Cloud : `vendor/bin/ece-tools cron:disable`).
-1. [Rotation des clés de chiffrement](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key?lang=en).
+1. [Rotation des clés de chiffrement](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/encryption-key?lang=en).
 1. Faites pivoter tous les mots de passe utilisateur du panneau d’administration.
 1. Désactivez et régénérez tous les jetons d’intégration REST/SOAP/GraphQL (**[!UICONTROL System]** > **[!UICONTROL Extensions]** > **[!UICONTROL Integrations]**).
 1. rotation des secrets clients OAuth pour toutes les applications tierces connectées ;
@@ -154,4 +154,4 @@ Mises à jour de sécurité disponibles pour Adobe Commerce :
 
 ### Lecture connexe
 
-[Activation ou désactivation du mode de maintenance](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) dans le Guide d’installation d’Adobe Commerce
+[Activation ou désactivation du mode de maintenance](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) dans le Guide d’installation d’Adobe Commerce
