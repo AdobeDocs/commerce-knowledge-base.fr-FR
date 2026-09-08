@@ -30,4 +30,4 @@ Si le prix de base du produit change et devient inférieur au prix catalogue par
 
 ## Lecture connexe
 
-[Définissez la tarification et la structure d’un catalogue partagé](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html) dans notre guide de l’utilisateur.
+[Définissez la tarification et la structure d’un catalogue partagé](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html?lang=fr) dans notre guide de l’utilisateur.
