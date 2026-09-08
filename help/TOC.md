@@ -2,9 +2,9 @@
 user-guide-title: Base de connaissances Adobe Commerce
 user-guide-description: Tout ce dont vous avez besoin pour gérer votre boutique Commerce et résoudre les problèmes associés.
 breadcrumb-title: Commerce KB
-source-git-commit: d8f408d530a9106a1b26c602085bd6ce0db3fef3
+source-git-commit: 16bf1de71bfc6ab2836cb2e98dd60fe191d942d1
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1618'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,7 @@ ht-degree: 1%
 * [Base de connaissances de l’assistance Adobe Commerce](/help/overview.md)
 * Annonces {#announcements}
   * [Présentation des annonces](/help/announcements/overview.md)
+  * [Mise à jour de sécurité disponible pour Adobe Commerce - APSB26-146](/help/announcements/commerce-apsb26-146.md)
   * Annonces Adobe Commerce {#commerce-announcements}
     * {hide-from-toc}[La prise en charge d’Adobe Commerce prend en charge la migration du processus d’admission vers Experience League](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
 * Dépannage {#troubleshooting}
