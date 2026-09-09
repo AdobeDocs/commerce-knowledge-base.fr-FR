@@ -39,10 +39,10 @@ Un problème lié aux paramètres [!DNL OPcache].
 
 ## Solution
 
-Mettez à niveau [!DNL ECE Tools] vers la dernière version [2002.1.13](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113).
+Mettez à niveau [!DNL ECE Tools] vers la dernière version [2002.1.13](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113).
 
 ## Lecture connexe
 
-* [Performances lentes, exécution lente et longue durée [!DNL crons]](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-42802) dans notre base de connaissances en matière d’assistance.
-* [[!DNL Cron] les tâches verrouillent les tâches d’autres groupes](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=en) dans notre base de connaissances du support.
-* [[!DNL Cron] la tâche est bloquée au statut « en cours d’exécution »](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=en) dans notre base de connaissances d’assistance.
+* [Performances lentes, exécution lente et longue durée [!DNL crons]](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-42802) dans notre base de connaissances en matière d’assistance.
+* [[!DNL Cron] les tâches verrouillent les tâches d’autres groupes](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=fr) dans notre base de connaissances du support.
+* [[!DNL Cron] la tâche est bloquée au statut « en cours d’exécution »](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=fr) dans notre base de connaissances d’assistance.
