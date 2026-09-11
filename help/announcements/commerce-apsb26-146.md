@@ -3,17 +3,12 @@ title: Mise à jour de sécurité critique requise pour une action urgente dispo
 description: Adobe a publié le bulletin de sécurité APSB26-146 concernant CVE-2026-75650, une vulnérabilité « jour zéro » dans Adobe Commerce. Découvrez comment appliquer le correctif et faire pivoter les informations d’identification.
 autotag-review: '2026-09-07T17:27:44.037Z'
 TQID: 'https://experienceleague.adobe.com/ADVRRn85--ZgWtPdi4qA49fsDPVW976N4MYWp26taho'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 7526f999381e9f117ea2d52dc59330b0d34cba62
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c32adafa-ed01-4b31-997e-2413013911b0
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 8a165b274bf508d849c60fd6768569af1885fdb7
 workflow-type: tm+mt
-source-wordcount: 952
+source-wordcount: 957
 ht-degree: 0%
 
 ---
@@ -86,7 +81,7 @@ Pour aider à résoudre la vulnérabilité des produits et versions concernés, 
 
 ### Application du correctif
 
-Décompressez le fichier et consultez [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) dans notre base de connaissances d’assistance pour obtenir des instructions.
+Décompressez le fichier et consultez [Comment appliquer un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) dans notre base de connaissances d’assistance pour obtenir des instructions.
 
 ### Vérifiez que le correctif est appliqué (Adobe Commerce sur les commerçants cloud uniquement).
 
@@ -94,7 +89,7 @@ Décompressez le fichier et consultez [Comment appliquer un correctif de composi
 
 Pour ce faire, procédez comme suit, en prenant l’`VULN-39341_Hotfix_COMPOSER.patch` de fichier comme exemple :
 
-1. [Installation de l’outil de correctifs de qualité](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/quality-patches-tool/usage#install).
+1. [Installation de l’outil de correctifs de qualité](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage#install).
 1. Exécutez la commande : `vendor/bin/magento-patches -n status | grep "39341\|Status"`.
 1. Vous devriez voir une sortie similaire à celle-ci, où cet exemple VULN-39341 renvoie le statut Appliqué :
 
@@ -115,12 +110,12 @@ Pour faire pivoter les informations d’identification, procédez comme suit :
 1. Appliquez le correctif.
 1. Activez le mode de maintenance.
 1. Désactivez l’exécution cron (commande Commerce on Cloud : `vendor/bin/ece-tools cron:disable`).
-1. [Rotation des clés de chiffrement](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/encryption-key?lang=en).
+1. [Rotation des clés de chiffrement](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key?lang=en).
 1. Faites pivoter tous les mots de passe utilisateur du panneau d’administration.
 1. Désactivez et régénérez tous les jetons d’intégration REST/SOAP/GraphQL (**[!UICONTROL System]** > **[!UICONTROL Extensions]** > **[!UICONTROL Integrations]**).
 1. rotation des secrets clients OAuth pour toutes les applications tierces connectées ;
 1. rotation des informations d’identification de l’API de passerelle de paiement au niveau du fournisseur (Stripe, Braintree, Adyen, PayPal, etc.) ;
-1. Rotation des informations d’identification de base de données.
+1. Rotation de la base de données et des informations d’identification Fastly (via un ticket de support).
 1. Faites pivoter les clés SSH/de déploiement et les informations d’identification de compte de service avec privilège cron ou système.
 1. Faites pivoter les clés d’API pour les extensions tierces intégrées de frais d’expédition, de taxes et autres.
 1. Videz le cache.
@@ -137,4 +132,4 @@ Mises à jour de sécurité disponibles pour Adobe Commerce :
 
 ### Lecture connexe
 
-[Activation ou désactivation du mode de maintenance](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) dans le Guide d’installation d’Adobe Commerce
+[Activation ou désactivation du mode de maintenance](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) dans le Guide d’installation d’Adobe Commerce
