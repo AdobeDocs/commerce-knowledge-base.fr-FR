@@ -71,4 +71,4 @@ Ce problème sera définitivement résolu dans le cadre des versions de correcti
 
 ## Lectures connexes
 
-[Application d’un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)
+[Application d’un correctif de compositeur fourni par Adobe](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)
