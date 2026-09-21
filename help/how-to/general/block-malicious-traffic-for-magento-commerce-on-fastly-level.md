@@ -3,13 +3,11 @@ title: Bloquer le trafic malveillant pour Adobe Commerce au niveau Fastly
 description: Cet article décrit les mesures que vous pouvez prendre pour bloquer le trafic malveillant lorsque vous suspectez que votre Adobe Commerce sur le magasin d’infrastructure cloud subit une attaque DDoS.
 exl-id: 1a834a0a-753b-432e-9c3b-ef8dd034d294
 feature: Cache, Marketing Tools
-source-git-commit: 8bde15deccc24c548c20cf5955cbebc45ac1d9a1
+source-git-commit: 8e64b148938394e67265da543784b2769df56c58
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '932'
 ht-degree: 0%
-
 ---
-
 # Bloquer le trafic malveillant pour Adobe Commerce au niveau Fastly
 
 Cet article explique comment bloquer le trafic indésirable vers votre boutique, non seulement en réponse aux menaces malveillantes, mais également comme méthode de filtrage géographique.
@@ -47,8 +45,8 @@ Pour le magasin d’infrastructure cloud d’Adobe Commerce, la méthode la plus
 
 Pour établir un blocage basé sur l’agent utilisateur, vous devez ajouter un fragment de code VCL personnalisé à votre configuration Fastly. Pour ce faire, procédez comme suit :
 
-1. Dans Commerce Admin, accédez à **Magasins** > **Configuration** > **Avancé** > **Système** > **Cache de page complet**.
-1. Puis **Configuration rapide** > **Fragments de code VCL personnalisés**.
+1. Dans le **[!UICONTROL Admin]** Commerce, accédez à **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]**.
+1. Puis **[!UICONTROL Fastly Configuration]** > **[!UICONTROL Custom VCL Snippets]**.
 1. Créez le nouveau fragment de code personnalisé comme décrit dans le guide [Fragments de code VCL personnalisés](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md) pour le module Fastly_Cdn. Vous pouvez utiliser l’exemple de code suivant comme exemple. Cet exemple montre comment interdire le trafic pour l’agent utilisateur `AhrefsBot`.
 
 ```php
@@ -60,6 +58,64 @@ name: block_bad_useragents
       error 405 "Not allowed";
   }
 ```
+
+## Bloquer le trafic par les signatures JA3/JA4/OH (capturez les valeurs JA3, JA4 et OHFP à partir de Newrelic)
+
+1. Créez un dictionnaire : accédez à **[!UICONTROL Admin]** > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL System]** > **[!UICONTROL Full page cache]** > **[!UICONTROL Fastly configuration]** > **[!UICONTROL Edge Dictionary]** et créez ce bloc d’exemple :
+
+   ```
+   #table ja3_blocklist:
+   table ja3_blocklist {
+       "********************************": "********************************",
+   }
+   
+   #table ja4_blocklist:
+   table filter_bad_ja4 {
+       "************************************": "************************************",
+   }
+   ```
+
+1. Ajoutez ensuite un VCL pour bloquer tout JA3, JA4 répertorié dans le tableau défini ci-dessus :
+
+   ```
+   name: block_traffic_ja3_ja4
+   type: recv 
+   priority: 5 
+   
+   VCL:
+   if (req.restarts == 0 && fastly.ff.visits_this_service == 0) {
+     if(table.contains(ja3_blocklist, tls.client.ja3_md5)){
+       error 403;
+     }
+     if(table.contains(ja4_blocklist, tls.client.ja4)){
+       error 403;
+     }
+   }
+   ```
+
+1. Exemple de bloc basé sur OHFP :
+
+   ```
+   #table ohfp_h2fp_blocklist
+   table ohfp_h2fp_blocklist {
+       "xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx":"xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx:xx",
+   }
+   ```
+
+
+1. Ajoutez ensuite un VCL pour bloquer tout OHFP répertorié dans le tableau ci-dessus :
+
+   ```
+   # Snippet block_ohfp_h2fp
+   name: block_ohfp_h2fp
+   type: recv 
+   Priority: 5
+   
+   if (table.contains(ohfp_h2fp_blocklist, fastly_info.oh_fingerprint)) {
+     error 403 "Forbidden";
+   }
+   ```
+
 
 ## Limitation de débit (fonctionnalité expérimentale Fastly)
 

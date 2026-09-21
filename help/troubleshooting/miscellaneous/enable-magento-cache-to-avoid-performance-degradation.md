@@ -4,13 +4,11 @@ description: Cet article explique comment résoudre un problème de site lent ca
 exl-id: e4e5a753-efa3-4552-aaf6-28e44efcfa5b
 feature: Cache, Observability
 role: Developer
-source-git-commit: 8be0c125bb0417e34e016656337506da88796630
+source-git-commit: 42aa1d4ef3540d4eb9682627dc5bf1dd14091dc3
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '366'
 ht-degree: 0%
-
 ---
-
 # Activez le cache pour éviter une dégradation des performances
 
 Cet article explique comment résoudre un problème de site lent causé par la désactivation de certains types de cache d’Adobe Commerce.
@@ -47,11 +45,11 @@ En cas d’inquiétude et/ou de question sur la possibilité ou la nécessité d
 
 Documentation sur le cache d’Adobe Commerce dans notre documentation destinée aux développeurs :
 
-* [Présentation du cache Adobe Commerce](https://developer.adobe.com/commerce/frontend-core/guide/caching)
-* [&#x200B; Gérer le cache &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-cache)
+* [Présentation du cache d’Adobe Commerce](https://developer.adobe.com/commerce/frontend-core/guide/caching)
+* [Gérer le cache](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-cache)
 
 Autres raisons possibles des problèmes de performances et solutions correspondantes :
 
-* [Désactivez la sortie Adobe Commerce Banner pour améliorer les performances du site](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26909)
-* [Les tables MySQL sont trop grandes](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26945)
-* [Performances lentes, crons lents et à exécution longue](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
+* [Désactivez la sortie Adobe Commerce Banner pour améliorer les performances du site.](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26909)
+* [Tables MySQL trop volumineuses](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26945)
+* [Performances lentes, crons lents et à exécution longue](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-42802)
