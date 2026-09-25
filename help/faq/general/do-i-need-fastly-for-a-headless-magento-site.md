@@ -23,7 +23,7 @@ Je développe une implémentation découplée d’Adobe Commerce. Dois-je toujou
 Non, pas du tout. Dans cette situation, vous pouvez ignorer l’utilisation de Fastly, du moins au début du développement.
 
 La seule situation que vous ne souhaitez peut-être pas activer concerne un déploiement découplé.
-Consultez [Cloud for Adobe Commerce > Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) dans notre documentation destinée aux développeurs.
+Consultez [Cloud for Adobe Commerce > Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly) dans notre documentation destinée aux développeurs.
 
 Néanmoins, vous aurez très probablement besoin de Fastly pour utiliser son certificat SSL.
 
@@ -32,4 +32,4 @@ Tous les clients Adobe Commerce sur les infrastructures cloud reçoivent un cert
 ## Plus d’informations
 
 * [Sites web découplés : quel est le problème avec l’architecture découplée ?](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) par [Josh Koenig](https://pantheon.io/team/josh-koenig).
-* [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) dans notre documentation destinée aux développeurs et développeuses.
+* [Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly) dans notre documentation destinée aux développeurs et développeuses.
