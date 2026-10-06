@@ -1,22 +1,20 @@
 ---
-title: Le &grave;Magento-cloud&grave; [!DNL CLI]  n’affiche pas d’environnement actif
-description: Cet article décrit un problème Adobe Commerce connu où "Magento-cloud" [!DNL CLI]  (outil de ligne de commande) n’affiche pas d’environnement actif.
+title: L’[!DNL CLI] « Magento-cloud » n’affiche pas d’environnement actif
+description: Cet article décrit un problème Adobe Commerce connu en raison duquel l’[!DNL CLI] « Magento-cloud » (outil de ligne de commande) n’affiche pas d’environnement actif.
 feature: Cloud, Integration, Configuration
 role: Developer
 exl-id: 3c1b5de2-8888-4531-9dc1-cd478e3c96fc
 source-git-commit: 5eac8bb54e205eff6a96e279295cd12db1009f0a
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '136'
 ht-degree: 0%
-
 ---
-
-# `Magento-cloud` [!DNL CLI] n&#39;affiche pas d&#39;environnement actif
+# L’[!DNL CLI] `Magento-cloud` n’affiche pas d’environnement actif
 
 ## Problème
 
-Il existe plusieurs environnements actifs et vous tentez d’interagir avec un environnement en exécutant une commande `Magento-cloud` [!DNL CLI] (outil de ligne de commande). (Par exemple : `ssh`, `db:size`, `db:sql`, etc.)
-Toutefois, l’invite permettant de choisir l’environnement souhaité ne répertorie pas cet environnement. (Par exemple : l’environnement d’intégration)
+Il existe plusieurs environnements actifs et vous essayez d’interagir avec un environnement en exécutant une commande `Magento-cloud` [!DNL CLI] (outil de ligne de commande). (Par exemple : `ssh`, `db:size`, `db:sql`, etc.)
+Cependant, l’invite de choix de l’environnement souhaité ne répertorie pas cet environnement. (Par exemple : l’environnement d’intégration)
 
 ```
 Enter a number to choose an environment:
@@ -36,7 +34,7 @@ L’environnement peut ne pas être disponible en raison d’un déploiement en 
 
 Vous devrez spécifier manuellement l’environnement avec l’indicateur `e|-environment`.
 
-1. Recherchez la liste des environnements actifs et notez les noms des environnements :
+1. Recherchez la liste des environnements actifs et notez les noms d’environnement :
 
 ```
 $ magento-cloud environment: list |grep "Active\|ID"
@@ -50,6 +48,6 @@ Your environments are:
 |          Integration 2 | Integration 2    | Active       | Development    |
 ```
 
-&#x200B;2. Spécifiez l’identifiant de l’environnement à l’aide de votre commande :
+&#x200B;2. Spécifiez l’identifiant de l’environnement à l’aide de la commande :
 
 `magento-cloud ssh -e integration`
