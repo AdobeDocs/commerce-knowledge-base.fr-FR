@@ -42,7 +42,7 @@ Si vous avez rencontré une panne potentiellement due à une surcharge de la bas
 Si votre projet Adobe Commerce est déployé sur une architecture Pro, vous pouvez utiliser le [!DNL Percona Toolkit] pour analyser les requêtes.
 
 1. Exécutez la commande `pt-query-digest --type=slowlog` sur les journaux de requêtes lentes MySQL.
-   * Pour trouver l’emplacement des journaux de requêtes lentes, consultez **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)** dans notre documentation destinée aux développeurs.
+   * Pour trouver l’emplacement des journaux de requêtes lentes, consultez **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=fr)** dans notre documentation destinée aux développeurs.
    * Voir la documentation [[!DNL Percona Toolkit] > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) .
 1. En fonction des problèmes trouvés, prenez les mesures nécessaires pour corriger la requête, afin qu’elle s’exécute plus rapidement.
 
@@ -79,4 +79,4 @@ Cela permet de déterminer si le serveur MySQL est actif et s’il n’existe au
 * [MySQL Afficher la syntaxe Processlist](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) dans dev.mysql.com.
 * [Syntaxe MySQL Kill](https://dev.mysql.com/doc/refman/8.0/en/kill.html) dans dev.mysql.com.
 * [Sécurité, performances et gestion des données](https://developer.adobe.com/commerce/php/best-practices/extensions/security/) dans notre documentation destinée aux développeurs.
-* [Aide MySQL](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql) dans notre documentation destinée aux développeurs.
+* [Aide MySQL](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql) dans notre documentation destinée aux développeurs.
