@@ -30,7 +30,7 @@ Définissez toutes les options suivantes selon vos besoins.
 
 ### Tous les serveurs web et Vernis {#all-web-servers-and-varnish}
 
-1. Localisez votre `php.ini` à l’aide d’un fichier [`phpinfo.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software).
+1. Localisez votre `php.ini` à l’aide d’un fichier [`phpinfo.php`](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/optional-software).
 1. En tant qu’utilisateur disposant de droits d’`root`, ouvrez `php.ini` dans un éditeur de texte.
 1. Recherchez le paramètre `max_execution_time` .
 1. Remplacez sa valeur par `18000` .
