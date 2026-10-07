@@ -1,39 +1,37 @@
 ---
 title: L’installation s’arrête à environ 70 %
-description: Cet article fournit un correctif pour lorsque l’installation s’arrête à environ 70 %.
+description: Cet article fournit un correctif pour le moment où l’installation s’arrête à environ 70 %.
 exl-id: 04aa3572-3c42-4565-9f7f-b4d90df96df2
 feature: Install, Upgrade
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '200'
 ht-degree: 0%
-
 ---
-
 # L’installation s’arrête à environ 70 %
 
-Cet article fournit un correctif pour lorsque l’installation s’arrête à environ 70 %.
+Cet article fournit un correctif pour le moment où l’installation s’arrête à environ 70 %.
 
 ## Problème
 
-Lors de l’installation à l’aide de l’assistant de configuration, le processus s’arrête à environ 70 % (avec ou sans données d’exemple). Aucune erreur ne s’affiche à l’écran.
+Lors de l’installation à l’aide de l’assistant d’installation, le processus s’arrête à environ 70 % (avec ou sans données d’exemple). Aucune erreur ne s’affiche à l’écran.
 
 ## Cause
 
-Causes possibles de ce problème :
+Les causes courantes de ce problème incluent :
 
-* Paramètre PHP pour [`max_execution_time`](http://php.net/manual/en/info.configuration.php#ini.max-execution-time)
-* Valeurs de délai d’expiration de ingx et de vernis
+* Le paramètre PHP pour [`max_execution_time`](http://php.net/manual/en/info.configuration.php#ini.max-execution-time)
+* Valeurs de délai d’expiration pour les onglets et le vernis
 
 ## Solution :
 
-Définissez tous les éléments suivants selon les besoins.
+Définissez toutes les options suivantes selon vos besoins.
 
-### Tous les serveurs web et vernis {#all-web-servers-and-varnish}
+### Tous les serveurs web et Vernis {#all-web-servers-and-varnish}
 
-1. Localisez votre fichier `php.ini` à l’aide d’un fichier [`phpinfo.php`](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/optional-software).
-1. En tant qu&#39;utilisateur disposant de droits `root`, ouvrez `php.ini` dans un éditeur de texte.
+1. Localisez votre `php.ini` à l’aide d’un fichier [`phpinfo.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software).
+1. En tant qu’utilisateur disposant de droits d’`root`, ouvrez `php.ini` dans un éditeur de texte.
 1. Recherchez le paramètre `max_execution_time` .
 1. Remplacez sa valeur par `18000` .
 1. Enregistrez vos modifications dans `php.ini` et quittez l’éditeur de texte.
@@ -42,11 +40,11 @@ Définissez tous les éléments suivants selon les besoins.
    * CentOS : `service httpd restart`
    * Ubuntu : `service apache2 restart`
 
-   Si vous utilisez le signe ou le vernis, passez aux sections suivantes.
+   Si vous utilisez Nginx ou Varnish, continuez avec les sections suivantes.
 
 ### nginx uniquement {#nginx-only}
 
-Si vous utilisez nginx, utilisez notre `nginx.conf.sample` inclus ou ajoutez un paramètre de délai d’expiration dans le fichier de configuration de l’hôte nginx à la section `location ~ ^/setup/index.php` comme suit :
+Si vous utilisez nginx, utilisez le `nginx.conf.sample` inclus ou ajoutez un paramètre de délai d&#39;expiration dans le fichier de configuration de l&#39;hôte nginx à la section `location ~ ^/setup/index.php` comme suit :
 
 ```php
 location ~ ^/setup/index.php {
@@ -56,11 +54,11 @@ location ~ ^/setup/index.php {
 }
 ```
 
-Redémarrez le nginx : `service nginx restart`
+Redémarrez nginx : `service nginx restart`
 
-### Uniquement en vernis {#varnish-only}
+### Vernis uniquement {#varnish-only}
 
-Si vous utilisez le vernis, modifiez `default.vcl` et ajoutez une valeur limite de délai d’expiration à la stanza `backend` comme suit :
+Si vous utilisez le vernis, modifiez la `default.vcl` et ajoutez une valeur de limite de délai d’expiration à la strate de `backend` comme suit :
 
 ```php
 backend default {
