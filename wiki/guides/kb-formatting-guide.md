@@ -172,8 +172,8 @@ Si vous devez référencer un élément autre que l’en-tête, utilisez HTML po
 
 ### Liens relatifs et liens vers d’autres articles
 
-N’utilisez pas de liens relatifs pour référencer nos articles de la base de connaissances d’assistance. Ces liens ne fonctionneront pas lorsque votre article sera publié dans le Centre d’aide d’[](https://support.magento.com/hc/en-us).
-Veuillez utiliser des liens hypertexte complets à partir du Centre d&#39;aide [](https://support.magento.com/hc/en-us).
+N’utilisez pas de liens relatifs pour référencer nos articles de la base de connaissances d’assistance. Ces liens ne fonctionneront pas lorsque votre article sera publié dans le Centre d’aide d’[&#128279;](https://support.magento.com/hc/en-us).
+Veuillez utiliser des liens hypertexte complets à partir du Centre d&#39;aide [&#128279;](https://support.magento.com/hc/en-us).
 
 
 ## Tableaux

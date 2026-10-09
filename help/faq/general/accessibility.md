@@ -24,7 +24,7 @@ Beaucoup de nos clients utilisent les normes d’accessibilité [W3C](https://ww
 
 Grâce aux outils de développement standard, vous pouvez collaborer avec un partenaire d’accessibilité essentiel ou implémenter des extensions dans Commerce Marketplace en fonction des besoins spécifiques des clients ou du rapport de conformité d’Adobe.
 
-Vous pouvez trouver des solutions dans le [](https://marketplace.magento.com/).
+Vous pouvez trouver des solutions dans le [&#128279;](https://marketplace.magento.com/).
 
 ## Lecture connexe
 

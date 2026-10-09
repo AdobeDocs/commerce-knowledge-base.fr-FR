@@ -12,7 +12,7 @@ ht-degree: 0%
 
 Bienvenue sur la page d’accueil de la documentation du référentiel de la base de connaissances de l’assistance Adobe Commerce.
 Vous trouverez ici des documents qui vous aideront à apporter les contributions et les modèles les mieux adaptés, dans le même but.
-Pour en savoir plus sur le flux général des contributions, consultez le [ Guide du contributeur ](../.github/CONTRIBUTING.md).
+Pour en savoir plus sur le flux général des contributions, consultez le [&#x200B; Guide du contributeur &#x200B;](../.github/CONTRIBUTING.md).
 
 ## Guides
 

@@ -75,7 +75,7 @@ Installation failed, reverting ./composer.json and ./composer.lock to their orig
 
 ## Solution
 
-Installation ou mise à niveau vers la version 1.4.0 de [!DNL B2B] sur Adobe Commerce 2.4.6-p1 avec l’ajout de dépendances manuelles pour le package de sécurité [!DNL B2B] avec une [ balise de stabilité ](https://getcomposer.org/doc/04-schema.md#package-links).
+Installation ou mise à niveau vers la version 1.4.0 de [!DNL B2B] sur Adobe Commerce 2.4.6-p1 avec l’ajout de dépendances manuelles pour le package de sécurité [!DNL B2B] avec une [&#x200B; balise de stabilité &#x200B;](https://getcomposer.org/doc/04-schema.md#package-links).
 
 1. Dans le répertoire d’installation d’Adobe Commerce, mettez à jour `composer.json` avec les dépendances requises :
 

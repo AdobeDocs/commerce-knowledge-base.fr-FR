@@ -34,4 +34,4 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 ### Solution {#solution}
 
-Vérifiez attentivement le paramètre de fuseau horaire PHP. Consultez [ Guide d’installation > Paramètres PHP ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) dans notre documentation destinée aux développeurs.
+Vérifiez attentivement le paramètre de fuseau horaire PHP. Consultez [&#x200B; Guide d’installation > Paramètres PHP &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) dans notre documentation destinée aux développeurs.

@@ -93,7 +93,7 @@ Recommandation : pour identifier les causes possibles de mauvaises performances,
 
 * [Siege](https://www.joedog.org/siege) : utilitaire de test de chargement et d’évaluation des performances HTTP ; prend en charge l’authentification de base, les cookies, les protocoles HTTP, HTTPS et FTP.
 * [Jmeter](https://jmeter.apache.org/) : outil de test de charge et de mesure des performances réputé. Permet d’évaluer les performances pour le trafic en pic, par exemple pour les ventes flash.
-* [](https://support.newrelic.com/) : localise les processus et les zones du site, ce qui ralentit les performances en raison du temps passé par action suivi, comme la transmission de données, de requêtes, de Redis, etc.
+* [&#128279;](https://support.newrelic.com/) : localise les processus et les zones du site, ce qui ralentit les performances en raison du temps passé par action suivi, comme la transmission de données, de requêtes, de Redis, etc.
 * [WebPageTest](https://www.webpagetest.org/) (gratuit) et [Pingdom](https://www.pingdom.com/) (payant) : l’analyse en temps réel des pages de votre site charge du temps avec différents emplacements d’origine.
 
 Vous pouvez également envisager une [minification](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) pour CSS, JavaScript et HTML.

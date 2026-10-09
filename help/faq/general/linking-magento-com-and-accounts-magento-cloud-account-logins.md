@@ -25,13 +25,13 @@ Les utilisateurs de [accounts.magento.cloud](https://accounts.magento.cloud/) pe
 1. Accédez à **Paramètres du compte** à l’adresse [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) après vous être connecté avec la méthode de votre choix.
 1. Ouvrez la section **Authentification unique** de la page.
 1. Si le **Fournisseur : Magento.com** indique « Statut Non connecté », cliquez sur le bouton **Se connecter avec Magento.com**.
-1. Vous serez redirigé vers [](https://account.magento.com/applications/customer/login/).
+1. Vous serez redirigé vers [&#128279;](https://account.magento.com/applications/customer/login/).
 1. De là, vous pouvez créer un compte Adobe Commerce ou vous connecter à un compte existant.
 
 ## Méthode 2
 
-1. Connectez-vous à [](https://account.magento.com/).
-1. Accédez à un onglet distinct dans [](https://accounts.magento.cloud/user).
+1. Connectez-vous à [&#128279;](https://account.magento.com/).
+1. Accédez à un onglet distinct dans [&#128279;](https://accounts.magento.cloud/user).
 1. Cliquez sur « Se connecter à [Magento.com](https://account.magento.com/customer/account/login/) ».
 
 ## Lecture connexe

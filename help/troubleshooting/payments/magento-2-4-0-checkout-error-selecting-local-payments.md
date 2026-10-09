@@ -48,7 +48,7 @@ Message d’erreur « *Il n’existe actuellement aucun mode de paiement disponi
 
 * Adobe Commerce 2.4.0 est installé.
 * Créez un produit et une catégorie.
-* Configurez [Mode De Paiement ](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree/).
+* Configurez [Mode De Paiement &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree/).
 
 <u>Procédure à suivre </u> :
 

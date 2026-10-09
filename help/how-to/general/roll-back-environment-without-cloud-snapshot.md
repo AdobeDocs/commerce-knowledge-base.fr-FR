@@ -141,7 +141,7 @@ Dans ce scénario, vous devez d’abord restaurer l’état de fonctionnement de
 
 [&#x200B;3. Désinstallez le logiciel Adobe Commerce.](/help/how-to/general/reset-environment-on-cloud.md#setup-uninstall)
 
-4&amp;period; Forcer le redéploiement.
+4&period; Forcer le redéploiement.
 
 Après avoir effectué ces étapes, vous obtiendrez les mêmes résultats que dans le scénario 1.
 

@@ -41,7 +41,7 @@ Ce comportement est attendu, car les extensions groupées par fournisseur ont é
 
 ## Solution
 
-Installez/achetez les extensions officielles séparément. Ils sont disponibles sur [](https://marketplace.magento.com/extensions.html).
+Installez/achetez les extensions officielles séparément. Ils sont disponibles sur [&#128279;](https://marketplace.magento.com/extensions.html).
 
 ## Lecture connexe
 

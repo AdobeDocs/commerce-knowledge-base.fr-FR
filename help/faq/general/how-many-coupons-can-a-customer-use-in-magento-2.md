@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Pour les versions d’Adobe Commerce inférieures à la version 2.4.7, vous pouvez configurer plusieurs codes de coupon, mais utiliser **un seul code de coupon dans le panier**.
 
-Pour utiliser plusieurs codes de coupon simultanément dans le panier, vous pouvez utiliser une extension correspondante dans [](https://marketplace.magento.com/).
+Pour utiliser plusieurs codes de coupon simultanément dans le panier, vous pouvez utiliser une extension correspondante dans [&#128279;](https://marketplace.magento.com/).
 
 Cependant, à partir de la version 2.4.7 d’Adobe Commerce, vous pouvez configurer et utiliser **plusieurs codes de coupon dans le panier simultanément**. Pour l’activer, voir [Paramètres multipoints](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales#multicoupon-settings).
 

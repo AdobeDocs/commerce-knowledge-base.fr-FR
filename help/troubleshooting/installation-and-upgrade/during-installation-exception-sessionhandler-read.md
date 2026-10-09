@@ -34,7 +34,7 @@ Cela se produit lorsque votre paramètre PHP `session.save_handler` est défini 
 
 ## Solutions :
 
-* Mettez à niveau votre code Adobe Commerce. Consultez [ Guide d’installation > Mise à jour du logiciel Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall) dans notre documentation destinée aux développeurs.
+* Mettez à niveau votre code Adobe Commerce. Consultez [&#x200B; Guide d’installation > Mise à jour du logiciel Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall) dans notre documentation destinée aux développeurs.
 * Utilisez la solution suivante avec le code existant :
 
 ## Localiser `php.ini` {#locate-php-ini}

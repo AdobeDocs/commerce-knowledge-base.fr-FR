@@ -56,7 +56,7 @@ Vous pouvez fournir votre propre certificat SSL/TLS au lieu d’utiliser le cert
 
 Toutefois, ce processus nécessite un travail supplémentaire pour sa configuration et sa maintenance. Vous devrez d’abord générer une demande de signature de certificat (CSR) pour le nom de domaine (ou nom commun) du site web et la fournir à votre fournisseur SSL pour fournir un certificat SSL.
 
-Une fois que vous disposez du certificat SSL, envoyez un [ticket d’assistance ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) ou utilisez votre CTA pour ajouter des certificats hébergés personnalisés à vos environnements cloud.
+Une fois que vous disposez du certificat SSL, envoyez un [ticket d’assistance &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) ou utilisez votre CTA pour ajouter des certificats hébergés personnalisés à vos environnements cloud.
 
 * Si les domaines ne sont plus utilisés, ils seront automatiquement purgés de notre système et aucune autre action n’est requise.
 * Si vous possédez déjà un certificat, chargez-le à l’aide d’un client SFTP (SSH File Transfer Protocol) vers un emplacement de fichier inaccessible sur votre serveur et [envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) en lui indiquant le chemin d’accès au fichier.
