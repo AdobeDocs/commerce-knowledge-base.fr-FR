@@ -18,15 +18,15 @@ ht-degree: 0%
 
 Les tâches cron d’Adobe Commerce sur l’infrastructure cloud ne finissent pas de s’exécuter, se bloquent et empêchent l’exécution d’autres tâches cron. Cet article explique comment réinitialiser manuellement les tâches cron bloquées.
 
-Utilisez cette commande avec précaution ! Nous vous recommandons de lire l’article [Réinitialiser les tâches cron](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html) dans notre base de connaissances d’assistance pour plus d’informations.
+Utilisez cette commande avec précaution ! Nous vous recommandons de lire l’article [Réinitialiser les tâches cron](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=fr) dans notre base de connaissances d’assistance pour plus d’informations.
 
 ## Étapes
 
 >[!INFO]
 >
->Depuis [ECE-Tools v2002.0.4](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-release-archive.html#v2002.0.4) vous pouvez réinitialiser manuellement les tâches cron bloquées à l&#39;aide d&#39;une commande CLI via un accès SSH.
+>Depuis [ECE-Tools v2002.0.4](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-release-archive.html?lang=fr#v2002.0.4) vous pouvez réinitialiser manuellement les tâches cron bloquées à l&#39;aide d&#39;une commande CLI via un accès SSH.
 
-1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
 1. Exécutez la commande suivante : `./vendor/bin/ece-tools cron:unlock`
 
 ## Avertissements
@@ -36,4 +36,4 @@ Utilisez cette commande avec précaution ! Nous vous recommandons de lire l’ar
 
 ## Lisez-le dans notre base de connaissances d’assistance :
 
-[Réinitialiser les tâches cron](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)
+[Réinitialiser les tâches cron](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=fr)

@@ -49,9 +49,9 @@ Cela peut se produire en raison du chargement des images à partir du cache.
 
 Si cela se produit, vous pouvez utiliser la commande Magento pour régénérer le cache d’images et afficher correctement les images.
 
-Pour ce faire, vous avez besoin des informations SSH et de l’URL du magasin disponibles via [Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html).
+Pour ce faire, vous avez besoin des informations SSH et de l’URL du magasin disponibles via [Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=fr).
 
-1. SSH vers votre projet qui était une source pour l’[image mémoire de la base de données](/help/how-to/general/create-database-dump-on-cloud.md), comme décrit dans [SSH vers l’environnement](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) dans notre documentation destinée aux développeurs.
+1. SSH vers votre projet qui était une source pour l’[image mémoire de la base de données](/help/how-to/general/create-database-dump-on-cloud.md), comme décrit dans [SSH vers l’environnement](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/secure-connections) dans notre documentation destinée aux développeurs.
 1. Régénérez le cache d’images en exécutant :
 
    ```bash

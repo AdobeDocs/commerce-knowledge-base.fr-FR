@@ -22,7 +22,7 @@ Cet article fournit des solutions pour autoriser à nouveau une intégration afi
 
 ## Intégrations de bases de données et SaaS
 
-Pour obtenir la liste des intégrations Database et SaaS, reportez-vous à la section [Connexion de données externes à l’aide d’une intégration](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) dans la documentation destinée aux développeurs. (Lors de l’ouverture de la page, utilisez la table des matières à gauche pour la navigation).
+Pour obtenir la liste des intégrations Database et SaaS, reportez-vous à la section [Connexion de données externes à l’aide d’une intégration](https://experienceleague.adobe.com/fr/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) dans la documentation destinée aux développeurs. (Lors de l’ouverture de la page, utilisez la table des matières à gauche pour la navigation).
 
 ## Vous rencontrez des problèmes de connexion ?
 
@@ -41,4 +41,4 @@ Le statut de toutes les intégrations se trouve sur la page Intégrations ( **G�
 
 Pour vous réauthentifier, vous devrez peut-être saisir à nouveau les informations d’identification de votre compte. Dans certains cas, vous devrez peut-être générer de nouvelles clés API pour l’intégration du problème. Cliquez sur le nom de l’intégration du problème pour lancer le processus de réautorisation.
 
-Si le problème persiste, veuillez [soumettre un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+Si le problème persiste, veuillez [soumettre un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).

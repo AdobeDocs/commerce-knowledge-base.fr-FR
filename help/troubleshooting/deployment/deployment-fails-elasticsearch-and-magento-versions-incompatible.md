@@ -1,6 +1,6 @@
 ---
 title: 'Échec du déploiement : versions d’Elasticsearch et d’Adobe Commerce incompatibles'
-description: Reportez-vous à la section [Configuration du service Elasticsearch et compatibilité logicielle Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) de la documentation destinée aux développeurs.
+description: Reportez-vous à la section [Configuration du service Elasticsearch et compatibilité logicielle Elasticsearch](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) de la documentation destinée aux développeurs.
 exl-id: 7021df62-627c-45cf-a2f2-07c1a29ba1b2
 feature: Deploy, Search, Services
 role: Developer
@@ -27,4 +27,4 @@ ht-degree: 0%
 ---
 # Échec du déploiement : versions d’Elasticsearch et d’Adobe Commerce incompatibles
 
-Reportez-vous à la section [Configuration du service Elasticsearch > Compatibilité logicielle Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) de la documentation destinée aux développeurs.
+Reportez-vous à la section [Configuration du service Elasticsearch > Compatibilité logicielle Elasticsearch](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) de la documentation destinée aux développeurs.

@@ -42,4 +42,4 @@ Stocker les scripts côté serveur dans des répertoires non inscriptibles, tels
 
 ## Documentation connexe
 
-* [Cloud for Adobe Commerce > Structure de projet > Répertoires modifiables](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/file-structure#writable-directories) dans notre documentation destinée aux développeurs.
+* [Cloud for Adobe Commerce > Structure de projet > Répertoires modifiables](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/project/file-structure#writable-directories) dans notre documentation destinée aux développeurs.

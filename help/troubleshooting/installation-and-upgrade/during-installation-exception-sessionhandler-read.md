@@ -26,7 +26,7 @@ in ../magento2/lib/internal/Magento/Framework/App/ErrorHandler.php:67
 
 >[!NOTE]
 >
->Cette erreur se produit uniquement dans les versions de code antérieures au 28 septembre 2015. Si vous installez du code daté du 29 septembre ou d’une date ultérieure, cette erreur ne devrait pas se produire. Pour plus d’informations sur les options de configuration de Redis, consultez [Configurer Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) dans notre documentation destinée aux développeurs. Pour plus d’informations sur la spécification de Redis à l’aide du programme d’installation de ligne de commande, consultez la [rubrique d’installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced) ou la [rubrique de configuration du déploiement](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/deployment) dans notre documentation destinée aux développeurs.
+>Cette erreur se produit uniquement dans les versions de code antérieures au 28 septembre 2015. Si vous installez du code daté du 29 septembre ou d’une date ultérieure, cette erreur ne devrait pas se produire. Pour plus d’informations sur les options de configuration de Redis, consultez [Configurer Redis](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/redis/config-redis) dans notre documentation destinée aux développeurs. Pour plus d’informations sur la spécification de Redis à l’aide du programme d’installation de ligne de commande, consultez la [rubrique d’installation](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/advanced) ou la [rubrique de configuration du déploiement](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/deployment) dans notre documentation destinée aux développeurs.
 
 ## Cause
 
@@ -34,7 +34,7 @@ Cela se produit lorsque votre paramètre PHP `session.save_handler` est défini 
 
 ## Solutions :
 
-* Mettez à niveau votre code Adobe Commerce. Consultez [&#x200B; Guide d’installation > Mise à jour du logiciel Adobe Commerce &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall) dans notre documentation destinée aux développeurs.
+* Mettez à niveau votre code Adobe Commerce. Consultez [&#x200B; Guide d’installation > Mise à jour du logiciel Adobe Commerce &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/uninstall) dans notre documentation destinée aux développeurs.
 * Utilisez la solution suivante avec le code existant :
 
 ## Localiser `php.ini` {#locate-php-ini}

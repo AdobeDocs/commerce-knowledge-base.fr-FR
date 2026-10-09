@@ -74,5 +74,5 @@ Effectuez les étapes suivantes :
 
 ## Lecture connexe
 
-* [Réécritures d’URL](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) dans notre guide d’utilisation.
-* [Bonnes pratiques SEO](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) dans notre guide de l’utilisateur.
+* [Réécritures d’URL](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) dans notre guide d’utilisation.
+* [Bonnes pratiques SEO](https://experienceleague.adobe.com/fr/docs/commerce-admin/marketing/seo/seo-overview) dans notre guide de l’utilisateur.

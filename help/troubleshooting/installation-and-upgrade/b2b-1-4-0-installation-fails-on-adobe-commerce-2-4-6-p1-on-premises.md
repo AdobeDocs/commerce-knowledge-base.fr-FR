@@ -128,5 +128,5 @@ Installation ou mise à niveau vers la version 1.4.0 de [!DNL B2B] sur Adobe Com
 
 1. Terminez le processus d’installation ou de mise à niveau.
 
-   * [Installation sur  [!DNL B2B]  infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html)
-   * [Installation sur site](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html)
+   * [Installation sur  [!DNL B2B]  infrastructure cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html?lang=fr)
+   * [Installation sur site](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html?lang=fr)

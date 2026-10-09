@@ -24,4 +24,4 @@ Si une personne doit être ajoutée en tant qu’utilisateur, mais qu’aucun pr
 
 ## Lecture connexe
 
-* [Services &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) dans notre documentation destinée aux développeurs.
+* [Services &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) dans notre documentation destinée aux développeurs.

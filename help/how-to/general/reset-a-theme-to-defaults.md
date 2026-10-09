@@ -37,7 +37,7 @@ Pendant que vous développez des composants Adobe Commerce (tous les déploiemen
 
 Si vous devez réinitialiser le thème du magasin, mais que vous ne pouvez pas accéder au panneau d’administration, vous pouvez le réinitialiser dans la base de données en procédant comme suit :
 
-1. Utilisez un outil de base de données tel que [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) ou accédez à la base de données manuellement à partir de la ligne de commande pour exécuter la requête SQL suivante : `UPDATE core_config_data SET value=NULL WHERE path='design/theme/theme_id'`
+1. Utilisez un outil de base de données tel que [phpMyAdmin](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) ou accédez à la base de données manuellement à partir de la ligne de commande pour exécuter la requête SQL suivante : `UPDATE core_config_data SET value=NULL WHERE path='design/theme/theme_id'`
 1. Effacez les répertoires suivants :
    * `pub/static/frontend`
    * `var/view_preprocessing`

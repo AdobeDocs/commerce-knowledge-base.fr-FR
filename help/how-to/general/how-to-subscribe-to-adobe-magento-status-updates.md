@@ -1,6 +1,6 @@
 ---
 title: S’abonner aux mises à jour de statut d’Adobe Commerce
-description: Cet article explique comment vous abonner au statut Adobe Commerce sur [statut Adobe](https://status.adobe.com) pour obtenir des alertes de statut, des mises à jour et des informations concernant les pannes majeures ou les opérations de maintenance.
+description: Cet article explique comment vous abonner au statut Adobe Commerce sur [statut Adobe](https://status.adobe.com/fr-fr) pour obtenir des alertes de statut, des mises à jour et des informations concernant les pannes majeures ou les opérations de maintenance.
 exl-id: 17b39925-4726-45da-b55d-c04c9b782df1
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Comment s’abonner aux mises à jour de statut d’Adobe Magento
 
-1. Accédez au statut [&#128279;](https://status.adobe.com).
+1. Accédez au statut [&#128279;](https://status.adobe.com/fr-fr).
 1. Cliquez sur **Se connecter**.
 1. Connectez-vous à l’aide de vos informations d’identification Adobe.
 1. Sélectionnez **Compte d’entreprise ou d’école** si cette option est présentée.

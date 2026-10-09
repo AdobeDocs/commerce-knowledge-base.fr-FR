@@ -49,7 +49,7 @@ peut également s’afficher sur la ligne de commande.
 
 ## Solution {#solution}
 
-Nous vous recommandons [d’allouer 2 Go de mémoire à PHP](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) dans notre documentation destinée aux développeurs afin de garantir le succès de votre installation ou de votre mise à niveau.
+Nous vous recommandons [d’allouer 2 Go de mémoire à PHP](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/php-settings) dans notre documentation destinée aux développeurs afin de garantir le succès de votre installation ou de votre mise à niveau.
 
 Si vous l&#39;avez déjà fait, créez un fichier d&#39;échange sur votre ordinateur. Une machine Linux utilise *swap space* si elle a besoin de plus de ressources mémoire et que la RAM est pleine. L’espace de permutation est utilisé pour les pages inactives en mémoire.
 

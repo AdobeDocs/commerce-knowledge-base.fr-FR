@@ -47,6 +47,6 @@ Pour ce faire, désactivez le widget dans l’interface d’administration. [!DN
 
 ## Lecture connexe
 
-* [[!DNL Live Search] Présentation du guide](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html) dans notre documentation sur Adobe Commerce Live Search
+* [[!DNL Live Search] Présentation du guide](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=fr) dans notre documentation sur Adobe Commerce Live Search
 
-* [Installation [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) dans notre documentation sur Adobe Commerce Live Search
+* [Installation [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=fr) dans notre documentation sur Adobe Commerce Live Search

@@ -51,8 +51,8 @@ Le site n’est pas disponible ou le temps de réponse est trop long.
 
 ## Solution
 
-Limitez le nombre de connexions simultanées pendant la préchauffage du cache. Cela nécessite l’ajout de la variable post-déploiement `WARM_UP_CONCURRENCY` pour spécifier le nombre de requêtes de préchauffage que le script de préchauffage du cache peut envoyer simultanément. La définition de cette option peut vous aider à gérer la charge sur l’infrastructure cloud d’Adobe Commerce. Pour connaître les étapes, consultez [Variables de post-déploiement > WARM\_UP\_CONCURRENCY](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-post-deploy#warm_up_concurrency) dans notre documentation destinée aux développeurs et développeuses.
+Limitez le nombre de connexions simultanées pendant la préchauffage du cache. Cela nécessite l’ajout de la variable post-déploiement `WARM_UP_CONCURRENCY` pour spécifier le nombre de requêtes de préchauffage que le script de préchauffage du cache peut envoyer simultanément. La définition de cette option peut vous aider à gérer la charge sur l’infrastructure cloud d’Adobe Commerce. Pour connaître les étapes, consultez [Variables de post-déploiement > WARM\_UP\_CONCURRENCY](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-post-deploy#warm_up_concurrency) dans notre documentation destinée aux développeurs et développeuses.
 
 ## Lecture connexe
 
-[Full-Page Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching) dans notre guide de l’utilisateur
+[Full-Page Cache](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management#full-page-caching) dans notre guide de l’utilisateur

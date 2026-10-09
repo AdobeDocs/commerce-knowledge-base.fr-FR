@@ -55,4 +55,4 @@ Les pages étant toujours mises en cache, la page de maintenance ne s’affiche 
 
 ## Lecture connexe
 
-[Activez ou désactivez le mode de maintenance](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) dans notre documentation destinée aux développeurs.
+[Activez ou désactivez le mode de maintenance](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) dans notre documentation destinée aux développeurs.

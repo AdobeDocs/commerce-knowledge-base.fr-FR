@@ -62,4 +62,4 @@ Mettez à jour la variable `SEARCH_CONFIGURATION` dans le fichier `.magento.env.
 
 ## Lecture connexe
 
-[Configurez le service OpenSearch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html) dans le guide Commerce sur les infrastructures cloud .
+[Configurez le service OpenSearch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html?lang=fr) dans le guide Commerce sur les infrastructures cloud .

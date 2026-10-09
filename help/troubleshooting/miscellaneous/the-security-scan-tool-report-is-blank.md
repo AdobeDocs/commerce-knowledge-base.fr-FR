@@ -32,7 +32,7 @@ Cet article fournit un correctif pour le problème où l’outil Analyse de séc
 
 <u>Procédure à suivre </u> :
 
-1. Configurez l’outil de scan de sécurité pour vérifier votre site web, comme décrit dans [Scan de sécurité](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) dans notre guide d’utilisation.
+1. Configurez l’outil de scan de sécurité pour vérifier votre site web, comme décrit dans [Scan de sécurité](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-scan) dans notre guide d’utilisation.
 1. Dans la colonne Actions, sélectionnez **Exécuter l&#39;analyse**.
 
 <u>Résultats attendus</u> :
@@ -56,5 +56,5 @@ Essayez d’ouvrir votre site web.
 
 ## Lecture connexe
 
-* [Activez et lancez](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview) dans notre documentation destinée aux développeurs.
-* [Security Scan](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) dans notre guide de l’utilisateur.
+* [Activez et lancez](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/launch/overview) dans notre documentation destinée aux développeurs.
+* [Security Scan](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-scan) dans notre guide de l’utilisateur.

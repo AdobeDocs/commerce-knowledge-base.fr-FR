@@ -55,7 +55,7 @@ Les configurations comportant un grand nombre de vues de magasins, de produits, 
 PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini.
 ```
 
-Il n’existe aucune valeur « appropriée » pour `max-input-vars` ; elle dépend de la taille et de la complexité de votre configuration. Modifiez la valeur dans le fichier `php.ini` selon vos besoins. Voir [Paramètres PHP requis](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings).
+Il n’existe aucune valeur « appropriée » pour `max-input-vars` ; elle dépend de la taille et de la complexité de votre configuration. Modifiez la valeur dans le fichier `php.ini` selon vos besoins. Voir [Paramètres PHP requis](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/php-settings).
 
 ## erreur de niveau d’imbrication de la fonction maximale xdebug
 
@@ -83,4 +83,4 @@ Plusieurs modèles comportent une syntaxe pour la prise en charge du niveau abst
 
 Informations supplémentaires sur [asp\_tags](http://php.net/manual/en/ini.core.php#ini.asp-tags).
 
-Modifiez des `php.ini` et définissez des `asp_tags = off`. Pour plus d&#39;informations, voir [Paramètres PHP requis](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings).
+Modifiez des `php.ini` et définissez des `asp_tags = off`. Pour plus d&#39;informations, voir [Paramètres PHP requis](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/php-settings).

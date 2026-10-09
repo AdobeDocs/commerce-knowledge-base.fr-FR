@@ -45,4 +45,4 @@ Installez/achetez les extensions officielles séparément. Ils sont disponibles 
 
 ## Lecture connexe
 
-[Extensions groupées par fournisseur](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?#vendor-bundled-extensions) dans Documentation Adobe Commerce > Informations sur les versions > Notes de mise à jour d’Adobe Commerce 2.4.4.
+[Extensions groupées par fournisseur](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?lang=fr&#vendor-bundled-extensions) dans Documentation Adobe Commerce > Informations sur les versions > Notes de mise à jour d’Adobe Commerce 2.4.4.
