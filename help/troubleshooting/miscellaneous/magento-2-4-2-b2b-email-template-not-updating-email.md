@@ -4,13 +4,25 @@ description: Cet article décrit un problème B2B Adobe Commerce 2.4.2 connu en 
 exl-id: 31b7086f-a941-4682-aa07-301ac31d543b
 feature: B2B, Communications
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bb03f6c4-cab9-560e-9d02-5816e1808d17
+    internal-label: Communications
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce 2.4.2 B2B : modèle d’e-mail ne mettant pas à jour l’e-mail
 
 Cet article décrit un problème B2B Adobe Commerce 2.4.2 connu en raison duquel la mise à jour de certaines informations d’un modèle d’e-mail n’est pas effectuée dans les e-mails. Ce problème affecte les contenus d’e-mail tels que les informations client, les taux de change, le symbole de devise, la modification du modèle d’e-mail, etc. Aucune solution n’est disponible pour le moment, mais une solution de contournement se trouve au bas de cet article.

@@ -1,19 +1,26 @@
 ---
-title: "PWA Studio : navigateur pas approuvé le certificat SSL"
-description: Cet article fournit une solution à un avertissement de certificat SSL généré et non approuvé dans votre navigateur lorsque vous accédez à une instance locale de votre vitrine de PWA Studio pendant le développement.
+title: 'PWA Studio : le navigateur n’approuve pas le certificat SSL généré'
+description: Cet article fournit une solution à un avertissement de certificat SSL généré non approuvé dans votre navigateur lorsque vous accédez à une instance locale de votre storefront PWA Studio pendant le développement.
 exl-id: b7bfe1e6-5832-4472-9e51-f04b8583428a
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '303'
 ht-degree: 0%
-
 ---
+# PWA Studio : le navigateur n’approuve pas le certificat SSL généré
 
-# PWA Studio : le navigateur n’a pas approuvé le certificat SSL généré
-
-Cet article fournit une solution à un avertissement de certificat SSL généré et non approuvé dans votre navigateur lorsque vous accédez à une instance locale de votre vitrine de PWA Studio pendant le développement.
+Cet article fournit une solution à un avertissement de certificat SSL généré non approuvé dans votre navigateur lorsque vous accédez à une instance locale de votre storefront PWA Studio pendant le développement.
 
 ## Produits et versions concernés
 
@@ -21,11 +28,11 @@ PWA Studio pour Adobe Commerce
 
 ## Problème
 
-Le navigateur n’fait pas confiance au certificat SSL généré de votre vitrine de PWA Studio locale.
+Le navigateur n’approuve pas le certificat SSL généré par votre storefront PWA Studio local.
 
 ## Cause
 
-Accès au site de développement/d’évaluation.
+Accédez au site de développement/d’évaluation.
 
 ## Solution
 
@@ -35,24 +42,24 @@ Dans votre projet storefront, exécutez la commande pour ajouter un nom d’hôt
 yarn buildpack create-custom-origin ./
 ```
 
-La génération des certificats est gérée par [devcert](https://github.com/davewasmer/devcert). Elle dépend d’OpenSSL. Vérifiez donc que vous disposez d’une version actuelle d’openssl sur votre système à l’aide de la commande suivante :
+La génération des certificats est gérée par [devcert](https://github.com/davewasmer/devcert). Cela dépend d’OpenSSL. Assurez-vous donc de disposer d’une version actuelle d’openssl sur votre système à l’aide de la commande suivante :
 
 `openssl version`
 
-La version doit être 1.0 ou supérieure (ou LibreSSL 2, dans le cas d&#39;OSX High Sierra).
+La version doit être 1.0 ou supérieure (ou LibreSSL 2, dans le cas d’OSX High Sierra).
 
-Vous pouvez installer des versions plus élevées d&#39;OpenSSL avec [Homebrew](https://brew.sh/) sur OSX, [Chocolatey](https://chocolatey.org/) sur Windows, ou le gestionnaire de packages de votre distribution Linux.
+Vous pouvez installer des versions supérieures d’OpenSSL avec [Homebrew](https://brew.sh/) sous OSX, [Chocolatey](https://chocolatey.org/) sous Windows ou le gestionnaire de packages de votre distribution Linux.
 
-Si vous exécutez Linux, assurez-vous que `libnss3-tools` (ou l’équivalent) est installé sur votre système. Des informations supplémentaires sont fournies dans cette section du fichier Lisez-moi [devcert](https://github.com/davewasmer/devcert#skipcertutil).
+Si vous exécutez Linux, assurez-vous que `libnss3-tools` (ou l’équivalent) est installé sur votre système. Pour plus d’informations, reportez-vous à cette section du fichier lisez-moi [devcert](https://github.com/davewasmer/devcert#skipcertutil).
 
-Certains utilisateurs ont suggéré de supprimer le dossier de l’appareil pour déclencher la régénération du certificat.
+Certains utilisateurs ont suggéré de supprimer le dossier devcert pour déclencher la régénération du certificat.
 
 * Pour les utilisateurs de MacOS, ce dossier se trouve généralement à l’adresse : `{{~/Library/Application Support/devcert }}`
-* Pour les utilisateurs de Windows, ce dossier se trouve généralement à l’adresse : `${User}\AppData\Local\devcert`
+* Pour les utilisateurs de Windows, ce dossier se trouve généralement à l’emplacement suivant : `${User}\AppData\Local\devcert`
 
-## Lecture connexe dans notre base de connaissances de soutien
+## Lectures connexes dans notre base de connaissances de support
 
-* [PWA Studio : erreur de confiance de certificat auto-signée](https://support.magento.com/hc/en-us/articles/360038973172)
-* [PWA Studio : Webpack se bloque avant de commencer la compilation](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
-* [PWA Studio : le navigateur affiche l’erreur &quot;Impossible de remplacer par&quot;](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
+* [PWA Studio : erreur d’approbation de certificat auto-signé](https://support.magento.com/hc/en-us/articles/360038973172)
+* [PWA Studio : le webpack se bloque avant de commencer la compilation](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
+* [PWA Studio : le navigateur affiche l’erreur « Impossible de remplacer par »](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
 * [PWA Studio : erreurs de validation lors de l’exécution du mode Développeur](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)

@@ -2,13 +2,14 @@
 title: Impossible d’accéder à la dernière version de Beta
 description: Cet article fournit des solutions aux problèmes rencontrés lors de l’utilisation des dernières versions Beta du code pour Adobe Commerce. Le code Beta est uniquement disponible pour les partenaires Adobe officiels qui ont suivi le processus décrit dans [Programme Adobe Commerce Beta](https://github.com/magento/magento2/wiki/Magento-Beta-Program).
 exl-id: a53c854e-38a8-4c8c-8586-9d99c576c835
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 0%
-
 ---
-
 # Impossible d’accéder à la dernière version de Beta
 
 Cet article fournit des solutions aux problèmes rencontrés lors de l’utilisation des dernières versions Beta du code pour Adobe Commerce. Le code Beta n’est disponible que pour les partenaires Adobe officiels qui ont suivi le processus décrit dans [Programme Adobe Commerce Beta](https://github.com/magento/magento2/wiki/Magento-Beta-Program).

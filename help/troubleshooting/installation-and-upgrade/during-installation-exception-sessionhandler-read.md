@@ -1,21 +1,22 @@
 ---
 title: Lors de l’installation, exception SessionHandler::read()
-description: "Cet article fournit un correctif pour une erreur **SessionHandler::read()** d’exception lors de l’installation d’Adobe Commerce."
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+description: Cet article fournit un correctif pour une erreur d’exception **SessionHandler::read()** lors de l’installation d’Adobe Commerce.
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '258'
 ht-degree: 0%
-
 ---
-
 
 # Lors de l’installation, exception SessionHandler::read()
 
-Cet article fournit un correctif pour une erreur **SessionHandler::read()** d’exception lors de l’installation d’Adobe Commerce.
+Cet article fournit un correctif pour une erreur d’exception **SessionHandler::read()** lors de l’installation d’Adobe Commerce.
 
 ## Problème
 
-Lors de la dernière étape d’installation d’Adobe Commerce, l’exception suivante s’affiche :
+À la dernière étape de l’installation d’Adobe Commerce, l’exception suivante s’affiche :
 
 ```temrinal
 exception 'Exception' with message 'Warning: SessionHandler::read():
@@ -25,34 +26,34 @@ in ../magento2/lib/internal/Magento/Framework/App/ErrorHandler.php:67
 
 >[!NOTE]
 >
->Cette erreur survient uniquement dans les versions de code antérieures au 28 septembre 2015. Si vous installez le code du 29 septembre ou une date ultérieure, cette erreur ne doit pas se produire. Pour plus d’informations sur les options de configuration pour Redis, voir [Configuration de Redis](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/redis/config-redis) dans notre documentation destinée aux développeurs. Pour plus d’informations sur la spécification de Redis à l’aide du programme d’installation de ligne de commande, consultez la [rubrique d’installation](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/advanced) ou la [&#x200B; rubrique de configuration de déploiement](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/deployment) dans notre documentation destinée aux développeurs.
+>Cette erreur se produit uniquement dans les versions de code antérieures au 28 septembre 2015. Si vous installez du code daté du 29 septembre ou d’une date ultérieure, cette erreur ne devrait pas se produire. Pour plus d’informations sur les options de configuration de Redis, consultez [Configurer Redis](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cache/redis/config-redis) dans notre documentation destinée aux développeurs. Pour plus d’informations sur la spécification de Redis à l’aide du programme d’installation de ligne de commande, consultez la [rubrique d’installation](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/advanced) ou la [rubrique de configuration du déploiement](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/deployment) dans notre documentation destinée aux développeurs.
 
 ## Cause
 
-Cela se produit lorsque votre paramètre `session.save_handler` PHP est défini sur un autre stockage de session que `files` (par exemple, `redis`, `memcached`, etc.). C&#39;est un problème connu que nous travaillons à résoudre.
+Cela se produit lorsque votre paramètre PHP `session.save_handler` est défini sur un autre stockage de session que `files` (par exemple, `redis`, `memcached`, etc.). Il s’agit d’un problème connu que nous nous efforçons de résoudre.
 
 ## Solutions :
 
-* Mettez à niveau votre code Adobe Commerce. Reportez-vous au [Guide d&#39;installation > Mise à jour du logiciel Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/uninstall) dans notre documentation destinée aux développeurs.
-* Utilisez la solution de contournement suivante avec le code existant :
+* Mettez à niveau votre code Adobe Commerce. Consultez [&#x200B; Guide d’installation > Mise à jour du logiciel Adobe Commerce &#x200B;](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/tutorials/uninstall) dans notre documentation destinée aux développeurs.
+* Utilisez la solution suivante avec le code existant :
 
-## Localisez `php.ini` {#locate-php-ini}
+## Localiser `php.ini` {#locate-php-ini}
 
-Recherchez `php.ini` en saisissant la commande suivante :
+Localisez `php.ini` en saisissant la commande suivante :
 
 ```php
 php -i | grep "Loaded Configuration File"
 ```
 
-Les emplacements types sont les suivants :
+Voici des emplacements standard :
 
 * Ubuntu : `/etc/php5/cli/php.ini`
 * CentOS : `/etc/php.ini`
 
 ## Solution {#workaround}
 
-1. En tant qu&#39;utilisateur disposant de droits `root`, ouvrez `php.ini` dans un éditeur de texte.
-1. Localisez `session.save_handler`
+1. En tant qu’utilisateur disposant de droits d’`root`, ouvrez `php.ini` dans un éditeur de texte.
+1. Localiser `session.save_handler`
 1. Définissez-le de l’une des manières suivantes :
    * Pour le commenter :
 

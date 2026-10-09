@@ -3,13 +3,17 @@ title: Variable d’incrémentation auto_increment de la base de données défin
 description: Il s’agit du comportement attendu d’Adobe Commerce sur les infrastructures cloud. Pro planifie les solutions d’architecture en raison de l’architecture à 3 nœuds et ne peut pas être modifié.
 exl-id: ea478cbc-2dc2-41c9-8ea7-7e2f308e5948
 feature: Cloud
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
-
 ---
-
 # Variable d’incrémentation auto_increment de la base de données définie sur « 3 » Adobe Commerce sur notre architecture cloud pro
 
 Il s’agit du comportement attendu d’Adobe Commerce sur les infrastructures cloud. Pro planifie les solutions d’architecture en raison de l’architecture à 3 nœuds et ne peut pas être modifié.

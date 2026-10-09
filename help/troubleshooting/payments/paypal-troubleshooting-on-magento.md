@@ -4,13 +4,22 @@ description: Cet article fournit des solutions aux problèmes de traitement des 
 exl-id: f0772515-8456-4f08-84b4-aeef44516f2a
 feature: Orders, Payments
 role: Developer
-source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '540'
 ht-degree: 0%
-
 ---
-
 # Résolution des problèmes PayPal sur Adobe Commerce
 
 Cet article fournit des solutions aux problèmes de traitement des paiements via PayPal, en particulier la solution PayFlow Pro. Certaines recommandations de cet article peuvent sembler évidentes. Nous vous demandons d&#39;essayer les options de dépannage répertoriées dans cette base de connaissances et d&#39;inclure toutes les informations dans les tickets que vous entrez. Les ingénieurs de l’assistance Adobe Commerce ou PayPal vous demanderont d’effectuer ces étapes lors du diagnostic de vos problèmes.

@@ -4,18 +4,36 @@ description: Cet article fournit un correctif pour les bloqueurs à lancer sur A
 exl-id: 3b2c331f-5d90-4051-ada1-4934538fce79
 feature: Cache, Cloud, Marketing Tools, Observability, Paas
 role: Developer
-source-git-commit: d653957b94127e8b1d37a66c069a618f34ac5af9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '800'
 ht-degree: 0%
-
 ---
-
 # Bloqueurs lancés sur Adobe Commerce sur les infrastructures cloud
 
 Cet article fournit un correctif pour les bloqueurs à lancer sur Adobe Commerce sur les infrastructures cloud, y compris les problèmes liés à la configuration Fastly, aux certificats SSL, aux redirections 301 et aux performances des ressources statiques.
 
-## &#x200B;1. Configuration rapide
+## &#x200B;1. Configuration Fastly
 
 [Fastly](https://www.fastly.com/) est un réseau de diffusion de contenu (CDN) basé sur Varnish qui sert des ressources statiques. Cela est nécessaire pour Adobe Commerce sur les infrastructures cloud dans les environnements de production. Il est donc important de configurer Fastly et de tester votre site web (UAT) avec Fastly activé et configuré, dans les environnements d’évaluation et de production.
 
@@ -44,7 +62,7 @@ Vous pouvez également [créer et ajouter vos propres fragments de code VCL pers
 
 Reportez-vous à cet article pour les étapes détaillées : [Configuration rapide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=fr#update-dns-configuration-with-development-settings) dans notre guide d’utilisation.
 
-## &#x200B;2. Certificat SSL (TLS) valide
+## &#x200B;2. Certificat SSL valide (TLS)
 
 Problème : Sans certificat SSL valide et fonctionnel, vous ne pouvez pas tester les méthodes de paiement externes sur la page Passage en caisse, dans l’environnement d’évaluation.
 
@@ -75,7 +93,7 @@ Recommandation : pour identifier les causes possibles de mauvaises performances,
 
 * [Siege](https://www.joedog.org/siege) : utilitaire de test de chargement et d’évaluation des performances HTTP ; prend en charge l’authentification de base, les cookies, les protocoles HTTP, HTTPS et FTP.
 * [Jmeter](https://jmeter.apache.org/) : outil de test de charge et de mesure des performances réputé. Permet d’évaluer les performances pour le trafic en pic, par exemple pour les ventes flash.
-* [New Relic](https://support.newrelic.com/) : localise les processus et les zones du site, ce qui ralentit les performances en raison du temps passé par action suivi, comme la transmission de données, de requêtes, de Redis, etc.
+* [&#128279;](https://support.newrelic.com/) : localise les processus et les zones du site, ce qui ralentit les performances en raison du temps passé par action suivi, comme la transmission de données, de requêtes, de Redis, etc.
 * [WebPageTest](https://www.webpagetest.org/) (gratuit) et [Pingdom](https://www.pingdom.com/) (payant) : l’analyse en temps réel des pages de votre site charge du temps avec différents emplacements d’origine.
 
 Vous pouvez également envisager une [minification](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=fr) pour CSS, JavaScript et HTML.

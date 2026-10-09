@@ -4,13 +4,20 @@ description: Cet article fournit des solutions pour les cas où vous ne pouvez p
 exl-id: e2a00371-9032-4e81-b60e-5456ba35be94
 feature: Services
 role: Developer
-source-git-commit: 2fa4ab1fcba962033a6dd6a448a6cec49b5e8bf2
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '658'
 ht-degree: 0%
-
 ---
-
 # Valeur numérique de base de données Adobe Commerce hors plage, `INT` à `BIGINT`
 
 >[!WARNING]
@@ -33,7 +40,7 @@ WHERE
 * Adobe Commerce (toutes les méthodes de déploiement) toutes les [versions prises en charge](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 Cet article fournit des solutions pour les cas où vous ne pouvez pas enregistrer une mise à jour d’un produit, comme une modification de prix, ou supprimer et dupliquer un produit.
-Le message d&#39;erreur *L&#39;enregistrement de l&#39;article stocké a échoué) s&#39;affiche. Veuillez réessayer.* Il se peut que le déploiement échoue après une mise à jour du produit. Il se peut également que le message d’erreur [!DNL MySQL] suivant s’affiche lorsque vous exécutez `php bin/magento setup:upgrade` (sur Adobe Commerce sur les infrastructures cloud, cette erreur s’affiche dans les journaux de déploiement) :
+Le message d&#39;erreur *L&#39;enregistrement de l&#39;article stocké a échoué) s&#39;affiche. Veuillez réessayer.* Le déploiement peut échouer après une mise à jour du produit. Il se peut également que le message d’erreur [!DNL MySQL] suivant s’affiche lorsque vous exécutez `php bin/magento setup:upgrade` (sur Adobe Commerce sur les infrastructures cloud, cette erreur s’affiche dans les journaux de déploiement) :
 
 ```mysql
 SQLSTATE[22003]: Numeric value out of range: 167 Out of range value for column 'value_id' at row 1, query was: INSERT INTO `catalog_product_entity_decimal` (`attribute_id`,`store_id`,`row_id`,`value`) VALUES (?, ?, ?, ?) ON DUPLICATE KEY UPDATE `attribute_id` = VALUES(`attribute_id`), `store_id` = VALUES(`store_id`), `row_id` = VALUES(`row_id`), `value` = VALUES(`value`)

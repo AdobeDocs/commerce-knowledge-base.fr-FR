@@ -4,13 +4,24 @@ description: Cet article fournit une solution au problème de réception d’un 
 feature: Cloud, Storage, Media
 role: Developer
 exl-id: 7dae295c-919c-46c5-bf63-7d3467c2e07f
-source-git-commit: 11cf981c7ebe813219a0cd311632eafce086bbf6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '451'
 ht-degree: 0%
-
 ---
-
 # E-mail indiquant que le stockage des exportations est presque plein
 
 Cet article fournit une solution au problème de réception d’un e-mail indiquant que le stockage des exportations est presque plein.
@@ -42,9 +53,9 @@ Pour confirmer à quoi l’alerte fait référence, vérifiez l’utilisation de
 
 * Dans cet exemple, `/data/exports` est le système de fichiers d’exportation principal :
 
-   * 50 Go au total
-   * 38 Go utilisés
-   * 12 Go disponibles (taux d’utilisation de 77 %)
+  * 50 Go au total
+  * 38 Go utilisés
+  * 12 Go disponibles (taux d’utilisation de 77 %)
 
 * `/data/exports/shared` est un montage `tmpfs` (en mémoire) utilisé pour les données partagées et ne contribue pas de manière significative à la pression du disque.
 

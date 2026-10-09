@@ -3,13 +3,22 @@ title: Certificats SSL (TLS) pour Adobe Commerce sur les infrastructures cloud
 description: Cet article fournit des réponses rapides aux questions sur l’obtention de certificats SSL (TLS) pour votre site Adobe Commerce sur notre infrastructure cloud.
 exl-id: 5a682d07-e4d7-4e81-a2ad-3232f2d8d9c1
 feature: Cloud, Console
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1211'
 ht-degree: 0%
-
 ---
-
 # Certificats SSL (TLS) pour Adobe Commerce sur les infrastructures cloud
 
 Cet article fournit des réponses rapides aux questions sur l’obtention de certificats SSL (TLS) pour votre site Adobe Commerce sur notre infrastructure cloud.
@@ -47,7 +56,7 @@ Vous pouvez fournir votre propre certificat SSL/TLS au lieu d’utiliser le cert
 
 Toutefois, ce processus nécessite un travail supplémentaire pour sa configuration et sa maintenance. Vous devrez d’abord générer une demande de signature de certificat (CSR) pour le nom de domaine (ou nom commun) du site web et la fournir à votre fournisseur SSL pour fournir un certificat SSL.
 
-Une fois que vous disposez du certificat SSL, envoyez un [ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) ou utilisez votre CTA pour ajouter des certificats hébergés personnalisés à vos environnements cloud.
+Une fois que vous disposez du certificat SSL, envoyez un [ticket d’assistance &#x200B;](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) ou utilisez votre CTA pour ajouter des certificats hébergés personnalisés à vos environnements cloud.
 
 * Si les domaines ne sont plus utilisés, ils seront automatiquement purgés de notre système et aucune autre action n’est requise.
 * Si vous possédez déjà un certificat, chargez-le à l’aide d’un client SFTP (SSH File Transfer Protocol) vers un emplacement de fichier inaccessible sur votre serveur et [envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) en lui indiquant le chemin d’accès au fichier.
@@ -55,7 +64,7 @@ Une fois que vous disposez du certificat SSL, envoyez un [ticket d’assistance 
 >[!WARNING]
 >
 >Il est important de ne pas charger les fichiers de certificat directement dans le ticket. Dans le cas contraire, les certificats seront considérés comme compromis et Adobe devra demander un nouveau certificat.
->Les fichiers doivent être chargés vers le serveur via SFTP dans un dossier de votre choix, par exemple `var/ssl`, `/tmp/ssl`, etc. - n’utilisez aucune autre méthode, notamment la validation des fichiers dans votre référentiel (ce qui ne doit être fait que pour les fichiers non modifiables qui ne contiennent pas de données sensibles).
+>Les fichiers doivent être chargés via SFTP sur le serveur vers un dossier de votre choix, par exemple `var/ssl`, `/tmp/ssl`, etc. - n’utilisez aucune autre méthode comme la validation des fichiers dans votre référentiel (ce qui ne doit être fait que pour les fichiers non modifiables qui ne contiennent pas de données sensibles).
 
 ## Nom de votre certificat
 

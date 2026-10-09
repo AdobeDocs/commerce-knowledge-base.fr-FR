@@ -4,13 +4,27 @@ description: Cet article fournit un correctif pour la limitation connue d’Adob
 exl-id: 948d5907-70bd-4890-bc8a-23e04b116018
 feature: Admin Workspace, Orders, Payments
 role: Developer
-source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '579'
 ht-degree: 0%
-
 ---
-
 # Paiement Cybersource de l&#39;administrateur et front sur différents domaines non traité
 
 Cet article fournit un correctif pour la limitation connue d’Adobe Commerce 2.3.0 liée au fait de ne pas avoir la possibilité de traiter les paiements Cybersource à partir de storefront et de l’administrateur Commerce, s’ils se trouvent sur des domaines différents.
@@ -21,7 +35,7 @@ Cet article fournit un correctif pour la limitation connue d’Adobe Commerce 2.
 
 ## Problème
 
-La mise en œuvre précédente de l&#39;intégration de Cybersource permettait de traiter les paiements d&#39;un seul domaine. Par conséquent, si votre storefront Adobe Commerce se trouve sur un domaine différent de celui de l’administrateur Commerce, vous obtenez l’erreur suivante lors de la tentative de commande à l’aide de Cybersource dans l’administrateur : «  *Chargement refusé par X-Frame-Options: https://%your\_domain%/cybersource/SilentOrder/TokenResponse/ n’autorise pas le framing entre origines.* .. »
+La mise en œuvre précédente de l&#39;intégration de Cybersource permettait de traiter les paiements d&#39;un seul domaine. Par conséquent, si votre storefront Adobe Commerce se trouve sur un domaine différent de celui de l’administrateur Commerce, vous obtenez l’erreur suivante lors de la tentative de commande à l’aide de Cybersource dans l’administrateur : «  *Chargement refusé par X-Frame-Options: https://%your\_domain%/cybersource/SilentOrder/TokenResponse/ n’autorise pas le framing entre origines.* ..&quot;
 
 <u>Procédure à suivre </u> :
 

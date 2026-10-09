@@ -4,13 +4,22 @@ description: Cet article explique comment résoudre les problèmes de lecture de
 feature: Configuration
 role: Developer,Admin
 exl-id: b7af1cc3-93ff-40c5-8959-076cedddb56d
-source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '251'
 ht-degree: 0%
-
 ---
-
 # Consultez les problèmes de Secondaires sur Adobe Commerce Cloud 2.4.6 avec MariaDB 10.6
 
 Cet article fournit des solutions pour les comportements inattendus lors de l’utilisation de la lecture de Secondaires sur Adobe Commerce Cloud 2.4.6 avec MariaDB 10.6+.

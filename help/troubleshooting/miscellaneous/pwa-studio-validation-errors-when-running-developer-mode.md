@@ -1,19 +1,26 @@
 ---
 title: 'PWA Studio : erreurs de validation lors de l’exécution du mode Développeur'
-description: Cette rubrique présente une solution pour les erreurs de validation qui se produisent lors de l’exécution du mode développeur dans Progressive Web App (PWA) Studio pour Adobe Commerce, car le fichier d’environnement venia-concept (Venia est un storefront PWA) n’a pas été créé auparavant. Ce fichier contient les variables de votre environnement de développement local.
+description: Cette rubrique présente une solution pour les erreurs de validation qui se produisent lors de l’exécution du mode développeur dans Progressive Web App (PWA) Studio pour Adobe Commerce, car le concept Venia n’a pas été créé auparavant (Venia est un storefront PWA.) fichier d’environnement. Ce fichier contient les variables de votre environnement de développement local.
 exl-id: 97d042ef-88e6-4eda-a834-2cff4de276e2
 feature: Configuration
 role: Developer
-source-git-commit: 9d32a5971341ed8dc46e0932c10eaac4d17ec299
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '239'
 ht-degree: 0%
-
 ---
-
 # PWA Studio : erreurs de validation lors de l’exécution du mode Développeur
 
-Cette rubrique présente une solution pour les erreurs de validation qui se produisent lors de l’exécution du mode développeur dans Progressive Web App (PWA) Studio pour Adobe Commerce, car le fichier d’environnement venia-concept (Venia est un storefront PWA) n’a pas été créé auparavant. Ce fichier contient les variables de votre environnement de développement local.
+Cette rubrique présente une solution pour les erreurs de validation qui se produisent lors de l’exécution du mode développeur dans Progressive Web App (PWA) Studio pour Adobe Commerce, car le concept Venia n’a pas été créé auparavant (Venia est un storefront PWA.) fichier d’environnement. Ce fichier contient les variables de votre environnement de développement local.
 
 ## Produits et versions concernés
 
@@ -53,5 +60,5 @@ dans le répertoire racine afin de générer le fichier qui contiendra les varia
 
 ## Lecture connexe
 
-* [Documentation PWA Studio for Adobe Commerce](https://developer.adobe.com/commerce/pwa-studio/)
+* [Documentation de PWA Studio for Adobe Commerce](https://developer.adobe.com/commerce/pwa-studio/)
 * [Venia Storefront (Concept)](https://developer.adobe.com/commerce/pwa-studio/guides/packages/venia/)

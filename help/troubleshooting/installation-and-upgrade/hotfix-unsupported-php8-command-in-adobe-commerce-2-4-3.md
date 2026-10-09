@@ -4,13 +4,22 @@ description: 'Cet article fournit un correctif pour le moment où les commerçan
 exl-id: 1c472214-8387-403e-b2d2-d3f3c9e1da6a
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '333'
 ht-degree: 0%
-
 ---
-
 # Mise à niveau d’Adobe Commerce 2.4.3, 2.3.7-p1 PHP Erreur fatale Correctif
 
 Cet article fournit un correctif pour le moment où les commerçants tentent d’effectuer une mise à niveau vers Adobe Commerce (toutes les méthodes de déploiement) ou Magento Open Source 2.4.3 ou 2.3.7-p1, ils voient l’erreur suivante :
@@ -54,8 +63,8 @@ Pour résoudre le problème de la version 2.3.7-p1, Adobe Commerce (toutes les m
 
 ## Application du correctif
 
-Pour obtenir des instructions, consultez [Application d’un correctif de compositeur fourni par Magento](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) .
+Pour obtenir des instructions, consultez [Comment appliquer un correctif de compositeur fourni par Magento](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) .
 
 ## Lectures connexes
 
-GitHub [commande PHP 8 non prise en charge dans le #33680 EE de Magento 2.4.3](https://github.com/magento/magento2/issues/33680)
+GitHub [commande PHP 8 non prise en charge dans Magento 2.4.3 EE #33680](https://github.com/magento/magento2/issues/33680)

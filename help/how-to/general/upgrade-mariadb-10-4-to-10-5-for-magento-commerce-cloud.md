@@ -3,13 +3,19 @@ title: Mise à niveau de MariaDB 10.4 vers 10.5 pour Adobe Commerce on cloud
 description: La prise en charge de MariaDB 10.4 prendra fin le 18 juin 2024. Cet article explique comment mettre à niveau MariaDB de la version 10.4 vers la version 10.5 pour continuer à utiliser Adobe Commerce sur l’infrastructure cloud.
 feature: Best Practices, Cloud
 exl-id: 065840b8-28c1-4686-95fc-df3e73152845
-source-git-commit: 70c2421cb28b45f82ab7c0568c6a45b9572897df
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '696'
 ht-degree: 0%
-
 ---
-
 # Mise à niveau de MariaDB 10.4 vers 10.5 pour Adobe Commerce on cloud
 
 MariaDB est une base de données open source d’entreprise utilisée avec Adobe Commerce.
@@ -49,4 +55,4 @@ Adoptez les nouveaux correctifs de sécurité uniquement (2.4.4-p9 ou 2.4.5-p8) 
 
 * [Guide des bonnes pratiques de mise à niveau de la base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/upgrade-guide/prepare/prerequisites) pour les déploiements sur site.
 * [Conditions préalables à la mise à niveau pour MariaDB : préparez votre base de données pour la mise à niveau](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade#prepare-your-database-for-the-upgrade) dans le manuel Implementation Playbook.
-* [Politique relative au cycle de vie d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy) dans notre documentation destinée aux développeurs.
+* [Politique relative au cycle de vie d’](https://experienceleague.adobe.com/fr/docs/commerce-operations/release/planning/lifecycle-policy) dans notre documentation destinée aux développeurs.

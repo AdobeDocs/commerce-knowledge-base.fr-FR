@@ -1,32 +1,36 @@
 ---
-title: Adobe Commerce *le post-déploiement est ignoré car le déploiement a échoué* erreur
-description: 'Cet article explique comment rechercher une erreur de déploiement : *Post-deploy est ignoré car le déploiement a échoué*'
+title: Adobe Commerce *le post-déploiement est ignoré, car le déploiement a échoué*
+description: 'Cet article explique comment rechercher une erreur de déploiement : *Le post-déploiement est ignoré, car le déploiement a échoué*'
 exl-id: cd0a3015-b7b9-442e-8ac1-89447ef12cd7
 feature: Deploy
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '155'
 ht-degree: 0%
-
 ---
+# Adobe Commerce *le post-déploiement est ignoré, car le déploiement a échoué* erreur
 
-# Adobe Commerce *post-déploiement est ignoré car le déploiement a échoué* erreur
-
-Cet article explique comment rechercher une erreur de déploiement : *Post-deploy est ignoré car le déploiement a échoué*, ce qui se produit lors du déploiement dans différents environnements, par exemple la mise à niveau.
+Cet article explique comment rechercher une erreur de déploiement : *Le post-déploiement est ignoré, car le déploiement a échoué* ce qui se produit lors du déploiement dans différents environnements, par exemple la mise à niveau.
 
 ## Produits et versions concernés
 
-Adobe Commerce sur l&#39;infrastructure cloud [toutes les versions prises en charge](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce sur les infrastructures cloud [toutes les versions prises en charge](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problème
 
-Le déploiement échoue et renvoie un message d’erreur générique. Il n’est donc pas clair comment résoudre l’erreur.
+Le déploiement échoue et renvoie un message d’erreur générique. La manière de résoudre l’erreur n’est donc pas claire.
 
 ## Cause
 
-Indéterminé : ce qui provoque ce message d’erreur dépend du code et de la base de données déployés.
+Indéterminé : la cause de ce message d’erreur dépend du code et de la base de données déployés.
 
-## Comment rechercher l’erreur de déploiement
+## Comment examiner l’erreur de déploiement
 
 ```
 [20XX-XX-XX XX:XX:XX] DEBUG: Running step: is-deploy-failed
@@ -46,4 +50,4 @@ Indéterminé : ce qui provoque ce message d’erreur dépend du code et de la b
     W:
 ```
 
-Pour obtenir la trace de l&#39;erreur permettant de déterminer la cause réelle, SSH au serveur et vérifiez le fichier journal `var/log/install_upgrade.log`.
+Pour obtenir la trace de l’erreur afin de déterminer la cause réelle, envoyez SSH au serveur et vérifiez le fichier journal `var/log/install_upgrade.log`.

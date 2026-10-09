@@ -1,15 +1,22 @@
 ---
-title: Liste de contrôle pour la configuration d’un nouveau  [!DNL domain]
-description: Il s’agit d’une liste de contrôle décrivant comment configurer un nouveau  [!DNL domain]  dans Adobe Commerce sur l’infrastructure cloud.
+title: Liste de contrôle pour la configuration d’un nouveau [!DNL domain]
+description: Il s’agit d’une liste de contrôle indiquant comment configurer un nouveau [!DNL domain] dans Adobe Commerce sur l’infrastructure cloud.
 exl-id: bfe0582d-2c6d-4814-908f-dfd8c898bef7
 feature: Cache
-source-git-commit: 552a290b50f9e0c5fa740f26092c57bac447fe68
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '793'
 ht-degree: 0%
-
 ---
-
 # Liste de contrôle pour la configuration d’un nouveau [!DNL domain]
 
 Cette liste de contrôle explique comment configurer un nouveau [!DNL domain] dans Adobe Commerce sur l’infrastructure cloud. Elle s’applique que vous ajoutiez un nouveau domaine ou que vous remplaciez le domaine actuel. Elle s’applique également après l’obtention d’un nouvel environnement d’évaluation (voir Étape 4).
@@ -25,7 +32,7 @@ Adobe Commerce sur les infrastructures cloud, [toutes les versions prises en cha
 >Avant de poursuivre la configuration du domaine, assurez-vous des points suivants :
 >
 >Toutes les URL de base sont configurées pour utiliser HTTPS sous **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**, avec la portée de la vue correcte du site web ou de la boutique.
->&#x200B;> [Forcer TLS](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls#token_type=bearer&expires_in=10799996) est activé pour rediriger tout le trafic HTTP vers HTTPS sur votre site Adobe Commerce sur l’infrastructure cloud.
+> [Forcer TLS](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls#token_type=bearer&expires_in=10799996) est activé pour rediriger tout le trafic HTTP vers HTTPS sur votre site Adobe Commerce sur l’infrastructure cloud.
 
 ### Étape 1 : s’agit-il de l’[!DNL Integration, Staging] ou de l’[!DNL Production environment] ?
 

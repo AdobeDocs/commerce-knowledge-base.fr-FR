@@ -1,21 +1,28 @@
 ---
 title: Résoudre une erreur de décalage non autorisée
-description: Cet article fournit une solution pour lorsque, dans Adobe Commerce 2.1 ou version ultérieure, vous recevez une erreur de décalage illégal lors de la création d’un produit dans Commerce Admin.
+description: Cet article fournit une solution pour le cas où, dans Adobe Commerce version 2.1 ou ultérieure, vous recevriez une erreur de résolution d’un décalage illégal lors de la création d’un nouveau produit dans l’administration Commerce.
 exl-id: 62d16d3c-7f4b-45e9-ae4b-fe2b58cc3620
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '324'
 ht-degree: 0%
-
 ---
-
 # Résoudre une erreur de décalage non autorisée
 
-Cet article fournit une solution pour lorsque, dans Adobe Commerce 2.1 ou version ultérieure, vous recevez une erreur de décalage illégal lors de la création d’un produit dans Commerce Admin.
+Cet article fournit une solution pour le cas où, dans Adobe Commerce version 2.1 ou ultérieure, vous recevriez une erreur de résolution d’un décalage illégal lors de la création d’un nouveau produit dans l’administration Commerce.
 
-Dans Adobe Commerce 2.1 ou version ultérieure, lors de la création d’un produit dans Commerce Admin, l’erreur suivante peut s’afficher :
+Dans Adobe Commerce 2.1 ou une version ultérieure, lors de la création d’un nouveau produit dans l’Administration de Commerce, l’erreur suivante peut s’afficher :
 
 ```text
 Warning: Illegal string offset 'is_in_stock' in [...]/vendor/
@@ -25,27 +32,27 @@ Modifier/AdvancedInventory.php on line 87
 
 ## Détail
 
-Adobe Commerce 2.1 et versions ultérieures utilisent des commentaires de code PHP dans l’appel de validation `getDocComment` de la méthode [`getExtensionAttributes`](https://github.com/magento/magento2/blob/2.3/lib/internal/Magento/Framework/Api/ExtensionAttributesFactory.php#L64-L73) dans `Magento\Framework\Api\ExtensionAttributesFactory.php`.
+Adobe Commerce 2.1 et versions ultérieures utilisent les commentaires de code PHP dans l&#39;appel de validation `getDocComment` dans la méthode [`getExtensionAttributes`](https://github.com/magento/magento2/blob/2.3/lib/internal/Magento/Framework/Api/ExtensionAttributesFactory.php#L64-L73) de `Magento\Framework\Api\ExtensionAttributesFactory.php`.
 
-Si vous avez activé le OPcache PHP (que nous recommandons), cette erreur s’affiche car, par défaut, le paramètre OPcache [`opcache.save_comments`](http://php.net/manual/en/opcache.configuration.php#ini.opcache.save_comments) est désactivé.
+Si vous avez activé PHP OPcache (ce que nous recommandons), cette erreur s&#39;affiche car par défaut, le paramètre OPcache [`opcache.save_comments`](http://php.net/manual/en/opcache.configuration.php#ini.opcache.save_comments) est désactivé.
 
 ## Solution
 
-Pour résoudre le problème, localisez vos paramètres de configuration OPcache et activez `opcache.save_comments` comme suit :
+Pour résoudre le problème, recherchez les paramètres de configuration OPcache et activez `opcache.save_comments` comme suit :
 
-### Étape 1 : Localisation de la configuration OPcache
+### Étape 1 : Rechercher la configuration de votre cache OP
 
-#### Pour rechercher les paramètres de configuration du cache d’OP :
+#### Pour trouver les paramètres de configuration OPcache :
 
-Les paramètres du OPcache PHP sont généralement situés dans `php.ini` ou `opcache.ini`. L’emplacement peut dépendre de votre système d’exploitation et de la version PHP. Le fichier de configuration OPcache peut comporter une section `[opcache]` ou des paramètres tels que `opcache.enable`.
+Les paramètres PHP OPcache sont généralement situés dans `php.ini` ou `opcache.ini`. L&#39;emplacement peut dépendre de votre système d&#39;exploitation et de la version PHP. Le fichier de configuration OPcache peut avoir une section `[opcache]` ou des paramètres comme `opcache.enable`.
 
-Suivez les instructions ci-dessous pour le trouver :
+Suivez les instructions suivantes pour le trouver :
 
 * Serveur web Apache :<br>
 
-Pour Ubuntu avec Apache, les paramètres OPcache se trouvent généralement dans `php.ini`.<br>
-Pour CentOS avec Apache ou nginx, les paramètres OPcache se trouvent généralement dans `/etc/php.d/opcache.ini`.<br>
-Dans le cas contraire, utilisez la commande suivante pour la localiser :
+Pour Ubuntu avec Apache, les paramètres OPcache sont généralement situés dans `php.ini`.<br>
+Pour CentOS avec Apache ou nginx, les paramètres OPcache sont généralement situés dans `/etc/php.d/opcache.ini`.<br>
+Dans le cas contraire, la commande suivante permet de le localiser :
 
 ```bash
     $ sudo find / -name 'opcache.ini'
@@ -53,13 +60,13 @@ Dans le cas contraire, utilisez la commande suivante pour la localiser :
 
 * Serveur web nginx avec PHP-FPM : `/etc/php5/fpm/php.ini`.
 
-Si vous avez plusieurs `opcache.ini`, modifiez-les tous.
+Si vous disposez de plusieurs `opcache.ini`, modifiez-les toutes.
 
 
-### Étape 2 : Activer `opcache.save_comments`
+### Étape 2 : activer le `opcache.save_comments`
 
 1. Ouvrez votre fichier de configuration OPcache dans un éditeur de texte.
-1. Localisez `opcache.save_comments` et annulez la mise en commentaire, si nécessaire.
+1. Recherchez `opcache.save_comments` et supprimez les commentaires si nécessaire.
 1. Assurez-vous que sa valeur est définie sur `1`.
 1. Enregistrez vos modifications et quittez l’éditeur de texte.
 1. Redémarrez votre serveur web :
@@ -68,7 +75,7 @@ Si vous avez plusieurs `opcache.ini`, modifiez-les tous.
    * Apache, CentOS : `service httpd restart`
    * nginx, Ubuntu et CentOS : `service nginx restart`
 
-1. Régénérer la configuration de l’ID et toutes les classes manquantes qui peuvent être générées automatiquement :
+1. Régénérez la configuration d’ID et toutes les classes manquantes qui peuvent être générées automatiquement :
 
 ```bash
     $ bin/magento setup:di:compile`

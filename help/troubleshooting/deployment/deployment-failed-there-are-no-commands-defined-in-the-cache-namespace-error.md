@@ -1,24 +1,31 @@
 ---
-title: "Échec du déploiement lors de la purge du cache : 'Aucune commande n'est définie dans l'erreur 'espace de noms du cache'"
-description: Cet article fournit une solution au problème lorsque le déploiement échoue avec l’erreur suivante **Aucune commande n’est définie dans l’espace de noms du cache**.
+title: 'Échec du déploiement lors du vidage du cache : ''Aucune commande n''est définie dans l''erreur ''espace de noms du cache'''
+description: Cet article fournit une solution au problème d’échec du déploiement avec l’erreur suivante **Aucune commande n’est définie dans l’espace de noms du cache**.
 feature: Deploy
 role: Developer
 exl-id: ee2bddba-36f7-4aae-87a1-5dbeb80e654e
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '479'
 ht-degree: 0%
-
 ---
 
-
-# Échec du déploiement lors de la purge du cache : erreur &quot;Aucune commande n’est définie dans l’espace de noms &#39;cache&#39;&quot;
+# Échec du déploiement lors du vidage du cache : erreur « Aucune commande n’est définie dans l’espace de noms du cache »
 
 >[!WARNING]
 >
->Sauvegardez d’abord la base de données, si vous effectuez cette opération dans un site de production actif, avant d’effectuer ces étapes.
+>Sauvegardez d’abord la base de données, si vous le faites dans un site de production actif, avant d’effectuer ces étapes.
 
-Cet article fournit une solution au problème lorsque votre déploiement échoue et que l’une des erreurs dans le journal ressemble à ceci :
+Cet article fournit une solution au problème d’échec de déploiement d’et d’apparition de l’une des erreurs du journal, comme suit :
 
 ```
 [YEAR-DAYTIME] ERROR: [127] The command "php ./bin/magento cache:flush --ansi --no-interaction" failed.
@@ -33,33 +40,33 @@ Adobe Commerce sur l’infrastructure cloud 2.4.x
 
 ## Problème
 
-<u>Étapes à reproduire</u> :
+<u>Procédure à suivre </u> :
 
 Tentative de déploiement.
 
 <u>Résultats attendus</u> :
 
-Déploiement réussi.
+Le déploiement a réussi.
 
 <u>Résultats réels</u> :
 
-Vous ne déployez pas correctement. Dans les journaux, une erreur de déploiement s’affiche avec un message similaire au *suivant. Il n’y a aucune commande dans l’espace de noms du cache*.
+Le déploiement échoue. Dans les journaux, une erreur de déploiement s’affiche avec un message similaire au suivant *Il n’existe aucune commande dans l’espace de noms du cache*.
 
 ### Cause
 
-La table **`core_config_data`** contient des configurations pour un identifiant de magasin ou un identifiant de site web qui n’existe plus dans la base de données. Cela se produit lorsque vous avez importé une sauvegarde de base de données à partir d’une autre instance/un autre environnement et que les configurations de ces portées restent dans la base de données bien que le ou les magasins/sites web associés aient été supprimés.
+La table **`core_config_data`** contient des configurations pour un ID de magasin ou un ID de site web qui n’existe plus dans la base de données. Cela se produit lorsque vous avez importé une sauvegarde de base de données à partir d’une autre instance ou d’un autre environnement et que les configurations de ces étendues restent dans la base de données bien que le ou les magasins/sites web associés aient été supprimés.
 
 ### Solution
 
-Si vous n’avez qu’un seul site web, le deuxième test pour les sites web ne s’applique pas, et il vous suffit de le tester pour les magasins.
+Si vous n’avez eu qu’un seul site web, le deuxième test pour les sites web ne s’applique pas et vous n’avez qu’à tester les magasins.
 
 Pour résoudre ce problème, identifiez les lignes non valides restantes de ces configurations.
 
-1. SSH sur le serveur et exécutez la commande suivante :
+1. Envoyez le SSH au serveur et exécutez la commande suivante :
 
    `bin/magento`
 
-1. Le message d’erreur peut indiquer les lignes et les tableaux qui restent dans la base de données des sites supprimés. Par exemple, l’erreur suivante indique que le magasin demandé est introuvable :
+1. Le message d’erreur peut indiquer quelles lignes et tables restent dans la base de données à partir des sites supprimés. Par exemple, voici une erreur indiquant que le magasin demandé est introuvable :
 
    ```...
    In StoreRepository.php line 112:
@@ -83,7 +90,7 @@ Pour résoudre ce problème, identifiez les lignes non valides restantes de ces 
 
    `bin/magento`
 
-   Si vous obtenez une erreur comme celle ci-dessous qui indique que le site web avec l’ID X demandé est introuvable, il reste des configurations.        dans la base de données du ou des sites web, ainsi que des magasins qui ont été supprimés.
+   Si vous obtenez une erreur telle que celle ci-dessous, qui indique que le site web portant l’ID X demandé est introuvable, vous disposez des configurations restantes dans la base de données du ou des sites web, ainsi que des magasins qui ont été supprimés.
 
    ```
    In WebsiteRepository.php line 110:
@@ -103,10 +110,10 @@ Pour résoudre ce problème, identifiez les lignes non valides restantes de ces 
    delete from core_config_data where scope='websites' and scope_id not in (select website_id from store_website);
    ```
 
-Pour confirmer que la solution a fonctionné, réexécutez la commande `bin/magento`. Les erreurs ne doivent plus s’afficher et le déploiement peut réussir.
+Pour confirmer que la solution a fonctionné, exécutez à nouveau la commande `bin/magento`. Vous ne devriez plus voir les erreurs et pouvez procéder au déploiement avec succès.
 
 ## Lecture connexe
 
-* [Résolution des problèmes de déploiement Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter)
-* [Vérification du journal de déploiement si l’interface utilisateur de Cloud a &quot;extrait de journal&quot; erreur](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
-* [&#x200B; Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+* [Résolution des problèmes de déploiement d’Adobe Commerce](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter)
+* [Vérification du journal de déploiement si l’interface utilisateur de Cloud comporte une erreur « journal arrêté »](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook

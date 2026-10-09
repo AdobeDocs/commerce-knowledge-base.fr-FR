@@ -4,13 +4,20 @@ description: Cet article fournit des solutions aux problèmes rencontrés lors d
 exl-id: cbf54a15-b307-4bfc-90b7-cff98aeb4fce
 feature: Roles/Permissions
 role: Developer
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
-
 ---
-
 # Impossible d’accéder à la dernière version préliminaire d’Adobe Commerce
 
 Cet article fournit des solutions aux problèmes rencontrés lors de l’utilisation du code de version préliminaire le plus récent d’Adobe Commerce.

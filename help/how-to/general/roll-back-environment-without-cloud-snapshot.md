@@ -3,13 +3,26 @@ title: Restauration de l’environnement sans instantané du cloud
 description: Cet article présente deux solutions pour restaurer un environnement sans avoir d’instantané de votre environnement sur Adobe Commerce sur l’infrastructure cloud.
 exl-id: 834d13a7-3b1a-460c-9ed0-9d560105f436
 feature: Build, Cloud, Console
-source-git-commit: d7c714cf5b2f9db139440d814af26c12001bb4d9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '949'
 ht-degree: 0%
-
 ---
-
 # Restauration de l’environnement sans instantané du cloud
 
 Cet article présente deux solutions pour restaurer un environnement sans avoir d’instantané de votre environnement sur Adobe Commerce sur l’infrastructure cloud.
@@ -94,7 +107,7 @@ Cela signifie que nous avons rétabli notre installation d’Adobe Commerce (y c
 
 Avec la réinitialisation Git, nous rétablissons l’état souhaité du code dans le passé.
 
-1. Clonez l’environnement vers votre environnement de développement local. Vous pouvez copier la commande dans la console Cloud :    ![copy_git_clone.png](assets/copy_git_clone.png)
+1. Clonez l’environnement vers votre environnement de développement local. Vous pouvez copier la commande dans la console Cloud : ![copy_git_clone.png](assets/copy_git_clone.png)
 1. Accéder à l’historique des validations. Utilisez `--reverse` pour afficher l’historique dans l’ordre inverse pour plus de commodité :
 
    ```git
@@ -128,7 +141,7 @@ Dans ce scénario, vous devez d’abord restaurer l’état de fonctionnement de
 
 [&#x200B;3. Désinstallez le logiciel Adobe Commerce.](/help/how-to/general/reset-environment-on-cloud.md#setup-uninstall)
 
-4&amp;période; Forcer le redéploiement.
+4&period; Forcer le redéploiement.
 
 Après avoir effectué ces étapes, vous obtiendrez les mêmes résultats que dans le scénario 1.
 
@@ -172,8 +185,8 @@ Après la réinitialisation de la base de données, [effectuez une notification 
 Dans notre documentation destinée aux développeurs :
 
 * [Restaurer un instantané sur le cloud](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup)
-* [Créer un instantané](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-a-manual-backup)
+* [Création d’un instantané](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-a-manual-backup)
 * [Snapshots et gestion des sauvegardes](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Gérer les branches avec la console cloud - Afficher les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=fr#view-logs)
+* [Gestion des branches avec la console cloud - Affichage des journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=fr#view-logs)
 * [Échec du déploiement des composants](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment.html?lang=fr)
-* [Gérer le projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=fr#configure-the-project)
+* [Gestion du projet](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=fr#configure-the-project)

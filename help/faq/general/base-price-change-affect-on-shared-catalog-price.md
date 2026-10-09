@@ -3,13 +3,17 @@ title: Incidence de la modification du prix de base sur le prix catalogue partag
 description: 'Cet article répond à la question suivante : si un produit d''un catalogue partagé a un prix personnalisé et que le prix de base du produit change (par exemple après une mise à jour planifiée), quel prix s''applique dans le catalogue partagé ?'
 exl-id: 916678c1-ada6-4f23-af16-b107cb83ff16
 feature: Catalog Management
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
-
 ---
-
 # Incidence de la modification du prix de base sur le prix catalogue partagé
 
 Cet article répond à la question suivante : si un produit d&#39;un catalogue partagé a un prix personnalisé et que le prix de base du produit change (par exemple après une mise à jour planifiée), quel prix s&#39;applique dans le catalogue partagé ?

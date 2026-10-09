@@ -2,13 +2,14 @@
 title: Restaurer un instantané de base de données à partir de l’évaluation ou de la production
 description: Cet article explique comment restaurer un instantané de base de données à partir de l’évaluation ou de la production sur Adobe Commerce sur une infrastructure cloud.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: 62815213ce54f72d27812b9c2d7b3997f2e88897
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '548'
 ht-degree: 0%
-
 ---
-
 # Restaurer un instantané de base de données à partir de [!DNL Staging] ou [!DNL Production]
 
 Cet article explique comment restaurer une base de données [!DNL snapshot] à partir de [!DNL Staging] ou [!DNL Production] sur l’infrastructure Adobe Commerce sur Cloud Pro.
@@ -17,7 +18,7 @@ Cet article explique comment restaurer une base de données [!DNL snapshot] à p
 >[!NOTE]
 >
 >Ces méthodes restaurent l’**instantané complet**.
->&#x200B;>Si vous devez restaurer l&#39;instantané **partiellement**, par exemple en restaurant uniquement les tables du catalogue tout en laissant les tables de commandes intactes, vous devez consulter votre développeur ou votre administrateur de base de données.
+>Si vous devez restaurer l&#39;instantané **partiellement**, par exemple en restaurant uniquement les tables du catalogue tout en laissant les tables de commandes intactes, vous devez consulter votre développeur ou votre administrateur de base de données.
 
 
 ## Produits et versions concernés
@@ -38,18 +39,18 @@ Choisissez la solution la plus adaptée à votre cas :
 
 >[!NOTE]
 >
-> Le format de l&#39;instantané sur les **projets Azure** sera différent et contiendra d&#39;autres bases de données qui **ne peuvent pas être importées**.\
+> Le format de l&#39;instantané sur **projets** sera différent et contient d&#39;autres bases de données qui **ne peuvent pas être importées**.\
 > Avant d&#39;importer l&#39;instantané, vous devez prendre des mesures supplémentaires pour **extraire la base de données appropriée** avant de poursuivre l&#39;importation de l&#39;image mémoire.
 
 Les étapes sont les suivantes :
 
 1. À l’aide de [!DNL SFTP], accédez à l’emplacement où le [!DNL snapshot] de base de données a été placé, généralement sur le premier serveur/nœud de votre [!DNL cluster] (par exemple : `/mnt/recovery-<recovery_id>`).
-   > **Projets basés sur Azure :**\
-   > Si votre projet est basé sur Azure (c’est-à-dire que l’URL de votre projet ressemble à `https://us-a1.magento.cloud/projects/<cluster_id>`), l’instantané est placé dans :
+   > **projets basés sur Azure :**\
+   > Si votre projet est basé sur Azure (c’est-à-dire si l’URL de votre projet ressemble à `https://us-a1.magento.cloud/projects/<cluster_id>`), l’instantané est placé dans :
    > * `/mnt/shared/<cluster ID>/all-databases.sql.gz`
    > * `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz`
 
-   **Étapes d’extraction spécifiques à Azure**
+   **étapes d’extraction spécifiques à**
 
    **Pour la production :**
 
@@ -180,5 +181,5 @@ Les étapes sont les suivantes :
 Dans notre documentation destinée aux développeurs :
 
 * [Code d’import : import de la base de données](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
-* [[!DNL Snapshots] and [!DNL backup] management :  [!DNL Dump]  votre base de données](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [[!DNL Snapshots] et [!DNL backup] gestion :  [!DNL Dump]  votre base de données](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
 * [Sauvegarde (instantané) sur le cloud : FAQ](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)

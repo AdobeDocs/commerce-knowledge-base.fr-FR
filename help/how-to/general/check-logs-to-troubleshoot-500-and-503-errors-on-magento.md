@@ -3,13 +3,22 @@ title: Consultez les journaux pour résoudre les erreurs 500 et 503 sur Adobe Co
 description: Cet article explique comment vérifier le fichier « access.log » et les journaux associés pour résoudre les erreurs 503 et 500, qui peuvent être dues à un trafic ou à des ressources insuffisantes du serveur. L’affichage du fichier « access.log » et des journaux associés peut fournir des informations sur ce qui peut causer des problèmes liés à Adobe Commerce sur l’infrastructure cloud.
 exl-id: 47d7de6b-3e12-4e79-a5c1-c27a9196b99c
 feature: Cloud, Logs
-source-git-commit: 66ac9de94e9a4a1eccdb5aac1875ecf0a0637e90
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: 3c398179-d35a-51ba-b317-6c5b95feef5e
+    internal-label: Logs
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '338'
 ht-degree: 0%
-
 ---
-
 # Consultez les journaux pour résoudre les erreurs 500 et 503 sur Adobe Commerce
 
 Cet article explique comment vérifier les `access.log` et les journaux associés pour résoudre les erreurs 503 et 500, qui peuvent être dues à un trafic ou à des ressources de serveur insuffisantes. L’affichage du `access.log` et des journaux associés peut fournir des informations sur les causes possibles des problèmes liés à Adobe Commerce sur l’infrastructure cloud.

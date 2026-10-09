@@ -4,16 +4,32 @@ description: Cet article fournit une solution au problème où l’interface uti
 exl-id: 04d28741-72c1-4722-be46-425fe136b9a6
 feature: Cloud, Deploy, Logs, Paas
 role: Developer
-source-git-commit: 846df05668b357b9088bcaf605a75c45ab10f1ae
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: 3c398179-d35a-51ba-b317-6c5b95feef5e
+    internal-label: Logs
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '378'
 ht-degree: 0%
-
 ---
-
 # Vérification du journal de déploiement en cas d’erreur *journal coupé* dans l’interface utilisateur du cloud
 
-Cet article fournit une solution au problème d’affichage du message d’erreur *journal extrait car trop long* dans l’interface utilisateur d’Adobe Commerce sur l’infrastructure cloud lors de la tentative d’affichage du journal de déploiement dans l’interface utilisateur du projet cloud. (Ne s’applique pas à la console [Adobe Commerce Cloud](https://console.adobecommerce.com/).)
+Cet article fournit une solution au problème d’affichage du message d’erreur *journal extrait car trop long* dans l’interface utilisateur d’Adobe Commerce sur l’infrastructure cloud lors de la tentative d’affichage du journal de déploiement dans l’interface utilisateur du projet cloud. (Ne s’applique pas à la [console Adobe Commerce Cloud](https://console.adobecommerce.com/).)
 
 ## Produits concernés
 
@@ -34,7 +50,7 @@ Notez que le journal affiché dans l’interface utilisateur ne doit pas être t
 
 ## Solution
 
-1. Assurez-vous que l’interface de ligne de commande [de Magento Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=fr) est installée dans votre environnement local.
+1. Assurez-vous que l’interface de ligne de commande [Magento Cloud CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=fr) est installée dans votre environnement local.
 1. Vous pouvez exécuter l’une des commandes suivantes :
 
    ```bash
@@ -71,4 +87,4 @@ Notez que le journal affiché dans l’interface utilisateur ne doit pas être t
 ## Informations connexes dans notre documentation destinée aux développeurs :
 
 * [Adobe Commerce sur l’infrastructure cloud > Créer et déployer](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=fr)
-* [Adobe Commerce sur l’infrastructure cloud > Afficher et gérer les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=fr)
+* [Adobe Commerce sur les infrastructures cloud > Afficher et gérer les journaux](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=fr)
