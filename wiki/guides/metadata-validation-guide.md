@@ -1,13 +1,16 @@
 ---
-source-git-commit: 0cfb7dc0dce68bcb0933a5ae49b0cd5a8b5b5a39
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%
-
 ---
+
 # Guide de validation des métadonnées
 
-Pour garantir une mise en forme correcte des métadonnées dans les fichiers MD, nous avons mis en place un test de validation des métadonnées. Ce document fournit des instructions pour aider les contributeurs à éviter certaines des erreurs de validation des métadonnées les plus courantes.
+Afin d&#39;assurer le bon formatage des métadonnées dans les fichiers MD, nous avons mis en place un test de validation des métadonnées. Ce document fournit des instructions pour aider les contributeurs et contributrices à éviter certaines des erreurs de validation de métadonnées les plus courantes.
 
 **Exemple de métadonnées :**
 
@@ -20,15 +23,15 @@ labels: article,labels,tags
 Article content...
 ```
 
-## Erreurs de validation courantes et comment les éviter/les corriger
+## Erreurs de validation courantes et comment les éviter/corriger
 
-Voici quelques-uns des scénarios les plus courants où des erreurs de validation de métadonnées se produisent.
+Vous trouverez ci-dessous quelques-uns des scénarios les plus courants où des erreurs de validation des métadonnées se produisent.
 
 ### Deux-points dans les métadonnées
 
-Une erreur de validation se produira si le titre ou les libellés contiennent tous deux deux deux deux-points.
+Une erreur de validation se produit si le titre ou les libellés, ou les deux, comportent deux points.
 
-**Exemple :**
+**Exemple:**
 
 ```markdown
 ---
@@ -37,9 +40,9 @@ labels: patch: 2041.1,article,labels,tags
 ---
 ```
 
-Pour éviter cette erreur, placez le titre ou les libellés (ou les deux s’ils contiennent tous deux deux deux deux deux deux deux deux-points) dans les **guillemets simples**.
+Pour éviter cette erreur, placez le titre ou les libellés (ou les deux s’ils comportent deux points) entre **guillemets simples**.
 
-**Exemple :**
+**Exemple:**
 
 ```markdown
 ---
@@ -48,11 +51,11 @@ labels: 'patch: 2041.1,article,labels,tags'
 ---
 ```
 
-### Guillemet ou apostrophe simple deux-points dans les métadonnées
+### Deux-points et guillemets simples ou apostrophe dans les métadonnées
 
-La solution précédente ne fonctionnera pas si le titre ou les libellés contiennent des deux-points, des guillemets simples ou des apostrophes.
+La solution précédente ne fonctionne pas si le titre ou les libellés contiennent des deux-points, des guillemets simples ou des apostrophes.
 
-**Exemple :**
+**Exemple:**
 
 ```markdown
 ---
@@ -61,9 +64,9 @@ labels: patch: 2041.1,'article',labels,tags
 ---
 ```
 
-Cette erreur est corrigée en encapsulant le titre ou les libellés (ou les deux) dans **guillemets doubles**.
+Cette erreur est corrigée en plaçant le titre ou les libellés (ou les deux) entre **guillemets doubles**.
 
-**Exemple :**
+**Exemple:**
 
 ```markdown
 ---
@@ -72,9 +75,9 @@ labels: "patch: 2041.1,'article',labels,tags"
 ---
 ```
 
-### Deux-points, un guillemet double et un guillemet ou apostrophe simple dans les métadonnées
+### Deux-points, guillemets doubles et guillemets simples ou apostrophe dans les métadonnées
 
-**Exemple :**
+**Exemple:**
 
 ```markdown
 ---
@@ -83,9 +86,9 @@ labels: patch: 2041.1,'article',"labels",can't,tags
 ---
 ```
 
-Dans ce cas, placez le ou les libellés (ou les deux) dans les **guillemets doubles** et utilisez une **barre oblique inverse** pour échapper tous les guillemets doubles dans le titre et les libellés.
+Dans ce cas, placez le titre ou les libellés (ou les deux) entre **guillemets doubles** et utilisez une **barre oblique inverse** pour échapper tous les guillemets doubles du titre et des libellés.
 
-**Exemple :**
+**Exemple:**
 
 ```markdown
 ---
@@ -98,7 +101,7 @@ labels: "patch: 2041.1,'article',\"labels\",can't,tags"
 
 Une erreur de validation se produit si le champ de titre ou le champ de libellés est absent des métadonnées.
 
-**Exemple :**
+**Exemple:**
 
 ```markdown
 ---
@@ -106,7 +109,7 @@ title: This is a title
 ---
 ```
 
-OU
+SOIT
 
 ```markdown
 ---
@@ -116,9 +119,9 @@ labels: article,labels,tags
 
 Pour éviter cette erreur, incluez les deux champs dans les métadonnées.
 
-Le champ Libellés peut être laissé vide et ne pas générer d’erreur, mais le champ Titre doit être renseigné.
+Le champ des libellés peut rester vide et ne provoquera pas d’erreur, mais le champ du titre doit être renseigné.
 
-**Exemple :**
+**Exemple:**
 
 ```markdown
 ---

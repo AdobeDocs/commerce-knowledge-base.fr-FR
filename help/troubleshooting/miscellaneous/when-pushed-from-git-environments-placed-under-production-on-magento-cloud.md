@@ -4,13 +4,22 @@ description: Cet article fournit une solution au problème où de nouveaux envir
 exl-id: 279cd6d8-fd45-45ba-8456-8b397a01976f
 feature: Cloud, Paas
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
-
 ---
-
 # Nouveaux environnements placés en production lorsqu’ils sont transférés depuis Git
 
 Cet article fournit une solution au problème où de nouveaux environnements sont placés sous l’environnement de production sur Adobe Commerce sur l’infrastructure cloud lorsqu’ils sont poussés depuis le système de contrôle de version Git.
@@ -47,7 +56,7 @@ Ce n’est pas un bug. Pour définir une branche parent pour une autre branche, 
 
 ## Solution
 
-Une branche parent ne peut être définie qu’une fois que le commerçant a envoyé une branche nouvellement créée et l’a activée. Consultez [Adobe Commerce sur l’infrastructure cloud > Intégration de Bitbucket](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/dev-tools/integrations/bitbucket#create-a-cloud-branch) dans notre documentation destinée aux développeurs.
+Une branche parent ne peut être définie qu’une fois que le commerçant a envoyé une branche nouvellement créée et l’a activée. Consultez [Adobe Commerce sur l’infrastructure cloud > Intégration de Bitbucket](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/integrations/bitbucket#create-a-cloud-branch) dans notre documentation destinée aux développeurs.
 
 Pour mettre à jour un parent pour la branche existante sur le serveur, utilisez la commande `magento-cloud environment:info` dans l’interface de ligne de commande magento-cloud.
 
@@ -59,4 +68,4 @@ Cette action définit la branche parent sur « Évaluation » pour la branche ac
 
 ## Lecture connexe
 
-* [Adobe Commerce sur l’infrastructure cloud > Magento-cloud CLI](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) dans notre documentation destinée aux développeurs.
+* [Adobe Commerce sur l’infrastructure cloud > Magento-cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) dans notre documentation destinée aux développeurs.

@@ -2,13 +2,14 @@
 title: Impossible de modifier le moteur de recherche dans « app/etc/env.php »
 description: Cet article fournit une solution au problème en raison duquel vous tentez de modifier le moteur de recherche dans l’administration Commerce, mais les champs sont verrouillés.
 exl-id: 61006ce7-34f9-4e4d-a197-f3d627dd277f
-source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '258'
 ht-degree: 0%
-
 ---
-
 # Impossible de modifier le moteur de recherche dans `app/etc/env.php`
 
 Cet article fournit une solution au problème où vous essayez de supprimer la configuration du moteur de recherche du fichier `app/etc/env.php`, mais après redéploiement, la configuration revient au paramètre précédent ou est modifiée en [!DNL OpenSearch] par défaut.
@@ -42,4 +43,4 @@ La configuration du moteur de recherche est verrouillée dans le fichier `app/et
 
 ## Lecture connexe
 
-* Guide sur les [champs verrouillés (grisés) dans Commerce Admin](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-26879) dans Commerce sur les infrastructures cloud.
+* Guide sur les [champs verrouillés (grisés) dans Commerce Admin](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26879) dans Commerce sur les infrastructures cloud.

@@ -4,16 +4,34 @@ description: Cet article fournit des solutions possibles au problème lorsqu’u
 exl-id: 8d000ca4-b977-432d-bb26-6ea320067a40
 feature: Cache, Compliance, Console, Security
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
-
 ---
-
 # Message d’erreur affiché lors de l’ajout de sites à l’Analyse de sécurité
 
-Cet article fournit des solutions possibles au problème lorsqu&#39;un utilisateur ne peut pas ajouter de sites à l&#39;analyse de sécurité Commerce [&#128279;](https://account.magento.com/scanner/dashboard/).
+Cet article fournit des solutions possibles au problème lorsqu&#39;un utilisateur ne peut pas ajouter de sites à l&#39;analyse de sécurité Commerce [](https://account.magento.com/scanner/dashboard/).
 
 ## Produits et versions concernés
 
@@ -22,7 +40,7 @@ Cet article fournit des solutions possibles au problème lorsqu&#39;un utilisate
 
 ## Problème
 
-L&#39;utilisateur ne peut pas ajouter de sites à l&#39;analyse de sécurité Commerce [&#128279;](https://account.magento.com/scanner/dashboard/). Le message d’erreur suivant s’affiche lors de la tentative d’ajout d’un site : *Impossible d’envoyer le site pour analyse.*
+L&#39;utilisateur ne peut pas ajouter de sites à l&#39;analyse de sécurité Commerce [](https://account.magento.com/scanner/dashboard/). Le message d’erreur suivant s’affiche lors de la tentative d’ajout d’un site : *Impossible d’envoyer le site pour analyse.*
 
 ## Solution
 
@@ -53,4 +71,4 @@ Si vous ne pouvez toujours pas ajouter de sites, procédez comme suit :
 
 ## Lecture connexe
 
-* [Security Scan](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-scan) dans notre guide de l’utilisateur.
+* [Security Scan](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) dans notre guide de l’utilisateur.

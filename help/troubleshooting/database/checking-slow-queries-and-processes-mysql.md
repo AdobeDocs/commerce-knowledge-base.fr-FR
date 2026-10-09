@@ -4,7 +4,16 @@ description: Cet article aborde quelques problèmes courants de MySQL (requêtes
 exl-id: cae02e4f-d8cb-4074-abac-24ead22bdc07
 feature: Services
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 0%
@@ -42,7 +51,7 @@ Si vous avez rencontré une panne potentiellement due à une surcharge de la bas
 Si votre projet Adobe Commerce est déployé sur une architecture Pro, vous pouvez utiliser le [!DNL Percona Toolkit] pour analyser les requêtes.
 
 1. Exécutez la commande `pt-query-digest --type=slowlog` sur les journaux de requêtes lentes MySQL.
-   * Pour trouver l’emplacement des journaux de requêtes lentes, consultez **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=fr)** dans notre documentation destinée aux développeurs.
+   * Pour trouver l’emplacement des journaux de requêtes lentes, consultez **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)** dans notre documentation destinée aux développeurs.
    * Voir la documentation [[!DNL Percona Toolkit] > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) .
 1. En fonction des problèmes trouvés, prenez les mesures nécessaires pour corriger la requête, afin qu’elle s’exécute plus rapidement.
 
@@ -79,4 +88,4 @@ Cela permet de déterminer si le serveur MySQL est actif et s’il n’existe au
 * [MySQL Afficher la syntaxe Processlist](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) dans dev.mysql.com.
 * [Syntaxe MySQL Kill](https://dev.mysql.com/doc/refman/8.0/en/kill.html) dans dev.mysql.com.
 * [Sécurité, performances et gestion des données](https://developer.adobe.com/commerce/php/best-practices/extensions/security/) dans notre documentation destinée aux développeurs.
-* [Aide MySQL](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql) dans notre documentation destinée aux développeurs.
+* [Aide MySQL](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql) dans notre documentation destinée aux développeurs.

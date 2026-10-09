@@ -1,16 +1,23 @@
 ---
-title: Déchargement des redirections non [!DNL regex] vers [!DNL Fastly] au lieu de [!DNL Nginx] (itinéraires)
-description: Cette rubrique propose une solution à un problème de performances des redirections standard qui peut se produire lorsque vous déchargez des redirections non [!DNL regex] vers  [!DNL Fastly]  plutôt que  [!DNL Nginx]  dans Adobe Commerce sur l’infrastructure cloud.
+title: Décharger les redirections non [!DNL regex] vers [!DNL Fastly] au lieu de [!DNL Nginx] (itinéraires)
+description: Cette rubrique propose une solution à un problème de performances des redirections standard qui peut se produire lorsque vous déchargez des redirections non [!DNL regex] vers [!DNL Fastly] au lieu de les [!DNL Nginx] dans Adobe Commerce sur l’infrastructure cloud.
 exl-id: 8b22d25d-0865-4d21-b275-d344ba8748f2
 feature: Routes
 role: Developer
-source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 1783ae9f-7157-5aeb-a915-91e260301e46
+    internal-label: Routes
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '796'
 ht-degree: 0%
-
 ---
-
 # Décharger les redirections non [!DNL regex] vers [!DNL Fastly] au lieu de [!DNL Nginx] (itinéraires)
 
 Cette rubrique propose une solution à un problème de performances des redirections standard qui peut se produire lorsque vous déchargez des redirections non [!DNL regex] vers [!DNL Fastly] au lieu de les [!DNL Nginx] dans Adobe Commerce sur l’infrastructure cloud.
@@ -39,7 +46,7 @@ Les étapes suivantes expliquent comment placer des redirections sur [!DNL Fastl
 
 1. Créez un dictionnaire Edge.
 
-   Tout d’abord, vous pouvez utiliser des [[!DNL VCL] fragments de code dans Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=fr) pour définir un dictionnaire de périphérie. Il contiendra les redirections.
+   Tout d’abord, vous pouvez utiliser des [[!DNL VCL] fragments de code dans Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) pour définir un dictionnaire de périphérie. Il contiendra les redirections.
 
    Quelques mises en garde à ce sujet :
 
@@ -99,8 +106,8 @@ Si vous ne souhaitez pas exécuter un environnement d’évaluation Adobe Commer
 
 ## Lecture connexe
 
-* [[!DNL Fastly VCL] référence](https://docs.fastly.com/vcl/)
-* [Configurer les itinéraires](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html?lang=fr) dans notre documentation destinée aux développeurs
-* [Configuration [!DNL Fastly]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=fr) dans notre documentation destinée aux développeurs
-* [[!DNL VCL]  aide-mémoire pour l’expression régulière &#x200B;](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) dans notre documentation destinée aux développeurs
-* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+* [référence [!DNL Fastly VCL]](https://docs.fastly.com/vcl/)
+* [Configurer les itinéraires](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) dans notre documentation destinée aux développeurs
+* [Configuration [!DNL Fastly]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) dans notre documentation destinée aux développeurs
+* [[!DNL VCL]  aide-mémoire pour l’expression régulière ](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) dans notre documentation destinée aux développeurs
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook

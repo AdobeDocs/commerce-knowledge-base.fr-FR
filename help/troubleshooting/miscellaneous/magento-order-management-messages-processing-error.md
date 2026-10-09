@@ -1,23 +1,30 @@
 ---
-title: Système Magento Order Management (OMS) pour l’erreur de traitement Adobe Commerce
-description: Cet article fournit une solution au problème lorsque vous obtenez une erreur "getMode()" dans l’interface de ligne de commande exécutant "bin/magento oms:messages:process" dans le système Magento Order Management (OMS) pour Adobe Commerce.
+title: Erreur de traitement de Magento Order Management System (OMS) pour Adobe Commerce
+description: Cet article fournit une solution au problème d’erreur « getMode() » dans l’interface de ligne de commande exécutant « bin/magento oms:messages:process » dans Magento Order Management System (OMS) pour Adobe Commerce.
 exl-id: 83089465-f810-4a3b-bdb6-4720b44f0b49
 feature: System
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '242'
 ht-degree: 0%
-
 ---
+# Erreur de traitement de Magento Order Management System (OMS) pour Adobe Commerce
 
-# Système Magento Order Management (OMS) pour l’erreur de traitement Adobe Commerce
-
-Cet article fournit une solution au problème lorsque vous obtenez une erreur `getMode()` dans l’interface de ligne de commande exécutant `bin/magento oms:messages:process` dans le système de Magento Order Management (OMS) pour Adobe Commerce.
+Cet article fournit une solution au problème d’erreur `getMode()` dans le `bin/magento oms:messages:process` d’exécution de l’interface de ligne de commande de Magento Order Management System (OMS) pour Adobe Commerce.
 
 ## Produits et versions concernés
 
-Cette erreur se produit lors de l’utilisation des versions 3.1.1 et 3.2.0 de MCOM Connector. Ce problème est résolu dans MCOM Connector 3.3.0. Il n’est pas spécifique à une version MDC ou MOM.
+Cette erreur se produit lors de l’utilisation des versions 3.1.1 et 3.2.0 de MCOM Connector. Il est résolu dans MCOM Connector 3.3.0. Il n’est pas spécifique à une version MDC ou MOM.
 
 ## Problème
 
@@ -25,7 +32,7 @@ Lors de l’exécution de la commande suivante dans l’interface de ligne de co
 
 `bin/magento oms:messages:process`
 
-Un message d’erreur similaire au suivant est généré dans l’interface de ligne de commande :
+Un message d’erreur similaire au suivant apparaît dans l’interface de ligne de commande :
 
 ```
 <project-id>@<project-id>:~$ php bin/magento oms:messages:process
@@ -57,15 +64,15 @@ Stack trace:
 ## Cause
 
 Â
-Cela se produit lorsque le connecteur tente de traiter des messages `magento.inventory.source_management`. Connector tente de traiter ces messages comme s’ils étaient un message `magento.inventory.source_stock_management.update` nécessitant une valeur de mode. Comme il n&#39;y a pas de mode dans les messages `magento.inventory.source_mangement`, l&#39;erreur se produit.
+Cela se produit lorsque le connecteur tente de traiter des messages `magento.inventory.source_management`. Le connecteur tente de traiter ces messages comme s’il s’agissait d’un message `magento.inventory.source_stock_management.update` qui ne nécessite pas de valeur de mode. Comme il n’y a pas de mode dans les messages `magento.inventory.source_mangement`, l’erreur se produit.
 
 ## Solution
 
-Pour résoudre le problème, exécutez l’instruction [!DNL SQL] suivante dans l’interface de ligne de commande qui supprime tous les enregistrements de la table `mcom_api_messages` :
+Pour résoudre le problème, exécutez l’instruction [!DNL SQL] suivante dans l’interface de ligne de commande, qui supprime tous les enregistrements de la table `mcom_api_messages` :
 
 `delete from mcom_api_messages;`
 
-## Lecture connexe
+## Lectures connexes
 
-* [&#x200B; Tutoriel de configuration du connecteur OMS](https://commerce-docs.github.io/oms-documentation-archive/integration/connector/setup-tutorial/)
-* [&#x200B; Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+* Documents OMS [tutoriel sur la configuration du connecteur OMS](https://commerce-docs.github.io/oms-documentation-archive/integration/connector/setup-tutorial/)
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook

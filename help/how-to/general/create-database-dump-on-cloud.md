@@ -3,13 +3,17 @@ title: Créer une image mémoire de base de données sur Adobe Commerce sur l’
 description: Cet article présente les méthodes possibles (et recommandées) de création d’une image mémoire de base de données (DB) sur Adobe Commerce dans une infrastructure cloud.
 exl-id: 4a2e54ac-8d65-4e51-8337-08f9748dc6c0
 feature: Cloud
-source-git-commit: 96b145a1f76c296907da96fd97c7a8f7778463f8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '453'
 ht-degree: 0%
-
 ---
-
 # Créer une image mémoire de base de données sur Adobe Commerce sur l’infrastructure cloud
 
 Cet article présente les méthodes possibles (et recommandées) de création d’une image mémoire de base de données (DB) sur Adobe Commerce dans une infrastructure cloud.
@@ -18,7 +22,7 @@ Il vous suffit d’utiliser une seule variante (option) pour vider votre base de
 
 ## Prérequis : SSH dans votre environnement
 
-Pour vider votre base de données sur Adobe Commerce sur une infrastructure cloud avec n’importe quelle variante abordée dans cet article, vous devez d’abord [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=fr).
+Pour vider votre base de données sur Adobe Commerce sur une infrastructure cloud avec n’importe quelle variante abordée dans cet article, vous devez d’abord [SSH à votre environnement](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 
 >[!WARNING]
 >
@@ -26,7 +30,7 @@ Pour vider votre base de données sur Adobe Commerce sur une infrastructure clou
 
 ## Option 1 : db-dump (**ece-tools ; recommandé**)
 
-Vous pouvez vider votre base de données à l&#39;aide de la commande [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=fr) :
+Vous pouvez vider votre base de données à l&#39;aide de la commande [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) :
 
 ```php
 vendor/bin/ece-tools db-dump
@@ -34,7 +38,7 @@ vendor/bin/ece-tools db-dump
 
 Il s’agit de l’option recommandée et la plus sûre.
 
-Voir [Dump your database (ECE-Tools)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html?lang=fr) dans notre guide Commerce on Cloud Infrastructure.
+Voir [Dump your database (ECE-Tools)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) dans notre guide Commerce on Cloud Infrastructure.
 
 ## Option 2 : mariadb-dump (ou mysqldump pour les versions plus anciennes)
 
@@ -73,4 +77,4 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
 **Documentation connexe :**
 
 * [mysqldump - Programme de sauvegarde de la base de données](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) dans la documentation officielle de MySQL.
-* [Variables spécifiques au cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=fr) (voir `MAGENTO_CLOUD_RELATIONSHIPS`) dans notre guide Commerce sur les infrastructures cloud.
+* [Variables spécifiques au cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) (voir `MAGENTO_CLOUD_RELATIONSHIPS`) dans notre guide Commerce sur les infrastructures cloud.

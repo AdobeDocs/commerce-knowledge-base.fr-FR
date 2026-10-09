@@ -4,13 +4,23 @@ description: Cet article fournit une solution pour le cas où un certificat SSL 
 exl-id: cc968bae-f742-449b-b291-bc121ec45935
 feature: Support
 role: Developer
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '424'
 ht-degree: 0%
-
 ---
-
 # Informations d’expiration sur le certificat SSL personnalisé
 
 Cet article fournit une solution pour le cas où un certificat SSL personnalisé a été mis à jour avec un certificat SSL fourni par Adobe.
@@ -41,11 +51,11 @@ Adobe Commerce met à jour tout certificat dans les 30 jours suivant son expirat
 
 Lorsqu’un commerçant choisit d’utiliser son propre certificat SSL personnalisé, celui-ci doit être mis à jour plus de 30 jours avant l’expiration du certificat pour s’assurer qu’il ne sera pas remplacé par un certificat SSL Adobe Commerce interne.
 
-Si vous vous trouvez dans une situation où votre SSL personnalisé a été remplacé par notre SSL interne et que vous souhaitez le remplacer par votre certificat SSL personnalisé mis à jour, veuillez [soumettre une demande d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) avec l’emplacement où vous avez chargé vos nouveaux fichiers de certificat. Veuillez inclure la date de début du nouveau SSL. Une fois que nous disposons de ces informations, nous pouvons procéder à l’installation du nouveau certificat SSL.
+Si vous vous trouvez dans une situation où votre SSL personnalisé a été remplacé par notre SSL interne et que vous souhaitez le remplacer par votre certificat SSL personnalisé mis à jour, veuillez [soumettre une demande d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) avec l’emplacement où vous avez chargé vos nouveaux fichiers de certificat. Veuillez inclure la date de début du nouveau SSL. Une fois que nous disposons de ces informations, nous pouvons procéder à l’installation du nouveau certificat SSL.
 
 ## Lecture connexe
 
 * Certificats [SSL (TLS) pour Magento Commerce Cloud : FAQ](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) dans notre base de connaissances d’assistance.
-* [Référence des outils de ligne de commande : certificat magento-cloud:add](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) dans notre documentation destinée aux développeurs.
-* [Lancer la liste de contrôle](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/launch/checklist)dans notre documentation destinée aux développeurs.
-* [Accédez à l’outil d’analyse à l’échelle du site](https://experienceleague.adobe.com/fr/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) dans notre guide de l’utilisateur.
+* [Référence des outils de ligne de commande : certificat magento-cloud:add](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) dans notre documentation destinée aux développeurs.
+* [Lancer la liste de contrôle](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist)dans notre documentation destinée aux développeurs.
+* [Accédez à l’outil d’analyse à l’échelle du site](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) dans notre guide de l’utilisateur.

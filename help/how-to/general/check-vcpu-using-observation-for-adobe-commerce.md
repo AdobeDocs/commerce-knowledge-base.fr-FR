@@ -3,7 +3,10 @@ title: Affichage du niveau de processeur virtuel de l’environnement dans votre
 promoted: true
 description: Cet article explique comment vérifier l’allocation de niveau processeur virtuel à l’aide de l’onglet Infra New Relic dans Observation pour Adobe Commerce. L’observation pour Adobe Commerce est une applet de commande New Relic qui indique l’état de votre site Adobe Commerce, les vues actuelles et passées.
 exl-id: a0332e7e-d38d-47d3-b3da-293902f45edc
-source-git-commit: ffb7b597d38eaed4b66e23ea533c275746e7181a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

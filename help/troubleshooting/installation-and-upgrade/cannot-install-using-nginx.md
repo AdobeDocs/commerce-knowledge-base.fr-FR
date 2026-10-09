@@ -1,19 +1,28 @@
 ---
 title: Impossible d’installer à l’aide de nginx
-description: Cet article fournit un correctif pour une installation Adobe Commerce en échec lors de l’utilisation du serveur web nginx.
+description: Cet article fournit un correctif en cas d’échec de l’installation d’Adobe Commerce lors de l’utilisation du serveur web nginx.
 exl-id: 0af90c7e-0733-41c8-b217-9595b133fa95
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '95'
 ht-degree: 0%
-
 ---
-
 # Impossible d’installer à l’aide de nginx
 
-Cet article fournit un correctif pour une installation Adobe Commerce en échec lors de l’utilisation du serveur web nginx.
+Cet article fournit un correctif en cas d’échec de l’installation d’Adobe Commerce lors de l’utilisation du serveur web nginx.
 
 ## Problème
 
@@ -21,7 +30,7 @@ Si vous utilisez le serveur web nginx et que vous tentez d’installer le logici
 
 ## Solution
 
-Vous pouvez confirmer le problème par l’erreur suivante dans le répertoire `var/report` :
+Le problème peut être confirmé par l&#39;erreur suivante dans le répertoire `var/report` :
 
 ```php
 NOTE: You cannot install Adobe Commerce using the Setup Wizard because the Adobe Commerce setup directory cannot be accessed.
@@ -31,4 +40,4 @@ If you are using the sample nginx configuration, please go to http://ce.mtf03.bc
 
 ### Solution
 
-Installez le logiciel Adobe Commerce à l&#39;aide de la [ligne de commande](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/advanced).
+Installez le logiciel Adobe Commerce à l’aide de la [ligne de commande](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced).

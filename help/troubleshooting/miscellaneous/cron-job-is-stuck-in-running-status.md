@@ -1,16 +1,23 @@
 ---
 title: '[!DNL Cron] tâche est bloquée au statut **en cours**'
-description: Cet article fournit des solutions pour les cas où l’exécution des tâches Adobe Commerce n’est pas terminée et  [!DNL cron]  conserver un statut « en cours d’exécution », ce qui empêche l’exécution d [!DNL cron] autres tâches. Cela peut se produire pour de nombreuses raisons, telles que des problèmes réseau, des blocages d’applications, des problèmes de redéploiement.
+description: Cet article fournit des solutions pour les cas où l’exécution des tâches de [!DNL cron] Adobe Commerce ne se termine pas et conserve le statut « en cours », ce qui empêche l’exécution d’autres tâches de [!DNL cron]. Cela peut se produire pour de nombreuses raisons, telles que des problèmes réseau, des blocages d’applications, des problèmes de redéploiement.
 exl-id: 11e01a2b-2fcf-48c2-871c-08f29cd76250
 feature: Configuration
 role: Developer
-source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '429'
 ht-degree: 0%
-
 ---
-
 # [!DNL Cron] tâche est bloquée au statut « en cours »
 
 Cet article fournit des solutions pour les cas où l’exécution des tâches de [!DNL cron] Adobe Commerce ne se termine pas et conserve le statut « en cours », ce qui empêche l’exécution d’autres tâches de [!DNL cron]. Cela peut se produire pour de nombreuses raisons, telles que des problèmes réseau, des blocages d’applications, des problèmes de redéploiement.
@@ -37,7 +44,7 @@ Les symptômes des tâches [!DNL cron] qui doivent être réinitialisées inclue
 
 Pour résoudre ce problème, vous devez réinitialiser la ou les tâches [!DNL cron] à l’aide de la commande `cron:unlock` . Cette commande modifie le statut de la tâche [!DNL cron] dans la base de données, mettant fin à la tâche de force pour permettre à d’autres tâches planifiées de continuer.
 
-1. Ouvrez un terminal et utilisez vos [clés SSH](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour vous connecter à l’environnement affecté.
+1. Ouvrez un terminal et utilisez vos [clés SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour vous connecter à l’environnement affecté.
 1. Obtenez les informations d’identification de la base de données MySQL : `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp`
 1. Connectez-vous à la base de données à l’aide de `mysql` : `mysql -hdatabase.internal -uuser -ppassword main`
 1. Sélectionnez la base de données `main` : `use main`
@@ -47,7 +54,7 @@ Pour résoudre ce problème, vous devez réinitialiser la ou les tâches [!DNL c
 
 ### Solution pour arrêter une seule [!DNL cron] {#solution-stop-a-single-cron}
 
-1. Ouvrez un terminal et utilisez vos [clés SSH](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour vous connecter à l’environnement affecté.
+1. Ouvrez un terminal et utilisez vos [clés SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) pour vous connecter à l’environnement affecté.
 1. Vérifiez les tâches à long terme à l’aide de la commande suivante :
 
    `date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'`

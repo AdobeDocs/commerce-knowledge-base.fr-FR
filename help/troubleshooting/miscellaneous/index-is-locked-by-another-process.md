@@ -4,13 +4,23 @@ description: Cet article traite d’un problème d’indexation courant dans Ado
 exl-id: 542c714c-fad5-4f0e-9757-d90044c36bfc
 feature: Catalog Management, Categories
 role: Developer
-source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
-
 ---
-
 # L&#39;index est verrouillé par un autre processus
 
 Cet article traite d’un problème d’indexation courant dans Adobe Commerce où l’index est verrouillé par un autre processus et ignoré.
@@ -94,13 +104,13 @@ Dans notre base de connaissances du support :
 
 Dans notre guide de l&#39;utilisateur :
 
-* [Gestion des index](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/index-management?itm_source=merchdocs&itm_medium=search_page&itm_campaign=federated_search&itm_term=reindexing)
+* [Gestion des index](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management?itm_source=merchdocs&itm_medium=search_page&itm_campaign=federated_search&itm_term=reindexing)
 
 Dans notre documentation destinée aux développeurs :
 
 * [Présentation de l’indexation](https://developer.adobe.com/commerce/php/development/components/indexing/)
-* [Bonnes pratiques relatives aux indexeurs](https://experienceleague.adobe.com/fr/docs/commerce-operations/performance-best-practices/configuration)
-* [Configuration Et Exécution De Cron](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)
-* [Gestion Des Indexeurs](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/manage-indexers)
+* [Bonnes pratiques relatives aux indexeurs](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration)
+* [Configuration Et Exécution De Cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)
+* [Gestion Des Indexeurs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)
 * [Optimisation de l’indexeur](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/)
 

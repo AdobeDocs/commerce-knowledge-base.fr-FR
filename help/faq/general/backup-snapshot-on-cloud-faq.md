@@ -1,93 +1,102 @@
 ---
 title: 'Sauvegarde (instantané) sur le cloud : FAQ'
-description: This article covers the essentials of backing up your environments with snapshots on Adobe Commerce on cloud infrastructure.
+description: Cet article couvre les principes de base de la sauvegarde de vos environnements avec des instantanés sur Adobe Commerce sur les infrastructures cloud.
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
-source-git-commit: 878a49fd1bbfa98dd506f0e81008ebe3bf7ecaca
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
+subfeature_v2:
+  - id: df5e974b-6742-4873-a687-a6bedaafdaa2
+    internal-label: IaaS
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1173'
 ht-degree: 0%
-
 ---
-
 # Sauvegarde (instantané) sur le cloud : FAQ
 
-This article covers the backing up your environments with snapshots on Adobe Commerce on cloud infrastructure.
+Cet article traite de la sauvegarde de vos environnements avec des instantanés sur Adobe Commerce sur les infrastructures cloud.
 
 ## Produits et versions concernés
 
-* Adobe Commerce on cloud infrastructure 2.4.x
-* Architecture plans:  Starter, Pro Legacy, Pro
+* Adobe Commerce sur l’infrastructure cloud 2.4.x
+* Plans d&#39;architecture : Starter, Pro Legacy, Pro
 
-## Environment snapshot, Pro plan
+## Instantané de l&#39;environnement, Pro plan
 
-### Preparing for an Upgrade
+### Préparation d’une mise à niveau
 
-If you need to back up your database in preparation for an upgrade, you are responsible for creating and validating your own backup before proceeding. Disaster recovery snapshots are intended only for database restoration if the upgrade is unsuccessful, not as a substitute for upgrade preparation backups.
+Si vous devez sauvegarder votre base de données en vue d’une mise à niveau, vous êtes responsable de la création et de la validation de votre propre sauvegarde avant de continuer. Les snapshots de reprise après sinistre sont destinés uniquement à la restauration de la base de données en cas d&#39;échec de la mise à niveau et ne remplacent pas les sauvegardes de préparation de la mise à niveau.
 
-If an error prevents you from creating your own backup, [contact Support](https://experienceleague.adobe.com/home?lang=fr&support-tab=home#support) and include the backup error details in your ticket.
+Si une erreur vous empêche de créer votre propre sauvegarde, [contactez le support technique](https://experienceleague.adobe.com/home?support-tab=home#support) et incluez les détails de l’erreur de sauvegarde dans votre ticket.
 
-Note: A disaster recovery snapshot is a previously captured system recovery point, not a manually created backup for a planned upgrade, and cannot be generated on demand. If a snapshot is requested, the most recent available recovery point is provided, so any changes made after that point may not be recoverable.
+Remarque : un instantané de récupération après sinistre est un point de récupération système capturé précédemment, et non une sauvegarde créée manuellement pour une mise à niveau planifiée. Il ne peut pas être généré à la demande. Si un instantané est demandé, le point de récupération disponible le plus récent est fourni, de sorte que toute modification apportée après ce point peut ne pas être récupérable.
 
-### Staging and Production environments
+### Environnements d’évaluation et de production
 
-* Manual snapshots are not available for Staging and Production environments on Pro plan.
-* Automatic snapshots are created **regardless of the live state** of your site (snapshots are also created for sites that have not been launched yet). Automatic backups are not publicly accessible because they are stored in a separate system.
-You can [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) to request a special backup or to restore from a specific backup providing the date, time, and timezone in the ticket. Once the Infrastructure team has provided the snapshot, to determine the timestamp when it was originally taken, run the following command from the location where the snapshot has been placed:
+* Les instantanés manuels ne sont pas disponibles pour les environnements d&#39;évaluation et de production sur Pro Plan.
+* Les instantanés automatiques sont créés **quel que soit l’état d’activation** de votre site (les instantanés sont également créés pour les sites qui n’ont pas encore été lancés). Les sauvegardes automatiques ne sont pas accessibles au public, car elles sont stockées dans un système distinct.
+Vous pouvez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) pour demander une sauvegarde spéciale ou pour restaurer à partir d’une sauvegarde spécifique en indiquant la date, l’heure et le fuseau horaire dans le ticket. Une fois que l’équipe d’infrastructure a fourni l’instantané, pour déterminer la date et l’heure de la prise initiale, exécutez la commande suivante à partir de l’emplacement où l’instantané a été placé :
 
   `cat /mnt/recovery/vol-<volume_id>/snap.time`
 
-  Example output:
+  Exemple de sortie :
 
   <strong>2025-01-13 08:42:17.123000+00:00</strong>
 
-* The mount will be available for 7 days and the retention period cannot be extended. If you need to preserve a snapshot beyond this time, you must copy it to a different folder or external server within that timeframe
-* Support does not generate any manual snapshots on demand. Also, note that support does not perform the rollback or restoration of the database for you - they retrieve the snapshot, but you must restore the database yourself.
-* Automatic snapshots are created **regardless of the live state** of your site (snapshots are also created for sites that have not been launched yet). Automatic backups are stored in a separate system and are not accessible to the public.
-You can [submit an Adobe Commerce Support ticket](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) to request a special backup or to restore from a specific backup providing the date, time, and timezone in the ticket. Support does not generate any manual snapshots on demand.
-Also, note that support does not perform the rollback or restoration of the database for you - they retrieve the snapshot, but you must restore the database yourself.
-* The backups are created using the **encrypted Amazon Web Services Elastic Block Store (AWS EBS) snapshots**.
-* Environment snapshots include your full system (file system and the database).
-* Retention time for automatic snapshots **is different** and follows [the schedule](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery).
+* Le montage sera disponible pendant 7 jours et la période de conservation ne peut pas être prolongée. Si vous devez conserver un instantané au-delà de cette période, vous devez le copier dans un autre dossier ou sur un serveur externe au cours de cette période
+* La prise en charge ne génère pas d’instantanés manuels à la demande. Notez également que la prise en charge n’effectue pas la restauration de la base de données à votre place : l’instantané est récupéré, mais vous devez restaurer la base de données vous-même.
+* Les instantanés automatiques sont créés **quel que soit l’état d’activation** de votre site (les instantanés sont également créés pour les sites qui n’ont pas encore été lancés). Les sauvegardes automatiques sont stockées dans un système distinct et ne sont pas accessibles au public.
+Vous pouvez [envoyer un ticket d’assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) pour demander une sauvegarde spéciale ou pour restaurer à partir d’une sauvegarde spécifique en indiquant la date, l’heure et le fuseau horaire dans le ticket. La prise en charge ne génère pas d’instantanés manuels à la demande.
+Notez également que la prise en charge n’effectue pas la restauration de la base de données à votre place : l’instantané est récupéré, mais vous devez restaurer la base de données vous-même.
+* Les sauvegardes sont créées à l’aide des instantanés **encrypted Amazon Web Services Elastic Block Store (AWS EBS)**.
+* Les instantanés d’environnement incluent l’ensemble du système (système de fichiers et base de données).
+* La durée de conservation des instantanés automatiques **est différente** et suit [le planning](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery).
 
 >[!NOTE]
 >
->The Cloud Console always shows [!UICONTROL No backup] in Staging and Production environments. You can only take backups from the integration environment. Select **[!UICONTROL Backup]** on the ellipsis drop down menu.
+>La console cloud affiche toujours les [!UICONTROL No backup] dans les environnements d’évaluation et de production. Vous pouvez uniquement effectuer des sauvegardes à partir de l’environnement d’intégration. Sélectionnez **[!UICONTROL Backup]** dans le menu déroulant représentant des points de suspension.
 >
 >![cloud_console_backup.png](assets/cloud_console_backup.png)
 
-### Integration (Development) environment
+### Environnement d’intégration (développement)
 
-* Your [Integration environment](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-27242) is **not being backed up automatically**, but you may create snapshots **manually**.
-* You can create manual snapshots for Integration environments on non-live stores.
-* You may have **multiple snapshots** that have been triggered manually.
-* A manually triggered snapshot is stored for 7 days. If you need to preserve a snapshot beyond the retention period, copy it to a different folder or an external server within that timeframe. To restore the snapshot at a later date, follow the same process described in [Import the database dump directly from the server](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+* Votre [environnement d’intégration](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) n’est **sauvegardé automatiquement**, mais vous pouvez créer des instantanés **manuellement**.
+* Vous pouvez créer des instantanés manuels pour les environnements d’intégration sur des magasins non actifs.
+* Vous disposez peut-être de **instantanés multiples** qui ont été déclenchés manuellement.
+* Un instantané déclenché manuellement est stocké pendant 7 jours. Si vous devez conserver un instantané au-delà de la période de conservation, copiez-le dans un autre dossier ou sur un serveur externe au cours de cette période. Pour restaurer l&#39;instantané à une date ultérieure, procédez de la même manière que dans [Importer l&#39;image mémoire de la base de données directement depuis le serveur](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
-**Related articles in our developer documentation:**
+**Articles connexes dans notre documentation destinée aux développeurs :**
 
-* [Backup and disaster recovery](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
-* [Create a snapshot](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
+* [Sauvegarde et reprise après sinistre](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Création d’un instantané](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
 
-## Environment snapshot, Starter plan
+## Instantané d’environnement, Plan de démarrage
 
-* All types of environments (Integration, Staging, Production) **are not being backed up automatically**, but you may create snapshots manually.
-* You may create manual snapshots **regardless of the live state** of your site (snapshots also created for sites that have not been launched yet).
-* A manually triggered snapshot is stored for **7 days**. If you need to preserve a snapshot beyond the retention period, copy it to a different folder or an external server within that timeframe. To restore the snapshot at a later date, follow the same process described in [Import the database dump directly from the server](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+* Tous les types d’environnements (intégration, évaluation, production) **ne sont pas sauvegardés automatiquement** mais vous pouvez créer des instantanés manuellement.
+* Vous pouvez créer des instantanés manuels **quel que soit l’état actif** de votre site (des instantanés sont également créés pour les sites qui n’ont pas encore été lancés).
+* Un instantané déclenché manuellement est stocké pendant **7 jours**. Si vous devez conserver un instantané au-delà de la période de conservation, copiez-le dans un autre dossier ou sur un serveur externe au cours de cette période. Pour restaurer l&#39;instantané à une date ultérieure, procédez de la même manière que dans [Importer l&#39;image mémoire de la base de données directement depuis le serveur](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
-## Restore an environment snapshot
+## Restaurer un instantané d’environnement
 
-To restore an existing snapshot (on the supported environment: Integration, Staging, Production on Starter plan or Integration on Pro plan), follow the steps in [Backup management: Restore a manual backup](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) in our Commerce on Cloud Infrastructure Guide.
+Pour restaurer un snapshot existant (sur l’environnement pris en charge : Intégration, Staging, Production sur le plan de démarrage ou Intégration sur le plan Pro), suivez les étapes décrites dans la section [ Gestion des sauvegardes : Restaurer une sauvegarde manuelle ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) dans notre Guide de Commerce sur les infrastructures cloud.
 
-## Database (DB) backup
+## Sauvegarde de la base de données (BD)
 
-DB backup is a part of a Cloud snapshot:
+La sauvegarde de la base de données fait partie d’un instantané du cloud :
 
-A snapshot is a complete backup of an environment that includes all persistent data from all running services (for example, **your MySQL database**, Redis, and so on) and any files stored on the mounted volumes.
+Un instantané est une sauvegarde complète d’un environnement qui comprend toutes les données persistantes de tous les services en cours d’exécution (par exemple, **votre base de données MySQL**, Redis, etc.) et tous les fichiers stockés sur les volumes montés.
 
 >[!NOTE]
 >
->The mounted volumes only include/refer to the [writable mounts](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) and will not include all of your `/app` directory. As for the other files, they are created/generated by [the build and deployment process](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), and you will also have to check out the remaining files from your Git repository.
+>Les volumes montés ne comprennent/ne font référence qu&#39;aux [montages inscriptibles](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) et n&#39;incluent pas l&#39;ensemble de votre répertoire `/app`. Quant aux autres fichiers, ils sont créés/générés par [le processus de création et de déploiement](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) et vous devrez également extraire les fichiers restants de votre référentiel Git.
 
-[Snapshots and backup management](https://experienceleague.adobe.com/fr/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) in our developer documentation.
+[Snapshots et gestion des sauvegardes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) dans notre documentation destinée aux développeurs.
 
-Envoyez une [demande d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) pour un instantané de base de données à partir de Pro Production and Staging uniquement si vous avez besoin de la base de données à un moment donné. Si vous avez uniquement besoin d’une sauvegarde à jour de votre base de données (sur n’importe quel environnement), consultez l’article de la base de connaissances : [Générer des vidages de base de données sur le cloud](/help/how-to/general/create-database-dump-on-cloud.md).
+Envoyez une [demande d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) pour un instantané de base de données à partir de Pro Production and Staging uniquement si vous avez besoin de la base de données à un moment donné. Si vous avez uniquement besoin d’une sauvegarde à jour de votre base de données (sur n’importe quel environnement), consultez l’article de la base de connaissances : [Générer des vidages de base de données sur le cloud](/help/how-to/general/create-database-dump-on-cloud.md).

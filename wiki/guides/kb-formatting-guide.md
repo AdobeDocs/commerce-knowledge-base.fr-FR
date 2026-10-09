@@ -1,9 +1,13 @@
 ---
-source-git-commit: c587986edc925c49bf95ab935888b59f265371af
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
 ---
+
 # Guide de formatage des Ko
 
 ## Auteur en Markdown
@@ -168,8 +172,8 @@ Si vous devez référencer un élément autre que l’en-tête, utilisez HTML po
 
 ### Liens relatifs et liens vers d’autres articles
 
-N’utilisez pas de liens relatifs pour référencer nos articles de la base de connaissances d’assistance. Ces liens ne fonctionneront pas lorsque votre article sera publié dans le Centre d’aide d’[&#128279;](https://support.magento.com/hc/en-us).
-Veuillez utiliser des liens hypertexte complets à partir du Centre d&#39;aide [&#128279;](https://support.magento.com/hc/en-us).
+N’utilisez pas de liens relatifs pour référencer nos articles de la base de connaissances d’assistance. Ces liens ne fonctionneront pas lorsque votre article sera publié dans le Centre d’aide d’[](https://support.magento.com/hc/en-us).
+Veuillez utiliser des liens hypertexte complets à partir du Centre d&#39;aide [](https://support.magento.com/hc/en-us).
 
 
 ## Tableaux

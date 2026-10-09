@@ -2,13 +2,14 @@
 title: '[!UICONTROL Admin] connexion ne fonctionne pas - taille maximale de session autorisée dépassée'
 description: Résolvez le problème lorsque vous essayez de vous connecter à votre panneau [!UICONTROL Admin] et que le formulaire s’actualise et que vous ne parvenez pas à vous connecter.
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
-source-git-commit: fe4a48581bdfe24da5082b69fb26a8032bd77334
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '413'
 ht-degree: 0%
-
 ---
-
 # [!UICONTROL Admin] connexion ne fonctionne pas - taille maximale de session autorisée dépassée
 
 Cet article fournit un correctif pour le moment où vous essayez de vous connecter à votre panneau [!UICONTROL Admin], mais le formulaire s’actualise et vous ne parvenez pas à vous connecter, ou vous effectuez certaines actions dans le panneau [!UICONTROL Admin] et vous vous déconnectez automatiquement.
@@ -57,6 +58,6 @@ Vous pouvez définir sur supérieur à *500000* en fonction de la taille maximal
 
 ## Lectures connexes
 
-* [Taille de la session](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/security/security-session-management#admin-sessions) dans le guide des systèmes d’administration
-* [Mode de fonctionnement](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/cli/set-mode) dans le Guide de configuration
-* [Connexions sécurisées](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/develop/secure-connections) dans le Guide de Commerce sur les infrastructures cloud
+* [Taille de la session](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) dans le guide des systèmes d’administration
+* [Mode de fonctionnement](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) dans le Guide de configuration
+* [Connexions sécurisées](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) dans le Guide de Commerce sur les infrastructures cloud

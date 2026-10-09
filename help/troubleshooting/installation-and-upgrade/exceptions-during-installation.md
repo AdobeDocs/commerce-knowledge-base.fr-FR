@@ -1,19 +1,28 @@
 ---
 title: Exceptions lors de l’installation
-description: Cet article fournit une solution possible aux problèmes liés à l’installation d’Adobe Commerce à l’aide de l’assistant de configuration web.
+description: Cet article fournit une solution possible aux problèmes d’installation d’Adobe Commerce à l’aide de l’assistant Configuration Web.
 exl-id: f9b8ba2d-c8bd-4020-9e95-7194cc51317c
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '93'
 ht-degree: 0%
-
 ---
-
 # Exceptions lors de l’installation
 
-Cet article fournit une solution possible aux problèmes liés à l’installation d’Adobe Commerce à l’aide de l’assistant de configuration web.
+Cet article fournit une solution possible aux problèmes d’installation d’Adobe Commerce à l’aide de l’assistant Configuration Web.
 
 ## Produits et versions concernés
 
@@ -22,7 +31,7 @@ Cet article fournit une solution possible aux problèmes liés à l’installati
 
 ## Problème
 
-Les exceptions s’affichent lors de l’installation. Les utilisateurs ont signalé plusieurs exceptions, notamment :
+Les exceptions s’affichent lors de l’installation. Les utilisateurs ont signalé diverses exceptions, notamment :
 
 ```bash
 Module 'Magento_Indexer':
@@ -43,10 +52,10 @@ Object(Magento\Indexer\Model\Resource\Indexer\State\Collection), 'indexer_config
 
 ## Solution
 
-Effacez les répertoires `<magento_root>/generated/code` et autres sous `var` et `generated` comme suit :
+Effacez le `<magento_root>/generated/code` et les autres répertoires sous `var` et `generated` comme suit :
 
 ```bash
 rm -rf <magento_root>/generated/code/* <magento_root>/generated/metadata/* <magento_root>/var/cache/*
 ```
 
-Après avoir effacé les répertoires, essayez à nouveau l’installation.
+Après avoir effacé les répertoires, relancez l’installation.

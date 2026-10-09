@@ -3,7 +3,17 @@ title: Puis-je installer des applications tierces sur mon instance cloud ?
 description: Non. L’installation d’applications tierces (telles que WordPress ou Drupal) sur Adobe Commerce sur des serveurs d’infrastructure cloud n’est pas autorisée. Vous devez héberger ces applications sur des serveurs externes.
 exl-id: 3abbe282-2a14-4597-8af8-da1edcbece30
 feature: Cloud, Compliance, Install
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 0%

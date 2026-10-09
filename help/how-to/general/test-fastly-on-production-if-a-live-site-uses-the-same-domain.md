@@ -3,13 +3,20 @@ title: Test rapide en exploitation si un site actif utilise le même domaine
 description: Si un site actif est opérationnel sur votre domaine de production (« exemple.com ») et que vous devez tester votre nouveau magasin sur Adobe Commerce dans l’environnement de production de l’infrastructure cloud avec le réseau CDN Fastly activé, nous vous recommandons d’utiliser le sous-domaine (tel que « prod.exemple.com »), l’ayant précédemment ajouté à Fastly, pour toute activité de test préalable au lancement. Cet article en détaille les détails et fournit des liens utiles vers les ressources de documentation Adobe Commerce associées.
 exl-id: bc9d11c8-ce47-461d-b5b8-c03494bc4ceb
 feature: Cache
-source-git-commit: 6651963ea5843283dee40a8ce58280baac79053a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '640'
 ht-degree: 0%
-
 ---
-
 # Test rapide en exploitation si un site actif utilise le même domaine
 
 Si un site actif est opérationnel sur votre domaine de production (`example.com`) et que vous devez tester votre nouveau magasin sur Adobe Commerce dans l’environnement de production de l’infrastructure cloud avec le réseau CDN Fastly activé, nous vous recommandons d’utiliser le sous-domaine (tel que `prod.example.com`), l’avoir précédemment ajouté à Fastly, pour toute activité de test préalable au lancement. Cet article en détaille les détails et fournit des liens utiles vers les ressources de documentation Adobe Commerce associées.
@@ -34,13 +41,13 @@ Lors de la planification de votre projet Adobe Commerce sur l’infrastructure c
 
 Pour traiter le sous-domaine dans votre projet d’infrastructure cloud Adobe Commerce, procédez comme suit :
 
-* [Envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) en demandant d’ajouter le sous-domaine à la configuration du service Fastly/Nginx (pour l’architecture de plan Pro de l’infrastructure cloud d’Adobe Commerce).
+* [Envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) en demandant d’ajouter le sous-domaine à la configuration du service Fastly/Nginx (pour l’architecture de plan Pro de l’infrastructure cloud d’Adobe Commerce).
 * Configurez les paramètres DNS correspondants de votre côté.
 
 Après avoir suivi les étapes de configuration du sous-domaine, vous devez également suivre les étapes suivantes pour valider votre domaine de production pour le certificat SSL :
 
 * Chargez l’enregistrement TXT du DNS pour la validation SSL de votre domaine de production.
-* [Envoyez un ticket d’assistance](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) demandant de valider le domaine de production pour le certificat SSL.
+* [Envoyez un ticket d’assistance](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) demandant de valider le domaine de production pour le certificat SSL.
 
 L’utilisation du sous-domaine vous permet d’effectuer un « lancement logiciel » de votre magasin à l’avenir, car ce lancement nécessite uniquement la mise à jour des paramètres DNS correspondants.
 
@@ -48,10 +55,10 @@ L’utilisation du sous-domaine vous permet d’effectuer un « lancement logici
 
 Dans notre base de connaissances du support :
 
-* [Configurer les paramètres DNS Fastly sur les environnements d’évaluation et de production](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html?lang=fr)
-* [Bloqueurs potentiels à lancer sur Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html?lang=fr)
+* [Configurer les paramètres DNS Fastly sur les environnements d’évaluation et de production](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html)
+* [Bloqueurs potentiels à lancer sur Adobe Commerce sur les infrastructures cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html)
 
 Dans notre documentation destinée aux développeurs :
 
-* [Aperçu rapide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=fr)
-* [Liste de contrôle de mise en production : configurations DNS pour Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=fr)
+* [Aperçu rapide](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
+* [Liste de contrôle de mise en production : configurations DNS pour Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)

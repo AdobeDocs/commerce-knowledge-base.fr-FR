@@ -4,13 +4,31 @@ description: Cet article fournit des recommandations sur la manière de rendre v
 exl-id: 144df36b-6305-4e57-b813-46bbb0ddedda
 feature: Cache, Categories, Cloud, Paas
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 0%
-
 ---
-
 # Site cloud lent
 
 Cet article fournit des recommandations sur la manière de rendre votre site Adobe Commerce sur l’infrastructure cloud plus performant en cas de forte charge de trafic et sur la manière de réduire cette charge.
@@ -65,7 +83,7 @@ Si le taux d’accès à la page d’index est faible, vous pouvez le corriger e
 
 Pour vérifier le taux d’accès global au cache :
 
-1. [Obtenez des informations d’identification Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration) pour votre environnement Adobe Commerce sur infrastructure cloud.
+1. [Obtenez des informations d’identification Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration) pour votre environnement Adobe Commerce sur infrastructure cloud.
 1. Exécutez la commande cURL Linux/macOS suivante pour vérifier le taux d’accès à votre site au cours des 30 dernières minutes, en remplaçant et par les valeurs de vos informations d’identification Fastly :
 
    `curl -H "Fastly-Key: " https://api.fastly.com/stats/service//field/hit_ratio?by=minute | json_pp`
@@ -82,8 +100,8 @@ Un taux d’accès inférieur à 0,85 ou 85 % peut indiquer un problème de conf
 
 1. À l’aide des statistiques de taux d’accès horaire et quotidien, déterminez à quel moment le taux d’accès a commencé à diminuer. Si le taux d’accès baisse soudainement au moment où vous déployez une modification sur votre site, envisagez de restaurer la modification jusqu’à ce que le chargement du site diminue.
 1. Vérifiez la configuration dans l’administration Commerce, sous **Magasins** > **Configuration** > Avancé > **Système** > **Cache de page complet**. Assurez-vous que la valeur **TTL pour le contenu public** n’est pas définie sur une valeur trop basse.
-1. Vérifiez que vous avez [téléchargé les fragments de code VCL](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets).
-1. Si vous utilisez des fragments de code VCL personnalisés, déboguez-les pour une utilisation correcte des actions « pass » ou « pipe » : ils doivent être utilisés avec précaution et au minimum utilisés avec une condition d&#39;un certain type. Pour plus de conseils, consultez [Fragments de code VCL Fastly personnalisés](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) dans notre documentation destinée aux développeurs.
+1. Vérifiez que vous avez [téléchargé les fragments de code VCL](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets).
+1. Si vous utilisez des fragments de code VCL personnalisés, déboguez-les pour une utilisation correcte des actions « pass » ou « pipe » : ils doivent être utilisés avec précaution et au minimum utilisés avec une condition d&#39;un certain type. Pour plus de conseils, consultez [Fragments de code VCL Fastly personnalisés](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) dans notre documentation destinée aux développeurs.
 
 ### Étape 3 : identifier les sites web à l’origine de la charge élevée du serveur
 
@@ -131,7 +149,7 @@ Après avoir identifié les adresses IP qui provoquent une charge importante du 
 
 Si vous ne pouvez pas accéder à votre administrateur en raison d’une charge importante, vous pouvez utiliser l’API Fastly pour configurer les règles de blocage :
 
-1. Créez la liste de contrôle d’accès comme décrit dans le document Fastly [&#x200B; Utilisation des listes de contrôle d’accès à l’aide de l’API &#x200B;](https://docs.fastly.com/guides/access-control-lists/working-with-acls-using-the-api) .
+1. Créez la liste de contrôle d’accès comme décrit dans le document Fastly [ Utilisation des listes de contrôle d’accès à l’aide de l’API ](https://docs.fastly.com/guides/access-control-lists/working-with-acls-using-the-api) .
 1. Dans la section `recv`, créez un fragment de code VCL avec le contenu suivant, après avoir remplacé ACL\_NAME\_GOES\_HERE par le nom de la liste de contrôle d’accès créée à l’étape précédente :
 
    ```

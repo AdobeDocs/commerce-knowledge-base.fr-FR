@@ -2,7 +2,10 @@
 title: Les index de tracking ElasticSuite provoquent des problèmes avec Elasticsearch
 description: Cet article aborde le problème des problèmes de mémoire d’Elasticsearch causés par les index de tracking générés par le plug-in ElasticSuite.
 exl-id: 67bfd06a-c801-4306-8510-a84a6fe5351a
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -66,5 +69,5 @@ Créez une tâche cron pour supprimer les index de tracking. Cette commande supp
 
 Si vous souhaitez supprimer des index à une fréquence définie, créez une tâche cron en vous référant aux articles suivants de notre documentation destinée aux développeurs :
 
-* [Configuration d’une tâche cron personnalisée et d’un groupe cron (tutoriel)](https://experienceleague.adobe.com/fr/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
-* [Configurer les tâches cron](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)
+* [Configuration d’une tâche cron personnalisée et d’un groupe cron (tutoriel)](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
+* [Configurer les tâches cron](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)

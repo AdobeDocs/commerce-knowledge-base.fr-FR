@@ -4,13 +4,22 @@ description: Cet article fournit une solution aux problèmes de déploiement d�
 exl-id: e8d72ebe-453f-4d18-a25e-c76e685aa667
 feature: Deploy, Roles/Permissions
 role: Developer
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
-
 ---
-
 # Problèmes de déploiement liés aux autorisations de compte et aux clés d’accès
 
 Cet article fournit une solution aux problèmes de déploiement d’Adobe Commerce sur l’infrastructure cloud causés par un conflit de propriété de la clé d’accès.
@@ -50,11 +59,11 @@ Si un déploiement a échoué après une modification apportée au contact de Pr
 
 ### Comment désactiver la clé d’accès
 
-Si vous n&#39;avez pas accès au compte [&#128279;](https://marketplace.magento.com/) associé à l&#39;ancienne clé, [contactez l&#39;assistance Adobe Commerce](https://experienceleague.adobe.com/fr/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour que la clé soit désactivée.
+Si vous n&#39;avez pas accès au compte [](https://marketplace.magento.com/) associé à l&#39;ancienne clé, [contactez l&#39;assistance Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) pour que la clé soit désactivée.
 
 Si vous avez accès au compte Marketplace associé à l’ancienne clé, procédez comme suit pour désactiver la clé :
 
-1. Connectez-vous à [&#128279;](https://marketplace.magento.com/) à l&#39;aide des informations d&#39;identification de l&#39;ancien compte.
+1. Connectez-vous à [](https://marketplace.magento.com/) à l&#39;aide des informations d&#39;identification de l&#39;ancien compte.
 1. Cliquez sur le nom du compte dans le coin supérieur droit de la page et sélectionnez **Mon profil**.
 1. Cliquez sur **Clés d’accès** dans l’onglet Marketplace.
 
@@ -64,4 +73,4 @@ Si vous avez accès au compte Marketplace associé à l’ancienne clé, procéd
 
 ## Lecture connexe
 
-* [Obtenez vos clés d’authentification](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) dans notre documentation destinée aux développeurs.
+* [Obtenez vos clés d’authentification](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) dans notre documentation destinée aux développeurs.

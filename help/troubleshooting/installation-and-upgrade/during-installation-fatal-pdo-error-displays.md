@@ -1,19 +1,28 @@
 ---
-title: Lors de l’installation, une erreur PDO irrécupérable s’affiche.
-description: Cet article fournit un correctif pour une erreur PDO fatale d’exception lors de l’installation.
+title: Lors de l’installation, une erreur fatale de PDO s’affiche
+description: Cet article fournit un correctif pour une exception d’erreur fatale de PDO lors de l’installation.
 exl-id: d69908f0-71c9-48de-9369-6ada22f2b393
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '60'
 ht-degree: 0%
-
 ---
+# Lors de l’installation, une erreur fatale de PDO s’affiche
 
-# Lors de l’installation, une erreur PDO irrécupérable s’affiche.
-
-Cet article fournit un correctif pour une erreur PDO fatale d’exception lors de l’installation.
+Cet article fournit un correctif pour une exception d’erreur fatale de PDO lors de l’installation.
 
 ## Problème
 
@@ -23,4 +32,4 @@ PHP Fatal error:  Class 'PDO' not found in /var/www/html/magento2/setup/module/M
 
 ## Solution
 
-Assurez-vous d’installer toutes les [extensions PHP requises](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/php-settings).
+Veillez à installer toutes les [extensions PHP requises](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings).

@@ -1,19 +1,28 @@
 ---
 title: Utilisation des exportations de données pour identifier les incohérences
-description: Cet article fournit des solutions pour résoudre les problèmes d’incohérence dans vos données Magento BI. Les exportations de données sont un outil utile pour comparer vos données Magento BI à vos données sources afin d’identifier les incohérences de données dans vos rapports, en particulier si la [liste de contrôle pour le diagnostic des incohérences de données](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-41479) ne vous a pas aidé à identifier le problème. Cet article vous présente un exemple réel de la manière dont les écarts de données peuvent être identifiés à l’aide des exportations de données.
+description: Cet article fournit des solutions pour résoudre les problèmes d’incohérence dans vos données Magento BI. Les exportations de données sont un outil utile pour comparer vos données Magento BI à vos données sources afin d’identifier les incohérences de données dans vos rapports, en particulier si la [liste de contrôle pour le diagnostic des incohérences de données](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479) ne vous a pas aidé à identifier le problème. Cet article vous présente un exemple réel de la manière dont les écarts de données peuvent être identifiés à l’aide des exportations de données.
 exl-id: b42d585c-ad8c-4685-9ad4-a13686566f18
 feature: Commerce Intelligence, Data Import/Export
 role: Developer
-source-git-commit: 3d73611b812833820eda5b906eb700c89f50cbbe
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3cd14413-6539-5c64-b063-fdcabf03abff
+    internal-label: Commerce Intelligence
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '1389'
 ht-degree: 0%
-
 ---
-
 # Utilisation des exportations de données pour identifier les incohérences
 
-Cet article fournit des solutions pour résoudre les problèmes d’incohérence dans vos données Magento BI. Les exportations de données sont un outil utile pour comparer vos données Magento BI à vos données sources afin d’identifier les incohérences de données dans vos rapports, en particulier si la [liste de contrôle pour le diagnostic des incohérences de données](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-41479) ne vous a pas aidé à identifier le problème. Cet article vous présente un exemple réel de la manière dont les écarts de données peuvent être identifiés à l’aide des exportations de données.
+Cet article fournit des solutions pour résoudre les problèmes d’incohérence dans vos données Magento BI. Les exportations de données sont un outil utile pour comparer vos données Magento BI à vos données sources afin d’identifier les incohérences de données dans vos rapports, en particulier si la [liste de contrôle pour le diagnostic des incohérences de données](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479) ne vous a pas aidé à identifier le problème. Cet article vous présente un exemple réel de la manière dont les écarts de données peuvent être identifiés à l’aide des exportations de données.
 
 Prenons cette analyse, par exemple :
 
@@ -41,7 +50,7 @@ Lorsque le bouton Télécharger s’affiche dans la fenêtre Exportations de don
 
 ![](assets/Export_Discrepancies_6.png)
 
-À ce stade, nous devons rassembler toutes les données dans une seule feuille pour identifier le problème. Nous importerons le fichier CSV (l’exportation à partir de Magento BI) dans une autre feuille du fichier Excel contenant nos données sources.
+À ce stade, nous devons rassembler toutes les données dans une seule feuille pour identifier le problème. Nous allons importer le fichier CSV (l’exportation à partir de Magento BI) dans une autre feuille du fichier Excel contenant nos données sources.
 
 ## Identifier le problème {#pinpoint}
 
@@ -51,7 +60,7 @@ Maintenant que toutes les données se trouvent au même endroit, nous pouvons ch
 
 Si les deux systèmes ont le même nombre de lignes et que la mesure **Chiffre d’affaires** ne correspond pas aux données source, la valeur de la **commande\_total** doit être désactivée quelque part. Il est possible que le champ **order\_total** ait été mis à jour dans votre base de données source et que Magento BI ne récupère pas ces modifications.
 
-Pour le confirmer, vérifiez si la colonne **order\_total** est en cours de nouvelle vérification ou non. Accédez au gestionnaire Data Warehouse et cliquez sur le tableau **`orders`** . La [fréquence de revérification](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html?lang=fr) répertoriée dans la colonne « Modifications » s’affiche. Le champ **order\_total** doit être défini pour une nouvelle vérification aussi souvent que prévu ; si ce n’est pas le cas, continuez et définissez-le à la fréquence de nouvelle vérification de votre choix.
+Pour le confirmer, vérifiez si la colonne **order\_total** est en cours de nouvelle vérification ou non. Accédez au gestionnaire Data Warehouse et cliquez sur le tableau **`orders`** . La [fréquence de revérification](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html) répertoriée dans la colonne « Modifications » s’affiche. Le champ **order\_total** doit être défini pour une nouvelle vérification aussi souvent que prévu ; si ce n’est pas le cas, continuez et définissez-le à la fréquence de nouvelle vérification de votre choix.
 
 ### ![](assets/Export_Discrepancies_4.gif)
 
@@ -59,17 +68,17 @@ Si la fréquence de revérification est déjà définie correctement, quelque ch
 
 ## La base de données source contient PLUS de lignes que Magento BI {#morerows}
 
-Si la base de données source comporte plus de lignes que Magento BI et que l’écart est supérieur au nombre de commandes que vous pouvez vous attendre à recevoir pendant la durée d’un cycle de mise à jour, un problème de connexion peut se produire. Cela signifie que Magento BI n’est pas en mesure d’extraire de nouvelles données de la base de données source, ce qui peut se produire pour plusieurs raisons.
+Si la base de données source contient plus de lignes que Magento BI et que l’écart est supérieur au nombre de commandes attendues pendant la durée d’un cycle de mise à jour, un problème de connexion peut se produire. Cela signifie que Magento BI n’est pas en mesure d’extraire de nouvelles données de la base de données source, ce qui peut se produire pour plusieurs raisons.
 
 Accédez à la page Connexions et jetez un coup d’œil au statut de la source de données contenant la table `order` :
 
 1. **Si le statut est Réauthentification** , la connexion n’utilise pas les informations d’identification correctes. Cliquez dans la connexion, saisissez les informations d’identification correctes, puis réessayez.
-1. **Si le statut est En échec** , la connexion peut ne pas être correctement configurée côté serveur. Les échecs de connexion sont généralement dus à un nom d&#39;hôte incorrect ou au fait que le serveur cible n&#39;accepte pas les connexions sur le port spécifié.Cliquez dans la connexion et vérifiez à nouveau l’orthographe du nom d’hôte et que le port correct est saisi. Côté serveur, assurez-vous que le port peut accepter des connexions et que votre pare-feu dispose de l’adresse IP Magento BI (54.88.76.97/32) autorisée. **Si la connexion continue d’échouer** , reportez-vous à la [section Contacter l’assistance](#support) à la fin de cet article pour connaître les étapes suivantes.
+1. **Si le statut est En échec** , la connexion peut ne pas être correctement configurée côté serveur. Les échecs de connexion sont généralement dus à un nom d&#39;hôte incorrect ou au fait que le serveur cible n&#39;accepte pas les connexions sur le port spécifié.Cliquez dans la connexion et vérifiez à nouveau l’orthographe du nom d’hôte et que le port correct est saisi. Côté serveur, assurez-vous que le port peut accepter des connexions et que votre pare-feu dispose de l’adresse IP Magento BI (54.88.76.97/32) comme autorisé. **Si la connexion continue d’échouer** , reportez-vous à la [section Contacter l’assistance](#support) à la fin de cet article pour connaître les étapes suivantes.
 1. **Si l’état est Réussi** , alors la connexion n’est pas le problème et la prise en charge de RJ doit être impliquée. Reportez-vous à la section [Contacter l’assistance](#support) à la fin de cet article pour connaître les étapes suivantes.
 
 ## La base de données source contient MOINS de lignes que Magento BI {#lessrows}
 
-Si la base de données source comporte moins de lignes que Magento BI, il est possible que des lignes soient supprimées de la base de données source et que Magento BI ne récupère pas ces suppressions. **&#x200B; [la suppression de données](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html?lang=fr) peut entraîner des incohérences, des temps de mise à jour plus longs et un grand nombre de problèmes logistiques** . Nous vous recommandons donc vivement de ne jamais supprimer de données, sauf si elles sont vraiment nécessaires.
+Si la base de données source comporte moins de lignes que Magento BI, il est possible que des lignes soient supprimées de la base de données source et Magento BI ne récupère pas ces suppressions. ** [la suppression de données](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) peut entraîner des incohérences, des temps de mise à jour plus longs et un grand nombre de problèmes logistiques** . Nous vous recommandons donc vivement de ne jamais supprimer de données, sauf si elles sont vraiment nécessaires.
 
 Toutefois, si des lignes sont supprimées du tableau, examinez la fréquence de vérification à nouveau sur la clé primaire. La revérification de la clé primaire signifie que la table sera vérifiée pour les lignes supprimées.
 
@@ -83,13 +92,13 @@ Si la clé primaire est déjà définie pour être vérifiée à nouveau ou si d
 
 Si vous ne parvenez pas à localiser la source du problème, vous devrez effectuer une boucle dans le support RJ. Avant de soumettre un ticket, procédez comme suit :
 
-* **Si votre base de données source et Magento BI ont le même nombre de lignes** et que les fréquences de vérification sont correctement définies, effectuez une RECHERCHE dans votre feuille de calcul **pour identifier les valeurs order\_id ayant une valeur order\_total différente entre Magento BI et votre base de données source.** Incluez ces valeurs lors de l’envoi du ticket.
-* **Si votre base de données source comporte PLUS de lignes que Magento BI** et que la connexion est indiquée comme réussie ou qu’elle continue d’échouer, nous devrons connaître le nom de la connexion et le message d’erreur que vous voyez, le cas échéant.
-* **Si votre base de données source comporte MOINS de lignes que Magento BI,** les lignes ne sont pas supprimées de la table et que les fréquences de vérification sont correctement définies, effectuez une recherche dans votre feuille de calcul **pour identifier les valeurs order\_id qui se trouvent dans Magento BI** mais pas dans votre base de données source. Incluez ces valeurs lors de l’envoi du ticket.
+* **Si votre base de données source et Magento BI ont le même nombre de lignes** et que les fréquences de revérification sont correctement définies, effectuez une RECHERCHE dans votre feuille de calcul **pour identifier les valeurs order\_id ayant une valeur order\_total différente entre Magento BI et votre base de données source.** Incluez ces valeurs lors de l’envoi du ticket.
+* **Si votre base de données source comporte PLUS de lignes que Magento BI** et que la connexion s’affiche comme réussie ou continue d’échouer, nous devrons connaître le nom de la connexion et le message d’erreur que vous voyez, le cas échéant.
+* **Si votre base de données source comporte MOINS de lignes que Magento BI,** les lignes ne sont pas supprimées de la table et que les fréquences de vérification sont correctement définies, effectuez une recherche dans votre feuille de calcul **pour trouver les valeurs order\_id qui se trouvent dans Magento BI** mais pas dans votre base de données source. Incluez ces valeurs lors de l’envoi du ticket.
 
 ## Lecture connexe
 
-* [Liste de contrôle pour le diagnostic des incohérences de données](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-41479)
-* [Politiques de service Adobe Commerce Intelligence](https://experienceleague.adobe.com/fr/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
-* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
+* [Liste de contrôle pour le diagnostic des incohérences de données](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)
+* [Politiques de service Adobe Commerce Intelligence](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
+* [Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook
 

@@ -4,7 +4,18 @@ description: Cet article fournit un correctif pour le moment où l’installatio
 exl-id: 04aa3572-3c42-4565-9f7f-b4d90df96df2
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -30,7 +41,7 @@ Définissez toutes les options suivantes selon vos besoins.
 
 ### Tous les serveurs web et Vernis {#all-web-servers-and-varnish}
 
-1. Localisez votre `php.ini` à l’aide d’un fichier [`phpinfo.php`](https://experienceleague.adobe.com/fr/docs/commerce-operations/installation-guide/prerequisites/optional-software).
+1. Localisez votre `php.ini` à l’aide d’un fichier [`phpinfo.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software).
 1. En tant qu’utilisateur disposant de droits d’`root`, ouvrez `php.ini` dans un éditeur de texte.
 1. Recherchez le paramètre `max_execution_time` .
 1. Remplacez sa valeur par `18000` .

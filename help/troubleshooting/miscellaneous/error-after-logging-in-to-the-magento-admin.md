@@ -1,19 +1,29 @@
 ---
-title: Erreur après connexion à l’administrateur Commerce
-description: Cet article fournit une solution au problème où vous recevez un message d’erreur indiquant que l’URL demandée est introuvable sur ce serveur.
+title: Erreur après la connexion à l’administrateur Commerce
+description: Cet article fournit une solution au problème de réception d’un message d’erreur indiquant que l’URL demandée est introuvable sur ce serveur.
 exl-id: f52b383b-87f2-4216-9bf4-e765db31ca6b
 feature: Admin Workspace
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '166'
 ht-degree: 0%
-
 ---
+# Erreur après la connexion à l’administrateur Commerce
 
-# Erreur après connexion à l’administrateur Commerce
-
-Cet article fournit une solution au problème où vous recevez un message d’erreur indiquant que l’URL demandée est introuvable sur ce serveur.
+Cet article fournit une solution au problème de réception d’un message d’erreur indiquant que l’URL demandée est introuvable sur ce serveur.
 
 ## Détails
 
@@ -26,11 +36,11 @@ Notez l’absence de barre oblique entre `magento2` et `index.php` dans l’URL.
 L’URL de base n’est pas correcte. L’URL de base doit :
 
 * Commencer par `http://` ou `https://`
-* Terminer par une barre oblique ( `/` )
-* Correspondance avec la casse de l’enregistrement `web/unsecure/base_url` dans la table de base de données `core_config_data`
+* Se termine par une barre oblique ( `/` )
+* Respecter la casse de l’enregistrement `web/unsecure/base_url` dans la table de base de données `core_config_data`
 
-Exécutez à nouveau l’installation à l’aide d’une valeur valide.
+Réexécutez l’installation à l’aide d’une valeur valide.
 
 ## Lecture connexe
 
-[&#x200B; Bonnes pratiques pour la modification des tables de base de données](https://experienceleague.adobe.com/fr/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel de mise en oeuvre de Commerce
+[Recommandations relatives à la modification des tables de base de données](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) dans le manuel Commerce Implementation Playbook

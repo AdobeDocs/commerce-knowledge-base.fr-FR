@@ -1,15 +1,24 @@
 ---
 title: FAQ sur l’authentification à deux facteurs dans le panneau d’administration d’Adobe Commerce
-description: ​1. **Qu’est-ce que l’authentification à deux facteurs dans le panneau d’administration ? Ce qui a changé ?** l’authentification à deux facteurs (2FA) est une couche de sécurité supplémentaire pour vérifier votre identité, de sorte que seul vous pouvez accéder à votre compte d’administrateur, même si quelqu’un connaît votre mot de passe. Adobe a ajouté la prise en charge de 2FA dans le panneau d’administration de Commerce dans la version 2.3.0 afin de protéger le compte administrateur contre tout accès non autorisé. Dans la version 2.4.0, 2FA est activé par défaut sur le panneau d’administration et doit être configuré avant de se connecter à l’administration via l’interface utilisateur ou une API web. Adobe recommande vivement de ne pas désactiver le module 2FA.
+description: 1. **Qu’est-ce que l’authentification à deux facteurs dans le panneau d’administration ? Ce qui a changé ?** l’authentification à deux facteurs (2FA) est une couche de sécurité supplémentaire pour vérifier votre identité, de sorte que seul vous pouvez accéder à votre compte d’administrateur, même si quelqu’un connaît votre mot de passe. Adobe a ajouté la prise en charge de 2FA dans le panneau d’administration de Commerce dans la version 2.3.0 afin de protéger le compte administrateur contre tout accès non autorisé. Dans la version 2.4.0, 2FA est activé par défaut sur le panneau d’administration et doit être configuré avant de se connecter à l’administration via l’interface utilisateur ou une API web. Adobe recommande vivement de ne pas désactiver le module 2FA.
 exl-id: 77b57c11-fcde-4bc6-814e-45fa990cc491
 feature: Admin Workspace, Best Practices
-source-git-commit: 8be0c125bb0417e34e016656337506da88796630
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '879'
 ht-degree: 0%
-
 ---
-
 # FAQ sur l’authentification à deux facteurs dans le panneau d’administration d’Adobe Commerce
 
 1. **Qu’est-ce que l’authentification à deux facteurs dans le panneau d’administration ? Qu’est-ce qui a changé ?** L’authentification à deux facteurs (2FA) est une couche de sécurité supplémentaire pour vérifier votre identité, de sorte que seul vous puissiez accéder à votre compte administrateur, même si quelqu’un connaît votre mot de passe. Adobe a ajouté la prise en charge de 2FA dans le panneau d’administration de Commerce dans la version 2.3.0 afin de protéger le compte administrateur contre tout accès non autorisé. Dans la version 2.4.0, 2FA est activé par défaut sur le panneau d’administration et doit être configuré avant de se connecter à l’administration via l’interface utilisateur ou une API web. Adobe recommande vivement de ne pas désactiver le module 2FA.

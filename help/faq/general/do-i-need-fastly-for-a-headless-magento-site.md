@@ -3,7 +3,22 @@ title: Ai-je besoin de Fastly pour un site Adobe Commerce découplé ?
 description: Ai-je besoin de Fastly pour un site Adobe Commerce découplé ?
 exl-id: d7e07160-6a61-4c03-8f8c-4f879d86ea44
 feature: Cache, GraphQL, Compliance
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
@@ -12,7 +27,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Tous les clients doivent utiliser Fastly pour leurs environnements de production et d’évaluation. Fastly est un réseau de diffusion de contenu (CDN) qui fournit une mise en cache complète des pages, une optimisation des images et des services de sécurité (DDoS et WAF) dans le cadre de vos projets d’infrastructure cloud Adobe Commerce. Il s’agit des composants principaux de la solution Adobe Commerce, qui offrent des performances et une sécurité accrues. Ces fonctionnalités font partie de la conformité PCI Adobe. Vous devez configurer ces services Fastly sur vos environnements de Principal de démarrage, d’évaluation, d’évaluation pro et de production. Si vous utilisez Adobe Commerce dans un déploiement découplé, tout le trafic d’API provenant de l’Internet public doit passer par Fastly et nous vous recommandons vivement d’utiliser Fastly pour mettre en cache les réponses de GraphQL. Consultez le [Guide du développeur de GraphQL > Mise en cache avec Fastly &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly) dans notre documentation destinée aux développeurs.
+>Tous les clients doivent utiliser Fastly pour leurs environnements de production et d’évaluation. Fastly est un réseau de diffusion de contenu (CDN) qui fournit une mise en cache complète des pages, une optimisation des images et des services de sécurité (DDoS et WAF) dans le cadre de vos projets d’infrastructure cloud Adobe Commerce. Il s’agit des composants principaux de la solution Adobe Commerce, qui offrent des performances et une sécurité accrues. Ces fonctionnalités font partie de la conformité PCI Adobe. Vous devez configurer ces services Fastly sur vos environnements de Principal de démarrage, d’évaluation, d’évaluation pro et de production. Si vous utilisez Adobe Commerce dans un déploiement découplé, tout le trafic d’API provenant de l’Internet public doit passer par Fastly et nous vous recommandons vivement d’utiliser Fastly pour mettre en cache les réponses de GraphQL. Consultez le [Guide du développeur de GraphQL > Mise en cache avec Fastly ](https://developer.adobe.com/commerce/webapi/graphql/usage/caching/#caching-with-fastly) dans notre documentation destinée aux développeurs.
 
 ## **Question**
 
@@ -23,7 +38,7 @@ Je développe une implémentation découplée d’Adobe Commerce. Dois-je toujou
 Non, pas du tout. Dans cette situation, vous pouvez ignorer l’utilisation de Fastly, du moins au début du développement.
 
 La seule situation que vous ne souhaitez peut-être pas activer concerne un déploiement découplé.
-Consultez [Cloud for Adobe Commerce > Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly) dans notre documentation destinée aux développeurs.
+Consultez [Cloud for Adobe Commerce > Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) dans notre documentation destinée aux développeurs.
 
 Néanmoins, vous aurez très probablement besoin de Fastly pour utiliser son certificat SSL.
 
@@ -32,4 +47,4 @@ Tous les clients Adobe Commerce sur les infrastructures cloud reçoivent un cert
 ## Plus d’informations
 
 * [Sites web découplés : quel est le problème avec l’architecture découplée ?](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) par [Josh Koenig](https://pantheon.io/team/josh-koenig).
-* [Fastly](https://experienceleague.adobe.com/fr/docs/commerce-cloud-service/user-guide/cdn/fastly) dans notre documentation destinée aux développeurs et développeuses.
+* [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) dans notre documentation destinée aux développeurs et développeuses.
