@@ -43,6 +43,6 @@ La solution consiste à utiliser un autre navigateur que Safari. Le problème de
 ## Lecture connexe
 
 * [Qu’est-ce que Page Builder &#x200B;](https://developer.adobe.com/commerce/frontend-core/page-builder/) dans la documentation destinée aux développeurs.
-* [Configuration de Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html) dans notre documentation destinée aux développeurs.
-* [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/introduction) dans notre guide de l’utilisateur.
-* [Page Builder - Éléments](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/workspace#elements) dans notre guide de l’utilisateur.
+* [Configuration de Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html?lang=fr) dans notre documentation destinée aux développeurs.
+* [Page Builder](https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/introduction) dans notre guide de l’utilisateur.
+* [Page Builder - Éléments](https://experienceleague.adobe.com/fr/docs/commerce-admin/page-builder/workspace#elements) dans notre guide de l’utilisateur.
