@@ -3,6 +3,7 @@ cloud: Experience Cloud
 solution: Commerce
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: "Commerce"
 usetq: true
 feature-set: Commerce
 landing-page-name: commerce
@@ -10,16 +11,14 @@ landing-page-breadcrumb-title: Commerce
 product: magento
 type: Troubleshooting
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/commerce-knowledge-base.fr-FR
+git-repo: https://github.com/AdobeDocs/commerce-knowledge-base.en
 index: true
-badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/fr/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
+badgePaas: label="PaaS uniquement" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="S’applique uniquement aux projets Adobe Commerce on Cloud (infrastructure PaaS gérée par Adobe) et aux projets On-premise."
 source-git-commit: be3af16156719ed47daf3fdaec1113663885a1a3
 workflow-type: tm+mt
-source-wordcount: 97
+source-wordcount: '91'
 ht-degree: 0%
-
 ---
-
 
 # Métadonnées à usage interne
 
