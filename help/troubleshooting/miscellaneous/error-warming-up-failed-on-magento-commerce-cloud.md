@@ -20,9 +20,9 @@ subfeature_v2:
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
+source-git-commit: a5bb7b49f18f098b8706ba8b3187a7ae81059940
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '199'
 ht-degree: 0%
 ---
 # ERREUR : échec du préchauffage sur Adobe Commerce sur l’infrastructure cloud
@@ -61,5 +61,4 @@ Assurez-vous que le contrôle d’accès n’est pas activé : accédez à la br
 
 ## Lecture connexe
 
-* [Guide de l’utilisateur d’Adobe Commerce > Cache pleine page](https://experienceleague.adobe.com/fr/docs/commerce-admin/systems/tools/cache-management#full-page-caching) dans notre guide de l’utilisateur.
-* [Préchauffage du cache et site indisponible sur Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md) dans notre base de connaissances d’assistance.
+* [Guide de l’utilisateur d’Adobe Commerce > Cache pleine page](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching) dans notre guide de l’utilisateur.
