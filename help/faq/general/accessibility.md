@@ -28,4 +28,4 @@ Vous pouvez trouver des solutions dans le [&#128279;](https://marketplace.magent
 
 ## Lecture connexe
 
-* [Accessibilité d’Adobe](https://www.adobe.com/trust/accessibility.html)
+* [Accessibilité d’Adobe](https://www.adobe.com/fr/trust/accessibility.html)

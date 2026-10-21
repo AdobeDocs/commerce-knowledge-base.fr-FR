@@ -256,7 +256,7 @@ Une liste de liens spécialisée, appelée liste voir aussi, s’affiche à la f
 
 ### Liens vers des sites web externes
 
-Utilisez des URL ordinaires plutôt que des goURL pour créer des liens vers des pages en dehors d’[Adobe.com](http://Adobe.com).
+Utilisez des URL ordinaires plutôt que des goURL pour créer des liens vers des pages en dehors d’[Adobe.com](http://Adobe.com/fr).
 
 
 ## Virgules
